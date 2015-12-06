@@ -24,7 +24,7 @@ The easiest way to try out A-Frame is using the __[cubes example scene on CodePe
 ```
 
 {% raw %}
-<iframe src="http://localhost:9000/examples/cube/" frameborder="0" scrolling="0" allowfullscreen="yes" width="100%" height="400"></iframe>
+<iframe src="https://mozvr.github.io/aframe/examples/cube/" frameborder="0" scrolling="0" allowfullscreen="yes" width="100%" height="400"></iframe>
 {% endraw %}
 
 ## Fancy Cubes
@@ -43,5 +43,5 @@ The easiest way to try out A-Frame is using the __[cubes example scene on CodePe
 ```
 
 {% raw %}
-<iframe src="http://localhost:9000/examples/cubes/" frameborder="0" scrolling="0" allowfullscreen="yes" width="100%" height="400"></iframe>
+<iframe src="https://mozvr.github.io/aframe/examples/cubes/" frameborder="0" scrolling="0" allowfullscreen="yes" width="100%" height="400"></iframe>
 {% endraw %}
