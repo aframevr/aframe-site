@@ -31,9 +31,13 @@
     <%- js('js/common.js') %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        FastClick.attach(document.body);
-      });
+      (function () {
+        if ('FastClick' in window) {
+          document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+          });
+        }
+      })();
     </script>
   </body>
 </html>
