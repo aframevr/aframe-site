@@ -11,7 +11,7 @@ A-Frame ships with a bunch of cool elements.
 
 A-Frame ships by default with a camera. But if you want to change the defaults, you can drop in an `<a-camera>` element.
 
-[View source on GitHub](https://github.com/MozVR/aframe/blob/master/elements/templates/a-camera.html)
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
 
 ### Attributes
 
@@ -49,7 +49,7 @@ Same as above but with only desktop mouse-look controls (useful for simple point
 
 Cubes are simply 3D objects with a box primitive.
 
-[View source on GitHub >](https://github.com/MozVR/aframe/blob/master/elements/templates/a-camera.html)
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
 
 ### Attributes
 
@@ -69,7 +69,7 @@ Cubes are simply 3D objects with a box primitive.
 ### Template Definition
 
 
-[View on GitHub >](https://github.com/MozVR/aframe/blob/master/elements/templates/a-cube.html)
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cube.html)
 
 ### Examples
 
@@ -87,7 +87,7 @@ Let's get fancy and create a textured cube with a small blue cube inside it:
 </a-cube>
 ```
 
-[View examples >](https://mozvr.github.io/aframe/examples/cubes/)
+[View examples >](https://aframevr.github.io/aframe/examples/cubes/)
 
 
 ## `<a-cylinder>`
@@ -119,7 +119,7 @@ Cylinders are simply 3D objects with a cylinder primitive.
 ### Template Definition
 
 
-[View on GitHub >](https://github.com/MozVR/aframe/blob/master/elements/templates/a-cylinder.html)
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
 
 ### Examples
 
@@ -142,7 +142,7 @@ Let's get fancy and create some cool cylinders:
 <a-cylinder position="4 0 -6" rotation="45 -45 0" radius="2" height="1" color="blue" metalness="0.9"></a-cylinder>
 ```
 
-[View examples >](https://mozvr.github.io/aframe/examples/cylinders/)
+[View examples >](https://aframevr.github.io/aframe/examples/cylinders/)
 
 
 ## `<a-image>`
@@ -183,21 +183,21 @@ An image is a transparent plane with an image texture.
 To create an image from a URL:
 
 ```html
-<a-image src="https://mozvr.github.io/aframe-core/examples/_images/pano/louvre.jpg"></a-image>
+<a-image src="https://aframevr.github.io/aframe-core/examples/_images/pano/louvre.jpg"></a-image>
 ```
 
 You can also create an image from an `<img>` in the document:
 
 ```html
 <a-assets>
-  <img class="louvre" src="https://mozvr.github.io/aframe-core/examples/_images/pano/louvre.jpg">
+  <img class="louvre" src="https://aframevr.github.io/aframe-core/examples/_images/pano/louvre.jpg">
 </a-assets>
 <a-scene>
   <a-image src=".louvre"></a-image>
 </a-scene>
 ```
 
-[View on GitHub >](https://github.com/MozVR/aframe/blob/master/elements/templates/a-image.html)
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-image.html)
 
 
 ## `<a-model>`
@@ -232,7 +232,7 @@ A model is an 3D model object (`.obj`) or Collada model object (`.dae`).
 To create a model from a URL:
 
 ```html
-<a-model src="https://mozvr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
+<a-model src="https://aframevr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
 ```
 
 

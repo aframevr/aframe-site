@@ -218,11 +218,11 @@
     // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
     // have got you down, we load the examples from our local
     // `aframe` and `aframe-core` dev servers.
-    $$('iframe[src*="//mozvr.github.io/aframe/"]').forEach(function (iframe) {
-      iframe.src = iframe.setAttribute('src', iframe.src.replace('//mozvr.github.io/aframe/', '//localhost:9000/'));
+    $$('iframe[src*="//aframe.github.io/aframe/"]').forEach(function (iframe) {
+      iframe.src = iframe.setAttribute('src', iframe.src.replace('//aframe.github.io/aframe/', '//' + window.location.hostname + ':9000/'));
     });
-    $$('iframe[src*="//mozvr.github.io/aframe-core/"]').forEach(function (iframe) {
-      iframe.src = iframe.setAttribute('src', iframe.src.replace('//mozvr.github.io/aframe-core/', '//localhost:9001/'));
+    $$('iframe[src*="//aframe.github.io/aframe-core/"]').forEach(function (iframe) {
+      iframe.src = iframe.setAttribute('src', iframe.src.replace('//aframe.github.io/aframe-core/', '//' + window.location.hostname + ':9001/'));
     });
   }
 
