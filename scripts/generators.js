@@ -8,6 +8,7 @@ hexo.extend.generator.register('post', function (locals) {
     var section = locals.data.examples[sectionSlug];
     section.examples.forEach(function (example) {
       var permalink = utils.urljoin('examples', sectionSlug, example.slug, '/');
+      example.type = 'examples';
       example.section = sectionSlug;
       example.url = permalink;
       routes.push({

@@ -1,6 +1,9 @@
 @import "_settings"
 @import "_syntax"
 
+html, body
+    height 100%
+
 body
     font-family $body-font
     font-size $body-font-size
@@ -15,6 +18,20 @@ a
 
 img
     border none
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.hidden-visually
+    border 0
+    clip rect(0 0 0 0)
+    height 1px
+    margin -1px
+    overflow hidden
+    padding 0
+    position absolute
+    width 1px
 
 h1, h2, h3, h4, strong
     font-weight 600
@@ -96,7 +113,8 @@ a.button
     &.css .code:after
         content 'CSS'
 
-#main
+.main
+    height 100%
     position relative
     z-index 1
     padding 0 60px 30px
@@ -149,6 +167,9 @@ a.button
 iframe
     border 0
 
+.example__iframe
+    height 100vh
+    width 100%
 
 p [href*=github][href*="/blob/"]:only-child
     background $codebg
