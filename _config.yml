@@ -101,6 +101,8 @@ deploy:
 
 twitter: aframevr
 github: aframevr/aframe
+github_user: aframevr
+github_repo: aframe
 google_analytics: UA-24056643-4
 aframe_version: 0.0.10
 

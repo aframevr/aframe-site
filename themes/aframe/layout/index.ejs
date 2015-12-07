@@ -14,12 +14,11 @@
     </div>
     <p class="desc"><%- config.subtitle %></p>
     <p class="buttons">
-      <a href="/guide/installation.html" class="button">Install v<%- theme.aframe_version %></a>
+      <a href="<%- url_for('guide/installation.html') %>" class="button">Install v<%- theme.aframe_version %></a>
     </p>
     <ul id="social" class="social">
-      <li><a href="https://twitter.com/aframevr" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @aframevr</a></li>
-      <li><iframe src="http://ghbtns.com/github-btn.html?user=aframevr&amp;repo=aframe&amp;type=watch&amp;count=true"
-    allowtransparency="true" scrolling="0" width="100" height="20"></iframe></li>
+      <li><a href="https://twitter.com/<%- config.twitter %>" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @aframevr</a></li>
+      <li><iframe src="http://ghbtns.com/github-btn.html?user=<%- config.github_user %>&amp;repo=<%- config.github_repo %>&amp;type=watch&amp;count=true" allowtransparency="true" scrolling="0" width="100" height="20"></iframe></li>
     </ul>
   </div>
 </div>
