@@ -19,14 +19,13 @@
       <a class="menu-button"></a>
       <a class="logo" href="<%- url_for('/') %>"></a>
     </div>
-    <%- partial('partials/header') %>
-    <div id="main" class="main">
+    <main id="main" class="main">
       <% if (page.blog_index) { %>
         <%- partial('partials/blog') %>
       <% } else { %>
         <%- body %>
       <% } %>
-    </div>
+    </main>
     <%- js('js/smooth-scroll.min.js') %>
     <%- js('js/common.js') %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>

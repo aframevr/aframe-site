@@ -1,4 +1,15 @@
-<div class="sidebar">
+<aside class="sidebar">
+
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="<%- url_for('/') %>">
+      <img src="<%- url_for('images/aframe-logo.png') %>" alt="A-Frame logo">
+      <span class="logo__wordmark"><%- config.title %></span>
+    </a>
+    <ul id="nav" class="nav">
+      <%- partial('partials/main_menu') %>
+    </ul>
+  </header>
+
   <ul class="main-menu">
     <%- partial('partials/main_menu') %>
   </ul>
@@ -18,4 +29,4 @@
       <% }) %>
     </ul>
   </div>
-</div>
+</aside>
