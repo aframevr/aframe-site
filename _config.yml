@@ -103,3 +103,6 @@ twitter: aframevr
 github: aframevr/aframe
 google_analytics: UA-24056643-4
 aframe_version: 0.0.10
+
+example_iframe:
+  base_url: https://aframevr.github.io/aframe/examples/
