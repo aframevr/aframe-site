@@ -7,7 +7,7 @@ title: A-Frame
 subtitle: Building Blocks for the VR Web
 description: "Building Blocks for the VR Web"
 author: MozVR
-email:
+email: aframe@mozilla.com
 language:
 
 # URL
@@ -97,4 +97,9 @@ markdown:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:MozVR/aframe.io.git
+  repository: git@github.com:aframevr/aframe-site.git
+
+twitter: aframevr
+github: aframevr/aframe
+google_analytics: UA-24056643-4
+aframe_version: 0.0.10

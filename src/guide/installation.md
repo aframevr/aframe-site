@@ -2,7 +2,7 @@
 title: Installation
 type: guide
 order: 0
-aframe_version: 0.0.10
+aframe_version: 0.1.0
 dev_size: "100.00"
 min_size: "50.00"
 gz_size: "50.00"

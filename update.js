@@ -2,13 +2,13 @@ var fs = require('fs');
 var pkg = require('../aframe/package');
 
 var version = pkg.version;
-var themeconfPath = 'themes/aframe/_config.yml';
+var configPath = '_config.yml';
 var installPath = 'src/guide/installation.md';
-var themeconfig = fs.readFileSync(themeconfPath, 'utf-8');
+var themeconfig = fs.readFileSync(configPath, 'utf-8');
 var installation = fs.readFileSync(installPath, 'utf-8');
 
 fs.writeFileSync(
-  themeconfPath,
+  configPath,
   themeconfig.replace(/aframe_version: .*/, 'aframe_version: ' + version)
 );
 
