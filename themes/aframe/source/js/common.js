@@ -99,16 +99,16 @@
 
     var animating = false;
     sectionContainer.addEventListener('click', function (e) {
-      e.preventDefault()
+      e.preventDefault();
       if (e.target.classList.contains('section-link')) {
         menu.classList.remove('open');
         setActive(e.target);
         animating = true;
         setTimeout(function () {
-          animating = false
+          animating = false;
         }, 400);
       }
-    }, true)
+    }, true);
 
     // Make links clickable.
     allLinks.forEach(makeLinkClickable);
