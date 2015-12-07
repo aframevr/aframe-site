@@ -15,7 +15,7 @@
     </script>
     <%- css(isIndex ? 'css/index' : 'css/page') %>
     <%- partial('partials/ga') %>
-    <script src="/js/aframe.js"></script>
+    <%- js('js/aframe.js') %>
   </head>
   <body>
     <div id="mobile-bar" class="mobile-bar">
@@ -31,8 +31,8 @@
           <%- body %>
         <% } %>
       </div>
-      <script src="/js/smooth-scroll.min.js"></script>
-      <script src="/js/common.js"></script>
+      <%- js('js/smooth-scroll.min.js') %>
+      <%- js('js/common.js') %>
     <% } else { %>
       <%- body %>
     <% } %>
