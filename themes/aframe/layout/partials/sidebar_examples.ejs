@@ -1,0 +1,21 @@
+<div class="sidebar">
+  <ul class="main-menu">
+    <%- partial('partials/main_menu') %>
+  </ul>
+  <div class="list">
+    <h2>Examples</h2>
+    <ul class="menu-root">
+      <% Object.keys(site.data.examples).forEach(function (sectionSlug) { %>
+        <% var section = site.data.examples[sectionSlug] %>
+        <h3><%- section.title %></h3>
+        <ul>
+          <% if (section.examples) { %>
+            <% section.examples.forEach(function (example) { %>
+              <a href="<%- url_for(example.url) %>" class="sidebar-link<%- page.section === example.section && page.slug === example.slug ? ' current' : '' %><%- example.is_new ? ' new' : '' %>"><span class="sidebar-link-text"><%- example.title %></span></a>
+            <% }) %>
+          <% } %>
+        </ul>
+      <% }) %>
+    </ul>
+  </div>
+</div>
