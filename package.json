@@ -27,7 +27,7 @@
     "dev": "npm run server",
     "server": "hexo server",
     "generate": "hexo generate",
-    "deploy": "hexo deploy",
+    "deploy": "hexo clean && hexo deploy",
     "clean": "hexo clean",
     "update": "node update.js"
   }
