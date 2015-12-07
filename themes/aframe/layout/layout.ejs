@@ -5,7 +5,7 @@
   <head>
     <title><%- isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title %></title>
     <meta charset="utf-8">
-    <meta name="robots" content="none">
+    <meta name="robots" content="<%- config.robots %>">
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono" rel="stylesheet" type="text/css">
