@@ -1,13 +1,58 @@
 (function () {
 
-  var each = Array.prototype.forEach;
-  var main = document.getElementById('main');
+  /**
+   * Wraps `querySelector` à la jQuery's `$`.
+   *
+   * @param {String|Element} sel CSS selector to match an element.
+   * @param {Element=} parent Parent from which to query.
+   * @returns {Element} Element matched by selector.
+   */
+  var $ = function (sel, parent) {
+    var el = sel;
+    if (sel && typeof sel === 'string') {
+      el = (parent || document).querySelector(sel);
+    }
+    return el;
+  };
+
+  /**
+   * Wraps `querySelectorAll` à la jQuery's `$`.
+   *
+   * @param {String|Element} sel CSS selector to match elements.
+   * @param {Element=} parent Parent from which to query.
+   * @returns {Array} Array of elements matched by selector.
+   */
+  var $$ = function (sel, parent) {
+    if (Array.isArray(sel)) { return sel; }
+    var els = sel;
+    if (sel && typeof sel === 'string') {
+      els = (parent || document).querySelectorAll(sel);
+    }
+    return toArray(els);
+  };
+
+  /**
+   * Turns an array-like object into an array.
+   *
+   * @param {String|Element} obj CSS selector to match elements.
+   * @param {Array|NamedNodeMap|NodeList|HTMLCollection} arr An array-like object.
+   * @returns {Array} Array of elements matched by selector.
+   */
+  var toArray = function (obj) {
+    if (Array.isArray(obj)) { return obj; }
+    if (typeof obj === 'object' && typeof obj.length === 'number') {
+      return Array.prototype.slice.call(obj);
+    }
+    return [obj];
+  };
+
+  var main = $('#main');
   var doc = document.documentElement;
   var body = document.body;
-  var header = document.getElementById('header');
-  var menu = document.querySelector('.sidebar');
-  var content = document.querySelector('.content');
-  var mobileBar = document.getElementById('mobile-bar');
+  var header = $('#header');
+  var menu = $('.sidebar');
+  var content = $('.content');
+  var mobileBar = $('#mobile-bar');
 
   var menuButton = mobileBar.querySelector('.menu-button');
   menuButton.addEventListener('click', function () {
@@ -22,20 +67,20 @@
 
   // build sidebar
   var currentPageAnchor = menu.querySelector('.sidebar-link.current');
-  var isAPI = document.querySelector('.content').classList.contains('api');
+  var isAPI = $('.content').classList.contains('api');
   if (currentPageAnchor || isAPI) {
     var allLinks = [];
     var sectionContainer;
     if (isAPI) {
-      sectionContainer = document.querySelector('.menu-root');
+      sectionContainer = $('.menu-root');
     } else {
       sectionContainer = document.createElement('ul');
       sectionContainer.className = 'menu-sub';
       currentPageAnchor.parentNode.appendChild(sectionContainer);
     }
-    var h2s = content.querySelectorAll('h2');
+    var h2s = $$('h2', content);
     if (h2s.length) {
-      each.call(h2s, function (h) {
+      h2s.forEach(function (h) {
         sectionContainer.appendChild(makeLink(h));
         var h3s = collectH3s(h);
         allLinks.push(h);
@@ -45,8 +90,8 @@
         }
       });
     } else {
-      h2s = content.querySelectorAll('h3');
-      each.call(h2s, function (h) {
+      h2s = $$('h3', content);
+      h2s.forEach(function (h) {
         sectionContainer.appendChild(makeLink(h));
         allLinks.push(h);
       });
@@ -158,7 +203,7 @@
   _st('install','xUTNSv6o6-VBbrvLWYcS','2.0.0');
 
   // version select
-  document.querySelector('.version-select').addEventListener('change', function (e) {
+  $('.version-select').addEventListener('change', function (e) {
     var version = e.target.value;
     if (version.indexOf('1.') !== 0) {
       version = version.replace('.', '');
@@ -167,6 +212,18 @@
     } else {
       // TODO when 1.x is out
     }
-  })
+  });
+
+  if (!navigator.onLine) {
+    // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
+    // have got you down, we load the examples from our local
+    // `aframe` and `aframe-core` dev servers.
+    $$('iframe[src*="//mozvr.github.io/aframe/"]').forEach(function (iframe) {
+      iframe.src = iframe.setAttribute('src', iframe.src.replace('//mozvr.github.io/aframe/', '//localhost:9000/'));
+    });
+    $$('iframe[src*="//mozvr.github.io/aframe-core/"]').forEach(function (iframe) {
+      iframe.src = iframe.setAttribute('src', iframe.src.replace('//mozvr.github.io/aframe-core/', '//localhost:9001/'));
+    });
+  }
 
 })()
