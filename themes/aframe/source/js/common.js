@@ -232,10 +232,10 @@
   } catch (e) {
   }
   var isOnline = navigator.onLine;
-  if (!isOnline && !customExamplesBaseUrl) {
-    var offlineBaseUrl = document.body.dataset.examplesOfflineBaseUrl.replace(/^https?:/, '');
-    offlineBaseUrl = offlineBaseUrl.replace('{hostname}', window.location.hostname);
-    customExamplesBaseUrl = offlineBaseUrl;
+  if (!isOnline) {
+    console.warn('You appear to be offline. ' +
+      'You can point the examples at your local server though:\n' +
+      "localStorage.examples_base_url = 'http://localhost:9000/examples/'");
   }
   if (customExamplesBaseUrl) {
     // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
