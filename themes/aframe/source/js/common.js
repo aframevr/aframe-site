@@ -217,16 +217,34 @@
     });
   }
 
-  if (!navigator.onLine) {
-    // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
-    // have got you down, we load the examples from our local
-    // `aframe` and `aframe-core` dev servers.
-    var baseUrl = document.body.dataset.examplesBaseUrl.replace(/^https?:/, '');
+  // To customise the base URL for the <iframe>'d examples, do this in the Console:
+  //
+  //   localStorage.examples_base_url = 'http://localhost:9000/examples/'
+  //
+  // To revert back to normal:
+  //
+  //   delete localStorage.examples_base_url
+  //
+  // And be sure to refresh the page :)
+  var customExamplesBaseUrl;
+  try {
+    customExamplesBaseUrl = window.localStorage.examples_base_url;
+  } catch (e) {
+  }
+  var isOnline = navigator.onLine;
+  if (!isOnline && !customExamplesBaseUrl) {
     var offlineBaseUrl = document.body.dataset.examplesOfflineBaseUrl.replace(/^https?:/, '');
     offlineBaseUrl = offlineBaseUrl.replace('{hostname}', window.location.hostname);
-    $$('iframe[src*="' + baseUrl + '"]').forEach(function (iframe) {
-      var newSrc = iframe.src.replace(baseUrl, offlineBaseUrl);
-      iframe.setAttribute('src', newSrc);
+    customExamplesBaseUrl = offlineBaseUrl;
+  }
+  if (customExamplesBaseUrl) {
+    // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
+    // have got you down, you can load the examples from your local `aframe`
+    // dev server, for example.
+    $$('iframe.example__iframe').forEach(function (iframe) {
+      var iframeData = iframe.dataset;
+      if (iframeData.path.indexOf('//') !== -1) { return; }  // Ignore external URLs.
+      iframe.setAttribute('src', customExamplesBaseUrl + iframeData.path);
     });
   }
 

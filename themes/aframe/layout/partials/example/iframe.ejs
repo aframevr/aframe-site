@@ -2,6 +2,8 @@
   <iframe class="example__iframe" data-example="<%- item.slug %>"
           width="<%- item.width %>"
           height="<%- item.height %>" src="<%- config.examples.base_url + item.path %>"
+          data-original-base-url="<%- config.examples.base_url %>"
+          data-path="<%- item.path %>"
           allowfullscreen="yes" scrolling="no"></iframe>
   <button class="btn example__viewsource">View Source</button>
 <% } %>

@@ -113,8 +113,6 @@ aframe_version: 0.0.10
 aframe_npm_url: https://www.npmjs.com/package/aframe
 
 examples:
-  base_url_: http://aframevr.github.io/aframe/examples/
-  base_url: http://localhost:9000/examples/
-  offline_base_url: http://{hostname}:9000/examples/
+  base_url: http://aframevr.github.io/aframe/examples/
   first_example_url: examples/showcase/anime-UI/
   homepage_example_url: examples/showcase/spheres-and-fog/
