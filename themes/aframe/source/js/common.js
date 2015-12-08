@@ -67,11 +67,11 @@
 
   // build sidebar
   var currentPageAnchor = menu.querySelector('.sidebar-link.current');
-  var isAPI = $('.content').classList.contains('api');
-  if (currentPageAnchor || isAPI) {
+  var isDocs = $('.content').classList.contains('docs');
+  if (currentPageAnchor || isDocs) {
     var allLinks = [];
     var sectionContainer;
-    if (isAPI) {
+    if (isDocs) {
       sectionContainer = $('.menu-root');
     } else {
       sectionContainer = document.createElement('ul');
@@ -86,7 +86,7 @@
         allLinks.push(h);
         allLinks.push.apply(allLinks, h3s);
         if (h3s.length) {
-          sectionContainer.appendChild(makeSubLinks(h3s, isAPI));
+          sectionContainer.appendChild(makeSubLinks(h3s, isDocs));
         }
       });
     } else {

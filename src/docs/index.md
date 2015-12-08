@@ -1,6 +1,6 @@
 ---
-type: api
-title: API
+type: docs
+title: Îocs
 ---
 
 A-Frame ships with a bunch of cool elements.
