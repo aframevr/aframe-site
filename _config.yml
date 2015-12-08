@@ -108,6 +108,8 @@ google_analytics: UA-24056643-4
 
 aframe_version: 0.0.10
 
+aframe_npm_url: https://www.npmjs.com/package/aframe
+
 examples:
   base_url_: http://aframevr.github.io/aframe/examples/
   base_url: http://localhost:9000/examples/

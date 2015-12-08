@@ -2,7 +2,23 @@
 
 <div class="content content--index">
   <header class="content--header content--header--index">
-    <h1 class="slogan"><%- config.description %></h1>
+    <section class="intro__copy">
+      <p class="intro__blurb--videothumb intro__videothumb">
+        <a href="" class="intro__videothumb__link"><img class="intro__videothumb__img" src="<%- url_for('images/aframe-video-thumbnail.png') %>"></a>
+      </p>
+      <p class="intro__blurb">
+        Use A-Frame to create
+        <a href="<%- url_for('examples/boilerplates/360video/') %>">360 videos</a>,
+        <a href="<%- url_for('examples/showcase/flythrough/') %>">animated fly throughs</a>,
+        <a href="<%- url_for('examples/showcase/flythrough/') %>">interactive worlds</a>.
+        These experiences work across desktop, mobile, and in VR.
+      </p>
+      <p class="intro__blurb">
+        Get started with A-Frame with our <a href="<%- url_for('guide/') %>">Guide</a>.
+        Or grab our <a href="https://github.com/aframevr/aframe-boilerplate">boilerplate kit</a>,
+        <a href="">hosted CDN version</a>, or <a href="<%- config.aframe_npm_url %>">npm package</a>.
+      </p>
+    </section>
   </header>
   <div class="content--body">
     <%- partial('partials/example/iframe', {item: page}) %>

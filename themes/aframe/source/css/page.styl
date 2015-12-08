@@ -245,7 +245,8 @@ ul
     width 450px
 
 .example__iframe
-    height 100vh
+    height calc(100vh - 140px)
+    // height 80vh
     width 100%
 
 .sidebar, .content
@@ -253,7 +254,7 @@ ul
     position relative
 
 .sidebar
-    background rgb(239,45,94)
+    background $pink
     flex 1
     padding 30px
 
@@ -280,15 +281,26 @@ ul
 .content
     display flex
     flex-direction column
-    justify-content flex-end
 
 .content--header
-    background rgba(100,51,64,0.25)
-    flex 1
+    background rgba(180,255,255,0.5)
+    order 2
+    height 140px
     padding 30px
+    width 100%
+
+.content--header--index
+    background rgb(100,50,60)
+    color #ccc
+
+.content--header--examples
+    color #666
+    .example__title
+        color #036
 
 .content--body
-    flex 1
+    flex 1 140px
+    order 1
     position relative
 
 .example__viewsource
@@ -305,3 +317,47 @@ ul
     &:active,
     &:hover
         background-color #ef2d5e
+
+.example__section
+    color rgba(0,0,0,.5)
+    font 300 14px/1.3 gt_cinetype_mono
+    text-transform uppercase
+
+.example__title
+    font 600 36px/1.3 LLCircular-Book
+
+.example__nav
+    border-left 1px dotted rgba(0,0,0,0.25)
+    padding-left 20px
+    float right
+    a
+        border-bottom 1px solid transparent
+        color darkcyan
+        display block
+        &:hover
+            border-bottom 1px dotted rgba(0,0,0,0.25)
+            color #333
+        + a
+            margin-top 4px
+
+.intro__copy
+    display flex
+    margin 0
+    .intro__blurb
+        padding 0 30px
+        a
+            border-bottom 1px solid rgba(0,0,0,0.25)
+            color $pink
+            &:hover
+                border-bottom-color rgba(255,255,255,0.25)
+                color lighten($pink, 40%)
+
+.intro__videothumb__img
+    display block
+    max-height 80px
+
+.intro__videothumb__link
+    border 2px solid rgba(255,255,255,0.25)
+    display block
+    &:active, &:hover
+        border-color rgba(255,255,255,0.75)
