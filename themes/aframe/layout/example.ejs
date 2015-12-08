@@ -1,6 +1,10 @@
 <%- partial('partials/sidebar_examples', {site: site}) %>
 
 <div class="content content--examples">
-  <h1 class="hidden-visually"><%- page.title %></h1>
-  <%- partial('partials/example/iframe', {item: page}) %>
+  <header class="content--header content--header--index">
+    <h1 class="example__title"><%- page.title %></h1>
+  </header>
+  <div class="content--body">
+    <%- partial('partials/example/iframe', {item: page}) %>
+  </div>
 </div>

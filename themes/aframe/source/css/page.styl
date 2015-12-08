@@ -46,7 +46,9 @@ ul
 .logo__wordmark
     color #fff
     display inline-block
-    font-family LLReplicaMono
+    font-family ApercuBold
+    // font-family LLCircular-Book
+    // font-family LLReplicaMono
     // font-family gt_cinetype_bold
     font-size 64px
     text-transform uppercase
@@ -98,7 +100,7 @@ ul
     display flex
     flex-direction row
     flex-wrap wrap
-    // justify-content space-around
+    margin-bottom 25px
 
 .sidebar__item
     display flex
@@ -112,6 +114,7 @@ ul
     text-transform none
     span
         color rgba(0,0,0,0.75)
+        color #fff
     &:hover span
         background rgba(255,255,255,.5)
         color rgba(0,0,0,0.85)
@@ -273,3 +276,32 @@ ul
     display block
     height 20px
     width 30px
+
+.content
+    display flex
+    flex-direction column
+    justify-content flex-end
+
+.content--header
+    background rgba(100,51,64,0.25)
+    flex 1
+    padding 30px
+
+.content--body
+    flex 1
+    position relative
+
+.example__viewsource
+    background rgba(0,0,0,0.35)
+    color #fff
+    display block
+    font 12px/1.5 gt_cinetype_mono
+    padding 5px 10px
+    position absolute
+    text-transform uppercase
+    top 20px
+    right 20px
+    z-index 2
+    &:active,
+    &:hover
+        background-color #ef2d5e

@@ -222,4 +222,13 @@
     });
   }
 
+  // var viewsourceBtn = $('.example__viewsource');
+  // if (viewsourceBtn) {
+  //   viewsourceBtn.addEventListener('click', function () {
+  //     console.log(viewsourceBtn, viewsourceBtn.parentNode)
+  //     var iframe = viewsourceBtn.parentNode.closest('.example__iframe');
+  //     iframe.setAttribute('src', 'view-source': iframe + iframe.src);
+  //   });
+  // }
+
 })()

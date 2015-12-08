@@ -109,7 +109,8 @@ google_analytics: UA-24056643-4
 aframe_version: 0.0.10
 
 examples:
-  base_url: http://aframevr.github.io/aframe/examples/
+  base_url_: http://aframevr.github.io/aframe/examples/
+  base_url: http://localhost:9000/examples/
   offline_base_url: http://{hostname}:9000/examples/
   first_example_url: examples/showcase/anime-UI/
   homepage_example_url: examples/showcase/spheres-and-fog/
