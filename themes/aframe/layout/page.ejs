@@ -1,8 +1,8 @@
 <% if (page.type) { %>
-  <%- partial('partials/sidebar', { type: page.type, index: page.index }) %>
+  <%- partial('partials/sidebar_generic', { type: page.type, index: page.index }) %>
 <% } %>
 <div class="content content--<%- page.type %> copy">
-  <h1><%- page.title %><%= page.type === 'examples' ? ' Example' : '' %></h1>
+  <h1 class="page__title"><%- page.title %><%= page.type === 'examples' ? ' Example' : '' %></h1>
   <%- page.content %>
   <% if (page.type === 'guide') { %>
     <div class="guide-links">

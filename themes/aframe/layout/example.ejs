@@ -1,7 +1,7 @@
 <%- partial('partials/sidebar_examples', {site: site}) %>
 
 <div class="content content--examples">
-  <header class="content--header content--header--examples copy--example">
+  <header class="content--header content--header--examples">
     <nav class="example__nav">
       <a href="" class="example__mobile">Send to Mobile</a>
       <a href="" class="example__codepen">Fork on CodePen</a>
@@ -15,6 +15,7 @@
     <h1 class="example__title"><%- page.title %></h1>
     <p class="example__description"><%- page.description || 'Some text goes here.' %></p>
   </header>
+
   <div class="content--body">
     <%- partial('partials/example/iframe', {item: page}) %>
   </div>

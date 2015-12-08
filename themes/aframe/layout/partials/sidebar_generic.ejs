@@ -1,0 +1,23 @@
+<aside class="sidebar">
+
+  <%- partial('sidebar_header') %>
+
+  <div class="list">
+    <h2 class="page--heading hidden-visually">
+      <%- type === 'docs' ? 'Docs' : (type.charAt(0).toUpperCase() + type.slice(1)) %>
+      <% if (type === 'docs') { %>
+        <select class="version-select">
+          <option selected>0.1.0</option>
+        </select>
+      <% } %>
+    </h2>
+
+    <ul class="menu-root">
+      <% type !== 'docs' && site.pages.find({type: type}).sort('order').each(function (p) { %>
+        <li class="sidebar__item">
+          <a href="<%- url_for(p.path) %>" class="nav-link sidebar__link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><span class="sidebar__link__text"><%- p.title %></span></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</aside>

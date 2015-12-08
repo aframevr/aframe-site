@@ -7,7 +7,7 @@
     <ul>
     <% site.posts.sort('date', -1).limit(10).each(function (post) { %>
       <li>
-        <a href="<%- url_for(post.path) %>" class="sidebar-link<%- page.title === post.title ? ' current' : '' %>"><%- post.title %></a>
+        <a href="<%- url_for(post.path) %>" class="sidebar__link<%- page.title === post.title ? ' current' : '' %>"><%- post.title %></a>
       </li>
     <% }) %>
     </ul>

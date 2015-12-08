@@ -66,7 +66,7 @@
   });
 
   // build sidebar
-  var currentPageAnchor = menu.querySelector('.sidebar-link.current');
+  var currentPageAnchor = menu.querySelector('.sidebar__link.current');
   var isDocs = $('.content').classList.contains('docs');
   if (currentPageAnchor || isDocs) {
     var allLinks = [];
@@ -99,10 +99,16 @@
 
     var animating = false;
     sectionContainer.addEventListener('click', function (e) {
-      e.preventDefault();
-      if (e.target.classList.contains('section-link')) {
+      var target = e.target;
+      if (target && target.tagName !== 'A') {
+        target = target.closest('a.nav-link');
+      }
+      if (!target) { return; }
+      // TODO: Revert to using smooth scrolling.
+      // e.preventDefault();
+      if (target.classList.contains('section__link')) {
         menu.classList.remove('open');
-        setActive(e.target);
+        setActive(target);
         animating = true;
         setTimeout(function () {
           animating = false;
@@ -114,15 +120,16 @@
     allLinks.forEach(makeLinkClickable);
 
     // Init smooth scroll.
-    smoothScroll.init({
-      speed: 400,
-      offset: window.innerWidth > 720 ? 40 : 58
-    });
+    // smoothScroll.init({
+    //   speed: 400,
+    //   offset: window.innerWidth > 720 ? 40 : 58
+    // });
   }
 
   // Listen for scroll event to do positioning & highlights.
-  window.addEventListener('scroll', updateSidebar);
+  // window.addEventListener('scroll', updateSidebar);
   window.addEventListener('resize', updateSidebar);
+  // window.addEventListener('load', updateSidebar);
 
   function updateSidebar () {
     var top = doc && doc.scrollTop || body.scrollTop;
@@ -144,13 +151,15 @@
 
   function makeLink (h) {
     var li = document.createElement('li');
+    li.className = 'sidebar__item';
     var text = h.textContent.replace(/\(.*\)$/, '');
     // Make sure the ids are linkable.
     h.id = h.id
       .replace(/\(.*\)$/, '')
       .replace(/\$/, '');
-    li.innerHTML = '<a class="section-link" data-scroll href="#' + h.id + '"></a>';
-    li.querySelector('a').textContent = text;
+      console.log('bloah', 'id', h.id);
+    li.innerHTML = '<a class="nav-link sidebar__link section__link" data-scroll href="#' + h.id + '"><span class="sidebar__link__text"></span></a>';
+    li.querySelector('a span').textContent = text;
     return li;
   }
 
@@ -178,8 +187,8 @@
   }
 
   function setActive (id) {
-    var previousActive = menu.querySelector('.section-link.active');
-    var currentActive = typeof id === 'string' ? menu.querySelector('.section-link[href="#' + id + '"]') : id;
+    var previousActive = menu.querySelector('.section__link.active');
+    var currentActive = typeof id === 'string' ? menu.querySelector('.section__link[href="#' + id + '"]') : id;
     if (currentActive !== previousActive) {
       if (previousActive) { previousActive.classList.remove('active'); }
       currentActive.classList.add('active');
@@ -234,60 +243,62 @@
     });
   }
 
-  var backArrow = $('.example__arrow--back');
-  var rightArrow = $('.example__arrow--forward');
-  var navLinks = $$('.examples__list .nav-link');
+  if (body.dataset.pageType === 'examples') {
+    var backArrow = $('.example__arrow--back');
+    var rightArrow = $('.example__arrow--forward');
+    var navLinks = $$('.examples__list .nav-link');
 
-  body.addEventListener('keydown', function (e) {
-    // TODO: Check `activeElement`.
-    var left = e.keyCode === 37;
-    var right = e.keyCode === 39;
-    if (!left && !right) { return; }
-    if (left) {
-      backArrow.classList.add('down');
-    }
-    if (right) {
-      rightArrow.classList.add('down');
-    }
-  });
-
-  body.addEventListener('keyup', function (e) {
-    // TODO: Check `activeElement`.
-    var left = e.keyCode === 37;
-    var right = e.keyCode === 39;
-    if (!left && !right) { return; }
-
-    var currentIdx = -1;
-    navLinks.forEach(function (navLink, idx) {
-      if (navLink.classList.contains('current')) {
-        currentIdx = idx;
+    body.addEventListener('keydown', function (e) {
+      // TODO: Check `activeElement`.
+      var left = e.keyCode === 37;
+      var right = e.keyCode === 39;
+      if (!left && !right) { return; }
+      if (left) {
+        backArrow.classList.add('down');
+      }
+      if (right) {
+        rightArrow.classList.add('down');
       }
     });
-    var currentLink = navLinks[currentIdx];
-    if (!currentLink) { return; }
-    currentLink.classList.remove('current');
 
-    var nextIndex;
-    if (left) {
-      backArrow.classList.remove('down');
-      nextIndex = currentIdx - 1;
-    }
-    if (right) {
-      rightArrow.classList.remove('down');
-      nextIndex = currentIdx + 1;
-    }
+    body.addEventListener('keyup', function (e) {
+      // TODO: Check `activeElement`.
+      var left = e.keyCode === 37;
+      var right = e.keyCode === 39;
+      if (!left && !right) { return; }
 
-    if (nextIndex <= 0) {
-      nextIndex = navLinks.length;
-    }
-    if (nextIndex > navLinks.length) {
-      nextIndex = 0;
-    }
+      var currentIdx = -1;
+      navLinks.forEach(function (navLink, idx) {
+        if (navLink.classList.contains('current')) {
+          currentIdx = idx;
+        }
+      });
+      var currentLink = navLinks[currentIdx];
+      if (!currentLink) { return; }
+      currentLink.classList.remove('current');
 
-    var nextLink = navLinks[nextIndex];
-    if (nextLink) {
-      nextLink.click();
-    }
-  });
+      var nextIndex;
+      if (left) {
+        backArrow.classList.remove('down');
+        nextIndex = currentIdx - 1;
+      }
+      if (right) {
+        rightArrow.classList.remove('down');
+        nextIndex = currentIdx + 1;
+      }
 
-})()
+      if (nextIndex <= 0) {
+        nextIndex = navLinks.length;
+      }
+      if (nextIndex > navLinks.length) {
+        nextIndex = 0;
+      }
+
+      var nextLink = navLinks[nextIndex];
+      if (nextLink) {
+        nextLink.click();
+      }
+    });
+  }
+
+})();

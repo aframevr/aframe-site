@@ -5,7 +5,6 @@ hexo.extend.generator.register('post', function (locals) {
   if (!locals.data.examples) { return; }
   var routes = [];
   function addRoute (path, data, layout) {
-    console.log('path', path);
     routes.push({
       path: path,
       data: data,
@@ -34,6 +33,5 @@ hexo.extend.generator.register('post', function (locals) {
   hexo.locals.set('examples_by_urls', function () {
     return examples;
   });
-  console.log(examples);
   return routes;
 });
