@@ -1,6 +1,92 @@
 @import "_settings"
 @import "_syntax"
 
+@font-face {
+    font-family: 'ApercuRegular';
+    src: url('../fonts/apercuregular.eot');
+    src: url('../fonts/apercuregular.eot') format('embedded-opentype'),
+    url('../fonts/apercuregular.woff') format('woff'),
+    url('../fonts/apercuregular.ttf') format('truetype'),
+    url('../fonts/apercuregular.svg#ApercuRegular') format('svg');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ApercuBold';
+    src: url('../fonts/apercubold.eot');
+    src: url('../fonts/apercubold.eot') format('embedded-opentype'),
+    url('../fonts/apercubold.woff') format('woff'),
+    url('../fonts/apercubold.ttf') format('truetype'),
+    url('../fonts/apercubold.svg#ApercuBold') format('svg');
+    font-weight: normal;
+}
+
+@font-face{font-family:"LLCircular-Book";src:url("../fonts/Circular.eot");src:url("../fonts/Circular.eot?#iefix") format("embedded-opentype"),url("../fonts/Circular.woff") format("woff"),url("../fonts/Circular.ttf") format("truetype"),url("../fonts/Circular.svg#LLCircularWeb-Book") format("svg");font-weight:normal;font-style:normal;}@font-face{font-family:"LLReplicaMono";src:url("../fonts/Replica-Mono.eot");src:url("../fonts/Replica-Mono.eot?#iefix") format("embedded-opentype"),url("../fonts/Replica-Mono.woff") format("woff"),url("../fonts/Replica-Mono.ttf") format("truetype"),url("../fonts/Replica-Mono.svg#LLReplicaMonoWeb-Regular") format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {
+    font-family: 'gt_cinetype_bold';
+    src: url('../fonts/gt-cinetype-trial-bold-webfont.eot');
+    src: url('../fonts/gt-cinetype-trial-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-cinetype-trial-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gt-cinetype-trial-bold-webfont.woff') format('woff'),
+         url('../fonts/gt-cinetype-trial-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gt-cinetype-trial-bold-webfont.svg#gt_cinetype_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gt_cinetype_light';
+    src: url('../fonts/gt-cinetype-trial-light-webfont.eot');
+    src: url('../fonts/gt-cinetype-trial-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-cinetype-trial-light-webfont.woff2') format('woff2'),
+         url('../fonts/gt-cinetype-trial-light-webfont.woff') format('woff'),
+         url('../fonts/gt-cinetype-trial-light-webfont.ttf') format('truetype'),
+         url('../fonts/gt-cinetype-trial-light-webfont.svg#gt_cinetype_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gt_cinetype_mono';
+    src: url('../fonts/gt-cinetype-trial-mono-webfont.eot');
+    src: url('../fonts/gt-cinetype-trial-mono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-cinetype-trial-mono-webfont.woff2') format('woff2'),
+         url('../fonts/gt-cinetype-trial-mono-webfont.woff') format('woff'),
+         url('../fonts/gt-cinetype-trial-mono-webfont.ttf') format('truetype'),
+         url('../fonts/gt-cinetype-trial-mono-webfont.svg#gt_cinetype_mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gt_cinetype__regularRg';
+    src: url('../fonts/gt-cinetype-trial-regular-webfont.eot');
+    src: url('../fonts/gt-cinetype-trial-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-cinetype-trial-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gt-cinetype-trial-regular-webfont.woff') format('woff'),
+         url('../fonts/gt-cinetype-trial-regular-webfont.ttf') format('truetype'),
+         url('../fonts/gt-cinetype-trial-regular-webfont.svg#gt_cinetype__regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+
 html, body
     height 100%
 
@@ -10,7 +96,6 @@ body
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
     color $medium
-    margin 0
 
 a
     text-decoration none

@@ -4,11 +4,11 @@ hexo.extend.generator.register('post', function (locals) {
   var self = this;
   if (!locals.data.examples) { return; }
   var routes = [];
-  function addRoute (path, data) {
+  function addRoute (path, data, layout) {
     routes.push({
       path: path,
       data: data,
-      layout: 'example'
+      layout: layout
     });
   }
   var examples = {};
@@ -23,10 +23,10 @@ hexo.extend.generator.register('post', function (locals) {
       examples[permalink] = example;
       if (!self.config.examples) { return; }
       if (permalink === self.config.examples.first_example_url) {
-        addRoute('examples/', example);
+        addRoute('examples/', example, 'example');
       }
       if (permalink === self.config.examples.homepage_example_url) {
-        addRoute('/', example);
+        addRoute('/', example, 'index');
       }
     });
   });
