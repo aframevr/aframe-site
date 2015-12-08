@@ -11,8 +11,8 @@ ul
 
 .nav
     border-bottom 1px dashed rgba(0,0,0,0.1)
-    margin-bottom 10px
-    padding 10px 0
+    margin-bottom 20px
+    padding 10px 0 20px
 
 .nav-item
     font-family gt_cinetype_mono
@@ -23,8 +23,9 @@ ul
     display block
     padding-bottom 4px
     text-transform uppercase
+    width 100%
     span
-        border 3px solid transparent
+        // border 3px solid transparent
         color rgba(0,0,0,0.35)
         display inline-block
         margin -2px -4px
@@ -41,13 +42,12 @@ ul
     &.current span
         background rgba(0,0,0,.75)
         color #fff
-        font-weight 600
 
 .logo__wordmark
     color #fff
     display inline-block
-    // font-family ApercuRegular
-    font-family gt_cinetype_bold
+    font-family LLReplicaMono
+    // font-family gt_cinetype_bold
     font-size 64px
     text-transform uppercase
 
@@ -94,21 +94,35 @@ ul
     .menu-sub
         font-size .85em
 
-.sidebar-link
-    color #fff
-    border-bottom 2px solid transparent
-    display block
-    &:hover
-        .sidebar-link-text
-            border-bottom 2px solid rgba(0,0,0,0.25)
+.sidebar__list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    // justify-content space-around
+
+.sidebar__item
+    display flex
+    flex: 0 0 33.333%
+
+.sidebar__link
+    // border-bottom 2px solid transparent
+    font-size 14px
+    // font-weight 600
+    text-transform none
+    span
+        color rgba(0,0,0,0.75)
     &.current
-        color #333
+        background rgba(0,0,0,.75)
+        color #fff
         font-weight 600
-        .sidebar-link-text
-            background-color rgba(255,255,255,0.25)
-        &:hover
-            .sidebar-link-text
-                border-bottom-color transparent
+
+        // color #333
+        // font-weight 600
+        // .sidebar__link__text
+        //     background-color rgba(0,0,0,0.25)
+        // &:hover
+        //     .sidebar__link__text
+        //         border-bottom-color transparent
     &.new
         &:after
             content "NEW"
@@ -124,7 +138,6 @@ ul
             vertical-align middle
             position relative
             top -1px
-
 
 .section-link
     &.active
@@ -258,8 +271,13 @@ ul
 
 .section__title
     color rgba(0,0,0,0.35)
-    font-family gt_cinetype_mono
     line-height 1.2
-    margin 0
-ul + .section__title
-    margin-top 20px
+    font-weight normal
+    margin 20px 0 5px
+
+.sidebar__list + .section__title:before
+    border-top 1px solid rgba(255,255,255,0.25)
+    content ""
+    display block
+    height 20px
+    width 30px

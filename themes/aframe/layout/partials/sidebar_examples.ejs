@@ -15,10 +15,10 @@
       <% Object.keys(site.data.examples).forEach(function (sectionSlug) { %>
         <% var section = site.data.examples[sectionSlug] %>
         <h3 class="section__title"><%- section.title %></h3>
-        <ul>
+        <ul class="sidebar__list">
           <% if (section.examples) { %>
             <% section.examples.forEach(function (example) { %>
-              <a href="<%- url_for(example.url) %>" class="sidebar-link<%- page.section === example.section && page.slug === example.slug ? ' current' : '' %><%- example.is_new ? ' new' : '' %>"><span class="sidebar-link-text"><%- example.title %></span></a>
+              <li class="sidebar__item"><a href="<%- url_for(example.url) %>" class="nav-link sidebar__link<%- page.section === example.section && page.slug === example.slug ? ' current' : '' %><%- example.is_new ? ' new' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
             <% }) %>
           <% } %>
         </ul>
