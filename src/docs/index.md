@@ -1,6 +1,7 @@
 ---
 type: docs
-title: Îocs
+title: Docs
+layout: page
 ---
 
 A-Frame ships with a bunch of cool elements.
@@ -49,7 +50,7 @@ Same as above but with only desktop mouse-look controls (useful for simple point
 
 Cubes are simply 3D objects with a box primitive.
 
-[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cube.html)
 
 ### Attributes
 
@@ -65,11 +66,6 @@ Cubes are simply 3D objects with a box primitive.
 | `metalness`     | metalness           | float   | `0.0`         | factor (`0.0` - `1.0`) | no       |
 | `roughness`     | roughness           | float   | `0.5`         | factor (`0.0` - `1.0`) | no       |
 | `src`           | URL to image        | string  |               | absolute/relative URL  | no       |
-
-### Template Definition
-
-
-[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cube.html)
 
 ### Examples
 
@@ -94,6 +90,9 @@ Let's get fancy and create a textured cube with a small blue cube inside it:
 
 Cylinders are simply 3D objects with a cylinder primitive.
 
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
+
+
 ### Attributes
 
 | Attribute Name    | Description         | Type    | Default Value | Units                  | Required |
@@ -114,12 +113,6 @@ Cylinders are simply 3D objects with a cylinder primitive.
 | `metalness`       | metalness           | float   | `0.0`         | factor (`0.0` - `1.0`) | no       |
 | `roughness`       | roughness           | float   | `0.5`         | factor (`0.0` - `1.0`) | no       |
 | `src`             | URL to image        | string  |               | absolute/relative URL  | no       |
-
-
-### Template Definition
-
-
-[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
 
 ### Examples
 
@@ -149,6 +142,8 @@ Let's get fancy and create some cool cylinders:
 
 An image is a transparent plane with an image texture.
 
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-image.html)
+
 ### Attributes
 
 | Attribute Name  | Description         | Type    | Default Value | Units                  | Required |
@@ -157,26 +152,6 @@ An image is a transparent plane with an image texture.
 | `height`        | height              | float   | `2`           | meters                 | no       |
 | `opacity`       | opacity             | float   | `1.0`         | factor (`0.0` - `1.0`) | no       |
 | `src`           | URL to image        | string  |               | absolute/relative URL  | __yes__  |
-
-### Template Definition
-
-```html
-<template is="a-template"
-          element="a-image"
-          width="2"
-          height="2"
-          opacity="1.0"
-          src="">
-  <a-object geometry="primitive: plane;
-                      width: ${width};
-                      height: ${height}"
-            material="receiveLight: false;
-                      src: url(${src});
-                      opacity: ${opacity};
-                      transparent: true">
-  </a-object>
-</template>
-```
 
 ### Examples
 
@@ -197,12 +172,11 @@ You can also create an image from an `<img>` in the document:
 </a-scene>
 ```
 
-[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-image.html)
-
-
 ## `<a-model>`
 
 A model is an 3D model object (`.obj`) or Collada model object (`.dae`).
+
+[View on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-model.html)
 
 ### Attributes
 
@@ -211,21 +185,6 @@ A model is an 3D model object (`.obj`) or Collada model object (`.dae`).
 | `opacity`       | opacity             | float   | `1.0`         | factor (`0.0` - `1.0`)      | no       |
 | `format`        | format of model     | string  | `collada`     | format (`obj` or `collada`) | no       |
 | `src`           | URL to model        | string  |               | absolute/relative URL       | __yes__  |
-
-### Template Definition
-
-```html
-<template is="a-template"
-          element="a-model"
-          opacity="1.0"
-          src=""
-          format="collada">
-  <a-object material="opacity: ${opacity}"
-            loader="src: url(${src}); format: ${format}">
-  </a-object>
-</template>
-
-```
 
 ### Examples
 
@@ -254,33 +213,6 @@ Plainly put, a plane is a flat, two-dimensional surface.
 | `roughness`     | roughness           | float   | `0.5`         | factor (`0.0` - `1.0`) | no       |
 | `src`           | URL to image        | string  |               | absolute/relative URL  | no       |
 
-### Template Definition
-
-```html
-<template is="a-template"
-          element="a-plane"
-          width="1"
-          height="1"
-          color="gray"
-          opacity="1.0"
-          receive-light="true"
-          transparent="true"
-          metalness="0.0"
-          roughness="0.5"
-          src="">
-  <a-object geometry="primitive: plane;
-                      height: ${height};
-                      width: ${width}"
-            material="color: ${color};
-                      opacity: ${opacity};
-                      receiveLight: ${receive-light};
-                      transparent: ${transparent};
-                      metalness: ${metalness};
-                      roughness: ${roughness};
-                      src: url(${src})"></a-object>
-</template>
-```
-
 ### Examples
 
 To create a simple green plane:
@@ -288,7 +220,6 @@ To create a simple green plane:
 ```html
 <vr-plane rotation="0 -45 10" height="10" color="green"></vr-plane>
 ```
-
 
 ## `<a-sky>`
 ## `<a-sphere>`

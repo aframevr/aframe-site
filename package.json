@@ -27,6 +27,7 @@
     "generate": "hexo generate",
     "deploy": "hexo clean && hexo deploy",
     "clean": "hexo clean",
-    "update": "node update.js"
+    "update": "node update.js",
+    "syncdocs": "mkdir -p src/docs/core && touch src/docs/core/index.md && cp -r ../aframe-core/docs/ src/docs/core"
   }
 }

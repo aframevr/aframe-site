@@ -1,5 +1,5 @@
 <% if (page.type) { %>
-  <%- partial('partials/sidebar_generic', { type: page.type, index: page.index }) %>
+  <%- partial('partials/sidebar_generic', {type: page.type, index: page.index, sidebar_layout: page.sidebar_layout}) %>
 <% } %>
 <div class="content content--<%- page.type %> copy">
   <div class="copy__wrap">

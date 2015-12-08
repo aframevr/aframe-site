@@ -12,8 +12,8 @@
       <% } %>
     </h2>
 
-    <ul class="menu-root">
-      <% type !== 'docs' && site.pages.find({type: type}).sort('order').each(function (p) { %>
+    <ul class="menu-root menu__generic">
+      <% site.pages.find({type: type}).sort('order').each(function (p) { %>
         <li class="sidebar__item">
           <a href="<%- url_for(p.path) %>" class="nav-link sidebar__link<%- page.title === p.title ? ' current' : '' %><%- p.is_new ? ' new' : '' %>"><span class="sidebar__link__text"><%- p.title %></span></a>
         </li>

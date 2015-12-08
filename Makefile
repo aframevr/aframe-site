@@ -1,4 +1,4 @@
-all: update deploy
+all: update deploy syncdocs
 
 deploy:
 	rm db.json
@@ -13,3 +13,6 @@ update:
 		git checkout dist/ && \
 	cp ../aframe/dist/aframe* themes/aframe/source/js/.
 	npm run update
+
+syncdocs:
+	npm run syncdocs

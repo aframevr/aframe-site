@@ -2,6 +2,7 @@
 title: FAQ
 type: faq
 layout: page
+sidebar_layout: flat
 ---
 
 ## What is A-Frame?

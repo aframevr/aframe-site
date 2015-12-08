@@ -2,6 +2,7 @@
 title: Community
 type: community
 layout: page
+sidebar_layout: flat
 ---
 
 ## GitHub

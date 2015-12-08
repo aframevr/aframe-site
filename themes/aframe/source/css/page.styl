@@ -33,21 +33,29 @@ ul
         transition 0.1s background ease-in, 0.1s color ease-in
     &:hover span
         background rgba(255,255,255,.5)
-        // border-color white
-        // border-color rgba(0,0,0,0.5)
+        border-color rgba(0,0,0,0.5)
         color rgba(0,0,0,0.5)
     &:active span
         background rgba(0,0,0,0.25)
         color rgba(0,0,0,0.75)
     &.current span,
-    &.active span
-        background rgba(0,0,0,.75)
+    &.active span,
+    &.current:hover span,
+    &.active:hover span
+        background rgba(0,0,0,0.75)
         color #fff
+
+.menu__generic > .sidebar__item > .nav-link
+    &.current,
+    &.active
+        span
+            font-weight 600
 
 .logo__wordmark
     color #fff
     display inline-block
     font-family ApercuBold
+    position absolute
     // font-family LLCircular-Book
     // font-family LLReplicaMono
     // font-family gt_cinetype_bold
@@ -98,15 +106,22 @@ ul
         font-size .85em
 
 .sidebar__list
-    display flex
-    flex-direction row
-    flex-wrap wrap
     margin-bottom 25px
 
 .sidebar__item
+    padding-top 4px
+
+.menu__generic ul
+    padding 0 20px
+
+.examples__list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+
+.examples__list .sidebar__item
     display flex
     flex 0 0 33.333%
-    padding-top 4px
 
 .sidebar__link
     // border-bottom 2px solid transparent
@@ -255,7 +270,7 @@ ul
     text-transform uppercase
     top 30px
     left 30px
-    z-index 2
+    z-index 10
     width 450px
 
 .example__iframe
@@ -409,8 +424,7 @@ ul
     position relative
     top -1px
 
-[data-page-layout="page"] .menu-root > li > a,
-[data-page-layout="blog"] .menu-root > li > a
+[data-sidebar-layout="flat"] .menu-root > li > a
     display none
 
 .footer

@@ -157,7 +157,6 @@
     h.id = h.id
       .replace(/\(.*\)$/, '')
       .replace(/\$/, '');
-      console.log('bloah', 'id', h.id);
     li.innerHTML = '<a class="nav-link sidebar__link section__link" data-scroll href="#' + h.id + '"><span class="sidebar__link__text"></span></a>';
     li.querySelector('a span').textContent = text;
     return li;
