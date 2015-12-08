@@ -4,8 +4,12 @@
   <header class="content--header content--header--examples">
     <nav class="example__nav">
       <a href="" class="example__mobile">Send to Mobile</a>
-      <a href="" class="example__codepen">Fork on CodePen</a>
-      <a href="<%- github_file_url('examples/' + page.path) %>" class="example__github">View on GitHub</a>
+      <% if (page.codepen_url) { %>
+        <a href="<%- page.codepen_url %>" class="example__codepen">Fork on CodePen</a>
+      <% } %>
+      <% if (!page.is_external || page.github_url) { %>
+        <a href="<%- page.github_url || github_file_url('examples/' + page.path) %>" class="example__github">View on GitHub</a>
+      <% } %>
     </nav>
     <div class="example__toggle">
       <a href="#" class="example__arrow example__arrow--back"><span class="hidden-visually">Back</span></a>
