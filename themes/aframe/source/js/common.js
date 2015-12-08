@@ -222,13 +222,16 @@
     });
   }
 
-  // var viewsourceBtn = $('.example__viewsource');
-  // if (viewsourceBtn) {
-  //   viewsourceBtn.addEventListener('click', function () {
-  //     console.log(viewsourceBtn, viewsourceBtn.parentNode)
-  //     var iframe = viewsourceBtn.parentNode.closest('.example__iframe');
-  //     iframe.setAttribute('src', 'view-source': iframe + iframe.src);
-  //   });
-  // }
+  var viewsourceBtn = $('.example__viewsource');
+  if (viewsourceBtn) {
+    viewsourceBtn.addEventListener('click', function () {
+      var iframe = viewsourceBtn.closest('.content--body').querySelector('.example__iframe');
+      if (iframe) {
+        if (iframe.getAttribute('data-orig-src')) { return; }
+        iframe.setAttribute('data-orig-src', iframe.src);
+        iframe.setAttribute('src', 'view-source:' + iframe.src);
+      }
+    });
+  }
 
 })()
