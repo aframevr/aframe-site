@@ -31,7 +31,7 @@ ul
         margin -2px -4px
         padding 2px 4px
         transition 0.1s background ease-in, 0.1s color ease-in
-    &:hover span, &.current span
+    &:hover span
         background rgba(255,255,255,.5)
         // border-color white
         // border-color rgba(0,0,0,0.5)
@@ -102,7 +102,8 @@ ul
 
 .sidebar__item
     display flex
-    flex: 0 0 33.333%
+    flex 0 0 33.333%
+    padding-top 4px
 
 .sidebar__link
     // border-bottom 2px solid transparent
@@ -111,18 +112,9 @@ ul
     text-transform none
     span
         color rgba(0,0,0,0.75)
-    &.current
-        background rgba(0,0,0,.75)
-        color #fff
-        font-weight 600
-
-        // color #333
-        // font-weight 600
-        // .sidebar__link__text
-        //     background-color rgba(0,0,0,0.25)
-        // &:hover
-        //     .sidebar__link__text
-        //         border-bottom-color transparent
+    &:hover span
+        background rgba(255,255,255,.5)
+        color rgba(0,0,0,0.85)
     &.new
         &:after
             content "NEW"
