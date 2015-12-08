@@ -20,7 +20,7 @@ hexo.extend.generator.register('post', function (locals) {
       example.type = 'examples';
       example.section = sectionSlug;
       example.url = permalink;
-      addRoute(permalink, example);
+      addRoute(permalink, example, 'example');
       examples[permalink] = example;
       if (!self.config.examples) { return; }
       if (permalink === self.config.examples.first_example_url) {
