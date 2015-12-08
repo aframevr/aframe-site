@@ -195,26 +195,30 @@
   }
 
   // version select
-  $('.version-select').addEventListener('change', function (e) {
-    var version = e.target.value;
-    if (version.indexOf('1.') !== 0) {
-      version = version.replace('.', '');
-      var section = window.location.pathname.match(/\/(\w+?)\//)[1];
-      window.location.assign('http://' + version + '.aframe.io/' + section + '/');
-    } else {
-      // TODO when 1.x is out
-    }
-  });
+  var versionSelect = $('.version-select');
+  if (versionSelect) {
+    versionSelect.addEventListener('change', function (e) {
+      var version = e.target.value;
+      if (version.indexOf('1.') !== 0) {
+        version = version.replace('.', '');
+        var section = window.location.pathname.match(/\/(\w+?)\//)[1];
+        window.location.assign('http://' + version + '.aframe.io/' + section + '/');
+      } else {
+        // TODO when 1.x is out
+      }
+    });
+  }
 
   if (!navigator.onLine) {
     // When you're on the airplane and Gogo Inflight Internet or Bongo Wireless
     // have got you down, we load the examples from our local
     // `aframe` and `aframe-core` dev servers.
-    $$('iframe[src*="//aframe.github.io/aframe/"]').forEach(function (iframe) {
-      iframe.src = iframe.setAttribute('src', iframe.src.replace('//aframe.github.io/aframe/', '//' + window.location.hostname + ':9000/'));
-    });
-    $$('iframe[src*="//aframe.github.io/aframe-core/"]').forEach(function (iframe) {
-      iframe.src = iframe.setAttribute('src', iframe.src.replace('//aframe.github.io/aframe-core/', '//' + window.location.hostname + ':9001/'));
+    var baseUrl = document.body.dataset.examplesBaseUrl.replace(/^https?:/, '');
+    var offlineBaseUrl = document.body.dataset.examplesOfflineBaseUrl.replace(/^https?:/, '');
+    offlineBaseUrl = offlineBaseUrl.replace('{hostname}', window.location.hostname);
+    $$('iframe[src*="' + baseUrl + '"]').forEach(function (iframe) {
+      var newSrc = iframe.src.replace(baseUrl, offlineBaseUrl);
+      iframe.setAttribute('src', newSrc);
     });
   }
 

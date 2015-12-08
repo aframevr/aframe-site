@@ -14,7 +14,7 @@
     <%- css('css/page') %>
     <%- partial('partials/ga') %>
   </head>
-  <body data-page-type="<%- page.type %>" data-is-home="<%- isHome %>">
+  <body data-page-type="<%- page.type %>" data-is-home="<%- isHome %>" data-examples-base-url="<%- config.examples.base_url %>" data-examples-offline-base-url="<%- config.examples.offline_base_url %>">
     <div id="mobile-bar" class="mobile-bar">
       <a class="menu-button"></a>
       <a class="logo" href="<%- url_for('/') %>"></a>
