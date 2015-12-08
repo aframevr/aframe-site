@@ -361,3 +361,35 @@ ul
     display block
     &:active, &:hover
         border-color rgba(255,255,255,0.75)
+
+.example__toggle
+    float right
+    margin-right 20px
+
+.example__arrow
+    border 2px solid rgba(0,0,0,0.15)
+    color rgba(0,0,0,0.15)
+    display inline-block
+    font 12px/1 monospace
+    padding 2px
+    // transform rotate(-90deg)
+    transition 0.1s border-color, 0.1s color
+    &:hover
+        border-color rgba(0,0,0,0.5)
+        color rgba(0,0,0,0.5)
+    &.down
+        border-color rgba(0,0,0,0.75)
+        color rgba(0,0,0,0.75)
+
+.example__arrow--back:before
+    content "◀"
+    display inline-block
+    padding 2px 4px 2px 2px
+
+.example__arrow--forward:before
+    content "◀"
+    display inline-block
+    transform rotate(180deg)
+    padding 2px 4px 2px 2px
+    position relative
+    top -1px

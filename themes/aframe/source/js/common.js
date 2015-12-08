@@ -234,4 +234,60 @@
     });
   }
 
+  var backArrow = $('.example__arrow--back');
+  var rightArrow = $('.example__arrow--forward');
+  var navLinks = $$('.examples__list .nav-link');
+
+  body.addEventListener('keydown', function (e) {
+    // TODO: Check `activeElement`.
+    var left = e.keyCode === 37;
+    var right = e.keyCode === 39;
+    if (!left && !right) { return; }
+    if (left) {
+      backArrow.classList.add('down');
+    }
+    if (right) {
+      rightArrow.classList.add('down');
+    }
+  });
+
+  body.addEventListener('keyup', function (e) {
+    // TODO: Check `activeElement`.
+    var left = e.keyCode === 37;
+    var right = e.keyCode === 39;
+    if (!left && !right) { return; }
+
+    var currentIdx = -1;
+    navLinks.forEach(function (navLink, idx) {
+      if (navLink.classList.contains('current')) {
+        currentIdx = idx;
+      }
+    });
+    var currentLink = navLinks[currentIdx];
+    if (!currentLink) { return; }
+    currentLink.classList.remove('current');
+
+    var nextIndex;
+    if (left) {
+      backArrow.classList.remove('down');
+      nextIndex = currentIdx - 1;
+    }
+    if (right) {
+      rightArrow.classList.remove('down');
+      nextIndex = currentIdx + 1;
+    }
+
+    if (nextIndex <= 0) {
+      nextIndex = navLinks.length;
+    }
+    if (nextIndex > navLinks.length) {
+      nextIndex = 0;
+    }
+
+    var nextLink = navLinks[nextIndex];
+    if (nextLink) {
+      nextLink.click();
+    }
+  });
+
 })()

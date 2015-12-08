@@ -15,7 +15,7 @@
       <% Object.keys(site.data.examples).forEach(function (sectionSlug) { %>
         <% var section = site.data.examples[sectionSlug] %>
         <h3 class="section__title"><%- section.title %></h3>
-        <ul class="sidebar__list">
+        <ul class="sidebar__list examples__list">
           <% if (section.examples) { %>
             <% section.examples.forEach(function (example) { %>
               <li class="sidebar__item"><a href="<%- url_for(example.url) %>" class="nav-link sidebar__link<%- page.section === example.section && page.slug === example.slug ? ' current' : '' %><%- example.is_new ? ' new' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>

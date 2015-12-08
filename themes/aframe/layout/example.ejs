@@ -7,6 +7,10 @@
       <a href="" class="example__codepen">Fork on CodePen</a>
       <a href="<%- github_file_url('examples/' + page.path) %>" class="example__github">View on GitHub</a>
     </nav>
+    <div class="example__toggle">
+      <a href="#" class="example__arrow example__arrow--back"><span class="hidden-visually">Back</span></a>
+      <a href="#" class="example__arrow example__arrow--forward"><span class="hidden-visually">Forward</span></a>
+    </div>
     <p class="example__section"><%- page.section %></p>
     <h1 class="example__title"><%- page.title %></h1>
     <p class="example__description"><%- page.description || 'Some text goes here.' %></p>
