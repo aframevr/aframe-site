@@ -30,6 +30,8 @@ ul
         display inline-block
         margin -2px -4px
         padding 2px 4px
+        text-indent: -10px
+        padding-left 14px
         transition 0.1s background ease-in, 0.1s color ease-in
     &:hover span
         background rgba(255,255,255,.5)
@@ -110,7 +112,7 @@ ul
 .sidebar__item
     padding-top 4px
 
-.menu__generic ul
+body:not([data-sidebar-layout=flat]) .menu__generic ul
     padding 0 20px
 
 .examples__list
