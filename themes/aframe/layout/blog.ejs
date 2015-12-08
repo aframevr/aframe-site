@@ -1,0 +1,20 @@
+<% if (page.type) { %>
+  <%- partial('partials/sidebar_generic', { type: page.type, index: page.index }) %>
+<% } %>
+<div class="content content--<%- page.type %> copy">
+  <div class="copy__wrap">
+    <h1 class="page__title"><%- config.blog_title %></h1>
+    <%- page.content %>
+    <% site.posts.sort('date', -1).each(function (post) { %>
+      <div class="post">
+        <h2><a href="<%- url_for(post.path) %>"><%- post.title %></a></h2>
+        <h4><%- post.date.format('MMM D[,] YYYY') %></h4>
+        <div class="post__excerpt"><%- post.excerpt %></div>
+        <a href="<%- url_for(post.path) %>" class="post__more">Read more &hellip;</a>
+      </div>
+    <% }) %>
+    <footer class="footer">
+      Caught a mistake or comment on our blog? <a href="https://twitter.com/aframevr/" target="_blank">Tweet at us</a>!
+    </footer>
+  </div>
+</div>

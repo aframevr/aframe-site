@@ -129,7 +129,7 @@
   // Listen for scroll event to do positioning & highlights.
   // window.addEventListener('scroll', updateSidebar);
   window.addEventListener('resize', updateSidebar);
-  // window.addEventListener('load', updateSidebar);
+  window.addEventListener('load', updateSidebar);
 
   function updateSidebar () {
     var top = doc && doc.scrollTop || body.scrollTop;

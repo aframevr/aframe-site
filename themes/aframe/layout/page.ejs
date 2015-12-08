@@ -2,19 +2,21 @@
   <%- partial('partials/sidebar_generic', { type: page.type, index: page.index }) %>
 <% } %>
 <div class="content content--<%- page.type %> copy">
-  <h1 class="page__title"><%- page.title %><%= page.type === 'examples' ? ' Example' : '' %></h1>
-  <%- page.content %>
-  <% if (page.type === 'guide') { %>
-    <div class="guide-links">
-      <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-        <span>← <a href="<%- url_for(page.path) %>"><%= page.title %></a></span>
-      <% }) %>
-      <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-        <span class="float-right"><a href="<%- url_for(page.path) %>"><%= page.title %></a> →</span>
-      <% }) %>
-    </div>
-  <% } %>
-  <footer class="footer">
-    Caught a mistake or want to contribute to the documentation? <a href="https://github.com/aframevr/aframe/" target="_blank">Fork this site on GitHub</a>!
-  </footer>
+  <div class="copy__wrap">
+    <h1 class="page__title"><%- page.title %><%= page.type === 'examples' ? ' Example' : '' %></h1>
+    <%- page.content %>
+    <% if (page.type === 'guide') { %>
+      <div class="guide-links">
+        <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
+          <span>← <a href="<%- url_for(page.path) %>"><%= page.title %></a></span>
+        <% }) %>
+        <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
+          <span class="float-right"><a href="<%- url_for(page.path) %>"><%= page.title %></a> →</span>
+        <% }) %>
+      </div>
+    <% } %>
+    <footer class="footer">
+      Caught a mistake or want to contribute to the documentation? <a href="https://github.com/aframevr/aframe/" target="_blank">Fork this site on GitHub</a>!
+    </footer>
+  </div>
 </div>

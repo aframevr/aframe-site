@@ -20,11 +20,7 @@
       <a class="logo" href="<%- url_for('/') %>"></a>
     </div>
     <main id="main" class="main">
-      <% if (page.blog_index) { %>
-        <%- partial('partials/blog') %>
-      <% } else { %>
-        <%- body %>
-      <% } %>
+      <%- body %>
     </main>
     <%- js('js/smooth-scroll.min.js') %>
     <%- js('js/common.js') %>

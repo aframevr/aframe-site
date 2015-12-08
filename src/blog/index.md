@@ -1,3 +1,5 @@
 ---
-blog_index: true
+title: Blog
+type: blog
+layout: blog
 ---
