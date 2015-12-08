@@ -3,6 +3,7 @@ var utils = require('../lib/utils');
 hexo.extend.generator.register('post', function (locals) {
   var self = this;
   if (!locals.data.examples) { return; }
+
   var routes = [];
   function addRoute (path, data, layout) {
     routes.push({
@@ -11,9 +12,16 @@ hexo.extend.generator.register('post', function (locals) {
       layout: layout
     });
   }
+
   var examples = {};
+  var examplesRedirect = utils.createRedirectResponse(hexo, 'examples/');
+
   Object.keys(locals.data.examples).map(function (sectionSlug) {
     var section = locals.data.examples[sectionSlug];
+
+    // TODO: Eventually build out separate pages for each category in Examples.
+    addRoute('examples/' + sectionSlug + '/', examplesRedirect);
+
     section.examples.forEach(function (example) {
       var permalink = utils.urljoin('examples', sectionSlug, example.slug, '/');
       example.type = 'examples';
