@@ -146,6 +146,12 @@ ul
 
 .copy
     padding 30px
+    a
+        border-bottom 1px solid rgba(53,196,232,0.25)
+        color hsl(192, 80%, 40%);
+        &:hover
+            border-bottom-color rgba(53,196,232,0.75)
+            color hsl(192, 80%, 56%);
     a.button
         font-size .9em
         color #fff
@@ -403,8 +409,8 @@ ul
     position relative
     top -1px
 
-[data-page-type="faq"] .menu-root > li > a,
-[data-page-type="blog"] .menu-root > li > a
+[data-page-layout="page"] .menu-root > li > a,
+[data-page-layout="blog"] .menu-root > li > a
     display none
 
 .footer

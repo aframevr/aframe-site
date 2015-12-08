@@ -101,6 +101,7 @@ deploy:
 
 disqus_shortname:
 twitter: aframevr
+twitter_url: https://twitter.com/aframevr/
 github: aframevr/aframe
 github_user: aframevr
 github_repo: aframe
