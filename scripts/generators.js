@@ -24,7 +24,7 @@ hexo.extend.generator.register('post', function (locals) {
       examples[permalink] = example;
       if (!self.config.examples) { return; }
       if (permalink === self.config.examples.first_example_url) {
-        addRoute('examples/', example, 'index');
+        addRoute('examples/', example, 'example');
       }
       if (permalink === self.config.examples.homepage_example_url) {
         addRoute('/', example, 'index');
