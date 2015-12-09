@@ -57,6 +57,11 @@
         "slug": "3Dmodel",
         "path": "boilerplate-3Dmodel/",
         "title": "3D Model"
+      },
+      {
+        "slug": "videosphere",
+        "path": "template-videosphere/",
+        "title": "Video Sphere"
       }
     ]
   },
@@ -103,11 +108,6 @@
         "slug": "video",
         "path": "template-video/",
         "title": "Video"
-      },
-      {
-        "slug": "videosphere",
-        "path": "template-videosphere/",
-        "title": "Video Sphere"
       }
     ]
   },
