@@ -1,5 +1,7 @@
 title: "Rotation"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The rotation component defines the orientation of an entity. It takes the roll

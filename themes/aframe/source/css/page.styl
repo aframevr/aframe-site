@@ -39,10 +39,11 @@ ul
     &.active,
     &.current:hover,
     &.active:hover
-        color #fff
+        color #333
+        font-weight 500
 
 .logo__wordmark
-    color #fff
+    color $pink
     display inline-block
     font-size 64px
     font-weight 200
@@ -96,7 +97,7 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
         padding-bottom .7em
         border-bottom 1px solid $border
     h3
-        margin 3em 0 1.2em
+        margin 2em 0 1.2em
         position relative
     figure, p, ul, ol
         margin 15px 0
@@ -165,9 +166,6 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     height 100vh
     width 100%
 
-[data-is-home="true"] .example__iframe
-    height calc(100vh - 140px)
-
 .main
     display flex
     height 100%
@@ -177,7 +175,6 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     position relative
 
 .sidebar
-    background $pink
     max-width 400px
     padding 30px
 
@@ -188,8 +185,10 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     .main
         flex-direction column
 
+.section-title, .section-title a
+    color rgba(0,0,0,0.5)
+
 .section-title
-    color rgba(0,0,0,0.35)
     line-height 1.2
     font 11px $mono-font
     margin 20px 0 5px
@@ -278,3 +277,48 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
 
 .guide-links + .footer
     margin-top 25px
+
+.copy__wrap > table
+    border-collapse collapse
+    width 100%
+
+    th, td
+        padding 8px 4px
+
+    th
+        background #2ac
+        font-size 10px
+        font-weight normal
+
+    th
+        color #fff
+        text-align left
+
+    td
+        background #fff
+        border-bottom 1px solid #eee
+        font-size 12px
+
+[data-is-home="true"]
+    .logo__wordmark
+        color #fff
+
+    .example__iframe
+        height calc(100vh - 140px)
+
+    .sidebar
+        background $pink
+
+    .nav-link, .subnav-link
+        color rgba(0,0,0,0.35)
+        &.current,
+        &.active,
+        &.current:hover,
+        &.active:hover
+            color #fff
+
+    // .section-title, .section-title a
+    //     color rgba(0,0,0,0.5)
+
+    .section-title
+        display none

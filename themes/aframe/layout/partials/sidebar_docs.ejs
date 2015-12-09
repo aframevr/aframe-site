@@ -1,0 +1,18 @@
+<aside class="sidebar">
+
+  <%- partial('sidebar_header') %>
+
+  <div class="list">
+    <ul class="subnav">
+      <% site.pages.find({type: type, parent_section: 'docs'}).sort('title').each(function (section) { %>
+        <h3 class="section-title"><a href="<%- page_url('../docs/' + type + '/') %>"><%- section.title %></h3>
+      <% }) %>
+
+      <% site.pages.find({parent_section: type}).sort('title').each(function (p) { %>
+        <li class="subnav-item">
+          <a href="<%- page_url(p.path) %>" class="subnav-link<%- page.title === p.title ? ' current' : '' %>"><%- p.title %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</aside>

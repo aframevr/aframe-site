@@ -1,0 +1,18 @@
+<% if (page.type) { %>
+  <%- partial('partials/sidebar_docs', {type: page.type, index: page.index, sidebar_layout: page.sidebar_layout}) %>
+<% } %>
+<div class="content content--<%- page.type %> copy">
+  <div class="copy__wrap">
+    <h1 class="page__title"><%- page.title %></h1>
+    <%- page.content %>
+    <div class="guide-links">
+      <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
+        <span>← <a href="<%- page_url(page.path) %>"><%= page.title %></a></span>
+      <% }) %>
+      <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
+        <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %></a> →</span>
+      <% }) %>
+    </div>
+    <%- partial('partials/docs_footer', {item: page}) %>
+  </div>
+</div>

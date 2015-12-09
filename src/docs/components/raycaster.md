@@ -1,5 +1,7 @@
 title: "Raycaster"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The raycaster component defines the functionality for an entity to do

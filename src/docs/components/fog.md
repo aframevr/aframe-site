@@ -1,5 +1,7 @@
 title: "Fog"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The fog component defines how entities get obscured in fog given distance from

@@ -1,5 +1,7 @@
 title: "Visible"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The visible component defines whether or not an entity is rendered.

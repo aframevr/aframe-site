@@ -1,5 +1,7 @@
 title: "Sound"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The sound component defines the entity as a source of sound or audio. The sound

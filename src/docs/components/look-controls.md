@@ -1,5 +1,7 @@
 title: "Look Controls"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The look-controls component defines the behavior of an entity to

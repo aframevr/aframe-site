@@ -1,5 +1,7 @@
 title: "Position"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The position component defines where an entity is placed in the scene's world

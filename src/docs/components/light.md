@@ -1,5 +1,7 @@
 title: "Light"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The light component defines the entity as a source of light. Light affects all

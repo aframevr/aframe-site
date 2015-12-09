@@ -1,5 +1,7 @@
 title: "Geometry"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The geometry component defines the shape and size of an entity. The general

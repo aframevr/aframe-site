@@ -1,5 +1,7 @@
 title: "Scale"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The scale component defines a shrinking or stretching transformation of an

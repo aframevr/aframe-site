@@ -1,5 +1,7 @@
 title: "Material"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The material component defines the appearance of an entity. It can define

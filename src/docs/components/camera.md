@@ -1,5 +1,8 @@
+---
 title: "Camera"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The camera component defines from what perspective the user views the scene.

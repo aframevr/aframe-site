@@ -15,8 +15,6 @@
         <% }) %>
       </div>
     <% } %>
-    <footer class="footer">
-      <p>Caught a mistake or want to contribute to the documentation? &nbsp; <a href="http://github.com/aframevr/aframe-site-dev/blob/master/src/<%- page.path.replace(/\.html$/, '.md') %>" target="_blank">Fork this page on GitHub</a></p>
-    </footer>
+    <%- partial('partials/docs_footer', {item: page}) %>
   </div>
 </div>

@@ -1,5 +1,7 @@
 title: "Loader"
-category: component
+type: components
+layout: docs
+parent_section: components
 ---
 
 The loader component defines the appearance of the entity by loading in a 3D
