@@ -7,10 +7,10 @@
     <%- page.content %>
     <% site.posts.sort('date', -1).each(function (post) { %>
       <div class="post">
-        <h2><a href="<%- url_for(post.path) %>"><%- post.title %></a></h2>
+        <h2><a href="<%- page_url(post.path) %>"><%- post.title %></a></h2>
         <h4><%- post.date.format('MMM D[,] YYYY') %></h4>
         <div class="post__excerpt"><%- post.excerpt %></div>
-        <a href="<%- url_for(post.path) %>" class="post__more">Read more &hellip;</a>
+        <a href="<%- page_url(post.path) %>" class="post__more">Read more &hellip;</a>
       </div>
     <% }) %>
     <footer class="footer">
