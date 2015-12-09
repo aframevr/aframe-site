@@ -2,8 +2,8 @@
   <a id="logo" class="logo" href="<%- url_for(config.root) %>">
     <span class="logo__wordmark"><%- config.title %></span>
   </a>
-  <a href="<%- github_release_url() %>" class="aframe-version"><%- config.aframe_version %></a>
   <ul id="nav" class="nav">
+    <li class="nav-item nav-item-version"><a href="<%- github_release_url() %>" target="_blank" class="nav-link nav-link-version"><%- config.aframe_version %></a></li>
     <li class="nav-item nav-item-docs"><a href="<%- url_for('docs/') %>" class="nav-link nav-link-docs<%- page.canonical_path.match(/docs/) ? ' current' : '' %>"><span>Docs</span></a></li>
     <li class="nav-item nav-item-faq"><a href="<%- url_for('faq/') %>" class="nav-link nav-link-get-started<%- page.canonical_path.match(/faq/) ? ' current' : '' %>"><span>FAQ</span></a></li>
     <li class="nav-item nav-item-blog"><a href="<%- url_for('blog/') %>" class="nav-link nav-link-get-started<%- page.canonical_path.match(/blog/) ? ' current' : '' %>"><span>Blog</span></a></li>
