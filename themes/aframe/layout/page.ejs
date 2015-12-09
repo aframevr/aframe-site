@@ -8,10 +8,10 @@
     <% if (page.type === 'guide') { %>
       <div class="guide-links">
         <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-          <span>← <a href="<%- url_for(page.path) %>"><%= page.title %></a></span>
+          <span>← <a href="<%- page_url(page.path) %>"><%= page.title %></a></span>
         <% }) %>
         <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-          <span class="float-right"><a href="<%- url_for(page.path) %>"><%= page.title %></a> →</span>
+          <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %></a> →</span>
         <% }) %>
       </div>
     <% } %>

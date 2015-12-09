@@ -8,7 +8,15 @@ min_size: "50.00"
 gz_size: "50.00"
 ---
 
-> **Compatibility Note:** A-Frame does not support IE 9 and below.
+## Boilerplate Starter Kit
+
+We've created a [simple starter kit](https://github.com/aframevr/aframe-boilerplate#getting-started) for creating WebVR scenes using A-Frame.
+
+<div id="downloads">
+<a class="button" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download kit</a>
+</div>
+
+If you're comfortable with npm and git, feel free to [clone the repo](https://github.com/aframevr/aframe-boilerplate#option-2-fork-this-git-repo-) or [fork this CodePen scene](http://codepen.io/team/mozvr/pen/2ac060c354546201f3337b83fbdcd110?editors=100) to get started. It also ships with an optional local development server (with Live Reloading) and GitHub Pages deployment workflow (and works with browserify too).
 
 ## Standalone
 

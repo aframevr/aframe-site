@@ -2,7 +2,6 @@ var utils = require('../lib/utils');
 
 hexo.extend.generator.register('post', function (locals) {
   var self = this;
-  if (!locals.data.examples) { return; }
 
   var routes = [];
   function addRoute (path, data, layout) {
@@ -13,34 +12,39 @@ hexo.extend.generator.register('post', function (locals) {
     });
   }
 
-  var examples = {};
-  var examplesRedirect = utils.createRedirectResponse(hexo, 'examples/');
+  addRoute('guide/', utils.createRedirectResponse(hexo, 'guide/getting-started/'));
 
-  Object.keys(locals.data.examples).map(function (sectionSlug) {
-    var section = locals.data.examples[sectionSlug];
+  if (locals.data.examples) {
+    var examples = {};
+    var examplesRedirect = utils.createRedirectResponse(hexo, 'examples/');
 
-    // TODO: Eventually build out separate pages for each category in Examples.
-    addRoute('examples/' + sectionSlug + '/', examplesRedirect);
+    Object.keys(locals.data.examples).map(function (sectionSlug) {
+      var section = locals.data.examples[sectionSlug];
 
-    section.examples.forEach(function (example) {
-      var permalink = utils.urljoin('examples', sectionSlug, example.slug, '/');
-      example.type = 'examples';
-      example.section = sectionSlug;
-      example.url = permalink;
-      example.is_external = utils.isUrl(example.path);
-      addRoute(permalink, example, 'example');
-      examples[permalink] = example;
-      if (!self.config.examples) { return; }
-      if (permalink === self.config.examples.first_example_url) {
-        addRoute('examples/', example, 'example');
-      }
-      if (permalink === self.config.examples.homepage_example_url) {
-        addRoute('/', example, 'index');
-      }
+      // TODO: Eventually build out separate pages for each category in Examples.
+      addRoute('examples/' + sectionSlug + '/', examplesRedirect);
+
+      section.examples.forEach(function (example) {
+        var permalink = utils.urljoin('examples', sectionSlug, example.slug, '/');
+        example.type = 'examples';
+        example.section = sectionSlug;
+        example.url = permalink;
+        example.is_external = utils.isUrl(example.path);
+        addRoute(permalink, example, 'example');
+        examples[permalink] = example;
+        if (!self.config.examples) { return; }
+        if (permalink === self.config.examples.first_example_url) {
+          addRoute('examples/', example, 'example');
+        }
+        if (permalink === self.config.examples.homepage_example_url) {
+          addRoute('/', example, 'index');
+        }
+      });
     });
-  });
-  hexo.locals.set('examples_by_urls', function () {
-    return examples;
-  });
+    hexo.locals.set('examples_by_urls', function () {
+      return examples;
+    });
+  }
+
   return routes;
 });
