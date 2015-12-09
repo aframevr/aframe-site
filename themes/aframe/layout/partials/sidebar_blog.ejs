@@ -1,0 +1,16 @@
+<aside class="sidebar">
+  <%- partial('sidebar_header') %>
+
+  <div class="list">
+    <h2 class="page--heading hidden-visually">Recent Posts</h2>
+    </h2>
+
+    <ul class="menu-root menu__blog">
+      <% site.posts.sort('date', -1).limit(10).each(function (post, idx) { %>
+        <li>
+          <a href="<%- page_url(post.path) %>" class="nav-link sidebar__link<%- (idx === 0 && page.blog_index) || page.title === post.title ? ' current' : '' %>"><span class="sidebar__link__text"><%- post.title %></span></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</aside>

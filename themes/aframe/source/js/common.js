@@ -54,21 +54,28 @@
   var content = $('.content');
   var mobileBar = $('#mobile-bar');
 
-  var menuButton = mobileBar.querySelector('.menu-button');
-  menuButton.addEventListener('click', function () {
-    menu.classList.toggle('open');
-  });
-
-  body.addEventListener('click', function (e) {
-    if (e.target !== menuButton && !menu.contains(e.target)) {
-      menu.classList.remove('open');
+  if (mobileBar) {
+    var menuButton = mobileBar.querySelector('.menu-button');
+    if (menuButton) {
+      menuButton.addEventListener('click', function () {
+        menu.classList.toggle('open');
+      });
     }
-  });
+  }
+
+  if (menu) {
+    body.addEventListener('click', function (e) {
+      if (e.target !== menuButton && !menu.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    });
+  }
 
   // build sidebar
   var currentPageAnchor = menu.querySelector('.sidebar__link.current');
   var isDocs = $('.content').classList.contains('docs');
-  if (currentPageAnchor || isDocs) {
+  var isBlog = body.getAttribute('data-page-layout') === 'blog';
+  if ((currentPageAnchor || isDocs) && !isBlog) {
     var allLinks = [];
     var sectionContainer;
     if (isDocs) {
@@ -132,9 +139,9 @@
   window.addEventListener('load', updateSidebar);
 
   function updateSidebar () {
+    if (isBlog) { return; }
     var top = doc && doc.scrollTop || body.scrollTop;
     var headerHeight = header.offsetHeight;
-    // main.classList.toggle('fix-sidebar', top > headerHeight);
     if (animating || !allLinks) { return; }
     var last;
     for (var i = 0; i < allLinks.length; i++) {
@@ -211,8 +218,6 @@
         version = version.replace('.', '');
         var section = window.location.pathname.match(/\/(\w+?)\//)[1];
         window.location.assign('http://' + version + '.aframe.io/' + section + '/');
-      } else {
-        // TODO when 1.x is out
       }
     });
   }

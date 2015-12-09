@@ -16,7 +16,7 @@ blog_title: The A-Frame Blog
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://aframevr.github.io/aframe-site-dev
 root: /aframe-site-dev/
-permalink: :year/:month/:day/:title/
+permalink: blog/:year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
 category_dir: categories

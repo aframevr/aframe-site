@@ -1,6 +1,13 @@
 var utils = require('../lib/utils');
 
-hexo.extend.generator.register('post', function (locals) {
+hexo.extend.generator.register('guide', function (locals) {
+  return {
+    path: 'guide/',
+    data: utils.createRedirectResponse(hexo, 'guide/getting-started/')
+  };
+});
+
+hexo.extend.generator.register('examples', function (locals) {
   var self = this;
 
   var routes = [];
