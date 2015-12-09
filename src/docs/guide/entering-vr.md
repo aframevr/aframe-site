@@ -23,9 +23,11 @@ A-Frame provides out-of-the-box support for desktop, mobile, and Oculus Rift.
 ## For Oculus Rift
 
 1. Install the latest [Oculus runtime](https://developer.oculus.com/downloads/).
-2. Make sure your headset is plugged in and working properly. Lights on the headset and camera should be blue.
-3. Open your site in a WebVR-compatible browser such as [Firefox Nightly](https://nightly.mozilla.org/), or [experimental builds of Chromium](https://drive.google.com/folderview?id=0BzudLt22BqGRbW9WTHMtOWMzNjQ&usp=sharing#list).
-4. Press the "Enter VR" button.
+2. Install [Firefox Nightly](https://nightly.mozilla.org/) or [experimental builds of Chromium](https://drive.google.com/folderview?id=0BzudLt22BqGRbW9WTHMtOWMzNjQ&usp=sharing#list).
+3. Install the [WebVR Enabler Add-on](https://addons.mozilla.org/en-US/firefox/addon/mozilla-webvr-enabler/) (Firefox only).
+4. Open your site.
+5. Make sure your headset is plugged in and working properly. Lights on the headset and camera should be blue.
+6. Press the "Enter VR" button.
 
 ### Notes
 
