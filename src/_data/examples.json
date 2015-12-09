@@ -18,16 +18,6 @@
         "title": "Curved Mockups"
       },
       {
-        "slug": "dynamic-lights",
-        "path": "showcase-dynamic-lights/",
-        "title": "Dynamic Lights"
-      },
-      {
-        "slug": "flythrough",
-        "path": "showcase-flythrough/",
-        "title": "Fly Through"
-      },
-      {
         "slug": "shopping",
         "path": "showcase-shopping/",
         "title": "Shopping"
@@ -36,6 +26,11 @@
         "slug": "spheres-and-fog",
         "path": "showcase-spheres-and-fog/",
         "title": "Spheres and Fog"
+      },
+      {
+        "slug": "dynamic-lights",
+        "path": "showcase-dynamic-lights/",
+        "title": "Dynamic Lights"
       }
     ]
   },
@@ -85,11 +80,6 @@
         "title": "Cylinders"
       },
       {
-        "slug": "frames",
-        "path": "template-frames/",
-        "title": "Frames"
-      },
-      {
         "slug": "images",
         "path": "template-images/",
         "title": "Images"
@@ -126,29 +116,9 @@
     "title": "Animations",
     "examples": [
       {
-        "slug": "aframe-logo/",
-        "path": "animation-aframe-logo/",
-        "title": "A-Frame Logo"
-      },
-      {
-        "slug": "arms",
-        "path": "animation-arms/",
-        "title": "Arms"
-      },
-      {
-        "slug": "plane-reveals",
-        "path": "animation-plane-reveals/",
-        "title": "Plane Reveals"
-      },
-      {
-        "slug": "generic-logo",
-        "path": "animation-generic-logo/",
-        "title": "Generic Logo"
-      },
-      {
-        "slug": "translates",
-        "path": "animation-translates/",
-        "title": "Translates"
+        "slug": "warps",
+        "path": "animation-warps/",
+        "title": "Warp"
       },
       {
         "slug": "unfold",
@@ -156,9 +126,19 @@
         "title": "Unfold"
       },
       {
-        "slug": "warps",
-        "path": "animation-warps/",
-        "title": "Warps"
+        "slug": "plane-reveals",
+        "path": "animation-plane-reveals/",
+        "title": "Reveal"
+      },
+      {
+        "slug": "generic-logo",
+        "path": "animation-generic-logo/",
+        "title": "Logo"
+      },
+      {
+        "slug": "arms",
+        "path": "animation-arms/",
+        "title": "Arms"
       }
     ]
   },
@@ -175,11 +155,6 @@
         "slug": "lookat",
         "path": "interaction-lookat/",
         "title": "Look At"
-      },
-      {
-        "slug": "hovers",
-        "path": "interaction-hovers/",
-        "title": "Hovers"
       }
     ]
   }
