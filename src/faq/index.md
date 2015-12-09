@@ -38,9 +38,12 @@ There are several community channels available for sharing experiences built A-F
 
 * [Made with A-Frame Tumblr](http://aframevr.tumblr.com/)
 * [A-Frame Slack](http://aframevr.slack.com/)
-* [WebVR Slack](https://webvr.slack.com/)
+* [WebVR Slack](https://webvr-slack.herokuapp.com/)
 * [WebVR Reddit](https://www.reddit.com/r/webvr)
 
+## How can I contact the A-Frame team?
+
+We're easiest to reach on the [A-Frame Slack channel](http://aframevr.slack.com/), via Twitter at [@aframevr](https://twitter.com/aframevr), or by filing issues against the A-Frame [GitHub repo](http://github.com/aframevr/aframe). We love questions, feedback, bug reports and pull requests!
 
 ## My site runs slowly. How can I improve performance?
 
