@@ -18,8 +18,3 @@ sidebar_layout: flat
 ## Twitter
 
 <a href="<%- config.twitter_url %>">Tweet at us.</a>
-
-
-## Stack Overflow
-
-Talk about Stack Overflow.

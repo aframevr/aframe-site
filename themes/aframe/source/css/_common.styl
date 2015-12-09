@@ -118,50 +118,6 @@ a.button
     &.css .code:after
         content 'CSS'
 
-.nav
-    .nav-link
-        cursor pointer
-    .nav-dropdown-container
-        .nav-link
-            &:hover
-                border-bottom none
-        &:hover
-            .nav-dropdown
-                display block
-    .nav-dropdown
-        display none
-        position absolute
-        top 100%
-        left 0
-        background-color #fff
-        padding 10px 0
-        border 1px solid #ddd
-        border-bottom-color #ccc
-        text-align left
-        border-radius 4px
-        li
-            line-height 1.8em
-            margin 0
-            display block
-        a
-            color $light
-            font-size .9em
-            display block
-            padding 0 30px 0 20px
-            &:hover
-                color $green
-    .arrow
-        display inline-block
-        vertical-align middle
-        margin-top -1px
-        margin-left 6px
-        margin-right -14px
-        width 0
-        height 0
-        border-left 4px solid transparent
-        border-right 4px solid transparent
-        border-top 5px solid #ccc
-
 iframe
     border 0
 
@@ -170,6 +126,7 @@ p [href*=github][href*="/blob/"]:only-child
     border 1px solid $border
     border-radius $radius
     transition .2s ease-in
+    color #666
     padding 5px 10px
     &:after
         background url(../images/github-icon.svg) no-repeat
@@ -183,10 +140,13 @@ p [href*=github][href*="/blob/"]:only-child
         width 12px
     &:hover
         border-color $border-dark
-        color $green-dark
+        color #333
         &:after
             opacity 1
 .btn
     border 0
     cursor pointer
     font inherit
+
+[data-sidebar-layout=flat] .list
+    display none

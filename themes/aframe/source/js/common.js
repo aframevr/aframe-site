@@ -46,153 +46,7 @@
     return [obj];
   };
 
-  var main = $('#main');
-  var doc = document.documentElement;
   var body = document.body;
-  var header = $('#header');
-  var menu = $('.sidebar');
-  var content = $('.content');
-  var mobileBar = $('#mobile-bar');
-
-  if (mobileBar) {
-    var menuButton = mobileBar.querySelector('.menu-button');
-    if (menuButton) {
-      menuButton.addEventListener('click', function () {
-        menu.classList.toggle('open');
-      });
-    }
-  }
-
-  if (menu) {
-    body.addEventListener('click', function (e) {
-      if (e.target !== menuButton && !menu.contains(e.target)) {
-        menu.classList.remove('open');
-      }
-    });
-  }
-
-  // build sidebar
-  var currentPageAnchor = menu.querySelector('.sidebar__link.current');
-  var isDocs = $('.content').classList.contains('docs');
-  var isBlog = body.getAttribute('data-page-layout') === 'blog';
-  if (currentPageAnchor || isDocs) {
-    var allLinks = [];
-    var sectionContainer;
-    if (isDocs) {
-      sectionContainer = $('.menu-root');
-    } else {
-      sectionContainer = document.createElement('ul');
-      sectionContainer.className = 'menu-sub';
-      currentPageAnchor.parentNode.appendChild(sectionContainer);
-    }
-    var h2s = $$('h2', content);
-    if (h2s.length) {
-      h2s.forEach(function (h) {
-        sectionContainer.appendChild(makeLink(h));
-      });
-    } else {
-      h2s = $$('h3', content);
-      h2s.forEach(function (h) {
-        sectionContainer.appendChild(makeLink(h));
-        allLinks.push(h);
-      });
-    }
-
-    var animating = false;
-    sectionContainer.addEventListener('click', function (e) {
-      var target = e.target;
-      if (target && target.tagName !== 'A') {
-        target = target.closest('a.nav-link');
-      }
-      if (!target) { return; }
-      // TODO: Revert to using smooth scrolling.
-      // e.preventDefault();
-      if (target.classList.contains('section__link')) {
-        menu.classList.remove('open');
-        setActive(target);
-        animating = true;
-        setTimeout(function () {
-          animating = false;
-        }, 400);
-      }
-    }, true);
-
-    // Make links clickable.
-    allLinks.forEach(makeLinkClickable);
-
-    // Init smooth scroll.
-    // smoothScroll.init({
-    //   speed: 400,
-    //   offset: window.innerWidth > 720 ? 40 : 58
-    // });
-  }
-
-  // Listen for scroll event to do positioning & highlights.
-  // window.addEventListener('scroll', updateSidebar);
-  // TODO: Select the correct one on scroll, but let's add debouncing logic first.
-  window.addEventListener('resize', updateSidebar);
-  window.addEventListener('load', updateSidebar);
-
-  function updateSidebar () {
-    if (isBlog) { return; }
-    var top = doc && doc.scrollTop || body.scrollTop;
-    var headerHeight = header.offsetHeight;
-    if (animating || !allLinks) { return; }
-    var last;
-    for (var i = 0; i < allLinks.length; i++) {
-      var link = allLinks[i];
-      if (link.offsetTop > top) {
-        if (!last) last = link;
-        break;
-      } else {
-        last = link;
-      }
-    }
-    if (last) { setActive(last.id); }
-  }
-
-  function makeLink (h) {
-    var li = document.createElement('li');
-    li.className = 'sidebar__item';
-    var text = h.textContent.replace(/\(.*\)$/, '');
-    // Make sure the ids are linkable.
-    h.id = h.id
-      .replace(/\(.*\)$/, '')
-      .replace(/\$/, '');
-    li.innerHTML = '<a class="nav-link sidebar__link section__link" data-scroll href="#' + h.id + '"><span class="sidebar__link__text"></span></a>';
-    li.querySelector('a span').textContent = text;
-    return li;
-  }
-
-  function setActive (id) {
-    var previousActive = menu.querySelector('.section__link.active');
-    var currentActive = typeof id === 'string' ? menu.querySelector('.section__link[href="#' + id + '"]') : id;
-    if (currentActive !== previousActive) {
-      if (previousActive) { previousActive.classList.remove('active'); }
-      currentActive.classList.add('active');
-    }
-  }
-
-  function makeLinkClickable (link) {
-    var wrapper = document.createElement('a');
-    wrapper.href = '#' + link.id;
-    wrapper.setAttribute('data-scroll', '');
-    link.parentNode.insertBefore(wrapper, link);
-    wrapper.appendChild(link);
-  }
-
-  // version select
-  var versionSelect = $('.version-select');
-  if (versionSelect) {
-    versionSelect.addEventListener('change', function (e) {
-      var version = e.target.value;
-      if (version.indexOf('1.') !== 0) {
-        version = version.replace('.', '');
-        var section = window.location.pathname.match(/\/(\w+?)\//)[1];
-        window.location.assign('http://' + version + '.aframe.io/' + section + '/');
-      }
-    });
-  }
 
   // To customise the base URL for the <iframe>'d examples, do this in the Console:
   //
@@ -238,22 +92,7 @@
   }
 
   if (body.dataset.pageType === 'examples') {
-    var backArrow = $('.example__arrow--back');
-    var rightArrow = $('.example__arrow--forward');
     var navLinks = $$('.examples__list .nav-link');
-
-    body.addEventListener('keydown', function (e) {
-      // TODO: Check `activeElement`.
-      var left = e.keyCode === 37;
-      var right = e.keyCode === 39;
-      if (!left && !right) { return; }
-      if (left) {
-        backArrow.classList.add('down');
-      }
-      if (right) {
-        rightArrow.classList.add('down');
-      }
-    });
 
     body.addEventListener('keyup', function (e) {
       // TODO: Check `activeElement`.
@@ -273,11 +112,9 @@
 
       var nextIndex;
       if (left) {
-        backArrow.classList.remove('down');
         nextIndex = currentIdx - 1;
       }
       if (right) {
-        rightArrow.classList.remove('down');
         nextIndex = currentIdx + 1;
       }
 

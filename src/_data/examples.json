@@ -182,16 +182,5 @@
         "title": "Hovers"
       }
     ]
-  },
-
-  "tests": {
-    "title": "Tests",
-    "examples": [
-      {
-        "slug": "template-test",
-        "path": "animation-template-test/",
-        "title": "Animations + Templates"
-      }
-    ]
   }
 }
