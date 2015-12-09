@@ -188,6 +188,11 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
 .section-title, .section-title a
     color rgba(0,0,0,0.5)
 
+.section-title a
+    display block
+    &:hover
+        color rgba(0,0,0,0.75)
+
 .section-title
     line-height 1.2
     font 11px $mono-font
@@ -298,6 +303,10 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
         background #fff
         border-bottom 1px solid #eee
         font-size 12px
+
+.section-inactive
+    + .docs-subnav
+        display none
 
 [data-is-home="true"]
     .logo__wordmark

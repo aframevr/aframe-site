@@ -1,5 +1,6 @@
 ---
 title: Entity-Component Architecture
+section_title: Components
 type: components
 layout: docs
 parent_section: docs

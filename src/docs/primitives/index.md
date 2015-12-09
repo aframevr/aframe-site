@@ -1,5 +1,6 @@
 ---
-title: Primitives
+title: Introduction to Primitives
+section_title: Primitives
 type: primitives
 layout: docs
 parent_section: docs
