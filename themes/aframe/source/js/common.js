@@ -75,7 +75,7 @@
   var currentPageAnchor = menu.querySelector('.sidebar__link.current');
   var isDocs = $('.content').classList.contains('docs');
   var isBlog = body.getAttribute('data-page-layout') === 'blog';
-  if ((currentPageAnchor || isDocs) && !isBlog) {
+  if (currentPageAnchor || isDocs) {
     var allLinks = [];
     var sectionContainer;
     if (isDocs) {
@@ -89,12 +89,6 @@
     if (h2s.length) {
       h2s.forEach(function (h) {
         sectionContainer.appendChild(makeLink(h));
-        var h3s = collectH3s(h);
-        allLinks.push(h);
-        allLinks.push.apply(allLinks, h3s);
-        if (h3s.length) {
-          sectionContainer.appendChild(makeSubLinks(h3s, isDocs));
-        }
       });
     } else {
       h2s = $$('h3', content);
@@ -135,6 +129,7 @@
 
   // Listen for scroll event to do positioning & highlights.
   // window.addEventListener('scroll', updateSidebar);
+  // TODO: Select the correct one on scroll, but let's add debouncing logic first.
   window.addEventListener('resize', updateSidebar);
   window.addEventListener('load', updateSidebar);
 
@@ -167,29 +162,6 @@
     li.innerHTML = '<a class="nav-link sidebar__link section__link" data-scroll href="#' + h.id + '"><span class="sidebar__link__text"></span></a>';
     li.querySelector('a span').textContent = text;
     return li;
-  }
-
-  function collectH3s (h) {
-    var h3s = [];
-    var next = h.nextSibling;
-    while (next && next.tagName !== 'H2') {
-      if (next.tagName === 'H3') {
-        h3s.push(next);
-      }
-      next = next.nextSibling;
-    }
-    return h3s;
-  }
-
-  function makeSubLinks (h3s, small) {
-    var container = document.createElement('ul');
-    if (small) {
-      container.className = 'menu-sub';
-    }
-    h3s.forEach(function (h) {
-      container.appendChild(makeLink(h));
-    });
-    return container;
   }
 
   function setActive (id) {
