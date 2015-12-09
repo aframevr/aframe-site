@@ -45,7 +45,7 @@ There are several community channels available for sharing experiences built A-F
 
 We're easiest to reach on the [A-Frame Slack channel](http://aframevr.slack.com/), via Twitter at [@aframevr](https://twitter.com/aframevr), or by filing issues against the A-Frame [GitHub repo](http://github.com/aframevr/aframe). We love questions, feedback, bug reports and pull requests!
 
-## My site runs slowly. How can I improve performance?
+## How can I improve performance?
 
 Virtual reality is a new and performance-intensive technology. The right combination of hardware and software settings can make the difference between presence and nausea.
 
@@ -57,7 +57,9 @@ On mobile, the faster the phone the better. We generally use iPhone 6S devices o
 
 A-Frame is also a young framework with several known opportunities for performance improvements. Steadily improving performance and addressing bugs is an ongoing high priority for the development team. If you find bugs or performance improvement opportunities, please file [issues](https://github.com/aframevr/aframe/issues) and/or [pull requests](https://github.com/aframevr/aframe/pulls)!
 
-## Where can I find models, textures and sounds for my 3D worlds?
+Lastly, the A-Frame will be publishing guides on performance optimization best practices.
+
+## Where can I find assets?
 
 The [Awesome A-Frame Github repo](https://github.com/aframevr/awesome-aframe) provides links to A-Frame-compatible assets and learning materials. Awesome A-Frame is a list built by the community, for the community. If you find cool resources, add them to the list by editing the repo. The Awesome A-Frame readme provides instructions on that process.
 
@@ -65,10 +67,10 @@ The [Awesome A-Frame Github repo](https://github.com/aframevr/awesome-aframe) pr
 
 The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying requestFullScreen API that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experience as self-contained single page web applications. 
 
-## Where is the A-Frame feature roadmap?
+## Is there a feature roadmap?
 
 We user issues on the [A-Frame Github repo](https://github.com/aframevr/aframe/issues) to track feature requests and bugs. Please file new requests for things you'd to see, or bugs that you find!
 
-## What's the correct name? A-Frame, aframe, AFrame, A-Frame VR, aframevr?
+## Is it A-Frame or aframe or aframevr?
 
 We call it A-Frame. We express it in code and domains as aframe, as much as possible. Sometimes we cannot get "aframe", and we have to resort to "aframevr", which is more widely available. The site is at [aframe.io](http://aframe.io/), for example, but the GitHub organization is [github.com/aframevr](https://github.com/aframevr). We're not thrilled about this inconsistency, but it's something we accept begrudgingly. Sorry for any confusion!
