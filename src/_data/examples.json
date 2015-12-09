@@ -3,6 +3,16 @@
     "title": "Showcase",
     "examples": [
       {
+        "slug": "helloworld",
+        "path": "boilerplate-helloworld/",
+        "title": "Hello World"
+      },
+      {
+        "slug": "shopping",
+        "path": "showcase-shopping/",
+        "title": "Shopping"
+      },
+      {
         "slug": "anime-UI",
         "path": "showcase-anime-UI/",
         "title": "Anime UI"
@@ -18,117 +28,14 @@
         "title": "Curved Mockups"
       },
       {
-        "slug": "shopping",
-        "path": "showcase-shopping/",
-        "title": "Shopping"
-      },
-      {
         "slug": "spheres-and-fog",
         "path": "showcase-spheres-and-fog/",
         "title": "Spheres and Fog"
       },
       {
-        "slug": "dynamic-lights",
-        "path": "showcase-dynamic-lights/",
-        "title": "Dynamic Lights"
-      }
-    ]
-  },
-
-  "boilerplates": {
-    "title": "Boilerplates",
-    "examples": [
-      {
-        "slug": "helloworld",
-        "path": "boilerplate-helloworld/",
-        "title": "Hello World"
-      },
-      {
-        "slug": "360video",
-        "path": "boilerplate-360video/",
-        "title": "360 Video"
-      },
-      {
-        "slug": "Panorama",
-        "path": "boilerplate-panorama/",
-        "title": "Panorama"
-      },
-      {
-        "slug": "3Dmodel",
-        "path": "boilerplate-3Dmodel/",
-        "title": "3D Model"
-      },
-      {
-        "slug": "videosphere",
-        "path": "template-videosphere/",
-        "title": "Video Sphere"
-      }
-    ]
-  },
-
-  "primitives": {
-    "title": "Primitives",
-    "examples": [
-      {
-        "slug": "cube",
-        "path": "template-cube/",
-        "title": "Cube"
-      },
-      {
-        "slug": "cubes",
-        "path": "template-cubes/",
-        "title": "Cubes"
-      },
-      {
-        "slug": "cylinders",
-        "path": "template-cylinders/",
-        "title": "Cylinders"
-      },
-      {
-        "slug": "images",
-        "path": "template-images/",
-        "title": "Images"
-      },
-      {
-        "slug": "models",
-        "path": "template-models/",
-        "title": "Models"
-      },
-      {
-        "slug": "planes",
-        "path": "template-planes/",
-        "title": "Planes"
-      },
-      {
-        "slug": "sky",
-        "path": "template-sky/",
-        "title": "Sky"
-      },
-      {
-        "slug": "video",
-        "path": "template-video/",
-        "title": "Video"
-      }
-    ]
-  },
-
-  "animations": {
-    "title": "Animations",
-    "examples": [
-      {
         "slug": "warps",
         "path": "animation-warps/",
         "title": "Warp"
-      },
-      {
-        "slug": "unfold",
-        "path": "animation-unfold/",
-        "title": "Unfold"
-      },
-      {
-        "slug": "plane-reveals",
-        "path": "animation-plane-reveals/",
-        "title": "Reveal"
       },
       {
         "slug": "generic-logo",
@@ -136,16 +43,25 @@
         "title": "Logo"
       },
       {
-        "slug": "arms",
-        "path": "animation-arms/",
-        "title": "Arms"
-      }
-    ]
-  },
-
-  "interactions": {
-    "title": "Interactions",
-    "examples": [
+        "slug": "unfold",
+        "path": "animation-unfold/",
+        "title": "Unfold"
+      },
+      {
+        "slug": "sky",
+        "path": "template-sky/",
+        "title": "Sky"
+      },
+      {
+        "slug": "videosphere",
+        "path": "template-videosphere/",
+        "title": "360 Video"
+      },
+      {
+        "slug": "cubes",
+        "path": "template-cubes/",
+        "title": "Cubes"
+      },
       {
         "slug": "cursor",
         "path": "interaction-cursor/",

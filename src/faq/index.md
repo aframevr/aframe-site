@@ -37,7 +37,7 @@ A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders.
 There are several community channels available for sharing experiences built A-Frame. 
 
 * [Made with A-Frame Tumblr](http://aframevr.tumblr.com/)
-* [A-Frame Slack](http://aframevr.slack.com/)
+* [A-Frame Slack](http://aframevr-slack.herokuapp.com/)
 * [WebVR Slack](https://webvr-slack.herokuapp.com/)
 * [WebVR Reddit](https://www.reddit.com/r/webvr)
 
