@@ -15,7 +15,7 @@ ul
     padding 10px 0 20px
 
 .nav-item
-    font-family gt_cinetype_mono
+    font-family $code-font
     + .nav-item
         margin-top 5px
 
@@ -56,11 +56,8 @@ ul
 .logo__wordmark
     color #fff
     display inline-block
-    font-family ApercuBold
-    // font-family LLCircular-Book
-    // font-family LLReplicaMono
-    // font-family gt_cinetype_bold
     font-size 64px
+    font-weight 200
     text-transform uppercase
 
 .mobile-bar
@@ -160,8 +157,11 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     display none
     padding-left 0
 
+.copy__wrap
+    max-width 800px
+    margin 40px
+
 .copy
-    padding 30px
     a
         border-bottom 1px solid rgba(53,196,232,0.25)
         color hsl(192, 80%, 40%);
@@ -240,7 +240,6 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
             text-align center
             line-height 20px
             font-weight bold
-            font-family $logo-font
             font-size 14px
     ul
         list-style disc
@@ -253,19 +252,13 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     ol ol
         list-style circle
 
-.guide-links
-    margin-top 2em
-    height 1em
-
 .float-right
      float right
 
 .slogan
-    color #333
-    // color $white
-    font-family gt_cinetype_light
+    color $white
     font-size 5em
-    font-weight 200
+    font-weight 100
     line-height 0.9
     position absolute
     text-transform uppercase
@@ -279,17 +272,28 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     // height 80vh
     width 100%
 
+.main
+    display flex
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    height 100%
+
 .sidebar, .content
     overflow-y auto
     position relative
 
 .sidebar
     background $pink
-    flex 1
+    max-width 400px
     padding 30px
 
 .content
-    flex 3
+    flex 1
 
 @media screen and (max-width: 800px)
     .main
@@ -337,7 +341,7 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     background rgba(0,0,0,0.35)
     color #fff
     display block
-    font 12px/1.5 gt_cinetype_mono
+    font 12px/1.5 $mono-font
     padding 5px 10px
     position absolute
     text-transform uppercase
@@ -350,12 +354,12 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
 
 .example__section
     color rgba(0,0,0,.5)
-    font 300 14px/1.3 gt_cinetype_mono
+    font 300 14px/1.3 $mono-font
     text-transform uppercase
 
 .page__title,
 .example__title
-    font 600 36px/1.3 LLCircular-Book
+    font 600 36px/1.3 $body-font
 
 .example__nav
     border-left 1px dotted rgba(0,0,0,0.25)
@@ -373,6 +377,7 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
 
 .intro__copy
     display flex
+    line-height 1.5
     margin 0
     .intro__blurb
         padding 0 30px
@@ -403,7 +408,6 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     display inline-block
     font 12px/1 monospace
     padding 2px
-    // transform rotate(-90deg)
     transition 0.1s border-color, 0.1s color
     &:hover
         border-color rgba(0,0,0,0.5)
