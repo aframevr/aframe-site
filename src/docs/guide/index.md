@@ -1,7 +1,11 @@
 ---
 title: Getting Started
+section_title: Guide
 type: guide
+layout: docs
 order: 1
+parent_section: docs
+section_order: 1
 ---
 
 A-Frame is a library for creating scenes in virtual reality on the Web.

@@ -1,7 +1,10 @@
 ---
 title: Adding objects
 type: guide
-order: 2
+layout: docs
+parent_section: guide
+order: 3
+show_guide: true
 ---
 
 A-Frame comes with easy-to-use primitives for things like videos, models, images, and geometries. For example:

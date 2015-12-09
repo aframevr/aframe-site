@@ -1,14 +1,17 @@
+<!-- FYI: this template is currently unused, but it's useful, so keep it around -->
+
 <aside class="sidebar">
 
-  <%- partial('sidebar_header') %>
+  <%- partial('partials/generic/sidebar_header') %>
 
   <div class="list">
     <ul class="subnav">
-      <% site.pages.find({type: type}).sort('order').each(function (p) { %>
+      <% site.pages.find({type: type}).sort(order_by || 'order').each(function (p) { %>
         <li class="subnav-item">
           <a href="<%- page_url(p.path) %>" class="subnav-link<%- page.title === p.title ? ' current' : '' %>"><%- p.title %></a>
         </li>
       <% }) %>
     </ul>
   </div>
+
 </aside>

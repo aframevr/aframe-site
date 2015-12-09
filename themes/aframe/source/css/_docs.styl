@@ -1,0 +1,78 @@
+.highlight
+    overflow-x auto
+    position relative
+    padding 0
+    background-color $codebg
+    padding .8em .8em .4em
+    line-height 1.1em
+    border-radius $radius
+    table, tr, td
+        width 100%
+        border-collapse collapse
+        padding 0
+        margin 0
+    .gutter
+        width 1.5em
+    .code
+        pre
+            padding 1.2em 1.4em
+            line-height 1.5em
+            margin 0
+    &.html, &.js, &.bash, &.css
+        .code:after
+            position absolute
+            top 0
+            right 0
+            color #ccc
+            text-align right
+            font-size .75em
+            padding 5px 10px 0
+            line-height 15px
+            height 15px
+            font-weight 600
+    &.html .code:after
+        content 'HTML'
+    &.js .code:after
+        content 'JS'
+    &.bash .code:after
+        content 'Shell'
+    &.css .code:after
+        content 'CSS'
+
+p [href*=github][href*="/blob/"]:only-child
+    background $codebg
+    border 1px solid $border
+    border-radius $radius
+    transition .2s ease-in
+    color #666
+    padding 5px 10px
+    &:after
+        background url(../images/github-icon.svg) no-repeat
+        content ''
+        display inline-block
+        margin-left 0.5em
+        opacity .5
+        height 14px
+        transition .2s opacity ease-in
+        vertical-align middle
+        width 12px
+    &:hover
+        border-color $border-dark
+        color #333
+        &:after
+            opacity 1
+
+a.button
+    display inline-block
+    font-family $code-font
+    font-weight 700
+    color #fff
+    background-color lighten($green, 8%)
+    border-bottom 2px solid darken($green, 12%)
+    padding 12px 14px
+    border-radius 4px
+    transition all .15s ease
+    &:hover
+        background-color lighten($green, 15%)
+        -webkit-transform translate(0, -2px)
+        transform translate(0, -2px)
