@@ -1,0 +1,443 @@
+@import "_common"
+@import "_blog"
+
+$header-height = 40px
+
+ul
+    list-style-type none
+    margin 0
+    padding 0
+    line-height 1.5
+
+.nav
+    border-bottom 1px dashed rgba(0,0,0,0.1)
+    margin-bottom 20px
+    padding 10px 0 20px
+
+.nav-item
+    font-family $code-font
+    + .nav-item
+        margin-top 5px
+
+.nav-link
+    display block
+    padding-bottom 4px
+    text-transform uppercase
+    width 100%
+    span
+        // border 3px solid transparent
+        color rgba(0,0,0,0.35)
+        display inline-block
+        margin -2px -4px
+        padding 2px 4px
+        text-indent: -10px
+        padding-left 14px
+        transition 0.1s background ease-in, 0.1s color ease-in
+    &:hover span
+        background rgba(255,255,255,.5)
+        border-color rgba(0,0,0,0.5)
+        color rgba(0,0,0,0.5)
+    &:active span
+        background rgba(0,0,0,0.25)
+        color rgba(0,0,0,0.75)
+    &.current span,
+    &.active span,
+    &.current:hover span,
+    &.active:hover span
+        background rgba(0,0,0,0.75)
+        color #fff
+
+.menu__generic > .sidebar__item > .nav-link
+    &.current,
+    &.active
+        span
+            font-weight 600
+
+.logo__wordmark
+    color #fff
+    display inline-block
+    font-size 40px
+    letter-spacing 0.1rem
+    font-weight 200
+    text-transform uppercase
+
+.mobile-bar
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 40px
+    background-color #fff
+    z-index 9
+    display none
+    box-shadow 0 0 4px rgba(0,0,0,.25)
+    .menu-button
+        position absolute
+        width 24px
+        height 24px
+        top 8px
+        left 12px
+        background url(../images/menu.png) center center no-repeat
+        background-size 24px
+    .logo
+        position absolute
+        width 30px
+        height 30px
+        background url(../images/logo.png) center center no-repeat
+        top 5px
+        left 50%
+        margin-left -15px
+        background-size 30px
+
+.sidebar
+    -webkit-overflow-scrolling touch
+    -ms-overflow-style none
+    &::-webkit-scrollbar
+        width: 0 !important
+    h2
+        margin-top .2em
+    .version-select
+        vertical-align middle
+        margin-left 5px
+    .menu-root
+        padding-left 0
+    .menu-sub
+        font-size .85em
+
+.sidebar__list
+    margin-bottom 25px
+
+.sidebar__item
+    padding-top 4px
+
+body:not([data-sidebar-layout=flat]) .menu__generic ul
+    padding 0 20px
+
+.examples__list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+
+.examples__list .sidebar__item
+    display flex
+    flex 0 0 33.333%
+
+.sidebar__link
+    // border-bottom 2px solid transparent
+    font-size 14px
+    // font-weight 600
+    text-transform none
+    span
+        color rgba(0,0,0,0.75)
+        color #fff
+    &:hover span
+        background rgba(255,255,255,.5)
+        color rgba(0,0,0,0.85)
+    &.new
+        &:after
+            content "NEW"
+            display inline-block
+            font-size 10px
+            font-weight 600
+            color #fff
+            background-color $green
+            line-height 14px
+            padding 0 4px
+            border-radius 3px
+            margin-left 5px
+            vertical-align middle
+            position relative
+            top -1px
+
+.section__link
+    &.active
+        // styles go here
+
+.main-menu
+    margin-bottom 20px
+    display none
+    padding-left 0
+
+.copy__wrap
+    max-width 800px
+    margin 40px
+
+.copy
+    a
+        border-bottom 1px solid rgba(53,196,232,0.25)
+        color hsl(192, 80%, 40%);
+        &:hover
+            border-bottom-color rgba(53,196,232,0.75)
+            color hsl(192, 80%, 56%);
+    a.button
+        font-size .9em
+        color #fff
+        margin .2em 0
+        width 180px
+        text-align center
+        padding 12px 24px
+        display inline-block
+        vertical-align middle
+    img
+        max-width 100%
+    span.light
+        color $light
+    span.info
+        font-size .85em
+        display inline-block
+        vertical-align middle
+        width 280px
+        margin-left 20px
+    h1
+        margin 0
+    h2
+        margin 2em 0 .8em
+        padding-bottom .7em
+        border-bottom 1px solid $border
+    h3
+        margin 3em 0 1.2em
+        position relative
+        &:before
+            content "#"
+            color $green
+            position absolute
+            left -0.7em
+            top -2px
+            font-size 1.2em
+            font-weight bold
+    figure, p, ul, ol
+        margin 15px 0
+    p, ul, ol
+        line-height 1.6em
+    ul, ol
+        padding-left 1.5em
+    blockquote
+        margin 2em 0
+        padding-left 20px
+        border-left 4px solid $green
+        p
+            font-weight 600
+            margin-left 0
+    iframe
+        margin 1em 0
+    p.tip
+        padding 12px 24px 12px 30px
+        margin 2em 0
+        border-left 4px solid $red
+        background-color $codebg
+        position relative
+        border-bottom-right-radius $radius
+        border-top-right-radius $radius
+        &:before
+            position absolute
+            top 14px
+            left -12px
+            background-color $red
+            color #fff
+            content "!"
+            width 20px
+            height 20px
+            border-radius 100%
+            text-align center
+            line-height 20px
+            font-weight bold
+            font-size 14px
+    ul
+        list-style disc
+        margin-left 1em
+        padding-left 1em
+    ol
+        list-style decimal
+        margin-left 1em
+        padding-left 1em
+    ol ol
+        list-style circle
+
+.float-right
+     float right
+
+.slogan
+    color $white
+    font-size 5em
+    font-weight 100
+    line-height 0.9
+    position absolute
+    text-transform uppercase
+    top 30px
+    left 30px
+    z-index 2
+    width 450px
+
+.example__iframe
+    height calc(100vh - 140px)
+    // height 80vh
+    width 100%
+
+.main
+    display flex
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    height 100%
+
+.sidebar, .content
+    overflow-y auto
+    position relative
+
+.sidebar
+    background $pink
+    max-width 400px
+    padding 30px
+
+.content
+    flex 1
+
+@media screen and (max-width: 800px)
+    .main
+        flex-direction column
+
+.section__title
+    color rgba(0,0,0,0.35)
+    line-height 1.2
+    font-weight normal
+    margin 20px 0 5px
+
+.sidebar__list + .section__title:before
+    border-top 1px solid rgba(255,255,255,0.25)
+    content ""
+    display block
+    height 20px
+    width 30px
+
+.content
+    display flex
+    flex-direction column
+
+.content--header
+    background rgba(180,255,255,0.5)
+    order 2
+    height 140px
+    padding 30px
+    width 100%
+
+.content--header--index
+    background rgb(100,50,60)
+    color #ccc
+
+.content--header--examples
+    color #666
+    .example__title
+        color #036
+
+.content--body
+    flex 1 140px
+    order 1
+    position relative
+
+.example__viewsource
+    background rgba(0,0,0,0.35)
+    color #fff
+    display block
+    font 12px/1.5 $mono-font
+    padding 5px 10px
+    position absolute
+    text-transform uppercase
+    top 20px
+    right 20px
+    z-index 2
+    &:active,
+    &:hover
+        background-color #ef2d5e
+
+.example__section
+    color rgba(0,0,0,.5)
+    font 300 14px/1.3 $mono-font
+    text-transform uppercase
+
+.page__title,
+.example__title
+    font 600 36px/1.3 $body-font
+
+.example__nav
+    border-left 1px dotted rgba(0,0,0,0.25)
+    padding-left 20px
+    float right
+    a
+        border-bottom 1px solid transparent
+        color darkcyan
+        display block
+        &:hover
+            border-bottom 1px dotted rgba(0,0,0,0.25)
+            color #333
+        + a
+            margin-top 4px
+
+.intro__copy
+    display flex
+    line-height 1.5
+    margin 0
+    .intro__blurb
+        padding 0 30px
+        a
+            border-bottom 1px solid rgba(0,0,0,0.25)
+            color $pink
+            &:hover
+                border-bottom-color rgba(255,255,255,0.25)
+                color lighten($pink, 40%)
+
+.intro__videothumb__img
+    display block
+    max-height 80px
+
+.intro__videothumb__link
+    border 2px solid rgba(255,255,255,0.25)
+    display block
+    &:active, &:hover
+        border-color rgba(255,255,255,0.75)
+
+.example__toggle
+    float right
+    margin-right 20px
+
+.example__arrow
+    border 2px solid rgba(0,0,0,0.15)
+    color rgba(0,0,0,0.15)
+    display inline-block
+    font 12px/1 monospace
+    padding 2px
+    transition 0.1s border-color, 0.1s color
+    &:hover
+        border-color rgba(0,0,0,0.5)
+        color rgba(0,0,0,0.5)
+    &.down
+        border-color rgba(0,0,0,0.75)
+        color rgba(0,0,0,0.75)
+
+.example__arrow--back:before
+    content "◀"
+    display inline-block
+    padding 2px 4px 2px 2px
+    position relative
+    top 1px
+
+.example__arrow--forward:before
+    content "◀"
+    display inline-block
+    transform rotate(180deg)
+    padding 2px 4px 2px 2px
+    position relative
+    top -1px
+
+[data-sidebar-layout="flat"] .menu-root > li > a
+    display none
+
+.copy .footer
+    border-top 2px solid #eee
+    color #999
+    font-size 12px
+    margin-top 30px
+    padding 10px 0
