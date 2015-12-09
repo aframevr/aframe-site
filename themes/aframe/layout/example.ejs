@@ -1,25 +1,6 @@
 <%- partial('partials/sidebar_examples', {site: site}) %>
 
 <div class="content content--examples">
-  <header class="content--header content--header--examples">
-    <nav class="example__nav">
-      <a href="" class="example__mobile">Send to Mobile</a>
-      <% if (page.codepen_url) { %>
-        <a href="<%- page.codepen_url %>" class="example__codepen">Fork on CodePen</a>
-      <% } %>
-      <% if (!page.is_external || page.github_url) { %>
-        <a href="<%- page.github_url || github_file_url('examples/' + page.path) %>" class="example__github">View on GitHub</a>
-      <% } %>
-    </nav>
-    <div class="example__toggle">
-      <a href="#" class="example__arrow example__arrow--back"><span class="hidden-visually">Back</span></a>
-      <a href="#" class="example__arrow example__arrow--forward"><span class="hidden-visually">Forward</span></a>
-    </div>
-    <p class="example__section"><%- page.section %></p>
-    <h1 class="example__title"><%- page.title %></h1>
-    <p class="example__description"><%- page.description || 'Some text goes here.' %></p>
-  </header>
-
   <div class="content--body">
     <%- partial('partials/example/iframe', {item: page}) %>
   </div>

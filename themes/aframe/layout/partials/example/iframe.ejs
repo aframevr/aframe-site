@@ -5,5 +5,12 @@
           data-original-base-url="<%- config.examples.base_url %>"
           data-path="<%- item.path %>"
           allowfullscreen="yes" scrolling="no"></iframe>
-  <a href="<%- github_file_url('examples/' + item.path + 'index.html') %>" class="btn example__viewsource" target="_blank">View Source</a>
+  <!--
+  <% if (item.codepen_url) { %>
+    <a href="<%- item.codepen_url %>" class="example__codepen" target="_blank">Fork on CodePen</a>
+  <% } %>
+  -->
+  <% if (!item.is_external || item.github_url) { %>
+    <a href="<%- item.github_url || github_file_url('examples/' + item.path + 'index.html') %>" class="btn example__viewsource" target="_blank">View Source</a>
+  <% } %>
 <% } %>

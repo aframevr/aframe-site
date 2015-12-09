@@ -159,16 +159,14 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     width 450px
 
 .example__iframe
-    height calc(100vh - 140px)
+    height 100vh
     width 100%
+
+[data-is-home="true"] .example__iframe
+    height calc(100vh - 140px)
 
 .main
     display flex
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
     height 100%
 
 .sidebar, .content
@@ -216,11 +214,6 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     background rgb(100,50,60)
     color #ccc
 
-.content--header--examples
-    color #666
-    .example__title
-        color #036
-
 .content--body
     flex 1 140px
     order 1
@@ -241,27 +234,8 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     &:hover
         background-color #ef2d5e
 
-.example__section
-    color rgba(0,0,0,.5)
-    font 300 14px/1.3 $mono-font
-
-.page__title,
-.example__title
+.page__title
     font 600 36px/1.3 $body-font
-
-.example__nav
-    border-left 1px dotted rgba(0,0,0,0.25)
-    padding-left 20px
-    float right
-    a
-        border-bottom 1px solid transparent
-        color darkcyan
-        display block
-        &:hover
-            border-bottom 1px dotted rgba(0,0,0,0.25)
-            color #333
-        + a
-            margin-top 4px
 
 .intro__copy
     display flex
