@@ -50,7 +50,7 @@
       {
         "slug": "sky",
         "path": "template-sky/",
-        "title": "Sky"
+        "title": "Panorama"
       },
       {
         "slug": "videosphere",
@@ -65,7 +65,7 @@
       {
         "slug": "cursor",
         "path": "interaction-cursor/",
-        "title": "Cursor"
+        "title": "Cursor & Hover"
       },
       {
         "slug": "lookat",
