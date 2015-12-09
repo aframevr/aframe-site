@@ -4,16 +4,16 @@ type: community
 layout: page
 ---
 
-## GitHub
+## A-Frame
 
-<a href="https://github.com/aframevr/aframe/">Collaborate on the A-Frame codebase on GitHub.</a>
+Grab the A-Frame code and file issues on [GitHub](http://github.com/aframevr), and share your work or join the discussion on [Slack](http://aframevr.slack.com/).
 
+* [github.com/aframevr](http://github.com/aframevr)
+* [aframevr.slack.com](http://aframevr.slack.com/)
+* [@aframevr](https://twitter.com/aframevr)
 
-## Slack
+## WebVR
 
-<a href="https://aframevr.slack.com/">Join Slack with the community.</a>
-
-
-## Twitter
-
-<a href="https://aframevr.com/">Tweet at us.</a>
+* [webvr.slack.com](https://webvr-slack.herokuapp.com/)
+* [r/webvr](https://www.reddit.com/r/webvr)
+* [Mailing List](https://mail.mozilla.org/listinfo/web-vr-discuss)
