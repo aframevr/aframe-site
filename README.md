@@ -1,6 +1,6 @@
-# aframe-site
+# aframe-site-site
 
-This site drives the __[A-Frame site](http://aframe.io/)__.
+This site drives the __[staging server](http://aframevr.github.io/aframe-site-dev/)__ for the __[A-Frame site](http://aframe.io/)__.
 
 This site is built using [hexo](http://hexo.io/). Site content is written in [Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in the [`src/`](src/) directory). Pull requests are welcome!
 
@@ -18,6 +18,15 @@ To clean the repo's local database:
     npm run clean
 
 You may need to occasionally need to resart the server if you cause breaking changes. Just proceed as usual.
+
+
+## Deployment
+
+To deploy this to GitHub Pages:
+
+    npm run deploy
+
+It will now be live at the __[staging server](http://aframevr.github.io/aframevr-site-dev/)__.
 
 
 ## License

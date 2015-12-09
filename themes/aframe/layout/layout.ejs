@@ -17,7 +17,7 @@
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>" data-is-home="<%- isHome %>" data-sidebar-layout="<%- page.sidebar_layout %>">
     <div id="mobile-bar" class="mobile-bar">
       <a class="menu-button"></a>
-      <a class="logo" href="<%- url_for('/') %>"></a>
+      <a class="logo" href="<%- url_for(config.root) %>"></a>
     </div>
     <main id="main" class="main">
       <%- body %>

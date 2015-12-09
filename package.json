@@ -1,5 +1,5 @@
 {
-  "name": "aframe-site",
+  "name": "aframe-site-dev",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
     "dev": "npm run server",
     "server": "hexo server",
     "generate": "hexo generate",
-    "deploy": "hexo clean && hexo deploy",
+    "deploy": "hexo clean && hexo deploy && open 'http://aframevr.github.io/aframe-site-dev/'",
     "clean": "hexo clean",
     "update": "node update.js",
     "syncdocs": "mkdir -p src/docs/core && touch src/docs/core/index.md && cp -r ../aframe-core/docs/ src/docs/core"
