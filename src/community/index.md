@@ -7,14 +7,14 @@ sidebar_layout: flat
 
 ## GitHub
 
-<a href="<%- config.github_url %>">Collaborate on the A-Frame codebase on GitHub.</a>
+<a href="https://github.com/aframevr/aframe/">Collaborate on the A-Frame codebase on GitHub.</a>
 
 
 ## Slack
 
-<a href="<%- config.slack_url %>">Join Slack with the community.</a>
+<a href="https://aframevr.slack.com/">Join Slack with the community.</a>
 
 
 ## Twitter
 
-<a href="<%- config.twitter_url %>">Tweet at us.</a>
+<a href="https://aframevr.com/">Tweet at us.</a>
