@@ -6,73 +6,66 @@ layout: page
 
 ## What is A-Frame?
 
+A-Frame is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by [MozVR](http://mozvr.com/) (Mozilla's virtual reality team research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL's power, without having to learn it's complex low-level API. Because WebGL is ubiquitous in modern browsers on desktop and mobile, A-Frame experiences work across desktop, mobile, and Oculus Rift headsets.
+
+A-Frame optimizes for a smooth learning curve between beginner ease of use and advanced user flexibility. Beginners start with easily understood primitives like cubes, videos, models, and skies. Advanced users can use Javascript to imperatively create dynamic and interactive scenes or dive into its underlying entity-component system, a design pattern popular in the game industry that favors composition over inheritance. Because A-Frame is built around building blocks that can be extended and combined into limitless combinations, it provides a high degree of creative freedom. 
+
 ## Why did you create it?
+
+We felt WebVR development was too difficult, and sought tools that would make it faster, easier and more enjoyable. Over the course of 2015 the MozVR team was creating many WebVR experiments with Three.js. To speed up workflows, we began to experiment with custom elements wrapping WebGL. In creating these tools we drew inspiration from both existing declarative VR tools (eg JanusVR, Glam, SceneVR), and from game development best practices. As the tools matured, we felt that they might be able to address what we felt were gaps in the market, particularly around ease of use and "webby-ness". We envisioned A-Frame as having the following:
+
+* The power of WebGL
+* The accessibility of markup
+* Support for modern web browsers on desktop, mobile and the Oculus Rift
+* A strong emphasis on virtual reality
+* A smooth learning curve between beginners and experts
+* Underlying modularity and extensibility
+* Familiarity to non-WebGL web developers
+
+Our hope is that A-Frame provides a constructive contribution to a growing pantheon of WebVR development tools, helping to grow the number of VR web developers and experiences.
 
 ## How can I get started?
 
-## Which VR devices does it support?
+See our Guide for in-depth instructions. There are several ways to start using A-Frame, including a CDN-hosted version minified JS file, a boilerplate, and an NPM package.
+
+## What VR devices does it support?
+
+A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders. A-Frame also works on desktop computers with mouse and keyboard controls. A-Frame's device support is built on the [WebVR API](https://github.com/MozVR/webvr-spec) and the [WebVR Polyfill](https://github.com/borismus/webvr-polyfill). As the WebVR API and Polyfill mature, and as WebVR-enabled browsers add support for additional devices like the HTC Vive, A-Frame will be updated to also support those devices.
 
 ## How can I share my work?
 
-## The demos run slow or choppy for me. How can I improve performance?
+There are several community channels available for sharing experiences built A-Frame. 
 
-## Can I use HTML and CSS?
+* [Made with A-Frame Tumblr](http://aframevr.tumblr.com/)
+* [A-Frame Slack](http://aframevr.slack.com/)
+* [WebVR Slack](https://webvr.slack.com/)
+* [WebVR Reddit](https://www.reddit.com/r/webvr)
 
-## How is A-Frame different from other declarative 3D web frameworks?
 
-## Where is your feature roadmap?
+## My site runs slowly. How can I improve performance?
 
-## What features do you not support?
+Virtual reality is a new and performance-intensive technology. The right combination of hardware and software settings can make the difference between presence and nausea.
 
-* Animations on models
-* glTF model format (yet)
-* Gamepad support (yet)
-* Positional audio
+For the Oculus Rift, we recommend using a Windows PC that meets the  recommended specs of the [Oculus Rift CV1](https://www.oculus.com/en-us/blog/powering-the-rift/) (consumer version), including a GeForce GTX 970. 
 
-## Why are we creating this?
+Unfortunately, Macs are not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site](https://developer.oculus.com/downloads/), newer versions of OSX are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs or our mobile phones.
 
-* It's too hard to create WebVR worlds. You shouldn't need to know Three.js.
-* WebVR is very young. It needs more voices. People who don't know WebGL. People who don't have headsets. People who never programmed before, but love creating and sharing 3D worlds in tools like Minecraft.
-* We want to make it radically easier to create WebVR.
-* We looked at existing solutions. Lots of problems.
-    * Stagnant
-    * Little or no VR support
-    * Too hard to use
-    * Not created by creators, so missing critical design features.
-    * Not compatible with the open web
-    * Not compatible with modern web dev workflows
-* Meanwhile we've been making tons of sites in-house at Mozilla Research. And over time we've learned a lot about what we need to create VR websites. And we've been creating lots of tools for internal use. VR-Markup is about sharing those tools.
-* They're easy enough to use for someone who's never programmed before.
-* But they're also extremely powerful, enabling experienced web devs to start cranking out highly sophisticated WebVR experiences with full interactivity, scripting, etc.
-* And they're extensible, so you anyone can create and share new components. Unlocking the power of open source.
+On mobile, the faster the phone the better. We generally use iPhone 6S devices or the latest Nexus Android devices, for example.
 
-## What were the design principles?
+A-Frame is also a young framework with several known opportunities for performance improvements. Steadily improving performance and addressing bugs is an ongoing high priority for the development team. If you find bugs or performance improvement opportunities, please file [issues](https://github.com/aframevr/aframe/issues) and/or [pull requests](https://github.com/aframevr/aframe/pulls)!
 
-* Easy to learn: you shouldn’t need to know JS to get started.
-* Powerful: enough to create complex and compelling experiences.
-* Performant: as much as possible.
-* Extensible: build, share and discover custom components.
-* Building blocks, not templates: open-ended for greatest creative potential.
-* Responsive: works across platforms and devices. No headset required!
-* Not a standard! This is a way to build WebVR experiences. Not the way.
-* Future friendly: the markup and boilerplate will get better over time without breaking current features.
-* WYSIWYG-friendly: today you can use the DOM Editor in DevTools to edit your scenes on the fly. That same capability enables people to build 3D drag-and-drop editors, or VR paintbrushes, etc.
+## Where can I find models, textures and sounds for my 3D worlds?
 
-## How is this different from X3D? (wip)
+The [Awesome A-Frame Github repo](https://github.com/aframevr/awesome-aframe) provides links to A-Frame-compatible assets and learning materials. Awesome A-Frame is a list built by the community, for the community. If you find cool resources, add them to the list by editing the repo. The Awesome A-Frame readme provides instructions on that process.
 
-* X3D is meant to be a standard. It moves slowly as a result.
-* X3D is a kitchen sink of features. It is complex and hard to use as a result.
-* X3D learning materials are light, and adoption has been very weak.
-* X3D VR support is an afterthought.
+## Can I add links to my scene?
 
-## How is this different from GLAM? (wip)
+The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying requestFullScreen API that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experience as self-contained single page web applications. 
 
-* GLAM separates concerns along traditional lines for the web: content (HTML), behavior (JavaScript) and presentation (CSS). This approach optimizes for shared styles across massive web sites. It breaks down, however, when interactivity, motion, and physics are added, and the number of elements increases vastly, as with VR worlds. At this point the creator finds it more useful to build with discrete components that encapsulate content, presentation and behavior. This more modular separation of concerns enables the creator to add or remove as many components to the scene as they like, while the others run independently. It is also vastly easier to work with, as the appearance of a component is defined by styles that live inside it, instead of a completely separate document linked via classes. The creator who can adjust visuals much faster when that they don't have to unnecessarily switch between documents and remember class names, line numbers, etc.
-* This model also enables anyone to create and share new interoperable components, ensuring the number of available components rapidly expands.
+## Where is the A-Frame feature roadmap?
 
-## How is this different from Janus?
+We user issues on the [A-Frame Github repo](https://github.com/aframevr/aframe/issues) to track feature requests and bugs. Please file new requests for things you'd to see, or bugs that you find!
 
-* Built on the open web. Made with HTML, CSS, JS, WebGL and Web Components.
-* Works in your browser: Firefox, Chrome, Safari, Edge.
-* Works across devices: desktop, mobile and VR.
-* Modern tooling: NPM, Git, etc.
+## What's the correct name? A-Frame, aframe, AFrame, A-Frame VR, aframevr?
+
+We call it A-Frame. We express it in code and domains as aframe, as much as possible. Sometimes we cannot get "aframe", and we have to resort to "aframevr", which is more widely available. The site is at [aframe.io](http://aframe.io/), for example, but the GitHub organization is [github.com/aframevr](https://github.com/aframevr). We're not thrilled about this inconsistency, but it's something we accept begrudgingly. Sorry for any confusion!
