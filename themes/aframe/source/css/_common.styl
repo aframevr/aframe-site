@@ -62,91 +62,100 @@ em
 p
     word-spacing 0.05em
 
-a.button
-    display inline-block
-    font-family $code-font
-    font-weight 700
-    color #fff
-    background-color lighten($green, 8%)
-    border-bottom 2px solid darken($green, 12%)
-    padding 12px 14px
-    border-radius 4px
-    transition all .15s ease
-    &:hover
-        background-color lighten($green, 15%)
-        -webkit-transform translate(0, -2px)
-        transform translate(0, -2px)
-
-.highlight
-    overflow-x auto
-    position relative
-    padding 0
-    background-color $codebg
-    padding .8em .8em .4em
-    line-height 1.1em
-    border-radius $radius
-    table, tr, td
-        width 100%
-        border-collapse collapse
-        padding 0
-        margin 0
-    .gutter
-        width 1.5em
-    .code
-        pre
-            padding 1.2em 1.4em
-            line-height 1.5em
-            margin 0
-    &.html, &.js, &.bash, &.css
-        .code:after
-            position absolute
-            top 0
-            right 0
-            color #ccc
-            text-align right
-            font-size .75em
-            padding 5px 10px 0
-            line-height 15px
-            height 15px
-            font-weight 600
-    &.html .code:after
-        content 'HTML'
-    &.js .code:after
-        content 'JS'
-    &.bash .code:after
-        content 'Shell'
-    &.css .code:after
-        content 'CSS'
-
 iframe
     border 0
 
-p [href*=github][href*="/blob/"]:only-child
-    background $codebg
-    border 1px solid $border
-    border-radius $radius
-    transition .2s ease-in
-    color #666
-    padding 5px 10px
-    &:after
-        background url(../images/github-icon.svg) no-repeat
-        content ''
-        display inline-block
-        margin-left 0.5em
-        opacity .5
-        height 14px
-        transition .2s opacity ease-in
-        vertical-align middle
-        width 12px
-    &:hover
-        border-color $border-dark
-        color #333
-        &:after
-            opacity 1
 .btn
     border 0
     cursor pointer
     font inherit
 
-[data-sidebar-layout=flat] .list
-    display none
+.copy__wrap
+    max-width 700px
+    margin 40px
+
+.nav, .subnav
+    list-style-type none
+
+.copy
+    a
+        border-bottom 1px solid rgba(53,196,232,0.25)
+        color hsl(192, 80%, 40%);
+        &:hover
+            border-bottom-color rgba(53,196,232,0.75)
+            color hsl(192, 80%, 56%);
+    a.button
+        font-size .9em
+        color #fff
+        margin .2em 0
+        width 180px
+        text-align center
+        padding 12px 24px
+        display inline-block
+        vertical-align middle
+    img
+        max-width 100%
+    span.light
+        color $light
+    span.info
+        font-size .85em
+        display inline-block
+        vertical-align middle
+        width 280px
+        margin-left 20px
+    h1
+        margin 0
+    h2
+        margin 2em 0 .8em
+        padding-bottom .7em
+        border-bottom 1px solid $border
+    h3
+        margin 2em 0 1.2em
+        position relative
+    figure, p, ul, ol
+        margin 15px 0
+    p, ul, ol
+        line-height 1.6em
+    ul, ol
+        padding-left 1.5em
+    blockquote
+        margin 2em 0
+        padding-left 20px
+        border-left 4px solid $green
+        p
+            font-weight 600
+            margin-left 0
+    iframe
+        margin 1em 0
+    p.tip
+        padding 12px 24px 12px 30px
+        margin 2em 0
+        border-left 4px solid $red
+        background-color $codebg
+        position relative
+        border-bottom-right-radius $radius
+        border-top-right-radius $radius
+        &:before
+            position absolute
+            top 14px
+            left -12px
+            background-color $red
+            color #fff
+            content "!"
+            width 20px
+            height 20px
+            border-radius 100%
+            text-align center
+            line-height 20px
+            font-weight bold
+            font-size 14px
+    ul
+        list-style disc
+        margin-left 1em
+        padding-left 1em
+    ol
+        list-style decimal
+        margin-left 1em
+        padding-left 1em
+    ol ol
+        list-style circle

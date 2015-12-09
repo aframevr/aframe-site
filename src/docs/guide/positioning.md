@@ -1,7 +1,10 @@
 ---
 title: Positioning
 type: guide
-order: 3
+layout: docs
+parent_section: guide
+order: 4
+show_guide: true
 ---
 
 To position an element, you can use position, rotation, and scale.

@@ -1,16 +1,10 @@
 var utils = require('../lib/utils');
 
-hexo.extend.generator.register('guide', function (locals) {
-  return {
-    path: 'guide/',
-    data: utils.createRedirectResponse(hexo, 'guide/getting-started/')
-  };
-});
-
 hexo.extend.generator.register('docs', function (locals) {
   return {
     path: 'docs/',
-    data: utils.createRedirectResponse(hexo, 'docs/primitives/')
+    // TODO: Redirect to http://docs.aframe.io/
+    data: utils.createRedirectResponse(hexo, 'docs/guide/')
   };
 });
 
@@ -44,15 +38,15 @@ hexo.extend.generator.register('examples', function (locals) {
         example.section = sectionSlug;
         example.url = permalink;
         example.is_external = utils.isUrl(example.path);
-        addRoute(permalink, example, 'example');
+        addRoute(permalink, example, 'examples');
         examples[permalink] = example;
         if (!self.config.examples) { return; }
         if (permalink === self.config.examples.first_example_url) {
-          addRoute('examples/', example, 'example');
+          addRoute('examples/', example, 'examples');
         }
-        if (permalink === self.config.examples.homepage_example_url) {
-          addRoute('/', example, 'index');
-        }
+        // if (permalink === self.config.examples.homepage_example_url) {
+        //   addRoute('/', example, 'index');
+        // }
       });
     });
     hexo.locals.set('examples_by_urls', function () {

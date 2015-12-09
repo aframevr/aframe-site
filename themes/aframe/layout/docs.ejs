@@ -1,10 +1,29 @@
-<% if (page.type) { %>
-  <%- partial('partials/sidebar_docs', {type: page.type, index: page.index, sidebar_layout: page.sidebar_layout}) %>
-<% } %>
+<aside class="sidebar">
+
+  <%- partial('partials/secondary/sidebar_header', {site: site}) %>
+
+  <div class="list">
+    <% site.pages.find({parent_section: 'docs'}).sort('section_order').each(function (section) { %>
+      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-active' : ' section-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>"><%- section.section_title %></a></h3>
+
+      <ul class="subnav docs-subnav">
+        <% site.pages.find({type: section.type}).sort(section.page_sort_by || 'order').each(function (p) { %>
+          <li class="subnav-item">
+            <a href="<%- page_url(p.path) %>" class="subnav-link<%- page.title === p.title ? ' current' : '' %>"><%- p.title %></a>
+          </li>
+        <% }) %>
+      </ul>
+    <% }) %>
+  </div>
+
+</aside>
+
 <div class="content content--<%- page.type %> copy">
   <div class="copy__wrap">
     <h1 class="page__title"><%- page.title %></h1>
+
     <%- page.content %>
+
     <div class="guide-links">
       <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
         <span>← <a href="<%- page_url(page.path) %>"><%= page.title %></a></span>
@@ -13,6 +32,6 @@
         <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %></a> →</span>
       <% }) %>
     </div>
-    <%- partial('partials/docs_footer', {item: page}) %>
+    <%- partial('partials/docs/footer', {item: page}) %>
   </div>
 </div>

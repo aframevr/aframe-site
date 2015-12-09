@@ -4,7 +4,9 @@ section_title: Components
 type: components
 layout: docs
 parent_section: docs
-order: 3
+order: 0
+page_sort_by: title
+section_order: 4
 ---
 
 A-Frame is based on an entity-component architecture, a pattern common in game

@@ -108,9 +108,10 @@ github_repo: aframe
 github_url: https://github.com/aframevr/aframe
 google_analytics: UA-24056643-4
 
-aframe_version: 0.0.10
+aframe_version: 0.1.0
 
 aframe_npm_url: https://www.npmjs.com/package/aframe
+aframe_boilerplate_github_url: https://github.com/aframevr/aframe-boilerplate
 
 examples:
   base_url: http://aframevr.github.io/aframe/examples/

@@ -1,29 +1,30 @@
 <% var projectTitle = config.title + ' – ' + config.subtitle %>
 <% var isHome = is_current('index.html') %>
+<% var showExamples = page.type === 'examples' %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%- isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title %></title>
+    <title><%- page.full_title || (isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title) %></title>
     <meta charset="utf-8">
     <meta name="robots" content="<%- config.robots %>">
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono" rel="stylesheet" type="text/css">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Dosis:300,500" rel="stylesheet" type="text/css">-->
     <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
-    <%- css('css/page') %>
+    <% if (showExamples) { %>
+      <%- css('css/examples') %>
+    <% } else { %>
+      <%- css('css/secondary') %>
+    <% } %>
     <%- partial('partials/ga') %>
   </head>
-  <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>" data-is-home="<%- isHome %>" data-sidebar-layout="<%- page.sidebar_layout %>">
-    <div id="mobile-bar" class="mobile-bar">
-      <a class="menu-button"></a>
-      <a class="logo" href="<%- url_for(config.root) %>"></a>
-    </div>
+  <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>" data-is-home="<%- isHome %>">
     <main id="main" class="main">
       <%- body %>
     </main>
-    <%- js('js/smooth-scroll.min.js') %>
-    <%- js('js/common.js') %>
+    <% if (!isHome) { %>
+      <%- js('js/smooth-scroll.min.js') %>
+      <%- js('js/common.js') %>
+    <% } %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
     <script>
       (function () {

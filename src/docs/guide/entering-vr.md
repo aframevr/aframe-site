@@ -1,7 +1,10 @@
 ---
 title: Entering VR
 type: guide
-order: 4
+layout: docs
+parent_section: guide
+order: 5
+show_guide: true
 ---
 
 A-Frame provides out-of-the-box support for desktop, mobile, and Oculus Rift.

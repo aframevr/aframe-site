@@ -1,20 +1,16 @@
-<% if (page.type) { %>
-  <%- partial('partials/sidebar_generic', {type: page.type, index: page.index, sidebar_layout: page.sidebar_layout}) %>
-<% } %>
+<aside class="sidebar">
+  <%- partial('partials/secondary/sidebar_header', {site: site}) %>
+
+  <div class="list">
+  </div>
+</aside>
+
 <div class="content content--<%- page.type %> copy">
   <div class="copy__wrap">
-    <h1 class="page__title"><%- page.title %><%= page.type === 'examples' ? ' Example' : '' %></h1>
+    <h1 class="page__title"><%- page.title %></h1>
+
     <%- page.content %>
-    <% if (page.type === 'guide') { %>
-      <div class="guide-links">
-        <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-          <span>← <a href="<%- page_url(page.path) %>"><%= page.title %></a></span>
-        <% }) %>
-        <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-          <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %></a> →</span>
-        <% }) %>
-      </div>
-    <% } %>
-    <%- partial('partials/docs_footer', {item: page}) %>
+
+    <%- partial('partials/docs/footer', {item: page}) %>
   </div>
 </div>

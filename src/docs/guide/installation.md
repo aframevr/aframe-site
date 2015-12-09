@@ -1,11 +1,11 @@
 ---
 title: Installation
 type: guide
-order: 0
+layout: docs
+parent_section: guide
+order: 2
+show_guide: true
 aframe_version: 0.1.0
-dev_size: "100.00"
-min_size: "50.00"
-gz_size: "50.00"
 ---
 
 ## Boilerplate Starter Kit
@@ -25,14 +25,9 @@ Simply download and include with a `<script>` tag. `aframe` will be registered a
 _**Pro tip:** Don't use the minified version during development. You will miss out all the nice warnings for common mistakes._
 
 <div id="downloads">
-<a class="button" href="/js/aframe.js" download>Development Version</a><span class="light info">With full warnings and debug mode</span>
-
-<a class="button" href="/js/aframe.min.js" download>Production Version</a><span class="light info">Warnings stripped, {{gz_size}}kb min+gzip</span>
+<a class="button" href="/releases/latest/js/aframe.js" download>Development Version</a>
+<a class="button" href="/releases/latest/js/aframe.min.js" download>Production Version</a>
 </div>
-
-### CDN
-
-Available on [jsdelivr](//cdn.jsdelivr.net/aframe/{{aframe_version}}/aframe.min.js) or [cdnjs](//cdnjs.cloudflare.com/ajax/libs/aframe/{{aframe_version}}/aframe.min.js) (it takes some time to sync, so the latest version might not be available yet).
 
 ## npm
 
@@ -45,13 +40,6 @@ $ npm install aframe
 $ npm install mozvr/aframe#dev
 ```
 
-## Bower
-
-```bash
-# latest stable
-$ bower install aframe
-```
-
 ## AMD Module Loaders
 
-The standalone downloads or versions installed via npm/Bower are wrapped with UMD so they can be used directly as an AMD module.
+The standalone downloads or versions installed via npm are wrapped with UMD so they can be used directly as an AMD module.
