@@ -5,28 +5,28 @@ layout: docs
 parent_section: primitives
 ---
 
-Plainly put, a plane is a flat, two-dimensional surface.
+The plane primitive wraps an entity with the geometry component with a plane
+primitive.
 
-[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
 
-## Attributes
-
-| Attribute Name  | Description         | Type    | Default Value | Units                  | Required |
-|-----------------|---------------------|---------|--------------:|------------------------|----------|
-| `width`         | width               | float   | `1`           | meters                 | no       |
-| `height`        | height              | float   | `1`           | meters                 | no       |
-| `color`         | color               | string  | `gray`        | named color/hex        | no       |
-| `opacity`       | opacity             | float   | `1.0`         | factor (`0.0` - `1.0`) | no       |
-| `receive-light` | `true` for basic material; `false` for PBR | boolean | `true` | `true`/`false` | no |
-| `transparent`   | transparent         | boolean | `true`        | `true`/`false`         | no (`true` if `opacity < 1.0 and receiveLight`) |
-| `metalness`     | metalness           | float   | `0.0`         | factor (`0.0` - `1.0`) | no       |
-| `roughness`     | roughness           | float   | `0.5`         | factor (`0.0` - `1.0`) | no       |
-| `src`           | URL to image        | string  |               | absolute/relative URL  | no       |
+| Attribute   | Component Mapping    | Default Value |
+| ---------   | -----------------    | ------------- |
+| color       | material.color       | gray          |
+| height      | geometry.height      | 1             |
+| metalness   | material.metalness   | 0.0           |
+| opacity     | material.opacity     | 1.0           |
+| roughness   | material.roughness   | 0.5           |
+| shader      | material.shader      | standard      |
+| src         | material.src         | None          |
+| translate   | geometry.translate   | None          |
+| transparent | geometry.transparent | None          |
+| width       | material.width       | 1             |
 
 ## Examples
 
-To create a simple green plane:
+A green plane:
 
 ```html
-<vr-plane rotation="0 -45 10" height="10" color="green"></vr-plane>
+<a-plane rotation="0 -45 10" height="10" color="green"></a-plane>
 ```

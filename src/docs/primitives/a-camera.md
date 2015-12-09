@@ -5,34 +5,39 @@ layout: docs
 parent_section: primitives
 ---
 
-[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+The camera primitive wraps an entity that features:
 
-## Attributes
+- Camera component
+- Cursor component
+- Look controls component
+- Mouse controls component
 
-| Attribute Name | Description            | Type    | Default Value | Units          | Required |
-|----------------|------------------------|---------|--------------:|----------------|----------|
-| `fov`          | field-of-view angle    | float   | `45`          | degrees        | no       |
-| `near`         | distance of near plane | float   | `1`           | meters         | no       |
-| `far`          | distance of far plane  | float   | `10000`       | meters         | no       |
-| `aspect`       | aspect ratio           | float   | `window.innerWidth / window.innerHeight` | degrees | no (auto-calculated if omitted) |
-| `mouselook`    | mouselook controls     | boolean | `true`        | `true`/`false` | no       |
-| `locomotion`   | locomotion controls    | boolean | `true`        | `true`/`false` | no       |
+[View primitive definition]](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+
+| Attribute  | Component Mapping | Default Value                          |
+|------------|-------------------|----------------------------------------|
+| aspect     | camera.aspect     | window.innerWidth / window.innerHeight |
+| far        | camera.far        | 10000                                  |
+| fov        | camera.fov        | 45                                     |
+| locomotion | wasd-controls     | true                                   |
+| mouselook  | look-controls     | true                                   |
+| near       | camera.near       | 1                                      |
 
 ## Examples
 
-Camera with a 45° Field of View and desktop mouse-look controls and WASD keyboard controls for movement:
+A camera with all the defaults:
 
 ```html
 <a-camera></a-camera>
 ```
 
-Same as above but with a 65° FOV:
+A camera with a 60-degree field-of-view:
 
 ```html
 <a-camera fov="60"></a-camera>
 ```
 
-Same as above but with only desktop mouse-look controls (useful for simple point-and-click experiences)
+A camera with keyboard controls disabled for sitting experiences:
 
 ```html
 <a-camera fov="60" mouselook="true" locomotion="false"></a-camera>
