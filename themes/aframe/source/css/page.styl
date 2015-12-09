@@ -42,6 +42,13 @@ ul
         color #333
         font-weight 500
 
+.nav-link
+    &.current,
+    &.active,
+    &.current:hover,
+    &.active:hover
+        color $pink
+
 .logo__wordmark
     color $pink
     display inline-block
@@ -304,9 +311,27 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
         border-bottom 1px solid #eee
         font-size 12px
 
-.section-inactive
-    + .docs-subnav
-        display none
+.docs-section-title
+    // padding-left 15px
+    position relative
+    &:before
+        background url(../images/caret.svg) -3px 0 no-repeat
+        background-size contain
+        // content ""
+        position absolute
+        top 1px
+        height 10px
+        left 0
+        width 10px
+
+.section-active:before
+    transform rotate(90deg)
+    top 4px
+    left -3px
+
+// .section-inactive
+//     + .docs-subnav
+//         display none
 
 [data-is-home="true"]
     .logo__wordmark
@@ -329,5 +354,12 @@ body:not([data-sidebar-layout=flat]) .menu__generic ul
     // .section-title, .section-title a
     //     color rgba(0,0,0,0.5)
 
-    .section-title
-        display none
+    .examples-link
+        border 3px solid #fff
+        color #fff
+        padding 5px 10px
+
+    .get-started-link
+        border 3px solid #fff
+        color #fff
+        padding 5px 10px

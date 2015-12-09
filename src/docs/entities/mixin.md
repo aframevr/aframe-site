@@ -1,4 +1,7 @@
-title: "Mixin"
+title: Mixin
+type: entities
+layout: docs
+parent_section: entities
 ---
 
 Mixins provide a way to reuse commonly-used sets of component definitions.

@@ -1,10 +1,16 @@
-title: "Entity-Component Architecture"
+---
+title: Introduction to Architecture
+section_title: Entity-Component System
+type: entities
+layout: docs
+parent_section: docs
+order: 2
 ---
 
 A-Frame is based on an entity-component architecture, a pattern common in game
 development that emphasizes composability:
 
-- An **entity* is a general purpose object in the scene (e.g., player, enemy, tree, sky).
+- An **entity** is a general-purpose object in the scene (e.g., player, enemy, tree, sky).
 - A **component** consists of attributes that modifies the behavior or functionality of an
   entity.
 

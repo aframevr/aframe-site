@@ -7,6 +7,13 @@ hexo.extend.generator.register('guide', function (locals) {
   };
 });
 
+hexo.extend.generator.register('docs', function (locals) {
+  return {
+    path: 'docs/',
+    data: utils.createRedirectResponse(hexo, 'docs/primitives/')
+  };
+});
+
 hexo.extend.generator.register('examples', function (locals) {
   var self = this;
 

@@ -3,7 +3,7 @@
   <%- partial('sidebar_header') %>
 
   <div class="list">
-    <% site.pages.find({parent_section: 'docs'}).sort('title').each(function (section) { %>
+    <% site.pages.find({parent_section: 'docs'}).sort('order').each(function (section) { %>
       <h3 class="section-title docs-section-title<%- type === section.type ? ' section-active' : ' section-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>"><%- section.section_title %></a></h3>
 
       <ul class="subnav docs-subnav">
