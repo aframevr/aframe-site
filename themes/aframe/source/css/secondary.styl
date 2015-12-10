@@ -1,17 +1,17 @@
 @import "_common"
 @import "_docs"
 
-.nav
+.header
     border-bottom 1px dashed rgba(0,0,0,0.1)
     margin-bottom 20px
-    padding 10px 0 20px
+    padding-bottom 20px
 
 .nav-item
     font-family $code-font
     text-transform uppercase
 
-.nav-item + .nav-item
-    margin-top 3px
+    + .nav-item
+        margin-top 3px
 
 .subnav-item + .subnav-item
     margin-top 5px
@@ -97,20 +97,6 @@
     .main
         flex-direction column
 
-.section-title, .section-title a
-    color rgba(0,155,155,0.5)
-
-.section-title a
-    display block
-    &:hover
-        color rgba(0,100,100,0.75)
-
-.section-title
-    line-height 1.2
-    font 11px $mono-font
-    margin 20px 0 5px
-    text-transform uppercase
-
 .content
     display flex
     flex-direction column
@@ -153,30 +139,61 @@
         border-bottom 1px solid #eee
         font-size 12px
 
-// Flip this to enable toggles for FAQ sections.
+.section-title
+    line-height 1.2
+    font 11px $mono-font
+    text-transform uppercase
+    padding 5px 0 10px
+
+.section-title-link
+    display block
+    margin -5px 0 -10px
+    padding 5px 0 10px
+
+.section-subnav
+    margin-bottom 10px
+
+// To prevent the active sections from loading.
+prevent_clicks_on_active_links = true
+
+if prevent_clicks_on_active_links
+    .section-title-active
+        cursor pointer
+
+    .section-title-link-active
+        cursor pointer
+        pointer-events none
+
+// Hide sections and make section titles toggle them.
 enable_toggles = true
 
 if enable_toggles
-    .docs-section-title
-        padding-left 15px
+    .section-inactive + .section-subnav
+        display none
+
+    .section-title
         position relative
         &:before
-            background url(../images/caret.svg) -3px 0 no-repeat
-            background-size contain
+            background url(../images/caret.svg) -3px 6px no-repeat
+            // background red
+            background-size 10px auto
             content ""
+            pointer-events none
             position absolute
-            top 1px
-            height 10px
+            top 0
+            height 100%
             left 0
             width 10px
-        + ul
-            margin-left 15px
+
+    .section-title-link
+        padding-left 15px
+
+    .subnav-link
+        padding-left 25px
 
     .section-active:before
         transform rotate(90deg)
-        top 4px
-        left -3px
-
-    .section-inactive
-        + .docs-subnav
-            display none
+        left -6px
+else
+    .section-title
+        margin-top 15px
