@@ -25,7 +25,7 @@
     "dev": "npm run server",
     "server": "hexo server",
     "generate": "hexo generate",
-    "deploy": "hexo clean && hexo deploy && open 'http://aframevr.github.io/'",
+    "deploy": "hexo clean && hexo deploy && open 'https://aframevr.github.io/'",
     "clean": "hexo clean",
     "update": "node update.js",
     "syncdocs": "mkdir -p src/docs/core && touch src/docs/core/index.md && cp -r ../aframe-core/docs/ src/docs/core"

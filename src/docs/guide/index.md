@@ -26,7 +26,7 @@ To start an A-Frame scene, we import the A-Frame JavaScript, and define a scene.
 <html>
   <head>
     <title>My first VR site</title>
-    <script src="http://aframe.io/releases/latest/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -42,7 +42,7 @@ Our A-Frame scene is ready to start adding objects to! Let's start with a simple
 <html>
   <head>
     <title>My first VR site</title>
-    <script src="http://aframe.io/releases/latest/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>

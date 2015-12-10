@@ -22,8 +22,8 @@ Simply download and include with a `<script>` tag. `aframe` will be registered a
 
 _**Pro tip:** Don't use the minified version during development. You will miss out all the nice warnings for common mistakes._
 
-<a class="btn btn-download" href="http://aframe.io/releases/latest/aframe.min.js" download>Production Version <span>{{aframe_version}}</span></a> <em class="install-note">Minified</em>
-<a class="btn btn-download" href="http://aframe.io/releases/latest/aframe.js" download>Development Version <span>{{aframe_version}}</span></a> <em class="install-note">Uncompressed, includes source maps</em>
+<a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.min.js" download>Production Version <span>{{aframe_version}}</span></a> <em class="install-note">Minified</em>
+<a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.js" download>Development Version <span>{{aframe_version}}</span></a> <em class="install-note">Uncompressed, includes source maps</em>
 
 ## npm
 
