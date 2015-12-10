@@ -8,7 +8,7 @@ parent_section: primitives
 The plane primitive wraps an entity with the geometry component with a plane
 primitive.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-plane.html)
 
 | Attribute   | Component Mapping    | Default Value |
 | ---------   | -----------------    | ------------- |

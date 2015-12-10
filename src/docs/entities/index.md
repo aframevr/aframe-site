@@ -22,14 +22,14 @@ this will provide great flexibility over traditional inheritance patterns.
 
 As an abstract example, imagine a car is an entity:
 
-- We can add an "color" component which affects the color of the car.
+- We can add a "color" component which affects the color of the car.
 - We can add an "engine" component which has attributes such as "horsepower" or
   "weight" which affect the speed of the car.
 - We might add a "tire" component which has attributes such as "grip" which
   affects the traction of the car.
 
 These components would be able to be mixed and matched and even be used with
-with other vehicles such as airplanes, motorcycles, or boats (where we don't
+with other vehicles such as airplanes, motorcycles, or boats (where we wouldn't
 specify a "tire" component).
 
 ## Usage
@@ -48,7 +48,7 @@ For example, to create a pink cube, which requires the `geometry` and
           material="color: pink"></a-entity>
 ```
 
-For all the web developers, the syntax might seem new, or even odd, but the
+For web developers, the syntax might seem new, or even odd, but the
 composability makes it powerful to be able to customize entities in the system.
 Perhaps we want our cube to give off light, we can simply add the `light`
 component.
@@ -69,8 +69,8 @@ component.
 ```
 
 We see that components make it very easy to compose entities with mixtures of
-behavior and functionality. And everyone can write their own components to
+behavior and functionality and everyone can write their own components to
 modify entities however they desire. For example, someone might write a
-`vibrate` component that makes the entity vibrate, regardless of what kind of
-entity it is. Although it might seem verbose, it provides a core foundation for
-abstract on top of.
+`vibrate` component that makes the entity vibrate regardless of what kind of
+entity it is. Although it might seem verbose it provides a core foundation for
+abstraction.

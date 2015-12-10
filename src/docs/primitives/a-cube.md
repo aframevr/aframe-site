@@ -28,7 +28,7 @@ box primitive.
 
 [View an example](https://aframevr.github.io/aframe/examples/cubes/)
 
-A gray 5&times;5&times;5 cube:
+A simple gray cube:
 
 ```html
 <a-cube></a-cube>

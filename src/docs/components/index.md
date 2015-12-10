@@ -10,8 +10,8 @@ section_order: 4
 ---
 
 The camera component defines from what perspective the user views the scene.
-It is often paired with control-related components such that user input moves
-and rotates the camera.
+It is often paired with control-related components such as user input which
+moves and rotates the camera.
 
 ```html
 <a-entity>

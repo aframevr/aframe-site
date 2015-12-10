@@ -26,8 +26,8 @@ waiting on their `loaded` events) before kicking off the render loop.
 ## Render Loop
 
 The scene handles the render loop under a `requestAnimationFrame`. On each
-tick, the scene will render itself, and all of its entities, to the canvas.  At
-this point, animations and any other registered behaviors are ticked or
+tick the scene will render itself and all of its entities to the canvas.  At
+this point animations and any other registered behaviors are ticked or
 updated.
 
 ## Events
@@ -45,7 +45,7 @@ The scene sets a couple of keyboard shortcuts:
 
 ## Stats
 
-To view performance statistics, set enable the `stats` component on `<a-scene>`:
+To view performance statistics, enable the `stats` component on `<a-scene>`:
 
 ```html
 <a-scene stats="true"></a-scene>

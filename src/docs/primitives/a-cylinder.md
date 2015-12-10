@@ -5,7 +5,7 @@ layout: docs
 parent_section: primitives
 ---
 
-The cube primitive wraps an entity that features the geometry component with a
+The cylinder primitive wraps an entity that features the geometry component with a
 cylinder primitive.
 
 [View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
@@ -33,7 +33,7 @@ cylinder primitive.
 
 [View an example](https://aframevr.github.io/aframe/examples/cylinders/)
 
-Closed gray cylinder with a 0.5-meter radius:
+Simple closed gray cylinder:
 
 ```html
 <a-cylinder></a-cylinder>

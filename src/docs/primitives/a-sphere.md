@@ -26,7 +26,7 @@ a sphere primitive.
 
 ## Examples
 
-Yellow sphere.
+Yellow sphere:
 
 ```html
 <a-sphere color="yellow" radius="5"></a-sphere>

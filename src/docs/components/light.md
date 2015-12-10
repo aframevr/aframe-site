@@ -6,8 +6,8 @@ parent_section: components
 
 The light component defines the entity as a source of light. Light affects all
 materials that have not specified a flat shading model with `shader: flat`.
-Note that lights are computationally expensive and that we should limit the
-number of lights in the scene.
+Note that lights are computationally expensive and the number of lights in a
+scene should be limited.
 
 ```html
 <a-entity light="color: #AFA; intensity: 1.5" position="-1 1 0"></a-entity>
@@ -77,7 +77,7 @@ a gray sky).
 ## Point
 
 Point lights, unlike directional lights, are omni-directional and affect
-materials depending on its position and distance. They can be thought of as a
+materials depending on their position and distance. They can be thought of as a
 light bulb. The closer the light bulb gets to an object, the greater the object
 is lit.
 

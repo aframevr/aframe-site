@@ -12,7 +12,7 @@ raycaster component will poll for intersections with other entities and set
 
 Since it can be useful for other components but inherently does not add
 behavior, we will instead document the properties of the raycaster component
-prototype.
+prototype below.
 
 | Property      | Description                                      |
 |---------------|--------------------------------------------------|

@@ -6,7 +6,7 @@ parent_section: primitives
 ---
 
 The curved image primitive wraps an entity that features the geometry component
-with an curved cylinder and the material component with a texture.
+with a curved cylinder and the material component with a texture.
 
 [View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-curvedimage.html)
 

@@ -33,7 +33,7 @@ cube.
 ## Defining Textures
 
 To set a texture on the material, specify the `src` attribute. `src` can either
-be a selector to an ```<img>``` or ```<video>``` element:
+be a selector to an `<img>` or `<video>` element:
 
 ```html
 <a-assets>
@@ -103,7 +103,7 @@ lighting conditions. Appearance is a result of the interaction between the
 incoming light and the attributes of the material.
 
 To achieve realism, the diffuse color, metalness, reflectivity, and roughness
-attributes of the material must accurately be controled, often based on
+attributes of the material must accurately be controlled, often based on
 real-world material studies. Some people have compiled charts of realistic
 values for different kinds of materials that can be used as a starting point.
 
@@ -115,7 +115,7 @@ For example, for a tree bark material, as an estimation, we might set:
 </a-entity>
 ```
 
-For basic scenes, however, physically-based materials are not a large cocern.
+For basic scenes, however, physically-based materials are not a large concern.
 
 ## Specifying Flat Shading
 
