@@ -5,35 +5,29 @@ layout: docs
 parent_section: primitives
 ---
 
-[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sphere.html)
+The sphere primitive wraps an entity that features the geometry component with
+a sphere primitive.
 
-## Attributes
+[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sphere.html)
 
-| Attribute Name | Description            | Type    | Default Value | Units          | Required |
-|----------------|------------------------|---------|--------------:|----------------|----------|
-| `fov`          | field-of-view angle    | float   | `45`          | degrees        | no       |
-| `near`         | distance of near plane | float   | `1`           | meters         | no       |
-| `far`          | distance of far plane  | float   | `10000`       | meters         | no       |
-| `aspect`       | aspect ratio           | float   | `window.innerWidth / window.innerHeight` | degrees | no (auto-calculated if omitted) |
-| `mouselook`    | mouselook controls     | boolean | `true`        | `true`/`false` | no       |
-| `locomotion`   | locomotion controls    | boolean | `true`        | `true`/`false` | no       |
+| Attribute       | Component Mapping       | Default Value |
+| ---------       | -----------------       | ------------- |
+| color           | material.color          | gray          |
+| metalness       | material.metalness      | 0.5           |
+| opacity         | material.opacity        | 1             |
+| radius          | geometry.radius         | 5             |
+| roughness       | material.roughness      | 0.5           |
+| segments-height | geometry.segmentsHeight | 36            |
+| segments-width  | geometry.segmentsWidth  | 18            |
+| shader          | material.shader         | standard      |
+| src             | material.src            | None          |
+| transparent     | material.transparent    | true          |
+| translate       | geometry.translate      | 0 0 0         |
 
 ## Examples
 
-Camera with a 45° Field of View and desktop mouse-look controls and WASD keyboard controls for movement:
+Yellow sphere.
 
 ```html
-<a-camera></a-camera>
-```
-
-Same as above but with a 65° FOV:
-
-```html
-<a-camera fov="60"></a-camera>
-```
-
-Same as above but with only desktop mouse-look controls (useful for simple point-and-click experiences)
-
-```html
-<a-camera fov="60" mouselook="true" locomotion="false"></a-camera>
+<a-sphere color="yellow" radius="5"></a-sphere>
 ```
