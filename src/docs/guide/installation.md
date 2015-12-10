@@ -12,22 +12,18 @@ aframe_version: 0.1.0
 
 We've created a [simple starter kit](https://github.com/aframevr/aframe-boilerplate#getting-started) for creating WebVR scenes using A-Frame.
 
-<div id="downloads">
 <a class="button" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download kit</a>
-</div>
 
 If you're comfortable with npm and git, feel free to [clone the repo](https://github.com/aframevr/aframe-boilerplate#option-2-fork-this-git-repo-) or [fork this CodePen scene](http://codepen.io/team/mozvr/pen/2ac060c354546201f3337b83fbdcd110?editors=100) to get started. It also ships with an optional local development server (with Live Reloading) and GitHub Pages deployment workflow (and works with browserify too).
 
-## Standalone
+## Standalone Downloads
 
 Simply download and include with a `<script>` tag. `aframe` will be registered as a global variable.
 
 _**Pro tip:** Don't use the minified version during development. You will miss out all the nice warnings for common mistakes._
 
-<div id="downloads">
-<a class="button" href="/releases/latest/js/aframe.js" download>Development Version</a>
-<a class="button" href="/releases/latest/js/aframe.min.js" download>Production Version</a>
-</div>
+<a class="button" href="/releases/latest/aframe.js" download>Production Version <span>{{aframe_version}}</span></a> <em class="install-note">Minified</em>
+<a class="button" href="/releases/latest/aframe.min.js" download>Development Version <span>{{aframe_version}}</span></a> <em class="install-note">Includes source maps</em>
 
 ## npm
 

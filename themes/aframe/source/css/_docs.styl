@@ -62,17 +62,32 @@ p [href*=github][href*="/blob/"]:only-child
         &:after
             opacity 1
 
-a.button
-    display inline-block
-    font-family $code-font
-    font-weight 700
-    color #fff
-    background-color lighten($green, 8%)
-    border-bottom 2px solid darken($green, 12%)
-    padding 12px 14px
-    border-radius 4px
-    transition all .15s ease
-    &:hover
-        background-color lighten($green, 15%)
-        -webkit-transform translate(0, -2px)
-        transform translate(0, -2px)
+.copy
+    a.button
+        background-color lighten($blue, 8%)
+        border 0
+        border-bottom 2px solid darken($blue, 12%)
+        border-radius 4px
+        color #fff
+        display inline-block
+        font-family $code-font
+        font-weight 600
+        padding 12px 14px
+        transition all .15s ease
+        &:hover
+            background-color lighten($blue, 15%)
+            transform translate(0, 1px)
+            transition none
+        &:active
+            background-color darken($blue, 12%)
+            transform translate(0, 2px)
+        span
+            font-size 0.8rem
+            font-weight 300
+    p br ~ a.button
+        margin-top 10px
+
+.install-note
+    color #999
+    font normal 0.8rem $mono-font
+    margin-left 10px
