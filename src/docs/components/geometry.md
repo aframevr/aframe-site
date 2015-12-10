@@ -85,7 +85,7 @@ double-sided material will be needed to render properly:
 
 #### Curved Surface
 
-Curved surfaces can be defined by specifying the angle via ```thetaLength```
+Curved surfaces can be defined by specifying the angle via `thetaLength`
 such that the cylinder doesn't curve all the way around, making the cylinder
 open-ended, and then making the material double-sided.
 

@@ -1,11 +1,10 @@
 ---
-title: Introduction to Architecture
+title: Architecture Overview
 section_title: Entity-Component System
 type: entities
 layout: docs
 parent_section: docs
 order: 1
-section_order: 3
 ---
 
 A-Frame is based on an entity-component architecture, a pattern common in game
