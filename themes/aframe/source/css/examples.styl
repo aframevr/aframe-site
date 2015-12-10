@@ -28,9 +28,6 @@ ul
 .nav-item + .nav-item
     margin-top 3px
 
-.subnav-item + .subnav-item
-
-
 .nav-link
     &.current,
     &.active,
@@ -38,13 +35,9 @@ ul
     &.active:hover
         color $pink
 
+// Extends `_common` styles.
 .logo__wordmark
     background url(../images/aframe-name-white.svg) no-repeat
-    background-size 100% auto
-    display block
-    text-indent:-9999px
-    height 50px
-    margin-top 10px
 
 .sidebar
     background $pink
@@ -79,7 +72,6 @@ ul
 // TODO: Figure out how to hide this scrollbar later. I've done it before.
 .sidebar__wrap
     height 100vh
-    padding 40px
     position relative
     overflow-y auto
 
@@ -169,6 +161,7 @@ h3 + .examples-subnav
     margin-top 15px
 
 .content--index
+    // This extends styles in `_common`.
     .copy__wrap
         max-width 550px
     .slogan
