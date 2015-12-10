@@ -7,9 +7,8 @@ order: 5
 ---
 
 Animations and transitions in A-Frame are defined using the `<a-animation>`
-element as a child. The system is roughly based after the [Web
-Animations](http://www.w3.org/TR/web-animations/) specification. A-Frame uses
-[tween.js](https://github.com/tweenjs/tween.js/) internally.
+element as a child. The system is roughly based after the [Web Animations](http://www.w3.org/TR/web-animations/)
+specification. A-Frame uses [tween.js](https://github.com/tweenjs/tween.js/) internally.
 
 As an introductory example, to define a 5-meter orbit on an entity about the
 Y-axis that takes 10 seconds, we can offset the position and animate the
@@ -80,15 +79,23 @@ entity back and forth.
 
 ### Numeric Attributes
 
-Although A-Frame does not currently have any core components that defined with
-just a single numeric value, there are cases where we want to animate a flat
-HTML attribute when we might have abstracted from the core entity-component
-architecture.
+Although A-Frame does not currently have any core components defined with just
+a single numeric value, there are cases where we may want to animate a flat
+HTML attribute when abstracted from the core entity-component architecture.
 
-For example, if we have a defined a custom element that wraps ```<a-entity
-light="intensity: 1>``` as ```<a-light intensity="1">```, we want a way to be
-able to animate light intensity. The animation system supports animating a numeric HTML
-attribute.
+For example, if we have a defined a custom element that wraps
+```html
+<a-entity light="intensity: 1>
+```
+
+as
+
+```html
+<a-light intensity="1">
+```
+
+The animation system supports animating a numeric HTML attribute which would
+let us animate the light intensity.
 
 ```html
 <a-light intensity="1">
@@ -114,9 +121,9 @@ with `geometry.radiusTop`.
 
 The `begin` attribute defines when the animation should start playing.
 
-This can either be a number for milliseconds to delay. For example, we can
-define an animation that waits 2 seconds, from when the animation is attached,
-before scaling an entity.
+This can either be a number of milliseconds to delay or triggered by an event.
+In this example, we define an animation that waits 2 seconds, from when the
+animation is attached, before scaling an entity.
 
 ```html
 <a-entity>
@@ -124,9 +131,8 @@ before scaling an entity.
 </a-entity>
 ```
 
-Or it can be an event name to wait for the parent element to emit. For example, we
-can define an animation that waits for the parent element to trigger an event
-named `fade` before fading an entity.
+In this example, we define an animation that waits for the parent element to
+trigger an event named `fade` before fading an entity.
 
 ```html
 <a-entity id="fading-cube" geometry="primitive: cube" material="opacity: 1">
@@ -144,9 +150,9 @@ document.querySelector('#fading-cube').emit('fade');
 The `direction` attribute defines which way to animate between the starting
 value and the final value.
 
-When an alternating direction is defined, which only takes effect when the
-animation is set to repeat, the animation will go back and forth between the
-values like a yo-yo.
+When an alternating direction is defined the animation will go back and forth
+between the values like a yo-yo.  Alternating directions only take affect when
+the animation is set to repeat.
 
 | Attribute         | Description                                                                                                 |
 |-------------------|--------------------------------------------------------------------------------------------------------------
@@ -190,9 +196,9 @@ their effects.
 
 The `repeat` attribute defines how often the animation repeats. We call each
 repeat of the animation a cycle. Repeat can either be a number that counts down
-on each animation cycle until it reaches 0, at which the animation will end. Or
-it can repeat can be set to `indefinite`, at which the animation will loop
-continuously until the animation is manually removed or stopped.
+on each animation cycle until it reaches 0 at which point the animation will
+end, or it can be set to `indefinite` and the animation will loop continuously
+until the animation is manually removed or stopped.
 
 ## Events
 

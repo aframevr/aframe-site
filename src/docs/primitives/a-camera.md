@@ -12,7 +12,7 @@ The camera primitive wraps an entity that features:
 - Look controls component
 - Mouse controls component
 
-[View primitive definition]](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
+[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-camera.html)
 
 | Attribute  | Component Mapping | Default Value                          |
 |------------|-------------------|----------------------------------------|

@@ -8,10 +8,10 @@ order: 2
 
 Entities in A-Frame are defined using the `<a-entity>` element. As described in
 the entity-component architecture overview, entities are general purpose
-objects (e.g., to create a player, monster, sky, cube). They inherently have a
-position, rotation, and scale in the scene. After they are defined, components,
-which add appearance, behavior, and functionality, are attached to the
-entities to give them life.
+objects (e.g., to create a player, monster, sky, or cube). They inherently have
+a position, rotation, and scale in the scene. After they are defined,
+components, which add appearance, behavior, and functionality, are attached to
+the entities to give them life.
 
 ## Properties
 

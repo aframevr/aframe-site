@@ -36,7 +36,7 @@ The box primitive defines boxes (square or rectangle).
 
 The circle primitive defines two-dimensional circles, which can be complete
 circles or partial circles (like Pac-Man). Note that because it is flat, only a
-single side of the circle will be rendered if ```side: double``` is not
+single side of the circle will be rendered if "side: double" is not
 specified on the material component.
 
 ```html
@@ -53,8 +53,8 @@ specified on the material component.
 ### Cylinder Primitive
 
 The cylinder primitive can define cylinders in the traditional sense like a
-Coca-Cola can. But it can also define shapes such as cones, tubes, curved surfaces. We'll go
-over some of these cylinder recipes below.
+Coca-Cola can, but it can also define shapes such as cones, tubes, and curved
+surfaces. We'll go over some of these cylinder recipes below.
 
 #### Basic Cylinder
 
@@ -78,7 +78,7 @@ Tubes can be defined by making the cylinder open-ended, which removes the top
 and bottom surfaces of the cylinder such that the inside is visible. A
 double-sided material will be needed to render properly:
 
-```
+```html
 <!-- Tube. -->
 <a-entity geometry="primitive: cylinder; openEnded: true" material="side: double"></a-entity>
 ```
@@ -89,7 +89,7 @@ Curved surfaces can be defined by specifying the angle via `thetaLength`
 such that the cylinder doesn't curve all the way around, making the cylinder
 open-ended, and then making the material double-sided.
 
-```
+```html
 <!-- Curved surface. -->
 <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength: 180"
           material="side: double"></a-entity>
@@ -109,7 +109,7 @@ open-ended, and then making the material double-sided.
 ### Plane
 
 The plane primitive defines a flat surface. Note that because it is flat, only
-a single side of the plane will be rendered if ```side: double``` is not
+a single side of the plane will be rendered if "side: double" is not
 specified on the material component.
 
 ```html
@@ -125,7 +125,7 @@ specified on the material component.
 ### Ring
 
 The ring geometry defines a flat ring, like a CD. Note that because it is
-flat, only a single side of the ring will be rendered if ```side: double``` is
+flat, only a single side of the ring will be rendered if "side: double" is
 not specified on the material component.
 
 ```html
@@ -154,8 +154,6 @@ make the sphere appear round.
 ```html
 <a-entity geometry="primitive: sphere; radius: 2"></a-entity>
 ```
-
-Play around with the other attributes and see what you get.
 
 | Attribute      | Description                    | Default Value |
 |----------------|--------------------------------|---------------|
@@ -187,7 +185,7 @@ The torus primitive defines a doughnut shape.
 ### Torus Knot
 
 The torus knot primitive defines a pretzel shape, the particular shape of which is defined
-by a pair of coprime integers, `p` and `q`. If `p` and `p` are not coprime the result
+by a pair of coprime integers, `p` and `q`. If `p` and `q` are not coprime the result
 will be a torus link.
 
 ```html

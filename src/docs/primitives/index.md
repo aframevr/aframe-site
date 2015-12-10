@@ -11,7 +11,7 @@ section_order: 2
 
 In computer graphics, primitives are the simplest building blocks. In A-Frame,
 primitives are user-friendly building blocks that layer on top of the
-entity-component system. Think of them as recipes, they mix together
+entity-component system. Think of them as recipes which mix together
 the right combination of components to achieve an end result, like `<a-image>`.
 Under the hood, primitives wrap a single entity into a custom element and map
 component attributes to more conventional HTML attributes.
@@ -84,9 +84,8 @@ Then we can pass in a `size` attribute which will be passed down to the cubes.
 
 ## Publishing and Sharing Templates
 
-For now, we can share our templates on the [Awesome
-A-Frame](https://github.com/aframevr/awesome-aframe) repository. Just add your
-template to the list and make a pull request!
+For now, we can share our templates on the [Awesome A-Frame](https://github.com/aframevr/awesome-aframe)
+repository. Just add your template to the list and make a pull request!
 
 We hope to later create a more formal system for publishing and sharing
 templates.
