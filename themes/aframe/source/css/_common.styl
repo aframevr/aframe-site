@@ -14,25 +14,17 @@ html
     font-size 14px
 
 body
-    font-family $body-font
-    font-size $body-font-size
+    font $body-font-weight $body-font-size/$body-line-height $body-font
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
     color $medium
-
-a
-    border-bottom 1px solid rgba(53,196,232,0.25)
-    color hsl(192, 80%, 40%)
-    text-decoration none
-    &:hover
-        border-bottom-color rgba(53,196,232,0.75)
-        color hsl(192, 80%, 56%)
 
 iframe, img, button, input[type=button], .btn
     border 0
 
 .borderless-links a,
-a.borderless-links
+a.borderless-links,
+a.borderless-link
     border 0
 
 /**
@@ -85,19 +77,6 @@ p
     list-style-type none
 
 .copy
-    a
-        border-bottom 1px solid rgba(53,196,232,0.25)
-        color hsl(192, 80%, 40%);
-        &:hover
-            border-bottom-color rgba(53,196,232,0.75)
-            color hsl(192, 80%, 56%);
-
-    // a
-    //     color $copy-link !important
-
-    // a:hover
-    //     color $copy-link-hover
-
     a.button
         font-size .9em
         color #fff
