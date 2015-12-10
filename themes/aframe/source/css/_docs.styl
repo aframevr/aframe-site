@@ -63,9 +63,8 @@ p [href*=github][href*="/blob/"]:only-child
             opacity 1
 
 .copy
-    a.button
+    a.btn  // See `_common` for base styles.
         background-color lighten($blue, 8%)
-        border 0
         border-bottom 2px solid darken($blue, 12%)
         border-radius 4px
         color #fff
@@ -74,6 +73,8 @@ p [href*=github][href*="/blob/"]:only-child
         font-weight 600
         padding 12px 14px
         transition all .15s ease
+        &.btn-download
+            min-width 220px
         &:hover
             background-color lighten($blue, 15%)
             transform translate(0, 1px)
