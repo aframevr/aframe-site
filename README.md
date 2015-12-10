@@ -1,6 +1,6 @@
-# aframe-site-site
+# aframe-site-dev
 
-This site drives the __[staging server](http://aframevr.github.io/aframe-site-dev/)__ for the __[A-Frame site](http://aframe.io/)__.
+This site drives the __[staging server](http://aframevr.github.io/aframe-site-dev/)__ for the __[A-Frame site](https://aframe.io/)__.
 
 This site is built using [hexo](http://hexo.io/). Site content is written in [Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in the [`src/`](src/) directory). Pull requests are welcome!
 
