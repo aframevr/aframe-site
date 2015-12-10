@@ -2,13 +2,17 @@
 
 // For Home / Examples pages
 
+body
+    color #fff
+
 a
-    border-bottom 1px solid rgba(53,196,232,0.25)
-    color hsl(192, 80%, 40%)
+    border-bottom 1px solid rgba(255,255,255,0.15)
+    color rgba(255,255,255,0.5)
     text-decoration none
     &:hover
-        border-bottom-color rgba(53,196,232,0.75)
-        color hsl(192, 80%, 56%)
+        border-bottom-color rgba(255,255,255,0.3)
+        color rgba(255,255,255,0.75)
+
 ul
     list-style-type none
 
@@ -57,6 +61,7 @@ ul
     display inline-block
     font-size 64px
     font-weight 200
+    line-height 1
     text-transform uppercase
 
 .sidebar
@@ -74,7 +79,7 @@ ul
     width 100%
 
 .main
-    background #f1f1f1
+    background $pink
     display flex
     height 100%
 
@@ -150,8 +155,9 @@ ul
     text-align center
     transition 0.1s ease-in
     &:hover
-        border-color #000
-        color #000
+        background-color $white
+        border-color $white
+        color $pink
 
 .subnav-link
     color rgba(0,0,0,0.35)
@@ -171,13 +177,22 @@ ul
 h3 + .examples-subnav
     margin-top 15px
 
-
 .content--index
+    .copy__wrap
+        max-width 550px
     .slogan
-        font-size 4rem
-        font-weight 300
-        line-height 1.2
+        color rgba(255,255,255,0.75)
+        font-size 4.5rem
+        font-weight 100
+        line-height 0.9
+        text-transform uppercase
     .intro
-        font-size 22px
+        color rgba(255,255,255,0.75)
+        font-size 1.4rem
         font-weight 300
-        line-height 1.2
+        line-height 1.5
+        max-width 90%
+
+.btn-index
+    color rgba(255,255,255,1)
+    // font-weight 400
