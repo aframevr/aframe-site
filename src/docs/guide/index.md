@@ -14,7 +14,7 @@ There are several ways to get started:
 
 * [Boilerplate](https://github.com/aframevr/aframe-boilerplate/)
 * [npm package](https://www.npmjs.com/package/aframe)
-* [CDN-hosted JS file](../installation/#Standalone)
+* [CDN-hosted JS file](../installation/#Standalone_Downloads)
 * [example scene on CodePen](http://codepen.io/team/mozvr/pen/2ac060c354546201f3337b83fbdcd110?editors=100)
 
 The [Installation page](../installation/) has details for each. Whichever approach you take, A-Frame provides the same features and support for desktop, mobile, and Oculus Rift.
