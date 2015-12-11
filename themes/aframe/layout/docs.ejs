@@ -4,7 +4,7 @@
 
   <div class="list">
     <% site.pages.find({parent_section: 'docs'}).sort('section_order').each(function (section) { %>
-      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>" class="section-title-link<%- page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>"><%- section.section_title %></a></h3>
+      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>" class="section-title-link<%- page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>"><%- section.section_title %></a></h3>
 
       <ul class="subnav section-subnav">
         <% site.pages.find({type: section.type}).sort(section.page_sort_by || 'order').each(function (p) { %>
