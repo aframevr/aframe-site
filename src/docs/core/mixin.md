@@ -1,8 +1,8 @@
 ---
 title: Mixin
-type: entities
+type: core
 layout: docs
-parent_section: entities
+parent_section: core
 order: 6
 ---
 
