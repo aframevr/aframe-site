@@ -131,8 +131,8 @@ a
 .section-title
     line-height 1.2
     font 11px $mono-font
-    text-transform uppercase
     padding 5px 0 10px
+    text-transform uppercase
 
 .section-title-link
     display block
@@ -157,32 +157,31 @@ if prevent_clicks_on_active_links
 enable_toggles = true
 
 if enable_toggles
-    .section-inactive + .section-subnav
-        display none
-
     .section-title
         position relative
         &:before
             background url(../images/caret.svg) -3px 6px no-repeat
-            // background red
             background-size 10px auto
             content ""
+            height 100%
+            left 0
             pointer-events none
             position absolute
             top 0
-            height 100%
-            left 0
             width 10px
+
+    .section-title-active:before
+        transform rotate(90deg)
+        left -6px
+
+    .section-title-inactive + .section-subnav
+        display none
 
     .section-title-link
         padding-left 15px
 
     .subnav-link
         padding-left 25px
-
-    .section-active:before
-        transform rotate(90deg)
-        left -6px
 else
     .section-title
         margin-top 15px
