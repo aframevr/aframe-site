@@ -36,14 +36,14 @@ A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders.
 
 There are several community channels available for sharing experiences built A-Frame. 
 
-* [Made with A-Frame Tumblr](http://aframevr.tumblr.com/)
-* [A-Frame Slack](http://aframevr-slack.herokuapp.com/)
+* [Made with A-Frame Tumblr](https://aframevr.tumblr.com/)
+* [A-Frame Slack](https://aframevr-slack.herokuapp.com/)
 * [WebVR Slack](https://webvr-slack.herokuapp.com/)
 * [WebVR Reddit](https://www.reddit.com/r/webvr)
 
 ## How can I contact the A-Frame team?
 
-We're easiest to reach on the [A-Frame Slack channel](http://aframevr.slack.com/), via Twitter at [@aframevr](https://twitter.com/aframevr), or by filing issues against the A-Frame [GitHub repo](http://github.com/aframevr/aframe). We love questions, feedback, bug reports and pull requests!
+We're easiest to reach on the [A-Frame Slack channel](https://aframevr.slack.com/), via Twitter at [@aframevr](https://twitter.com/aframevr), or by filing issues against the A-Frame [GitHub repo](http://github.com/aframevr/aframe). We love questions, feedback, bug reports and pull requests!
 
 ## How can I improve performance?
 
