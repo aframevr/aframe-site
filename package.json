@@ -28,7 +28,6 @@
     "deploy": "hexo clean && hexo deploy && open 'https://aframevr.github.io/'",
     "clean": "hexo clean",
     "update": "node update.js",
-    "syncdocs": "mkdir -p src/docs/core && touch src/docs/core/index.md && cp -r ../aframe-core/docs/ src/docs/core",
     "syncjs": "pushd ../aframe/ && npm run dist && popd && cp ../aframe/dist/* themes/aframe/source/releases/latest/. && cp ../aframe/dist/* themes/aframe/source/releases/0.1.0/. && git add . && git commit -m 'bump releases'"
   }
 }
