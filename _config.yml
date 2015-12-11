@@ -14,7 +14,7 @@ blog_title: The A-Frame Blog
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://aframevr.github.io/
+url: https://aframevr.github.io/
 root: /
 permalink: blog/:year/:month/:day/:title/
 tag_dir: tags
@@ -114,6 +114,6 @@ aframe_npm_url: https://www.npmjs.com/package/aframe
 aframe_boilerplate_github_url: https://github.com/aframevr/aframe-boilerplate
 
 examples:
-  base_url: http://aframevr.github.io/aframe/examples/
+  base_url: https://aframevr.github.io/aframe/examples/
   first_example_url: examples/showcase/anime-UI/
   homepage_example_url: examples/showcase/spheres-and-fog/
