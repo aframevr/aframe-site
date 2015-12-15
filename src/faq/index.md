@@ -65,7 +65,7 @@ The [Awesome A-Frame GitHub repo](https://github.com/aframevr/awesome-aframe) pr
 
 ## Can I add links to my scene?
 
-The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying [`requestFullScreen` API]https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullScreen) that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experiences as self-contained single-page web applications. 
+The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying [`requestFullScreen` API](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullScreen) that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experiences as self-contained single-page web applications. 
 
 ## Is there a feature roadmap?
 
