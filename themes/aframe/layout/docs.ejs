@@ -6,13 +6,13 @@
     <% site.pages.find({parent_section: 'docs'}).sort('section_order').each(function (section) { %>
       <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>" class="section-title-link<%- page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>"><%- section.section_title %></a></h3>
 
-      <ul class="subnav section-subnav">
+      <ol class="subnav section-subnav <%- section.show_guide ? ' numbered-subnav' : '' %>">
         <% site.pages.find({type: section.type}).sort(section.page_sort_by || 'order').each(function (p) { %>
-          <li class="subnav-item">
+          <li class="subnav-item <%- page.title === p.title ? ' subnav-item-current' : '' %>">
             <a href="<%- page_url(p.path) %>" class="subnav-link<%- page.title === p.title ? ' current' : '' %>"><%- p.title %></a>
           </li>
         <% }) %>
-      </ul>
+      </ol>
     <% }) %>
   </div>
 

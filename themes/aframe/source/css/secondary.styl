@@ -50,7 +50,7 @@ a
 .subnav-link
     display block
     color rgba(0,0,0,0.35)
-    text-indent: -10px
+    text-indent -10px
     padding-left 10px
     transition 0.1s color ease-in
     width 100%
@@ -134,6 +134,9 @@ a
     padding 5px 0 10px
     text-transform uppercase
 
+.section-title-active
+    font-weight 600
+
 .section-title-link
     display block
     margin -5px 0 -10px
@@ -153,8 +156,30 @@ if prevent_clicks_on_active_links
         cursor pointer
         pointer-events none
 
+numbered_subnav = true
+numbered_subnav_leading_zeroes = false
+
+if numbered_subnav
+    .numbered-subnav
+        if numbered_subnav_leading_zeroes
+            list-style-type decimal-leading-zero
+        else
+            list-style-type decimal
+
+        .subnav-item
+            color #ccc
+            font-size 8px
+            font-family $mono-font
+            &.subnav-item-current
+                color #aaa
+                font-weight 600
+
+        .subnav-link
+            font-family $body-font
+            font-size 1rem
+
 // Hide sections and make section titles toggle them.
-enable_toggles = true
+enable_toggles = 1
 
 if enable_toggles
     .section-title
@@ -178,10 +203,20 @@ if enable_toggles
         display none
 
     .section-title-link
-        padding-left 15px
+        padding-left 20px
+
+    .subnav-item
+        margin-left 20px
+        margin-right -20px
 
     .subnav-link
-        padding-left 25px
+        margin-left -25px
+        padding-left 35px
+
 else
     .section-title
         margin-top 15px
+
+    if numbered_subnav
+        .numbered-subnav
+            list-style decimal-leading-zero inside
