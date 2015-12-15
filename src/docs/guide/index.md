@@ -6,6 +6,7 @@ layout: docs
 order: 1
 parent_section: docs
 section_order: 1
+show_guide: true
 ---
 
 A-Frame is a library for creating scenes in virtual reality on the Web.

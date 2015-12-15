@@ -1,9 +1,9 @@
 ---
-title: Adding interactivity
+title: Adding animations
 type: guide
 layout: docs
 parent_section: guide
-order: 6
+order: 10
 show_guide: true
 ---
 
