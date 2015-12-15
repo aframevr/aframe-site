@@ -6,10 +6,10 @@ layout: page
 
 ## A-Frame
 
-Grab the A-Frame code and file issues on [GitHub](http://github.com/aframevr), and share your work or join the discussion on [Slack](http://aframevr.slack.com/).
+Grab the A-Frame code and file issues on [GitHub](https://github.com/aframevr/aframe/), and share your work or join the discussion on [Slack](http://aframevr.slack.com/).
 
-* [github.com/aframevr](http://github.com/aframevr)
-* [aframevr.slack.com](http://aframevr-slack.herokuapp.com/)
+* [github.com/aframevr/aframe](https://github.com/aframevr/aframe/)
+* [aframevr.slack.com](https://aframevr-slack.herokuapp.com/)
 * [@aframevr](https://twitter.com/aframevr)
 
 ## WebVR
