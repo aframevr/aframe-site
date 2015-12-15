@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "npm run server",
+    "dev": "npm run clean && npm run server",
     "server": "hexo server",
     "generate": "hexo generate",
     "predeploy": "hexo clean",
@@ -30,7 +30,7 @@
     "release": "npm run syncjs ; npm run deploy",
     "clean": "hexo clean",
     "update": "node update.js",
-    "syncjs": "pushd ../aframe/ && npm run dist && popd && cp ../aframe/dist/* themes/aframe/source/releases/latest/. && cp ../aframe/dist/* themes/aframe/source/releases/0.1.0/. && git add . && git commit -m 'bump releases'",
+    "syncjs": "pushd ../aframe/ && npm run dist && popd && cp ../aframe/dist/* themes/aframe/source/releases/latest/. && cp ../aframe/dist/* themes/aframe/source/releases/0.1.0/. && git commit -am 'bump releases'",
     "postsyncjs": "pushd ../aframe/ && git checkout dist/ && popd"
   }
 }
