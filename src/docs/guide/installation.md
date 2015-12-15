@@ -27,7 +27,7 @@ _**Pro tip:** Don't use the minified version during development. You will miss o
 
 ## npm
 
-npm is the recommended installation method when building scenes with A-Frame. It pairs nicely with a CommonJS module bundler such as [Webpack](http://webpack.github.io/) or [Browserify](http://browserify.org/). A-Frame also provides accompanying tools for authoring [Single-File Components](application.html#Single_File_Components).
+npm is the recommended installation method when building scenes with A-Frame. It pairs nicely with a CommonJS module bundler such as [Webpack](http://webpack.github.io/) or [Browserify](http://browserify.org/).
 
 ```bash
 # latest stable
