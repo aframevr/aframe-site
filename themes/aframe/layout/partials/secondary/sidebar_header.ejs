@@ -29,12 +29,16 @@ var links = [
 ];
 
 links = links.map(function (link) {
-  if (page.nav_slug && link.slug === page.nav_slug) {
-    link.current = true;
-  }
+  if (is_external_url(link.url)) {
+    link.external = true;
+  } else {
+    if (page.nav_slug && link.slug === page.nav_slug) {
+      link.current = true;
+    }
 
-  if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url))) {
-    link.current = true;
+    if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url))) {
+      link.current = true;
+    }
   }
 
   return link;
@@ -49,7 +53,7 @@ links = links.map(function (link) {
 
   <ul id="nav" class="nav">
     <% links.forEach(function (link) { %>
-      <li class="nav-item"><a href="<%- url_for(link.url) %>" class="nav-link nav-link-docs<%- link.current ? ' current' : '' %>"><span><%- link.title %></span></a></li>
+      <li class="nav-item"><a href="<%- url_for(link.url) %>" class="nav-link nav-link-docs<%- link.current ? ' current' : '' %>"<%- link.external ? ' target="blank" rel="external"' : '' %>><span><%- link.title %></span></a></li>
     <% }) %>
   </ul>
 </header>
