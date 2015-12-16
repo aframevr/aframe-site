@@ -24,6 +24,6 @@ hexo.extend.helper.register('page_url', function (path, options) {
   return this.url_for(path, options).replace(/index\.html$/, '');
 });
 
-hexo.extend.filter.register('urljoin', urljoin);
+hexo.extend.helper.register('is_external_url', isUrl);
 
-hexo.extend.filter.register('is_external_url', isUrl);
+hexo.extend.filter.register('urljoin', urljoin);
