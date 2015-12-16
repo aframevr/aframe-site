@@ -32,7 +32,7 @@ When we manually add a camera primitive to our scene, A-Frame does not create a 
 <a-cube></a-cube>
 ```
 
-But if we add a camera primitive and do not adjust it's position...
+But if we add a camera primitive and do not adjust its position...
 
 ```html
 <a-camera></a-camera>
