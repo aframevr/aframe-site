@@ -149,6 +149,19 @@ p
             line-height 20px
             font-weight bold
             font-size 14px
+        &.tip--dark
+            background-color rgba(0,0,0,0.5)
+            border-left-color rgba(239,45,94,0.5)
+            &:before
+                background-color $pink
+                border 2px solid #000
+                color #fff
+                left -14px
+        &.tip--thin
+            font-size 0.9rem
+            padding 1rem 2rem
+            &:before
+                top 0.75rem
         p:first-child
             margin-top 0
         p:last-child
