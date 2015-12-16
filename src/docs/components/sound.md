@@ -23,7 +23,7 @@ example, we might have a damage sound play every time a monster is clicked:
 <a-entity cursor position="0 0 -5"></a-entity>
 ```
 
-| Attribute | Description                                                     | Default Value |
+| Property  | Description                                                     | Default Value |
 |-----------|-----------------------------------------------------------------|---------------|
 | autoplay  | Whether to automatically play sound once set.                   | false         |
 | on        | An event for the entity to listen to before playing sound.      | click         |

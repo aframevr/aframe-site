@@ -22,11 +22,11 @@ Using primitives, to create a red cube that's 3 meters wide, we can write:
 `<a-entity geometry="primitive: box; width: 3" material="color: red"`.
 ```
 
-Under the hood, `<a-cube>` is wrapping `<a-entity>` in a custom element, and mapping the HTML `width` attribute to the underlying `geometry` component's width attribute.
+Under the hood, `<a-cube>` is wrapping `<a-entity>` in a custom element, and mapping the HTML `width` attribute to the underlying `geometry` component's width property.
 
 Primitives are designed to enable developers to start building A-Frame scenes without having to learn A-Frame's full entity-component system. By being semantic and concise, they also improve the readability of our markup.
 
-Primitives and entity-component instances can be freely mixed within an A-Frame scene. Entities with components are useful when developers need to go beyond primitives and tap into the deeper power and flexibility of A-Frame's built-in components, which include [material](../components/material.html), [geometry](../components/geometry.html), [light](../components/light.html), and [more](../components/material.html). 
+Primitives and entity-component instances can be freely mixed within an A-Frame scene. Entities with components are useful when developers need to go beyond primitives and tap into the deeper power and flexibility of A-Frame's built-in components, which include [material](../components/material.html), [geometry](../components/geometry.html), [light](../components/light.html), and [more](../components/material.html).
 
 Entities can also be very useful for __grouping elements__ (primitives or otherwise):
 

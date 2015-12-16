@@ -20,9 +20,9 @@ directional light. These default lights are visible in the DOM with the
 the default lights are removed from the scene.
 
 We will go through the different types of lights and their respective
-attributes one-by-one.
+properties one-by-one.
 
-| Attribute | Description                                                     | Default Value |
+| Property  | Description                                                     | Default Value |
 |-----------|-----------------------------------------------------------------|---------------|
 | type      | One of `ambient`, `directional`, `hemisphere`, `point`, `spot`. | directional   |
 | color     | Light color.                                                    | #fff          |
@@ -30,7 +30,7 @@ attributes one-by-one.
 ## Ambient
 
 Ambient lights are applied to all entities in the scene globally. They are
-defined only by the `color` attribute. And position, rotation, scale have no
+defined only by the `color` property. And position, rotation, scale have no
 effect on ambient lights.
 
 It is recommended to have some form of ambient light such that shadowed areas
@@ -55,7 +55,7 @@ The example below creates a light source shining from the upper-left at a
 <a-entity light="type: directional; color: #EEE; intensity: 0.5" position="-1 1 0"></a-entity>
 ```
 
-| Attribute | Description     | Default Value |
+| Property  | Description     | Default Value |
 |-----------|-----------------|---------------|
 | intensity | Light strength. | 1.0           |
 
@@ -70,7 +70,7 @@ a gray sky).
 <a-entity light="type: hemisphere; color: #33C; groundColor: #3C3; intensity: 2"></a-entity>
 ```
 
-| Attribute   | Description             | Default Value |
+| Property    | Description             | Default Value |
 |-------------|-------------------------|---------------|
 | groundColor | Light color from below. | #fff          |
 | intensity   | Light strength.         | 1.0           |
@@ -87,7 +87,7 @@ is lit.
           position="0 10 10"></a-entity>
 ```
 
-| Attribute   | Description                                                                                                | Default Value |
+| Property    | Description                                                                                                | Default Value |
 |-------------|------------------------------------------------------------------------------------------------------------|---------------|
 | decay       | Amount the light dims along the distance of the light.                                                     | 1.0           |
 | distance    | Distance where intensity becomes 0. If `distance` is 0, then the point light does not decay with distance. | 0.0           |
@@ -103,7 +103,7 @@ omni-directional. They mainly cast light in one direction, like the Bat-Signal.
 <a-entity light="type: spot; angle: 45"></a-entity>
 ```
 
-| Attribute   | Description                                                                                                | Default Value |
+| Property    | Description                                                                                                | Default Value |
 |-------------|------------------------------------------------------------------------------------------------------------|---------------|
 | angle       | Maximum extent of spot light from its direction, in degrees.                                               | 60            |
 | decay       | Amount the light dims along the distance of the light.                                                     | 1.0           |

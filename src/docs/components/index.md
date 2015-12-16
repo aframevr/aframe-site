@@ -16,7 +16,7 @@ The camera component defines from which perspective the user views the scene. It
 </a-entity>
 ```
 
-| Attribute | Description                                                                          | Default Value  |
+| Property  | Description                                                                          | Default Value  |
 |-----------|--------------------------------------------------------------------------------------|----------------|
 | far       | Camera frustum far clipping plane.                                                   | 10000          |
 | fov       | Field of view (in degrees).                                                          | 80             |

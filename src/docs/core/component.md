@@ -76,7 +76,7 @@ Under the hood, components are object prototypes. They implement an interface to
 |----------|----------------------------------------------------------------------------------------------------|
 | data     | Current component data object including defaults defined in schema and mixins.                     |
 | el       | Reference to the entity element.                                                                   |
-| schema   | Defines component data schema (e.g., possible attributes, default values, possible values, types). |
+| schema   | Defines component data schema (e.g., possible properties, default values, possible values, types). |
 
 | Method          | Description                                                                                                                                      | Default Behavior |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
@@ -88,12 +88,12 @@ Under the hood, components are object prototypes. They implement an interface to
 
 ## Component Schema
 
-Components define a schema object that specifies default values and type coercion/validation. Each key in the schema object refers to the name of a component attribute. The values of the schema object are objects that can specify several keys.
+Components define a schema object that specifies default values and type coercion/validation. Each key in the schema object refers to the name of a component property. The values of the schema object are objects that can specify several keys.
 
 | Schema Key | Description                                                                                                                                                                    |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| default    | Default value. If no value is specified, this default value is set in the component `data` for its attribute. The default value is also used as a reference for type coercion. |
-| oneOf      | An array that describes possible values for its attribute. If a value is set that is not in this array, a warning is thrown.                                              |
+| default    | Default value. If no value is specified, this default value is set in the component `data` for its property. The default value is also used as a reference for type coercion. |
+| oneOf      | An array that describes possible values for its property. If a value is set that is not in this array, a warning is thrown.                                              |
 
 For example, let's take a look at a piece of the light component schema.
 

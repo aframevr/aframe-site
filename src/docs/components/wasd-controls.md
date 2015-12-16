@@ -16,7 +16,7 @@ component.
 <a-entity camera look-controls wasd-controls></a-entity>
 ```
 
-| Attribute    | Description                                                              | Default Value |
+| Property     | Description                                                              | Default Value |
 |--------------|--------------------------------------------------------------------------|---------------|
 | acceleration | How fast the entity accelerates when holding the keys.                   | 65            |
 | adAxis       | Axis that the A and D keys act upon.                                     | x             |

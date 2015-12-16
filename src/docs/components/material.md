@@ -6,7 +6,7 @@ parent_section: components
 order: 9
 ---
 
-The material component defines the appearance of an entity. It can define attributes such as color, opacity, or texture. A geometry component is usually defined alongside the material component.
+The material component defines the appearance of an entity. It can define properties such as color, opacity, or texture. A geometry component is usually defined alongside the material component.
 
 Here is an example defining a red material on a box geometry, creating a red cube.
 
@@ -14,14 +14,14 @@ Here is an example defining a red material on a box geometry, creating a red cub
 <a-entity geometry="primitive: box" material="color: red"></a-entity>
 ```
 
-| Attribute    | Description                                                                                                                                    | Default Value |
+| Property     | Description                                                                                                                                    | Default Value |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | color        | Base color of the geometry.                                                                                                                    | #fff          |
 | envMap       | Environment cubemap texture for reflections. Can be a selector to <a-cubemap> or a comma-separated list of URLs.                             | None          |
 | height       | Height of video (in pixels), if defining a video texture.                                                                                      | 360           |
 | metalness    | How metallic the material is from `0` to `1`. Does not apply if `shader` is set to `flat`.                                                     | 0.5           |
-| opacity      | Extent of transparency. If the `transparent` attribute is not `true`, then the material will remain opaque and `opacity` will only affect color. | 1.0           |
-| reflectivity | How reflective the material is from `0` to `1` if the `envMap` attribute is set.                                                               | 1.0           |
+| opacity      | Extent of transparency. If the `transparent` property is not `true`, then the material will remain opaque and `opacity` will only affect color. | 1.0           |
+| reflectivity | How reflective the material is from `0` to `1` if the `envMap` property is set.                                                               | 1.0           |
 | repeat       | How many times a texture (defined by `src`) repeats in the X and Y direction.                                                                  | 1 1           |
 | roughness    | How rough the material is from `0` to `1`. A rougher material will scatter reflected light in more directions than a smooth material. Does not apply if `shader` is set to `flat`. | 0.5 |
 | transparent  | Whether material is transparent. Transparent entities are rendered after non-transparent entities.                                             | false         |
@@ -31,7 +31,7 @@ Here is an example defining a red material on a box geometry, creating a red cub
 
 ## Defining Textures
 
-To set a texture on the material, specify the `src` attribute. `src` can either be a selector to an `<img>` or `<video>` element:
+To set a texture on the material, specify the `src` property. `src` can either be a selector to an `<img>` or `<video>` element:
 
 ```html
 <a-assets>
@@ -51,11 +51,11 @@ To set a texture on the material, specify the `src` attribute. `src` can either 
 </a-scene>
 ```
 
-Most of the other attributes works together with texutres. For example, the `color` attribute will act as the base color and be multiplied per-pixel with the texture. Set it to `#fff` to maintain the original colors of the texture.
+Most of the other properties works together with texutres. For example, the `color` property will act as the base color and be multiplied per-pixel with the texture. Set it to `#fff` to maintain the original colors of the texture.
 
 ### Repeating Textures
 
-Often, we want to tile textures rather than having them stretch. The `repeat` attribute can be used to repeat textures.
+Often, we want to tile textures rather than having them stretch. The `repeat` property can be used to repeat textures.
 
 ```html
 <a-entity geometry="geometry: plane; width: 100"
@@ -64,9 +64,9 @@ Often, we want to tile textures rather than having them stretch. The `repeat` at
 
 ### Environment Maps
 
-The `envMap` attribute defines what environment the material reflects. This also works together with plain textures. Though unlike regular texture maps, the `envMap` attribute takes a cubemap, six images put together to form a cube. The cubemap is wrapped around the entity and applied as a texture.
+The `envMap` property defines what environment the material reflects. This also works together with plain textures. Though unlike regular texture maps, the `envMap` property takes a cubemap, six images put together to form a cube. The cubemap is wrapped around the entity and applied as a texture.
 
-If shader is set to `standard`, which it is by default, the clarity of the reflection depends on the `metalness`, `roughness`, and `reflectivity` attributes.
+If shader is set to `standard`, which it is by default, the clarity of the reflection depends on the `metalness`, `roughness`, and `reflectivity` properties.
 
 ```html
 <a-assets>
@@ -87,9 +87,9 @@ If shader is set to `standard`, which it is by default, the clarity of the refle
 
 ## Physically Based Shading
 
-By default, A-Frame materials default to a physically based shading model, where the `shader` attribute is `standard`. Physically based shading is a recent trend in rendering systems where materials behave realistically to lighting conditions. Appearance is a result of the interaction between the incoming light and the attributes of the material.
+By default, A-Frame materials default to a physically based shading model, where the `shader` property is `standard`. Physically based shading is a recent trend in rendering systems where materials behave realistically to lighting conditions. Appearance is a result of the interaction between the incoming light and the properties of the material.
 
-To achieve realism, the diffuse `color`, `metalness`, `reflectivity`, and `roughness` attributes of the material must accurately be controlled, often based on real-world material studies. Some people have compiled charts of realistic
+To achieve realism, the diffuse `color`, `metalness`, `reflectivity`, and `roughness` properties of the material must accurately be controlled, often based on real-world material studies. Some people have compiled charts of realistic
 values for different kinds of materials that can be used as a starting point.
 
 For example, for a tree bark material, as an estimation, we might set:
@@ -104,7 +104,7 @@ For basic scenes, however, physically based materials are not a large concern.
 
 ## Specifying Flat Shading
 
-Since materials default to physically based shading, materials will reflect light when we might not want them to. To specify flat shading, such as in the case for displaying plain images or videos, we can define the `shader` attribute to be `flat`.
+Since materials default to physically based shading, materials will reflect light when we might not want them to. To specify flat shading, such as in the case for displaying plain images or videos, we can define the `shader` property to be `flat`.
 
 ```html
 <a-entity geometry="primitive: plane" material="src: #cat-image; shader: flat">

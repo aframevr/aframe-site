@@ -6,15 +6,15 @@ order: 4
 ---
 
 The geometry component defines the shape and size of an entity. The general
-geometry is defined by the `primitive` attribute. "Geoemtric primitives", in
+geometry is defined by the `primitive` property. "Geoemtric primitives", in
 computer graphics, simply means an extremely basic shape. With the primitive
-defined, additional attributes are used to further define the geometry. A
+defined, additional properties are used to further define the geometry. A
 material component is usually defined alongside the geometry component.
 
-We will go through the basic primitives and their respective attributes
+We will go through the basic primitives and their respective properties
 one-by-one.
 
-| Attribute | Description                                                                          | Default Value |
+| Property  | Description                                                                          | Default Value |
 |-----------|--------------------------------------------------------------------------------------|---------------|
 | primitive | One of `box`, `circle`, `cylinder`, `plane`, `ring`, `sphere`, `torus`, `torusKnot`. | None          |
 | translate | Translates the geometry relative to its pivot point.                                 | 0 0 0         |
@@ -27,7 +27,7 @@ The box primitive defines boxes (square or rectangle).
 <a-entity geometry="primitive: box; width: 1; height: 1; depth: 1"></a-entity>
 ```
 
-| Attribute | Description                        | Default Value |
+| Property  | Description                        | Default Value |
 |-----------|------------------------------------|---------------|
 | width     | Width of the sides on the X axis.  | 2             |
 | height    | Height of the sides on the Y axis. | 2             |
@@ -44,7 +44,7 @@ specified on the material component.
 <a-entity geometry="primitive: circle; radius: 1" material="side: double"></a-entity>
 ```
 
-| Attribute   | Description                                                                                                                      | Default Value |
+| Property    | Description                                                                                                                      | Default Value |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|---------------|
 | radius      | Radius of the circle.                                                                                                            | 1             |
 | segments    | Number of triangles to construct the circle, like pizza slices. A higher number of segments means the circle will be more round. | 8             |
@@ -96,7 +96,7 @@ open-ended, and then making the material double-sided.
           material="side: double"></a-entity>
 ```
 
-| Attribute      | Description                                                         | Default Value |
+| Property       | Description                                                         | Default Value |
 |----------------|---------------------------------------------------------------------|---------------|
 | radiusTop      | Radius of the cylinder at the top.                                  | 1             |
 | radiusBottom   | Radius of the cylinder at the bottom.                               | 1             |
@@ -118,7 +118,7 @@ specified on the material component.
           material="side: double"></a-entity>
 ```
 
-| Attribute | Description              | Default Value |
+| Property  | Description              | Default Value |
 |-----------|--------------------------|---------------|
 | width     | Width along the X axis.  | 2             |
 | height    | Height along the Y axis. | 2             |
@@ -134,7 +134,7 @@ not specified on the material component.
           material="side: double"></a-entity>
 ```
 
-| Attribute     | Description                                                            | Default Value |
+| Property      | Description                                                            | Default Value |
 |---------------|------------------------------------------------------------------------|---------------|
 | radiusInner   | Radius of the inner hole of the ring.                                  | 1             |
 | radiusOuter   | Radius of the outer edge of the ring.                                  | 1             |
@@ -156,7 +156,7 @@ make the sphere appear round.
 <a-entity geometry="primitive: sphere; radius: 2"></a-entity>
 ```
 
-| Attribute      | Description                    | Default Value |
+| Property       | Description                    | Default Value |
 |----------------|--------------------------------|---------------|
 | radius         | Radius of the sphere.          | 1             |
 | segmentsWidth  | Number of horizontal segments. | 18            |
@@ -175,7 +175,7 @@ The torus primitive defines a doughnut shape.
 <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5; arc: 180"></a-entity>
 ```
 
-| Attribute       | Description                                                                                                     | Default Value |
+| Property        | Description                                                                                                     | Default Value |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|---------------|
 | radius          | Radius of the outer edge of the torus.                                                                          | 1             |
 | radiusTubular   | Radius of the tube.                                                                                             | 0.2           |
@@ -193,7 +193,7 @@ will be a torus link.
 <a-entity geometry="primitive: torusKnot; p: 3; q:7"></a-entity>
 ```
 
-| Attribute       | Description                                                                                                     | Default Value |
+| Property        | Description                                                                                                     | Default Value |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|---------------|
 | radius          | Radius that contains the torus knot.                                                                            | 1             |
 | radiusTubular   | Radius of the tubes of the torus knot.                                                                          | 0.2           |
@@ -204,7 +204,7 @@ will be a torus link.
 
 ## Geometry Translate
 
-The `translate` attribute translates the geometry relative to its pivot point.
+The `translate` property translates the geometry relative to its pivot point.
 It is defined as a coordinate.
 
 ```html

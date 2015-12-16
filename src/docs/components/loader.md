@@ -15,7 +15,7 @@ support landing for the GLTF format.
 <a-entity loader="src: monster.dae; format: collada"></a-entity>
 ```
 
-| Attribute | Description                   |
+| Property  | Description                   |
 |-----------|-------------------------------|
 | format    | Format of the 3D model asset. |
 | src       | URL to a 3D asset.            |

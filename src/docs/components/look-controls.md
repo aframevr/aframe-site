@@ -22,6 +22,6 @@ camera component.
 <a-entity camera look-controls wasd-controls></a-entity>
 ```
 
-| Attribute | Description                        | Default Value |
+| Property  | Description                        | Default Value |
 |-----------|-----------------------------------------------------
 | enabled   | Whether look controls are enabled. | true          |
