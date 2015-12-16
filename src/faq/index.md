@@ -28,9 +28,13 @@ Our hope is that A-Frame provides a constructive contribution to a growing panth
 
 See our [Guide](../docs/guide) for in-depth instructions. There are several ways to start using A-Frame, including a CDN-hosted version minified JS file, a boilerplate, and an NPM package.
 
-## Which VR devices does it support?
+## Which VR devices does A-Frame support?
 
 A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders. A-Frame also works on desktop computers with mouse and keyboard controls. A-Frame's device support is built on the [WebVR API](https://github.com/MozVR/webvr-spec) and the [WebVR Polyfill](https://github.com/borismus/webvr-polyfill). As the WebVR API and Polyfill mature, and as WebVR-enabled browsers add support for additional devices like the HTC Vive, A-Frame will be updated to also support those devices.
+
+## What mobile devices does A-Frame support?
+
+On mobile, A-Frame works best on newer iPhones. Android devices currently exhibit errors with A-Frame's texture implementation and can render elements in solid black. This is a major known issue and something we are working to resolve with smarter texture map handling, as well as developer guidelines.
 
 ## How can I share my work?
 
