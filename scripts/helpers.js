@@ -3,8 +3,9 @@ var utils = require('../lib/utils');
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
 
-hexo.extend.helper.register('external_example_url', function (path) {
-  return utils.isUrl(path) ? path : utils.urljoin(this.config.examples.base_url, path, '/');
+hexo.extend.helper.register('external_example_url', function (path, qs) {
+  qs = qs || '';
+  return utils.isUrl(path) ? path : (utils.urljoin(this.config.examples.base_url, path, '/') + qs);
 });
 
 hexo.extend.helper.register('github_release_url', function (version) {

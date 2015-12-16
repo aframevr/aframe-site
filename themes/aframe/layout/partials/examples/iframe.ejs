@@ -1,7 +1,7 @@
 <% if (item) { %>
   <iframe class="example__iframe" data-example="<%- item.slug %>"
           width="<%- item.width %>"
-          height="<%- item.height %>" src="<%- external_example_url(item.path) %>"
+          height="<%- item.height %>" src="<%- external_example_url(item.path, item.qs) %>"
           data-original-base-url="<%- config.examples.base_url %>"
           data-path="<%- item.path %>"
           allowfullscreen="yes" scrolling="no"></iframe>
