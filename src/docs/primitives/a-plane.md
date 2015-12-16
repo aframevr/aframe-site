@@ -6,23 +6,22 @@ parent_section: primitives
 order: 9
 ---
 
-The plane primitive wraps an entity with the geometry component with a plane
-primitive.
+The plane makes it easy to add flat surfaces to a scene. It wraps an entity that contains geometry and material components.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-plane.html)
+| Attribute   | Default Value | Component Mapping    |
+| ----------- | ------------- | -------------------- |
+| color       | gray          | material.color       |
+| height      | 1             | geometry.height      |
+| metalness   | 0.0           | material.metalness   |
+| opacity     | 1.0           | material.opacity     |
+| roughness   | 0.5           | material.roughness   |
+| shader      | standard      | material.shader      |
+| src         | None          | material.src         |
+| translate   | None          | geometry.translate   |
+| transparent | None          | geometry.transparent |
+| width       | 1             | material.width       |
 
-| Attribute   | Component Mapping    | Default Value |
-| ---------   | -----------------    | ------------- |
-| color       | material.color       | gray          |
-| height      | geometry.height      | 1             |
-| metalness   | material.metalness   | 0.0           |
-| opacity     | material.opacity     | 1.0           |
-| roughness   | material.roughness   | 0.5           |
-| shader      | material.shader      | standard      |
-| src         | material.src         | None          |
-| translate   | geometry.translate   | None          |
-| transparent | geometry.transparent | None          |
-| width       | material.width       | 1             |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-plane.html)
 
 ## Examples
 

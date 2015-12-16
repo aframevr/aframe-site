@@ -6,27 +6,24 @@ parent_section: primitives
 order: 12
 ---
 
-The video primitive wraps an entity featuring the geometry component with a
-plane primitive and the material component with a video texture.
+The video primitive makes it easy to add flat two-dimensional video screens to a scene. It wraps an entity that contains geometry and material components. The material component uses a video texture.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-video.html)
+| Attribute           | Default Value   | Component Mapping         |
+| ------------------- | --------------- | ------------------------- |
+| autoplay            | true            | `<video>`.autoplay        |
+| crossOrigin         | anonymous       | `<video>`.crossOrigin     |
+| height              | 1.75            | geometry.height           |
+| loop                | true            | `<video>`.loop            |
+| src                 | None            | material.src              |
+| translate           | 0 0 0           | geometry.translate        |
+| width               | 3               | geometry.width            |
 
-| Attribute       | Component Mapping       | Default Value |
-| ---------       | -----------------       | ------------- |
-| autoplay        | `<video>`.autoplay      | true          |
-| crossOrigin     | `<video>`.crossOrigin   | anonymous     |
-| height          | geometry.height         | 2             |
-| loop            | `<video>`.loop          | true          |
-| segments-height | geometry.segmentsHeight | 64            |
-| segments-width  | geometry.segmentsWidth  | 64            |
-| src             | material.src            | None          |
-| translate       | geometry.translate      | 0 0 0         |
-| width           | geometry.width          | 4             |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-video.html)
 
 ## Examples
 
 A basic video:
 
 ```html
-<a-video src="penguin-sledding.mp4" height="5" width="10"><a-video>
+<a-video src="penguin-sledding.mp4" width="16" height="9" position="0 0 -20"><a-video>
 ```

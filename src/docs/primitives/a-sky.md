@@ -6,19 +6,21 @@ parent_section: primitives
 order: 10
 ---
 
-The sky primitive wraps an entity featuring the geometry component with a
-sphere primitive with a large radius and the scale component inverted on the
-Z-axis.
+The sky primitive is a large textured sphere that makes it easy to add a background to a scene. It wraps an entity that contains geometry and material components.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sky/index.html)
+| Attribute       | Default Value | Component Mapping       |
+| --------------- | ------------- | -----------------       |
+| color           | white         | material.color          |
+| radius          | 5000          | geometry.radius         |
+| segments-height | 64            | geometry.segmentsHeight |
+| segments-width  | 64            | geometry.segmentsWidth  |
+| src             | None          | material.src            |
 
-| Attribute       | Component Mapping       | Default Value |
-| ---------       | -----------------       | ------------- |
-| color           | material.color          | white         |
-| radius          | geometry.radius         | 5000          |
-| segments-height | geometry.segmentsHeight | 64            |
-| segments-width  | geometry.segmentsWidth  | 64            |
-| src             | material.src            | None          |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sky/index.html)
+
+## Image format
+
+To ensure a seamless background, images must use an [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection). The [Flickr Equirectangular](https://www.flickr.com/groups/equirectangular/) is one source of compatible images.
 
 ## Examples
 
@@ -27,5 +29,3 @@ A basic sky:
 ```html
 <a-sky src="sky.png"></a-sky>
 ```
-
-[View examples](https://aframevr.github.io/aframe/examples/)

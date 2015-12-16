@@ -11,22 +11,23 @@ nav_slug: install
 
 ## Boilerplate Starter Kit
 
-We've created a [simple starter kit](https://github.com/aframevr/aframe-boilerplate#getting-started) for creating WebVR scenes using A-Frame.
+The boilerplate starter kit is a great way to start a new A-Frame project. It includes a few basic elements within an `<a-scene>` element, and links to the [latest version](https://aframe.io/releases/latest/aframe.min.js) of the framework. There are several ways to get started with the boilerplate:
 
-<a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download kit <span>(.zip)</span></a>
-<a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/">Clone repo</a>
-<a class="btn btn-download" href="http://codepen.io/team/mozvr/pen/BjygdO?editors=100">Fork CodePen example</a>
+<a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download Boilerplate<span></span></a>
+<a class="btn btn-download" href="http://codepen.io/team/mozvr/pen/BjygdO?editors=100">Fork Boilerplate CodePen</a>
+<a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/">Clone Boilerplate Repo</a>
 
-If you're comfortable with npm and git, feel free to [clone the repo](https://github.com/aframevr/aframe-boilerplate#option-2-fork-this-git-repo-) or [fork this CodePen scene](http://codepen.io/team/mozvr/pen/BjygdO?editors=100) to get started. It also ships with an optional local development server (with Live Reloading) and GitHub Pages deployment workflow (and works with browserify too).
+Cloning the repo is recommended for users who are comfortable with git. For npm users, the boilerplate also includes an optional local development server with Live Reloading (via [@mattdesl](https://github.com/mattdesl/)'s fantastic [budo](https://github.com/mattdesl/budo)) and built-in (optional) support for [Browserify](http://browserify.org/), as well as a [GitHub Pages](https://pages.github.com/) deployment workflow.
 
 ## Standalone Downloads
 
-Simply download and include with a `<script>` tag. `aframe` will be registered as a global variable.
-
-_**Pro tip:** Don't use the minified version during development. You will miss out all the nice warnings for common mistakes._
+If you don't need the Boilerplate and want to work with just the A-Frame JavaScript, download or link to the version from below, and then include A-Frame within a `<script>` tag. This gives you access to the full A-Frame feature set, and registers `AFRAME` as a global variable.
 
 <a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.min.js" download>Production Version <span>{{aframe_version}}</span></a> <em class="install-note">Minified</em>
 <a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.js" download>Development Version <span>{{aframe_version}}</span></a> <em class="install-note">Uncompressed, includes source maps</em>
+
+_**Note:** The minified version is not recommended for use during development, as it does not provide the useful warnings for common mistakes that the unminified version does._
+
 
 ## npm
 

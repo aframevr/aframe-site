@@ -6,20 +6,27 @@ parent_section: primitives
 order: 8
 ---
 
-The model primitive wraps an entity with the loader (model) component.
+The model primitive makes it easy to add OBJ or DAE (Collada) 3D models to a scene. Loaded models include textures, but do not include animations in the current version of A-Frame. The model primitive wraps an entity that contains a loader component.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-model.html)
+| Attribute | Default Value | Component Mapping |
+| --------- | ------------- | ----------------- |
+| format    | collada       | loader.format     |
+| opacity   | 1.0           | loader.opacity    |
+| src       | None          | loader.src        |
 
-| Attribute | Component Mapping | Default Value |
-| --------- | ----------------- | ------------- |
-| format    | loader.format     | collada       |
-| opacity   | loader.opacity    | 1.0           |
-| src       | loader.src        | None          |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-model.html)
 
 ## Examples
 
-A model pointing to a tree model:
+A tree model:
 
 ```html
 <a-model src="https://aframevr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
 ```
+
+Using scale to increase to size of the loaded tree model:
+
+```html
+<a-model scale="10 10 10" src="https://aframevr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
+```
+

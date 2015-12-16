@@ -6,49 +6,47 @@ parent_section: primitives
 order: 5
 ---
 
-The cylinder primitive wraps an entity that features the geometry component with a
-cylinder primitive.
+The cylinder primitive makes it easy to add tubes and curved surfaces to a scene. It wraps an entity that contains geometry and material components.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
+| Attribute           | Default Value  | Component Mapping                                                  |
+| ------------------- | -------------- | ------------------------------------------------------------------ |
+| color               | gray           | material.color                                                     |
+| height              | 1.5            | geometry.height                                                    |
+| metalness           | 0.0            | material.metalness                                                 |
+| opacity             | 1.0            | material.opacity                                                   |
+| open-ended          | false          | geometry.openEnded                                                 |
+| radius              | 0.75           | geometry.radius                                                    |
+| radius-bottom       | 0.75           | geometry.radiusBottom                                              |
+| radius-top          | 0.75           | geometry.radiusTop                                                 |
+| roughness           | 0.5            | material.roughness                                                 |
+| segments-height     | 1              | geometry.segmentsHeight                                            |
+| segments-radial     | 36             | geometry.segmentsRadial                                            |
+| shader              | standard       | material.shader                                                    |
+| side                | front          | material.side                                                      |
+| src                 | None           | material.src                                                       |
+| theta-length        | 360            | geometry.thetaLength                                               |
+| theta-start         | 0              | geometry.thetaStart                                                |
+| transparent         | true           | material.transparent                                               |
 
-| Attribute           | Component Mapping                                                  | Default Value  |
-| ------------------- | ------------------------------------------------------------------ | -------------- |
-| color               | material.color                                                     | gray           |
-| height              | geometry.height                                                    | 1              |
-| metalness           | material.metalness                                                 | 0.0            |
-| opacity             | material.opacity                                                   | 1.0            |
-| open-ended          | geometry.openEnded                                                 | false          |
-| radius              | geometry.radius                                                    | 0.5            |
-| radius-bottom       | geometry.radiusBottom                                              | 0.5            |
-| radius-top          | geometry.radiusTop                                                 | 0.5            |
-| roughness           | material.roughness                                                 | 0.5            |
-| segments-height     | geometry.segmentsHeight                                            | 4              |
-| segments-radius     | geometry.segmentsRadius                                            | 36             |
-| shader              | material.shader                                                    | standard       |
-| src                 | material.src                                                       | None           |
-| theta-length        | geometry.thetaLength                                               | 360            |
-| theta-start         | geometry.thetaStart                                                | 0              |
-| transparent         | material.transparent                                               | true           |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cylinder.html)
 
 ## Examples
 
-[View an example](https://aframevr.github.io/aframe/examples/cylinders/)
-
-Simple closed gray cylinder:
+Default gray cylinder with end-caps:
 
 ```html
 <a-cylinder></a-cylinder>
 ```
 
-Cool shapes using cylinders:
+Various shapes using cylinders:
 
 ```html
-<!-- A red hexagon. -->
-<a-cylinder position="-4 0 -6" rotation="90 -90 20" radius="2" segments-radius="8" color="red"></a-cylinder>
+<!-- A red hexagon -->
+<a-cylinder position="-4 0 -3" rotation="90 -90 20" radius="2" segments-radial="8" color="red"></a-cylinder>
 
-<!-- A green pipe. -->
-<a-cylinder position="0 0 -6" rotation="-80 15 -20" height="5" open-ended="true" color="green"></a-cylinder>
+<!-- Pacman -->
+<a-cylinder position="0 0 -3" rotation="65 45 0" radius="1" height="1" theta-start="57" theta-length="286" side="double" color="yellow"></a-cylinder>
 
-<!-- A metallic blue cylinder. -->
-<a-cylinder position="4 0 -6" rotation="45 -45 0" radius="2" height="1" color="blue" metalness="0.9"></a-cylinder>
+<!-- A green pipe -->
+<a-cylinder position="4 0 -3" rotation="-80 15 -20" height="5" open-ended="true" color="green"></a-cylinder>
 ```

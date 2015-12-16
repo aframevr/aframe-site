@@ -3,7 +3,7 @@ title: Animation
 type: core
 layout: docs
 parent_section: core
-order: 5
+order: 6
 ---
 
 Animations and transitions in A-Frame are defined using the `<a-animation>`

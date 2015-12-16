@@ -3,7 +3,7 @@ title: Mixin
 type: core
 layout: docs
 parent_section: core
-order: 6
+order: 7
 ---
 
 Mixins provide a way to compose and reuse commonly-used sets of component

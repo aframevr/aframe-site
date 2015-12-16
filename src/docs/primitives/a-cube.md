@@ -6,39 +6,35 @@ parent_section: primitives
 order: 3
 ---
 
-The cube primitive wraps an entity that features the geometry component with a
-box primitive.
+The cube primitive wraps an entity that contains geometry and material components.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cube.html)
+| Attribute   | Default Value  | Component Mapping    |
+|-------------|----------------|----------------------|
+| color       | gray           | material.color       |
+| depth       | 1.5            | geometry.depth       |
+| height      | 1.5            | geometry.height      |
+| metalness   | 0              | material.metalness   |
+| opacity     | 1              | material.opacity     |
+| roughness   | 0.5            | material.roughness   |
+| shader      | standard       | material.shader      |
+| transparent | true           | material.transparent |
+| translate   | 0 0 0          | geometry.translate   |
+| src         | None           | material.src         |
+| width       | 1.5            | geometry.width       |
 
-| Attribute   | Component Mapping    | Default Value  |
-|-------------|----------------------|----------------|
-| color       | material.color       | gray           |
-| depth       | geometry.depth       | 5              |
-| height      | geometry.height      | 5              |
-| metalness   | material.metalness   | 0.5            |
-| opacity     | material.opacity     | 1              |
-| roughness   | material.roughness   | 0.5            |
-| shader      | material.shader      | standard       |
-| transparent | material.transparent | true           |
-| translate   | geometry.translate   | 0 0 0          |
-| src         | material.src         | None           |
-| width       | geometry.width       | 5              |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-cube.html)
 
 ## Examples
 
-[View an example](https://aframevr.github.io/aframe/examples/cubes/)
-
-A simple gray cube:
+A default gray cube:
 
 ```html
 <a-cube></a-cube>
 ```
 
-A textured cube containing a small blue cube:
+A flattened textured cube:
 
 ```html
-<a-cube rotation="0 45 0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Trefoil_knot_left.svg/2000px-Trefoil_knot_left.svg.png" opacity="0.5">
-  <a-cube class="cube" rotation="0 45 0" scale="0.5 0.5 0.5" color="blue"></a-cube>
+<a-cube rotation="0 45 0" width="8" depth="8" height="1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Trefoil_knot_left.svg/2000px-Trefoil_knot_left.svg.png" opacity="0.5">
 </a-cube>
 ```
