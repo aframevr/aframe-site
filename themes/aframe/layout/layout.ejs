@@ -19,6 +19,9 @@
     <%- partial('partials/ga') %>
   </head>
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>" data-is-home="<%- isHome %>">
+    <% if (!isHome) { %>
+      <%- partial('partials/secondary/mobile_nav') %>
+    <% } %>
     <main id="main" class="main">
       <%- body %>
     </main>

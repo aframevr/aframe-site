@@ -8,15 +8,16 @@ a
         border-bottom-color rgba(53,196,232,0.75)
         color hsl(192, 80%, 56%)
 
-.header
+.nav
+    border-top 1px dashed rgba(0,0,0,0.1)
     border-bottom 1px dashed rgba(0,0,0,0.1)
-    margin-bottom 20px
-    padding-bottom 20px
+    margin-bottom 30px
+    padding 30px 0
 
 .nav-link
     color rgba(0,0,0,0.35)
     display block
-    padding 5px 0
+    padding 0.25rem 0
     transition 0.1s color ease-in
     &:hover
         color rgba(0,0,0,0.75)
@@ -362,7 +363,67 @@ p [href*=github][href*="/blob/"]:only-child,
             &:before
                 color #aaa
 
+.sidebar-mobile
+    display none
+
 @media screen and (max-width: 800px)
+    .sidebar
+        order 1  // Move to bottom
+        padding 0
+        width 100%
+
+        .list
+            padding 20px
+
+        .nav
+            border 0
+            margin-bottom 0
+            padding 20px 0 0
+
+    .secondary-nav
+        background $pink
+        // margin-top -4px  // To line things up when we jump
+        padding 20px
+
+    .logo__wordmark
+        background url(../images/aframe-name-white.svg) 0 50% no-repeat
+        background-size contain
+        height 35px
+        margin-bottom 0
+
+    .sidebar-mobile
+        background $pink
+        display block
+        position relative
+        padding 20px
+
+    .mobile-nav-btn
+        background-color white
+        border 3px solid white
+        color #000
+        display inline-block
+        float right
+        font 300px 15px $mono-font
+        letter-spacing 0.05rem
+        text-align center
+        transition 0.05s ease-in
+        text-transform uppercase
+        padding 8px 30px
+        &:hover,
+        &:active
+            color #000
+            opacity 0.8
+        &:active
+            background-color rgba(0,0,0,.5)
+
+    .nav-link
+        padding 0.1rem
+        &.current,
+        &.active,
+        &.current:hover,
+        &.active:hover
+            color $white
+
     .main
         flex-direction column
         min-width 100%
@@ -373,3 +434,34 @@ p [href*=github][href*="/blob/"]:only-child,
 
         .github-file-link
             margin-left 0
+
+    .section-title
+        position relative
+        &:before
+            background url(../images/caret.svg) -3px 6px no-repeat
+            background-size 10px auto
+            content ""
+            height 100%
+            left 0
+            pointer-events none
+            position absolute
+            top 0
+            width 10px
+
+    .section-title-active:before
+        transform rotate(90deg)
+        left -6px
+
+    .section-title-inactive + .section-subnav
+        display none
+
+    .section-title-link
+        padding-left 20px
+
+    .subnav-item
+        margin-left 20px
+        margin-right -20px
+
+    .subnav-link
+        margin-left -25px
+        padding-left 35px

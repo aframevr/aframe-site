@@ -56,14 +56,16 @@ links = links.map(function (link) {
 
 %>
 
-<header id="header" class="header">
-  <a id="logo" class="logo" href="<%- url_for(config.root) %>">
-    <span class="logo__wordmark"><%- config.title %></span>
-  </a>
+<div id="secondary-nav" class="secondary-nav">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="<%- url_for(config.root) %>">
+      <span class="logo__wordmark"><%- config.title %></span>
+    </a>
+  </header>
 
   <ul id="nav" class="nav">
     <% links.forEach(function (link) { %>
       <li class="nav-item"><a href="<%- url_for(link.url) %>" class="nav-link nav-link-docs<%- link.current ? ' current' : '' %>"<%- link.external ? ' target="blank" rel="external"' : '' %>><span><%- link.title %></span></a></li>
     <% }) %>
   </ul>
-</header>
+</div>
