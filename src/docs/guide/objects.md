@@ -9,11 +9,13 @@ show_guide: true
 
 A-Frame comes with convenient primitives for common use cases such as videos, models, images, and skies. Primitives include:
 
-* `<a-cube>`
-* `<a-plane>`
-* `<a-sphere>`
-* `<a-image>`
-* `<a-sky>`
+```html
+<a-cube>
+<a-plane>
+<a-sphere>
+<a-image>
+<a-sky>
+```
 
 The full list of available primmitives is available in the [Primitives documentation](../../docs/primitives/).
 
