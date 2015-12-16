@@ -34,11 +34,11 @@ A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders.
 
 ## What mobile devices does A-Frame support?
 
-On mobile, A-Frame works best on newer iPhones. Some Android devices can exhibit an error where textures appear black. This is a known issue with A-Frame's texture and lighting implementation, and a top priority to improve. Results will vary from Android device to Android device. A OnePlus One will render textures in black, for example, whereas the Nexus 6 renders them textures correctly.
+On mobile, A-Frame works best on newer iPhones. Some Android devices can exhibit an error where textures appear black. This is a known issue with A-Frame's texture and lighting implementation, and a top priority to improve. Results will vary from Android device to Android device. A OnePlus One will render textures in black, for example, whereas the Nexus 6 renders the textures correctly.
 
 ## How can I share my work?
 
-There are several community channels available for sharing experiences built A-Frame. 
+There are several community channels available for sharing experiences built A-Frame.
 
 * [Made with A-Frame Tumblr](https://aframevr.tumblr.com/)
 * [A-Frame Slack](https://aframevr-slack.herokuapp.com/)
@@ -53,7 +53,7 @@ We're easiest to reach on the [A-Frame Slack channel](https://aframevr.slack.com
 
 Virtual reality is a new and performance-intensive technology. The right combination of hardware and software settings can make the difference between presence and nausea.
 
-For the Oculus Rift, we recommend using a Windows PC that meets the  recommended specs of the [Oculus Rift CV1](https://www.oculus.com/en-us/blog/powering-the-rift/) (consumer version), including a GeForce GTX 970. 
+For the Oculus Rift, we recommend using a Windows PC that meets the  recommended specs of the [Oculus Rift CV1](https://www.oculus.com/en-us/blog/powering-the-rift/) (consumer version), including a GeForce GTX 970.
 
 Unfortunately, Macs are not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site](https://developer.oculus.com/downloads/), newer versions of OSX are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs or our mobile phones.
 
@@ -69,7 +69,7 @@ The [Awesome A-Frame GitHub repo](https://github.com/aframevr/awesome-aframe) pr
 
 ## Can I add links to my scene?
 
-The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying [`requestFullScreen` API](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullScreen) that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experiences as self-contained single-page web applications. 
+The WebVR API that A-Frame is built on does not currently support traversal of domains within virtual reality. Due to restrictions in the underlying [`requestFullScreen` API](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullScreen) that the WebVR API is built on, the browser drops out of VR display mode when leaving one domain for another. There are plans to resolve this shortcoming with a new version of the WebVR API. When that happens A-Frame will be updated to support link traversal in VR. In the interim, developers are encouraged to design experiences as self-contained single-page web applications.
 
 ## Is there a feature roadmap?
 
@@ -81,6 +81,6 @@ We call it A-Frame. We express it in code and domains as aframe, as much as poss
 
 ## Why aren't my transparent images rendering correctly?
 
-Transparency is tricky in 3D graphics. If you are having issues where transparent issues in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. 
+Transparency is tricky in 3D graphics. If you are having issues where transparent issues in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects.
 
 While we are somewhat limited in the degree to which we can improve this by the underlying architecture of OpenGL, we are planning improvements in future versions of A-Frame that will (1) reduce the probability of encountering this unwanted occlusion, and (2) give developers better controls to manually override the default behaviors when they are undesirable. Track this work in [aframe-core](https://github.com/aframevr/aframe-core/) [issue #498](https://github.com/aframevr/aframe-core/issues/498).
