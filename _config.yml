@@ -123,7 +123,7 @@ aframe_npm_url: https://www.npmjs.com/package/aframe
 aframe_boilerplate_github_url: https://github.com/aframevr/aframe-boilerplate
 
 examples:
-  base_url: https://aframe.io/aframe/examples/
+  base_url: //aframe.io/aframe/examples/
   first_example_url: examples/showcase/helloworld/
   # NOTE: Homepage URL below is not used anymore.
   homepage_example_url: examples/showcase/spheres-and-fog/
