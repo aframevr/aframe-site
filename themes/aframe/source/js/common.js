@@ -75,22 +75,31 @@
     // have got you down, you can load the examples from your local `aframe`
     // dev server, for example.
     $$('iframe.example__iframe').forEach(function (iframe) {
-      var iframeData = iframe.dataset;
-      if (iframeData.path.indexOf('//') !== -1) { return; }  // Ignore external URLs.
-      iframe.setAttribute('src', customExamplesBaseUrl + iframeData.path);
+      var iframePath = iframe.getAttribute('data-path');
+      if (iframePath.indexOf('//') !== -1) { return; }  // Ignore external URLs.
+      iframe.setAttribute('src', customExamplesBaseUrl + iframePath);
     });
   }
 
-  function getCurrentNavItem () {
+  // Trigger `:active` styles when we "click" on examples, previous/next links.
+  var SHOW_ACTIVE_STYLES_ON_CLICK = true;
+
+  function clickEl (el) {
+    if (!el) { return; }
+    if (SHOW_ACTIVE_STYLES_ON_CLICK && el.classList) { el.classList.add('click'); }
+    el.click();
+  }
+
+  function getCurrentNavLink () {
     return document.querySelector('.examples-subnav .subnav-link.current');
   }
 
-  function getNavItems () {
+  function getNavLinks () {
     return document.querySelectorAll('.examples-subnav .subnav-link');
   }
 
-  var navItems = getNavItems();
-  if (navItems) {
+  var navLinks = getNavLinks();
+  if (navLinks) {
     body.addEventListener('keyup', function (e) {
       // TODO: Check `activeElement`.
       var left = e.keyCode === 37
@@ -99,31 +108,42 @@
       // var down = e.keyCode === 40;
       if (!left && !right) { return; }
 
-      navItems = getNavItems();
-      if (!navItems) { return; }
+      navLinks = getNavLinks();
+      if (!navLinks) { return; }
 
-      var currentLink = getCurrentNavItem();
+      var currentLink = getCurrentNavLink();
       if (!currentLink) {
         window.location.href = 'examples/';
         return;
       }
 
-      currentLink.classList.remove('current');
-
-      var navItemsArr = $$(navItems);
-      var currentIdx = navItemsArr.indexOf(currentLink);
-
-      var nextIndex = left ? currentIdx - 1 : currentIdx + 1;
-      if (nextIndex < 0) {
-        nextIndex = navItems.length - 1;
+      var destIdx;
+      var clicked = false;
+      if (left) {
+        destIdx = currentLink.closest('[data-idx]').getAttribute('data-previous-idx');
+        if ('examplePrev' in window) {
+          clickEl(examplePrev);
+          clicked = true;
+        }
       }
-      if (nextIndex === navItems.length) {
-        nextIndex = 0;
+      if (right) {
+        destIdx = currentLink.closest('[data-idx]').getAttribute('data-next-idx');
+        if ('exampleNext' in window) {
+          clickEl(exampleNext);
+          clicked = true;
+        }
       }
 
-      var nextLink = navItemsArr[nextIndex];
-      if (nextLink) {
-        nextLink.click();
+      if (destIdx) {
+        currentLink.classList.remove('current');
+      }
+
+      var destLink = navLinks[destIdx];
+      if (destLink) {
+        clickEl(destLink);
+        if (!clicked) {
+          destLink.click();
+        }
       }
     });
   }

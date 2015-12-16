@@ -12,6 +12,10 @@ a
     &:hover
         border-bottom-color rgba(255,255,255,0.3)
         color rgba(255,255,255,0.75)
+    &:active,
+    &.click
+        border-bottom-color rgba(255,255,255,0.5)
+        color #fff
 
 ul
     list-style-type none
@@ -134,13 +138,21 @@ ul
         background-color rgba(0,0,0,0.05)
         // border-bottom 1px solid rgba(255,255,255,.2)
         color #fff
-    &:active
+    &:active,
+    &.click
         background-color rgba(0,0,0,0.5)
     &.current,
     &.current:hover
         // background-color rgba(255,255,255,0.1)
         font-weight 500;
         color #fff
+
+.example-nav
+    margin-top 3rem
+
+.example-nav-link
+    font-size 1.25rem
+
 
 /*
 // Use this version if adding to side bar

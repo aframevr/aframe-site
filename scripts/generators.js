@@ -32,7 +32,11 @@ hexo.extend.generator.register('examples', function (locals) {
       // TODO: Eventually build out separate pages for each category in Examples.
       addRoute('examples/' + sectionSlug + '/', examplesRedirect);
 
-      section.examples.forEach(function (example) {
+      section.examples.forEach(function (example, idx) {
+        example.idx = idx;
+        example.previous_idx = idx === 0 ? section.examples.length - 1 : idx - 1;
+        example.next_idx = idx === section.examples.length - 1 ? 0 : idx + 1;
+
         var permalink = utils.urljoin('examples', sectionSlug, example.slug, '/');
         example.type = 'examples';
         example.section = sectionSlug;
