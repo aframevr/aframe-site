@@ -1,4 +1,5 @@
-title: "Cursor"
+---
+title: Cursor
 type: components
 layout: docs
 parent_section: components
