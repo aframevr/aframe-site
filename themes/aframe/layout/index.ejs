@@ -1,14 +1,14 @@
 <%- partial('partials/examples/sidebar', {site: site}) %>
 
 <div class="content content--index">
-  <iframe class="example__iframe" src="http://aframevr.github.io/aframe/examples/animation-aframe-logo/" allowfullscreen="yes" scrolling="no" height="" width=""></iframe>
+  <%- partial('partials/examples/iframe', {item: {slug: 'animation-aframe-logo', path: 'animation-aframe-logo/'}}) %>
   <div class="copy__wrap">
     <ul class="menu">
       <li class="menu-item"><a href="<%- url_for('docs/') %>">Docs</a></li>
       <li class="menu-item"><a href="<%- url_for('faq/') %>">FAQ</a></li>
       <li class="menu-item"><a href="<%- url_for('blog/') %>">Blog</a></li>
       <li class="menu-item"><a href="<%- url_for('community/') %>">Community</a></li>
-      <li class="menu-item"><a href="http://github.com/aframevr">GitHub</a></li>
+      <li class="menu-item"><a href="<%- config.github_url %>">GitHub</a></li>
     </ul>
     <h1 class="slogan">
       Building blocks for the<br>
