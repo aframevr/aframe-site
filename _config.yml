@@ -21,7 +21,6 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-website_github_url: https://github.com/aframevr/aframe-site-dev/
 
 # Directory
 source_dir: src
@@ -101,13 +100,21 @@ deploy:
   repository: git@github.com:aframevr/aframevr.github.io.git
 
 disqus_shortname:
-twitter: aframevr
-twitter_url: https://twitter.com/aframevr/
-github: aframevr/aframe
-github_user: aframevr
-github_repo: aframe
-github_url: https://github.com/aframevr/aframe
+twitter:
+  username: aframevr
+  url: https://twitter.com/aframevr/
 google_analytics: UA-24056643-4
+
+github:
+  aframe:
+    username: aframevr
+    repo: aframe
+    url: https://github.com/aframevr/aframe/
+  aframe_site:
+    username: aframevr
+    repo: aframe-site-dev
+    url: https://github.com/aframevr/aframe-site-dev/
+
 
 aframe_version: 0.1.0
 
