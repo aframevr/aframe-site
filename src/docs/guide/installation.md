@@ -26,8 +26,7 @@ If you don't need the Boilerplate and want to work with just the A-Frame JavaScr
 <a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.min.js" download>Production Version <span>{{aframe_version}}</span></a> <em class="install-note">Minified</em>
 <a class="btn btn-download" href="https://aframe.io/releases/latest/aframe.js" download>Development Version <span>{{aframe_version}}</span></a> <em class="install-note">Uncompressed, includes source maps</em>
 
-_**Note:** The minified version is not recommended for use during development, as it does not provide the useful warnings for common mistakes that the unminified version does._
-
+<div class="tip">_**Note:** The minified version is not recommended for use during development, as it does not provide the useful warnings for common mistakes that the unminified version does._</div>
 
 ## npm
 

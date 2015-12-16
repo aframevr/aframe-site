@@ -127,19 +127,19 @@ p
         margin 1em 0
     p + h2
         margin-top 1.5em
-    p.tip
-        padding 12px 24px 12px 30px
-        margin 2em 0
-        border-left 4px solid $red
+    .tip
         background-color $codebg
-        position relative
         border-bottom-right-radius $radius
+        border-left 4px solid $pink
         border-top-right-radius $radius
+        margin 2em 0
+        padding 1.5em 2em
+        position relative
         &:before
             position absolute
             top 14px
             left -12px
-            background-color $red
+            background-color $pink
             color #fff
             content "!"
             width 20px
@@ -149,6 +149,10 @@ p
             line-height 20px
             font-weight bold
             font-size 14px
+        p:first-child
+            margin-top 0
+        p:last-child
+            margin-bottom 0
     ul
         list-style disc
         margin-left 1em
