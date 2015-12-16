@@ -3,7 +3,7 @@
 // For Home / Examples pages
 
 html[data-is-home="true"]
-    min-width 1200px
+    min-width 1000px
 
 body
     color #fff
@@ -271,103 +271,104 @@ h3 + .examples-subnav
         right 30px
 
 @media screen and (max-width: 800px)
-    .mobile-get-started
-        display inline-block
-        position absolute
-        padding 4px 5vw
-        margin-top 0
-        right 20px
-        top 20px
+    html:not([data-is-home="true"])
+        .mobile-get-started
+            display inline-block
+            position absolute
+            padding 4px 5vw
+            margin-top 0
+            right 20px
+            top 20px
 
-    .main
-        flex-direction column
-        justify-content space-between
+        .main
+            flex-direction column
+            justify-content space-between
 
-    .example__iframe
-        height 100%
+        .example__iframe
+            height 100%
 
-    .content--body
-        position absolute
-        bottom 0
-        left 0
-        top 0
-        right 0
+        .content--body
+            position absolute
+            bottom 0
+            left 0
+            top 0
+            right 0
 
-    .sidebar,
-    .sidebar__wrap
-        height 150px
-        overflow-x hidden
+        .sidebar,
+        .sidebar__wrap
+            height 150px
+            overflow-x hidden
 
-    .sidebar
-        order 1  // Move to bottom
-        padding 0
-        position relative
-        max-width 100%
-        width 100%
+        .sidebar
+            order 1  // Move to bottom
+            padding 0
+            position relative
+            max-width 100%
+            width 100%
 
-        .nav
+            .nav
+                border 0
+                margin-bottom 0
+                padding 20px 0 0
+
+        .example-nav
+            position absolute
+            height 80px
+            bottom 0
+            left 0
+            width 100%
+
+        #logo
+            display block
+            height 35px
+            pointer-events none
+
+        .logo__wordmark
+            background-position 0 50%
+            background-size contain
+            width 100%
+
+        .example-nav-link
             border 0
-            margin-bottom 0
-            padding 20px 0 0
+            height 100%
+            font-size 2rem
+            font-weight 600
+            width 50%
+            margin 0
+            padding 0.5rem 16px
+            position absolute
+            bottom 0
+            span
+                display none
 
-    .example-nav
-        position absolute
-        height 80px
-        bottom 0
-        left 0
-        width 100%
+        .example-nav-prev
+            left 0
 
-    #logo
-        display block
-        height 35px
-        pointer-events none
+        .example-nav-next
+            right 0
 
-    .logo__wordmark
-        background-position 0 50%
-        background-size contain
-        width 100%
+        .subnav-item.current
+            padding 0.5rem 2rem
+            position absolute
+            top 75px
+            left 0
+            right 0
+            pointer-events none
+            text-align center
+            width 100%
+            .subnav-link
+                font-size 1.4rem
 
-    .example-nav-link
-        border 0
-        height 100%
-        font-size 2rem
-        font-weight 600
-        width 50%
-        margin 0
-        padding 0.5rem 16px
-        position absolute
-        bottom 0
-        span
+        .subnav-item:not(.current),
+        .page-title
             display none
 
-    .example-nav-prev
-        left 0
+        .examples-list
+            border 0
+            padding 0
 
-    .example-nav-next
-        right 0
-
-    .subnav-item.current
-        padding 0.5rem 2rem
-        position absolute
-        top 75px
-        left 0
-        right 0
-        pointer-events none
-        text-align center
-        width 100%
-        .subnav-link
-            font-size 1.4rem
-
-    .subnav-item:not(.current),
-    .page-title
-        display none
-
-    .examples-list
-        border 0
-        padding 0
-
-    .example-nav
-        margin-top 0
+        .example-nav
+            margin-top 0
 
 // Hide sidebar since iOS cannot enter fullscreen.
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape)
