@@ -1,7 +1,9 @@
 <%- partial('partials/examples/sidebar', {site: site}) %>
 
 <div class="content content--index">
-  <%- partial('partials/examples/iframe', {item: {slug: 'animation-aframe-logo', path: 'animation-aframe-logo/'}}) %>
+  <div class="aframe-animation">
+    <%- partial('partials/examples/iframe', {item: {slug: 'animation-aframe-logo', path: 'animation-aframe-logo/'}}) %>
+  </div>
   <div class="copy__wrap">
     <ul class="menu">
       <li class="menu-item"><a href="<%- url_for('docs/') %>">Docs</a></li>
