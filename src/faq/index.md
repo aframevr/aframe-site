@@ -75,7 +75,7 @@ We use issues on the [A-Frame GitHub repo](https://github.com/aframevr/aframe/is
 
 We call it A-Frame. We express it in code and domains as aframe, as much as possible. Sometimes we cannot get "aframe", and we have to resort to "aframevr", which is more widely available. The site is at [aframe.io](https://aframe.io/), for example, but the GitHub organization is [github.com/aframevr](https://github.com/aframevr/). We're not thrilled about this inconsistency, but it's something we accept begrudgingly. Sorry for any confusion!
 
-## Transparent images do not render correctly
+## Why aren't my transparent images rendering correctly?
 
 Transparency is tricky in 3D graphics. If you are having issues where transparent issues in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. 
 
