@@ -4,6 +4,10 @@
 
   <%- partial('partials/generic/sidebar_header') %>
 
+  <a href="<%- url_for('docs/') %>" class="mobile-get-started nav-link get-started<%- page.canonical_path.match(/docs/) ? ' current' : '' %>">
+    Get Started
+  </a>
+
   <div class="list">
     <ul class="subnav">
       <% site.pages.find({type: type}).sort(order_by || 'order').each(function (p) { %>

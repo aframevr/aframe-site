@@ -29,12 +29,12 @@
           <nav class="example-nav c">
             <% var prevExample = examplesList[page.previous_idx] %>
             <% if (prevExample) { %>
-              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>">← Previous</a>
+              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>">← <span>Previous</span></a>
             <% } %>
 
             <% var nextExample = examplesList[page.next_idx] %>
             <% if (nextExample) { %>
-              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>">Next →</a>
+              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>"><span>Next</span> →</a>
             <% } %>
           </nav>
         <% } %>

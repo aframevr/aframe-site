@@ -3,3 +3,6 @@
     <span class="logo__wordmark"><%- config.title %></span>
   </a>
 </header>
+<a href="<%- url_for('docs/') %>" class="mobile-get-started nav-link get-started<%- page.canonical_path.match(/docs/) ? ' current' : '' %>">
+  Get Started
+</a>

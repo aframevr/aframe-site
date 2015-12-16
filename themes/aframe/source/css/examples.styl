@@ -71,10 +71,6 @@ ul
     display flex
     flex-direction column
 
-// @media screen and (max-width: 800px)
-//     .main
-//         flex-direction column
-
 .example__viewsource
     background rgba(0,0,0,0.35)
     color #fff
@@ -83,8 +79,8 @@ ul
     padding 5px 10px
     position absolute
     text-transform uppercase
-    top 30px
-    right 30px
+    top 5px
+    right 5px
     z-index 2
     &:active,
     &:hover
@@ -110,19 +106,6 @@ ul
     transform rotate(90deg)
     top 4px
     left -3px
-
-.nav-link-get-started
-    border 2px solid #fff
-    color #fff
-    display block
-    font-size 14px
-    font-weight 300
-    padding 10px
-    text-align center
-    transition 0.05es ease-in
-    &:hover
-        background-color white
-        color $pink
 
 .subnav-link
     font-size 16px
@@ -151,8 +134,19 @@ ul
     margin-top 3rem
 
 .example-nav-link
-    font-size 1.25rem
+    border 0
+    height 100%
+    font-size 2rem
+    font-weight 600
+    display inline-block
+    padding 0.5rem 1rem
+    margin -0.5rem -1rem
+    width 50%
+    span
+        display none
 
+.example-nav-next
+    text-align right
 
 /*
 // Use this version if adding to side bar
@@ -242,4 +236,105 @@ h3 + .examples-subnav
     &:hover
         background-color white
         // border 3px solid #000
-        color #000
+        color $pink
+    &:active
+        opacity 0.8
+
+.mobile-get-started
+    display none
+
+@media screen and (min-width: 480px)
+    .example__viewsource
+        top 20px
+        right 20px
+
+@media screen and (min-width: 800px)
+    .example__viewsource
+        top 30px
+        right 30px
+
+@media screen and (max-width: 800px)
+    .mobile-get-started
+        display inline-block
+        position absolute
+        padding 4px 30px
+        // float right
+        margin-top 0
+        right 20px
+        top 20px
+
+    .main
+        height auto
+        flex-direction column
+
+    .example__iframe
+        height calc(100vh - 150px)
+
+    .sidebar,
+    .sidebar__wrap
+        height 150px
+        overflow-x hidden
+
+    .sidebar
+        order 1  // Move to bottom
+        padding 0
+        position relative
+        max-width 100%
+        width 100%
+
+        .nav
+            border 0
+            margin-bottom 0
+            padding 20px 0 0
+
+    #logo
+        pointer-events none
+
+    .example-nav
+        position absolute
+        height 80px
+        bottom 0
+        left 0
+        width 100%
+
+    .example-nav-link
+        border 0
+        height 100%
+        font-size 2rem
+        font-weight 600
+        width 50%
+        margin 0
+        padding 0.5rem 16px
+        position absolute
+        bottom 0
+        span
+            display none
+
+    .example-nav-prev
+        left 0
+
+    .example-nav-next
+        right 0
+
+    .subnav-item.current
+        padding 0.5rem 2rem
+        position absolute
+        top 75px
+        left 0
+        right 0
+        pointer-events none
+        text-align center
+        width 100%
+        .subnav-link
+            font-size 1.4rem
+
+    .subnav-item:not(.current),
+    .page-title
+        display none
+
+    .examples-list
+        border 0
+        padding 0
+
+    .example-nav
+        margin-top 0
