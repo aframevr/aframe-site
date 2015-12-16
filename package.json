@@ -14,15 +14,13 @@
     "hexo-renderer-ejs": "^0.1.0",
     "hexo-renderer-marked": "^0.2.5",
     "hexo-renderer-stylus": "^0.3.0",
-    "hexo-server": "^0.1.2"
-  },
-  "devDependencies": {
-    "bluebird": "^3.0.6",
-    "glob": "^6.0.1",
-    "hexo-cli": "^0.1.9",
+    "hexo-server": "^0.1.2",
     "lodash": "^3.10.1",
     "markdown": "^0.5.0",
     "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "hexo-cli": "^0.1.9"
   },
   "hexo": {
     "version": "3.1.1"
