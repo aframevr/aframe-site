@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "bluebird": "^3.0.6",
     "hexo": "^3.1.1",
     "hexo-admin": "^1.1.1",
     "hexo-deployer-git": "0.0.4",
