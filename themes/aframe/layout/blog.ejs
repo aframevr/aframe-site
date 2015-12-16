@@ -8,20 +8,29 @@
 <div class="content content--blog copy post">
   <div class="copy__wrap">
     <% if (page.blog_index) { %>
+
       <h1 class="page__title"><%- config.blog_title %></h1>
+
       <%- page.content %>
+
       <% site.posts.sort('date', -1).each(function (post) { %>
-        <div class="post">
-          <h2><a href="<%- page_url(post.path) %>"><%- post.title %></a></h2>
-          <h4><%- post.date.format('MMM D[,] YYYY') %></h4>
+        <article class="post">
+          <h2 class="post__heading"><%- post.title %></h2>
+          <h4 class="post__timestamp"><%- post.date.format('MMM D[,] YYYY') %></h4>
           <div class="post__excerpt"><%- post.excerpt %></div>
           <a href="<%- page_url(post.path) %>" class="post__more">Read more &hellip;</a>
-        </div>
+        </article>
       <% }) %>
+
     <% } else { %>
-      <h1 class="post__heading"><%- page.title %></h1>
-      <h4 class="post__timestamp"><%- page.date.format('MMM D[,] YYYY') %></h4>
-      <%- page.content %>
+
+      <article class="post">
+        <h1 class="hidden-visually"><%- config.blog_title %></h1>
+        <h2 class="post__heading"><%- page.title %></h2>
+        <h4 class="post__timestamp"><%- page.date.format('MMM D[,] YYYY') %></h4>
+        <%- page.content %>
+      </article>
+
     <% } %>
 
     <footer class="footer footnote">
