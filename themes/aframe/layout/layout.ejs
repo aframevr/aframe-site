@@ -11,6 +11,9 @@
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
+    <% if (isHome) { %>
+      <%- js('js/mobile.js') %>
+    <% } %>
     <% if (showExamples) { %>
       <%- css('css/examples') %>
     <% } else { %>
