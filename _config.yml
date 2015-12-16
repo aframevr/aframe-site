@@ -9,12 +9,12 @@ description: "Building Blocks for the VR Web"
 author: MozVR
 email: aframe@mozilla.com
 language:
-robots: none
+robots: all
 blog_title: Changelog
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://aframevr.github.io/
+url: https://aframevr.io/
 root: /
 permalink: blog/:year/:month/:day/:title/
 tag_dir: tags
