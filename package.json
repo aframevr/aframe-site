@@ -15,7 +15,12 @@
     "hexo-server": "^0.1.2"
   },
   "devDependencies": {
-    "hexo-cli": "^0.1.9"
+    "bluebird": "^3.0.6",
+    "glob": "^6.0.1",
+    "hexo-cli": "^0.1.9",
+    "lodash": "^3.10.1",
+    "markdown": "^0.5.0",
+    "request": "^2.67.0"
   },
   "hexo": {
     "version": "3.1.1"
@@ -29,6 +34,7 @@
     "deploy": "hexo deploy && open 'https://aframevr.github.io/'",
     "release": "npm run syncjs ; npm run deploy",
     "clean": "hexo clean",
+    "checklinks": "node scripts/checkLinks.js",
     "update": "node update.js",
     "syncjs": "pushd ../aframe/ && npm run dist && popd && cp ../aframe/dist/* themes/aframe/source/releases/latest/. && cp ../aframe/dist/* themes/aframe/source/releases/0.1.0/. && git commit -am 'bump releases'",
     "postsyncjs": "pushd ../aframe/ && git checkout dist/ && popd"
