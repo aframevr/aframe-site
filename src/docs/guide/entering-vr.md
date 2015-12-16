@@ -19,6 +19,7 @@ A-Frame provides out-of-the-box support for desktop, mobile, and Oculus Rift.
 
 * Requires a WebGL-compatible browser. The faster the phone the better. We recommend Google Cardboard V2-compatible headsets for best results. Tested with Mobile Safari and Firefox for iOS, and Firefox for Android, and Chrome on Android.
 * Requires iOS 9.1 or greater. The faster the iPhone the better. Tested in Mobile Safari and Firefox for iOS. We recommend Google Cardboard V2-compatible headset for best results with iPhones.
+* iPhone 6+ users will want to disable the Safari Tab Bar when viewing VR content.  This can be done in `Settings > Safari > Show Tab Bar`.
 
 ## For Oculus Rift
 
