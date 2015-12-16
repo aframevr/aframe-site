@@ -29,6 +29,11 @@ To deploy this to GitHub Pages:
 It will now be live at the __[staging server](http://aframevr.github.io/aframevr-site-dev/)__.
 
 
+## Credits
+
+Source adopted from the awesome @vuejs [site](https://github.com/vuejs/vuejs.org/).
+
+
 ## License
 
 Licensed under [The MIT License](LICENSE).
