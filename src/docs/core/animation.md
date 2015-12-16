@@ -87,9 +87,9 @@ let us animate the light intensity.
 </a-light>
 ```
 
-### Selecting a Component Attribute
+### Selecting a Component Property
 
-Most often, we want to animate an attribute of a component. To do so, we select the attribute using the dot syntax: `componentName.attributeName`.
+Most often, we want to animate an property of a component. To do so, we select the property using the dot syntax: `componentName.propertyName`.
 
 For example, to animate a cylinder's top radius, we can select the `radiusTop` value with `geometry.radiusTop`.
 

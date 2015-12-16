@@ -27,7 +27,7 @@ document.querySelector('#cube').addEventListener('click', function () {
 });
 ```
 
-| Attribute   | Description                                                                | Default Value  |
+| Property    | Description                                                                | Default Value  |
 |-------------|----------------------------------------------------------------------------|----------------|
 | fuse        | Whether cursor should also be fuse-based.                                  | false          |
 | maxDistance | Maximum distance to check for intersections on entities for clicks.        | 5              |

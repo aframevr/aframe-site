@@ -13,9 +13,9 @@ to the `<a-scene>` element.
 <a-scene fog="type: linear; color: #AAA"></a-scene>
 ```
 
-Given the type of fog distribution, different attributes will apply.
+Given the type of fog distribution, different properties will apply.
 
-| Attribute | Description                                                                          | Default Value  |
+| Property  | Description                                                                          | Default Value  |
 |-----------|--------------------------------------------------------------------------------------|----------------|
 | type      | Type of fog distribution. Can be `linear` or `exponential`.                          | linear         |
 | color     | Color of fog. For example, if set to black, far away objects will be rendered black. | #000           |
@@ -24,7 +24,7 @@ Given the type of fog distribution, different attributes will apply.
 
 Linear fog grows linearly denser with distance.
 
-| Attribute | Description                                                                                | Default Value  |
+| Property  | Description                                                                                | Default Value  |
 |-----------|--------------------------------------------------------------------------------------------|----------------|
 | near      | Minimum distance to start applying fog. Objects closer than this won't be affected by fog. | 1              |
 | far       | Maximum distance to stop applying fog. Objects farther than this won't be affected by fog. | 1000           |
@@ -33,6 +33,6 @@ Linear fog grows linearly denser with distance.
 
 Exponential fog grows exponentially denser with distance.
 
-| Attribute | Description                                                                                | Default Value  |
+| Property  | Description                                                                                | Default Value  |
 |-----------|--------------------------------------------------------------------------------------------|----------------|
 | density   | How quickly the fog grows dense.                                                           | 0.00025        |

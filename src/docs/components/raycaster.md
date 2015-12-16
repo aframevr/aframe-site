@@ -10,7 +10,7 @@ The raycaster component defines the functionality for an entity to do intersecti
 
 Since it can be useful for other components but inherently does not add behavior, we will instead document the properties of the raycaster component prototype below.
 
-| Property      | Description                                      |
-|---------------|--------------------------------------------------|
-| intersectedEl | The entity currently intersecting the raycaster. |
-| raycaster     | three.js raycaster object.                       |
+| Class Property | Description                                      |
+|----------------|--------------------------------------------------|
+| intersectedEl  | The entity currently intersecting the raycaster. |
+| raycaster      | three.js raycaster object.                       |
