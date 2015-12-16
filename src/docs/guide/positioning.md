@@ -13,9 +13,9 @@ To move an element or change its relative size, you can add attributes for posit
 <a-cube position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-cube>
 ```
 
-In the A-Frame coordinate system, +X is "right", +Y is "up", and "+Z" is forwards. In 3D graphics this is called a [right-handed cartesian coordinate system](https://wikipedia.org/wiki/Cartesian_coordinate_system), with Y-axis up.
+In the A-Frame coordinate system, +X can be roughly thought of as "right", +Y is "up", and "+Z" is towards the default camera. In 3D graphics this is called a [right-handed cartesian coordinate system](https://wikipedia.org/wiki/Cartesian_coordinate_system), with Y-axis up.
 
-Distances in A-Frame are defined in meters. When desining a scene for virtual reality is very important to consider the real world scale of the objects we create. A cube with `height="100"` may look ordinary on our laptop screen, but in virtual reality we will perceive it as being a full 100 meters tall.
+Distances in A-Frame are defined in meters. When desining a scene for virtual reality it is very important to consider the real world scale of the objects we create. A cube with `height="100"` may look fairly ordinary on our laptop screen, but in virtual reality we will perceive it as a massive 100 meter tall monolith.
 
 Rotations in A-Frame are defined in degrees:
 
