@@ -34,9 +34,10 @@ _**Note:** The minified version is not recommended for use during development, a
 npm is the recommended installation method when building scenes with A-Frame. It pairs nicely with a CommonJS module bundler such as [Webpack](http://webpack.github.io/) or [Browserify](http://browserify.org/).
 
 ```bash
-# latest stable
+# latest stable version
 $ npm install aframe
-# dev build (directly from GitHub):
+
+# dev build (directly from GitHub)
 $ npm install mozvr/aframe#dev
 ```
 
