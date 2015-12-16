@@ -48,6 +48,8 @@
 
   var body = document.body;
 
+  // EXAMPLES.
+
   // To customise the base URL for the <iframe>'d examples, do this in the Console:
   //
   //   localStorage.examples_base_url = 'http://localhost:9000/examples/'
@@ -79,49 +81,54 @@
     });
   }
 
-  if (body.dataset.pageType === 'examples') {
-    var navLinks = $$('.examples__list .nav-link');
+  function getCurrentNavItem () {
+    return document.querySelector('.examples-subnav .subnav-link.current');
+  }
 
+  function getNavItems () {
+    return document.querySelectorAll('.examples-subnav .subnav-link');
+  }
+
+  var navItems = getNavItems();
+  if (navItems) {
     body.addEventListener('keyup', function (e) {
       // TODO: Check `activeElement`.
-      var left = e.keyCode === 37;
+      var left = e.keyCode === 37
       var right = e.keyCode === 39;
+      // var up = e.keyCode === 38;
+      // var down = e.keyCode === 40;
       if (!left && !right) { return; }
 
-      var currentIdx = -1;
-      navLinks.forEach(function (navLink, idx) {
-        if (navLink.classList.contains('current')) {
-          currentIdx = idx;
-        }
-      });
-      var currentLink = navLinks[currentIdx];
-      if (!currentLink) { return; }
+      navItems = getNavItems();
+      if (!navItems) { return; }
+
+      var currentLink = getCurrentNavItem();
+      if (!currentLink) {
+        window.location.href = 'examples/';
+        return;
+      }
+
       currentLink.classList.remove('current');
 
-      var nextIndex;
-      if (left) {
-        nextIndex = currentIdx - 1;
-      }
-      if (right) {
-        nextIndex = currentIdx + 1;
-      }
+      var navItemsArr = $$(navItems);
+      var currentIdx = navItemsArr.indexOf(currentLink);
 
-      if (nextIndex <= 0) {
-        nextIndex = navLinks.length;
+      var nextIndex = left ? currentIdx - 1 : currentIdx + 1;
+      if (nextIndex < 0) {
+        nextIndex = navItems.length - 1;
       }
-      if (nextIndex > navLinks.length) {
+      if (nextIndex === navItems.length) {
         nextIndex = 0;
       }
 
-      var nextLink = navLinks[nextIndex];
+      var nextLink = navItemsArr[nextIndex];
       if (nextLink) {
         nextLink.click();
       }
     });
   }
 
-  // Docs.
-
+  // DOCS.
   var anchorHeadingsSelector = 'h2[id], h3[id], h4[id], h5[id], h6[id]';
 
   var contentDocs = $('.content--docs');

@@ -13,7 +13,8 @@
           <ul class="subnav examples-subnav borderless-links">
             <% if (section.examples) { %>
               <% section.examples.forEach(function (example) { %>
-                <li class="subnav-item"><a href="<%- url_for(example.url) %>" class="subnav-link<%- page.section === example.section && page.slug === example.slug ? ' current' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
+                <% var isCurrent = page.section === example.section && page.slug === example.slug %>
+                <li class="subnav-item<%- isCurrent ? ' current' : '' %>"><a href="<%- url_for(example.url) %>" class="subnav-link<%- isCurrent ? ' current' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
               <% }) %>
             <% } %>
           </ul>
