@@ -6,7 +6,7 @@ layout: page
 
 ## What is A-Frame?
 
-A-Frame is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by [MozVR](http://mozvr.com/) (Mozilla's virtual reality team research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL's power, without having to learn its complex low-level API. Because WebGL is ubiquitous in modern browsers on desktop and mobile, A-Frame experiences work across desktop, mobile, and Oculus Rift headsets.
+A-Frame is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by [MozVR](http://mozvr.com/) (Mozilla's virtual reality team research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL's power, without having to learn its complex low-level API. Because WebGL is ubiquitous in modern browsers on desktop and mobile, A-Frame experiences work across desktop, iPhone (Android support coming soon), and Oculus Rift headsets.
 
 A-Frame optimizes for a smooth learning curve between beginner ease of use and advanced user flexibility. Beginners start with easily understood primitives like cubes, videos, models, and skies. Advanced users can use JavaScript to imperatively create dynamic and interactive scenes or dive into its underlying entity-component system, a design pattern popular in the game industry that favors composition over inheritance. Because A-Frame is built around building blocks that can be extended and combined into limitless combinations, it provides a high degree of creative freedom.
 
@@ -34,7 +34,7 @@ A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders.
 
 ## What mobile devices does A-Frame support?
 
-On mobile, A-Frame works best on newer iPhones. Android devices currently exhibit errors with A-Frame's texture implementation and can render elements in solid black. This is a major known issue and something we are working to resolve with smarter texture map handling, as well as developer guidelines.
+On mobile, A-Frame works best on newer iPhones. Android devices can exhibit an error where textures appear black. This is a known issue with A-Frame's texture and lighting implementation, and a top priority to resolve as soon as possible.
 
 ## How can I share my work?
 
