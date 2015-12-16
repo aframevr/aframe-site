@@ -18,7 +18,7 @@ There are several ways to get started:
 * [CDN-hosted JS file](installation.html#Standalone_Downloads)
 * [example scene on CodePen](http://codepen.io/team/mozvr/pen/BjygdO?editors=100)
 
-The __[Installation page](../installation.html)__ has details for each. Whichever approach you take, A-Frame provides the same features and support for desktop, mobile, and Oculus Rift.
+The __[Installation page](installation.html)__ has details for each. Whichever approach you take, A-Frame provides the same features and support for desktop, mobile, and Oculus Rift.
 
 To start an A-Frame scene, we import the [A-Frame JavaScript file](https://aframe.io/releases/latest/aframe.min.js), and define a scene.
 
