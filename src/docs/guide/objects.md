@@ -24,4 +24,4 @@ Each primitive has unique attributes. We can specify the width, depth, and heigh
 * `<a-cylinder radius="5" open-ended="true"></a-cylinder>`
 * `<a-videosphere src="sunset.mp4" autoplay="true"></a-videosphere>`
 
-Primitives are convenient wrappers around A-Frame's underlying Entity/Component architecture. Components include geometry, materials, raycaster, controls, and more. To start working with entities and components, see the [Entity/Component documentation](../../docs/entities-and-components/).
+Primitives are convenient wrappers around A-Frame's underlying Entity/Component architecture. Components include geometry, materials, raycaster, controls, and more. To start working with entities and components, see the [Entity/Component documentation](../core/).

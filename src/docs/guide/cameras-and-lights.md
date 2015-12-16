@@ -25,7 +25,7 @@ The camera primitive comes with several useful attributes. For example:
 <a-camera wasd-controls-enabled="false"></a-camera>
 ```
 
-The full list of camera primitive attributes is in the [documentation](../docs/).
+The full list of camera primitive attributes is [here](../primitives/a-camera.html).
 
 __Note: A-Frame does not currently support multiple cameras and switching between them, but an [issue](https://github.com/aframevr/aframe-core/issues/635) is filed for this useful functionality.__
 
