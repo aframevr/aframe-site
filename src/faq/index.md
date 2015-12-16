@@ -34,7 +34,7 @@ A-Frame supports the Oculus Rift and mobile phones in "Cardboard"-style holders.
 
 ## What mobile devices does A-Frame support?
 
-On mobile, A-Frame works best on newer iPhones. Android devices can exhibit an error where textures appear black. This is a known issue with A-Frame's texture and lighting implementation, and a top priority to resolve as soon as possible.
+On mobile, A-Frame works best on newer iPhones. Some Android devices can exhibit an error where textures appear black. This is a known issue with A-Frame's texture and lighting implementation, and a top priority to improve. Results will vary from Android device to Android device. A OnePlus One will render textures in black, for example, whereas the Nexus 6 renders them textures correctly.
 
 ## How can I share my work?
 
