@@ -8,11 +8,6 @@
         "title": "Hello World"
       },
       {
-        "slug": "shopping",
-        "path": "showcase-shopping/",
-        "title": "Shopping"
-      },
-      {
         "slug": "anime-UI",
         "path": "showcase-anime-UI/",
         "title": "Anime UI"
@@ -23,6 +18,11 @@
         "title": "Composite"
       },
       {
+        "slug": "videosphere",
+        "path": "template-videosphere/",
+        "title": "360 Video"
+      },
+      {
         "slug": "curved-mockups",
         "path": "showcase-curved-mockups/",
         "title": "Curved Mockups"
@@ -31,6 +31,11 @@
         "slug": "spheres-and-fog",
         "path": "showcase-spheres-and-fog/",
         "title": "Spheres and Fog"
+      },
+      {
+        "slug": "shopping",
+        "path": "showcase-shopping/",
+        "title": "Shopping"
       },
       {
         "slug": "warps",
@@ -51,16 +56,6 @@
         "slug": "sky",
         "path": "template-sky/",
         "title": "Panorama"
-      },
-      {
-        "slug": "videosphere",
-        "path": "template-videosphere/",
-        "title": "360 Video"
-      },
-      {
-        "slug": "cubes",
-        "path": "template-cubes/",
-        "title": "Cubes"
       },
       {
         "slug": "cursor",
