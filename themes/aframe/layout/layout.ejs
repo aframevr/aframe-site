@@ -5,6 +5,7 @@
 <html lang="en">
   <head>
     <title><%- page.full_title || (isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title) %></title>
+    <%- partial('partials/force_https') %>
     <meta charset="utf-8">
     <meta name="robots" content="<%- config.robots %>">
     <meta name="description" content="<%- projectTitle %>">

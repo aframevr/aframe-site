@@ -21,6 +21,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
+force_https: true
 
 # Directory
 source_dir: src

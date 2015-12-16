@@ -1,0 +1,9 @@
+<% // Client-side solution for forcing redirect from HTTP to HTTPS. %>
+<% if (config.force_https) { %>
+<script>
+var host = window.location.protocol + '//' + window.location.hostname;
+if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
+  window.location.href = 'https:' + window.location.href.substring(6);
+}
+</script>
+<% } %>
