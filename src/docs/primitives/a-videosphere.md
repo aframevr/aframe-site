@@ -6,10 +6,7 @@ parent_section: primitives
 order: 13
 ---
 
-The videosphere primitive wraps an entity featuring the geometry component with
-a sphere primitive and the material component with a video texture.
-
-[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-videosphere.html)
+The videosphere primitive makes it easy to add 360-degree videos to a scene. It is essentially a large sphere with a video texture. The primitive wraps an entity that contains geometry and material components. The material component uses a video texture.
 
 | Attribute   | Component Mapping     | Default Value |
 | ---------   | -----------------     | ------------- |
@@ -21,10 +18,17 @@ a sphere primitive and the material component with a video texture.
 | src         | material.src          | None          |
 | translate   | geometry.translate    | 0 0 0         |
 
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-videosphere.html)
+
+## Video format
+
+To ensure a seamless 360 image, source videos must use an [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection).
+
+
 ## Examples
 
 A basic videosphere:
 
 ```html
-<a-videosphere src="antarctica.mp4" radius="1000"><a-videosphere>
+<a-videosphere src="antarctica.mp4"><a-videosphere>
 ```

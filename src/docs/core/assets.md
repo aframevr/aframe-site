@@ -2,7 +2,7 @@ title: Assets
 type: core
 layout: docs
 parent_section: core
-order: 7
+order: 8
 ---
 
 To keep everything in one place and to later help A-Frame decide what to block

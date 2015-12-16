@@ -6,24 +6,27 @@ parent_section: primitives
 order: 11
 ---
 
-The sphere primitive wraps an entity that features the geometry component with
-a sphere primitive.
+The sphere primitive wraps an entity that contains geometry and material components.
 
-[View primitive definition](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sphere.html)
+| Attribute       | Default Value | Component Mapping       |
+| --------------- | ------------- | -----------------       |
+| color           | gray          | material.color          |
+| metalness       | 0.0           | material.metalness      |
+| opacity         | 1.0           | material.opacity        |
+| radius          | 0.85          | geometry.radius         |
+| roughness       | 0.5           | material.roughness      |
+| segments-height | 18            | geometry.segmentsHeight |
+| segments-width  | 36            | geometry.segmentsWidth  |
+| shader          | standard      | material.shader         |
+| src             | None          | material.src            |
+| translate       | 0 0 0         | geometry.translate      |
+| transparent     | true          | material.transparent    |
 
-| Attribute       | Component Mapping       | Default Value |
-| ---------       | -----------------       | ------------- |
-| color           | material.color          | gray          |
-| metalness       | material.metalness      | 0.5           |
-| opacity         | material.opacity        | 1             |
-| radius          | geometry.radius         | 5             |
-| roughness       | material.roughness      | 0.5           |
-| segments-height | geometry.segmentsHeight | 36            |
-| segments-width  | geometry.segmentsWidth  | 18            |
-| shader          | material.shader         | standard      |
-| src             | material.src            | None          |
-| transparent     | material.transparent    | true          |
-| translate       | geometry.translate      | 0 0 0         |
+[View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-sphere.html)
+
+## Image format
+
+To ensure a seamless texture on a sphere sphere, images must use an [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection).
 
 ## Examples
 
