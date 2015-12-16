@@ -2,6 +2,7 @@ title: "Look Controls"
 type: components
 layout: docs
 parent_section: components
+order: 8
 ---
 
 The look-controls component defines the behavior of an entity to

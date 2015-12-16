@@ -3,6 +3,7 @@ title: a-curvedimage
 type: primitives
 layout: docs
 parent_section: primitives
+order: 4
 ---
 
 The curved image primitive wraps an entity that features the geometry component

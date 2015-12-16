@@ -3,6 +3,7 @@ title: a-model
 type: primitives
 layout: docs
 parent_section: primitives
+order: 8
 ---
 
 The model primitive wraps an entity with the loader (model) component.

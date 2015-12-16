@@ -3,11 +3,13 @@
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
   <div class="list">
+    <% var activeSection = '' %>
     <% site.pages.find({parent_section: 'docs'}).sort('section_order').each(function (section) { %>
+      <% if (page.type === section.type) { activeSection = section } %>
       <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>" class="section-title-link<%- page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>"><%- section.section_title %></a></h3>
 
       <ol class="subnav section-subnav <%- section.show_guide ? ' numbered-subnav' : '' %>">
-        <% site.pages.find({type: section.type}).sort(section.page_sort_by || 'order').each(function (p) { %>
+        <% site.pages.find({type: section.type}).sort('order').each(function (p) { %>
           <li class="subnav-item <%- page.title === p.title ? ' subnav-item-current' : '' %>">
             <a href="<%- page_url(p.path) %>" class="subnav-link<%- page.title === p.title ? ' current' : '' %>"><%- p.title %></a>
           </li>
@@ -20,18 +22,21 @@
 
 <div class="content content--docs content--<%- page.type %> copy">
   <div class="copy__wrap">
+
+    <p class="page__section"><a href="<%- page_url(activeSection.path) %>" class="borderless-link"><%- activeSection.section_title %></a></p>
     <h1 class="page__title"><%- page.title %></h1>
 
     <%- page.content %>
 
-    <div class="guide-links">
+    <footer class="footer guide-links">
       <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-        <span>← <a href="<%- page_url(page.path) %>"><%= page.title %></a></span>
+        <span><a href="<%- page_url(page.path) %>">← <%= page.title %></a></span>
       <% }) %>
       <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-        <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %></a> →</span>
+        <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %> →</a></span>
       <% }) %>
-    </div>
+    </footer>
+
     <%- partial('partials/docs/footer', {item: page}) %>
   </div>
 </div>

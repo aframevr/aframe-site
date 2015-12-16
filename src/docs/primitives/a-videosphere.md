@@ -3,6 +3,7 @@ title: a-videosphere
 type: primitives
 layout: docs
 parent_section: primitives
+order: 13
 ---
 
 The videosphere primitive wraps an entity featuring the geometry component with

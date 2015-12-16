@@ -3,6 +3,7 @@ title: a-sky
 type: primitives
 layout: docs
 parent_section: primitives
+order: 10
 ---
 
 The sky primitive wraps an entity featuring the geometry component with a

@@ -2,6 +2,7 @@ title: "Look-At"
 type: components
 layout: docs
 parent_section: components
+order: 7
 ---
 
 The look-at component defines the behavior for an entity to dynamically face

@@ -2,6 +2,7 @@ title: "WASD Controls"
 type: components
 layout: docs
 parent_section: components
+order: 16
 ---
 
 The wasd-controls component defines the behavior of entities to be controlled

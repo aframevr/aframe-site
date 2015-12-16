@@ -2,6 +2,7 @@ title: "Material"
 type: components
 layout: docs
 parent_section: components
+order: 9
 ---
 
 The material component defines the appearance of an entity. It can define

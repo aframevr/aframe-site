@@ -3,6 +3,7 @@ title: a-cylinder
 type: primitives
 layout: docs
 parent_section: primitives
+order: 5
 ---
 
 The cylinder primitive wraps an entity that features the geometry component with a

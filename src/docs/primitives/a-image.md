@@ -3,6 +3,7 @@ title: a-image
 type: primitives
 layout: docs
 parent_section: primitives
+order: 6
 ---
 
 The image primitive wraps an entity that features the geometry component with a

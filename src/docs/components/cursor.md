@@ -2,6 +2,7 @@ title: "Cursor"
 type: components
 layout: docs
 parent_section: components
+order: 2
 ---
 
 The cursor component defines interaction with the scene through clicking and

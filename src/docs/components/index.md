@@ -4,8 +4,7 @@ section_title: Components
 type: components
 layout: docs
 parent_section: docs
-order: 0
-page_sort_by: title
+order: 1
 section_order: 4
 ---
 

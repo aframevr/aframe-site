@@ -3,6 +3,7 @@ title: a-sphere
 type: primitives
 layout: docs
 parent_section: primitives
+order: 11
 ---
 
 The sphere primitive wraps an entity that features the geometry component with

@@ -3,6 +3,7 @@ title: a-light
 type: primitives
 layout: docs
 parent_section: primitives
+order: 7
 ---
 
 The light primitive wraps an entity featuring the light component.

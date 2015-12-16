@@ -3,6 +3,7 @@ title: a-camera
 type: primitives
 layout: docs
 parent_section: primitives
+order: 2
 ---
 
 The camera primitive wraps an entity that features:

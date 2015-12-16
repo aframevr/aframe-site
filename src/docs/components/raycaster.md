@@ -2,6 +2,7 @@ title: "Raycaster"
 type: components
 layout: docs
 parent_section: components
+order: 11
 ---
 
 The raycaster component defines the functionality for an entity to do

@@ -3,6 +3,7 @@ title: a-cube
 type: primitives
 layout: docs
 parent_section: primitives
+order: 3
 ---
 
 The cube primitive wraps an entity that features the geometry component with a

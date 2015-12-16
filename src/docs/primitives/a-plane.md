@@ -3,6 +3,7 @@ title: a-plane
 type: primitives
 layout: docs
 parent_section: primitives
+order: 9
 ---
 
 The plane primitive wraps an entity with the geometry component with a plane

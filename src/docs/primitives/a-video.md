@@ -3,6 +3,7 @@ title: a-video
 type: primitives
 layout: docs
 parent_section: primitives
+order: 12
 ---
 
 The video primitive wraps an entity featuring the geometry component with a
