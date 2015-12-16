@@ -27,7 +27,7 @@ There are many attributes and values used to define animations. Below is a table
 | attribute   | Attribute to animate. To specify a component attribute, use `componentName.attribute` syntax (e.g., `light.intensity`). | rotation       |
 | begin       | Delay (in milliseconds) or event name to wait on before beginning animation.                                            | 0              |
 | direction   | Direction of the animation (between `from` and `to`). One of `alternate`, `alternateReverse`, `normal`, `reverse`.      | normal         |
-| dur         | Duration in( milliseconds) of the animation.                                                                            | 1000           |
+| dur         | Duration in (milliseconds) of the animation.                                                                                 | 1000           |
 | easing      | Easing function of the animation. There are very many to choose from.                                                   | ease           |
 | fill        | Determines effect of animation when not actively in play. One of `backwards`, `both`, `forwards`, `none`.               | forwards       |
 | from        | Starting value.                                                                                                         | Current value. |
