@@ -19,11 +19,11 @@ Here is an example defining a red material on a box geometry, creating a red cub
 | color        | Base color of the geometry.                                                                                                                    | #fff          |
 | envMap       | Environment cubemap texture for reflections. Can be a selector to <a-cubemap> or a comma-separated list of URLs.                             | None          |
 | height       | Height of video (in pixels), if defining a video texture.                                                                                      | 360           |
-| metalness    | How metallic the material is from 0 to 1. Does not apply if `shader` is set to `flat`.                                                         | 0.5           |
+| metalness    | How metallic the material is from `0` to `1`. Does not apply if `shader` is set to `flat`.                                                     | 0.5           |
 | opacity      | Extent of transparency. If the `transparent` attribute is not `true`, then the material will remain opaque and `opacity` will only affect color. | 1.0           |
 | reflectivity | How reflective the material is from `0` to `1` if the `envMap` attribute is set.                                                               | 1.0           |
 | repeat       | How many times a texture (defined by `src`) repeats in the X and Y direction.                                                                  | 1 1           |
-| roughness    | How rough the material is from 0 to 1. A rougher material will scatter reflected light in more directions than a smooth material. Does not apply if `shader` is set to `flat`. | 0.5 |
+| roughness    | How rough the material is from `0` to `1`. A rougher material will scatter reflected light in more directions than a smooth material. Does not apply if `shader` is set to `flat`. | 0.5 |
 | transparent  | Whether material is transparent. Transparent entities are rendered after non-transparent entities.                                             | false         |
 | shader       | Shading model. Defaults to physically based shading but can also be set to `flat` shading.                                                     | standard      |
 | src          | Image or video texture map. Can either be a selector to an `<img>` or `<video>`, or an inline URL.                                             | None          |
