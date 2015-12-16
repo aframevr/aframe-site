@@ -13,7 +13,6 @@ The curved image primitive wraps an entity that contains geometry and material c
 |-----------------|----------------|-------------------------|
 | height          | 1              | geometry.height         |
 | opacty          | 1              | geometry.radius         |
-| open-ended      | true           | geometry.openEnded      |
 | radius          | 2              | geometry.radius         |
 | segments-radius | 48             | geometry.segmentsRadial |
 | src             | None           | material.src            |
