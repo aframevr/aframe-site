@@ -10,6 +10,12 @@
     <meta name="robots" content="<%- config.robots %>">
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="A-Frame" />
+    <meta name="twitter:site" content="@aframevr" />
+    <meta name="twitter:title" content="Building blocks for the virtual reality web" />
+    <meta name="twitter:description" content="Use markup to create VR experiences that work across desktop, iPhones, and the Oculus Rift." />
+    <meta name="twitter:image" content="https://aframe.io/images/card.png" />
+
     <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
     <% if (isHome) { %>
       <%- js('js/mobile.js') %>
