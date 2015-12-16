@@ -2,7 +2,7 @@
 <% var isHome = is_current('index.html') %>
 <% var showExamples = page.type === 'examples' %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false">
   <head>
     <title><%- page.full_title || (isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title) %></title>
     <%- partial('partials/force_https') %>
@@ -11,9 +11,7 @@
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
-    <% if (isHome) { %>
-      <%- js('js/mobile.js') %>
-    <% } %>
+    <%- js('js/mobile.js') %>
     <% if (showExamples) { %>
       <%- css('css/examples') %>
     <% } else { %>
@@ -21,7 +19,7 @@
     <% } %>
     <%- partial('partials/ga') %>
   </head>
-  <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>" data-is-home="<%- isHome %>">
+  <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
     <% if (!showExamples) { %>
       <%- partial('partials/secondary/mobile_nav') %>
     <% } %>
