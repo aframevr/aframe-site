@@ -243,6 +243,11 @@ h3 + .examples-subnav
 .mobile-get-started
     display none
 
+
+@media screen and (max-width: 399px)
+    #logo
+        max-width 40vw
+
 @media screen and (min-width: 480px)
     .example__viewsource
         top 20px
@@ -257,8 +262,7 @@ h3 + .examples-subnav
     .mobile-get-started
         display inline-block
         position absolute
-        padding 4px 30px
-        // float right
+        padding 4px 5vw
         margin-top 0
         right 20px
         top 20px
@@ -287,14 +291,21 @@ h3 + .examples-subnav
             margin-bottom 0
             padding 20px 0 0
 
-    #logo
-        pointer-events none
-
     .example-nav
         position absolute
         height 80px
         bottom 0
         left 0
+        width 100%
+
+    #logo
+        display block
+        height 35px
+        pointer-events none
+
+    .logo__wordmark
+        background-position 0 50%
+        background-size contain
         width 100%
 
     .example-nav-link
