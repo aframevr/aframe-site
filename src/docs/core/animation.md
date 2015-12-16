@@ -85,7 +85,7 @@ HTML attribute when abstracted from the core entity-component architecture.
 
 For example, if we have a defined a custom element that wraps
 ```html
-<a-entity light="intensity: 1>
+<a-entity light="intensity: 1">
 ```
 
 as
