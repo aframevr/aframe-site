@@ -6,11 +6,7 @@ parent_section: core
 order: 7
 ---
 
-Mixins provide a way to compose and reuse commonly-used sets of component
-attributes. They are defined using the `<a-mixin>` element and are placed
-in `<a-assets>`. Mixins should be set with an `id`, and when an entity sets
-that `id` as its `mixin` attribute, the entity will absorb all of the mixin's
-attributes.
+Mixins provide a way to compose and reuse commonly-used sets of component attributes. They are defined using the `<a-mixin>` element and are placed in `<a-assets>`. Mixins should be set with an `id`, and when an entity sets that `id` as its `mixin` attribute, the entity will absorb all of the mixin's attributes.
 
 ```html
 <a-assets>
@@ -25,9 +21,7 @@ attributes.
 </a-scene>
 ```
 
-The entity with `red cube` will take the attributes from the `red` mixin and
-the `cube` mixin in that order. Likewise with the `blue cube`. Conceptually,
-the entities above expand to:
+The entity with `red cube` will take the attributes from the `red` mixin and the `cube` mixin in that order. Likewise with the `blue cube`. Conceptually, the entities above expand to:
 
 ```html
 <a-entity material="color: red" geometry="primitive: box"></a-entity>
@@ -45,7 +39,7 @@ included last, the final color of the cube will be blue.
 <a-assets>
   <a-mixin id="red" material="color: red"></a-mixin>
   <a-mixin id="blue" material="color: blue"></a-mixin>
-  <a-mixin id="cube" geometry="primitive: box;"></a-mixin>
+  <a-mixin id="cube" geometry="primitive: box"></a-mixin>
 </a-assets>
 
 <a-scene>
@@ -53,17 +47,13 @@ included last, the final color of the cube will be blue.
 </a-scene>
 ```
 
-If an entity itself defines an attribute that is already defined by a mixin,
-the entity's definition takes precedence. In the example below, the entity
-includes both `red` and `blue` mixins and also defines a green color. Since
-the entity directly defines its own color, the final color of the cube will
-be green.
+If an entity itself defines an attribute that is already defined by a mixin, the entity's definition takes precedence. In the example below, the entity includes both `red` and `blue` mixins and also defines a green color. Since the entity directly defines its own color, the final color of the cube will be green.
 
 ```html
 <a-assets>
   <a-mixin id="red" material="color: red"></a-mixin>
   <a-mixin id="blue" material="color: blue"></a-mixin>
-  <a-mixin id="cube" geometry="primitive: box;"></a-mixin>
+  <a-mixin id="cube" geometry="primitive: box"></a-mixin>
 </a-assets>
 
 <a-scene>
