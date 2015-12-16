@@ -31,7 +31,7 @@ It will now be live at the __[staging server](http://aframevr.github.io/aframevr
 
 ## Credits
 
-Source adopted from the awesome @vuejs [site](https://github.com/vuejs/vuejs.org/).
+Source adopted from the awesome [@vuejs](https://github.com/vuejs/) [site](https://github.com/vuejs/vuejs.org/).
 
 
 ## License
