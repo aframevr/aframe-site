@@ -17,5 +17,5 @@ function isMobile() {
 };
 
 if (isMobile()) {
-  window.location.href = '/examples';
+  window.location.href = 'examples/';
 }
