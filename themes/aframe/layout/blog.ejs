@@ -26,6 +26,9 @@
 
     <footer class="footer">
       <p>Except where otherwise noted, content on this site is licensed under the Creative Commons Attribution Share-Alike License v3.0 or any later version.</p>
+      <% if (!page.blog_index) { %>
+        <p>Caught a mistake? &nbsp; <a href="<%- website_github_file_url('_posts/' + page.slug + '.md') %>" target="_blank">Suggest an edit to this post on GitHub</a></p>
+      <% } %>
     </footer>
   </div>
 </div>
