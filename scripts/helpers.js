@@ -1,5 +1,6 @@
 var utils = require('../lib/utils');
 
+var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
 
 hexo.extend.helper.register('external_example_url', function (path) {
@@ -24,3 +25,5 @@ hexo.extend.helper.register('page_url', function (path, options) {
 });
 
 hexo.extend.filter.register('urljoin', urljoin);
+
+hexo.extend.filter.register('is_external_url', isUrl);

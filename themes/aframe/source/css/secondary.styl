@@ -14,19 +14,10 @@ a
     margin-bottom 20px
     padding-bottom 20px
 
-.nav-item
-    font-family $code-font
-    text-transform uppercase
-
-    + .nav-item
-        margin-top 3px
-
-.subnav-item + .subnav-item
-    margin-top 5px
-
 .nav-link
     color rgba(0,0,0,0.35)
-    padding 10px
+    display block
+    padding 5px 0
     transition 0.1s color ease-in
     &:hover
         color rgba(0,0,0,0.75)
@@ -39,13 +30,13 @@ a
         color $pink
         font-weight 500
 
-.nav-link-version
-    color #ccc
-
 .nav-item
-    display inline-block
+    font-family $code-font
+    text-transform uppercase
     &:first-child .nav-link
-        padding-left 0
+        padding-top 0
+    &:last-child .nav-link
+        padding-bottom 0
 
 .subnav-link
     display block

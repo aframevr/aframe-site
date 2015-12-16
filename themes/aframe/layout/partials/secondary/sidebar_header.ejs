@@ -1,11 +1,55 @@
+<%
+
+var links = [
+  {
+    url: 'docs/guide/',
+    title: 'Getting Started',
+    slug: 'getting-started'
+  },
+  {
+    url: 'docs/guide/installation.html',
+    title: 'Install',
+    slug: 'install'
+  },
+  {
+    url: config.github_url,
+    title: 'GitHub',
+    slug: 'github'
+  },
+  {
+    url: 'faq/',
+    title: 'FAQ',
+    slug: 'faq'
+  },
+  {
+    url: 'blog/',
+    title: 'Changelog',
+    slug: 'changelog'
+  }
+];
+
+links = links.map(function (link) {
+  if (page.nav_slug && link.slug === page.nav_slug) {
+    link.current = true;
+  }
+
+  if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url))) {
+    link.current = true;
+  }
+
+  return link;
+});
+
+%>
+
 <header id="header" class="header">
   <a id="logo" class="logo" href="<%- url_for(config.root) %>">
     <span class="logo__wordmark"><%- config.title %></span>
   </a>
+
   <ul id="nav" class="nav">
-    <li class="nav-item nav-item-version"><a href="<%- github_release_url() %>" target="_blank" class="nav-link nav-link-version"><%- config.aframe_version %></a></li>
-    <li class="nav-item nav-item-docs"><a href="<%- url_for('docs/') %>" class="nav-link nav-link-docs<%- page.canonical_path.match(/docs/) ? ' current' : '' %>"><span>Docs</span></a></li>
-    <li class="nav-item nav-item-faq"><a href="<%- url_for('faq/') %>" class="nav-link nav-link-get-started<%- page.canonical_path.match(/faq/) ? ' current' : '' %>"><span>FAQ</span></a></li>
-    <li class="nav-item nav-item-blog"><a href="<%- url_for('blog/') %>" class="nav-link nav-link-get-started<%- page.canonical_path.match(/blog/) ? ' current' : '' %>"><span>Blog</span></a></li>
+    <% links.forEach(function (link) { %>
+      <li class="nav-item"><a href="<%- url_for(link.url) %>" class="nav-link nav-link-docs<%- link.current ? ' current' : '' %>"><span><%- link.title %></span></a></li>
+    <% }) %>
   </ul>
 </header>

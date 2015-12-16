@@ -6,6 +6,7 @@ parent_section: guide
 order: 2
 show_guide: true
 aframe_version: 0.1.0
+nav_slug: install
 ---
 
 ## Boilerplate Starter Kit
