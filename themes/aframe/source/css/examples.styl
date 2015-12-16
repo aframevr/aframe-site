@@ -368,3 +368,8 @@ h3 + .examples-subnav
 
     .example-nav
         margin-top 0
+
+// Hide sidebar since iOS cannot enter fullscreen.
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape)
+    .sidebar
+        display none
