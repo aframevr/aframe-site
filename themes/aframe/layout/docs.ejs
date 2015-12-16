@@ -30,10 +30,10 @@
 
     <footer class="footer guide-links c">
       <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-        <span><a href="<%- page_url(page.path) %>">← <%= page.title %></a></span>
+        <span class="float-left"><a href="<%- page_url(page.path) %>" class="guide-link guide-link-left">← <%= page.title %></a></span>
       <% }) %>
       <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-        <span class="float-right"><a href="<%- page_url(page.path) %>"><%= page.title %> →</a></span>
+        <span class="float-right"><a href="<%- page_url(page.path) %>" class="guide-link guide-link-right"><%= page.title %> →</a></span>
       <% }) %>
     </footer>
 
