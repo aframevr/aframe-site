@@ -25,6 +25,16 @@ if (isMobile()) {
     return;
   }
 
+  if (window.location.pathname.indexOf('examples/showcase/videosphere') !== -1) {
+    if (window.location.search.indexOf('?prev') !== -1 || window.location.search.indexOf('&prev') !== -1) {
+      window.location.href = '../../showcase/composite/';
+    }
+    if (window.location.search.indexOf('?next') !== -1 || window.location.search.indexOf('&next') !== -1) {
+      window.location.href = '../../showcase/curved-mockups/';
+    }
+  }
+
+
   html.setAttribute('data-is-mobile', 'true');
 }
 

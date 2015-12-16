@@ -16,7 +16,8 @@
             <% if (section.examples) { %>
               <% examplesList = section.examples.map(function (example) { %>
                 <% var isCurrent = page.section === example.section && page.slug === example.slug %>
-                <li data-idx="<%- example.idx %>"
+                <li data-url="<%- url_for(example.url) %>"
+                    data-idx="<%- example.idx %>"
                     data-previous-idx="<%- example.previous_idx %>"
                     data-next-idx="<%- example.next_idx %>"
                     class="subnav-item<%- isCurrent ? ' current' : '' %>"><a href="<%- url_for(example.url) %>" class="subnav-link<%- isCurrent ? ' current' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
@@ -29,12 +30,12 @@
           <nav class="example-nav c">
             <% var prevExample = examplesList[page.previous_idx] %>
             <% if (prevExample) { %>
-              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>">← <span>Previous</span></a>
+              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>?prev">← <span>Previous</span></a>
             <% } %>
 
             <% var nextExample = examplesList[page.next_idx] %>
             <% if (nextExample) { %>
-              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>"><span>Next</span> →</a>
+              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>?next"><span>Next</span> →</a>
             <% } %>
           </nav>
         <% } %>
