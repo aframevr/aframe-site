@@ -21,6 +21,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
+website_github_url: https://github.com/aframevr/aframe-site-dev/
 
 # Directory
 source_dir: src
