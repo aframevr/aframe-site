@@ -13,12 +13,12 @@ A-Frame is a library for creating scenes in virtual reality on the Web.
 
 There are several ways to get started:
 
-* [Boilerplate (starter kit)](https://github.com/aframevr/aframe-boilerplate/)
-* [npm package](https://www.npmjs.com/package/aframe)
-* [CDN-hosted JS file](../installation.html#Standalone_Downloads)
-* [example scene on CodePen](http://codepen.io/team/mozvr/pen/2ac060c354546201f3337b83fbdcd110?editors=100)
+* [Boilerplate (starter kit)](installation.html#Boilerplate_Starter_Kit)
+* [npm package](installation.html#npm)
+* [CDN-hosted JS file](installation.html#Standalone_Downloads)
+* [example scene on CodePen](http://codepen.io/team/mozvr/pen/BjygdO?editors=100)
 
-The [Installation page](../installation.html) has details for each. Whichever approach you take, A-Frame provides the same features and support for desktop, mobile, and Oculus Rift.
+The __[Installation page](../installation.html)__ has details for each. Whichever approach you take, A-Frame provides the same features and support for desktop, mobile, and Oculus Rift.
 
 To start an A-Frame scene, we import the [A-Frame JavaScript file](https://aframe.io/releases/latest/aframe.min.js), and define a scene.
 
