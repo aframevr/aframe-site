@@ -28,7 +28,7 @@
 
     <%- page.content %>
 
-    <footer class="footer guide-links">
+    <footer class="footer guide-links c">
       <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
         <span><a href="<%- page_url(page.path) %>">← <%= page.title %></a></span>
       <% }) %>
