@@ -55,7 +55,7 @@ Virtual reality is a new and performance-intensive technology. The right combina
 
 For the Oculus Rift, we recommend using a Windows PC that meets the  recommended specs of the [Oculus Rift CV1](https://www.oculus.com/en-us/blog/powering-the-rift/) (consumer version), including a GeForce GTX 970.
 
-Unfortunately, Macs are not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site](https://developer.oculus.com/downloads/), newer versions of OSX are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs or our mobile phones.
+Unfortunately, Macs are not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site](https://developer.oculus.com/downloads/), newer versions of OS X are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs or our mobile phones.
 
 On mobile, the faster the phone the better. We generally use iPhone 6S devices or the latest Nexus Android devices, for example.
 
