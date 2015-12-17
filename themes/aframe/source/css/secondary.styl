@@ -239,13 +239,12 @@ else
     margin-top 0.25rem
 
 .highlight
-    overflow-x auto
     position relative
-    padding 0
     background-color $codebg
     padding .8em .8em .4em
     line-height 1.1em
     border-radius $radius
+    overflow-x auto
     table, tr, td
         width 100%
         border-collapse collapse
@@ -259,7 +258,7 @@ else
             line-height 1.5em
             margin 0
     &.html, &.js, &.bash, &.css
-        .code:after
+        &:after
             position absolute
             top 0
             right 0
@@ -270,13 +269,13 @@ else
             line-height 15px
             height 15px
             font-weight 600
-    &.html .code:after
+    &.html:after
         content 'HTML'
-    &.js .code:after
+    &.js:after
         content 'JS'
-    &.bash .code:after
+    &.bash:after
         content 'Shell'
-    &.css .code:after
+    &.css:after
         content 'CSS'
 
 p [href*=github][href*="/blob/"]:only-child,
