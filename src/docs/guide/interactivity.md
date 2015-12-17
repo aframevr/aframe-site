@@ -7,4 +7,4 @@ order: 7
 show_guide: true
 ---
 
-Coming soon.
+Coming soon. See the [`cursor` component docs](../components/cursor.html) in the meantime.
