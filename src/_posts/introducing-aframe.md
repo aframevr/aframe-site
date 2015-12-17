@@ -29,7 +29,7 @@ A-Frame is designed to be familiar to those web developers. It wraps the power o
 </html>
 ```
 
-A-Frame ships with powerful and concise "primitives" for common use cases such as 360-degree videos, images, models, skies, and more. Primitives make it easy to block out a scene in minutes. Primitives can also be combined with lighting, animation, sound and interactivity. For the full list of primitives included in A-Frame 0.1.0, see the [A-Frame documentation](../../../../../docs/primitives).
+A-Frame ships with powerful and concise "primitives" for common use cases such as 360-degree videos, images, models, skies, and more. Primitives make it easy to block out a scene in minutes. Primitives can also be combined with lighting, animation, sound and interactivity. For the full list of primitives included in A-Frame 0.1.0, see the [A-Frame documentation](../../../../../docs/primitives/).
 
 For users who want deeper control and flexibility, A-Frame is built on an entity-component system which provides accessible components for lighting, materials, re-usable assets, and more. This pattern is common in the game development world, and is the backbone of A-Frame. Visit the [A-Frame documentation](../../../../../docs/core/) to learn more about the entity-component system.
 
