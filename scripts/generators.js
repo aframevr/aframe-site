@@ -1,5 +1,12 @@
 var utils = require('../lib/utils');
 
+hexo.extend.generator.register('blog-post-introducing-aframe', function (locals) {
+  return {
+    path: 'blog/2015/12/16/0.0.10-release/',
+    data: utils.createRedirectResponse(hexo, 'blog/2015/12/16/introducing-aframe/')
+  };
+});
+
 hexo.extend.generator.register('docs', function (locals) {
   return {
     path: 'docs/',
