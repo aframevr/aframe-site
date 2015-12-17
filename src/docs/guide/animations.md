@@ -7,4 +7,4 @@ order: 10
 show_guide: true
 ---
 
-Coming soon.
+Coming soon. See the detailed [animation docs](../core/animation.html) in the meantime.

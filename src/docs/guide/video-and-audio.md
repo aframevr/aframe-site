@@ -7,4 +7,4 @@ order: 8
 show_guide: true
 ---
 
-Coming soon.
+Coming soon. See the detailed [material component docs](../components/material.html) and [sound component docs](../components/sound.html) in the meantime.
