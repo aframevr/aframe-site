@@ -11,6 +11,7 @@ Grab the A-Frame code and file issues on [GitHub](https://github.com/aframevr/af
 * [github.com/aframevr/aframe](https://github.com/aframevr/aframe/)
 * [aframevr.slack.com](http://aframevr.slack.com/) ([sign up](https://aframevr-slack.herokuapp.com/))
 * [@aframevr](https://twitter.com/aframevr)
+* [__Made With A-Frame__ Tumblr](http://aframevr.tumblr.com/)
 
 ## WebVR
 

@@ -40,7 +40,7 @@ On mobile, A-Frame works best on newer iPhones. Some Android devices can exhibit
 
 There are several community channels available for sharing experiences built A-Frame.
 
-* [Made with A-Frame Tumblr](https://aframevr.tumblr.com/)
+* [__Made With A-Frame__ Tumblr](http://aframevr.tumblr.com/)
 * [A-Frame Slack](https://aframevr-slack.herokuapp.com/)
 * [WebVR Slack](https://webvr-slack.herokuapp.com/)
 * [WebVR Reddit](https://www.reddit.com/r/webvr)
