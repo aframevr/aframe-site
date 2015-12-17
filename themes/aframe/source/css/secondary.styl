@@ -3,7 +3,9 @@
 a
     border-bottom 1px solid rgba(53,196,232,0.15)
     color hsl(192, 80%, 40%)
+    position relative
     text-decoration none
+    transition 0.1s ease-out
     &:hover
         border-bottom-color rgba(53,196,232,0.3)
         color hsl(192, 80%, 25%)
@@ -11,6 +13,11 @@ a
     &.click
         border-bottom-color rgba(53,196,232,0.6)
         color rgba(53,196,232,0.9)
+        top 1px
+        left 0.5px
+
+.copy p a
+    margin 0 1px
 
 .nav
     border-top 1px dashed rgba(0,0,0,0.1)
