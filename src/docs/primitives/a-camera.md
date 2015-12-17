@@ -1,5 +1,5 @@
 ---
-title: a-camera
+title: <a-camera>
 type: primitives
 layout: docs
 parent_section: primitives

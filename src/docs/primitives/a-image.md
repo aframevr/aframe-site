@@ -1,5 +1,5 @@
 ---
-title: a-image
+title: <a-image>
 type: primitives
 layout: docs
 parent_section: primitives

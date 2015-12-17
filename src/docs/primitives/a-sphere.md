@@ -1,5 +1,5 @@
 ---
-title: a-sphere
+title: <a-sphere>
 type: primitives
 layout: docs
 parent_section: primitives

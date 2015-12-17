@@ -1,5 +1,5 @@
 ---
-title: a-cylinder
+title: <a-cylinder>
 type: primitives
 layout: docs
 parent_section: primitives

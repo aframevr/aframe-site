@@ -1,5 +1,5 @@
 ---
-title: a-model
+title: <a-model>
 type: primitives
 layout: docs
 parent_section: primitives

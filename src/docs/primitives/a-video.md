@@ -1,5 +1,5 @@
 ---
-title: a-video
+title: <a-video>
 type: primitives
 layout: docs
 parent_section: primitives

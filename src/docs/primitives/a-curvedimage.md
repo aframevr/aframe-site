@@ -1,11 +1,12 @@
-title: a-curvedimage
+---
+title: <a-curvedimage>
 type: primitives
 layout: docs
 parent_section: primitives
 order: 4
 ---
 
-The curved image primitive makes it easy to create layouts that seem to bend around the user. Curved images arranged around the camera can be a pleasing choice for legibility because each pixel sits at the same distance from the user. They can also be a better choice than angled flat planes for complex layouts because they ensure a smooth surface, instead of a series of awkward seams between planes. 
+The curved image primitive makes it easy to create layouts that seem to bend around the user. Curved images arranged around the camera can be a pleasing choice for legibility because each pixel sits at the same distance from the user. They can also be a better choice than angled flat planes for complex layouts because they ensure a smooth surface, instead of a series of awkward seams between planes.
 
 The curved image primitive wraps an entity that contains geometry and material components.
 

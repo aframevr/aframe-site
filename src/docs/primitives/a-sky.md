@@ -1,5 +1,5 @@
 ---
-title: a-sky
+title: <a-sky>
 type: primitives
 layout: docs
 parent_section: primitives

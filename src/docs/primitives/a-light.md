@@ -1,5 +1,5 @@
 ---
-title: a-light
+title: <a-light>
 type: primitives
 layout: docs
 parent_section: primitives

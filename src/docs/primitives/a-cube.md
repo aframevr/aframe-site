@@ -1,5 +1,5 @@
 ---
-title: a-cube
+title: <a-cube>
 type: primitives
 layout: docs
 parent_section: primitives
