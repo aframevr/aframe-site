@@ -26,7 +26,7 @@ To ensure the image is not distorted, make sure the `width` and `height` ratio m
 
 ## On transparencies
 
-Transparency and alpha channels are tricky in 3D graphics. If you are having issues where transparent issues in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. 
+Transparency and alpha channels are tricky in 3D graphics. If you are having issues where transparent issues in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects.
 
 While we are somewhat limited in the degree to which we can improve this by the underlying architecture of OpenGL, we are planning improvements in future versions of A-Frame that will 1) reduce the probability of encountering unwanted occlusion, and 2) give developers better controls to manually override the default behaviors when they are undesirable. Track this work in aframe-core [issue 498](https://github.com/aframevr/aframe-core/issues/498).
 
@@ -35,14 +35,14 @@ While we are somewhat limited in the degree to which we can improve this by the 
 Image with an inline URL:
 
 ```html
-<a-image src="https://aframevr.github.io/aframe-core/examples/_images/pano/louvre.jpg"></a-image>
+<a-image src="https://aframe.io/aframe-core/examples/_images/pano/louvre.jpg"></a-image>
 ```
 
 Image using an existing `<img>` element defined within [assets](../core/assets.html):
 
 ```html
 <a-assets>
-  <img id="louvre" src="https://aframevr.github.io/aframe-core/examples/_images/pano/louvre.jpg">
+  <img id="louvre" src="https://aframe.io/aframe-core/examples/_images/pano/louvre.jpg">
 </a-assets>
 
 <a-scene>

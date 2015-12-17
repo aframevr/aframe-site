@@ -21,12 +21,12 @@ The model primitive makes it easy to add OBJ or DAE (Collada) 3D models to a sce
 A tree model:
 
 ```html
-<a-model src="https://aframevr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
+<a-model src="https://aframe.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
 ```
 
 Using scale to increase to size of the loaded tree model:
 
 ```html
-<a-model scale="10 10 10" src="https://aframevr.github.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
+<a-model scale="10 10 10" src="https://aframe.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
 ```
 
