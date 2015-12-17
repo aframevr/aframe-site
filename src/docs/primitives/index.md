@@ -13,13 +13,13 @@ Primitives are concise, semantic building blocks blocks that wrap A-Frame's unde
 Using primitives, to create a red cube that's 3 meters wide, we can write:
 
 ```html
-<a-cube width="3" color="red">`
+<a-cube width="3" color="red"></a-cube>
 ```
 
 ... instead of the more verbose entity-component equivalent:
 
 ```html
-<a-entity geometry="primitive: box; width: 3" material="color: red"`.
+<a-entity geometry="primitive: box; width: 3" material="color: red"></a-entity>
 ```
 
 Under the hood, `<a-cube>` is wrapping `<a-entity>` in a custom element, and mapping the HTML `width` attribute to the underlying `geometry` component's width property.
