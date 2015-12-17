@@ -6,7 +6,7 @@ parent_section: components
 order: 2
 ---
 
-The cursor component defines interaction with the scene through clicking and gazing, by using a raycaster to determine which object has been clicked. When the mouse is clicked, the closest visible entity intersecting the cursor will have a DOM click event triggered.
+The `cursor` component defines interaction with the scene through clicking and gazing, by using a [raycaster](raycaster.html) to determine which object has been clicked. When the mouse is clicked, the closest visible entity intersecting the cursor will have a DOM `click` event triggered.
 
 For example, we define a cursor in the shape of a ring positioned on the center of the screen. Whenever the cursor clicks on the cube, we can listen the the click event. This might feel familiar to web developers.
 

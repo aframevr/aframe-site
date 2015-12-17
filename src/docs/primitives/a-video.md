@@ -6,7 +6,7 @@ parent_section: primitives
 order: 12
 ---
 
-The video primitive makes it easy to add flat two-dimensional video screens to a scene. It wraps an entity that contains geometry and material components. The material component uses a video texture.
+The video primitive makes it easy to add flat two-dimensional video screens to a scene. It wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components. The [`material component`](../components/material.html) uses a video texture.
 
 | Attribute           | Default Value   | Component Mapping         |
 | ------------------- | --------------- | ------------------------- |

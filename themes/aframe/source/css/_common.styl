@@ -111,11 +111,11 @@ p
     h3, h4
         margin 2em 0 1.2em
         position relative
-    figure, p, ul, ol
+    figure, p, ul, ol, table
         margin 15px 0
         &:last-child + .footer
             margin-bottom 0
-    p, ul, ol
+    p, ul, ol, table
         line-height 1.6
     ul, ol
         padding-left 1.5em
@@ -128,7 +128,8 @@ p
             margin-left 0
     iframe
         margin 1em 0
-    p + h2
+    p + h2,
+    table + table
         margin-top 1.5em
     .tip
         background-color $codebg

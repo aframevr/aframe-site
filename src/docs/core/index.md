@@ -23,7 +23,7 @@ As an abstract example, imagine a car is an entity:
 - We can add an `engine` component which has properties such as "horsepower" or "weight" which affect the speed of the car.
 - We might add a `tire` component which has properties such as "grip" which affects the traction of the car.
 
-These components would be able to be mixed and matched and even be used with with other vehicles such as airplanes, motorcycles, or boats (where we wouldn't specify a `tire` component).
+These components would be able to be mixed and matched and even be used with other vehicles such as airplanes, motorcycles, or boats (where we wouldn't specify a `tire` component).
 
 ## Usage
 
@@ -48,7 +48,7 @@ For web developers, the syntax might seem new, or even odd, but the composabilit
           light="intensity: 2"></a-entity>
 ```
 
-Perhaps we want our cube to also emit a sound. We can add the `sound` component. And we want to move the cube a little, we can use the `position` component.
+Perhaps we want our cube to also emit a sound. We can add the [`sound` component](sound.html). And we want to move the cube a little, we can use the [`position` component](../components/position.html).
 
 ```html
 <a-entity geometry="primitive: cube; depth: 1; height: 1; width: 1"

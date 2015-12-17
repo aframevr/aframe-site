@@ -1,3 +1,4 @@
+---
 title: "Sound"
 type: components
 layout: docs
@@ -5,16 +6,14 @@ parent_section: components
 order: 14
 ---
 
-The sound component defines the entity as a source of sound or audio. The sound
-component is positional and is therefore affected by the position component.
+The `sound` component defines the entity as a source of sound or audio. The `sound` component is positional and is therefore affected by the [`position` component](position.html).
 
 ```html
 <a-entity id="river" geometry="primitive: plane" material="color: blue"
           position="-10 0 0" sound="src: river.mp3; autoplay: true"></a-entity>
 ```
 
-The sound component can also listen to an event before playing as well. For
-example, we might have a damage sound play every time a monster is clicked:
+The `sound` component can also listen to an event before playing as well. For example, we might have a damage sound play every time a monster is clicked:
 
 ```html
 <a-entity id="elmo" geometry="primitive: box" material="src: elmo.png"

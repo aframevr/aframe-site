@@ -1,3 +1,4 @@
+---
 title: "Look-At"
 type: components
 layout: docs
@@ -5,9 +6,7 @@ parent_section: components
 order: 7
 ---
 
-The look-at component defines the behavior for an entity to dynamically face
-towards another entity or position. The look-at component can take either a
-static position or a query selector to another entity.
+The `look-at` component defines the behavior for an entity to dynamically face towards another entity or position. The `look-at` component can take either a static position or a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) to another entity.
 
 Example applications might include having a monster stare at the player:
 
@@ -34,4 +33,4 @@ Described in the table below are possible types of values:
 | Value     | Description                                                        |
 |-----------|---------------------------------------------------------------------
 | position  | An XYZ coordinate. The entity will face towards a static position. |
-| selector  | A query selector indicating another entity to track. If the other entity is moving then the look-at component will track the moving entity. |
+| selector  | A query selector indicating another entity to track. If the other entity is moving then the `look-at` component will track the moving entity. |

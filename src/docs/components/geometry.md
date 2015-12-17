@@ -1,3 +1,4 @@
+---
 title: "Geometry"
 type: components
 layout: docs
@@ -5,14 +6,9 @@ parent_section: components
 order: 4
 ---
 
-The geometry component defines the shape and size of an entity. The general
-geometry is defined by the `primitive` property. "Geoemtric primitives", in
-computer graphics, simply means an extremely basic shape. With the primitive
-defined, additional properties are used to further define the geometry. A
-material component is usually defined alongside the geometry component.
+The `geometry` component defines the shape and size of an entity. The general geometry is defined by the `primitive` property. "Geometric primitives", in computer graphics, simply means an extremely basic shape. With the primitive defined, additional properties are used to further define the geometry. A `material` component is usually defined alongside the `geometry` component.
 
-We will go through the basic primitives and their respective properties
-one-by-one.
+We will go through the basic primitives and their respective properties one by one.
 
 | Property  | Description                                                                          | Default Value |
 |-----------|--------------------------------------------------------------------------------------|---------------|
@@ -27,35 +23,30 @@ The box primitive defines boxes (square or rectangle).
 <a-entity geometry="primitive: box; width: 1; height: 1; depth: 1"></a-entity>
 ```
 
-| Property  | Description                        | Default Value |
-|-----------|------------------------------------|---------------|
-| width     | Width of the sides on the X axis.  | 2             |
-| height    | Height of the sides on the Y axis. | 2             |
-| depth     | Depth of the sides on the Z axis.  | 2             |
+| Property  | Description                                    | Default Value |
+|-----------|------------------------------------------------|---------------|
+| width     | Width (in meters) of the sides on the X axis.  | 2             |
+| height    | Height (in meters) of the sides on the Y axis. | 2             |
+| depth     | Depth (in meters) of the sides on the Z axis.  | 2             |
 
 ### Circle
 
-The circle primitive defines two-dimensional circles, which can be complete
-circles or partial circles (like Pac-Man). Note that because it is flat, only a
-single side of the circle will be rendered if "side: double" is not
-specified on the material component.
+The circle primitive defines two-dimensional circles, which can be complete circles or partial circles (like Pac-Man). Note that because it is flat, only a single side of the circle will be rendered if "side: double" is not specified on the `material` component.
 
 ```html
 <a-entity geometry="primitive: circle; radius: 1" material="side: double"></a-entity>
 ```
 
-| Property    | Description                                                                                                                      | Default Value |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------|---------------|
-| radius      | Radius of the circle.                                                                                                            | 1             |
+| Property    | Description                                                                                                                           | Default Value |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| radius      | Radius (in meters) of the circle.                                                                                                     | 1             |
 | segments    | Number of triangles to construct the circle, like pizza slices. A higher number of segments means the circle will be more round. | 8             |
-| thetaStart  | Start angle for first segment. Can be used to define a partial circle.                                                           | 0             |
-| thetaLength | The central angle in degrees. Defaults to 360, which makes for a complete circle.                                                | 360           |
+| thetaStart  | Start angle for first segment. Can be used to define a partial circle.                                                        | 0             |
+| thetaLength | The central angle (in degrees). Defaults to `360`, which makes for a complete circle.                                               | 360           |
 
 ### Cylinder Primitive
 
-The cylinder primitive can define cylinders in the traditional sense like a
-Coca-Cola can, but it can also define shapes such as cones, tubes, and curved
-surfaces. We'll go over some of these cylinder recipes below.
+The cylinder primitive can define cylinders in the traditional sense like a Coca-Cola™ can, but it can also define shapes such as cones, tubes, and curved surfaces. We'll go over some of these cylinder recipes below.
 
 #### Basic Cylinder
 
@@ -75,12 +66,10 @@ Cones can be defined by differing the bottom radius from the top radius:
 
 #### Tube
 
-Tubes can be defined by making the cylinder open-ended, which removes the top
-and bottom surfaces of the cylinder such that the inside is visible. A
-double-sided material will be needed to render properly:
+Tubes can be defined by making the cylinder open-ended, which removes the top and bottom surfaces of the cylinder such that the inside is visible. A double-sided material will be needed to render properly:
 
 ```html
-<!-- Tube. -->
+<!-- Tube -->
 <a-entity geometry="primitive: cylinder; openEnded: true" material="side: double"></a-entity>
 ```
 
@@ -91,7 +80,7 @@ such that the cylinder doesn't curve all the way around, making the cylinder
 open-ended, and then making the material double-sided.
 
 ```html
-<!-- Curved surface. -->
+<!-- Curved surface -->
 <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength: 180"
           material="side: double"></a-entity>
 ```
@@ -109,9 +98,7 @@ open-ended, and then making the material double-sided.
 
 ### Plane
 
-The plane primitive defines a flat surface. Note that because it is flat, only
-a single side of the plane will be rendered if "side: double" is not
-specified on the material component.
+The plane primitive defines a flat surface. Note that because it is flat, only a single side of the plane will be rendered if `side: double` is not specified on the `material` component.
 
 ```html
 <a-entity geometry="primitive: plane; height: 10; width: 10"
@@ -125,9 +112,7 @@ specified on the material component.
 
 ### Ring
 
-The ring geometry defines a flat ring, like a CD. Note that because it is
-flat, only a single side of the ring will be rendered if "side: double" is
-not specified on the material component.
+The ring geometry defines a flat ring, like a [CD](https://en.wikipedia.org/wiki/Compact_disc). Note that because it is flat, only a single side of the ring will be rendered if `side: double` is not specified on the `material` component.
 
 ```html
 <a-entity geometry="primitive: ring; radiusInner: 0.5; radiusOuter: 1"
@@ -145,12 +130,9 @@ not specified on the material component.
 
 ### Sphere
 
-The sphere primitive can define spheres in the traditional sense like a
-basketball. But it can also define various polyhedrons and abstract shapes given that
-it can specify the number of horizontal and vertical angles and faces.
+The sphere primitive can define spheres in the traditional sense like a basketball. But it can also define various polyhedrons and abstract shapes given that it can specify the number of horizontal and vertical angles and faces.
 
-Sticking with a basic sphere, the default number of segments is high enough to
-make the sphere appear round.
+Sticking with a basic sphere, the default number of segments is high enough to make the sphere appear round.
 
 ```html
 <a-entity geometry="primitive: sphere; radius: 2"></a-entity>
@@ -168,10 +150,10 @@ make the sphere appear round.
 
 ### Torus
 
-The torus primitive defines a doughnut shape.
+The torus primitive defines a donut shape.
 
 ```html
-<!-- Half doughnut. -->
+<!-- Half donut -->
 <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5; arc: 180"></a-entity>
 ```
 
@@ -181,13 +163,11 @@ The torus primitive defines a doughnut shape.
 | radiusTubular   | Radius of the tube.                                                                                             | 0.2           |
 | segmentsRadial  | Number of segments along the circumference of the tube ends. A higher number means the tube will be more round. | 36            |
 | segmentsTubular | Number of segments along the circumference of the tube face. A higher number means the tube will be more round. | 0             |
-| arc             | Central angle.                                                                                                  | 360           |
+| arc             | Central angle.                                                                                                   | 360           |
 
 ### Torus Knot
 
-The torus knot primitive defines a pretzel shape, the particular shape of which is defined
-by a pair of coprime integers, `p` and `q`. If `p` and `q` are not coprime the result
-will be a torus link.
+The torus knot primitive defines a pretzel shape, the particular shape of which is defined by a pair of coprime integers, `p` and `q`. If `p` and `q` are not coprime the result will be a torus link.
 
 ```html
 <a-entity geometry="primitive: torusKnot; p: 3; q:7"></a-entity>
@@ -195,8 +175,8 @@ will be a torus link.
 
 | Property        | Description                                                                                                     | Default Value |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|---------------|
-| radius          | Radius that contains the torus knot.                                                                            | 1             |
-| radiusTubular   | Radius of the tubes of the torus knot.                                                                          | 0.2           |
+| radius          | Radius that contains the torus knot.                                                                      | 1             |
+| radiusTubular   | Radius of the tubes of the torus knot.                                                                      | 0.2           |
 | segmentsRadial  | Number of segments along the circumference of the tube ends. A higher number means the tube will be more round. | 36            |
 | segmentsTubular | Number of segments along the circumference of the tube face. A higher number means the tube will be more round. | 8             |
 | p               | Number that helps define the pretzel shape.                                                                     | 2             |
@@ -204,10 +184,9 @@ will be a torus link.
 
 ## Geometry Translate
 
-The `translate` property translates the geometry relative to its pivot point.
-It is defined as a coordinate.
+The `translate` property translates the geometry relative to its pivot point. It is defined as a coordinate.
 
 ```html
-<!-- Translates the sphere such that the pivot point as at its bottom. -->
+<!-- Translates the sphere such that the pivot point is at its bottom -->
 <a-entity geometry="primitive: sphere; radius: 1; translate: 0 1 0"></a-entity>
 ```

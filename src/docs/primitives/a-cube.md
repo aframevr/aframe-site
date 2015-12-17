@@ -6,7 +6,7 @@ parent_section: primitives
 order: 3
 ---
 
-The cube primitive wraps an entity that contains geometry and material components.
+The cube primitive wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components.
 
 | Attribute   | Default Value  | Component Mapping    |
 |-------------|----------------|----------------------|

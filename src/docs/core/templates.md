@@ -6,7 +6,7 @@ parent_section: core
 order: 5
 ---
 
-Whereas primitives wrap a single entity, templates package multiple entities or primitives into a custom element for easy reuse. Take our primitive example above for example. Let's say we want to wrap that into a single element, `<a-lot-of-cubes>`. We can wrap them in a template using the `template` element.
+Whereas [primitives](../primitives/) wrap a single [entity](entity.html), templates package multiple entities or primitives into a custom element for easy reuse. Take our primitive example above for example. Let's say we want to wrap that into a single element, `<a-lot-of-cubes>`. We can wrap them in a template using the [`<template>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
 
 ```html
 <template is="a-template" element="a-lot-of-cubes">

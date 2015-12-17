@@ -6,7 +6,7 @@ parent_section: primitives
 order: 2
 ---
 
-The camera primitive makes it easy to customize the controls and viewing parameters of our scene. It wraps an entity that contains a camera component, and within that a second entity for the cursor, which has geometry and material components.
+The camera primitive makes it easy to customize the controls and viewing parameters of our scene. It wraps an entity that contains a [`camera` component](../components/), and within that a second entity for the cursor, which has [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components.
 
 | Attribute             | Default Value                          | Component Mapping |
 |-----------------------|----------------------------------------|-------------------|
@@ -39,7 +39,7 @@ But if we add a camera primitive and do not adjust its position...
 <a-cube></a-cube>
 ```
 
-...the cube seems to disappear, because both the cube and camera are positioned at `0 0 0`, and the camera is therefore _inside_ the cube.
+... the cube seems to disappear, because both the cube and camera are positioned at `0 0 0`, and the camera is therefore _inside_ the cube.
 
 ## Examples
 
