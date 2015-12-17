@@ -99,10 +99,34 @@
   }
 
   var navLinks = getNavLinks();
-  if (navLinks) {
+  if (body.getAttribute('data-page-layout') === 'docs') {
+    var guideLinkLeft = $('.guide-link-left');
+    var guideLinkRight = $('.guide-link-right');
+
     body.addEventListener('keyup', function (e) {
-      // TODO: Check `activeElement`.
-      var left = e.keyCode === 37
+      if (document.activeElement !== body) { return; }
+
+      var left = e.keyCode === 37;
+      if (left) {
+        if (guideLinkLeft) { clickEl(guideLinkLeft); }
+        return;
+      }
+
+      var right = e.keyCode === 39;
+      if (right) {
+        if (guideLinkRight) { clickEl(guideLinkRight); }
+        return;
+      }
+    });
+  }
+
+
+  var navLinks = getNavLinks();
+  if (navLinks.length) {
+    body.addEventListener('keyup', function (e) {
+      if (document.activeElement !== body) { return; }
+
+      var left = e.keyCode === 37;
       var right = e.keyCode === 39;
       // var up = e.keyCode === 38;
       // var down = e.keyCode === 40;
