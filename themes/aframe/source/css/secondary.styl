@@ -5,7 +5,7 @@ a
     color hsl(192, 80%, 40%)
     position relative
     text-decoration none
-    transition 0.1s ease-out
+    transition 0.05s ease
     &:hover
         border-bottom-color rgba(53,196,232,0.3)
         color hsl(192, 80%, 25%)
@@ -29,7 +29,7 @@ a
     color rgba(0,0,0,0.35)
     display block
     padding 0.25rem 0
-    transition 0.1s color ease-in
+    transition 0.05s color ease
     &:hover
         color rgba(0,0,0,0.75)
     &:active
@@ -54,7 +54,7 @@ a
     color rgba(0,0,0,0.35)
     text-indent -10px
     padding-left 10px
-    transition 0.1s color ease-in
+    transition 0.05s color ease
     width 100%
     &:hover
         color rgba(0,0,0,0.75)
@@ -294,7 +294,7 @@ p [href*=github][href*="/blob/"]:only-child,
     background $codebg
     border 1px solid $border
     border-radius $radius
-    transition .2s ease-in
+    transition 0.05s ease
     color #666
     display inline-block
     padding 0.25rem 1rem
@@ -305,14 +305,18 @@ p [href*=github][href*="/blob/"]:only-child,
         margin-left 0.5em
         opacity .5
         height 14px
-        transition .2s opacity ease-in
+        transition 0.05s opacity ease
         vertical-align middle
         width 12px
-    &:hover
+    &:hover,
+    &:active
         border-color $border-dark
         color #333
         &:after
             opacity 1
+    &:active
+        background rgba(0,0,0,0.1)
+        opacity 0.5
 
 .copy
     a.btn  // See `_common` for base styles.
@@ -325,7 +329,7 @@ p [href*=github][href*="/blob/"]:only-child,
         font-weight 600
         margin 5px 0
         padding 12px 24px
-        transition all .15s ease
+        transition 0.15s ease
         &.btn-download
             padding 12px 14px
             min-width 220px
@@ -333,7 +337,8 @@ p [href*=github][href*="/blob/"]:only-child,
             background-color lighten($blue, 15%)
             transform translate(0, 1px)
             transition none
-        &:active
+        &:active,
+        &.click
             background-color darken($blue, 12%)
             transform translate(0, 2px)
         span
