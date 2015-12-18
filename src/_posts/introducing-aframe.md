@@ -15,6 +15,7 @@ We created A-Frame to make it easier to create VR web experiences. WebVR has shi
 A-Frame is designed to be familiar to those web developers. It wraps the power of WebGL in HTML custom elements, so creating a high performance VR experience is as simple as:
 
 ```html
+<!doctype html>
 <html>
   <head>
     <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
