@@ -66,6 +66,6 @@ Thanks also to WebVR friends and colleagues who have provided key underlying com
 
 And lastly to the growing list of other WebVR tools, many of which have informed and inspired A-Frame.
 
-* Declarative: [GLAM](http://tparisi.github.io/glam/) (Tony Parisi), [SceneVR](http://www.scenevr.com/) (Ben Nolan), [VRCollab](http://vrcollab.com/) (Jia Hen Tee and team)
+* Declarative: [GLAM](http://tparisi.github.io/glam/) ([Tony Parisi](https://twitter.com/auradeluxe)), [SceneVR](http://www.scenevr.com/) ([Ben Nolan](https://twitter.com/bnolan)), [VRCollab](http://vrcollab.com/) ([Tee Jia Hen](https://twitter.com/wizztjh) and team)
 * JavaScript: [Three.js](http://threejs.org/), [WebVR Polyfill](https://github.com/borismus/webvr-polyfill)
 * WYSIWYG: [Vizor](http://vizor.io/), [PlayCanvas](https://playcanvas.com/)
