@@ -359,15 +359,13 @@ p [href*=github][href*="/blob/"]:only-child,
     h5[id],
     h6[id]
         cursor pointer
-        margin-left -1.5rem
         position relative
-        text-indent 1.5rem
         &:before
             border-bottom 1px solid #fff
             color #ccc
             content ""
             height 100%
-            left 0
+            left -1.5rem
             position absolute
             text-indent 0
             width 1.5rem
@@ -450,6 +448,15 @@ p [href*=github][href*="/blob/"]:only-child,
 
         .github-file-link
             margin-left 0
+
+    .content--docs
+        h2[id],
+        h3[id],
+        h4[id],
+        h5[id],
+        h6[id]
+            &:before
+                left: -1rem
 
     .section-title
         position relative
