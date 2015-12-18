@@ -6,7 +6,7 @@ parent_section: primitives
 order: 9
 ---
 
-The plane makes it easy to add flat surfaces to a scene. It wraps an entity that contains geometry and material components.
+The plane makes it easy to add flat surfaces to a scene. It wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components.
 
 | Attribute   | Default Value | Component Mapping    |
 | ----------- | ------------- | -------------------- |

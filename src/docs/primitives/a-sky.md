@@ -6,7 +6,7 @@ parent_section: primitives
 order: 10
 ---
 
-The sky primitive is a large textured sphere that makes it easy to add a background to a scene. It wraps an entity that contains geometry and material components.
+The sky primitive is a large textured sphere that makes it easy to add a background to a scene. It wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components.
 
 | Attribute       | Default Value | Component Mapping       |
 | --------------- | ------------- | -----------------       |

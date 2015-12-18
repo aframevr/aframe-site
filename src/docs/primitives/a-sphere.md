@@ -6,7 +6,7 @@ parent_section: primitives
 order: 11
 ---
 
-The sphere primitive wraps an entity that contains geometry and material components.
+The sphere primitive wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components.
 
 | Attribute       | Default Value | Component Mapping       |
 | --------------- | ------------- | -----------------       |

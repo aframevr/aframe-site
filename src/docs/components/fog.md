@@ -1,3 +1,4 @@
+---
 title: "Fog"
 type: components
 layout: docs
@@ -5,9 +6,7 @@ parent_section: components
 order: 3
 ---
 
-The fog component defines how entities get obscured in fog given distance from
-the camera. Note that the fog component is a global component that applies only
-to the `<a-scene>` element.
+The `fog` component defines how entities get obscured in fog given distance from the camera. Note that the `fog` component is a global component that applies only to the [`<a-scene>` element](../core/scene.html).
 
 ```html
 <a-scene fog="type: linear; color: #AAA"></a-scene>

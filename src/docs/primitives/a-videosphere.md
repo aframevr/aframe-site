@@ -6,7 +6,7 @@ parent_section: primitives
 order: 13
 ---
 
-The videosphere primitive makes it easy to add 360-degree videos to a scene. It is essentially a large sphere with a video texture. The primitive wraps an entity that contains geometry and material components. The material component uses a video texture.
+The videosphere primitive makes it easy to add 360-degree videos to a scene. It is essentially a large sphere with a video texture. The primitive wraps an entity that contains [`geometry`](../components/geometry.html) and [`material`](../components/material.html) components. The [`material component`](../components/material.html) uses a video texture.
 
 | Attribute   | Component Mapping     | Default Value |
 | ---------   | -----------------     | ------------- |

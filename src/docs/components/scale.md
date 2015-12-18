@@ -8,7 +8,7 @@ order: 13
 
 The scale component defines a shrinking or stretching transformation of an entity. It takes three scaling factors for the X, Y, and Z axes. All entities inherently have the scale component.
 
-The example below shrinks the entity in half along the X direction, maintains the same scale factor along the Y direction, and stretches the entity by two-fold along the Z direction:
+The example below shrinks the entity in half along the X direction, maintains the same scale factor along the Y direction, and stretches the entity by two-fold along the Z-direction:
 
 ```html
 <a-entity scale="0.5 1 2"></a-entity>

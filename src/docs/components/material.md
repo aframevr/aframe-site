@@ -6,7 +6,7 @@ parent_section: components
 order: 9
 ---
 
-The material component defines the appearance of an entity. It can define properties such as color, opacity, or texture. A geometry component is usually defined alongside the material component.
+The `material` component defines the appearance of an entity. It can define properties such as color, opacity, or texture. A [`geometry` component](geometry.html) is usually defined alongside the `material` component.
 
 Here is an example defining a red material on a box geometry, creating a red cube.
 
@@ -51,7 +51,7 @@ To set a texture on the material, specify the `src` property. `src` can either b
 </a-scene>
 ```
 
-Most of the other properties works together with texutres. For example, the `color` property will act as the base color and be multiplied per-pixel with the texture. Set it to `#fff` to maintain the original colors of the texture.
+Most of the other properties works together with textures. For example, the `color` property will act as the base color and be multiplied per-pixel with the texture. Set it to `#fff` to maintain the original colors of the texture.
 
 ### Repeating Textures
 
