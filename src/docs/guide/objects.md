@@ -17,7 +17,7 @@ A-Frame comes with convenient primitives for common use cases such as videos, mo
 <a-sky>
 ```
 
-The full list of available primmitives is available in the [Primitives documentation](../../docs/primitives/).
+The full list of available primitives is available in the [Primitives documentation](../../docs/primitives/).
 
 Each primitive has unique attributes. We can specify the width, depth, and height of a cube, for example, or the source of a 3D model:
 
