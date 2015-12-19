@@ -14,7 +14,7 @@ Example applications might include having a monster stare at the player:
 <a-entity id="monster" geometry="primitive: box" material="src: monster.png"
           look-at="[camera]"></a-entity>
 
-<a-entity id="player" camera>/<a-entity>
+<a-entity id="player" camera></a-entity>
 ```
 
 Or maybe having a dog look at a running squirrel:
