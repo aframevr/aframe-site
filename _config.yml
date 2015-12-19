@@ -114,8 +114,8 @@ github:
     url: https://github.com/aframevr/aframe/
   aframe_site:
     username: aframevr
-    repo: aframe-site-dev
-    url: https://github.com/aframevr/aframe-site-dev/
+    repo: aframe-site
+    url: https://github.com/aframevr/aframe-site/
 
 
 aframe_version: 0.1.0
