@@ -1,77 +1,89 @@
 {
-  "showcase": {
-    "title": "Showcase",
-    "examples": [
-      {
-        "slug": "helloworld",
-        "path": "boilerplate-helloworld/",
-        "title": "Hello World"
-      },
-      {
-        "slug": "anime-UI",
-        "path": "showcase-anime-UI/",
-        "title": "Anime UI"
-      },
-      {
-        "slug": "composite",
-        "path": "showcase-composite/",
-        "title": "Composite"
-      },
-      {
-        "slug": "videosphere",
-        "path": "template-videosphere/",
-        "title": "360 Video"
-      },
-      {
-        "slug": "curved-mockups",
-        "path": "showcase-curved-mockups/",
-        "title": "Curved Mockups"
-      },
-      {
-        "slug": "spheres-and-fog",
-        "path": "showcase-spheres-and-fog/",
-        "title": "Spheres and Fog"
-      },
-      {
-        "slug": "shopping",
-        "path": "showcase-shopping/",
-        "title": "Shopping"
-      },
-      {
-        "slug": "warps",
-        "path": "animation-warps/",
-        "title": "Warp"
-      },
-      {
-        "slug": "generic-logo",
-        "path": "animation-generic-logo/",
-        "title": "Logo"
-      },
-      {
-        "slug": "unfold",
-        "path": "animation-unfold/",
-        "title": "Unfold"
-      },
-      {
-        "slug": "sky",
-        "path": "template-sky/",
-        "title": "Panorama"
-      },
-      {
-        "slug": "cursor",
-        "path": "interaction-cursor/",
-        "title": "Cursor & Hover"
-      },
-      {
-        "slug": "lookat",
-        "path": "interaction-lookat/",
-        "title": "Look At"
-      },
-      {
-        "slug": "basics",
-        "path": "entitycomponent-basics/",
-        "title": "Entity-Component"
-      }
-    ]
-  }
+  "title": "Examples",
+  "examples": [
+    {
+      "section": "showcase",
+      "slug": "helloworld",
+      "path": "boilerplate-helloworld/",
+      "title": "Hello World"
+    },
+    {
+      "section": "showcase",
+      "slug": "anime-UI",
+      "path": "showcase-anime-UI/",
+      "title": "Anime UI"
+    },
+    {
+      "section": "showcase",
+      "slug": "composite",
+      "path": "showcase-composite/",
+      "title": "Composite"
+    },
+    {
+      "section": "showcase",
+      "slug": "videosphere",
+      "path": "template-videosphere/",
+      "title": "360 Video"
+    },
+    {
+      "section": "showcase",
+      "slug": "curved-mockups",
+      "path": "showcase-curved-mockups/",
+      "title": "Curved Mockups"
+    },
+    {
+      "section": "showcase",
+      "slug": "spheres-and-fog",
+      "path": "showcase-spheres-and-fog/",
+      "title": "Spheres and Fog"
+    },
+    {
+      "section": "showcase",
+      "slug": "shopping",
+      "path": "showcase-shopping/",
+      "title": "Shopping"
+    },
+    {
+      "section": "showcase",
+      "slug": "warps",
+      "path": "animation-warps/",
+      "title": "Warp"
+    },
+    {
+      "section": "showcase",
+      "slug": "generic-logo",
+      "path": "animation-generic-logo/",
+      "title": "Logo"
+    },
+    {
+      "section": "showcase",
+      "slug": "unfold",
+      "path": "animation-unfold/",
+      "title": "Unfold"
+    },
+    {
+      "section": "showcase",
+      "slug": "sky",
+      "path": "template-sky/",
+      "title": "Panorama"
+    },
+    {
+      "section": "showcase",
+      "slug": "cursor",
+      "path": "interaction-cursor/",
+      "title": "Cursor & Hover"
+    },
+    {
+      "section": "showcase",
+      "slug": "lookat",
+      "path": "interaction-lookat/",
+      "title": "Look At"
+    },
+    {
+      "section": "showcase",
+      "slug": "basics",
+      "path": "entitycomponent-basics/",
+      "title": "Entity-Component"
+    }
+  ]
 }
