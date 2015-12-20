@@ -47,7 +47,7 @@ To set a texture on the material, specify the `src` property. `src` can either b
 
 ```html
 <a-scene>
-  <a-entity geometry="primitive: box" material="src: texture.png"></a-entity>
+  <a-entity geometry="primitive: box" material="src: url(texture.png)"></a-entity>
 </a-scene>
 ```
 
