@@ -53,6 +53,7 @@ If `attr` is the name of a registered component, `removeAttribute` also detaches
 
 ## Events
 
-| Event Name | Description        |
-|------------|--------------------|
-| loaded     | Entity has loaded. |
+| Event Name       | Description                              |
+|------------------|------------------------------------------|
+| componentchanged | Entity has been modified by a component. |
+| loaded           | Entity has loaded.                       |
