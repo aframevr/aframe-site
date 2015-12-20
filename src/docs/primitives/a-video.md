@@ -25,5 +25,5 @@ The video primitive makes it easy to add flat two-dimensional video screens to a
 A basic video:
 
 ```html
-<a-video src="penguin-sledding.mp4" width="16" height="9" position="0 0 -20"><a-video>
+<a-video src="penguin-sledding.mp4" width="16" height="9" position="0 0 -20"></a-video>
 ```
