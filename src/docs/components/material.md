@@ -26,6 +26,7 @@ Here is an example defining a red material on a box geometry, creating a red cub
 | roughness    | How rough the material is from `0` to `1`. A rougher material will scatter reflected light in more directions than a smooth material. Does not apply if `shader` is set to `flat`. | 0.5 |
 | transparent  | Whether material is transparent. Transparent entities are rendered after non-transparent entities.                                             | false         |
 | shader       | Shading model. Defaults to physically based shading but can also be set to `flat` shading.                                                     | standard      |
+| side         | Which sides of the mesh to render. Can be one of `front`, `back`, or `double`.                                                                 | front |
 | src          | Image or video texture map. Can either be a selector to an `<img>` or `<video>`, or an inline URL.                                             | None          |
 | width        | Width of video (in pixels), if defining a video texture.                                                                                       | 640           |
 
