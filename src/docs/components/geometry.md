@@ -46,7 +46,7 @@ The circle primitive defines two-dimensional circles, which can be complete circ
 
 ### Cylinder Primitive
 
-The cylinder primitive can define cylinders in the traditional sense like a Coca-Cola™ can, but it can also define shapes such as cones, tubes, and curved surfaces. We'll go over some of these cylinder recipes below.
+The cylinder primitive can define cylinders in the traditional sense like a Coca-Cola™ can, but it can also define shapes such as tubes and curved surfaces. We'll go over some of these cylinder recipes below.
 
 #### Basic Cylinder
 
@@ -54,14 +54,6 @@ Traditional cylinders can be defined by using only a height and a radius:
 
 ```html
 <a-entity geometry="primitive: cylinder; height: 3; radius: 2"></a-entity>
-```
-
-#### Cone
-
-Cones can be defined by differing the bottom radius from the top radius:
-
-```html
-<a-entity geometry="primitive: cylinder; radiusBottom: 1; radiusTop: 0.1"></a-entity>
 ```
 
 #### Tube
@@ -75,9 +67,7 @@ Tubes can be defined by making the cylinder open-ended, which removes the top an
 
 #### Curved Surface
 
-Curved surfaces can be defined by specifying the angle via `thetaLength`
-such that the cylinder doesn't curve all the way around, making the cylinder
-open-ended, and then making the material double-sided.
+Curved surfaces can be defined by specifying the angle via `thetaLength` such that the cylinder doesn't curve all the way around, making the cylinder open-ended, and then making the material double-sided.
 
 ```html
 <!-- Curved surface -->
@@ -87,12 +77,30 @@ open-ended, and then making the material double-sided.
 
 | Property       | Description                                                         | Default Value |
 |----------------|---------------------------------------------------------------------|---------------|
-| radiusTop      | Radius of the cylinder at the top.                                  | 1             |
-| radiusBottom   | Radius of the cylinder at the bottom.                               | 1             |
+| radius         | Radius of the cylinder.                                             | 1             |
 | height         | Height of the cylinder.                                             | 2             |
 | segmentsRadial | Number of segmented faces around the circumference of the cylinder. | 36            |
 | segmentsHeight | Number of rows of faces along the height of the cylinder.           | 18            |
 | openEnded      | Whether the ends of the cylinder are open (true) or capped (false). | false         |
+| thetaStart     | Starting angle in degrees.                                          | 0             |
+| thetaLength    | Central angle in degrees.                                           | 360           |
+
+### Cone
+
+Cones are essentially cylinders that have a different bottom radius than the top radius:
+
+```html
+<a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1"></a-entity>
+```
+
+| Property       | Description                                                         | Default Value |
+|----------------|---------------------------------------------------------------------|---------------|
+| radiusTop      | Radius of the cone                                                  | 1             |
+| radiusBottom   | Radius of the cone at the bottom.                                   | 1             |
+| height         | Height of the cone .                                                | 2             |
+| segmentsRadial | Number of segmented faces around the circumference of the cone.     | 36            |
+| segmentsHeight | Number of rows of faces along the height of the cone.               | 18            |
+| openEnded      | Whether the ends of the cone are open (true) or capped (false).     | false         |
 | thetaStart     | Starting angle in degrees.                                          | 0             |
 | thetaLength    | Central angle in degrees.                                           | 360           |
 
