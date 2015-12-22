@@ -113,7 +113,12 @@ For example, let's take a look at a piece of the light component schema.
 
 To register your component, use the `registerComponent(componentName, componentDefinition)` function exposed by the library.
 
-## Example Component
+## Building a Component
+
+Check out the [A-Frame component
+boilerplate](https://github.com/ngokevin/aframe-component-boilerplate) to get
+started on building and sharing a component. More detailed documentation on building
+a component is coming soon.
 
 Let's create an example component that rapidly vibrates an object by shifting its position back and forth.
 
@@ -156,4 +161,12 @@ require('aframe').registerComponent('vibrate', {
     }
   }
 });
+```
+
+## Updating a Component on Tick
+
+To have a component update on each frame or tick, we can register the component to the scene with `<a-scene>.addBehavior`. `addBehavior` registers callback functions on every frame or tick. Just pass the component into `addBehavior`. In the component:
+
+```js
+this.el.sceneEl.addBehavior(this);
 ```
