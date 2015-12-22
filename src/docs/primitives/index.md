@@ -8,7 +8,7 @@ order: 1
 section_order: 2
 ---
 
-Primitives are concise, semantic building blocks blocks that wrap A-Frame's underlying [entity-component](../core/) system. A-Frame ships with built-in primitives for common use cases such as `<a-cube>`, `<a-model>`, and `<a-sky>`.
+Primitives are concise, semantic building blocks blocks that wrap A-Frame's underlying [entity-component](../core/) system. A-Frame ships with a handful built-in primitives for common use cases such as `<a-cube>`, `<a-model>`, and `<a-sky>`. These primitives are to help people get started with using A-Frame. To uncover the full composability and extensibility of A-Frame, dive down into the underlying [entity-component system](../core/index.html).
 
 Using primitives, to create a red cube that's 3 meters wide, we can write:
 
@@ -45,4 +45,4 @@ Primitives work with animations also. To create a cube that spins endlessly, we 
 </a-cube>
 ```
 
-Adding components directly to primitives is not supported, however, and will lead to unpredictable results.
+Adding components directly to primitives to extend their behavior is currently not supported, however, and will lead to unpredictable results.

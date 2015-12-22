@@ -6,6 +6,8 @@ parent_section: core
 order: 5
 ---
 
+> Note that templates are not actually part of the core. They will soon be rearchitected and placed on a separate abstraction layer.
+
 Whereas [primitives](../primitives/) wrap a single [entity](entity.html), templates package multiple entities or primitives into a custom element for easy reuse. Take our primitive example above for example. Let's say we want to wrap that into a single element, `<a-lot-of-cubes>`. We can wrap them in a template using the [`<template>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template).
 
 ```html
