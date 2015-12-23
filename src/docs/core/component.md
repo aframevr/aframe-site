@@ -115,10 +115,7 @@ To register your component, use the `registerComponent(componentName, componentD
 
 ## Building a Component
 
-Check out the [A-Frame component
-boilerplate](https://github.com/ngokevin/aframe-component-boilerplate) to get
-started on building and sharing a component. More detailed documentation on building
-a component is coming soon.
+Check out the [A-Frame component boilerplate](https://github.com/ngokevin/aframe-component-boilerplate) to get started on building and sharing a component. More detailed documentation on building a component is coming soon.
 
 Let's create an example component that rapidly vibrates an object by shifting its position back and forth.
 
