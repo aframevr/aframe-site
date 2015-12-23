@@ -8,7 +8,7 @@ order: 1
 section_order: 2
 ---
 
-Primitives are concise, semantic building blocks blocks that wrap A-Frame's underlying [entity-component](../core/) system. A-Frame ships with a handful built-in primitives for common use cases such as `<a-cube>`, `<a-model>`, and `<a-sky>`. These primitives are to help people get started with using A-Frame. To uncover the full composability and extensibility of A-Frame, dive down into the underlying [entity-component system](../core/index.html).
+Primitives are concise, semantic building blocks blocks that wrap A-Frame's underlying [entity-component](../core/) system. A-Frame ships with a handful of built-in primitives for common use cases such as `<a-cube>`, `<a-model>`, and `<a-sky>`. These primitives are to help people get started with using A-Frame. To uncover the full composability and extensibility of A-Frame, dive down into the underlying [entity-component system](../core/).
 
 Using primitives, to create a red cube that's 3 meters wide, we can write:
 
