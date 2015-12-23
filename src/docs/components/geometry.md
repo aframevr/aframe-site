@@ -95,9 +95,9 @@ Cones are essentially cylinders that have a different bottom radius than the top
 
 | Property       | Description                                                         | Default Value |
 |----------------|---------------------------------------------------------------------|---------------|
-| radiusTop      | Radius of the cone                                                  | 1             |
+| radiusTop      | Radius of the cone.                                                  | 1             |
 | radiusBottom   | Radius of the cone at the bottom.                                   | 1             |
-| height         | Height of the cone .                                                | 2             |
+| height         | Height of the cone.                                                | 2             |
 | segmentsRadial | Number of segmented faces around the circumference of the cone.     | 36            |
 | segmentsHeight | Number of rows of faces along the height of the cone.               | 18            |
 | openEnded      | Whether the ends of the cone are open (true) or capped (false).     | false         |
