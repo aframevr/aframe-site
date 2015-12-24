@@ -83,6 +83,14 @@ theme: aframe
 exclude_generator:
 - index
 
+# Feed
+## Plugin https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: feed.xml
+  limit: 15
+  hub:
+
 # Markdown
 ## https://github.com/chjj/marked
 markdown:
