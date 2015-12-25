@@ -15,7 +15,7 @@ The curved image primitive wraps an entity that contains [`geometry`](../compone
 | height          | 1              | geometry.height         |
 | opacty          | 1              | geometry.radius         |
 | radius          | 2              | geometry.radius         |
-| segments-radius | 48             | geometry.segmentsRadial |
+| segments-radial | 48             | geometry.segmentsRadial |
 | src             | None           | material.src            |
 | theta-length    | 360            | geometry.thetaLength    |
 | theta-start     | 0              | geometry.thetaStart     |
