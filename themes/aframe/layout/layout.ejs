@@ -28,6 +28,8 @@
     <meta name="twitter:image" content="https://aframe.io/images/card.png">
 
     <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- url_for(config.feed.path) %>">
+
     <%- js('js/mobile.js') %>
     <% if (showExamples) { %>
       <%- css('css/examples') %>
