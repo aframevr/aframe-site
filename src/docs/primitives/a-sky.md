@@ -20,7 +20,7 @@ The sky primitive is a large textured sphere that makes it easy to add a backgro
 
 ## Image format
 
-To ensure a seamless background, images must use an [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection). The [Flickr Equirectangular](https://www.flickr.com/groups/equirectangular/) is one source of compatible images.
+To ensure a seamless background, images must use an [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection). The [Flickr Equirectangular](https://www.flickr.com/groups/equirectangular/) is one source of compatible images, or you can [search for CC-licensed images](https://www.flickr.com/search/?text=equirectangular&license=4%2C5%2C9%2C10).
 
 ## Examples
 
