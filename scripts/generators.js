@@ -31,7 +31,7 @@ hexo.extend.generator.register('examples', function (locals) {
     });
   }
 
-  addRoute('guide/', utils.createRedirectResponse(hexo, 'guide/getting-started/'));
+  addRoute('guide/', utils.createRedirectResponse(hexo, 'docs/guide/'));
 
   if (locals.data.examples) {
     var examples = locals.data.examples.examples;
