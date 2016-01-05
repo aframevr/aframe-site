@@ -59,7 +59,7 @@ Most of the other properties works together with textures. For example, the `col
 Often, we want to tile textures rather than having them stretch. The `repeat` property can be used to repeat textures.
 
 ```html
-<a-entity geometry="geometry: plane; width: 100"
+<a-entity geometry="primitive: plane; width: 100"
           material="src: carpet.png; repeat: 100 20"></a-entity>
 ```
 
