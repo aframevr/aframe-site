@@ -51,13 +51,14 @@ We're easiest to reach on the [A-Frame Slack channel](https://aframevr.slack.com
 
 ## How is A-Frame different from VRML?
 
-A-Frame is a JavaScript framework—not a web standard. It is built on top of the WebGL API, which is widely supported on modern browsers for desktop and mobile devices. That means it works for developers and users _today_. Browser vendors do not need to know A-Frame exists, or implement support for it. 
+Most importantly, A-Frame is a JavaScript framework, not a web standard. It is built on top of the WebGL API, which is widely supported on modern browsers for desktop and mobile devices. That means it works for developers and users _today_. Browser vendors do not need to know A-Frame exists or implement support for it.
 
-This is in contrast to the old approach to implementing new functionality in the web platform, wherein proposal, ratification and implementation of new web standards was a multi-year process with no gaurantee of successful outcome.
+This is in contrast to the old approach to implementing new functionality in the web platform, wherein the proposal, ratification, and implementation of new web standards proved to be a multi-year process with no guarantee of a successful outcome.
 
-A-Frame embodies the [Extensible Web](https://extensiblewebmanifesto.org/) approach to evolving the web platform, which essentially says, "Instead of taking years to draft and ship web standards that people might not even want, ship new ideas early-and-often as JavaScript libraries/frameworks built atop low-level enabling APIs (like WebGL), let them battle it out in the market, and _then_ look at standardization of the winners".
+A-Frame embodies the [Extensible Web](https://extensiblewebmanifesto.org/) approach to evolving the web platform, which essentially says, "instead of taking years to draft and ship web standards that people might not even want, ship new ideas early and often as JavaScript libraries/frameworks built atop low-level enabling APIs (such as WebGL), let them battle it out in the market, and _then_ look at standardization of the winners."
 
-A-Frame is also notable for it's extensibility and developer ergonomics. It is designed to be familiar to modern web developers and to grow via open source hacking and sharing of community-created components, templates, tools, etc.
+A-Frame is also notable for its extensibility and developer ergonomics. It is designed to be familiar to modern web developers and to grow via open-source hacking and sharing of community-created components, templates, tools, etc.
+
 
 ## How can I improve performance?
 
