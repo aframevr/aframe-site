@@ -114,7 +114,7 @@ This can either be a number of milliseconds to delay or triggered by an event. I
 In this example, we define an animation that waits for the parent element to trigger an event named `fade` before fading an entity.
 
 ```html
-<a-entity id="fading-cube" geometry="primitive: cube" material="opacity: 1">
+<a-entity id="fading-cube" geometry="primitive: box" material="opacity: 1">
   <a-animation attribute="material.opacity" begin="fade" to="2 2 2"></a-animation>
 </a-entity>
 ```
