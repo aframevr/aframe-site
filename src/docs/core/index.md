@@ -36,14 +36,14 @@ In A-Frame:
 For example, to create a pink cube, which requires the `geometry` and `material` components:
 
 ```html
-<a-entity geometry="primitive: cube; depth: 1; height: 1; width: 1"
+<a-entity geometry="primitive: box; depth: 1; height: 1; width: 1"
           material="color: pink"></a-entity>
 ```
 
 For web developers, the syntax might seem new, or even odd, but the composability makes it powerful to be able to customize entities in the system. Perhaps we want our cube to give off light; we can simply add the `light` component:
 
 ```html
-<a-entity geometry="primitive: cube; depth: 1; height: 1; width: 1"
+<a-entity geometry="primitive: box; depth: 1; height: 1; width: 1"
           material="color: pink"
           light="intensity: 2"></a-entity>
 ```
@@ -51,7 +51,7 @@ For web developers, the syntax might seem new, or even odd, but the composabilit
 Perhaps we want our cube to also emit a sound. We can add the [`sound` component](sound.html). And we want to move the cube a little, we can use the [`position` component](../components/position.html).
 
 ```html
-<a-entity geometry="primitive: cube; depth: 1; height: 1; width: 1"
+<a-entity geometry="primitive: box; depth: 1; height: 1; width: 1"
           material="color: pink"
           light="intensity: 2"
           position="-1 5 0"
