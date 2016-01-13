@@ -21,6 +21,10 @@ hexo.extend.helper.register('website_github_file_url', function (path) {
   return urljoin(this.config.github.aframe_site.url, 'blob', 'master', this.config.source_dir, path.replace(/\.html$/, '.md'));
 });
 
+hexo.extend.helper.register('website_github_edit_url', function (path) {
+  return urljoin(this.config.github.aframe_site.url, 'edit', 'master', this.config.source_dir, path.replace(/\.html$/, '.md'));
+});
+
 hexo.extend.helper.register('page_url', function (path, options) {
   return this.url_for(path, options).replace(/index\.html$/, '');
 });

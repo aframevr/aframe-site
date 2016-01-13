@@ -36,7 +36,7 @@
     <footer class="footer footnote">
       <p>Except where otherwise noted, content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="external">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
       <% if (!page.blog_index) { %>
-        <p>Caught a mistake? <br><br> <a href="<%- website_github_file_url('_posts/' + page.slug + '.md') %>" class="github-file-link" target="_blank" rel="external">Suggest an edit to this post on GitHub</a></p>
+        <p>Caught a mistake? <br><br> <a href="<%- website_github_edit_url('_posts/' + page.slug + '.md') %>" class="github-file-link" target="_blank" rel="external">Suggest an edit to this post on GitHub</a></p>
       <% } %>
     </footer>
   </div>
