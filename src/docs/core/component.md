@@ -10,7 +10,7 @@ In the entity-component architecture, components are reusable and modular chunks
 
 As an analogy, if a smartphone were defined as an entity, it might use components to define its appearance (color, shape), to define its behavior (vibrate when called, shut down on low battery), or to define its functionality (camera, screen).
 
-In A-Frame, components modify 3D entities in the scene's world.  We will go into detail on what components look like under the hood and how we can define  ur own custom components to do whatever we want. Below are a list of components that currently ship with A-Frame.
+In A-Frame, components modify 3D entities in the scene's world.  We will go into detail on what components look like under the hood and how we can define our own custom components to do whatever we want. Below is a list of components that currently ship with A-Frame.
 
 | Component     |
 |---------------|
