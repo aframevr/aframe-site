@@ -10,9 +10,9 @@ The model primitive makes it easy to add OBJ or DAE ([Collada](https://www.khron
 
 | Attribute | Default Value | Component Mapping |
 | --------- | ------------- | ----------------- |
-| format    | collada       | loader.format     |
-| opacity   | 1.0           | loader.opacity    |
-| src       | None          | loader.src        |
+| format    | collada       | [`loader.format`](../components/loader.html) |
+| opacity   | 1.0           | [`loader.opacity`](../components/loader.html) |
+| src       | None          | [`loader.src`](../components/loader.html) |
 
 [View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-model.html)
 
