@@ -29,3 +29,9 @@ Using scale to increase to size of the loaded tree model:
 ```html
 <a-model scale="10 10 10" src="https://aframe.io/aframe/examples/_models/tree1/tree1.dae"></a-model>
 ```
+
+Similarly, to load an `.obj` file:
+
+```html
+<a-model src="model.obj" format="obj"></a-model>
+```
