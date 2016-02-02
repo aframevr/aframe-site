@@ -20,5 +20,5 @@ Distances in A-Frame are defined in meters. When designing a scene for virtual r
 Rotations in A-Frame are defined in degrees:
 
 ```html
-<a-cube rotation="180 45 90"></a-rotation>
+<a-cube rotation="180 45 90"></a-cube>
 ```
