@@ -2,39 +2,26 @@
   <div class="sidebar__wrap">
     <div class="sidebar__wrap__inner">
 
-      <%- partial('partials/examples/sidebar_header') %>
+      <header id="header" class="header">
+        <a id="logo" class="logo borderless-links" href="/">
+          <span class="logo__wordmark">A-Frame</span>
+        </a>
+      </header>
+
+      <a href="/docs/" class="mobile-get-started nav-link get-started">
+        Get Started
+      </a>
 
       <div class="list examples-list">
         <h2 class="page-title">Examples</h2>
 
-        <% var examples = site.data.examples.examples %>
-        <% if (examples) { %>
-          <ul class="subnav examples-subnav borderless-links">
-            <% examples.forEach(function (example) { %>
-              <% var isCurrent = page.section === example.section && page.slug === example.slug %>
-              <li data-url="<%- url_for(example.url) %>"
-                  data-idx="<%- example.idx %>"
-                  data-previous-idx="<%- example.previous_idx %>"
-                  data-next-idx="<%- example.next_idx %>"
-                  class="subnav-item<%- isCurrent ? ' current' : '' %>"><a href="<%- url_for(example.url) %>" class="subnav-link<%- isCurrent ? ' current' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
-            <% }) %>
-          </ul>
-        <% } %>
+        <ul id="examplesSubnav" class="subnav examples-subnav borderless-links">
+        </ul>
 
-        <% if (examples) { %>
-          <nav class="example-nav c">
-            <% var prevExample = examples[page.previous_idx] %>
-            <% if (prevExample) { %>
-              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>?prev">← <span>Previous</span></a>
-            <% } %>
-
-            <% var nextExample = examples[page.next_idx] %>
-            <% if (nextExample) { %>
-              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>?next"><span>Next</span> →</a>
-            <% } %>
-          </nav>
-        <% } %>
-
+        <nav class="example-nav c">
+          <a id="examplePrev" class="example-nav-link example-nav-prev" href="">← <span>Previous</span></a>
+          <a id="exampleNext" class="example-nav-link example-nav-next float-right" href=""><span>Next</span> →</a>
+        </nav>
       </div>
 
     </div>

@@ -136,3 +136,6 @@ examples:
   first_example_url: examples/showcase/helloworld/
   # NOTE: Homepage URL below is not used anymore.
   homepage_example_url: examples/showcase/spheres-and-fog/
+
+# Single-Page App
+spa: false

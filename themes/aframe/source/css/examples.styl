@@ -1,352 +1,109 @@
-@import "_common"
+/* For mobile-friendly Examples only, not Homepage */
 
-// For Home / Examples pages
-
-html[data-is-home="true"]
-    min-width 1000px
-
-body
-    color #fff
-
-a
-    border-bottom 1px solid rgba(255,255,255,0.15)
-    color rgba(255,255,255,0.5)
-    text-decoration none
-    &:hover
-        border-bottom-color rgba(255,255,255,0.3)
-        color rgba(255,255,255,0.75)
-    &:active,
-    &.click
-        border-bottom-color rgba(255,255,255,0.5)
-        color #fff
-
-ul
-    list-style-type none
-
-// Extends `_common` styles.
-.logo__wordmark
-    background url(../images/aframe-name-white.svg) no-repeat
-
-.sidebar
-    background $pink
-    -webkit-overflow-scrolling touch
-    -ms-overflow-style none
-    width 260px
-    &::-webkit-scrollbar
-        width: 0 !important
-    .page-title
-        font-size 15px
-        color rgba(0,0,0,.6)
-        font-weight 100
-        font-family $mono-font
-        letter-spacing 0.02em
-
-.example__iframe
-    height 100vh
-    width 100%
-    background-color #ECECEC
-
-.examples-list
-    border-top 1px dashed $white
-    padding-top 20px
-
-.main
-    background $pink
-    display flex
-    height 100%
-
-.sidebar, .content
-    position relative
-
-.sidebar
-    max-width 400px
-    overflow-x hidden
-
-// TODO: Figure out how to hide this scrollbar later. I've done it before.
-.sidebar__wrap
-    height 100vh
-    position relative
-    overflow-y auto
-
-.content
-    flex 1
-    overflow-y auto
-    display flex
-    flex-direction column
-
-.example__viewsource
-    background rgba(0,0,0,0.35)
-    color #fff
-    display block
-    font 12px/1.5 $mono-font
-    padding 5px 10px
-    position absolute
-    text-transform uppercase
-    top 5px
-    right 5px
-    z-index 2
-    &:active,
-    &:hover
-        background-color #ef2d5e
-
-.aframe-animation .example__viewsource
-    display none
-
-[data-is-mobile="true"] .example__viewsource
-    display none
-
-.page__title
-    font 600 36px/1.3 $body-font
-
-.subnav-link
-    font-size 16px
-    font-weight 300
-    margin-left -3px
-    padding 2px 4px 2px 3px
-    display block
-    transition 0.05s color ease
-    color #fff
-    width 100%
-    &:hover
-        background-color rgba(0,0,0,0.05)
-        color #fff
-    &:active,
-    &.click
-        background-color rgba(0,0,0,0.5)
-    &.current,
-    &.current:hover
-        // background-color rgba(255,255,255,0.1)
-        font-weight 500;
-        color #fff
-
-.example-nav
-    margin-top 3rem
-
-.example-nav-link
-    border 0
-    height 100%
-    font-size 2rem
-    font-weight 600
-    display inline-block
-    padding 0.5rem 1rem
-    margin -0.5rem -1rem
-    width 50%
-    span
-        display none
-
-.example-nav-next
-    text-align right
-
-/*
-// Use this version if adding to side bar
-.credits
-    border-top 1px dashed rgba(255,255,255,0.5)
-    background url(../images/mozvr-mozilla.svg) 100% 50% no-repeat
-    background-size 100% 100%
-    height 60px
-    padding-top 20px
-    margin 40px 0 20px
-*/
-
-// Use this version if adding to right block
-.credits
-    background url(../images/mozvr-white.svg) 45% 60% no-repeat
-    background-size 80% 80%
-    position absolute
-    bottom 0
-    right 0
-    height 50px
-    width 90px
-    margin 0px 20px 20px
-    &:hover
-        background-color rgba(0,0,0,0.1)
-
-.examples-subnav
-    margin-top 0.5rem
-
-.btn-index
-    color rgba(255,255,255,1)
-
-.content--index
-    // This extends styles in `_common`.
-    flex-direction row
-    .aframe-animation
-        background-color #24CAFF
-        position relative
-        width 65%
-    .copy__wrap
-        width 35%
-        min-width 440px
-    .slogan
-        color #fff
-        font-size 2.5rem
-        font-weight 300
-        line-height 1.2
-        letter-spacing -0.05rem
-        // text-transform uppercase
-    .intro
-        color #fff
-        font-size 1.4rem
-        font-weight 300
-        line-height 1.4
-        width 350px
-    .disclaimer
-        color rgba(255,255,255,0.5)
-
-.menu
-    margin-bottom 60px
-
-.menu-item
-    display inline-block
-    a
-        font-family $code-font
-        text-transform uppercase
-        color rgba(0,0,0,0.75)
-        margin-right 20px
-        border none
-    a:hover
-        color rgba(0,0,0,1)
-        background-color rgba(0,0,0,0.02)
-        border-bottom 1px solid rgba(0,0,0,0.5)
-
-.get-started
-    background-color white
-    border 3px solid white
-    color #000
-    display inline-block
-    font 300px 15px $mono-font
-    letter-spacing 0.05rem
-    text-align center
-    transition 0.05s ease
-    text-transform uppercase
-    padding 8px 30px
-    margin-top 2rem
-    &:hover
-        background-color white
-        // border 3px solid #000
-        color $pink
-    &:active
-        opacity 0.8
-
-.mobile-get-started
-    display none
-
-
-@media screen and (max-width: 399px)
-    #logo
-        max-width 40vw
-
-@media screen and (min-width: 480px)
-    .example__viewsource
-        top 20px
-        right 20px
-
-@media screen and (min-width: 800px)
-    .example__viewsource
-        top 30px
-        right 30px
-
-@media screen and (max-width: 800px)
-    html:not([data-is-home="true"])
-        .mobile-get-started
-            display inline-block
-            position absolute
-            padding 4px 5vw
-            margin-top 0
-            right 20px
-            top 20px
-
-        .main
-            flex-direction column
-            justify-content space-between
-
-        .example__iframe
-            height 100%
-
-        .content--body
-            position absolute
-            bottom 0
-            left 0
-            top 0
-            right 0
-
-        .sidebar,
-        .sidebar__wrap
-            height 150px
-            overflow-x hidden
-
-        .sidebar
-            order 1  // Move to bottom
-            padding 0
-            position relative
-            max-width 100%
-            width 100%
-
-            .nav
-                border 0
-                margin-bottom 0
-                padding 20px 0 0
-
-        .example-nav
-            position absolute
-            height 80px
-            bottom 0
-            left 0
-            width 100%
-
-        #logo
-            display block
-            height 35px
-            pointer-events none
-
-        .logo__wordmark
-            background-position 0 50%
-            background-size contain
-            width 100%
-
-        .example-nav-link
-            border 0
-            height 100%
-            font-size 2rem
-            font-weight 600
-            width 50%
-            margin 0
-            padding 0.5rem 16px
-            position absolute
-            bottom 0
-            span
-                display none
-
-        .example-nav-prev
-            left 0
-
-        .example-nav-next
-            right 0
-
-        .subnav-item.current
-            padding 0.5rem 2rem
-            position absolute
-            top 75px
-            left 0
-            right 0
-            pointer-events none
-            text-align center
-            width 100%
-            .subnav-link
-                font-size 1.4rem
-
-        .subnav-item:not(.current),
-        .page-title
-            display none
-
-        .examples-list
-            border 0
-            padding 0
-
-        .example-nav
-            margin-top 0
-
-// Hide sidebar since iOS cannot enter fullscreen.
-@media only screen and (max-device-width: 736px) and (orientation: landscape)
-    .sidebar
-        display none
+@media screen and (max-width: 800px) {
+  .mobile-get-started {
+    display: inline-block;
+    position: absolute;
+    padding: 4px 5vw;
+    margin-top: 0;
+    right: 20px;
+    top: 20px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .example__iframe {
+    height: 100%;
+  }
+  .content--body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  .sidebar__wrap,
+  .copy__wrap {
+    padding: 20px;
+  }
+  .sidebar,
+  .sidebar__wrap {
+    height: 150px;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    order: 1;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+  .sidebar .nav {
+    border: 0;
+    margin-bottom: 0;
+    padding: 20px 0 0;
+  }
+  .example-nav {
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  #logo {
+    display: block;
+    height: 35px;
+    pointer-events: none;
+  }
+  .logo__wordmark {
+    background-position: 0 50%;
+    background-size: contain;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .example-nav-link {
+    border: 0;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    margin: 0;
+    padding: 0.5rem 16px;
+    position: absolute;
+    bottom: 0;
+  }
+  .example-nav-link span {
+    display: none;
+  }
+  .example-nav-prev {
+    left: 0;
+  }
+  .example-nav-next {
+    right: 0;
+  }
+  .subnav-item.current {
+    padding: 0.5rem 2rem;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    text-align: center;
+    width: 100%;
+  }
+  .subnav-item.current .subnav-link {
+    font-size: 1.4rem;
+  }
+  .subnav-item:not(.current),
+  .page-title {
+    display: none;
+  }
+  .examples-list {
+    border: 0;
+    padding: 0;
+  }
+  .example-nav {
+    margin-top: 0;
+  }
+}

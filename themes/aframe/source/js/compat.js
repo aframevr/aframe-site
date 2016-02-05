@@ -1,6 +1,8 @@
 (function () {
 
-// MOBILE
+var html = document.documentElement;
+var rootUrl = html.getAttribute('data-root');
+
 function isIOS () {
   return /iPad|iPhone|iPod/.test(navigator.platform);
 }
@@ -19,23 +21,18 @@ function isMobile () {
 }
 
 if (isMobile()) {
-  var html = document.documentElement;
   if (html.getAttribute('data-is-home') === 'true') {
-    window.location.href = 'examples/';
+    // TODO: Make responsive home.
+    window.location.href = rootUrl + 'examples/';
     return;
   }
 
-  if (window.location.pathname.indexOf('examples/showcase/videosphere') !== -1) {
-    if (window.location.search.indexOf('?prev') !== -1 || window.location.search.indexOf('&prev') !== -1) {
-      window.location.href = '../../showcase/composite/';
-    }
-    if (window.location.search.indexOf('?next') !== -1 || window.location.search.indexOf('&next') !== -1) {
-      window.location.href = '../../showcase/curved-mockups/';
-    }
-  }
-
+  // TODO: Hide videosphere on mobile.
 
   html.setAttribute('data-is-mobile', 'true');
 }
+
+html.setAttribute('data-has-vr', 'getVRDevices' in navigator);
+html.setAttribute('data-has-touch', 'ontouchstart' in window);
 
 })();
