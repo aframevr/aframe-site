@@ -150,7 +150,9 @@ a
 
     td
         background #fff
+        border-bottom 1px solid #eee
         font-size $table-body-font-size
+        font-size 12px
         vertical-align top
 
     tr:not(:last-child) td
@@ -377,7 +379,9 @@ if numbered_debug
     h3[id],
     h4[id],
     h5[id],
-    h6[id]
+    h6[id],
+    .copy__wrap > table[id] tr th:first-child,
+    .copy__wrap > table tr[id] td:first-child
         cursor pointer
         position relative
         &:before
@@ -477,7 +481,9 @@ if numbered_debug
         h3[id],
         h4[id],
         h5[id],
-        h6[id]
+        h6[id],
+        .copy__wrap > table[id] tr th:first-child,
+        .copy__wrap > table tr[id] td:first-child
             &:before
                 left: -1rem
 
