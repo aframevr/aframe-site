@@ -5,7 +5,7 @@ layout: index
 ---
 
 <div class="intro copy">
-Use markup to create VR experiences that work across desktop, iPhones, and the Oculus Rift. <em class="disclaimer">Android support coming soon.</em></div>
+Use markup to create VR experiences that work across desktop, iOS, Android, and the Oculus Rift.
 
 <!--
 View the <a href="examples/" class="btn-index btn-examples">examples</a>.
