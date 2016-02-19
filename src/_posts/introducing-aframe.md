@@ -6,7 +6,7 @@ layout: blog
 
 ### Today the MozVR team releases the first version of A-Frame: an open source framework for creating WebVR experiences with markup.
 
-A-Frame makes it easy for web developers to create virtual reality experiences that work across desktop, iPhone (Android support coming soon), and the Oculus Rift.
+A-Frame makes it easy for web developers to create virtual reality experiences that work across desktop, iPhone, Android, and the Oculus Rift.
 
 We created A-Frame to make it easier to create VR web experiences. WebVR has shipped in builds of Firefox and Chromium since the summer of 2014, but creating content for it has required knowing WebGL. The WebGL scene is unbelievably talented and has created many mind-blowing VR experiences in the last year, but they are a small subset of the full web dev community. There are millions of talented developers who do not know WebGL. What if each of them could create and share VR experiences on the open web?
 
