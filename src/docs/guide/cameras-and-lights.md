@@ -39,4 +39,4 @@ The light primitive also comes with several useful properties. There are several
 <a-light type="spot"></a-light>
 ```
 
-The attributes differ based on the type of light used. The full list of light primitive attributes is defined in the [documentation](../docs/).
+The attributes differ based on the type of light used. The full list of light primitive attributes is defined in the [documentation](../components/light.html).
