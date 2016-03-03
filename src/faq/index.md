@@ -6,7 +6,7 @@ layout: page
 
 ## What is A-Frame?
 
-A-Frame is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by [MozVR](http://mozvr.com/) (Mozilla's virtual reality team research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL's power, without having to learn its complex low-level API. Because WebGL is ubiquitous in modern browsers on desktop and mobile, A-Frame experiences work across desktop, iPhone (Android support coming soon), and Oculus Rift headsets.
+A-Frame is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by [MozVR](http://mozvr.com/) (Mozilla's virtual reality research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL's power, without having to learn its complex low-level API. Because WebGL is ubiquitous in modern browsers on desktop and mobile, A-Frame experiences work across desktop, iPhone (Android support coming soon), and Oculus Rift headsets.
 
 A-Frame optimizes for a smooth learning curve between beginner ease of use and advanced user flexibility. Beginners start with easily understood primitives like cubes, videos, models, and skies. Advanced users can use JavaScript to imperatively create dynamic and interactive scenes or dive into its underlying entity-component system, a design pattern popular in the game industry that favors composition over inheritance. Because A-Frame is built around building blocks that can be extended and combined into limitless combinations, it provides a high degree of creative freedom.
 
