@@ -58,4 +58,4 @@ Perhaps we want our cube to also emit a sound. We can add the [`sound` component
           sound="src: dangerzone.mp3; volume: 2"></a-entity>
 ```
 
-We see that components make it very easy to compose entities with mixtures of behavior and functionality and everyone can write their own components to modify entities however they desire. For example, someone might write a `vibrate` component that makes the entity vibrate regardless of which kind of entity it is. Although it might seem verbose, it provides a core foundation for abstraction.
+We see that components make it very easy to compose entities with mixtures of behavior and functionality, and anyone can write their own components to modify entities however they desire. For example, someone might write a `vibrate` component that makes the entity vibrate regardless of which kind of entity it is. Although it might seem verbose, it provides a core foundation for abstraction.
