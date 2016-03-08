@@ -17,7 +17,7 @@ The image primitive makes it easy to add JPG and PNG images to a scene. It wraps
 
 [View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-image.html)
 
-To ensure the image is not distorted, make sure the `width` and `height` ratio matches the source bitmap width/height ration. For example, if using an image that is sized 2000x1000 pixels, we would create our image like so:
+To ensure the image is not distorted, make sure the `width` and `height` ratio matches the source bitmap width/height ratio. For example, if using an image that is sized 2000x1000 pixels, we would create our image like so:
 
 ```html
 <a-image src="logo.png" width="200" height="100"></a-image>
