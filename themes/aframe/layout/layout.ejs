@@ -27,7 +27,14 @@
     <meta name="twitter:description" content="<%- config.subtitle %>">
     <meta name="twitter:image" content="https://aframe.io/images/card.png">
 
-    <link rel="icon" href="<%- url_for('images/aframe-logo.png') %>" type="image/x-icon">
+    <meta name="web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" sizes="192x192" href="<%- url_for('images/aframe-logo-192.png') %>">
+
+    <link rel="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="<%- url_for('images/aframe-logo-152.png') %>">
+
     <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- url_for(config.feed.path) %>">
 
     <%- js('js/mobile.js') %>
