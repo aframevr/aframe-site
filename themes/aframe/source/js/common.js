@@ -6,27 +6,6 @@ if ('FastClick' in window) {
   });
 }
 
-function initGoogleAnalytics (id) {
-  (function(c, v, a, n) {
-    c.GoogleAnalyticsObject = n;
-
-    c[n] = c[n] || function () {
-      (c[n].q = c[n].q || []).push(arguments);
-    }, c[n].l = 1 * new Date();
-
-    var s = v.createElement('script');
-    s.async = true;
-    s.src = a;
-
-    var m = v.getElementsByTagName('script')[0];
-    m.parentNode.insertBefore(s, m);
-  })(window, document, 'https://www.google-analytics.com/analytics.js', 'ga');
-  window.ga('create', id, 'auto');
-  window.ga('send', 'pageview');
-}
-
-initGoogleAnalytics('UA-24056643-4');
-
 /**
  * Wraps `querySelector` à la jQuery's `$`.
  *
@@ -71,6 +50,40 @@ var toArray = function (obj) {
     return Array.prototype.slice.call(obj);
   }
   return [obj];
+};
+
+window.getJSON = function (opts, cb) {
+  if (typeof opts === 'string') {
+    opts = {url: opts};
+  } else {
+    opts = opts || {};
+  }
+  var req = new XMLHttpRequest();
+  req.open('get', opts.url);
+  req.setRequestHeader('accept', 'application/json');
+  req.addEventListener('load', function () {
+    var err = null;
+    var response = req.response;
+
+    // It could be a successful response but not an OK one (e.g., 3xx, 4xx).
+    if (req.status === 200) {
+      // `responseType` is not supported in IE <11.
+      try {
+        response = JSON.parse(response);
+      } catch (e) {
+        err = new Error('Could not parse response as JSON');
+      }
+    } else {
+      err = new Error(req.statusText);
+    }
+
+    cb(err, response);
+  });
+  req.addEventListener('error', function () {
+    cb(new Error('Network Error'));
+  });
+  req.send(opts.data);
+  return req;
 };
 
 })();

@@ -1,11 +1,10 @@
-/* global define, module, showPage */
-
+/* global define, module, settings, showPage */
 (function () {
 
 /* Adapted from https://github.com/substack/single-page/ */
 
 // Hijack clicks so we can handle the navigation.
-if (document.documentElement.getAttribute('data-is-spa') === 'true' && window.history && window.history.pushState) {
+if (settings.isSpa && window.history && window.history.pushState) {
   document.body.addEventListener('click', function (e) {
     var isSpaLink = e.target.matches('[data-spa-link]');
     var spaLink = isSpaLink ? e.target : e.target.closest('[data-spa-link]');

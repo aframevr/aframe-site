@@ -1,10 +1,13 @@
 (function () {
 
 var html = document.documentElement;
-var rootUrl = html.getAttribute('data-root');
 
 function isIOS () {
-  return /iPad|iPhone|iPod/.test(navigator.platform);
+  return /iPad|iPhone|iPod/i.test(navigator.platform);
+}
+
+function isAndroid () {
+  return /Android/i.test(navigator.userAgent);
 }
 
 function isMobile () {
@@ -20,19 +23,42 @@ function isMobile () {
   return check;
 }
 
-if (isMobile()) {
-  if (html.getAttribute('data-is-home') === 'true') {
-    // TODO: Make responsive home.
-    window.location.href = rootUrl + 'examples/';
-    return;
-  }
-
-  // TODO: Hide videosphere on mobile.
-
-  html.setAttribute('data-is-mobile', 'true');
+function strToBool (str) {
+  return (str || '').trim().toLowerCase() === 'true';
 }
 
-html.setAttribute('data-has-vr', 'getVRDevices' in navigator);
-html.setAttribute('data-has-touch', 'ontouchstart' in window);
+var settings = window.settings = {};
+Object.keys(html.dataset).forEach(function (key) {
+  settings[key] = html.dataset[key];
+});
+settings.isMobile = isMobile();
+settings.isAndroid = isAndroid();
+settings.isIOS = isIOS();
+settings.isHome = strToBool(settings.isHome);
+settings.isSpa = strToBool(settings.isSpa);
+settings.rootUrl = (settings.rootUrl || '').replace(/\/+$/, '');
+
+html.setAttribute('data-is-mobile', settings.isMobile);
+html.setAttribute('data-is-android', settings.isAndroid);
+html.setAttribute('data-is-ios', settings.isIOS);
+
+if (settings.isMobile && settings.isHome) {
+  // TODO: Make responsive home.
+  window.location.href = settings.rootUrl + '/examples/';
+  return;
+}
+
+// Add an attribute so we can disable certain :hover styles on touch.
+// NOTE: Not using `dataset` for IE compatibility.
+html.setAttribute('data-supports-touch', 'ontouchstart' in window);
+
+// And an attribute for WebVR support.
+var supportsVR = 'getVRDisplays' in navigator;
+var supportsVRLegacy = 'getVRDevices' in navigator;
+html.setAttribute('data-supports-vr', supportsVR || supportsVRLegacy);
+html.setAttribute('data-supports-vr-legacy', supportsVRLegacy);
+
+// For the Mozilla WebVR Plus extension.
+html.setAttribute('data-supports-webvrplus', 'WEBVRPLUS' in window);
 
 })();

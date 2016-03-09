@@ -3,7 +3,7 @@
 <% var showExamples = page.type === 'examples' %>
 <% var isDocs = page.layout === 'docs' %>
 <!DOCTYPE html>
-<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-has-vr="false" data-has-touch="false" data-root="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<% config.spa %>">
+<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<% config.spa %>" data-ga-id="<%- config.google_analytics %>">
   <head>
     <title><%- page.full_title || (isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title) %></title>
     <%- partial('partials/force_https') %>
@@ -59,7 +59,6 @@
       <%- body %>
     </main>
     <%- js('js/common.js') %>
-    <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
     <% if (showExamples) { %>
@@ -68,6 +67,5 @@
     <% if (isDocs) { %>
       <%- js('js/docs.js') %>
     <% } %>
-    isDocs
   </body>
 </html>

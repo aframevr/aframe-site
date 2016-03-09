@@ -16,13 +16,16 @@ hexo.extend.generator.register('docs', function (locals) {
 });
 
 hexo.extend.generator.register('examples.json', function (locals) {
-  hexo.route.set('examples/index.json', JSON.stringify(locals.data.examples));
+  return {
+    path: 'examples/index.json',
+    data: JSON.stringify(locals.data.examples)
+  };
 });
 
 hexo.extend.generator.register('examples', function (locals) {
   var self = this;
-
   var routes = [];
+
   function addRoute (path, data, layout) {
     routes.push({
       path: path,
@@ -34,7 +37,7 @@ hexo.extend.generator.register('examples', function (locals) {
   addRoute('guide/', utils.createRedirectResponse(hexo, 'docs/guide/'));
 
   if (locals.data.examples) {
-    var examples = locals.data.examples.examples;
+    var examples = locals.data.examples.showcase;
     var examplesLookup = {};
     var examplesRedirect = utils.createRedirectResponse(hexo, 'examples/');
 
@@ -43,23 +46,15 @@ hexo.extend.generator.register('examples', function (locals) {
     examples.forEach(function (example, idx) {
       var section = example.section;
 
-      example.idx = idx;
-      example.previous_idx = idx === 0 ? examples.length - 1 : idx - 1;
-      example.next_idx = idx === examples.length - 1 ? 0 : idx + 1;
-
       var permalink = utils.urljoin('examples', section, example.slug, '/');
       example.type = 'examples';
       example.url = permalink;
-      example.is_external = utils.isUrl(example.path);
       addRoute(permalink, example, 'examples');
       examplesLookup[permalink] = example;
-      if (!self.config.examples) { return; }
-      if (permalink === self.config.examples.first_example_url) {
+
+      if (idx === 0) {
         addRoute('examples/', example, 'examples');
       }
-      // if (permalink === self.config.examples.homepage_example_url) {
-      //   addRoute('/', example, 'index');
-      // }
 
       if (sections.indexOf(section) === -1) {
         sections.push(section);

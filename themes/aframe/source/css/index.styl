@@ -30,6 +30,9 @@ a.borderless-links,
 a.borderless-link {
   border: 0;
 }
+.hidden {
+  display !important;
+}
 .hidden-visually {
   border: 0;
   clip: rect(0 0 0 0);
@@ -341,7 +344,7 @@ ul {
 .aframe-animation .example__viewsource {
   display: none;
 }
-[data-is-mobile="true"] .example__viewsource {
+[data-supports-mobile="true"] .example__viewsource {
   display: none;
 }
 .page__title {
@@ -509,4 +512,12 @@ ul {
   .sidebar {
     display: none;
   }
+}
+
+// Hide items based on compatibility.
+// Example: "360 Video" example on mobile until autoplay/inline video UX issues handled properly.
+// See https://github.com/aframevr/aframe/issues/316
+[data-is-android="true"] [data-supports-android="false"],
+[data-is-ios="true"] [data-supports-ios="false"] {
+  display: none !important;
 }
