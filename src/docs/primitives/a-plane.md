@@ -18,7 +18,7 @@ The plane makes it easy to add flat surfaces to a scene. It wraps an entity that
 | shader      | standard      | material.shader      |
 | src         | None          | material.src         |
 | translate   | None          | geometry.translate   |
-| transparent | None          | geometry.transparent |
+| transparent | None          | material.transparent |
 | width       | 1             | material.width       |
 
 [View source on GitHub](https://github.com/aframevr/aframe/blob/master/elements/templates/a-plane.html)
