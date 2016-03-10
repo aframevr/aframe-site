@@ -1,5 +1,7 @@
 # aframe-site
 
+> NOTE: The working docs have moved to https://github.com/aframevr/aframe/tree/master/docs
+
 This site powers the __[A-Frame site](https://aframe.io/)__.
 
 This site is built using [hexo](http://hexo.io/). Site content is written in [Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in the [`src/`](src/) directory). Pull requests are welcome!
