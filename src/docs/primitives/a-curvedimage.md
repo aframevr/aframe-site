@@ -13,7 +13,7 @@ The curved image primitive wraps an entity that contains [`geometry`](../compone
 | Attribute       | Default Value  | Component Mapping       |
 |-----------------|----------------|-------------------------|
 | height          | 1              | geometry.height         |
-| opacty          | 1              | geometry.radius         |
+| opacity          | 1              | material.opacity         |
 | radius          | 2              | geometry.radius         |
 | segments-radial | 48             | geometry.segmentsRadial |
 | src             | None           | material.src            |
