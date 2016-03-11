@@ -18,10 +18,13 @@
     "hexo-server": "^0.1.2",
     "lodash": "^3.10.1",
     "markdown": "^0.5.0",
+    "ncp": "^2.0.0",
+    "node-zip": "^1.1.1",
     "request": "^2.67.0"
   },
   "devDependencies": {
-    "hexo-cli": "^0.1.9"
+    "hexo-cli": "^0.1.9",
+    "unzip": "^0.1.11"
   },
   "hexo": {
     "version": "3.1.1"
@@ -29,6 +32,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run clean && npm run server",
+    "docs": "node scripts/docs.js",
     "server": "hexo server",
     "generate": "hexo generate",
     "predeploy": "hexo clean",
