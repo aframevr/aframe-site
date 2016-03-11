@@ -1,8 +1,13 @@
 (function () {
 
-// MOBILE
+var html = document.documentElement;
+
 function isIOS () {
-  return /iPad|iPhone|iPod/.test(navigator.platform);
+  return /iPad|iPhone|iPod/i.test(navigator.platform);
+}
+
+function isAndroid () {
+  return /Android/i.test(navigator.userAgent);
 }
 
 function isMobile () {
@@ -18,24 +23,42 @@ function isMobile () {
   return check;
 }
 
-if (isMobile()) {
-  var html = document.documentElement;
-  if (html.getAttribute('data-is-home') === 'true') {
-    window.location.href = 'examples/';
-    return;
-  }
-
-  if (window.location.pathname.indexOf('examples/showcase/videosphere') !== -1) {
-    if (window.location.search.indexOf('?prev') !== -1 || window.location.search.indexOf('&prev') !== -1) {
-      window.location.href = '../../showcase/composite/';
-    }
-    if (window.location.search.indexOf('?next') !== -1 || window.location.search.indexOf('&next') !== -1) {
-      window.location.href = '../../showcase/curved-mockups/';
-    }
-  }
-
-
-  html.setAttribute('data-is-mobile', 'true');
+function strToBool (str) {
+  return (str || '').trim().toLowerCase() === 'true';
 }
+
+var settings = window.settings = {};
+Object.keys(html.dataset).forEach(function (key) {
+  settings[key] = html.dataset[key];
+});
+settings.isMobile = isMobile();
+settings.isAndroid = isAndroid();
+settings.isIOS = isIOS();
+settings.isHome = strToBool(settings.isHome);
+settings.isSpa = strToBool(settings.isSpa);
+settings.rootUrl = (settings.rootUrl || '').replace(/\/+$/, '');
+
+html.setAttribute('data-is-mobile', settings.isMobile);
+html.setAttribute('data-is-android', settings.isAndroid);
+html.setAttribute('data-is-ios', settings.isIOS);
+
+if (settings.isMobile && settings.isHome) {
+  // TODO: Make responsive home.
+  window.location.href = settings.rootUrl + '/examples/';
+  return;
+}
+
+// Add an attribute so we can disable certain :hover styles on touch.
+// NOTE: Not using `dataset` for IE compatibility.
+html.setAttribute('data-supports-touch', 'ontouchstart' in window);
+
+// And an attribute for WebVR support.
+var supportsVR = 'getVRDisplays' in navigator;
+var supportsVRLegacy = 'getVRDevices' in navigator;
+html.setAttribute('data-supports-vr', supportsVR || supportsVRLegacy);
+html.setAttribute('data-supports-vr-legacy', supportsVRLegacy);
+
+// For the Mozilla WebVR Plus extension.
+html.setAttribute('data-supports-webvrplus', 'WEBVRPLUS' in window);
 
 })();

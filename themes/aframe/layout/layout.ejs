@@ -1,8 +1,9 @@
 <% var projectTitle = config.title + ' – ' + config.subtitle %>
 <% var isHome = is_current('index.html') %>
 <% var showExamples = page.type === 'examples' %>
+<% var isDocs = page.layout === 'docs' %>
 <!DOCTYPE html>
-<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false">
+<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<% config.spa %>" data-ga-id="<%- config.google_analytics %>">
   <head>
     <title><%- page.full_title || (isHome ? projectTitle : (page.title ? page.title + ' — ' : '') + config.title) %></title>
     <%- partial('partials/force_https') %>
@@ -37,12 +38,17 @@
 
     <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- url_for(config.feed.path) %>">
 
-    <%- js('js/mobile.js') %>
+    <%- js('js/compat.js') %>
+
     <% if (showExamples) { %>
-      <%- css('css/examples') %>
+      <%- css('css/index') %>
+      <% if (!isHome) { %>
+        <%- css('css/examples') %>
+      <% } %>
     <% } else { %>
       <%- css('css/secondary') %>
     <% } %>
+
     <%- partial('partials/ga') %>
   </head>
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
@@ -54,15 +60,12 @@
     </main>
     <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
-    <script>
-      (function () {
-        if ('FastClick' in window) {
-          document.addEventListener('DOMContentLoaded', function () {
-            FastClick.attach(document.body);
-          });
-        }
-      })();
-    </script>
+    <%- js('js/single-page.js') %>
+    <% if (showExamples) { %>
+      <%- js('js/examples.js') %>
+    <% } %>
+    <% if (isDocs) { %>
+      <%- js('js/docs.js') %>
+    <% } %>
   </body>
 </html>

@@ -1,40 +1,37 @@
+<% var currentUrl = page_url(page.path) %>
+
 <aside class="sidebar">
   <div class="sidebar__wrap">
     <div class="sidebar__wrap__inner">
 
-      <%- partial('partials/examples/sidebar_header') %>
+      <header id="header" class="header">
+        <a id="logo" class="logo borderless-links" href="/">
+          <span class="logo__wordmark">A-Frame</span>
+        </a>
+      </header>
+
+      <a href="/docs/" class="mobile-get-started nav-link get-started">
+        Get Started
+      </a>
 
       <div class="list examples-list">
         <h2 class="page-title">Examples</h2>
 
-        <% var examples = site.data.examples.examples %>
-        <% if (examples) { %>
-          <ul class="subnav examples-subnav borderless-links">
-            <% examples.forEach(function (example) { %>
-              <% var isCurrent = page.section === example.section && page.slug === example.slug %>
-              <li data-url="<%- url_for(example.url) %>"
-                  data-idx="<%- example.idx %>"
-                  data-previous-idx="<%- example.previous_idx %>"
-                  data-next-idx="<%- example.next_idx %>"
-                  class="subnav-item<%- isCurrent ? ' current' : '' %>"><a href="<%- url_for(example.url) %>" class="subnav-link<%- isCurrent ? ' current' : '' %>"><span class="sidebar__link__text"><%- example.title %></span></a></li>
-            <% }) %>
-          </ul>
-        <% } %>
+        <ul id="examplesSubnav" class="subnav examples-subnav borderless-links">
+          <% site.data.examples.showcase.forEach(function (item, idx) { %>
+            <% var localUrl = url_for(example_url(item)) %>
+            <% var className = localUrl === currentUrl ? ' current' : '' %>
+            <% var supportsAndroid = item.supports && ('android' in item.supports) ? item.supports.android : true %>
+            <% var supportsIOS = item.supports && ('ios' in item.supports) ? item.supports.ios : true %>
 
-        <% if (examples) { %>
-          <nav class="example-nav c">
-            <% var prevExample = examples[page.previous_idx] %>
-            <% if (prevExample) { %>
-              <a id="examplePrev" class="example-nav-link example-nav-prev" href="<%- url_for(prevExample.url) %>?prev">← <span>Previous</span></a>
-            <% } %>
+            <li data-supports-android="<%= supportsAndroid %>" data-supports-ios="<%= supportsIOS %>" data-url="<%= item.url %>" data-scene-url="<%= item.scene_url %>" data-slug="<%= item.slug %>" data-idx="<%= idx %>" class="example-item subnav-item<%= className %>"><a data-spa-link href="<%= localUrl %>" class="subnav-link<%= className %>"><span class="sidebar__link__text"><%= item.title %></span></a></li>
+          <% }) %>
+        </ul>
 
-            <% var nextExample = examples[page.next_idx] %>
-            <% if (nextExample) { %>
-              <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="<%- url_for(nextExample.url) %>?next"><span>Next</span> →</a>
-            <% } %>
-          </nav>
-        <% } %>
-
+        <nav class="example-nav c">
+          <a id="examplePrev" class="example-nav-link example-nav-prev" href="">← <span>Previous</span></a>
+          <a id="exampleNext" class="example-nav-link example-nav-next float-right" href=""><span>Next</span> →</a>
+        </nav>
       </div>
 
     </div>

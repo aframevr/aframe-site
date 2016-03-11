@@ -1,88 +1,113 @@
 {
   "title": "Examples",
-  "examples": [
+  "home": {
+    "section": "home",
+    "slug": "home",
+    "scene_url": "https://aframe.io/aframe/examples/animation-aframe-logo/?ui=false",
+    "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation-aframe-logo/index.html",
+    "title": "A-Frame Logo Animation"
+  },
+  "showcase": [
     {
       "section": "showcase",
       "slug": "helloworld",
-      "path": "boilerplate-helloworld/",
+      "scene_url": "https://aframe.io/aframe/examples/boilerplate-helloworld/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate-helloworld/index.html",
       "title": "Hello World"
     },
     {
       "section": "showcase",
       "slug": "anime-UI",
-      "path": "showcase-anime-UI/",
+      "scene_url": "https://aframe.io/aframe/examples/showcase-anime-UI/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase-anime-UI/index.html",
       "title": "Anime UI"
     },
     {
       "section": "showcase",
       "slug": "composite",
-      "path": "showcase-composite/",
+      "scene_url": "https://aframe.io/aframe/examples/showcase-composite/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase-composite/index.html",
       "title": "Composite"
     },
     {
       "section": "showcase",
       "slug": "videosphere",
-      "path": "template-videosphere/",
-      "title": "360 Video"
+      "scene_url": "https://aframe.io/aframe/examples/template-videosphere/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/template-videosphere/index.html",
+      "title": "360 Video",
+      "supports": {
+        "android": false,
+        "ios": false
+      }
     },
     {
       "section": "showcase",
       "slug": "curved-mockups",
-      "path": "showcase-curved-mockups/",
+      "scene_url": "https://aframe.io/aframe/examples/showcase-curved-mockups/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase-curved-mockups/index.html",
       "title": "Curved Mockups"
     },
     {
       "section": "showcase",
       "slug": "spheres-and-fog",
-      "path": "showcase-spheres-and-fog/",
+      "scene_url": "https://aframe.io/aframe/examples/showcase-spheres-and-fog/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase-spheres-and-fog/index.html",
       "title": "Spheres & Fog"
     },
     {
       "section": "showcase",
       "slug": "shopping",
-      "path": "showcase-shopping/",
+      "scene_url": "https://aframe.io/aframe/examples/showcase-shopping/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase-shopping/index.html",
       "title": "Shopping"
     },
     {
       "section": "showcase",
       "slug": "warps",
-      "path": "animation-warps/",
+      "scene_url": "https://aframe.io/aframe/examples/animation-warps/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation-warps/index.html",
       "title": "Warp"
     },
     {
       "section": "showcase",
       "slug": "generic-logo",
-      "path": "animation-generic-logo/",
+      "scene_url": "https://aframe.io/aframe/examples/animation-generic-logo/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation-generic-logo/index.html",
       "title": "Logo"
     },
     {
       "section": "showcase",
       "slug": "unfold",
-      "path": "animation-unfold/",
+      "scene_url": "https://aframe.io/aframe/examples/animation-unfold/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation-unfold/index.html",
       "title": "Unfold"
     },
     {
       "section": "showcase",
       "slug": "sky",
-      "path": "template-sky/",
+      "scene_url": "https://aframe.io/aframe/examples/template-sky/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/template-sky/index.html",
       "title": "Panorama"
     },
     {
       "section": "showcase",
       "slug": "cursor",
-      "path": "interaction-cursor/",
+      "scene_url": "https://aframe.io/aframe/examples/interaction-cursor/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/interaction-cursor/index.html",
       "title": "Cursor & Hover"
     },
     {
       "section": "showcase",
       "slug": "lookat",
-      "path": "interaction-lookat/",
+      "scene_url": "https://aframe.io/aframe/examples/interaction-lookat/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/interaction-lookat/index.html",
       "title": "Look At"
     },
     {
       "section": "showcase",
       "slug": "basics",
-      "path": "entitycomponent-basics/",
+      "scene_url": "https://aframe.io/aframe/examples/entitycomponent-basics/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/entitycomponent-basics/index.html",
       "title": "Entity-Component"
     }
   ]
