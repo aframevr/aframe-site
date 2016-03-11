@@ -6,7 +6,6 @@
     "bluebird": "^3.3.4",
     "glob": "^7.0.3",
     "hexo": "^3.2.0",
-    "hexo-admin": "^1.1.1",
     "hexo-browsersync": "^0.2.0",
     "hexo-deployer-git": "0.1.0",
     "hexo-generator-archive": "^0.1.4",
