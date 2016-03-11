@@ -18,7 +18,7 @@ A-Frame is designed to be familiar to those web developers. It wraps the power o
 <!doctype html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.1.2/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>

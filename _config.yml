@@ -125,8 +125,7 @@ github:
     repo: aframe-site
     url: https://github.com/aframevr/aframe-site/
 
-
-aframe_version: 0.1.0
+aframe_version: 0.2.0
 
 # Single-Page App
 spa: false

@@ -1,18 +1,68 @@
 var utils = require('../lib/utils');
 
-hexo.extend.generator.register('blog-post-introducing-aframe', function (locals) {
+hexo.extend.generator.register('blog-post-introducing-aframe', function () {
   return {
     path: 'blog/2015/12/16/0.0.10-release/',
     data: utils.createRedirectResponse(hexo, 'blog/2015/12/16/introducing-aframe/')
   };
 });
 
-hexo.extend.generator.register('docs', function (locals) {
-  return {
-    path: 'docs/',
-    // TODO: Redirect to http://docs.aframe.io/
-    data: utils.createRedirectResponse(hexo, 'docs/guide/')
-  };
+hexo.extend.generator.register('docs-redirects', function () {
+  return [
+    {
+      path: 'docs/',
+      data: utils.createRedirectResponse(hexo, 'docs/guide/')
+    },
+    {
+      path: 'docs/components/loader.html',
+      data: utils.createRedirectResponse(hexo, 'docs/components/collada-model.html')
+    },
+    {
+      path: 'docs/core/animation.html',
+      data: utils.createRedirectResponse(hexo, 'docs/core/animations.html')
+    },
+    {
+      path: 'docs/core/assets.html',
+      data: utils.createRedirectResponse(hexo, 'docs/core/asset-management-system.html')
+    },
+    {
+      path: 'docs/core/mixin.html',
+      data: utils.createRedirectResponse(hexo, 'docs/core/mixins.html')
+    },
+    {
+      path: 'docs/core/templates.html',
+      data: utils.createRedirectResponse(hexo, 'https://github.com/ngokevin/aframe-template-component')
+    },
+    {
+      path: 'docs/guide/cameras-and-lights.html',
+      data: utils.createRedirectResponse(hexo, 'docs/guide/building-a-basic-scene.html')
+    },
+    {
+      path: 'docs/guide/entering-vr.html',
+      data: utils.createRedirectResponse(hexo, 'http://mozvr.com/#start')
+    },
+    {
+      path: 'docs/guide/installation.html',
+      data: utils.createRedirectResponse(hexo, 'docs/guide/getting-started.html')
+    },
+    {
+      path: 'docs/guide/objects.html',
+      data: utils.createRedirectResponse(hexo, 'docs/guide/building-a-basic-scene.html')
+    },
+    {
+      path: 'docs/guide/positioning.html',
+      data: utils.createRedirectResponse(hexo, 'docs/guide/building-a-basic-scene.html#Transforming-the-Box')
+    },
+    {
+      path: 'docs/primitives/a-cube.html',
+      data: utils.createRedirectResponse(hexo, 'docs/primitives/a-box.html')
+    },
+    {
+      path: 'docs/primitives/a-model.html',
+      data: utils.createRedirectResponse(hexo, 'docs/primitives/a-collada-model.html')
+    },
+
+  ];
 });
 
 hexo.extend.generator.register('examples.json', function (locals) {
