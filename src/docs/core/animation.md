@@ -25,7 +25,7 @@ There are many attributes and values used to define animations. Below is a table
 | Attribute   | Description                                                                                                             | Default Value  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------|----------------|
 | attribute   | Attribute to animate. To specify a component attribute, use `componentName.property` syntax (e.g., `light.intensity`). | rotation       |
-| begin       | Delay (in milliseconds) or event name to wait on before beginning animation.                                            | 0              |
+| begin       | Delay (in milliseconds) or event name (e.g., `click`, `fusing`, `mouseenter`, `mouseleave`) to wait on before beginning animation.                                            | 0              |
 | direction   | Direction of the animation (between `from` and `to`). One of `alternate`, `alternateReverse`, `normal`, `reverse`.      | normal         |
 | dur         | Duration in (milliseconds) of the animation.                                                                                 | 1000           |
 | easing      | Easing function of the animation. There are very many to choose from.                                                   | ease           |
@@ -103,11 +103,21 @@ For example, to animate a cylinder's top radius, we can select the `radiusTop` v
 
 The `begin` attribute defines when the animation should start playing.
 
-This can either be a number of milliseconds to delay or triggered by an event. In this example, we define an animation that waits 2 seconds, from when the animation is attached, before scaling an entity.
+This can either be a number of milliseconds to delay or triggered by an event (e.g., `click`, `fusing`, `mouseenter`, `mouseleave`).
+
+In this example, we define an animation that waits 2 seconds, from when the animation is attached, before scaling an entity.
 
 ```html
 <a-entity>
   <a-animation attribute="scale" begin="2000" to="2 2 2"></a-animation>
+</a-entity>
+```
+
+Or we could listen for when the element is hovered over:
+
+```html
+<a-entity>
+  <a-animation attribute="scale" begin="mouseenter" to="2 2 2"></a-animation>
 </a-entity>
 ```
 
