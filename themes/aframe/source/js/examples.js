@@ -67,9 +67,12 @@ function fetchExamples (examples) {
       tempExamplesSubnav.appendChild(li);
 
       item.url = url;
-      item.li = li;
-      item.a = a;
-      item.span = span;
+      item.getLi = function () {
+        return $('.example-item[data-slug="' + this.slug + '"]');
+      };
+      item.getA = function () {
+        return $('.example-item[data-slug="' + this.slug + '"] a');
+      };
 
       examplesRoutes[url] = item;
     });
@@ -183,7 +186,8 @@ function init () {
 
         document.title = getTitle(currentExample.title);
 
-        currentExample.a.classList.add('current');
+        currentExample.getLi().classList.add('current');
+        currentExample.getA().classList.add('current');
       }
 
       exampleIframe.setAttribute('src', currentExample.scene_url);
