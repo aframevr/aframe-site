@@ -106,6 +106,7 @@ function init () {
   }
 
   function clickNavLink (link) {
+    currentLink = getCurrentNavLink();
     if (!currentLink || currentLink === link) { return; }
     currentLink.classList.remove('current');
     currentLink.classList.remove('click');
@@ -124,6 +125,7 @@ function init () {
   }
 
   function getDestNavLink (left) {
+    currentLink = getCurrentNavLink();
     var idx = parseInt(currentLink.parentNode.getAttribute('data-idx'), 10);
 
     var offset = left ? -1 : 1;
