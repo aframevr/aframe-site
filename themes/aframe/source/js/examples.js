@@ -4,6 +4,12 @@
 var path = window.location.pathname;
 var pathWithSlash = forceTrailingSlash(path);
 
+var a = document.createElement('a');
+function parseUrl (url) {
+  a.href = url;
+  return a;
+}
+
 function stripTrailingSlash (url) {
   if (url === '/') { return url; }
   return url.replace(/\/+$/, '');
@@ -176,8 +182,7 @@ function init () {
   });
 
   var showPage = singlePage(function (href) {
-
-    var hrefWithSlash = forceTrailingSlash(href);
+    var hrefWithSlash = forceTrailingSlash(parseUrl(href).pathname);
 
     var exampleIframe = document.querySelector('#exampleIframe');
     if (exampleIframe) {
