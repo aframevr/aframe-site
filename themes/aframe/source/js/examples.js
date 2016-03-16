@@ -4,7 +4,13 @@
 var path = window.location.pathname;
 var pathWithSlash = forceTrailingSlash(path);
 
+function stripTrailingSlash (url) {
+  if (url === '/') { return url; }
+  return url.replace(/\/+$/, '');
+}
+
 function forceTrailingSlash (str) {
+  str = stripTrailingSlash(url);
   if (str.substr(-1) !== '/') {
     str += '/';
   }
