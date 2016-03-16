@@ -10,7 +10,7 @@ function stripTrailingSlash (url) {
 }
 
 function forceTrailingSlash (str) {
-  str = stripTrailingSlash(url);
+  str = stripTrailingSlash(str);
   if (str.substr(-1) !== '/') {
     str += '/';
   }
