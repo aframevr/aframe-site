@@ -59,7 +59,7 @@ Most likely, yes. A-Frame's interface is through the standard HTML and DOM APIs,
 
 Mobile browsers have limitations with displaying inline video.
 
-On iOS to get inline video with autoplay, we must:
+Because of an [iOS platform restriction](https://developer.apple.com/library/iad/documentation/UserExperience/Conceptual/iAdJSProgGuide/PlayingVideosinAds/PlayingVideosinAds.html) in order to get inline video (with or without autoplay), we must:
 
 - Set the `<meta name="apple-mobile-web-app-capable" content="yes">` metatag.
 - Set the `webkit-playsinline` attribute to the video element.
