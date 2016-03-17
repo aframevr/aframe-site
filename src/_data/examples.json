@@ -33,7 +33,7 @@
       "section": "showcase",
       "slug": "videosphere",
       "scene_url": "https://aframe.io/aframe/examples/template-videosphere/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/template-videosphere/index.html",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate-360video/index.html",
       "title": "360 Video",
       "supports": {
         "android": false,
@@ -86,21 +86,21 @@
       "section": "showcase",
       "slug": "sky",
       "scene_url": "https://aframe.io/aframe/examples/template-sky/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/template-sky/index.html",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/primitives-sky/index.html",
       "title": "Panorama"
     },
     {
       "section": "showcase",
       "slug": "cursor",
       "scene_url": "https://aframe.io/aframe/examples/interaction-cursor/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/interaction-cursor/index.html",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/declarative-events-cursor/index.html",
       "title": "Cursor & Hover"
     },
     {
       "section": "showcase",
       "slug": "lookat",
       "scene_url": "https://aframe.io/aframe/examples/interaction-lookat/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/interaction-lookat/index.html",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/primitives-lookat/index.html",
       "title": "Look At"
     }
   ]
