@@ -1,7 +1,7 @@
 <% var projectTitle = config.title + ' – ' + config.subtitle %>
 <% var isHome = is_current('index.html') %>
 <% var showExamples = page.type === 'examples' %>
-<% var isDocs = page.layout === 'docs' %>
+<% var isSecondary = page.layout !== 'examples' %>
 <!DOCTYPE html>
 <html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<% config.spa %>" data-ga-id="<%- config.google_analytics %>">
   <head>
@@ -64,7 +64,7 @@
     <% if (showExamples) { %>
       <%- js('js/examples.js') %>
     <% } %>
-    <% if (isDocs) { %>
+    <% if (isSecondary) { %>
       <%- js('js/docs.js') %>
     <% } %>
   </body>
