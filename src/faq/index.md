@@ -76,7 +76,7 @@ These issues are filed on [GitHub][videoissue]. We plan on improving the user ex
 
 ## How do I display `<iframe>`s or render HTML in A-Frame?
 
-Currently as a limitation of the browser, `<iframe>`s can not be displayed within A-Frame, used as a texture, or be mixed with WebGL or VR. While it is possible to [overlay an IFrame on top of the scene](http://learningthreejs.com/blog/2013/04/30/closing-the-gap-between-html-and-webgl/), it won't display properly in stereoscopic mode (VR) with proper distortion, and it won't be properly shaded. There may be browser features in the future that will help enable this.
+Currently as a limitation of the browser, `<iframe>`s can not be displayed within A-Frame, used as a texture, or be mixed with WebGL or WebVR. While it is possible to [overlay an iframe on top of the scene](http://learningthreejs.com/blog/2013/04/30/closing-the-gap-between-html-and-webgl/), it won't display properly in stereoscopic mode (VR) with proper distortion, and it won't be properly shaded. There may be browser features in the future that will help enable this.
 
 To render HTML as a texture in A-Frame, it is not as easy as dropping HTML into `<a-scene>`. Solutions involve painting to a `<canvas>` and using the canvas as texture. The A-Frame community has shared some components for this:
 
@@ -88,7 +88,7 @@ To render HTML as a texture in A-Frame, it is not as easy as dropping HTML into 
 Standard text support for A-Frame is coming shortly. We have been focusing on the core foundations of the API and have yet to ramp up on features. In the meantime, the A-Frame community has shared some components for rendering text:
 
 - [Text Geometry Component][textgeometrycomponent]
-- [Text Wrap Component][textwrapcomonent]
+- [Text Wrap Component][textwrapcomponent]
 
 Alternatively, you can save text to an image using a visual program, and just use the image.
 
@@ -118,7 +118,7 @@ There are several community channels available for sharing experiences built wit
 
 ## How can I get in touch with the A-Frame team?
 
-We are extremely responsive on. You can reach us via:
+We are an extremely responsive and helpful bunch. You can reach us via:
 
 - [A-Frame Slack channel][slack]
 - Twitter [@aframevr][twitter]
@@ -130,7 +130,7 @@ We love questions, feedback, bug reports, and pull requests!
 
 Virtual reality is a new and performance-intensive technology. The right combination of hardware and software settings can make the difference between presence and nausea:
 
-- For the Oculus Rift, we recommend using a Windows PC that meets the recommended specs of the [Oculus Rift CV1][riftspec] (consumer version) including a GeForce GTX 970. Unfortunately, OS X is not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site][oculusdev], newer versions of OS X are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs and mobile phones.
+- For the Oculus Rift, we recommend using a Windows PC that meets the recommended specs of the [Oculus Rift CV1][riftspec] (consumer version) including a GeForce GTX 970. Unfortunately, OS X is not recommended for consuming content with the Oculus Rift. Oculus froze Mac and Linux SDK development in the summer of 2015, and while the 0.5.0.1 SDK is still currently available from their [developer site][oculusdev], newer versions of OS X are beginning to break support for the Rift DK2. We still use the 0.5.0.1 with our Macs on the MozVR team, but only during development, to test basics of tracking and scene composition. For actually consuming VR experiences, we use Windows PCs and iOS/Android mobile phones.
 - On mobile, the faster the phone the better. We recommend higher-end smartphones within the last two generations (e.g., iPhone 6 and higher, Samsung Galaxy S6 and higher).
 
 A-Frame is a young framework with several known opportunities for performance improvements. Steadily improving performance and addressing bugs is an ongoing high priority for the development team. If you find bugs or performance improvement opportunities, please file [issues][ghissue] and [pull requests][ghpull]!
@@ -191,7 +191,7 @@ Transparency is tricky in 3D graphics. If you are having issues where transparen
 [leapmotion]: https://www.leapmotion.com/
 [janus]: http://www.janusvr.com/
 [mediael]: https://developer.mozilla.org/docs/Web/API/HTMLMediaElement
-[mozvr]: https://mozvr.com
+[mozvr]: http://mozvr.com
 [oculus]: https://www.oculus.com/
 [oculusdev]: https://developer.oculus.com/downloads/
 [overlayiframe]: http://learningthreejs.com/blog/2013/04/30/closing-the-gap-between-html-and-webgl/
@@ -207,7 +207,7 @@ Transparency is tricky in 3D graphics. If you are having issues where transparen
 [textgeometrycomponent]: https://github.com/ngokevin/aframe-text-component
 [textwrapcomponent]: https://github.com/maxkrieger/aframe-textwrap-component
 [three]: http://threejs.org
-[tumblr]: http://aframevr.tumblr.com/
+[tumblr]: https://aframevr.tumblr.com/
 [turbosquid]: http://www.turbosquid.com/Search/3D-Models/free
 [twitter]: https://twitter.com/aframevr
 [uploader]: https://aframe.io/aframe/examples/_uploader/
