@@ -36,7 +36,7 @@ A-Frame embodies the [Extensible Web][extensible] approach to evolving the web p
 
 See our [guide][guide] for in-depth instructions that will show several ways to quickly get started with A-Frame.
 
-## Does A-Frame support <XXX> feature?
+## Does A-Frame support X feature?
 
 A-Frame ships with only so many standard components and primitives. However being based on top of an [entity-component-system pattern][ecs], A-Frame is highly extensible and modular. If a feature doesn't exist, just [write a component for it][writecomponent]! Or if one of the standard components is too limiting, [fork it][fork]!
 
@@ -46,7 +46,7 @@ Check out what the ecosystem has come up with on [awesome-aframe's collection of
 
 Many people and groups have expressed interest in creating a [Leap Motion][leapmotion] [component][writecomponent]. Nothing has been published yet.
 
-## Does A-Frame support <XXX> library or framework?
+## Does A-Frame support X library or framework?
 
 Most likely, yes. A-Frame's interface is through the standard HTML and DOM APIs, so there should be little reason why it shouldn't. We've found A-Frame works wonderfully with:
 
@@ -65,7 +65,7 @@ On iOS to get inline video with autoplay, we must:
 - Set the `webkit-playsinline` attribute to the video element.
 - Pin the webpage to the iOS homescreen.
 
-On Android, we must:
+On certain Android devices or browsers, we must:
 
 - Require user interaction to trigger the video (such as a click or tap event).
 
@@ -73,6 +73,10 @@ These issues are filed on [GitHub][videoissue]. We plan on improving the user ex
 
 - Instructions and UI to the user the necessary steps to get mobile video playing (pin-to-homescreen, tap).
 - Out-of-the-box components for routing user-triggered events in order to play videos.
+
+## Can I render YouTube videos as a texture?
+
+With some manual effort, you could either proxy YouTube videos as a texture or download them locally to serve, but that is against their terms of service.
 
 ## How do I display `<iframe>`s or render HTML in A-Frame?
 
