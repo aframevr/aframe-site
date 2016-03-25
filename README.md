@@ -22,6 +22,24 @@ To clean the repo's local database:
 You may need to occasionally need to resart the server if you cause breaking changes. Just proceed as usual.
 
 
+## Writing Documentation
+
+First, make sure you have cloned the [core A-Frame library repo](https://github.com/aframevr/aframe).
+
+    cd aframe
+    npm link
+
+And then have `aframe-site` point to that `aframe`:
+
+    cd aframe-site
+    npm link aframe
+
+If you're curious, for the latest stable version of the docs, there's a soft link to the latest version of those directories in `src/docs` that points to `node_modules/aframe/docs/`. It was created like so:
+
+    cd src/docs/
+    ln -s ../../node_modules/aframe/docs/* .
+
+
 ## Deployment
 
 To deploy this to production (GitHub Pages):
