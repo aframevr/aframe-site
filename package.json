@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "aframe": "github:aframevr/aframe#750e019",
+    "aframe": "github:aframevr/aframe#1e0226e",
     "bluebird": "^3.3.4",
     "glob": "^7.0.3",
     "hexo": "^3.2.0",
