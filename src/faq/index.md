@@ -104,7 +104,7 @@ Given that CORS headers are set, if fetching a texture from a different origin o
 
 ## What devices and platforms does A-Frame support?
 
-A-Frame supports the [Oculus Rift][rift] and modern smartphones using [Cardboard holders][cardboard]. A-Frame also works on desktop computers as a normal 3D experience. A-Frame's device support is built on the [WebVR API][webvrspec] and the [WebVR Polyfill][polyfill]. As the WebVR API and Polyfill mature and as WebVR-enabled browsers add support for additional devices like the [HTC Vive][vive], A-Frame will keep up-to-date to support those devices.
+A-Frame supports the [Oculus Rift][riftspec] and modern smartphones using [Cardboard holders][cardboard]. A-Frame also works on desktop computers as a normal 3D experience. A-Frame's device support is built on the [WebVR API][webvrspec] and the [WebVR Polyfill][webvrpolyfill]. As the WebVR API and Polyfill mature and as WebVR-enabled browsers add support for additional devices like the [HTC Vive][vive], A-Frame will keep up-to-date to support those devices.
 
 ## Which mobile devices does A-Frame support?
 
