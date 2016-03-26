@@ -201,6 +201,8 @@ function init () {
     var right = e.keyCode === 39;
     if (!left && !right) { return; }
 
+    currentLink = getCurrentNavLink();
+
     if (!currentLink) {
       // TODO: Swap out when SPA is engaged.
       window.location.href = settings.rootUrl + '/examples/';
