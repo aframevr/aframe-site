@@ -102,7 +102,7 @@ If you are loading the asset from a different domain, you will need [cross-origi
 
 Given that CORS headers are set, if fetching a texture from a different origin or domain such as from an image hosting service or a CDN, then we should specify the `crossorigin` attribute on the `<img>`, `<video>`, or `<canvas>` element used to create a texture. [CORS][cors] security mechanisms in the browser generally disallow reading raw data from media elements from other domains if not explicitly allowed.
 
-## What devices and platforms does A-Frame support?
+## Which devices and platforms does A-Frame support?
 
 A-Frame supports the [Oculus Rift][riftspec] and modern smartphones using [Cardboard holders][cardboard]. A-Frame also works on desktop computers as a normal 3D experience. A-Frame's device support is built on the [WebVR API][webvrspec] and the [WebVR Polyfill][webvrpolyfill]. As the WebVR API and Polyfill mature and as WebVR-enabled browsers add support for additional devices like the [HTC Vive][vive], A-Frame will keep up-to-date to support those devices.
 
@@ -170,7 +170,7 @@ We express it in code and domains as "aframe" as much as possible. Sometimes we 
 
 ## Why aren't my transparent images rendering correctly?
 
-Transparency is tricky in 3D graphics. If you are having issues where transparent images in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or what order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. A possible workaround is to try reordering your elements defined in HTML and see if that produces more expected results.
+Transparency is tricky in 3D graphics. If you are having issues where transparent images in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or in which order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. A possible workaround is to try reordering your elements defined in HTML and see if that produces more expected results.
 
 [aframe-react]: https://github.com/ngokevin/aframe-react
 [archive3d]: http://archive3d.net/
