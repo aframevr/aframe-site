@@ -1,4 +1,5 @@
 @import "_fonts"
+@import "_settings"
 
 * {
   margin: 0;
@@ -13,10 +14,11 @@ html {
   font-size: 14px;
 }
 body {
-  font: normal 1rem/1.5 Fira Sans, Helvetica Neue, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #333;
+  font: $body-font-weight $body-font-size/$body-line-height $body-font-default;
+  color: $medium;
+}
+.font-loaded-body body {
+  font-family: $body-font;
 }
 iframe,
 img,
@@ -55,11 +57,12 @@ strong {
 }
 code,
 pre {
-  font-family: Fira Mono, Andale Mono, Monaco, Courier, monospace;
-  font-size: 0.8rem;
   background-color: #f8f8f8;
-  -webkit-font-smoothing: initial;
-  -moz-osx-font-smoothing: initial;
+  font: 0.8rem $code-font-default;
+}
+.font-loaded-code code,
+.font-loaded-code pre {
+  font-family: $code-font;
 }
 code {
   color: #e96900;
