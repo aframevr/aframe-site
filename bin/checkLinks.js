@@ -1,68 +1,135 @@
-var Promise = require('bluebird');
+var fs = require('fs');
+var path = require('path');
+var urllib = require('url');
+
+
+var chalk = require('chalk');
+var cheerio = require('cheerio');
 var glob = require('glob');
-var _ = require('lodash');
-var fs = Promise.promisifyAll(require('fs'));
-var markdown = require('markdown').markdown;
+var Hexo = require('hexo');
 var request = require('request');
-var url = require('url');
+var yaml = require('js-yaml');
 
-function getLinks(tree) {
-  var links = [];
+require('es6-promise').polyfill();
 
-  if (!_.isArray(tree)) {
-    return links;
+var hexo = new Hexo(path.resolve(__dirname, '..'), {});
+var HEXO_CONFIG = yaml.safeLoad(fs.readFileSync(path.join(__dirname, '..', '_config.yml')));
+var LOCAL_SERVER_HOST = 'http://localhost:' +
+  (HEXO_CONFIG.server.port || '80') +
+  (HEXO_CONFIG.root || '').replace(/\/+$/, '');
+var REQUEST_OPTS = {
+  followAllRedirects: true,
+  rejectUnauthorized: false,
+  timeout: 10000,
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0'
   }
+};
+var WWW_DIR = 'public';
 
-  if (tree[0] === 'link') {
-    // Only absolute links
-    var urlObj = url.parse(tree[1].href);
-    if (urlObj.protocol) {
-      links = [tree[1].href];
+var linksUnique = [];
+var linksPromises = [];
+
+hexo.init().then(function () {
+  return hexo.call('generate', {});
+})
+.then(checkLinks)
+.catch(function (err) {
+  console.log(err.stack);
+});
+
+function checkLinks () {
+  glob('public/**/*.html', function (err, files) {
+    if (err) {
+      console.error('Error:\n%s', err);
+      return;
     }
-  } else {
-    links = _.flatten(_.map(tree.slice(1), getLinks));
-  }
-  return links;
+
+    var lastFileIdx = files.length - 1;
+
+    files.forEach(function (fn, idx) {
+      fs.readFile(fn, 'utf8', function (err, text) {
+        if (err) {
+          fileError(fn, err);
+        } else {
+          var docUri = fn.substr(WWW_DIR.length);
+          fileParse(docUri, text);
+        }
+
+        if (idx === lastFileIdx) {
+          evaluateLinks();
+        }
+      });
+    });
+  });
 }
 
-glob('src/docs/**/*.md', function (err, files) {
-  files.forEach(function (file) {
-    fs.readFileAsync(file, 'utf8')
-      .then(function (text) {
-        var tree = markdown.parse(text);
-        var links = getLinks(tree);
+function fileParse (docUri, text) {
+  var $ = cheerio.load(text);
+  var links = Array.prototype.slice.call($('a:not([href="#"])'));
 
-        // Get linked pages in parallel
-        Promise.map(links, function (link) {
-          return new Promise(function (resolve, reject) {
-            request.head(link, {rejectUnauthorized: false, timeout: 5000},
-                function (error, response, body) {
-              // Always resolve (do not fail fast).
-              if (error) {
-                resolve({
-                  link: link,
-                  error: error
-                });
-              } else {
-                resolve({
-                  link: link,
-                  status: response.statusCode
-                });
-              }
-            });
-          });
-        }, {concurrency: 10})
-          .then(function (results) {
-            return _.filter(results, function (result) {
-              return result.error || result.status !== 200;
-            });
-          })
-          .then(function (results) {
-            // With bad links, we need to do a little manual confirmation.
-            // For example, if we get an error, it's possible the endpoint
-            // does not respond to head.
-            console.log(results);
-          });
+  links.forEach(function (link) {
+    var uri = $(link).attr('href');
+
+    if (!uri ||
+        uri === '#' ||
+        uri.substr(0, 11) === 'javascript:' ||
+        linksUnique.indexOf(uri) !== -1) {
+      return;
+    }
+
+    if (uri.substr(0, 2) !== '//' &&
+        uri.substr(0, 5) !== 'http:' &&
+        uri.substr(0, 6) !== 'https:') {
+      uri = urllib.resolve(LOCAL_SERVER_HOST, docUri, uri);
+    }
+
+    if (linksUnique.indexOf(uri) !== -1) { return; }
+
+    linksUnique.push(uri);
+
+    var prom = new Promise(function (resolve, reject) {
+      request.get(uri, REQUEST_OPTS, function (err, res) {
+        resolve({
+          link: uri,
+          status: err ? err : res.statusCode
+        });
       });
+    });
+
+    linksPromises.push(prom);
   });
-});
+}
+
+function fileError (file, err) {
+  console.error('Error reading file "%s":\n%s', file, err);
+}
+
+function evaluateLinks () {
+  return Promise.all(linksPromises)
+  .then(function (results) {
+    var msgsGood = [];
+    var msgsBad = [];
+
+    results.map(function (result) {
+      var msg = '\nURL:    ' + result.link + '\nStatus: ' + result.status;
+      if (result.error) {
+        msgsBad.push(msg + '\nError:' + result.error);
+      } else if (result.status === 200) {
+        msgsGood.push(msg);
+      } else {
+        msgsBad.push(msg);
+      }
+    });
+
+    msgsGood.sort().forEach(function (msg) {
+      console.log(chalk.green(msg));
+    });
+    msgsBad.sort().forEach(function (msg) {
+      console.log(chalk.red(msg));
+    });
+  })
+  .catch(function (err) {
+    console.error('Error:\n%s', err);
+  });
+}
