@@ -36,9 +36,6 @@
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "release": "npm run syncjs ; npm run deploy",
     "clean": "hexo clean",
-    "checklinks": "node bin/checkLinks.js",
-    "update": "node update.js",
-    "syncjs": "pushd ../aframe/ && npm run dist && popd && cp ../aframe/dist/* themes/aframe/source/releases/latest/. && cp ../aframe/dist/* themes/aframe/source/releases/0.1.0/. && git commit -am 'bump releases'",
-    "postsyncjs": "pushd ../aframe/ && git checkout dist/ && popd"
+    "checklinks": "node bin/checkLinks.js"
   }
 }
