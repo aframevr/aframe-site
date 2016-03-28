@@ -14,10 +14,11 @@ html
     font-size 14px
 
 body
-    font $body-font-weight $body-font-size/$body-line-height $body-font
-    -webkit-font-smoothing antialiased
-    -moz-osx-font-smoothing grayscale
+    font $body-font-weight $body-font-size/$body-line-height $body-font-default
     color $medium
+
+.font-loaded-body body
+    font-family $body-font
 
 iframe, img, button, input[type=button], .btn
     border 0
@@ -49,11 +50,12 @@ strong
     font-weight 600
 
 code, pre
-    font-family $code-font
-    font-size $code-font-size
     background-color $codebg
-    -webkit-font-smoothing initial
-    -moz-osx-font-smoothing initial
+    font $code-font-size $code-font-default
+
+.font-loaded-code code,
+.font-loaded-code pre
+    font-family $code-font
 
 code
     color #e96900
