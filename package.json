@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "aframe": "github:aframevr/aframe#7e6b288",
-    "bluebird": "^3.3.4",
+    "chalk": "^1.1.1",
+    "cheerio": "^0.20.0",
+    "es6-promise": "^3.1.2",
     "glob": "^7.0.3",
     "hexo": "^3.2.0",
     "hexo-browsersync": "^0.2.0",
@@ -17,8 +19,7 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "lodash": "^3.10.1",
-    "markdown": "^0.5.0",
+    "js-yaml": "^3.5.5",
     "request": "^2.69.0"
   },
   "devDependencies": {
@@ -36,6 +37,7 @@
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "release": "npm run syncjs ; npm run deploy",
     "clean": "hexo clean",
-    "checklinks": "node bin/checkLinks.js"
+    "checklinks": "node bin/checkLinks",
+    "test": "npm run checklinks"
   }
 }
