@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "aframe": "github:aframevr/aframe#7e6b288",
+    "aframe": "github:aframevr/aframe#faddf6f",
     "chalk": "^1.1.1",
     "cheerio": "^0.20.0",
     "es6-promise": "^3.1.2",
