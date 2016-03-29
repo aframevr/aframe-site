@@ -2,7 +2,6 @@ var fs = require('fs');
 var path = require('path');
 var urllib = require('url');
 
-
 var chalk = require('chalk');
 var cheerio = require('cheerio');
 var glob = require('glob');
