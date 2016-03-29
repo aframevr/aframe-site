@@ -139,9 +139,7 @@ function fetchExamples (examples) {
 function init () {
   var body = document.body;
 
-  var currentLink = getCurrentNavLink();
-  var navLinks = getNavLinks();
-  var navLinksLength = navLinks.length;
+  var currentLink;
 
   // Trigger `:active` styles when we "click" on examples, previous/next links.
   var SHOW_ACTIVE_STYLES_ON_CLICK = true;
@@ -177,9 +175,13 @@ function init () {
 
   function getDestNavLink (left) {
     currentLink = getCurrentNavLink();
-    var idx = parseInt(currentLink.parentNode.getAttribute('data-idx'), 10);
+    var navLinks = getNavLinks();
+    var navLinksLength = navLinks.length;
+
+    var idx = currentLink ? parseInt(currentLink.parentNode.getAttribute('data-idx'), 10) : -1;
 
     var offset = left ? -1 : 1;
+
     var nextIdx = idx + offset;
     if (nextIdx < 0) { nextIdx = navLinksLength - 1; }
 
