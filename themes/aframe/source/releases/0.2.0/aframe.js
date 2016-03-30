@@ -52458,7 +52458,7 @@ module.exports = WebVRPolyfill;
 },{}],24:[function(_dereq_,module,exports){
 module.exports={
   "name": "aframe",
-  "version": "0.2.0-rc1",
+  "version": "0.2.0",
   "description": "Building blocks for the VR Web",
   "main": "dist/aframe.js",
   "scripts": {
