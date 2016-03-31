@@ -1,10 +1,12 @@
 ---
-title: Introducing A-Frame 0.1.0
+title: Introducing A-Frame v0.1.0
 date: 2015-12-16 11:00:00
 layout: blog
 ---
 
 ### Today the MozVR team releases the first version of A-Frame: an open source framework for creating WebVR experiences with markup.
+
+![A-Frame Logo](https://cloud.githubusercontent.com/assets/674727/14184791/d20eecdc-f72b-11e5-89f2-15497ed55f0c.png)
 
 A-Frame makes it easy for web developers to create virtual reality experiences that work across desktop, iPhone, Android, and the Oculus Rift.
 
@@ -30,7 +32,7 @@ A-Frame is designed to be familiar to those web developers. It wraps the power o
 </html>
 ```
 
-A-Frame ships with powerful and concise "primitives" for common use cases such as 360-degree videos, images, models, skies, and more. Primitives make it easy to block out a scene in minutes. Primitives can also be combined with lighting, animation, sound and interactivity. For the full list of primitives included in A-Frame 0.1.0, see the [A-Frame documentation](../../../../../docs/primitives/).
+A-Frame ships with powerful and concise "primitives" for common use cases such as 360-degree videos, images, models, skies, and more. Primitives make it easy to block out a scene in minutes. Primitives can also be combined with lighting, animation, sound and interactivity. For the full list of primitives included in A-Frame v0.1.0, see the [A-Frame documentation](../../../../../docs/primitives/).
 
 For users who want deeper control and flexibility, A-Frame is built on an entity-component system which provides accessible components for lighting, materials, re-usable assets, and more. This pattern is common in the game development world, and is the backbone of A-Frame. Visit the [A-Frame documentation](../../../../../docs/core/) to learn more about the entity-component system.
 
@@ -49,7 +51,7 @@ To get started with A-Frame, visit [aframe.io](https://aframe.io/), [view the ex
 
 To discuss A-Frame with our team and fellow developers, hop into the [A-Frame Slack channel](https://aframevr-slack.herokuapp.com/). Feedback is welcomed at [@aframevr](https://twitter.com/aframevr/). As are [bug reports](https://github.com/aframevr/aframe/issues/) and [pull requests](https://github.com/aframevr/aframe/). For the latest overall WebVR setup instructions, visit [MozVR.com](http://mozvr.com/).
 
-Special thanks to the A-Frame team for several months of hard work getting 0.1.0 out the door:
+Special thanks to the A-Frame team for several months of hard work getting v0.1.0 out the door:
 
 * [Casey Yee](https://twitter.com/whoyee)
 * [Chris Van Wiemeersch](https://twitter.com/cvanw)
