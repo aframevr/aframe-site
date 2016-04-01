@@ -61,7 +61,38 @@ hexo.extend.generator.register('docs-redirects', function () {
       path: 'docs/primitives/a-model.html',
       data: utils.createRedirectResponse(hexo, 'docs/primitives/a-collada-model.html')
     },
-
+    {
+      path: 'aframe-pro-final-v4.1.16',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/house',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/house/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/house/',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/house/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/hose',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/hose/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/hose/',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/hose/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/metaverse',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/metaverse/')
+    },
+    {
+      path: 'aframe-pro-final-v4.1.16/metaverse/',
+      data: utils.createRedirectResponse(hexo, 'https://ngokevin.github.io/aframe-vrml-component/metaverse/')
+    }
   ];
 });
 
