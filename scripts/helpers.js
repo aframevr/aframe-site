@@ -45,8 +45,8 @@ hexo.extend.filter.register('urljoin', urljoin);
 
 hexo.extend.filter.register('after_render:html', function (str, data) {
   if (data.path.substr(-3) === '.md') {
-    str = str.replace(/href="([^"]+)\/index.md([^"]+)?"/g, 'href="$1/$2"')
-             .replace(/href="([^"]+).md([^"]+)?"/g, 'href="$1.html$2"');
+    str = str.replace(/href="([^"]+)\/index\.md([^"]+)?"/g, 'href="$1/$2"')
+             .replace(/href="([^"]+)\.md([^"]+)?"/g, 'href="$1.html$2"');
   }
   return str;
 });
