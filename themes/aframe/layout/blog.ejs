@@ -19,14 +19,14 @@
           </a>
           <h4 class="post__timestamp"><%- blog_date(post.date) %></h4>
 
-          <% if (post.twia) { %>
+          <% if (post.awoa) { %>
             <p>What's up with A-Frame for the week of <%- blog_date_subtract_week(post.date) %> to <%- blog_date(post.date) %>.</p>
-            <%- partial('partials/blog/twia_projects_showcase', {
-              projects: post.twia.projects
+            <%- partial('partials/blog/awoa_projects_showcase', {
+              projects: post.awoa.projects
             }) %>
           <% } %>
 
-          <% if (!post.twia) { %>
+          <% if (!post.awoa) { %>
             <div class="post__excerpt"><%- post.excerpt %></div>
           <% } %>
 
@@ -40,16 +40,16 @@
         <h2 class="post__heading"><%- page.title %></h2>
         <h4 class="post__timestamp"><%- blog_date(page.date) %></h4>
 
-        <% if (page.twia) { %>
-          <%- partial('partials/blog/twia_projects_showcase', {
-            projects: page.twia.projects
+        <% if (page.awoa) { %>
+          <%- partial('partials/blog/awoa_projects_showcase', {
+            projects: page.awoa.projects
           }) %>
         <% } %>
 
         <%- page.content %>
 
-        <% if (page.twia) { %>
-          <%- partial('partials/blog/twia_projects_text', {projects: page.twia.projects}) %>
+        <% if (page.awoa) { %>
+          <%- partial('partials/blog/awoa_projects_text', {projects: page.awoa.projects}) %>
         <% } %>
       </article>
 

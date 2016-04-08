@@ -4,7 +4,7 @@ date: 2015-12-16 11:00:00
 layout: blog
 ---
 
-### Today the MozVR team releases the first version of A-Frame: an open source framework for creating WebVR experiences with markup.
+**Today, the MozVR team has released the first version of A-Frame: an open source framework for creating WebVR experiences with markup.**
 
 ![A-Frame Logo](https://cloud.githubusercontent.com/assets/674727/14184791/d20eecdc-f72b-11e5-89f2-15497ed55f0c.png)
 
