@@ -7,6 +7,10 @@ hexo.extend.generator.register('blog-redirects', function () {
       data: utils.createRedirectResponse(hexo, 'blog/introducing-aframe/')
     },
     {
+      path: 'blog/2015/12/16/introducing-aframe/',
+      data: utils.createRedirectResponse(hexo, 'blog/introducing-aframe/')
+    },
+    {
       path: 'blog/2016/03/31/aframe-v0.2.0/',
       data: utils.createRedirectResponse(hexo, 'blog/aframe-v0.2.0/')
     }

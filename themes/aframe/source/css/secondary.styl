@@ -172,6 +172,31 @@ a
 .section-subnav
     margin-bottom 10px
 
+.post__projects
+    display flex
+    flex-wrap wrap
+    margin-bottom 15px
+    margin-left: -1px
+    a
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        border 1px solid transparent
+        height 160px
+        width 50%
+        &:hover
+            box-shadow 0 0 0 1px rgba($copy-link-hover, 0.75)
+
+.post-listing .post__projects a
+    display none
+    &:nth-child(1),
+    &:nth-child(2)
+        display block
+
+.blog-attribution
+    border none
+    color $medium
+
 // To prevent the active sections from loading.
 prevent_clicks_on_active_links = true
 

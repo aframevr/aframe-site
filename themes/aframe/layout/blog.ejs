@@ -8,27 +8,49 @@
 <div class="content content--blog copy post">
   <div class="copy__wrap">
     <% if (page.blog_index) { %>
-
       <h1 class="page__title"><%- config.blog_title %></h1>
 
       <%- page.content %>
 
       <% site.posts.sort('date', -1).each(function (post) { %>
-        <article class="post">
-          <h2 class="post__heading"><%- post.title %></h2>
-          <h4 class="post__timestamp"><%- post.date.format('MMM D[,] YYYY') %></h4>
-          <div class="post__excerpt"><%- post.excerpt %></div>
+        <article class="post post-listing">
+          <a href="<%- page_url(post.path) %>">
+            <h2 class="post__heading"><%- post.title %></h2>
+          </a>
+          <h4 class="post__timestamp"><%- blog_date(post.date) %></h4>
+
+          <% if (post.twia) { %>
+            <p>What's up with A-Frame for the week of <%- blog_date_subtract_week(post.date) %> to <%- blog_date(post.date) %>.</p>
+            <%- partial('partials/blog/twia_projects_showcase', {
+              projects: post.twia.projects
+            }) %>
+          <% } %>
+
+          <% if (!post.twia) { %>
+            <div class="post__excerpt"><%- post.excerpt %></div>
+          <% } %>
+
           <a href="<%- page_url(post.path) %>" class="post__more">Read more &hellip;</a>
         </article>
       <% }) %>
 
     <% } else { %>
-
-      <article class="post">
+      <article class="post content--blog-post">
         <h1 class="hidden-visually"><%- config.blog_title %></h1>
         <h2 class="post__heading"><%- page.title %></h2>
-        <h4 class="post__timestamp"><%- page.date.format('MMM D[,] YYYY') %></h4>
+        <h4 class="post__timestamp"><%- blog_date(page.date) %></h4>
+
+        <% if (page.twia) { %>
+          <%- partial('partials/blog/twia_projects_showcase', {
+            projects: page.twia.projects
+          }) %>
+        <% } %>
+
         <%- page.content %>
+
+        <% if (page.twia) { %>
+          <%- partial('partials/blog/twia_projects_text', {projects: page.twia.projects}) %>
+        <% } %>
       </article>
 
       <footer class="footer guide-links c">
@@ -42,7 +64,6 @@
           <span class="float-right"><a href="<%- page_url(nextPost.path) %>" class="guide-link guide-link-right"><%= nextPost.title %> →</a></span>
         <% } %>
       </footer>
-
     <% } %>
 
     <footer class="footer footnote">

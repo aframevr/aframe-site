@@ -1,16 +1,40 @@
+var moment = require('moment');
 var urllib = require('url');
 
 var utils = require('../lib/utils');
-
 var pkg = require('../package');
-var aframeCurrentSha = 'master';
-try {
-  aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
-} catch (e) {
-}
 
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
+
+var aframeCurrentSha = 'master';
+try {
+  aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
+} catch (e) {}
+
+hexo.extend.helper.register('blog_attribution', function (author) {
+  // Twitter handle.
+  if (author.indexOf('twitter|') === 0) {
+    author = '@' + author.substring(8);
+    return '<a class="blog-attribution" href="https://twitter.com/' + author + '">' +
+      author + '</a>';
+  }
+  // GitHub username.
+  if (author.indexOf('github|') === 0) {
+    author = author.substring(7);
+    return '<a class="blog-attribution" href="https://github.com/' + author + '">' +
+      author + '</a>';
+  }
+  return author;
+});
+
+hexo.extend.helper.register('blog_date', function (date) {
+  return date.format('MMM D[,] YYYY');
+});
+
+hexo.extend.helper.register('blog_date_subtract_week', function (date) {
+  return moment(date).subtract({weeks: 1}).format('MMM D[,] YYYY');
+});
 
 hexo.extend.helper.register('github_release_url', function (version) {
   version = version || ('v' + this.config.aframe_version);
