@@ -1,3 +1,5 @@
+var urllib = require('url');
+
 var utils = require('../lib/utils');
 
 var pkg = require('../package');
@@ -45,8 +47,21 @@ hexo.extend.filter.register('urljoin', urljoin);
 
 hexo.extend.filter.register('after_render:html', function (str, data) {
   if (data.path.substr(-3) === '.md') {
-    str = str.replace(/href="([^"]+)\/index\.md([^"]+)?"/g, 'href="$1/$2"')
-             .replace(/href="([^"]+)\.md([^"]+)?"/g, 'href="$1.html$2"');
+    str = str.replace(/href="([^"]+)"/g, function (origStr, p1) {
+      return 'href="' + convertMarkdownToHtmlUrl(p1) + '"';
+    });
   }
   return str;
 });
+
+
+function convertMarkdownToHtmlUrl (url) {
+  var urlObj = urllib.parse(url);
+  if (!urlObj.pathname || urlObj.pathname[0] === '/') {
+    // Do not rewrite absolute URLs.
+    return url;
+  }
+  urlObj.pathname = urlObj.pathname.replace(/\.md$/, '.html')
+                                   .replace('/index.html', '/');
+  return urllib.format(urlObj);
+}
