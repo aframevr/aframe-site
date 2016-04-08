@@ -1,5 +1,18 @@
 @import "_common"
 
+.content--structured .page__section,
+.section-title,
+.install-note,
+.mobile-nav-btn
+    font-family $code-font-default
+
+.font-loaded-mono
+  .content--structured .page__section,
+  .section-title,
+  .install-note,
+  .mobile-nav-btn
+      font-family $code-font
+
 a
     border-bottom 1px solid rgba(53,196,232,0.15)
     color hsl(192, 80%, 40%)
@@ -86,7 +99,10 @@ a
     flex-direction column
 
 .page__title
-    font 600 36px/1.3 $body-font
+    font 600 36px/1.3 $body-font-default
+
+.font-loaded-sans .page__title
+    font-family $body-font
 
 .copy .footnote
     border-top 2px solid #eee
@@ -94,9 +110,6 @@ a
     color #999
     font-size 0.8rem
     margin-top 30px
-
-    // p
-    //     line-height 2
 
     br
         display none
@@ -119,11 +132,8 @@ a
         background #2ac
         color #fff
         font-size 0.8em
-        line-height 1.6
-        // font-family $mono-font
-        // text-transform uppercase
         font-weight 500
-        // letter-spacing 0.025rem
+        line-height 1.6
         text-align left
         white-space nowrap
         + th
@@ -137,7 +147,8 @@ a
 
 // The sub-heading above the docs title
 .content--structured .page__section
-    font 600 11px $mono-font
+    font-size 11px
+    font-weight 600
     line-height 1.2
     margin 0 0 5px
     text-transform uppercase
@@ -145,8 +156,8 @@ a
         display block
 
 .section-title
+    font-size 11px
     line-height 1.2
-    font 11px $mono-font
     padding 5px 0 10px
     text-transform uppercase
 
@@ -180,71 +191,8 @@ if numbered_debug
         color red
         list-style-type decimal
 
-numbered_subnav = false
-numbered_subnav_leading_zeroes = false
-
-if numbered_subnav
-    .numbered-subnav
-        if numbered_subnav_leading_zeroes
-            list-style-type decimal-leading-zero
-        else
-            list-style-type decimal
-
-        .subnav-item
-            color #ccc
-            font-size 8px
-            font-family $mono-font
-            &.subnav-item-current
-                color #aaa
-                font-weight 600
-
-        .subnav-link
-            font-family $body-font
-            font-size 1rem
-
-// Hide sections and make section titles toggle them.
-
-enable_toggles = false
-
-if enable_toggles
-    .section-title
-        position relative
-        &:before
-            background url(../images/caret.svg) -3px 6px no-repeat
-            background-size 10px auto
-            content ""
-            height 100%
-            left 0
-            pointer-events none
-            position absolute
-            top 0
-            width 10px
-
-    .section-title-active:before
-        transform rotate(90deg)
-        left -6px
-
-    .section-title-inactive + .section-subnav
-        display none
-
-    .section-title-link
-        padding-left 20px
-
-    .subnav-item
-        margin-left 20px
-        margin-right -20px
-
-    .subnav-link
-        margin-left -25px
-        padding-left 35px
-
-else
-    .section-title
-        margin-top 15px
-
-    if numbered_subnav
-        .numbered-subnav
-            list-style decimal-leading-zero inside
+.section-title
+    margin-top 15px
 
 .subnav-item + .subnav-item
     margin-top 0.25rem
@@ -349,7 +297,8 @@ p [href*=github][href*="/blob/"]:only-child,
 
 .install-note
     color #999
-    font normal 0.8rem $mono-font
+    font-size 0.8rem
+    font-weight normal
     margin-left 10px
 
 .content--structured
@@ -417,7 +366,8 @@ p [href*=github][href*="/blob/"]:only-child,
         color #000
         display inline-block
         float right
-        font 300px 15px $mono-font
+        font-size 15px
+        font-weight 300px
         letter-spacing 0.05rem
         text-align center
         transition 0.05s ease-in
