@@ -31,6 +31,18 @@
         <%- page.content %>
       </article>
 
+      <footer class="footer guide-links c">
+        <% // Yes, these are correct. %>
+        <% var prevPost = page.next %>
+        <% var nextPost = page.prev %>
+        <% if (prevPost) { %>
+          <span class="float-left"><a href="<%- page_url(prevPost.path) %>" class="guide-link guide-link-left">← <%= prevPost.title %></a></span>
+        <% } %>
+        <% if (nextPost) { %>
+          <span class="float-right"><a href="<%- page_url(nextPost.path) %>" class="guide-link guide-link-right"><%= nextPost.title %> →</a></span>
+        <% } %>
+      </footer>
+
     <% } %>
 
     <footer class="footer footnote">
