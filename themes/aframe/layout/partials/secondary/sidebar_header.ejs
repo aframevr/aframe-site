@@ -3,38 +3,39 @@
 var links = [
   {
     url: 'docs/guide/',
-    title: 'Guide',
-    slug: 'guide'
+    text: 'Guide'
   },
   {
     url: 'docs/guide/getting-started.html',
-    title: 'Install',
-    slug: 'install'
+    text: 'Install'
   },
   {
     url: 'examples/',
-    title: 'Examples',
-    slug: 'examples'
-  },
-  {
-    url: config.github.aframe.url,
-    title: 'GitHub',
-    slug: 'github'
+    text: 'Examples'
   },
   {
     url: 'faq/',
-    title: 'FAQ',
-    slug: 'faq'
+    text: 'FAQ'
   },
   {
     url: 'blog/',
-    title: 'Blog',
-    slug: 'blog',
+    text: 'Blog'
   },
   {
     url: 'community/',
-    title: 'Community',
-    slug: 'community'
+    text: 'Community'
+  },
+  {
+    url: config.github.aframe.url,
+    text: 'GitHub',
+    slug: 'github',
+    title: 'A-Frame project repository on GitHub'
+  },
+  {
+    url: config.slack.aframe.signup_url,
+    text: 'Slack',
+    slug: 'slug',
+    title: 'A-Frame Slack (sign up)'
   }
 ];
 
@@ -65,7 +66,9 @@ links = links.map(function (link) {
 
   <ul id="nav" class="nav">
     <% links.forEach(function (link) { %>
-      <li class="nav-item"><a href="<%= url_for(link.url) %>" class="nav-link nav-link-docs<%= link.current ? ' current' : '' %>"<%- link.external ? ' target="blank" rel="external"' : '' %>><span><%= link.title %></span></a></li>
+      <li
+        <% if (link.slug) { %> data-slug="<%= link.slug %>"<% } %>
+        class="nav-item"><a href="<%= url_for(link.url) %>" class="nav-link nav-link-docs<%= link.current ? ' current' : '' %>"<%- link.external ? ' rel="external"' : '' %><% if (link.title) { %> title="<%= link.title %>"<% } %>><span><%= link.text %></span></a></li>
     <% }) %>
   </ul>
 </div>
