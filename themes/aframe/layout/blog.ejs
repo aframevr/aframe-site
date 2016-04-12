@@ -17,7 +17,7 @@
           <a href="<%- page_url(post.path) %>">
             <h2 class="post__heading"><%- post.title %></h2>
           </a>
-          <h4 class="post__timestamp"><%- blog_date(post.date) %></h4>
+          <%- partial('partials/blog/metadata', {post: post}) %>
 
           <% if (post.awoa) { %>
             <p>What's up with A-Frame for the week of <%- blog_date_subtract_week(post.date) %> to <%- blog_date(post.date) %>.</p>
@@ -35,10 +35,10 @@
       <% }) %>
 
     <% } else { %>
-      <article class="post content--blog-post">
+      <article class="post post-full">
         <h1 class="hidden-visually"><%- config.blog_title %></h1>
         <h2 class="post__heading"><%- page.title %></h2>
-        <h4 class="post__timestamp"><%- blog_date(page.date) %></h4>
+        <%- partial('partials/blog/metadata', {post: page}) %>
 
         <% if (page.awoa) { %>
           <%- partial('partials/blog/awoa_projects_showcase', {
@@ -50,6 +50,10 @@
 
         <% if (page.awoa) { %>
           <%- partial('partials/blog/awoa_projects_text', {projects: page.awoa.projects}) %>
+        <% } %>
+
+        <% if (page.author) { %>
+          <p class="post__author_footer">By <%- blog_attribution(page.author) %></p>
         <% } %>
       </article>
 

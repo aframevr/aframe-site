@@ -172,6 +172,9 @@ a
 .section-subnav
     margin-bottom 10px
 
+.copy .post__heading
+    margin-bottom 0
+
 .post__projects
     display flex
     flex-wrap wrap
@@ -193,9 +196,20 @@ a
     &:nth-child(2)
         display block
 
-.blog-attribution
+.post__projects .blog-attribution
     border none
     color $medium
+
+p.post__timestamp
+    font-weight 500
+    margin-right 3px
+
+.post__metadata
+    align-items center
+    display flex
+    p
+      margin-bottom 0
+      margin-top 20px
 
 // To prevent the active sections from loading.
 prevent_clicks_on_active_links = true
