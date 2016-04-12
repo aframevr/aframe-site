@@ -125,6 +125,10 @@ github:
     repo: aframe-site
     url: https://github.com/aframevr/aframe-site/
 
+slack:
+  aframe:
+    signup_url: https://aframevr-slack.herokuapp.com
+
 aframe_version: 0.2.0
 
 # Single-Page App
