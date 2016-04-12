@@ -38,4 +38,4 @@ awoa:
 
 ### Guides
 
-- @hololeo recorded [Using A-Frame with Epson Moverio and Crosswalk](https://www.youtube.com/watch?v=Tt-pX1JMt60), explaining how to build VR apps for the Epson Moverio AR smart glasses with Crosswalk + A-Frame.
+- [@hololeo](http://twitter.com/hololeo) recorded [Using A-Frame with Epson Moverio and Crosswalk](https://www.youtube.com/watch?v=Tt-pX1JMt60), explaining how to build VR apps for the Epson Moverio AR smart glasses with Crosswalk + A-Frame.

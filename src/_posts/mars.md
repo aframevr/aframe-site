@@ -2,9 +2,10 @@
 title: "The Washington Post Presents \"Mars: An Interactive Journey\""
 date: 2016-03-12
 layout: blog
+image:
+  href: https://www.washingtonpost.com/video/mars/public/
+  src: mars.jpg
 ---
-
-[![Mars: An Interactive Journey](/images/blog/mars.jpg)](https://www.washingtonpost.com/video/mars/public/)
 
 In collaboration with a group of students and researchers at the University of Texas at Austin, *The Washington Post*'s published an A-Frame feature about Mars and space exploration programs. This is a great example of how WebVR can be used to enhance existing 2D content and reach many people.
 

@@ -6,7 +6,7 @@ layout: blog
 awoa:
   projects:
     - title: WebVR Forest
-      author: twitter|@swamphousegroup
+      author: twitter|swamphousegroup
       description: At A-Frame National Park.
       image: webvr-forest.png
       url: https://danstrong.com/webvr/
@@ -33,7 +33,7 @@ awoa:
       author: twitter|alexoviedo999
       description: Jump through a wormhole into the world of Tron.
       image: tron-world.png
-      url: http://alexoviedo999.github.io/vr-carpet-ride/tron-world/
+      url: https://alexoviedo999.github.io/vr-carpet-ride/tron-world/
 
     - title: A-Runner
       author: github|joshgalvin

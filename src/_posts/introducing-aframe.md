@@ -1,12 +1,13 @@
 ---
 title: Introducing A-Frame v0.1.0
+author: twitter|joshcarpenter|Josh Carpenter
 date: 2015-12-16 11:00:00
 layout: blog
+image:
+  src: introducing-aframe.png
 ---
 
-**Today, the MozVR team has released the first version of A-Frame: an open source framework for creating WebVR experiences with markup.**
-
-![A-Frame Logo](https://cloud.githubusercontent.com/assets/674727/14184791/d20eecdc-f72b-11e5-89f2-15497ed55f0c.png)
+> Today, the MozVR team has released the first version of A-Frame: an open source framework for creating WebVR experiences with markup.
 
 A-Frame makes it easy for web developers to create virtual reality experiences that work across desktop, iPhone, Android, and the Oculus Rift.
 

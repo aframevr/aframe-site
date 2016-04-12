@@ -178,38 +178,36 @@ a
 .post__projects
     display flex
     flex-wrap wrap
-    margin-bottom 15px
-    margin-left: -1px
+    margin 15px 0 15px -1px
     a
         background-position center
         background-repeat no-repeat
         background-size cover
-        border 1px solid transparent
+        border 2px solid transparent
         height 160px
+        margin-bottom 1px
         width 50%
         &:hover
-            box-shadow 0 0 0 1px rgba($copy-link-hover, 0.75)
+            border-color $copy-link-hover
 
-.post-listing .post__projects a
+.post-listing .post__projects a:nth-child(2) ~ a
     display none
-    &:nth-child(1),
-    &:nth-child(2)
-        display block
 
-.post__projects .blog-attribution
+.post__projects-text .blog-attribution
     border none
     color $medium
 
-p.post__timestamp
+.post__timestamp
     font-weight 500
-    margin-right 3px
+
+.post__author:before
+    content "\00a0|\00a0"
 
 .post__metadata
     align-items center
     display flex
     p
-      margin-bottom 0
-      margin-top 20px
+      margin 20px 0 0
 
 .post__image
     display block
@@ -280,7 +278,6 @@ if numbered_debug
     &.css:after
         content 'CSS'
 
-p [href*=github][href*="/blob/"]:only-child,
 .github-file-link
     background $codebg
     border 1px solid $border
