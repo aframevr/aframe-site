@@ -18,10 +18,10 @@ When the fonts is loaded, we enable them by adding a class to `<html>`.
 if ('requestAnimationFrame' in window) {
   window.requestAnimationFrame(function () {
     new window.FontFaceObserver('FiraSansWeb').check().then(function () {
-      document.documentElement.classList.add('font-loaded-body');
+      document.documentElement.classList.add('font-loaded-sans');
     });
     new window.FontFaceObserver('FiraMonoWeb').check().then(function () {
-      document.documentElement.classList.add('font-loaded-code');
+      document.documentElement.classList.add('font-loaded-mono');
     });
   });
 }
