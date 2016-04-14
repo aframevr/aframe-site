@@ -47,7 +47,7 @@ hexo.extend.helper.register('blog_attribution', function (author) {
   // GitHub username.
   if (authorSplit[0] === 'github') {
     if (authorSplit.length === 2) {
-      display = '@' + authorSplit[1];
+      display = authorSplit[1];
       link = authorSplit[1];
     } else {
       display = authorSplit[2];
@@ -69,6 +69,28 @@ hexo.extend.helper.register('blog_date', function (date) {
 
 hexo.extend.helper.register('blog_date_subtract_week', function (date) {
   return moment(date).subtract({weeks: 1}).format('MMM D[,] YYYY');
+});
+
+/**
+ * #1000 -> github.com/aframevr/aframe/pull/1000
+ * abcde -> github.com/aframevr/aframe/commit/abcde
+ * aframevr/aframe-editor|#1000 -> github.com/aframevr/aframe-editor/pull/1000
+ */
+hexo.extend.helper.register('github_contribution', function (contribution, display) {
+  var project = 'aframevr/aframe';
+  display = display || contribution;
+  console.log(contribution);
+  if (contribution.indexOf('|') !== -1) {
+    project = contribution.split('|')[0];
+  }
+
+  if (contribution[0] === '#') {
+    contribution = contribution.substring(1);
+    return '<a href="https://github.com/' + project + '/pull/' + contribution + '">' +
+      display + '</a>';
+  }
+  return '<a href="https://github.com/' + project + '/commit/' + contribution + '">' +
+    display + '</a>';
 });
 
 hexo.extend.helper.register('github_release_url', function (version) {

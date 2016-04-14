@@ -52,6 +52,8 @@
         <%- page.content %>
 
         <% if (page.awoa) { %>
+          <%- partial('partials/blog/awoa_contributions',
+                      {contributions: page.awoa.contributions}) %>
           <%- partial('partials/blog/awoa_projects_text', {projects: page.awoa.projects}) %>
         <% } %>
 
