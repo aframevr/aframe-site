@@ -1,0 +1,9 @@
+<% if (image) { %>
+  <% if (image.href) { %>
+    <a class="post__image borderless-link" href="<%= image.href %>">
+      <img src="/images/blog/<%= image.src %>" alt="<%- title %>">
+    </a>
+  <% } else {%>
+    <img src="/images/blog/<%= image.src %>" alt="<%- title %>">
+  <% } %>
+<% } %>

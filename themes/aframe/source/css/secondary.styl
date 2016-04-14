@@ -172,6 +172,47 @@ a
 .section-subnav
     margin-bottom 10px
 
+.copy .post__heading
+    margin-bottom 0
+
+.post__projects
+    display flex
+    flex-wrap wrap
+    margin 15px 0 15px -1px
+    a
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        border 2px solid transparent
+        height 160px
+        margin-bottom 1px
+        width 50%
+        &:hover
+            border-color $copy-link-hover
+
+.post-listing .post__projects a:nth-child(2) ~ a
+    display none
+
+.post__projects-text .blog-attribution
+    border none
+    color $medium
+
+.post__timestamp
+    font-weight 500
+
+.post__author:before
+    content "\00a0|\00a0"
+
+.post__metadata
+    align-items center
+    display flex
+    p
+      margin 20px 0 0
+
+.post__image
+    display block
+    margin-top 20px
+
 // To prevent the active sections from loading.
 prevent_clicks_on_active_links = true
 
@@ -237,7 +278,6 @@ if numbered_debug
     &.css:after
         content 'CSS'
 
-p [href*=github][href*="/blob/"]:only-child,
 .github-file-link
     background $codebg
     border 1px solid $border

@@ -1,5 +1,6 @@
 ---
 title: A-Frame v0.2.0 - The Extensible VR Web
+author: twitter|andgokevin|Kevin Ngo
 date: 2016-03-31 10:00:00
 layout: blog
 ---

@@ -1,0 +1,6 @@
+<div class="post__metadata">
+  <p class="post__timestamp"><%= blog_date(post.date) %></p>
+  <% if (post.author) { %>
+    <p class="post__author">By <%- blog_attribution(post.author) %></p>
+  <% } %>
+</div>

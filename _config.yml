@@ -16,7 +16,7 @@ blog_title: Blog
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://aframe.io/
 root: /
-permalink: blog/:year/:month/:day/:title/
+permalink: blog/:title/
 tag_dir: tags
 archive_dir: archives
 category_dir: categories

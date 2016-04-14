@@ -1,0 +1,49 @@
+---
+title: A Week of A-Frame 7
+date: 2016-03-04
+layout: blog
+
+awoa:
+  projects:
+    - title: WebVR Forest
+      author: twitter|swamphousegroup
+      description: At A-Frame National Park.
+      image: webvr-forest.png
+      url: https://danstrong.com/webvr/
+
+    - title: iSpyStore
+      author: github|dkraeker
+      description: E-Commerce spy gadget store.
+      image: ispystore.png
+      url: http://vr.ispystore.ca
+
+    - title: Breathing Scape
+      author: twitter|jon_ibe
+      description: A tree-adorned hill that slowly breathes.
+      image: breathing-scape.png
+      url: http://www.jon-ibe.be/aframe/
+
+    - title: Hello Virtual World
+      author: twitter|chris_muetze
+      description: Moody dark scene with cool shadows, reflections, and animated clouds.
+      image: hello-virtual-world.png
+      url: http://pixelz.de/vr/hellovr/
+
+    - title: Tron World
+      author: twitter|alexoviedo999
+      description: Jump through a wormhole into the world of Tron.
+      image: tron-world.png
+      url: https://alexoviedo999.github.io/vr-carpet-ride/tron-world/
+
+    - title: A-Runner
+      author: github|joshgalvin
+      description: Infinite runner game with cubes.
+      image: a-runner.png
+      url: https://joshgalvin.github.io/arunner/
+
+    - title: FireFrame
+      author: github|joshgalvin
+      description: Multiuser experiment using Firebase for synchronizing users connected to the same A-Frame scene.
+      image: fireframe.png
+      url: https://joshgalvin.github.io/aframemulti/
+---

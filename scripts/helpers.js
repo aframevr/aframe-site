@@ -1,16 +1,75 @@
+var moment = require('moment');
 var urllib = require('url');
 
 var utils = require('../lib/utils');
-
 var pkg = require('../package');
-var aframeCurrentSha = 'master';
-try {
-  aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
-} catch (e) {
-}
 
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
+
+var aframeCurrentSha = 'master';
+try {
+  aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
+} catch (e) {}
+
+/**
+ * twitter|andgokevin -> [@andgokevin](twitter.com/andgokevin)
+ * twitter|andgokevin|Kevin Ngo -> [Kevin Ngo](twitter.com/andgokevin)
+ * github|ngokevin -> [ngokevin](github.com/ngokevin)
+ * ngokevin -> [ngokevin](ngokevin)
+ * http://ngokevin.com|Kevin Ngo -> [Kevin Ngo](ngokevin.com)
+ */
+hexo.extend.helper.register('blog_attribution', function (author) {
+  var authorSplit = author.split('|');
+  var display;
+  var link;
+
+  // Nothing to do.
+  if (authorSplit.length === 1) { return author; }
+
+  // Twitter handle.
+  if (authorSplit[0] === 'twitter') {
+    if (authorSplit.length === 2) {
+      display = '@' + authorSplit[1];
+      link = authorSplit[1];
+    } else {
+      display = authorSplit[2];
+      link = authorSplit[1];
+    }
+    // Strip `@` from link.
+    if (link[0] === '@') {
+      link = link.substring(1);
+    }
+    return '<a class="blog-attribution" href="https://twitter.com/' + link + '">' +
+      display + '</a>';
+  }
+
+  // GitHub username.
+  if (authorSplit[0] === 'github') {
+    if (authorSplit.length === 2) {
+      display = '@' + authorSplit[1];
+      link = authorSplit[1];
+    } else {
+      display = authorSplit[2];
+      link = authorSplit[1];
+    }
+    return '<a class="blog-attribution" href="https://github.com/' + link + '">' +
+      display + '</a>';
+  }
+
+  // Link.
+  display = authorSplit[1];
+  link = authorSplit[0];
+  return '<a class="blog-attribution" href="' + link + '">' + display + '</a>';
+});
+
+hexo.extend.helper.register('blog_date', function (date) {
+  return date.format('MMM D[,] YYYY');
+});
+
+hexo.extend.helper.register('blog_date_subtract_week', function (date) {
+  return moment(date).subtract({weeks: 1}).format('MMM D[,] YYYY');
+});
 
 hexo.extend.helper.register('github_release_url', function (version) {
   version = version || ('v' + this.config.aframe_version);
