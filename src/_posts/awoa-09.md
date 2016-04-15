@@ -13,7 +13,7 @@ awoa:
     - author: github|ngokevin
       action: reduced
       description: "memory usage with a geometry caching system."
-      github: "#1306"
+      github: "#1347"
 
     - author: github|ngokevin
       action: heavily reduced
@@ -48,7 +48,7 @@ awoa:
     - author: github|dbradleyfl
       action: improved
       description: "GearVR support."
-      github: "#1365"
+      github: "#1366"
 
     - author: github|cvan
       action: tweaked
@@ -84,7 +84,7 @@ awoa:
       author: github|mayognaise
       description: A controls component where the canvas moves the way you drag, and the cursor changes to grab-style.
       image: drag-look-controls-component.gif
-      url: https://mayognaise.github.io/aframe-mouse-cursor-component/basic/index.html
+      url: https://mayognaise.github.io/aframe-drag-look-controls-component/basic/index.html
 ---
 
 Inspired by [This Week in Servo](https://blog.servo.org/), welcome to A Week of A-Frame! After a hiatus in [A-Frame Feature Friday](https://aframevr.tumblr.com/), we return to our regularly scheduled programming of A-Frame awesomeness here on the A-Frame blog.
