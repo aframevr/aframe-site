@@ -1,0 +1,12 @@
+<% if (contributions) { %>
+  <h3>Notable Contributions</h3>
+  <ul class="post__projects-text">
+    <% contributions.forEach(function (contribution) { %>
+      <li>
+        <%- blog_attribution(contribution.author) %>
+        <%- github_contribution(contribution.github, contribution.action) %>
+        <%- contribution.description %>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>
