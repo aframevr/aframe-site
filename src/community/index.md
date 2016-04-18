@@ -9,7 +9,7 @@ layout: page
 A-Frame grown into a large active community by putting VR content creation into everyone's hands.
 
 * [A-Frame GitHub Repo](https://github.com/aframevr/aframe/) - Grab the code, file issues, and contribute.
-* [A-Frame Community Slack Channel](http://aframevr.slack.com/) - [Sign up](https://aframevr-slack.herokuapp.com/) to share your work and join the discussion.
+* A-Frame Community Slack Channel - [Sign up](https://aframevr-slack.herokuapp.com/) to share your work and join the discussion.
 * [A-Frame Twitter](https://twitter.com/aframevr) - Tweet at us.
 * [**Made With A-Frame** Tumblr](http://aframevr.tumblr.com/) - Check out a showcase of recent work done in A-Frame.
 * [**awesome-aframe** Repo](https://github.com/aframevr/awesome-aframe) - Go over a list of awesome things created regarding A-Frame.
