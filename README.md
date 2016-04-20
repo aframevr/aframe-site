@@ -15,10 +15,6 @@ To install the dependencies and start the local development server:
 
 Then load __[`http://localhost:4000/`](http://localhost:4000/)__!
 
-To clean the repo's local database:
-
-    npm run clean
-
 You may need to occasionally need to resart the server if you cause breaking changes. Just proceed as usual.
 
 
