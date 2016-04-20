@@ -115,7 +115,7 @@ On mobile, A-Frame works best on modern smartphones running iOS and Android. We 
 There are several community channels available for sharing experiences built with A-Frame:
 
 - Share with the community on the [A-Frame Slack channel][slack]
-- Feature it on the [**Made With A-Frame** Tumblr][tumblr]
+- Feature it on the [A-Frame Blog][blog]
 - Add it to the collection on the [awesome-aframe repository][awesome]
 - Share with the greater community on the [WebVR Slack channel][slackwebvr]
 - Post it on the [WebVR subreddit][redditwebvr]
@@ -178,6 +178,7 @@ Transparency is tricky in 3D graphics. If you are having issues where transparen
 [awesomecomponents]: https://github.com/aframevr/awesome-aframe#components
 [awesomestock]: https://github.com/neutraltone/awesome-stock-resources
 [cardboard]: https://www.google.com/get/cardboard/
+[blog]: https://aframe.io/blog/
 [clara]: http://clara.io
 [cors]: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 [d3]: https://www.youtube.com/watch?v=Tb2b5nFmmsM
@@ -211,7 +212,6 @@ Transparency is tricky in 3D graphics. If you are having issues where transparen
 [textgeometrycomponent]: https://github.com/ngokevin/aframe-text-component
 [textwrapcomponent]: https://github.com/maxkrieger/aframe-textwrap-component
 [three]: http://threejs.org
-[tumblr]: https://aframevr.tumblr.com/
 [turbosquid]: http://www.turbosquid.com/Search/3D-Models/free
 [twitter]: https://twitter.com/aframevr
 [uploader]: https://aframe.io/aframe/examples/_uploader/
