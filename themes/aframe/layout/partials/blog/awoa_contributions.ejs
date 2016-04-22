@@ -7,6 +7,7 @@
         <%- github_contribution(contribution.github, contribution.action) %>
         <%- contribution.description %>
 
+        <!-- If contribution is not to A-Frame proper (e.g., editor), then note project. -->
         <% var project = contribution.github.split('|'); %>
         <% if (project.length > 1) { %>
           (for <a href="https://github.com/<%- project[0] %>"><%- project[0] %></a>)
