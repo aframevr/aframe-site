@@ -1,8 +1,6 @@
 # aframe-site
 
-> NOTE: The working docs have moved to https://github.com/aframevr/aframe/tree/master/docs
-
-This site powers the __[A-Frame site](https://aframe.io/)__.
+Powers the __[A-Frame site](https://aframe.io/)__.
 
 This site is built using [hexo](http://hexo.io/). Site content is written in [Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in the [`src/`](src/) directory). Pull requests are welcome!
 
@@ -20,21 +18,19 @@ You may need to occasionally need to resart the server if you cause breaking cha
 
 ## Writing Documentation
 
-First, make sure you have cloned the [core A-Frame library repo](https://github.com/aframevr/aframe).
+Documentation lives in the [A-Frame GitHub repo](https://github.com/aframevr/aframe/tree/master/docs).
+
+First, clone the [A-Frame GitHub repo](https://github.com/aframevr/aframe).
 
     cd aframe
     npm link
 
-And then have `aframe-site` point to that `aframe`:
+And then link `aframe-site` to `aframe`:
 
     cd aframe-site
     npm link aframe
 
-If you're curious, for the latest stable version of the docs, there's a soft link to the latest version of those directories in `src/docs` that points to `node_modules/aframe/docs/`. It was created like so:
-
-    cd src/docs/
-    ln -s ../../node_modules/aframe/docs/* .
-
+Then the documentation will update as you work on them from the A-Frame repository. This works because we have pointed the A-Frame site, via a soft symbolic link, to the documentation installed in `node_modules/aframe/docs/`.
 
 ## Deployment
 
