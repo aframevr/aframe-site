@@ -77,11 +77,14 @@ hexo.extend.helper.register('blog_date_subtract_week', function (date) {
  * aframevr/aframe-editor|#1000 -> github.com/aframevr/aframe-editor/pull/1000
  */
 hexo.extend.helper.register('github_contribution', function (contribution, display) {
-  var project = 'aframevr/aframe';
+  var project = this.config.github.aframe.username + '/' + this.config.github.aframe.repo;
+  var contributionSplit;
   display = display || contribution;
-  console.log(contribution);
+
   if (contribution.indexOf('|') !== -1) {
-    project = contribution.split('|')[0];
+    contributionSplit = contribution.split('|');
+    project = contributionSplit[0];
+    contribution = contributionSplit[1];
   }
 
   if (contribution[0] === '#') {
