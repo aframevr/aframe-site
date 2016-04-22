@@ -104,7 +104,7 @@ awoa:
 
     - title: Randomizer Components
       author: github|ngokevin
-      description: A components that set random values.
+      description: A component that set random values.
       image: randomizer-components.jpg
       url: https://github.com/ngokevin/aframe-randomizer-components
 
