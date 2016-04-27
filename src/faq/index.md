@@ -172,6 +172,8 @@ We express it in code and domains as "aframe" as much as possible. Sometimes we 
 
 Transparency is tricky in 3D graphics. If you are having issues where transparent images in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or in which order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. A possible workaround is to try reordering your elements defined in HTML and see if that produces more expected results.
 
+## Does A-Frame support HTC Vive and its hand tracking input?
+
 [aframe-react]: https://github.com/ngokevin/aframe-react
 [archive3d]: http://archive3d.net/
 [awesome]: https://github.com/aframevr/awesome-aframe
