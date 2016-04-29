@@ -86,7 +86,7 @@
       "section": "showcase",
       "slug": "sky",
       "scene_url": "https://aframe.io/aframe/examples/primitives-sky/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/primitives/sky/index.html",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html",
       "title": "Panorama"
     },
     {
