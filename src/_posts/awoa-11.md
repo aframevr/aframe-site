@@ -84,7 +84,7 @@ awoa:
       author: github|nylki
       description: A component to automatically scale textures to fit planes.
       image: fit-texture-component.jpg
-      url: https://github.com/dbradleyfl/aframe-gridhelper
+      url: https://github.com/nylki/aframe-fit-texture-component
 
     - title: IdeaSpace
       author: twitter|IdeaSpaceVR
