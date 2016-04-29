@@ -27,7 +27,7 @@ awoa:
 
   projects:
     - title: Island
-      author: twitter|donmccurdy
+      author: twitter|donrmccurdy
       description: A voxel-based island surrounded by ocean.
       image: island.gif
       url: https://sandbox.donmccurdy.com/vr/island/
@@ -63,7 +63,7 @@ awoa:
       url: https://github.com/ngokevin/aframe-audio-visualizer-components
 
     - title: Ocean Component
-      author: twitter|donmccurdy
+      author: twitter|donrmccurdy
       description: A component to generate low-poly oceans, provided in his aframe-extras library.
       image: ocean-component.jpg
       url: https://github.com/donmccurdy/aframe-extras/blob/master/src/primitives/a-ocean.js
