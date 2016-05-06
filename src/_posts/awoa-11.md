@@ -7,7 +7,7 @@ awoa:
   contributions:
     - author: github|dmarcos
       action: started work
-      description: on support for the WebVR 1.0 API
+      description: on support for the WebVR 1.0 API.
       github: "#1423"
 
     - author: github|JohnRodney
