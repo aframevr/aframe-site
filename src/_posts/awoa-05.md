@@ -8,18 +8,18 @@ awoa:
     - title: Drop
       author: github|dkraeker
       description: Look down and free fall.
-      image: drop.png
+      image: drop.jpg
       url: http://drawvr.com/drop/
 
     - title: GadgetPlus
       author: github|dkraeker
       description: Shop in VR for electronics and gifts from GadgetPlus.
-      image: gadgetplus.png
+      image: gadgetplus.jpg
       url: http://vr.gadgetplus.ca/
 
     - title: Lullabot
       author: github|Lullabot
       description: Teaser page for Lullabot, an interactive strategy, design, and development company.
-      image: lullabot.png
+      image: lullabot.jpg
       url: http://vr.lullabot.com/
 ---
