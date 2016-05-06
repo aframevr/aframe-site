@@ -1,0 +1,12 @@
+<% if (media) { %>
+  <h3>Media</h3>
+  <ul class="post__projects-text">
+    <% media.forEach(function (media) { %>
+      <li>
+        <%- blog_attribution(media.author) %>
+        <%- media.action %>
+        <a href="<%- media.url %>"><%- media.title %></a>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>

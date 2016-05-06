@@ -25,6 +25,17 @@ awoa:
       description: the icosahedron geometry.
       github: "#1413"
 
+  media:
+      - author: twitter|andgokevin
+        action: talked about
+        title: A-Frame at ForwardJS
+        url: https://www.youtube.com/watch?v=f2pu-oMspLs
+
+      - author: twitter|captDayLight
+        action: wrote about
+        title: Building a Simple UI with A-Frame
+        url: https://blog.neondaylight.com/build-a-simple-web-vr-ui-with-a-frame-a17a2d5b484
+
   projects:
     - title: Island
       author: twitter|donrmccurdy
@@ -100,8 +111,3 @@ awoa:
 
   stars: 1846
 ---
-
-### Guides
-
-- [@andgokevin](https://twitter.com/andgokevin) [introduced](https://www.youtube.com/watch?v=f2pu-oMspLs) A-Frame at *ForwardJS*.
-- [@captDayLight](https://twittter.com/captDayLight) [wrote](https://blog.neondaylight.com/build-a-simple-web-vr-ui-with-a-frame-a17a2d5b484) about building a simple UI with A-Frame.
