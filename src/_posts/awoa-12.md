@@ -16,7 +16,7 @@ awoa:
       github: "#1430"
 
   media:
-    - author: twitter|jcarpenter
+    - author: twitter|joshcarpenter
       action: talked on the "Voices of VR" podcast about
       title: VR on the Open Web with A-Frame and WebVR
       url: http://voicesofvr.com/350-vr-on-the-open-web-with-a-frame-and-webvr/
