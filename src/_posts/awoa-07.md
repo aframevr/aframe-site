@@ -8,42 +8,42 @@ awoa:
     - title: WebVR Forest
       author: twitter|swamphousegroup
       description: At A-Frame National Park.
-      image: webvr-forest.png
+      image: webvr-forest.jpg
       url: https://danstrong.com/webvr/
 
     - title: iSpyStore
       author: github|dkraeker
       description: E-Commerce spy gadget store.
-      image: ispystore.png
+      image: ispystore.jpg
       url: http://vr.ispystore.ca
 
     - title: Breathing Scape
       author: twitter|jon_ibe
       description: A tree-adorned hill that slowly breathes.
-      image: breathing-scape.png
+      image: breathing-scape.jpg
       url: http://www.jon-ibe.be/aframe/
 
     - title: Hello Virtual World
       author: twitter|chris_muetze
       description: Moody dark scene with cool shadows, reflections, and animated clouds.
-      image: hello-virtual-world.png
+      image: hello-virtual-world.jpg
       url: http://pixelz.de/vr/hellovr/
 
     - title: Tron World
       author: twitter|alexoviedo999
       description: Jump through a wormhole into the world of Tron.
-      image: tron-world.png
+      image: tron-world.jpg
       url: https://alexoviedo999.github.io/vr-carpet-ride/tron-world/
 
     - title: A-Runner
       author: github|joshgalvin
       description: Infinite runner game with cubes.
-      image: a-runner.png
+      image: a-runner.jpg
       url: https://joshgalvin.github.io/arunner/
 
     - title: FireFrame
       author: github|joshgalvin
       description: Multiuser experiment using Firebase for synchronizing users connected to the same A-Frame scene.
-      image: fireframe.png
+      image: fireframe.jpg
       url: https://joshgalvin.github.io/aframemulti/
 ---
