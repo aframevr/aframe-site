@@ -28,6 +28,12 @@ awoa:
       image: moss-march.jpg
       url: http://www.skyislandsvr.com/pages/mossmarch.html
 
+    - title: Space Blob Towers
+      author: twitter|EricaLayton
+      description: A pointy alien world.
+      image: space-blob-towers.jpg
+      url: http://www.skyislandsvr.com/pages/spaceblobtowers.html
+
     - title: Carnival Globe Trees
       author: twitter|EricaLayton
       description: Watch the globe-shaped trees rotate to the relaxing music.
@@ -69,6 +75,7 @@ awoa:
 
 ### Media
 
-- [@bnolan](https://twitter.com/bnolan) [wrote](https://medium.com/@bnolan/lightmapping-on-the-server-5485177ef2fa) about server-side lightmapping.
-- [@bnolan](https://twitter.com/bnolan) [wrote](https://medium.com/@bnolan/scene-export-89cc1c985ac8) about exporting A-Frame-based scenes in SceneVR.
-- [@bnolan](https://twitter.com/bnolan) [wrote](https://medium.com/@bnolan/a-better-selection-741e2a4e0e8a) about better selection tools in the SceneVR editor.
+- [@vincent_munoz](https://twitter.com/vincent_munoz) wrote about [WebVR mockups using A-Frame](https://medium.com/beloola-all-our-news-updates/web-mockups-for-vr-designers-cca2ba234b67).
+- [@bnolan](https://twitter.com/bnolan) wrote about [server-side lightmapping](https://medium.com/@bnolan/lightmapping-on-the-server-5485177ef2fa).
+- [@bnolan](https://twitter.com/bnolan) wrote about [exporting A-Frame-based scenes in SceneVR](https://medium.com/@bnolan/scene-export-89cc1c985ac8).
+- [@bnolan](https://twitter.com/bnolan) wrote about [better selection tools in the SceneVR editor](https://medium.com/@bnolan/a-better-selection-741e2a4e0e8a).
