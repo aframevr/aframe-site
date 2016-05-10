@@ -29,7 +29,7 @@ awoa:
     - author: twitter|bnolan
       action: wrote about
       title: lightmapping on the server
-      url: https://medium.com/beloola-all-our-news-updates/web-mockups-for-vr-designers-cca2ba234b67
+      url: https://medium.com/@bnolan/lightmapping-on-the-server-5485177ef2fa
 
     - author: twitter|bnolan
       action: wrote about
