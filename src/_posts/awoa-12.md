@@ -87,7 +87,7 @@ awoa:
       author: twitter|rudy
       description: May the Fourth Be With You. A-lways.
       image: may-the-fourth.jpg
-      urL: http://rudyjahchan.com/may4th/
+      url: http://rudyjahchan.com/may4th/
 
     - title: Faceset Component
       author: github|andreasplesch
