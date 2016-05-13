@@ -1,6 +1,8 @@
 <div class="post__projects">
   <% projects.forEach(function (project) { %>
-    <a href="<%- project.url %>" title="<%- project.title %>"
-       style="background-image: url(<%= url_for('images/awoa/' + project.image) %>)"></a>
+    <% if (project.image) { %>
+      <a href="<%- project.url %>" title="<%- project.title %>"
+         style="background-image: url(<%= url_for('images/awoa/' + project.image) %>)"></a>
+    <% } %>
   <% }) %>
 </div>

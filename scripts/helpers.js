@@ -63,6 +63,10 @@ hexo.extend.helper.register('blog_attribution', function (author) {
   return '<a class="blog-attribution" href="' + link + '">' + display + '</a>';
 });
 
+hexo.extend.helper.register('markdown', function (text) {
+  return hexo.render.renderSync({text: text, engine: 'markdown'});
+});
+
 hexo.extend.helper.register('blog_date', function (date) {
   return date.format('MMM D[,] YYYY');
 });
@@ -130,14 +134,13 @@ hexo.extend.helper.register('is_external_url', isUrl);
 hexo.extend.filter.register('urljoin', urljoin);
 
 hexo.extend.filter.register('after_render:html', function (str, data) {
-  if (data.path.substr(-3) === '.md') {
+  if (data.path && data.path.substr(-3) === '.md') {
     str = str.replace(/href="([^"]+)"/g, function (origStr, p1) {
       return 'href="' + convertMarkdownToHtmlUrl(p1) + '"';
     });
   }
   return str;
 });
-
 
 function convertMarkdownToHtmlUrl (url) {
   var urlObj = urllib.parse(url);
