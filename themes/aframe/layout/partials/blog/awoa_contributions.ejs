@@ -5,7 +5,7 @@
       <li>
         <%- blog_attribution(contribution.author) %>
         <%- github_contribution(contribution.github, contribution.action) %>
-        <%- contribution.description %>
+        <%- markdown(contribution.description) %>
 
         <!-- If contribution is not to A-Frame proper (e.g., editor), then note project. -->
         <% var project = contribution.github.split('|'); %>
