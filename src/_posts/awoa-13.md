@@ -53,8 +53,8 @@ awoa:
 
     - author: twitter|JessicaTV
       action: presented
-      title: an introduction to WebVR in Spanish
-      url: http://www.slideshare.net/CarlosLpezDomnguez/jessica-travieso-webvr-the-open-web-virtual-reality
+      title: an introduction to WebVR (Spanish)
+      url: https://www.youtube.com/watch?v=uLLk4nsroZQ
 
   projects:
     - title: Redwood Dusk
