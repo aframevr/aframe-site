@@ -1,13 +1,8 @@
 <%
-
 var links = [
   {
-    url: 'docs/guide/',
-    text: 'Guide'
-  },
-  {
-    url: 'docs/guide/getting-started.html',
-    text: 'Install'
+    url: 'docs/' + config.aframe_version + '/guide/',
+    text: 'Docs'
   },
   {
     url: 'examples/',
@@ -46,12 +41,14 @@ links = links.map(function (link) {
     if (page.nav_slug && link.slug === page.nav_slug) {
       link.current = true;
     }
-
     if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url))) {
       link.current = true;
     }
+    if (link.text === 'Docs' && page.path.indexOf('docs/') === 0) {
+      link.current = true;
+      link.disabled = true;
+    }
   }
-
   return link;
 });
 
@@ -66,9 +63,14 @@ links = links.map(function (link) {
 
   <ul id="nav" class="nav">
     <% links.forEach(function (link) { %>
-      <li
-        <% if (link.slug) { %> data-slug="<%= link.slug %>"<% } %>
-        class="nav-item"><a href="<%= url_for(link.url) %>" class="nav-link nav-link-docs<%= link.current ? ' current' : '' %>"<%- link.external ? ' rel="external"' : '' %><% if (link.title) { %> title="<%= link.title %>"<% } %>><span><%= link.text %></span></a></li>
+      <li <% if (link.slug) { %> data-slug="<%= link.slug %>"<% } %> class="nav-item">
+        <a href="<%= url_for(link.url) %>"
+           class="nav-link nav-link-docs<%= link.current ? ' current' : '' %><%= link.disabled ? ' nav-link-disabled' : '' %>"
+           <%- link.external ? ' rel="external"' : '' %>
+           <% if (link.title) { %> title="<%= link.title %>"<% } %>>
+          <span><%= link.text %></span>
+        </a>
+      </li>
     <% }) %>
   </ul>
 </div>

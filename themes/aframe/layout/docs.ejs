@@ -1,39 +1,76 @@
-<aside class="sidebar borderless-links">
+<% var activeSection = '' %>
+<% var activeVersion = docs_active_version(page) %>
 
+<!-- Navigation. -->
+<aside class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
-  <div class="list">
-    <% var activeSection = '' %>
-    <% site.pages.find({parent_section: 'docs'}).sort('section_order').each(function (section) { %>
-      <% if (page.type === section.type) { activeSection = section } %>
-      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>"><a href="<%- page_url('docs/' + section.type + '/') %>" class="section-title-link<%= page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>"><%= section.section_title %></a></h3>
+  <!-- Version dropdown. -->
+  <label class="subnav-label" for="docs-version"><b>Version</b></label>
+  <select id="docs-version" onchange="location = location.href.replace(/docs\/.*/, 'docs/' + this.value + '/')">
+    <% docs_versions(config.aframe_version).map(function (version) { %>
+      <option <%- activeVersion === version && 'selected' %>>
+        <%- version %>
+      </option>
+    <% }); %>
+  </select>
 
+  <div class="list">
+    <% docs_version_filter(site.pages, activeVersion).find({parent_section: 'docs'})
+                                                             .sort('section_order')
+                                                             .each(function (section) { %>
+      <% if (page.type === section.type) { activeSection = section } %>
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>">
+        <a href="<%- page_url('docs/' + activeVersion + '/' + section.type + '/') %>"
+           class="section-title-link<%= page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>">
+          <%= section.section_title %>
+        </a>
+      </h3>
+
+      <!-- Section links. -->
       <ol class="subnav section-subnav<%= section.show_guide ? ' numbered-subnav' : '' %>">
-        <% site.pages.find({type: section.type}).sort('order').each(function (p) { %>
+        <% docs_version_filter(site.pages.find({type: section.type}).sort('order'),
+                               activeVersion).each(function (p) { %>
           <li class="subnav-item <%= page.title === p.title ? ' subnav-item-current' : '' %>">
-            <a href="<%- page_url(p.path) %>" class="subnav-link<%= page.title === p.title ? ' current' : '' %>"><%= p.title %></a>
+            <a href="<%- page_url(p.path) %>"
+               class="subnav-link<%= page.title === p.title ? ' current' : '' %>">
+              <%= p.title %>
+            </a>
           </li>
         <% }) %>
       </ol>
     <% }) %>
   </div>
-
 </aside>
 
+<!-- Documentation. -->
 <div class="content content--structured content--<%- page.type %> copy">
   <div class="copy__wrap">
-
-    <p class="page__section"><a href="<%- page_url(activeSection.path) %>" class="borderless-link"><%= activeSection.section_title %></a></p>
+    <p class="page__section">
+      <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
+        <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
+      </a>
+    </p>
+    <% if (activeVersion === 'master') { %>
+      <%- markdown("> **Note:** The `master` version of the documentation tracks unstable development happening on [A-Frame's master branch](https://github.com/aframevr/aframe)") %>
+    <% } %>
     <h1 class="page__title"><%= page.title %></h1>
 
     <%- page.content %>
 
+    <!-- Previous / Next navigation. -->
     <footer class="footer guide-links c">
-      <% site.pages.find({type: page.type, order: page.order - 1}).each(function (page) { %>
-        <span class="float-left"><a href="<%- page_url(page.path) %>" class="guide-link guide-link-left">← <%= page.title %></a></span>
+      <% docs_version_filter(site.pages.find({type: page.type, order: page.order - 1}),
+                             activeVersion).each(function (page) { %>
+        <span class="float-left">
+          <a href="<%- page_url(page.path) %>" class="guide-link guide-link-left">← <%= page.title %> </a></span>
       <% }) %>
-      <% site.pages.find({type: page.type, order: page.order + 1}).each(function (page) { %>
-        <span class="float-right"><a href="<%- page_url(page.path) %>" class="guide-link guide-link-right"><%= page.title %> →</a></span>
+      <% docs_version_filter(site.pages.find({type: page.type, order: page.order + 1}),
+                             activeVersion).each(function (page) { %>
+        <span class="float-right">
+          <a href="<%- page_url(page.path) %>" class="guide-link guide-link-right"><%= page.title %> →</a></span>
       <% }) %>
     </footer>
 

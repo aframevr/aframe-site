@@ -1,3 +1,4 @@
+var fs = require('fs');
 var moment = require('moment');
 var urllib = require('url');
 
@@ -7,7 +8,10 @@ var pkg = require('../package');
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
 
-var aframeCurrentSha = 'master';
+var aframeVersions = JSON.parse(fs.readFileSync('multidep.json')).versions.aframe;
+
+var MASTER = 'master';
+var aframeCurrentSha = MASTER;
 try {
   aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
 } catch (e) {}
@@ -109,12 +113,21 @@ hexo.extend.helper.register('github_file_url', function (path) {
   return urljoin(this.config.github.aframe.url, 'blob', aframeCurrentSha, path);
 });
 
+/**
+ * Get GitHub edit URL.
+ * - Change .html to .md.
+ * - For docs, must remove the active version (e.g., docs/0.2.0/guide.html -> docs/guide.md).
+ */
 hexo.extend.helper.register('website_github_edit_url', function (path) {
+  // For docs.
   if (path.indexOf('docs/') !== -1) {
-    return urljoin(this.config.github.aframe.url, 'edit', 'master', path.replace(/\.html$/, '.md'));
-  } else {
-    return urljoin(this.config.github.aframe_site.url, 'edit', 'master', this.config.source_dir, path.replace(/\.html$/, '.md'));
+    var activeVersion = path.split('/')[path.split('/').indexOf('docs') + 1];
+    return urljoin(this.config.github.aframe.url, 'edit', MASTER,
+                   path.replace('docs/' + activeVersion, 'docs').replace(/\.html$/, '.md'));
   }
+  // For blog posts.
+  return urljoin(this.config.github.aframe_site.url, 'edit', MASTER, this.config.source_dir,
+                 path.replace(/\.html$/, '.md'));
 });
 
 /**
@@ -138,6 +151,36 @@ hexo.extend.helper.register('example_url', function (item) {
 
 hexo.extend.helper.register('docs_url_prefix', function (item) {
   return this.page.source.split('/', 2).join('/') + '/';
+});
+
+/**
+ * Return actively-being-viewed version of the docs based on page.
+ * Extract <VERSION> out of `.../docs/<VERSION>/...`.
+ */
+hexo.extend.helper.register('docs_active_version', function (page) {
+  var splitPath = page.path.split('/');
+  var docIndex = splitPath.indexOf('docs');
+  return splitPath[docIndex + 1];
+});
+
+/**
+ * Filter documentation navigation to only include pages of the version being browsed.
+ */
+hexo.extend.helper.register('docs_version_filter', function (pages, version) {
+  return pages.filter(function (page) {
+    return page.path.indexOf('docs/' + version) !== -1;
+  });
+});
+
+/**
+ * Return list of A-Frame versions, including `master`.
+ * Order: current, master, <oldVersions>.
+ */
+hexo.extend.helper.register('docs_versions', function (currentVersion) {
+  var versions = aframeVersions.slice(0);
+  var currentVersionIndex = versions.indexOf(currentVersion);
+  versions.splice(currentVersionIndex, 1);
+  return [currentVersion, MASTER].concat(versions);
 });
 
 hexo.extend.helper.register('is_external_url', isUrl);
