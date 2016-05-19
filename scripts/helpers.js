@@ -129,15 +129,6 @@ hexo.extend.helper.register('docs_url_prefix', function (item) {
   return this.page.source.split('/', 2).join('/') + '/';
 });
 
-/**
- * Filter documentation navigation to only include pages of the version being browsed.
- */
-hexo.extend.helper.register('docs_filter', function (pages, version) {
-  return pages.filter(function (page) {
-    return page.path.indexOf('docs/' + version) !== -1;
-  });
-});
-
 hexo.extend.helper.register('is_external_url', isUrl);
 
 hexo.extend.filter.register('urljoin', urljoin);

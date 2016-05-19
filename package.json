@@ -24,23 +24,21 @@
     "request": "^2.69.0"
   },
   "devDependencies": {
-    "hexo-cli": "^1.0.1",
-    "multidep": "^2.0.0"
+    "hexo-cli": "^1.0.1"
   },
   "hexo": {
     "version": "3.2.0"
   },
   "scripts": {
-    "checklinks": "node bin/checkLinks",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy && open 'https://aframe.io/'",
+    "start": "npm run dev",
     "dev": "npm run clean && npm run server",
+    "server": "hexo server",
     "generate": "hexo generate",
     "predeploy": "hexo clean",
-    "pretest": "multidep test/multidep.json",
+    "deploy": "hexo deploy && open 'https://aframe.io/'",
     "release": "npm run syncjs ; npm run deploy",
-    "server": "hexo server",
-    "start": "npm run dev",
+    "clean": "hexo clean",
+    "checklinks": "node bin/checkLinks",
     "test": "npm run checklinks"
   }
 }
