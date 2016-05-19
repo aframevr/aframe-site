@@ -95,13 +95,6 @@
       "scene_url": "https://aframe.io/aframe/examples/declarative-events-cursor/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/declarative-events/cursor/index.html",
       "title": "Cursor & Hover"
-    },
-    {
-      "section": "showcase",
-      "slug": "lookat",
-      "scene_url": "https://aframe.io/aframe/examples/primitives-lookat/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/primitives/lookat/index.html",
-      "title": "Look At"
     }
   ]
 }
