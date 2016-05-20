@@ -66,7 +66,7 @@ awoa:
       url: https://ngokevin.github.io/aframe-audio-visualizer-components/spectrum/
 
     - title: Space Shark Room
-      author: https://neocities.org/site/liooil|liooil
+      author: twitter|SAM_liooil
       description: Hinduist shark cage in space.
       image: space-shark-room.gif
       url: http://liooil.neocities.org/VR_webStuff/room+07/room07.html
@@ -90,7 +90,7 @@ awoa:
       url: http://drawvr.com/welcome/
 
     - title: Vapor Wave
-      author: https://neocities.org/site/liooil|liooil
+      author: twitter|SAM_liooil
       description: Trippy web purgatory room.
       image: vapor-wave.gif
       url: http://liooil.neocities.org/VR_webStuff/vaporWave.html
