@@ -3,7 +3,7 @@
   <ul class="post__projects-text">
     <% projects.forEach(function (project) { %>
       <li>
-        <%- blog_attribution(project.author) %> built <a href="<%- project.url %>"><%- project.title %></a> &mdash; <%- project.description %>
+        <%- blog_attribution(project.author) %> built <a href="<%- project.url %>"><%- project.title %></a> &mdash; <%- markdown(project.description) %>
       </li>
     <% }) %>
   </ul>
