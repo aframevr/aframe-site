@@ -144,6 +144,6 @@ awoa:
   stars: 2010
 ---
 
-*A-Frame intensifies*. Sneak peeks of multiuser, embedded scenes, room-scale, asymmetric gaming, the A-Frame Editor, and link traversal at SFHTML5 WebVR meetup.
+*A-Frame intensifies* as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multiuser, embedded scenes, room-scale, asymmetric gaming, the A-Frame Editor, and link traversal at SFHTML5 WebVR meetup.
 
 Thanks to Matt Simpson for the many contributions this week!
