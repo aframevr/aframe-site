@@ -131,9 +131,9 @@ a
     th
         background #2ac
         color #fff
-        font-size 0.8em
-        font-weight 500
-        line-height 1.6
+        font-size $table-heading-font-size
+        font-weight 400
+        line-height 1.8
         text-align left
         white-space nowrap
         + th
@@ -141,9 +141,11 @@ a
 
     td
         background #fff
-        border-bottom 1px solid #eee
-        font-size 12px
+        font-size $table-body-font-size
         vertical-align top
+
+    tr:not(:last-child) td
+        border-bottom 1px solid #eee
 
 // The sub-heading above the docs title
 .content--structured .page__section
@@ -250,7 +252,7 @@ if numbered_debug
 .highlight
     position relative
     background-color $codebg
-    padding .8em .8em .4em
+    padding .2em .2em .1em
     line-height 1.1em
     border-radius $radius
     overflow-x auto
