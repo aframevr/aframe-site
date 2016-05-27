@@ -35,7 +35,7 @@ awoa:
       description: the injected A-Frame favicon
       github: "#1415"
 
-    - author: github|andgokevin
+    - author: github|ngokevin
       action: added support
       description: for using components to feed data to template contexts
       github: "ngokevin/aframe-template-component|#13"
