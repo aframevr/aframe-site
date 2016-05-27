@@ -3,7 +3,7 @@
 Powered by [Hexo](https://hexo.io/)
 
 - `_config.yml` - Hexo configuration.
-- `multidep/` - Older versions of A-Frame installed through `mulitdep`. Used to generate older versions of the docs.
+- `.multidep/` - Older versions of A-Frame installed through [multidep](https://github.com/joliss/node-multidep). Used to generate older versions of the docs.
 - `scripts/` - Customization of Hexo generator and helpers.
   - `generators.js` - Configuration of Hexo generator (mainly for redirects).
   - `helpers.js` - Adding helper functions available to templates,

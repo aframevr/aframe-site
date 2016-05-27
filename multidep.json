@@ -1,5 +1,5 @@
 {
-  "path": "multidep",
+  "path": ".multidep",
   "versions": {
     "aframe": ["0.1.0", "0.2.0"]
   }

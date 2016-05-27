@@ -31,8 +31,8 @@
 
       <!-- Section links. -->
       <ol class="subnav section-subnav<%= section.show_guide ? ' numbered-subnav' : '' %>">
-        <% docs_version_filter(site.pages.find({type: section.type}).sort('order'),
-                               activeVersion).each(function (p) { %>
+        <% docs_version_filter(docs_nav_sort(site.pages.find({type: section.type})),
+                               activeVersion).forEach(function (p) { %>
           <li class="subnav-item <%= page.title === p.title ? ' subnav-item-current' : '' %>">
             <a href="<%- page_url(p.path) %>"
                class="subnav-link<%= page.title === p.title ? ' current' : '' %>">
@@ -54,7 +54,7 @@
       </a>
     </p>
     <% if (activeVersion === 'master') { %>
-      <%- markdown("> **Note:** The `master` version of the documentation tracks unstable development happening on [A-Frame's master branch](https://github.com/aframevr/aframe)") %>
+      <%- markdown("> **Note:** The `master` version of the documentation tracks unstable development happening on [A-Frame's master branch](https://github.com/aframevr/aframe).") %>
     <% } %>
     <h1 class="page__title"><%= page.title %></h1>
 

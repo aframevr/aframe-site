@@ -2,13 +2,14 @@ var fs = require('fs');
 var moment = require('moment');
 var urllib = require('url');
 
-var utils = require('../lib/utils');
+var multidep = require('../multidep');
 var pkg = require('../package');
+var utils = require('../lib/utils');
 
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
 
-var aframeVersions = JSON.parse(fs.readFileSync('multidep.json')).versions.aframe;
+var aframeVersions = multidep.versions.aframe;
 
 var MASTER = 'master';
 var aframeCurrentSha = MASTER;
@@ -164,6 +165,32 @@ hexo.extend.helper.register('docs_active_version', function (page) {
 });
 
 /**
+ * Sort documentation pages. Pages that have `order` go first. Then alphabetized by title.
+ */
+hexo.extend.helper.register('docs_nav_sort', function (pages) {
+  var orderedPages = [];
+  var alphabetizedPages = [];
+  pages.forEach(function addOrderedPages (page) {
+    if ('order' in page) {
+      orderedPages.push(page);
+      return;
+    }
+    alphabetizedPages.push(page);
+  });
+  orderedPages = orderedPages.sort(function sort (pageA, pageB) {
+    if (pageA.order < pageB.order) { return -1; }
+    if (pageA.order > pageB.order) { return 1; }
+    return 0;
+  });
+  alphabetizedPages = alphabetizedPages.sort(function sort (pageA, pageB) {
+    if (pageA.title < pageB.title) { return -1; }
+    if (pageA.title > pageB.title) { return 1; }
+    return 0;
+  });
+  return orderedPages.concat(alphabetizedPages);
+});
+
+/**
  * Filter documentation navigation to only include pages of the version being browsed.
  */
 hexo.extend.helper.register('docs_version_filter', function (pages, version) {
@@ -174,13 +201,10 @@ hexo.extend.helper.register('docs_version_filter', function (pages, version) {
 
 /**
  * Return list of A-Frame versions, including `master`.
- * Order: current, master, <oldVersions>.
+ * Order (reverse chronological): master, current, <oldVersions>.
  */
-hexo.extend.helper.register('docs_versions', function (currentVersion) {
-  var versions = aframeVersions.slice(0);
-  var currentVersionIndex = versions.indexOf(currentVersion);
-  versions.splice(currentVersionIndex, 1);
-  return [currentVersion, MASTER].concat(versions);
+hexo.extend.helper.register('docs_versions', function () {
+  return [MASTER].concat(aframeVersions.sort().reverse());
 });
 
 hexo.extend.helper.register('is_external_url', isUrl);
