@@ -106,6 +106,7 @@ marked:
   breaks: false
   smartLists: true
   smartypants: true
+  modifyAnchors: 1  # Lowercased anchors.
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
