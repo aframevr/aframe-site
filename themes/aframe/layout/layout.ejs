@@ -3,9 +3,10 @@
 <% var isSecondary = page.layout !== 'examples' %>
 <% var isDocs = page.layout === 'docs' %>
 
-<% var projectTitle = config.title + ' – ' + config.subtitle %>
-<% var sectionTitle = isDocs ? ' Docs - ' : '' %>
-<% var pageTitle = page.title ? page.title + ' — ' + sectionTitle : '' %>
+<% var delimiter = ' – ' %>
+<% var projectTitle = config.title + delimiter + config.subtitle %>
+<% var sectionTitle = isDocs ? ' Docs ' + delimiter : '' %>
+<% var pageTitle = page.title ? page.title + delimiter + sectionTitle : '' %>
 
 <!DOCTYPE html>
 <html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<% config.spa %>" data-ga-id="<%- config.google_analytics %>">
