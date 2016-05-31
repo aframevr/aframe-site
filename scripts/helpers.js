@@ -117,6 +117,17 @@ hexo.extend.helper.register('website_github_edit_url', function (path) {
   }
 });
 
+/**
+ * Like Hexo's `url_for` helper but returns an absolute URL.
+ */
+hexo.extend.helper.register('absolute_url_for', function (path, options) {
+  var url = urljoin(this.config.url, this.url_for(path, options));
+  if (options && options.secure === false) {
+    url = url.replace(/^https:/, 'http:');
+  }
+  return url;
+});
+
 hexo.extend.helper.register('page_url', function (path, options) {
   return this.url_for(path, options).replace(/index\.html$/, '');
 });

@@ -18,31 +18,32 @@
     <meta name="description" content="<%- projectTitle %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="canonical" href="<%= config.url %>">
     <meta property="fb:app_id" content="<%- config.fb_app_id %>">
     <meta property="og:title" content="A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aframe.io/">
+    <meta property="og:url" content="<%= config.url %>">
     <meta property="og:description" content="<%- config.subtitle %>">
-    <meta property="og:image" content="http://aframe.io/images/card.png">
-    <meta property="og:image:secure_url" content="https://aframe.io/images/card.png">
+    <meta property="og:image" content="<%- absolute_url_for('images/card.png', {secure: false}) %>">
+    <meta property="og:image:secure_url" content="<%- absolute_url_for('images/card.png') %>">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@aframevr">
-    <meta name="twitter:creator" content="@aframevr">
+    <meta name="twitter:site" content="@<%- config.twitter.username %>">
+    <meta name="twitter:creator" content="@<%- config.twitter.username %>">
     <meta name="twitter:title" content="<%- config.title %>">
     <meta name="twitter:description" content="<%- config.subtitle %>">
-    <meta name="twitter:image" content="https://aframe.io/images/card.png">
+    <meta name="twitter:image" content="<%- absolute_url_for('images/card.png') %>">
 
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="<%- url_for('images/aframe-logo-192.png') %>">
+    <meta name="theme-color" content="<%- config.theme_color %>">
+    <link rel="icon" sizes="192x192" href="<%- absolute_url_for('images/aframe-logo-192.png') %>">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="<%- url_for('images/aframe-logo-152.png') %>">
+    <link rel="apple-touch-icon" href="<%- absolute_url_for('images/aframe-logo-152.png') %>">
 
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- url_for(config.feed.path) %>">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- absolute_url_for(config.feed.path) %>">
 
     <%- js('js/compat.js') %>
 
