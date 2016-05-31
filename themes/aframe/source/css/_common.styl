@@ -42,30 +42,31 @@ a.borderless-link
     position absolute
     width 1px
 
-h1, h2, h3, h4
-    font-weight 600
-    color $dark
-
 strong
     font-weight 600
 
 code, pre
-    background-color $codebg
-    font $code-font-size $code-font-default
+    font-size $code-font-size
+    font-family $code-font-default
 
 .font-loaded-mono code,
 .font-loaded-mono pre
     font-family $code-font
 
 code
-    color #e96900
-    padding 3px 5px
-    margin 0 2px
-    border-radius 2px
-    white-space nowrap
+
+
+p, li, dd
+    code
+        font-weight 600
+        padding 0 0.25ch
 
 p
     word-spacing 0.05em
+
+h1, h2, h3, h4
+    font-weight 600
+    color $dark
 
 .btn
     cursor pointer
@@ -107,6 +108,10 @@ p
         margin 2em 0 .8em
         padding-bottom .7em
         border-bottom 1px solid $border
+    h3
+        color $fair
+    h3, h3 code
+        font-size 1.3rem
     h3, h4
         margin 2em 0 1.2em
         position relative
