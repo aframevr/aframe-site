@@ -65,6 +65,7 @@ a
 .subnav-link
     display block
     color rgba(0,0,0,0.35)
+    font-size $subnav-font-size
     text-indent -10px
     padding-left 10px
     transition 0.05s color ease
@@ -325,12 +326,11 @@ if numbered_debug
         color #fff
         display inline-block
         font-family $code-font
-        font-weight 600
         margin 5px 0
         padding 12px 24px
         transition 0.15s ease
         &.btn-download
-            padding 12px 14px
+            padding 12px 8px
             min-width 220px
         &:hover
             background-color lighten($blue, 15%)
