@@ -12,6 +12,11 @@ language:
 robots: all
 blog_title: Blog
 
+# Color for `<meta name="theme-color">`
+## https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color
+## https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/theme-color
+theme_color: black
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://aframe.io/
