@@ -191,13 +191,32 @@ hexo.extend.helper.register('docs_nav_sort', function (pages) {
 });
 
 /**
+ * Retrieve first page of a version's documentation. The first page will be determined
+ * using section_order + order. Generally, whichever page has `{section_order: 1, order: 1}`.
+ *
+ * docs_root_path(site.pages, '0.2.0')
+ * >> docs/0.2.0/guide/
+ *
+ * @param {object} pages - site.pages.
+ */
+hexo.extend.helper.register('docs_root_path', function (pages, version) {
+  var page = docs_version_filter(pages, version).find({parent_section: 'docs'})
+                                                .sort('section_order')
+                                                .sort('order').data[0];
+  return '/' + page.path.replace('index.html', '');
+});
+
+/**
  * Filter documentation navigation to only include pages of the version being browsed.
  */
 hexo.extend.helper.register('docs_version_filter', function (pages, version) {
+  return docs_version_filter(pages, version);
+});
+function docs_version_filter (pages, version) {
   return pages.filter(function (page) {
     return page.path.indexOf('docs/' + version) !== -1;
   });
-});
+}
 
 /**
  * Return list of A-Frame versions, including `master`.

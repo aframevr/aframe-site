@@ -7,9 +7,10 @@
 
   <!-- Version dropdown. -->
   <label class="subnav-label" for="docs-version"><b>Version</b></label>
-  <select id="docs-version" onchange="location = location.href.replace(/docs\/.*/, 'docs/' + this.value + '/')">
+  <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
     <% docs_versions(config.aframe_version).map(function (version) { %>
-      <option <%- activeVersion === version && 'selected' %>>
+      <option <%- activeVersion === version && 'selected' %>
+              data-href="<%- docs_root_path(site.pages, version) %>">
         <%- version %>
       </option>
     <% }); %>
