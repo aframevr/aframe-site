@@ -71,7 +71,7 @@ function getDocRootRedirectObjs () {
  * And do that for every page in 0.2.0.
  */
 function getPreVersionedRedirectObjs () {
-  var paths = glob.sync('multidep/aframe-0.2.0/node_modules/aframe/docs/**/*.md');
+  var paths = glob.sync('.multidep/aframe-0.2.0/node_modules/aframe/docs/**/*.md');
   return paths.map(function getRedirectObj (path) {
     // `path` looks like `.multidep/aframe-0.2.0/node_modules/aframe/docs/<folder>/<file>.md`.
     // Pull out the last three paths and s/md/html (=> docs/<folder>/<file>.html).
