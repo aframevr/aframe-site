@@ -33,12 +33,12 @@ awoa:
     - author: github|ngokevin
       action: versioned
       description: "the aframe.io site docs. Now shows stable version docs with dropdown to view `master` docs"
-      github: "aframe/aframe-site#245"
+      github: "aframe/aframe-site|#245"
 
     - author: github|ngokevin
       action: updated
       description: "the aframe.io site typography to be larger"
-      github: "aframe/aframe-site#254"
+      github: "aframe/aframe-site|#254"
 
   media:
     - author: twitter|mozillavr
