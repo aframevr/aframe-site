@@ -7,8 +7,10 @@
 var childProcess = require('child_process');
 
 // PNG to JPG.
-childProcess.execSync('mogrify -format jpg -resize 30% *.png');
-childProcess.execSync('rm *.png');
+try {
+  childProcess.execSync('mogrify -format jpg -resize 30% *.png');
+  childProcess.execSync('rm *.png');
+} catch (e) { }
 
 // Resize GIFs.
 process.argv.forEach(function resize (val, index) {
