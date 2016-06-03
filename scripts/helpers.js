@@ -35,7 +35,7 @@ hexo.extend.helper.register('blog_attribution', function (author) {
   // Twitter handle.
   if (authorSplit[0] === 'twitter') {
     if (authorSplit.length === 2) {
-      display = '@' + authorSplit[1];
+      display = authorSplit[1];
       link = authorSplit[1];
     } else {
       display = authorSplit[2];

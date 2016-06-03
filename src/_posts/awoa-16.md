@@ -94,7 +94,7 @@ awoa:
       author: twitter|FarbsMcFarbs
       description: "Locomotion prototype for using 6DoF controllers (e.g., Vive) to grab and swing through scenes."
       image: low-nausea-fps-locomotion.gif
-      url: farbs.org/lownauseavrfps/
+      url: http://farbs.org/lownauseavrfps/
 
     - title: Leap Hands Component
       author: twitter|donrmccurdy
@@ -152,3 +152,6 @@ awoa:
 
   stars: 2083
 ---
+
+The future is looking bright with WebVR being incubated by W3C. Look forward to
+A Summer of A-Frame.
