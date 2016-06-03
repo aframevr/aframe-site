@@ -117,7 +117,7 @@ awoa:
     - title: k-frame
       author: github|ngokevin
       description: "Kevin's collection of A-Frame add-ons, components, and helpers. All in one bundle."
-      image: k-frame.png
+      image: k-frame.jpg
       url: https://github.com/ngokevin/k-frame
 
     - title: RCS Gallery
@@ -131,6 +131,12 @@ awoa:
       description: "Watch several video feeds at once in a soccer stadium. ([code](https://github.com/cassell/webvr-soccer-stadium-multiplex))"
       image: webvr-soccer-stadium-complex.jpg
       url: https://s3.amazonaws.com/cassell-webvr/webvr-soccer-stadium-multiplex/index.html
+
+    - title: Audio Visualizer Components Update
+      author: twitter|andgokevin
+      description: "Update to the audio visualizer components to use AudioAnalyser. Smooth."
+      image: audio-visualizer-components-update.gif
+      url: https://ngokevin.github.io/aframe-audio-visualizer-components/spectrum/
 
     - title: Store
       author: twitter|drawvr
