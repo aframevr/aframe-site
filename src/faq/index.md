@@ -2,6 +2,7 @@
 title: FAQ
 type: faq
 layout: page
+toc: true
 ---
 
 ## What is A-Frame?

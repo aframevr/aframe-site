@@ -1,3 +1,4 @@
+var cheerio = require('cheerio');
 var fs = require('fs');
 var moment = require('moment');
 var urllib = require('url');
@@ -16,6 +17,47 @@ var aframeCurrentSha = MASTER;
 try {
   aframeCurrentSha = pkg.dependencies.aframe.split('#')[1];
 } catch (e) {}
+
+/**
+ * Generate data structure for generating table of contents.
+ *
+ * @param {string} content - Page content.
+ * @returns {array} [{title: 'Title', link: '#anchor', children: []}]
+ */
+hexo.extend.helper.register('table_of_contents', function (content) {
+  var $ = cheerio.load(content);
+  var h2Set = $('h2');
+  var toc = [];
+
+  // Get H2s.
+  var items = h2Set.map(function (h2) {
+    var $h2 = $(this);
+
+    // Add H2.
+    var link = $h2.find('a')[0];
+    var item = {
+      title: link.attribs.title,
+      href: link.attribs.href,
+      children: []
+    };
+
+    // Get H3s. Loop until we hit an H2 or until no more siblings.
+    var links = $h2.nextUntil('h2', 'h3').find('a');
+    for (var i = 0; i < links.length; i++) {
+      item.children.push({
+        title: links[i].attribs.title,
+        href: links[i].attribs.href
+      });
+    }
+    return item;
+  });
+
+  // Convert to be `forEach`able.
+  for (var i = 0; i < items.length; i++) {
+    toc.push(items[i]);
+  }
+  return toc;
+});
 
 /**
  * twitter|andgokevin -> [@andgokevin](twitter.com/andgokevin)

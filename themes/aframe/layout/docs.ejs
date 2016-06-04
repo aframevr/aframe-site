@@ -59,7 +59,15 @@
     <% } %>
     <h1 class="page__title"><%= page.title %></h1>
 
-    <%- page.content %>
+    <% var contents = page.content.replace(/\<!--\s*toc\s*-->/gi,
+                                           '<!--toc-->').split('<!--toc-->'); %>
+    <% if (contents.length > 1) { %>
+      <%- contents[0] %>
+      <%- partial('partials/toc', {page: page}) %>
+      <%- contents[1] %>
+    <% } else { %>
+      <%- page.content %>
+    <% } %>
 
     <!-- Previous / Next navigation. -->
     <footer class="footer guide-links c">
