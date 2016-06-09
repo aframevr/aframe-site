@@ -37,7 +37,7 @@
           <li class="subnav-item <%= page.title === p.title ? ' subnav-item-current' : '' %>">
             <a href="<%- page_url(p.path) %>"
                class="subnav-link<%= page.title === p.title ? ' current' : '' %>">
-              <%- p.title %>
+              <%= p.title %>
             </a>
           </li>
         <% }) %>
