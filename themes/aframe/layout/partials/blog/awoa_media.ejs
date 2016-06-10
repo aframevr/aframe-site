@@ -4,8 +4,8 @@
     <% media.forEach(function (media) { %>
       <li>
         <%- blog_attribution(media.author) %>
-        <%- media.action %>
-        <a href="<%- media.url %>"><%- media.title %></a>
+        <%- markdown(media.action) %>
+        <a href="<%- media.url %>"><%- markdown(media.title) %></a>
       </li>
     <% }) %>
   </ul>
