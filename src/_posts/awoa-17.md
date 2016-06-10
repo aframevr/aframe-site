@@ -63,6 +63,12 @@ awoa:
       image: vr-wiki-museum.gif
       url: http://vrwikimuseum.com/
 
+    - title: WebVR Controller Component
+      author: github|richardanaya
+      description: "Component to integrate HTC Vive controllers!"
+      image: webvr-controller-component.jpg
+      url: https://github.com/richardanaya/aframe-webvr-controller
+
     - title: Sketch VR
       author: twitter|uniformtweets
       description: A Tilt Brush alternative for Cardboard Doodle on paper, take a picture, and view it in VR!
