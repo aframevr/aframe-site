@@ -15,7 +15,7 @@ awoa:
       description: "geometry data before geometries are converted to `BufferGeometry`s"
       github: "#1557"
 
-    - author: twitter|amberroyvr
+    - author: github|amberroy
       action: implemented
       description: channels for the Firebase component
       github: "ngokevin/aframe-firebase-component|#11"
@@ -25,7 +25,7 @@ awoa:
       description: errors due to unbounded variables
       github: "ngokevin/aframe-layout-component|#3"
 
-    - author: twitter|amberroyvr
+    - author: github|amberroy
       action: fixed
       description: entities not being removed on disconnect
       github: "ngokevin/aframe-firebase-component|#10"
@@ -40,7 +40,7 @@ awoa:
       description: individual component property broadcasts
       github: "ngokevin/aframe-firebase-component|#5"
 
-    - author: twitter|amberroyvr
+    - author: github|amberroy
       action: implemented
       description: broadcast interval configuration
       github: "ngokevin/aframe-firebase-component|#15"
