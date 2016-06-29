@@ -31,7 +31,8 @@
       virtual reality web
     </h1>
     <%- page.content %>
-    <a href="<%- url_for('docs/guide/getting-started.html') %>" class="get-started nav-link<%- page.canonical_path.match(/docs/) ? ' current' : '' %>">
+    <a href="<%- url_for('docs/' + config.aframe_version + '/guide/getting-started.html') %>"
+       class="get-started nav-link">
       Get Started
     </a>
     <a class="credits borderless-link" href="http://mozvr.com/" rel="external"></a>
