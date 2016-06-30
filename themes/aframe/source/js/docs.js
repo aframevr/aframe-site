@@ -43,6 +43,15 @@ if (content) {
       }
     }
   });
+
+  // NOTE: Hack because variables doesn't get interpolated correctly in Markdown code blocks.
+  // This is for `/docs/<version>/guide/getting-started.html`
+  if (document.querySelector('#builds')) {
+    var versionEls = document.querySelectorAll('.highlight .code .string');
+    for (var i = 0; i < versionEls.length; ++i) {
+      versionEls[i].textContent = versionEls[i].textContent.replace('\{\{ version \}\}', settings.docsVersion);
+    }
+  }
 }
 
 })();
