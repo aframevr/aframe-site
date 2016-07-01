@@ -10,6 +10,11 @@ awoa:
       description: "multiple components of the same type (e.g., `sound__1`, `sound__2`)"
       github: "#1596"
 
+    - author: github|MatthewShotton
+      action: implemented
+      description: "canvas textures"
+      github: "#1567"
+
     - author: github|dmarcos
       action: ensured
       description: "components are initialized before `.play()`ing"
