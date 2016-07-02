@@ -77,7 +77,7 @@ awoa:
       author: github|bryik
       description: "A component for rendering bitmap font text with focus on signed distance field fonts."
       image: bmfont-text-component.jpg
-      url: https://github.com/nylki/aframe-lsystem-component
+      url: https://github.com/bryik/aframe-bmfont-text-component
 
     - title: Video Controls Component
       author: github|oscarmarinmiro
