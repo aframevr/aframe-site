@@ -103,7 +103,7 @@ awoa:
       image: l-system-component.jpg
       url: https://github.com/nylki/aframe-lsystem-component
 
-    - title: VRVistors
+    - title: VRVisitors
       author: twitter|georational
       description: "Multi-user gallery of photogrammetric museum artifacts."
       image: vrvisitors.jpg
