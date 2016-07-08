@@ -108,6 +108,12 @@ marked:
   smartypants: true
   modifyAnchors: 1  # Lowercased anchors.
 
+# Browsersync
+## Repo: https://github.com/hexojs/hexo-browsersync
+## Options: https://www.browsersync.io/docs/options/
+browsersync:
+  notify: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
