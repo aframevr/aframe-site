@@ -29,7 +29,7 @@
     "multidep": "^2.0.0"
   },
   "hexo": {
-    "version": "3.2.0"
+    "version": "3.2.2"
   },
   "scripts": {
     "checklinks": "node bin/checkLinks",
