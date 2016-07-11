@@ -27,11 +27,11 @@ Our hope is that A-Frame provides a constructive contribution to a growing panth
 
 ## How is A-Frame different from VRML?
 
-Technically, A-Frame is notable for its extensibility. Whereas 3DML and VRML predecessors exposed only a curated subset of features with limited functionality, A-Frame is built on an [entity-component-system pattern][ecs] allowing developers to use and share modules and features backed by the power of three.js and WebGL. It was designed by web developers for web developers with a hope to grow an open-source ecosystem of community-created components, shaders, tools, assets, etc.
-
-In a more abstract sense, A-Frame is a JavaScript framework and not a web standard. It is built on top of WebGL which is widely supported on modern browsers for desktop and mobile devices. That means it works for developers and users *today*. This is in contrast to the old approach to implementing new functionality in the web platform; the proposal, ratification, and implementation of new web standards proved to be a multi-year process with no guarantee of a successful outcome.
+A-Frame is a JavaScript framework and not a web standard. It is built on top of WebGL which is widely supported on modern browsers for desktop and mobile devices. That means it works for developers and users *today*. This is in contrast to the old approach to implementing new functionality in the web platform; the proposal, ratification, and implementation of new web standards proved to be a multi-year process with no guarantee of a successful outcome.
 
 A-Frame embodies the [Extensible Web][extensible] approach to evolving the web platform: "instead of taking years to draft and ship web standards that people might not even want, ship new ideas early and often as JavaScript libraries/frameworks built atop low-level enabling APIs (such as WebGL), let them battle it out in the market, and *then* look at standardization of the winners."
+
+Technically, A-Frame is notable for its extensibility. Whereas 3DML and VRML predecessors exposed only a curated subset of features with limited functionality, A-Frame is built on an [entity-component-system pattern][ecs] allowing developers to use and share modules and features backed by the power of three.js and WebGL. It was designed by web developers for web developers with a hope to grow an open-source ecosystem of community-created components, shaders, tools, assets, etc.
 
 ## How can I get started?
 
