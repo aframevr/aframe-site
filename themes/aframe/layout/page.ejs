@@ -9,6 +9,10 @@
   <div class="copy__wrap">
     <h1 class="page__title"><%- page.title %></h1>
 
+    <% if (page.toc) { %>
+      <%- partial('partials/toc', {page: page}) %>
+    <% } %>
+
     <%- page.content %>
 
     <%- partial('partials/docs/footer', {item: page}) %>
