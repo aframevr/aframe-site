@@ -24,7 +24,7 @@ awoa:
       url: http://www.skyislandsvr.com/pages/SadIsland.html
 
     - title: "Guri VR"
-      author: twitter|_developit
+      author: twitter|impronunciable
       description: "Create sharable VR scenes using natural language and zero code. ([code](https://github.com/opennewslabs/guri-vr))"
       image: gurivr.jpg
       url: https://gurivr.com/
