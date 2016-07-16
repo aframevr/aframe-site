@@ -105,3 +105,6 @@ awoa:
 
   stars: 2448
 ---
+
+Where's 0.3.0? It will take yet another week or so. A lot of work on our plates,
+but it will be worth the wait!
