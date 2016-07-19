@@ -60,10 +60,6 @@
           <%- partial('partials/blog/awoa_contributions',
                       {contributions: page.awoa.contributions}) %>
         <% } %>
-
-        <% if (page.author) { %>
-          <p class="post__author_footer">By <%- blog_attribution(page.author) %></p>
-        <% } %>
       </article>
 
       <footer class="footer guide-links c">
