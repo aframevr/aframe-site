@@ -1,6 +1,5 @@
-<% var isHome = is_current('index.html') %>
-<% var showExamples = page.type === 'examples' %>
-<% var isSecondary = page.layout !== 'examples' %>
+<% var isHome = page.type === 'home' %>
+<% var isSecondary = page.layout !== 'home' %>
 <% var isDocs = page.layout === 'docs' %>
 
 <% var delimiter = ' – ' %>
@@ -47,11 +46,8 @@
 
     <%- js('js/compat.js') %>
 
-    <% if (showExamples) { %>
-      <%- css('css/index') %>
-      <% if (!isHome) { %>
-        <%- css('css/examples') %>
-      <% } %>
+    <% if (isHome) { %>
+      <%- css('css/home') %>
     <% } else { %>
       <%- css('css/secondary') %>
     <% } %>
@@ -59,7 +55,7 @@
     <%- partial('partials/ga') %>
   </head>
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
-    <% if (!showExamples) { %>
+    <% if (!isHome) { %>
       <%- partial('partials/secondary/mobile_nav') %>
     <% } %>
     <main id="main" class="main">
@@ -68,7 +64,7 @@
     <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
-    <% if (showExamples) { %>
+    <% if (isHome) { %>
       <%- js('js/examples.js') %>
     <% } %>
     <% if (isSecondary) { %>

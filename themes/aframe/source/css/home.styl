@@ -1,0 +1,110 @@
+@import "_common"
+@import "_fonts"
+@import "_settings"
+
+media--desktop() {
+  @media (min-width: 768px) {
+    {block}
+  }
+}
+
+ul
+  list-style none
+
+.home
+  display flex
+  flex-wrap wrap
+  padding 30px
+
+.home__header,
+.home__examples,
+.home__workflows,
+.home__weekly-features,
+.home__faq,
+.home__footer
+  display flex
+  flex-wrap wrap
+  margin-bottom 30px
+  width 100%
+  > h2
+    width 100%
+
+/* Header. */
+.home__header
+  justify-content space-between
+
+.home__header__logo
+  display flex
+
+.home__wordmark
+  margin-right 10px
+
+.home__nav
+  display flex
+  li
+    margin-right 10px
+
+/* Examples. */
+.home__examples
+  display flex
+
+.home__examples__nav
+  display flex
+  padding 0 15px
+  width 100%
+  +media--desktop()
+    flex-direction column
+    width auto
+
+.home__examples__scene-container
+  display flex
+  flex-grow 2
+  flex-wrap wrap
+
+.home__examples__scene
+  border 1px solid black
+  height 320px
+  width 100%
+
+/* Workflows. */
+.home__workflows__container
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  width 100%
+  +media--desktop()
+    flex-direction row
+
+.home__workflows__container li
+  align-items center
+  border 1px solid black
+  display flex
+  height 50px
+  justify-content center
+  width 100%
+  +media--desktop()
+    width 25%
+
+/* FAQ. */
+.home__faq__container
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  width 100%
+  +media--desktop()
+    flex-direction row
+
+.home__faq__question
+  align-items center
+  border 1px solid black
+  display flex
+  flex-wrap wrap
+  justify-content center
+  padding 15px
+  width 100%
+  +media--desktop()
+    width 33.33%
+  h3
+    display flex
+    justify-content center
+    width 100%

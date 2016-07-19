@@ -1,40 +1,87 @@
-<%- partial('partials/examples/sidebar', {site: site, page: page}) %>
+<div class="home">
+  <header class="home__header">
+    <div class="home__header__logo">
+      <h1 class="home__wordmark">A-Frame</h1>
+      <h2 class="home__motto">Make WebVR</h2>
+    </div>
+    <nav>
+      <ul class="home__nav">
+        <li><a>Docs</a></li>
+        <li><a>Slack</a></li>
+        <li><a>Twitter</a></li>
+        <li><a>GitHub</a></li>
+        <li><a>Download</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="content content--index">
-  <div class="aframe-animation">
-    <iframe id="exampleIframe" class="example__iframe"
-            width="100%"
-            height="100%"
-            src="<%= site.data.examples.home.scene_url %>"
-            allowfullscreen="yes" scrolling="no"></iframe>
+  <div class="home__examples">
+      <ul class="home__examples__nav">
+        <li>Panorama</li>
+        <li>Image Browser</li>
+        <li>Model</li>
+        <li>Audio Visualizer</li>
+        <li>Voxels</li>
+      </ul>
+    <div class="home__examples__scene-container">
+      <div class="home__examples__scene"></div>
+      <div class="home__examples__code">
+        <pre><code>&lt;a-scene&gt;</code></pre>
+      </div>
+    </div>
   </div>
-  <div class="copy__wrap">
-    <ul class="menu">
-      <li class="menu-item">
-        <a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) %>">Docs</a>
+
+  <div class="home__workflows">
+    <h2>Make A-Frame</h2>
+    <ul class="home__workflows__container">
+      <li><a>HTML</a></li>
+      <li><a>JavaScript</a></li>
+      <li><a>MagicaVoxel</a></li>
+      <li><a>Blender</a></li>
+    </ul>
+  </div>
+
+  <div class="home__weekly-features">
+    <h2>Weekly Features</h2>
+    <ul class="home__weekly-features__container">
+      <li class="home__weekly-features__feature">
+      <li>
+    </ul>
+  </div>
+
+  <div class="home__blog">
+    <h2>Blog</h2>
+    <ul class="home__blog__container">
+      <li class="home__blog__post">
+        <a>Exporting Baked Textures from Blender to A-Frame</a>
+        <p>Baked textures provide higher quality visuals with better performance.</p>
+        <img>
+      <li>
+      <li class="home__blog__post">
+        <a>Component Recipes</a>
+        <p>Combining certain components yields certain recipes for cool powers.</p>
+        <img>
+      <li>
+    </ul>
+  </div>
+
+  <div class="home__faq">
+    <h2>FAQ</h2>
+    <ul class="home__faq__container">
+      <li class="home__faq__question">
+        <h3>What is A-Frame?</h3>
+        <p>A-Frame is an open-source WebVR framework for creating virtual reality experiences with HTML.</p>
       </li>
-      <li class="menu-item">
-        <a href="<%- url_for('faq/') %>">FAQ</a>
+      <li class="home__faq__question">
+         <h3>What is WebVR?</h3>
+         <p>WebVR is virtual reality in the browser.</p>
       </li>
-      <li class="menu-item">
-        <a href="<%- url_for('blog/') %>">Blog</a>
-      </li>
-      <li class="menu-item">
-        <a href="<%- url_for('community/') %>">Community</a>
-      </li>
-      <li class="menu-item">
-        <a href="<%- config.github.aframe.url %>" rel="external">GitHub</a>
+      <li class="home__faq__question">
+         <h3>What do I need?</h3>
+         <p>You need a browser and a headset.</p>
       </li>
     </ul>
-    <h1 class="slogan">
-      Building blocks for the<br>
-      virtual reality web
-    </h1>
-    <%- page.content %>
-    <a href="<%- url_for('docs/' + config.aframe_version + '/guide/getting-started.html') %>"
-       class="get-started nav-link">
-      Get Started
-    </a>
-    <a class="credits borderless-link" href="http://mozvr.com/" rel="external"></a>
   </div>
+
+  <footer class="home__footer"></footer>
 </div>

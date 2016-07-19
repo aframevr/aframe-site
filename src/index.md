@@ -1,6 +1,6 @@
 ---
 title: Building Blocks for the Virtual Reality Web
-type: examples
+type: home
 layout: index
 ---
 
