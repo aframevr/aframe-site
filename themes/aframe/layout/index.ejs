@@ -1,3 +1,6 @@
+<script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js">
+</script>
+
 <div class="home">
   <header class="home__header">
     <div class="home__header__logo">
@@ -24,9 +27,17 @@
         <li>Voxels</li>
       </ul>
     <div class="home__examples__scene-container">
-      <div class="home__examples__scene"></div>
+      <div class="home__examples__scene">
+        <a-scene>
+          <a-sky src="/examples/panorama/puydesancy.jpg" rotation="0 180 0"></a-sky>
+        </a-scene>
+      </div>
       <div class="home__examples__code">
-        <pre><code>&lt;a-scene&gt;</code></pre>
+        <pre><code>
+          &lt;a-scene&gt;
+            &lt;a-sky src="/examples/panorama/puydesancy.jpg" rotation="0 180 0"&gt;&lt;/a-sky&gt;
+          &lt;/a-scene&gt;
+        </code></pre>
       </div>
     </div>
   </div>

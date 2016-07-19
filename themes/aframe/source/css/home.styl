@@ -49,6 +49,8 @@ ul
 /* Examples. */
 .home__examples
   display flex
+  +media--desktop()
+    flex-wrap nowrap
 
 .home__examples__nav
   display flex
@@ -56,17 +58,32 @@ ul
   width 100%
   +media--desktop()
     flex-direction column
+    min-width 180px
     width auto
 
 .home__examples__scene-container
   display flex
-  flex-grow 2
   flex-wrap wrap
 
 .home__examples__scene
   border 1px solid black
-  height 320px
+  position relative
+  height 480px
+
+// Remove when: https://github.com/aframevr/aframe/pull/1474
+html
+  position static !important
+body
+  overflow auto !important
+a-scene
+  display block
+  height 100%
+  position relative
   width 100%
+  canvas
+    height 100% !important
+    position relative !important
+    width 100% !important
 
 /* Workflows. */
 .home__workflows__container
