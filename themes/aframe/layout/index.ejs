@@ -46,16 +46,27 @@
             <pre class="home__examples__pre"><code class="home__examples__code"><%= examples_get_source(site.data.examples.examples[i].slug) %></code></pre>
             <div class="home__examples__panel">
               <!-- Components. -->
-              <div class="home__examples__components">
-                <% if (example.components && example.components.length) { %>
-                  <h4>Components</h4>
+              <% if (example.components && example.components.length) { %>
+                <div class="home__examples__components">
+                  <h4>Components Used</h4>
                   <ul>
                     <% example.components.forEach(function (component) { %>
                       <li><a href="<%- component.src %>"><%- component.title %></a></li>
                     <% }); %>
                   </ul>
-                <% } %>
-              </div>
+                </div>
+              <% } %>
+              <!-- Assets. -->
+              <% if (example.assets && example.assets.length) { %>
+                <div class="home__examples__assets">
+                  <h4>Assets Used</h4>
+                  <ul>
+                    <% example.assets.forEach(function (asset) { %>
+                      <li><a href="<%- asset.src %>"><%- asset.title %></a></li>
+                    <% }); %>
+                  </ul>
+                </div>
+              <% } %>
             </div>
           </div>
         <% }); %>

@@ -132,16 +132,39 @@ a-scene
 .home__examples__code
   background #333
   color #FFF
-  flex 4
+  flex 3
   padding 15px
 
 .home__examples__panel
   background #444
   display flex
+  flex-direction column
   flex 1
+  min-width 320px
 
-.home__examples__components
+.home__examples__components,
+.home__examples__assets
   display flex
+  flex-direction column
+  padding $spacing-med
+  h4
+    font-weight 300
+    margin-bottom 5px
+    text-decoration underline
+  li
+    margin 2px 0
+  a
+    border 1px solid #FFF
+    border-radius 2px
+    display inline-block
+    max-width 100%
+    overflow hidden
+    padding 5px 10px
+    text-overflow ellipsis
+    white-space nowrap
+  h4,
+  a
+    color #FFF
 
 /* Workflows. */
 .home__workflows__container

@@ -3,6 +3,8 @@ examples:
     slug: panorama
     components:
     assets:
+      - title: puydesancy.jpg
+        src: /examples/panorama/puydesancy.jpg
     guide:
 
   - title: MagicaVoxel
@@ -11,6 +13,10 @@ examples:
       - title: ply-model
         src: https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js
     assets:
+      - title: aframe.ply
+        src: /examples/magicavoxel/models/aframe.ply
+      - title: 231537__vkproduktion__forest-birds-loop-02.wav
+        src: /examples/magicavoxel/audio/231537__vkproduktion__forest-birds-loop-02.wav
     guide:
 
   - title: Audio Visualizer
@@ -27,4 +33,6 @@ examples:
       - title: layout
         src: https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js
     assets:
+      - title: broke-for-free__night-owl.mp3
+        src: /examples/audio-visualizer/broke-for-free__night-owl.mp3
     guide:
