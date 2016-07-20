@@ -19,7 +19,7 @@ ul
   flex-wrap wrap
   padding 30px
   +media--desktop()
-    padding 30px 120px
+    padding 30px 8%
 
 .home__header,
 .home__examples,
@@ -77,10 +77,24 @@ ul
   flex-wrap wrap
 
 .home__examples__scene
-  border 1px solid black
+  background #333
+  border-bottom 1px solid black
   position relative
   height 480px
   width 100%
+  &:before
+    color #FFF
+    content 'Loading\2026';
+    font-size 36px
+    font-style italic
+    font-family monospace
+    left 0
+    right 0
+    margin 20% auto
+    position absolute
+    text-align center
+    text-transform uppercase
+    z-index 0
 
 // Remove when: https://github.com/aframevr/aframe/pull/1474
 html
@@ -97,7 +111,7 @@ a-scene
     position relative !important
     width 100% !important
 .a-enter-vr
-  position static
+  position static !important
 
 .home__examples__details
   width 100%
