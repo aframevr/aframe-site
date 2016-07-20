@@ -26,10 +26,10 @@ ul
 .home__faq
   display flex
   flex-wrap wrap
-  margin-bottom 30px
   width 100%
   > h2
-    margin-bottom 15px
+    margin-top 30px
+    padding $spacing-med
     width 100%
 
 /* Header. */
@@ -37,6 +37,7 @@ ul
   justify-content space-between
 
 .home__header__logo
+  margin $spacing-med
   align-items center
   display flex
 
@@ -50,8 +51,9 @@ ul
 
 .home__nav
   display flex
-  li
-    margin-right 10px
+  margin 30px $spacing-med $spacing-med 0
+  li:not(:last-child)
+    margin-right 15px
 
 /* Examples. */
 .home__examples
@@ -61,7 +63,7 @@ ul
   display flex
   width 100%
   > li
-    padding 15px
+    padding $spacing-med
     &:hover
       background #333
       color #fff
