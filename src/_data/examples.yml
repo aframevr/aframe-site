@@ -11,7 +11,7 @@ examples:
     slug: magicavoxel
     components:
       - title: ply-model
-        src: https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js
+        src: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
     assets:
       - title: aframe.ply
         src: /examples/magicavoxel/models/aframe.ply
@@ -23,15 +23,15 @@ examples:
     slug: audio-visualizer
     components:
       - title: audio-visualizer
-        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/dist/aframe-audio-visualizer-components.min.js
-      - title: audio-visualizer-spectrum-scale
-        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/examples/spectrum/components/audio-visualizer-spectrum-scale.js
-      - title: scale-y-color
-        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/examples/spectrum/components/scale-y-color.js
+        src: /examples/audio-visualizer/lib/aframe-audio-visualizer-components.min.js
       - title: entity-generator
-        src: https://rawgit.com/ngokevin/aframe-entity-generator-component/master/dist/aframe-entity-generator-component.min.js
+        src: /examples/audio-visualizer/lib/aframe-entity-generator-component.min.js
       - title: layout
-        src: https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js
+        src: /examples/audio-visualizer/lib/aframe-layout-component.min.js
+      - title: audio-visualizer-spectrum-scale
+        src: /examples/audio-visualizer/components/audio-visualizer-spectrum-scale.js
+      - title: scale-y-color
+        src: /examples/audio-visualizer/components/scale-y-color.js
     assets:
       - title: broke-for-free__night-owl.mp3
         src: /examples/audio-visualizer/broke-for-free__night-owl.mp3

@@ -194,7 +194,7 @@ hexo.extend.helper.register('example_url', function (item) {
 
 hexo.extend.helper.register('examples_get_source', function (slug) {
   // TODO: require('path');
-  var contents = fs.readFileSync('src/examples/' + slug + '/index.html', 'utf-8');
+  var contents = fs.readFileSync('themes/aframe/source/examples/' + slug + '/index.html', 'utf-8');
   return contents;
 });
 
