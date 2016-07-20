@@ -2,13 +2,29 @@ examples:
   - title: Panorama
     slug: panorama
     dependencies:
+    assets:
     guide:
-    repo:
 
   - title: MagicaVoxel
     slug: magicavoxel
     dependencies:
       - title: ply-model
         src: https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js
+    assets:
     guide:
-    repo:
+
+  - title: Audio Visualizer
+    slug: audio-visualizer
+    dependencies:
+      - title: audio-visualizer
+        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/dist/aframe-audio-visualizer-components.min.js
+      - title: audio-visualizer-spectrum-scale
+        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/examples/spectrum/components/audio-visualizer-spectrum-scale.js
+      - title: scale-y-color
+        src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/examples/spectrum/components/scale-y-color.js
+      - title: entity-generator
+        src: https://rawgit.com/ngokevin/aframe-entity-generator-component/master/dist/aframe-entity-generator-component.min.js
+      - title: layout
+        src: https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js
+    assets:
+    guide:
