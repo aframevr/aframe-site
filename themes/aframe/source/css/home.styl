@@ -25,8 +25,7 @@ ul
 .home__examples,
 .home__workflows,
 .home__features,
-.home__faq,
-.home__footer
+.home__faq
   display flex
   flex-wrap wrap
   margin-bottom 30px
@@ -40,10 +39,11 @@ ul
   justify-content space-between
 
 .home__header__logo
+  align-items center
   display flex
 
 .home__wordmark
-  margin-right 10px
+  margin-right 20px
 
 .home__nav
   display flex
@@ -185,21 +185,47 @@ a-scene
   display flex
   flex-direction column
   flex-wrap wrap
+  height 240px
   width 100%
   +media--desktop()
     flex-direction row
 
-.home__faq__question
-  align-items center
-  border 1px solid black
+.home__faq__item
+  background #EEE
   display flex
+  flex-direction column
   flex-wrap wrap
   justify-content center
-  padding 15px
-  width 100%
+  margin-bottom 2px
+  padding 15px 15px 0
   +media--desktop()
-    width 33.33%
+    flex-direction row
+    margin-bottom 0
+    width unquote('calc(33.33% - 5px)')
+    &:not(:last-child)
+      margin-right 5px
   h3
-    display flex
-    justify-content center
+    font-style italic
+    text-align center
     width 100%
+  a
+    text-align center
+    width 100%
+
+/* Footer. */
+.home__footer
+  background #333
+  color #FFF
+  display flex
+  height 240px
+  justify-content space-between
+  padding 30px 120px
+  width 100%
+
+.home__footer__links
+  display flex
+  li
+    margin-right 20px
+    a
+      color #FFF
+      text-decoration underline

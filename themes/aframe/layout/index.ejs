@@ -86,7 +86,7 @@
       <% site.posts.sort('date', -1).slice(0, 4).forEach(function (post, i) { %>
         <li class="home__blog-post">
           <div class="home__blog-post__details">
-            <a href="<%- post.path %>"><%- post.title %></a>
+            <h3><a href="<%- post.path %>"><%- post.title %></a></h3>
             <a><%- post.author %></a>
           </div>
           <img src="<%- post.image %>">
@@ -98,24 +98,29 @@
   <div class="home__faq">
     <h2>FAQ</h2>
     <ul class="home__faq__container">
-      <li class="home__faq__question">
+      <li class="home__faq__item">
         <h3>What is A-Frame?</h3>
-        <p>A-Frame is an open-source WebVR framework for creating virtual reality experiences with HTML.</p>
+        <p>
+          A-Frame is an open-source WebVR framework for creating virtual
+          reality experiences with HTML. Under the hood, it is a VR-oriented three.js
+          framework that introduces a declarative entity-component pattern.
+        </p>
+        <a href="/docs/guide/">Learn More</a>
       </li>
-      <li class="home__faq__question">
-         <h3>What is WebVR?</h3>
-         <p>WebVR is virtual reality in the browser.</p>
+      <li class="home__faq__item">
+        <h3>What is WebVR?</h3>
+        <p>
+          WebVR is virtual reality in the browser.
+        </p>
+        <a href="https://vr.mozilla.org">Learn More</a>
       </li>
-      <li class="home__faq__question">
-         <h3>What do I need?</h3>
-         <p>You need a browser and a headset.</p>
+      <li class="home__faq__item">
+        <h3>What do I need?</h3>
+        <p>You need a browser and a headset.</p>
+        <a href="https://vr.mozilla.org">Learn More</a>
       </li>
     </ul>
   </div>
-
-  <footer class="home__footer">
-    Mozilla
-  </footer>
 </div>
 
 <%- js('js/home.js') %>
