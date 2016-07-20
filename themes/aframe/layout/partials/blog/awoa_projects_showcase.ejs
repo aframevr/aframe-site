@@ -1,7 +1,9 @@
 <div class="post__projects">
   <% projects.forEach(function (project) { %>
     <% if (project.image) { %>
-      <% partial('partials/awoa_project', {project: project}) %>
+      <!-- TODO: See why the partial doesn't work. -->
+      <a class="awoa-project" href="<%- project.url %>" title="<%- project.title %>"
+         style="background-image: url(<%= url_for('images/awoa/' + project.image) %>)"></a>
     <% } %>
   <% }) %>
 </div>

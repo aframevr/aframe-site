@@ -25,6 +25,7 @@ ul
 .home__examples,
 .home__workflows,
 .home__features,
+.home__blog,
 .home__faq
   display flex
   flex-wrap wrap
@@ -44,6 +45,11 @@ ul
 
 .home__wordmark
   margin-right 20px
+  text-transform uppercase
+
+.home__motto
+  font-weight 300
+  text-transform uppercase
 
 .home__nav
   display flex
@@ -118,9 +124,10 @@ a-scene
   display flex
   height 100px
   justify-content center
+  margin 2px
   width 100%
   +media--desktop()
-    width 25%
+    width 240px
 
 /* Features. */
 .home__features__container
@@ -147,14 +154,20 @@ a-scene
   height 320px
   width 100%
   .awoa-project
-    flex-basis unquote('calc(66% + 6px)')
+    flex 2
+    margin-right 2px
     height 100%
+
+.home__feature__details
+  flex 1
+  left 8px
+  position relative
 
 .home__feature
   margin 2px
   height 240px
   +media--desktop()
-    flex-basis unquote('calc(33% - 4px)');
+    flex 1
   .awoa-project
     height 100%
     width 100%
@@ -168,6 +181,7 @@ a-scene
 .home__blog-post
   display flex
   justify-content space-between
+  margin-bottom 2px
   width 100%
 
 .home__blog-post__details
@@ -184,33 +198,27 @@ a-scene
 .home__faq__container
   display flex
   flex-direction column
-  flex-wrap wrap
   height 240px
   width 100%
   +media--desktop()
     flex-direction row
 
 .home__faq__item
+  align-items center
   background #EEE
   display flex
+  flex 1
   flex-direction column
   flex-wrap wrap
-  justify-content center
+  justify-content space-between
   margin-bottom 2px
-  padding 15px 15px 0
+  padding 20px 15px
   +media--desktop()
-    flex-direction row
     margin-bottom 0
-    width unquote('calc(33.33% - 5px)')
     &:not(:last-child)
       margin-right 5px
   h3
     font-style italic
-    text-align center
-    width 100%
-  a
-    text-align center
-    width 100%
 
 /* Footer. */
 .home__footer
