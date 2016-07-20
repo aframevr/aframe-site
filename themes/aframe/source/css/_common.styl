@@ -3,219 +3,225 @@
 @import "_fonts"
 
 *
-    margin 0
-    padding 0
-    box-sizing border-box
+  margin 0
+  padding 0
+  box-sizing border-box
 
 html, body
-    height 100%
+  height 100%
 
 html
-    font-size 14px
+  font-size 14px
+
+a
+  text-decoration none
+
+ul
+  list-style-type none
 
 body
-    font $body-font-weight $body-font-size/$body-line-height $body-font-default
-    color $medium
+  font $body-font-weight $body-font-size/$body-line-height $body-font-default
+  color $medium
 
 .font-loaded-sans body
-    font-family $body-font
+  font-family $body-font
 
 iframe, img, button, input[type=button], .btn
-    border 0
+  border 0
 
 .borderless-links a,
 a.borderless-links,
 a.borderless-link
-    border 0
+  border 0
 
 /**
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 .hidden-visually
-    border 0
-    clip rect(0 0 0 0)
-    height 1px
-    margin -1px
-    overflow hidden
-    padding 0
-    position absolute
-    width 1px
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
 
 strong
-    font-weight 600
+  font-weight 600
 
 code, pre
-    font-size $code-font-size
-    font-family $code-font-default
+  font-size $code-font-size
+  font-family $code-font-default
 
 .font-loaded-mono code,
 .font-loaded-mono pre
-    font-family $code-font
+  font-family $code-font
 
 code
 
 
 p, li, dd
-    code
-        font-weight 600
-        padding 0 0.25ch
+  code
+    font-weight 600
+    padding 0 0.25ch
 
 p
-    word-spacing 0.05em
+  word-spacing 0.05em
 
 h1, h2, h3, h4
-    font-weight 600
-    color $dark
+  font-weight 600
+  color $dark
 
 .btn
-    cursor pointer
-    font inherit
+  cursor pointer
+  font inherit
 
 .copy__wrap
-    max-width 700px
+  max-width 700px
 
 .sidebar__wrap,
 .copy__wrap
-    padding 40px
+  padding 40px
 
 .nav, .subnav
-    list-style-type none
+  list-style-type none
 
 .copy
-    a.btn
-        font-size .9em
+  a.btn
+    font-size .9em
+    color #fff
+    margin .2em 0
+    max-width 180px
+    text-align center
+    padding 12px 24px
+    display inline-block
+    vertical-align middle
+  img
+    max-width 100%
+  span.light
+    color $light
+  span.info
+    font-size .85em
+    display inline-block
+    vertical-align middle
+    width 280px
+    margin-left 20px
+  h1
+    margin 0
+  h2
+    margin 2em 0 .8em
+    padding-bottom .7em
+    border-bottom 1px solid $border
+  h3
+    color $fair
+  h3, h3 code
+    font-size 1.3rem
+  h3, h4
+    margin 2em 0 1.2em
+    position relative
+  figure, p, ul, ol, table
+    margin 15px 0
+    &:last-child + .footer
+      margin-bottom 0
+  p, ul, ol, table
+    line-height 1.6
+  ul, ol
+    padding-left 1.5em
+  blockquote
+    margin 2em 0
+    padding-left 20px
+    border-left 4px solid $green
+    p
+      font-weight 400
+      margin-left 0
+  iframe
+    margin 1em 0
+  p + h2,
+  table + table
+    margin-top 1.5em
+  .tip
+    background-color $codebg
+    border-bottom-right-radius $radius
+    border-left 4px solid $pink
+    border-top-right-radius $radius
+    margin 2em 0
+    padding 1.5em 2em
+    position relative
+    &:before
+      position absolute
+      top 14px
+      left -12px
+      background-color $pink
+      color #fff
+      content "!"
+      width 20px
+      height 20px
+      border-radius 100%
+      text-align center
+      line-height 20px
+      font-weight bold
+      font-size 14px
+    &.tip--dark
+      background-color rgba(0,0,0,0.5)
+      border-left-color rgba(239,45,94,0.5)
+      &:before
+        background-color $pink
+        border 2px solid #000
         color #fff
-        margin .2em 0
-        max-width 180px
-        text-align center
-        padding 12px 24px
-        display inline-block
-        vertical-align middle
-    img
-        max-width 100%
-    span.light
-        color $light
-    span.info
-        font-size .85em
-        display inline-block
-        vertical-align middle
-        width 280px
-        margin-left 20px
-    h1
-        margin 0
-    h2
-        margin 2em 0 .8em
-        padding-bottom .7em
-        border-bottom 1px solid $border
-    h3
-        color $fair
-    h3, h3 code
-        font-size 1.3rem
-    h3, h4
-        margin 2em 0 1.2em
-        position relative
-    figure, p, ul, ol, table
-        margin 15px 0
-        &:last-child + .footer
-            margin-bottom 0
-    p, ul, ol, table
-        line-height 1.6
-    ul, ol
-        padding-left 1.5em
-    blockquote
-        margin 2em 0
-        padding-left 20px
-        border-left 4px solid $green
-        p
-            font-weight 400
-            margin-left 0
-    iframe
-        margin 1em 0
-    p + h2,
-    table + table
-        margin-top 1.5em
-    .tip
-        background-color $codebg
-        border-bottom-right-radius $radius
-        border-left 4px solid $pink
-        border-top-right-radius $radius
-        margin 2em 0
-        padding 1.5em 2em
-        position relative
-        &:before
-            position absolute
-            top 14px
-            left -12px
-            background-color $pink
-            color #fff
-            content "!"
-            width 20px
-            height 20px
-            border-radius 100%
-            text-align center
-            line-height 20px
-            font-weight bold
-            font-size 14px
-        &.tip--dark
-            background-color rgba(0,0,0,0.5)
-            border-left-color rgba(239,45,94,0.5)
-            &:before
-                background-color $pink
-                border 2px solid #000
-                color #fff
-                left -14px
-        &.tip--thin
-            font-size 0.9rem
-            padding 1rem 2rem
-            &:before
-                top 0.75rem
-        p:first-child
-            margin-top 0
-        p:last-child
-            margin-bottom 0
+        left -14px
+    &.tip--thin
+      font-size 0.9rem
+      padding 1rem 2rem
+      &:before
+        top 0.75rem
+    p:first-child
+      margin-top 0
+    p:last-child
+      margin-bottom 0
+  ul
+    list-style disc
+    margin-left 1em
+    padding-left 1em
     ul
-        list-style disc
-        margin-left 1em
-        padding-left 1em
-        ul
-            margin-bottom 0
-            margin-top 0
-    ol
-        list-style decimal
-        margin-left 1em
-        padding-left 1em
-    ol ol
-        list-style circle
+      margin-bottom 0
+      margin-top 0
+  ol
+    list-style decimal
+    margin-left 1em
+    padding-left 1em
+  ol ol
+    list-style circle
 
-    li + li,
-    ul ul li,
-    ol ol li
-        margin-top: .35rem
+  li + li,
+  ul ul li,
+  ol ol li
+    margin-top: .35rem
 
 .logo__wordmark
-    background url(../images/aframe-name-pink.svg) no-repeat
-    display block
-    height 31px
-    margin-bottom 30px
-    text-indent -9999px
+  background url(../images/aframe-name-pink.svg) no-repeat
+  display block
+  height 31px
+  margin-bottom 30px
+  text-indent -9999px
 
 .float-left
-    float left
+  float left
 
 .float-right
-    float right
+  float right
 
 // Clearfix for floats
 .c:after
-    clear both
-    content ""
-    display table
+  clear both
+  content ""
+  display table
 
 @media screen and (max-width: 800px)
-    .sidebar__wrap,
-    .copy__wrap
-        padding 20px
+  .sidebar__wrap,
+  .copy__wrap
+    padding 20px
 
-    .logo__wordmark
-        margin-bottom 20px
+  .logo__wordmark
+    margin-bottom 20px

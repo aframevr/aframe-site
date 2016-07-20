@@ -57,8 +57,8 @@
       <% site.posts
           .filter(function (post) { return post.awoa; })
           .sort('date', -1)
+          .slice(0, 4)
           .forEach(function (post, i) { %>
-        <% if (i > 3) { return; } %>
         <% var project = post.awoa.projects[0]; %>
         <% if (i === 0) { %>
           <li class="home__feature__active">
@@ -83,20 +83,15 @@
   <div class="home__blog">
     <h2>Blog</h2>
     <ul class="home__blog__container">
-      <li class="home__blog-post">
-        <div class="home__blog-post__details">
-          <a>Exporting Baked Textures from Blender to A-Frame</a>
-          <p>Baked textures provide higher quality visuals with better performance.</p>
-        </div>
-        <img>
-      <li>
-      <li class="home__blog-post">
-        <div class="home__blog-post__details">
-          <a>Component Recipes</a>
-          <p>Combining certain components yields certain recipes for cool powers.</p>
-        </div>
-        <img>
-      <li>
+      <% site.posts.sort('date', -1).slice(0, 4).forEach(function (post, i) { %>
+        <li class="home__blog-post">
+          <div class="home__blog-post__details">
+            <a href="<%- post.path %>"><%- post.title %></a>
+            <a><%- post.author %></a>
+          </div>
+          <img src="<%- post.image %>">
+        <li>
+      <% }); %>
     </ul>
   </div>
 
