@@ -4,7 +4,7 @@
 <% site.data.examples.examples.forEach(function (example, i) { %>
   <% if (!example.components || !example.components.length) { return; } %>
   <% example.components.forEach(function (component) { %>
-    <%- js(component.src) %>
+    <%- js(component.file) %>
   <% }); %>
 <% }); %>
 
@@ -52,7 +52,8 @@
                   <h4>Components Used</h4>
                   <ul>
                     <% example.components.forEach(function (component) { %>
-                      <li><a href="<%- component.src %>"><%- component.title %></a></li>
+                      <li><a href="<%- component.file %>" target="_blank"
+                             rel="noopener noreferrer"><%- component.title %></a></li>
                     <% }); %>
                   </ul>
                 </div>
@@ -63,7 +64,8 @@
                   <h4>Assets Used</h4>
                   <ul>
                     <% example.assets.forEach(function (asset) { %>
-                      <li><a href="<%- asset.src %>"><%- asset.title %></a></li>
+                      <li><a href="<%- asset.file %>" target="_blank"
+                           rel="noopener noreferrer"><%- asset.title %></a></li>
                     <% }); %>
                   </ul>
                 </div>

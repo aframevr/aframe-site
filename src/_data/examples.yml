@@ -4,35 +4,42 @@ examples:
     components:
     assets:
       - title: puydesancy.jpg
-        src: /examples/panorama/puydesancy.jpg
+        file: /examples/panorama/puydesancy.jpg
     guide:
 
   - title: MagicaVoxel
     slug: magicavoxel
     components:
       - title: ply-model
-        src: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
+        file: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
+        source: https://github.com/donmccurdy/aframe-extras
     assets:
       - title: aframe.ply
-        src: /examples/magicavoxel/models/aframe.ply
+        file: /examples/magicavoxel/models/aframe.ply
+        source: https://github.com/ngokevin/aframe-magicavoxel-projects
       - title: 231537__vkproduktion__forest-birds-loop-02.wav
-        src: /examples/magicavoxel/audio/231537__vkproduktion__forest-birds-loop-02.wav
+        file: /examples/magicavoxel/audio/231537__vkproduktion__forest-birds-loop-02.wav
+        source: https://www.freesound.org
     guide:
 
   - title: Audio Visualizer
     slug: audio-visualizer
     components:
       - title: audio-visualizer
-        src: /examples/audio-visualizer/lib/aframe-audio-visualizer-components.min.js
+        file: /examples/audio-visualizer/lib/aframe-audio-visualizer-components.min.js
+        source: https://github.com/ngokevin/aframe-audio-visualizer-components
       - title: entity-generator
-        src: /examples/audio-visualizer/lib/aframe-entity-generator-component.min.js
+        file: /examples/audio-visualizer/lib/aframe-entity-generator-component.min.js
+        source: https://github.com/ngokevin/aframe-entity-generator-components
       - title: layout
-        src: /examples/audio-visualizer/lib/aframe-layout-component.min.js
+        file: /examples/audio-visualizer/lib/aframe-layout-component.min.js
+        source: https://github.com/ngokevin/aframe-layout-component
       - title: audio-visualizer-spectrum-scale
-        src: /examples/audio-visualizer/components/audio-visualizer-spectrum-scale.js
+        file: /examples/audio-visualizer/components/audio-visualizer-spectrum-scale.js
       - title: scale-y-color
-        src: /examples/audio-visualizer/components/scale-y-color.js
+        file: /examples/audio-visualizer/components/scale-y-color.js
     assets:
       - title: broke-for-free__night-owl.mp3
-        src: /examples/audio-visualizer/broke-for-free__night-owl.mp3
+        file: /examples/audio-visualizer/broke-for-free__night-owl.mp3
+        source: https://freemusicarchive.org/
     guide:
