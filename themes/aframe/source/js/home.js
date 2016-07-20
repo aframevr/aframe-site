@@ -9,7 +9,7 @@ var wrapperEl = document.querySelector('.home__examples');
 // Add event listeners to example nav.
 for (var i = 0; i < exampleLinkEls.length; i++) {
   // Change the scene when an example link is clicked.
-  exampleLinkEls[i].addEventListener('click', function () {
+  exampleLinkEls[i].addEventListener('click', function (e) {
     // Hide all detail blocks, then show the active one.
     var slug = this.dataset.exampleLink;
     var detailEl = wrapperEl.querySelector('[data-example-detail="' + slug + '"]');
@@ -18,6 +18,12 @@ for (var i = 0; i < exampleLinkEls.length; i++) {
     // Swap <a-scene>.
     var codeEl = detailEl.querySelector('.home__examples__code');
     sceneEl.innerHTML = codeEl.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+
+    // Toggle active example button classes
+    exampleLinkEls.forEach(function (link) {
+      link.classList.remove('home__examples--active');
+    });
+    e.target.classList.add('home__examples--active');
   });
 }
 
