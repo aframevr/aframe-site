@@ -17,9 +17,6 @@ ul
 .home
   display flex
   flex-wrap wrap
-  padding 30px
-  +media--desktop()
-    padding 30px 8%
 
 .home__header,
 .home__examples,
@@ -59,17 +56,15 @@ ul
 /* Examples. */
 .home__examples
   display flex
-  +media--desktop()
-    flex-wrap nowrap
 
 .home__examples__nav
   display flex
-  padding 0 15px
   width 100%
-  +media--desktop()
-    flex 1
-    flex-direction column
-    width auto
+  > li
+    padding 15px
+    &:hover
+      background #333
+      color #fff
 
 .home__examples__scene-container
   display flex
