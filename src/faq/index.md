@@ -159,9 +159,9 @@ The previous WebVR API that A-Frame was initially built on did not support trave
 
 ## Is there a feature roadmap?
 
-We use [GitHub issues on the A-Frame repo][ghissue] to track feature requests and bugs. Please file new requests for things you would like to see, or bugs that you would like fixed!
+Short-term and long-term goals, as well as overall project goals, are posted within the [AFrame Roadmap](https://github.com/aframevr/aframe/blob/master/ROADMAP.md).
 
-For a long term roadmap, stay tuned.
+We use [GitHub issues on the A-Frame repo][ghissue] to track feature requests and bugs. Please file new requests for things you would like to see, or bugs that you would like fixed!
 
 ## Do I call it "A-Frame" or "aframe" or "aframevr"?
 
