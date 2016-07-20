@@ -2,7 +2,7 @@
 <% site.data.examples.examples.forEach(function (example, i) { %>
   <% if (!example.dependencies || !example.dependencies.length) { return; } %>
   <% example.dependencies.forEach(function (dependency) { %>
-    <script src="<%- dependency.src %>"></script>
+    <%- js(dependency.src) %>
   <% }); %>
 <% }); %>
 

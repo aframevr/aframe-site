@@ -9,6 +9,6 @@ examples:
     slug: magicavoxel
     dependencies:
       - title: ply-model
-        src: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
+        src: https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js
     guide:
     repo:
