@@ -1,4 +1,10 @@
 <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
+<% site.data.examples.examples.forEach(function (example, i) { %>
+  <% if (!example.dependencies || !example.dependencies.length) { return; } %>
+  <% example.dependencies.forEach(function (dependency) { %>
+    <script src="<%- dependency.src %>"></script>
+  <% }); %>
+<% }); %>
 
 <div class="home">
   <header class="home__header">
@@ -48,20 +54,29 @@
   <div class="home__features">
     <h2>Weekly Features</h2>
     <ul class="home__features__container">
-      <li class="home__feature--active">
-        <img>
-        <div class="home__feature__details">
-          <h3>Digimon Get</h3>
-          <p>Digivolve them all!</p>
-          <div class="home__feature__avatar">
-            <img>
-            <p>@katyperry</p>
-          </div>
-        </div>
-      </li>
-      <li class="home__feature"><img></li>
-      <li class="home__feature"><img></li>
-      <li class="home__feature"><img></li>
+      <% site.posts
+          .filter(function (post) { return post.awoa; })
+          .sort('date', -1)
+          .forEach(function (post, i) { %>
+        <% if (i > 3) { return; } %>
+        <% var project = post.awoa.projects[0]; %>
+        <% if (i === 0) { %>
+          <li class="home__feature__active">
+            <%- partial('partials/blog/awoa_project', {project: project}) %>
+            <div class="home__feature__details">
+              <h3><%- project.title %></h3>
+              <p><%- markdown(project.description) %></p>
+              <div class="home__feature__avatar">
+                <p>By <%- blog_attribution(project.author) %></p>
+              </div>
+            </div>
+          </li>
+        <% } else { %>
+          <li class="home__feature">
+            <%- partial('partials/blog/awoa_project', {project: project}) %>
+          </li>
+        <% } %>
+      <% }); %>
     </ul>
   </div>
 

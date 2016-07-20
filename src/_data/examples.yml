@@ -8,5 +8,7 @@ examples:
   - title: MagicaVoxel
     slug: magicavoxel
     dependencies:
+      - title: ply-model
+        src: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
     guide:
     repo:

@@ -32,6 +32,7 @@ ul
   margin-bottom 30px
   width 100%
   > h2
+    margin-bottom 15px
     width 100%
 
 /* Header. */
@@ -130,25 +131,33 @@ a-scene
   +media--desktop()
     flex-direction row
 
-.home__feature--active
+.home__features .awoa-project
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  border 1px solid black
+  border 2px solid transparent
+  display inline-block
+  margin-right 15px
+  &:hover
+    border-color $copy-link-hover
+
+.home__feature__active
   display flex
   height 320px
   width 100%
-  img
-    border 1px solid black
-    margin-right 15px
-    width unquote('calc(66% + 6px)')
+  .awoa-project
+    flex-basis unquote('calc(66% + 6px)')
+    height 100%
 
 .home__feature
   margin 2px
   height 240px
   +media--desktop()
-    width 33%
-
-.home__feature img
-  border 1px solid black
-  height 100%
-  width 100%
+    flex-basis unquote('calc(33% - 4px)');
+  .awoa-project
+    height 100%
+    width 100%
 
 /* Blog. */
 .home__blog__container
