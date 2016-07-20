@@ -192,6 +192,12 @@ hexo.extend.helper.register('example_url', function (item) {
   return urljoin(this.url_for('examples'), item.section, item.slug) + '/';
 });
 
+hexo.extend.helper.register('examples_get_source', function (slug) {
+  // TODO: require('path');
+  var contents = fs.readFileSync('src/examples/' + slug + '/index.html', 'utf-8');
+  return contents;
+});
+
 hexo.extend.helper.register('docs_url_prefix', function (item) {
   return this.page.source.split('/', 2).join('/') + '/';
 });

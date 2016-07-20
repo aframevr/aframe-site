@@ -1,12 +1,8 @@
 var utils = require('../lib/utils');
 
-hexo.extend.generator.register('examples.json', function (locals) {
-  return {
-    path: 'examples/index.json',
-    data: JSON.stringify(locals.data.examples)
-  };
-});
-
+/**
+ * Add route for each example.
+ */
 hexo.extend.generator.register('examples', function (locals) {
   var self = this;
   var routes = [];
@@ -19,7 +15,7 @@ hexo.extend.generator.register('examples', function (locals) {
     });
   }
 
-  addRoute('guide/', utils.createRedirectResponse(hexo, 'docs/guide/'));
+  return routes;  // TODO: Revisit after redesign.
 
   if (locals.data.examples) {
     var examples = locals.data.examples.showcase;

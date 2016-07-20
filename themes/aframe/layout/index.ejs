@@ -1,5 +1,4 @@
-<script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js">
-</script>
+<script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
 
 <div class="home">
   <header class="home__header">
@@ -19,25 +18,19 @@
   </header>
 
   <div class="home__examples">
-      <ul class="home__examples__nav">
-        <li>Panorama</li>
-        <li>Image Browser</li>
-        <li>Model</li>
-        <li>Audio Visualizer</li>
-        <li>Voxels</li>
-      </ul>
+    <ul class="home__examples__nav">
+      <% site.data.examples.examples.forEach(function (example, i) { %>
+        <li><a data-example-link="<%= example.slug %>"><%= example.title %></a></li>
+      <% }); %>
+    </ul>
     <div class="home__examples__scene-container">
       <div class="home__examples__scene">
-        <a-scene>
-          <a-sky src="/examples/panorama/puydesancy.jpg" rotation="0 180 0"></a-sky>
-        </a-scene>
+        <%- examples_get_source(site.data.examples.examples[0].slug) %>
       </div>
-      <div class="home__examples__code">
-        <pre><code>
-          &lt;a-scene&gt;
-            &lt;a-sky src="/examples/panorama/puydesancy.jpg" rotation="0 180 0"&gt;&lt;/a-sky&gt;
-          &lt;/a-scene&gt;
-        </code></pre>
+      <div class="home__examples__details">
+        <% site.data.examples.examples.forEach(function (example, i) { %>
+          <pre><code data-example-code="<%= example.slug %>" class="home__examples__code <%- i === 0 ? 'home__examples__code--active' : '' %>"><%= examples_get_source(site.data.examples.examples[i].slug) %></code></pre>
+        <% }); %>
       </div>
     </div>
   </div>
@@ -114,3 +107,5 @@
     Mozilla
   </footer>
 </div>
+
+<%- js('js/home.js') %>

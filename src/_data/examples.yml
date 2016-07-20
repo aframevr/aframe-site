@@ -1,0 +1,12 @@
+examples:
+  - title: Panorama
+    slug: panorama
+    dependencies:
+    guide:
+    repo:
+
+  - title: MagicaVoxel
+    slug: magicavoxel
+    dependencies:
+    guide:
+    repo:
