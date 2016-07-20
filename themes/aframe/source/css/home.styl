@@ -107,20 +107,41 @@ a-scene
     height 100% !important
     position relative !important
     width 100% !important
-.a-enter-vr
-  position static !important
+  .a-enter-vr
+    display inline-block
+    position relative
+  .a-enter-vr-modal
+    margin-right 0
+    margin-top 23px
+    right 70px
+    position absolute
 
-.home__examples__details
+.home__examples__details-container,
+.home__examples__detail
   width 100%
+
+.home__examples__detail
+  display none
+  &.home__examples__detail--active
+    display flex
+
+.home__examples__pre
+  display flex
+  flex-grow 1
 
 .home__examples__code
   background #333
   color #FFF
-  display none
+  flex 4
   padding 15px
 
-.home__examples__code--active
-  display block
+.home__examples__panel
+  background #444
+  display flex
+  flex 1
+
+.home__examples__components
+  display flex
 
 /* Workflows. */
 .home__workflows__container

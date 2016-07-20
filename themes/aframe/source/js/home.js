@@ -1,6 +1,7 @@
 (function () {
 
-var codeEls = document.querySelectorAll('[data-example-code]');
+// Hook examples navigation to toggle scenes.
+var exampleDetailEls = document.querySelectorAll('[data-example-detail]');
 var exampleLinkEls = document.querySelectorAll('[data-example-link]');
 var sceneEl = document.querySelector('.home__examples__scene');
 var wrapperEl = document.querySelector('.home__examples');
@@ -9,22 +10,23 @@ var wrapperEl = document.querySelector('.home__examples');
 for (var i = 0; i < exampleLinkEls.length; i++) {
   // Change the scene when an example link is clicked.
   exampleLinkEls[i].addEventListener('click', function () {
-    // Hide all source code, then show the active one.
+    // Hide all detail blocks, then show the active one.
     var slug = this.dataset.exampleLink;
-    var codeEl = wrapperEl.querySelector('[data-example-code="' + slug + '"]');
-    toggleCodeEl(codeEl);
+    var detailEl = wrapperEl.querySelector('[data-example-detail="' + slug + '"]');
+    toggleDetailEl(detailEl);
 
     // Swap <a-scene>.
+    var codeEl = detailEl.querySelector('.home__examples__code');
     sceneEl.innerHTML = codeEl.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
   });
 }
 
-// Hide all example source code blocks, show new active one.
-function toggleCodeEl (activeCodeEl) {
-  for (var i = 0; i < codeEls.length; i++) {
-    codeEls[i].classList.remove('home__examples__code--active');
+// Hide all example detail blocks, show new active one.
+function toggleDetailEl (activeDetailEl) {
+  for (var i = 0; i < exampleDetailEls.length; i++) {
+    exampleDetailEls[i].classList.remove('home__examples__detail--active');
   }
-  activeCodeEl.classList.add('home__examples__code--active');
+  activeDetailEl.classList.add('home__examples__detail--active');
 }
 
 })();

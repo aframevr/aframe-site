@@ -1,13 +1,13 @@
 examples:
   - title: Panorama
     slug: panorama
-    dependencies:
+    components:
     assets:
     guide:
 
   - title: MagicaVoxel
     slug: magicavoxel
-    dependencies:
+    components:
       - title: ply-model
         src: https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js
     assets:
@@ -15,7 +15,7 @@ examples:
 
   - title: Audio Visualizer
     slug: audio-visualizer
-    dependencies:
+    components:
       - title: audio-visualizer
         src: https://rawgit.com/ngokevin/aframe-audio-visualizer-components/master/dist/aframe-audio-visualizer-components.min.js
       - title: audio-visualizer-spectrum-scale
