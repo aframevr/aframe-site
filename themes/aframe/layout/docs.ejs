@@ -5,18 +5,19 @@
 <aside class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
-  <!-- Version dropdown. -->
-  <label class="subnav-label" for="docs-version"><b>Version</b></label>
-  <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
-    <% docs_versions(config.aframe_version).map(function (version) { %>
-      <option <%- activeVersion === version && 'selected' %>
-              data-href="<%- docs_root_path(site.pages, version) %>">
-        <%- version %>
-      </option>
-    <% }); %>
-  </select>
-
   <div class="list">
+
+      <!-- Version dropdown. -->
+      <label class="subnav-label" for="docs-version"><b>Version</b></label>
+      <select id="docs-version" onchange="location = this.options[this.selectedIndex].getAttribute('data-href')">
+        <% docs_versions(config.aframe_version).map(function (version) { %>
+          <option <%- activeVersion === version && 'selected' %>
+                  data-href="<%- docs_root_path(site.pages, version) %>">
+            <%- version %>
+          </option>
+        <% }); %>
+      </select>
+      
     <% docs_version_filter(site.pages, activeVersion).find({parent_section: 'docs'})
                                                              .sort('section_order')
                                                              .each(function (section) { %>
