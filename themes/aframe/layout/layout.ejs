@@ -73,13 +73,19 @@
 
     <% if (isHome) { %>
       <footer class="home__footer">
-        <ul class="home__footer__links">
-          <li><a href="<%= github_file_url('LICENSE') %>">
-            License</a></li>
-          <li><a href="<%= github_file_url('CONTRIBUTING.md') %>">
-            Contributing Guidelines</a></li>
-        </ul>
-        <div>Mozilla</div>
+        <div class="home__footer__details">
+          <ul class="home__footer__links">
+            <li><a href="<%= github_file_url('LICENSE') %>">
+              License</a></li>
+            <li><a href="<%= github_file_url('CONTRIBUTING.md') %>">
+              Contributing Guidelines</a></li>
+          </ul>
+          <p class="home__footer__cc">
+            Except where otherwise noted, content of this site is licensed under the
+            Creative Commons Share-Alike License v3.0 or any later.
+          </p>
+        </div>
+        <a class="home__footer__mozilla" href="https://mozilla.org" alt="Mozilla"></a>
       </footer>
     <% } %>
   </body>
