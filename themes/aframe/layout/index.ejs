@@ -129,8 +129,14 @@
           <div class="home__blog-post__details">
             <h3><a href="<%- post.path %>"><%- post.title %></a></h3>
             <a><%- post.author %></a>
+            <p><%- blog_date(post.date) %></p>
           </div>
-          <img src="<%- post.image %>">
+          <% if (post.image) { %>
+            <a class="home__blog-post__image"
+               href="<%- post.path %>" alt="<%- post.title %>"
+               style="background-image: url(<%- url_for('/images/blog/' + post.image.src) %>)">
+            </a>
+          <% } %>
         <li>
       <% }); %>
     </ul>

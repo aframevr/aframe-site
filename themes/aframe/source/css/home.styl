@@ -9,7 +9,10 @@ media--desktop() {
 }
 
 a
+  color $copy-link
   cursor pointer
+  &:visited
+    color $copy-link
 
 ul
   list-style none
@@ -252,10 +255,17 @@ a-scene
   flex-direction column
   flex-grow 2
 
-.home__blog-post img
+.home__blog-post__image
+  background-position center
+  background-repeat no-repeat
+  background-size cover
   border 1px solid black
-  height 120px
-  width 240px
+  border 2px solid transparent
+  display inline-block
+  height 240px
+  width 480px
+  &:hover
+    border-color $copy-link-hover
 
 /* FAQ. */
 .home__faq__container

@@ -2,6 +2,8 @@
 title: A Week of A-Frame 18
 date: 2016-06-17
 layout: blog
+image:
+  src: awoa-18.png
 
 awoa:
   contributions:

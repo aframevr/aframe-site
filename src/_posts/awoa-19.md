@@ -2,6 +2,8 @@
 title: "A Week of A-Frame 19"
 date: 2016-07-01
 layout: blog
+image:
+  src: awoa-19.png
 
 awoa:
   contributions:
