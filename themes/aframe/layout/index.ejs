@@ -26,7 +26,7 @@
     <ul class="home__examples__nav">
       <% site.data.examples.examples.forEach(function (example, i) {
         var className = (i === 0) ? 'home__examples--active' : '' %>
-        <li><a data-example-link="<%= example.slug %>" class="<%= className %>"><%= example.title %></a></li>
+        <li><a data-example-link="<%= example.slug %>" class="<%= className %>"><%- example.title %></a></li>
       <% }); %>
     </ul>
     <div class="home__examples__scene-container">
