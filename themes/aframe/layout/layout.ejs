@@ -48,6 +48,9 @@
 
     <% if (isHome) { %>
       <%- css('css/home') %>
+      <%- css('css/codemirror/codemirror.css') %>
+      <%- css('css/codemirror/aframe-theme.css') %>
+      <%- css('css/codemirror/show-hint.css') %>
     <% } else { %>
       <%- css('css/secondary') %>
     <% } %>
@@ -55,19 +58,35 @@
     <%- partial('partials/ga') %>
   </head>
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
-    <% if (!isHome) { %>
+    <% if (isHome) { %>
+      <%- js('https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js') %>
+      <% site.data.examples.examples.forEach(function (example, i) { %>
+        <% if (!example.components || !example.components.length) { return; } %>
+        <% example.components.forEach(function (component) { %>
+          <%- js(component.file) %>
+        <% }); %>
+      <% }); %>
+      <%- js('js/codemirror/codemirror.js') %>
+      <%- js('js/codemirror/show-hint.js') %>
+      <%- js('js/codemirror/xml-hint.js') %>
+      <%- js('js/codemirror/aframe-hint.js') %>
+      <%- js('js/codemirror/xml.js') %>
+      <%- js('js/codemirror/htmlmixed.js') %>
+      <%- js('js/codemirror/active-line.js') %>
+    <% } else { %>
       <%- partial('partials/secondary/mobile_nav') %>
     <% } %>
+
     <main id="main" class="main">
       <%- body %>
     </main>
+
     <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
     <% if (isHome) { %>
-      <%- js('js/examples.js') %>
-    <% } %>
-    <% if (isSecondary) { %>
+      <%- js('js/home.js') %>
+    <% } else { %>
       <%- js('js/docs.js') %>
     <% } %>
 

@@ -1,0 +1,32 @@
+/*
+  Adapted for A-Frame site.
+*/
+@import '../_settings'
+
+.CodeMirror-hints
+  background #FFF
+  border 1px solid $border
+  border-radius 3px
+  box-shadow 2px 3px 5px rgba(0,0,0,.2)
+  font-family monospace
+  font-size 90%
+  list-style none
+  margin 0
+  max-height 20em
+  overflow hidden
+  overflow-y auto
+  padding 2px
+  position absolute
+  z-index 10
+
+.CodeMirror-hint
+  border-radius 2px
+  color #333
+  cursor pointer
+  margin 0
+  padding 0 4px
+  white-space pre
+
+li.CodeMirror-hint-active
+  background $copy-link
+  color #FFF
