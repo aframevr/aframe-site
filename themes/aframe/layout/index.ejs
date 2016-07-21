@@ -1,13 +1,4 @@
 <!-- Homepage. -->
-
-<script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
-<% site.data.examples.examples.forEach(function (example, i) { %>
-  <% if (!example.components || !example.components.length) { return; } %>
-  <% example.components.forEach(function (component) { %>
-    <%- js(component.file) %>
-  <% }); %>
-<% }); %>
-
 <div class="home">
   <header class="home__header">
     <div class="home__header__logo">
@@ -48,8 +39,9 @@
           <div class="home__examples__detail
                      <%- i === 0 ? 'home__examples__detail--active' : '' %>"
                data-example-detail="<%= example.slug %>">
-            <!-- Source code. -->
-            <pre class="home__examples__pre"><code class="home__examples__code"><%= examples_get_source(site.data.examples.examples[i].slug) %></code></pre>
+            <textarea class="home__examples__code">
+<%= examples_get_source(site.data.examples.examples[i].slug) %>
+            </textarea>
             <div class="home__examples__panel">
               <!-- Components. -->
               <% if (example.components && example.components.length) { %>
@@ -169,5 +161,3 @@
     </ul>
   </div>
 </div>
-
-<%- js('js/home.js') %>

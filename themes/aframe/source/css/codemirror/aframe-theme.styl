@@ -1,0 +1,48 @@
+/**
+ * Adapted from `github` theme.
+ */
+@import '../_settings'
+
+.cm-s-aframe
+  background #FAFAFF
+  color #333
+  font-family inconsolata, monospace
+  font-size 1em
+  letter-spacing 0.3px
+  line-height 1.5em
+  word-spacing 1px
+
+  .CodeMirror-lines
+    padding 8px 0
+
+  .CodeMirror-gutters
+    box-shadow 1px 0 2px 0 rgba(0, 0, 0, 0.5)
+    background-color #F8F8FF
+    padding-right 10px
+    z-index 3
+    border none
+
+  div.CodeMirror-cursor
+    border-left 1px solid #333
+
+  .CodeMirror-activeline-background
+    background #EDEDF5
+
+  .CodeMirror-selected
+    background #BCD5FA
+
+  .cm-comment
+    font-style italic
+    color #999988
+
+  .cm-string
+    color #B96FD3
+
+  .cm-attribute
+    color $blue
+
+  .cm-tag
+    color #EF2D5E
+
+  .CodeMirror-linenumber
+    font-style italic
