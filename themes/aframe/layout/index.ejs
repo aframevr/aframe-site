@@ -43,6 +43,7 @@
 <%= examples_get_source(site.data.examples.examples[i].slug) %>
             </textarea>
             <div class="home__examples__panel">
+              <h2 class="home__examples__title"><%- example.title %></h2>
               <!-- Components. -->
               <% if (example.components && example.components.length) { %>
                 <div class="home__examples__components">
