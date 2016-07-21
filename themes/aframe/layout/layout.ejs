@@ -59,7 +59,7 @@
   </head>
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
     <% if (isHome) { %>
-      <%- js('https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js') %>
+      <%- js('releases/0.3.0/aframe.min.js') %>
       <% site.data.examples.examples.forEach(function (example, i) { %>
         <% if (!example.components || !example.components.length) { return; } %>
         <% example.components.forEach(function (component) { %>

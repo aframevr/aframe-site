@@ -9,13 +9,16 @@
   else
     mod(CodeMirror);
 })(function(CodeMirror) {
-  var s = {attrs: {}};
+  // Components.
   var components = {};
-  Object.keys(AFRAME.components).forEach(function (componentName) {
+  Object.keys(AFRAME.components).sort().forEach(function (componentName) {
     components[componentName] = null;
   });
 
   var data = {
+    'a-entity': {
+      attrs: components
+    },
     'a-assets': {
       attrs: {
         timeout: null
@@ -26,22 +29,18 @@
         src: null
       }
     },
-    'a-entity': {
-      attrs: components
-    },
     audio: {
       attrs: {
-        src: null, mediagroup: null,
+        src: null,
         crossorigin: ['anonymous', 'use-credentials'],
         preload: ['none', 'metadata', 'auto'],
         autoplay: ['', 'autoplay'],
         loop: ['', 'loop'],
-        controls: ['', 'controls']
       }
     },
     img: {
       attrs: {
-        alt: null, src: null, ismap: null, usemap: null, width: null, height: null,
+        src: null,
         crossorigin: ['anonymous', 'use-credentials']
       }
     },
@@ -51,31 +50,40 @@
         crossorigin: ['anonymous', 'use-credentials'],
         preload: ['auto', 'metadata', 'none'],
         autoplay: ['', 'autoplay'],
-        mediagroup: ['movie'],
         muted: ['', 'muted']
       }
     }
   };
 
-  var globalAttrs = {
-    class: null,
-    id: null
-  };
-
-  function populate (obj) {
-    for (var attr in globalAttrs) {
-      if (globalAttrs.hasOwnProperty(attr)) {
-        obj.attrs[attr] = globalAttrs[attr];
+  // Primitives.
+  var primitives = AFRAME.primitives.primitives;
+  Object.keys(primitives).sort().forEach(function (primitiveName) {
+    data[primitiveName] = {attrs: {}};
+    Object.keys(primitives[primitiveName].prototype.mappings).sort().forEach(function (propertyName) {
+      if (propertyName.constructor === String) {
+        data[primitiveName].attrs[propertyName] = null;
+      } else {
+        // Support one-to-many mappings in the future.
+        propertyName.forEach(function (pName) {
+          data[primitiveName].attrs[pName] = null;
+        });
       }
-    }
-  }
+    });
+    Object.keys(components).sort().forEach(function (componentName) {
+      data[primitiveName].attrs[componentName] = null;
+    });
+  });
 
-  populate(s);
-  for (var tag in data) if (data.hasOwnProperty(tag) && data[tag] != s) {
-    populate(data[tag]);
-  }
+  // Global attributes.
+  var globalAttrs = {class: null, id: null};
+  Object.keys(data).forEach(function (tagName) {
+    for (var attr in globalAttrs) {
+      data[tagName].attrs[attr] = globalAttrs[attr];
+    }
+  });
 
   CodeMirror.aframeSchema = data;
+  CodeMirror.registerHelper('hint', 'html', aframeHint);
 
   function aframeHint (cm, options) {
     var local = {schemaInfo: data};
@@ -86,6 +94,4 @@
     }
     return CodeMirror.hint.xml(cm, local);
   }
-
-  CodeMirror.registerHelper('hint', 'html', aframeHint);
 });
