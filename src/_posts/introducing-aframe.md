@@ -4,7 +4,7 @@ author: twitter|joshcarpenter|Josh Carpenter
 date: 2015-12-16 11:00:00
 layout: blog
 image:
-  src: introducing-aframe.png
+  src: introducing-aframe.jpg
 ---
 
 > Today, the MozVR team has released the first version of A-Frame: an open source framework for creating WebVR experiences with markup.

@@ -5,7 +5,7 @@ author: twitter|ideaspacevr|Chris Car
 layout: blog
 image:
   href: https://www.ideaspacevr.org/themes/webvr-photosphere-viewer-equirectangular-images
-  src: photosphere-viewer.png
+  src: photosphere-viewer.jpg
 ---
 
 > Chris from [IdeaSpaceVR](https://www.ideaspacevr.org/) has built an interactive 360-degree photosphere viewer. Space bar toggles a menu system, and a gaze-based cursor selects photos.

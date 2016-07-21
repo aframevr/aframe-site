@@ -3,7 +3,7 @@ title: "A Week of A-Frame 20"
 date: 2016-07-08
 layout: blog
 image:
-  src: awoa-20.png
+  src: awoa-20.jpg
 
 awoa:
   contributions:

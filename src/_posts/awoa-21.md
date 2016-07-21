@@ -3,7 +3,7 @@ title: "A Week of A-Frame 21"
 date: 2016-07-15
 layout: blog
 image:
-  src: awoa-21.png
+  src: awoa-21.jpg
 
 awoa:
   projects:
