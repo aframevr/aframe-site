@@ -123,18 +123,21 @@ a-scene
     right 70px
     position absolute
 
-.home__examples__details-container,
-.home__examples__detail
+.home__examples__details-container
+  height 320px
   width 100%
 
 .home__examples__detail
   display none
+  height 100%
+  width 100%
   &.home__examples__detail--active
     display flex
 
 // CodeMirror.
-.CodeMirror
+div.CodeMirror
   flex 2
+  height 100%
   padding 15px
   max-width 66%
 
@@ -143,6 +146,7 @@ a-scene
   display flex
   flex-direction column
   flex 1
+  height 100%
   min-width 320px
   padding $spacing-med
 
