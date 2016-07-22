@@ -31,7 +31,6 @@ ul
   flex-wrap wrap
   width 100%
   > h2
-    margin-top 30px
     width 100%
 
 .home__workflows,
@@ -259,8 +258,13 @@ div.CodeMirror
 
 .home__feature__details
   flex 1
-  left 8px
+  left $spacing-med
   position relative
+  h3
+    padding-bottom $spacing-med
+
+.home__feature__avatar
+  padding-top $spacing-med
 
 .home__feature
   margin 2px
@@ -280,13 +284,14 @@ div.CodeMirror
 .home__blog-post
   display flex
   justify-content space-between
-  margin-bottom 2px
+  margin-bottom $spacing-med
   width 100%
 
 .home__blog-post__details
   display flex
   flex-direction column
   flex-grow 2
+  margin-right $spacing-med * 2
 
 .home__blog-post__image
   background-position center
@@ -304,27 +309,33 @@ div.CodeMirror
 .home__faq__container
   display flex
   flex-direction column
-  height 240px
   width 100%
   +media--desktop()
     flex-direction row
+    height 240px
 
 .home__faq__item
   align-items center
   background #EEE
   display flex
-  flex 1
   flex-direction column
   flex-wrap wrap
   justify-content space-between
   margin-bottom 2px
-  padding 20px 15px
+  padding $spacing-med $spacing-med * 2
   +media--desktop()
+    flex 1
     margin-bottom 0
+    padding 20px 15px
     &:not(:last-child)
       margin-right 5px
   h3
     font-style italic
+  p
+    padding $spacing-med $spacing-med * 2
+    text-align justify
+    +media--desktop()
+      padding 0 $spacing-med
 
 /* Footer. */
 .home__footer

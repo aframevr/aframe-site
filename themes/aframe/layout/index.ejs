@@ -99,7 +99,7 @@
             <%- partial('partials/blog/awoa_project', {project: project}) %>
             <div class="home__feature__details">
               <h3><%- project.title %></h3>
-              <p><%- markdown(project.description) %></p>
+              <p class="home__feature__description"><%- markdown(project.description) %></p>
               <div class="home__feature__avatar">
                 <p>By <%- blog_attribution(project.author) %></p>
               </div>
