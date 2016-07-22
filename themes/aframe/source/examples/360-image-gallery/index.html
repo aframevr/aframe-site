@@ -1,0 +1,49 @@
+<a-scene>
+  <a-assets>
+    <audio id="click-sound" src="/examples/360-image-gallery/audio/click.ogg"></audio>
+    <img id="city" src="/examples/360-image-gallery/img/city.jpg">
+    <img id="city-thumb" src="/examples/360-image-gallery/img/thumb-city.jpg">
+    <img id="cubes" src="/examples/360-image-gallery/img/cubes.jpg">
+    <img id="cubes-thumb" src="/examples/360-image-gallery/img/thumb-cubes.jpg">
+    <img id="sechelt" src="/examples/360-image-gallery/img/sechelt.jpg">
+    <img id="sechelt-thumb" src="/examples/360-image-gallery/img/thumb-sechelt.jpg">
+
+    <script id="link" type="text/nunjucks">
+      <a-plane class="link" height="1" width="1"
+               material="shader: flat; src: {{ thumb }}"
+               event-set__1="_event: mousedown; scale: 1 1 1"
+               event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+               event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+               event-set__4="_event: mouseleave; scale: 1 1 1"
+               set-image="on: click; target: #image-360; src: {{ src }}"
+               sound="on: click; src: #click-sound"
+               update-raycaster="#cursor">
+      </a-plane>
+    </script>
+  </a-assets>
+
+  <!-- 360-degree image. -->
+  <a-sky id="image-360" radius="10" src="#city"></a-sky>
+
+  <!-- Image links. -->
+  <a-entity id="links" layout="type: line; margin: 1.5" position="-2 -1 -3">
+    <a-entity template="src: #link" data-src="#cubes"
+              data-thumb="#cubes-thumb"></a-entity>
+    <a-entity template="src: #link" data-src="#city"
+              data-thumb="#city-thumb"></a-entity>
+    <a-entity template="src: #link" data-src="#sechelt"
+              data-thumb="#sechelt-thumb"></a-entity>
+  </a-entity>
+
+  <!-- Camera + cursor. -->
+  <a-entity camera look-controls>
+    <a-cursor id="cursor"
+              animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1;
+                                to: 1 1 1; dur: 150"
+              animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1;
+                                 to: 0.1 0.1 0.1; dur: 1500"
+              event-set__1="_event: mouseenter; color: springgreen"
+              event-set__2="_event: mouseleave; color: black"
+              raycaster="objects: .link"></a-cursor>
+  </a-entity>
+</a-scene>
