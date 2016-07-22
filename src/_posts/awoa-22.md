@@ -121,7 +121,7 @@ awoa:
       description: "the A-Frame Editor to the A-Frame Inspector."
       github: "aframevr/aframe-inspector|#222"
 
-    - author: twitter|davidwalsh
+    - author: twitter|davidwalshblog
       action: converted
       description: "`selectorAll` property type return value from `NodeList` to `Array`."
       github: "#1642"
@@ -141,7 +141,7 @@ awoa:
       description: "default stats UI background color to gray."
       github: "#1644"
 
-    - author: twitter|davidwalsh
+    - author: twitter|davidwalshblog
       action: added
       description: "a warning if `repeat='infinite'` is accidentally used over `repeat='indefinite'`."
       github: "#1640"
