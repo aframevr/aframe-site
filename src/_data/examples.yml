@@ -1,10 +1,18 @@
 examples:
-  - title: Panorama
-    slug: panorama
+  - title: 360&deg; Image
+    slug: 360-image
     components:
     assets:
       - title: puydesancy.jpg
-        file: /examples/panorama/puydesancy.jpg
+        file: /examples/360-image/puydesancy.jpg
+    guide:
+
+  - title: 360&deg; Video
+    slug: 360-video
+    components:
+    assets:
+      - title: city.mp4
+        file: ttps://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/
     guide:
 
   - title: MagicaVoxel
@@ -70,3 +78,14 @@ examples:
       - title: click.ogg
         file: /examples/360-image-gallery/audio/click.ogg
     guide: https://aframe.io/docs/master/guide/building-an-advanced-scene.html
+
+  - title: "Multiuser"
+    slug: multiuser
+    components:
+      - title: firebase
+        file: /examples/multiuser/lib/aframe-firebase-component.min.js
+        source: https://github.com/ngokevin/aframe-firebase-component
+      - title: randomizer
+        file: /examples/multiuser/lib/aframe-randomizer-components.min.js
+        source: https://github.com/ngokevin/aframe-randomizer-components
+    guide:
