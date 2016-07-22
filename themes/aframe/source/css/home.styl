@@ -84,6 +84,7 @@ ul
   display flex
   flex 5
   flex-wrap wrap
+  width 100%
   +media--desktop()
     max-width unquote('calc(100% - 180px)')
 
@@ -130,31 +131,42 @@ a-scene
     position absolute
 
 .home__examples__details-container
-  height 320px
   width 100%
+  +media--desktop()
+    height 320px
 
 .home__examples__detail
   display none
-  height 100%
+  flex-wrap wrap
   width 100%
+  +media--desktop()
+    flex-wrap nowrap
+    height 100%
   &.home__examples__detail--active
     display flex
 
 // CodeMirror.
 div.CodeMirror
-  flex 2
-  height 100%
+  height 240px
   padding 15px
-  max-width 66%
+  width 100%
+  +media--desktop()
+    flex 2
+    height 100%
+    max-width 66%
+    width auto
 
 .home__examples__panel
   background #444
   display flex
   flex-direction column
-  flex 1
   height 100%
-  min-width 320px
   padding $spacing-med
+  width 100%
+  +media--desktop()
+    flex 1
+    min-width 320px
+    width auto
 
 .home__examples__title
   color #FFF
