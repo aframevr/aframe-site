@@ -61,12 +61,14 @@ ul
 /* Examples. */
 .home__examples
   display flex
+  +media--desktop()
+    flex-wrap nowrap
 
 .home__examples__nav
   display flex
   +media--desktop()
-    flex 1
     flex-direction column
+    width 180px
   a
     display block
     padding $spacing-med
@@ -82,6 +84,8 @@ ul
   display flex
   flex 5
   flex-wrap wrap
+  +media--desktop()
+    max-width unquote('calc(100% - 180px)')
 
 .home__examples__scene
   background #333
@@ -176,7 +180,7 @@ div.CodeMirror
     border 1px solid #FFF
     border-radius 2px
     display inline-block
-    max-width 100%
+    max-width 300px
     overflow hidden
     padding 5px 10px
     text-overflow ellipsis
