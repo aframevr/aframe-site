@@ -64,7 +64,9 @@ ul
 
 .home__examples__nav
   display flex
-  width 100%
+  +media--desktop()
+    flex 1
+    flex-direction column
   a
     display block
     padding $spacing-med
@@ -78,8 +80,8 @@ ul
 
 .home__examples__scene-container
   display flex
+  flex 5
   flex-wrap wrap
-  width 100%
 
 .home__examples__scene
   background #333
