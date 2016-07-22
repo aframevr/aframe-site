@@ -85,6 +85,7 @@
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
     <% if (isHome) { %>
+      <%- js('js/debounce.js') %>
       <%- js('js/home.js') %>
     <% } else { %>
       <%- js('js/docs.js') %>

@@ -8,10 +8,11 @@ var wrapperEl = document.querySelector('.home__examples');
 
 var codeMirrors = [];
 
-initCodeMirror();
-initNav();
+var debouncedSceneChange = debounce(function (instance) {
+  sceneEl.innerHTML = instance.doc.getValue();
+}, 500);
 
-function initCodeMirror () {
+var initCodeMirror = function () {
   for (var i = 0 ; i < textAreaEls.length; i++) {
     var codeMirror = CodeMirror.fromTextArea(textAreaEls[i], {
       extraKeys: {'Ctrl-Space': 'autocomplete'},  // Autocomplete (xml-hint.js, html-hint.js).
@@ -21,12 +22,10 @@ function initCodeMirror () {
       theme: 'aframe',  // CSS (css/aframe-codemirror-theme.styl).
       value: textAreaEls[0].dataset.value
     });
-    codeMirror.on('changes', function refreshScene (instance) {
-      sceneEl.innerHTML = instance.doc.getValue();
-    });
+    codeMirror.on('changes', debouncedSceneChange);
     codeMirrors.push(codeMirror);
   }
-}
+};
 
 /**
  * Hook examples navigation to toggle scenes.
@@ -64,5 +63,8 @@ function initNav () {
     activeDetailEl.classList.add('home__examples__detail--active');
   }
 }
+
+initCodeMirror();
+initNav();
 
 })();
