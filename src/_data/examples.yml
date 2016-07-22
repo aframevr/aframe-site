@@ -1,6 +1,7 @@
 examples:
   - title: 360&deg; Image
     slug: 360-image
+    description: "360&deg; image in one line of HTML. `<a-sky>` takes an equirectangular image and maps it onto the inside of a sphere. Try replacing the `src` with [panoramas from Flickr](https://www.flickr.com/groups/equirectangular/)."
     components:
     assets:
       - title: puydesancy.jpg
@@ -9,6 +10,7 @@ examples:
 
   - title: 360&deg; Video
     slug: 360-video
+    description: "360&deg; video with `<a-videosphere>`. This example uses `<a-assets>` for the browser to cache the video. Note that mobile browsers have [many limitations in playing inline video](https://aframe.io/faq/#why-does-my-video-not-play-on-mobile)."
     components:
     assets:
       - title: city.mp4
@@ -17,6 +19,7 @@ examples:
 
   - title: "360&deg; Image Gallery"
     slug: 360-image-gallery
+    description: "An interactive example of selecting and swapping between 360&deg; images. On desktop, drag the cursor and click on a panel. On mobile, simply gaze at a panel."
     components:
       - title: animation
         file: /examples/360-image-gallery/lib/aframe-animation-component.min.js
@@ -44,6 +47,7 @@ examples:
 
   - title: MagicaVoxel
     slug: magicavoxel
+    description: "A model exported from the [MagicaVoxel](https://ephtracy.github.io/) creation tool. It is very easy to use and a lot like Minecraft."
     components:
       - title: ply-model
         file: /examples/magicavoxel/lib/aframe-extras.loaders.min.js
@@ -59,6 +63,7 @@ examples:
 
   - title: Audio Visualizer
     slug: audio-visualizer
+    description: "Hooking up Web Audio AnalyserNode data to box scale and color using various components."
     components:
       - title: audio-visualizer
         file: /examples/audio-visualizer/lib/aframe-audio-visualizer-components.min.js
@@ -81,6 +86,7 @@ examples:
 
   - title: "Multiuser"
     slug: multiuser
+    description: "Multiuser experiences using [Firebase](https://firebase.google.com), a real-time database service. Everything is still declarative HTML, and no need to set up your own server."
     components:
       - title: firebase
         file: /examples/multiuser/lib/aframe-firebase-component.min.js

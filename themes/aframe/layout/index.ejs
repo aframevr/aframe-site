@@ -42,32 +42,37 @@
             <textarea class="home__examples__code">
 <%= examples_get_source(site.data.examples.examples[i].slug) %>
             </textarea>
-            <div class="home__examples__panel">
-              <h2 class="home__examples__title"><%- example.title %></h2>
-              <!-- Components. -->
-              <% if (example.components && example.components.length) { %>
-                <div class="home__examples__components">
-                  <h4>Components Used</h4>
-                  <ul>
-                    <% example.components.forEach(function (component) { %>
-                      <li><a href="<%- component.file %>" target="_blank"
-                             rel="noopener noreferrer"><%- component.title %></a></li>
-                    <% }); %>
-                  </ul>
-                </div>
-              <% } %>
-              <!-- Assets. -->
-              <% if (example.assets && example.assets.length) { %>
-                <div class="home__examples__assets">
-                  <h4>Assets Used</h4>
-                  <ul>
-                    <% example.assets.forEach(function (asset) { %>
-                      <li><a href="<%- asset.file %>" target="_blank"
-                           rel="noopener noreferrer"><%- asset.title %></a></li>
-                    <% }); %>
-                  </ul>
-                </div>
-              <% } %>
+            <div class="home__examples__panel-wrapper">
+              <div class="home__examples__panel">
+                <h2 class="home__examples__title"><%- example.title %></h2>
+                <% if (example.description) { %>
+                  <div class="home__examples__description"><%- markdown(example.description) %></div>
+                <% } %>
+                <!-- Components. -->
+                <% if (example.components && example.components.length) { %>
+                  <div class="home__examples__components">
+                    <h4>Components Used</h4>
+                    <ul>
+                      <% example.components.forEach(function (component) { %>
+                        <li><a href="<%- component.file %>" target="_blank"
+                               rel="noopener noreferrer"><%- component.title %></a></li>
+                      <% }); %>
+                    </ul>
+                  </div>
+                <% } %>
+                <!-- Assets. -->
+                <% if (example.assets && example.assets.length) { %>
+                  <div class="home__examples__assets">
+                    <h4>Assets Used</h4>
+                    <ul>
+                      <% example.assets.forEach(function (asset) { %>
+                        <li><a href="<%- asset.file %>" target="_blank"
+                             rel="noopener noreferrer"><%- asset.title %></a></li>
+                      <% }); %>
+                    </ul>
+                  </div>
+                <% } %>
+              </div>
             </div>
           </div>
         <% }); %>
