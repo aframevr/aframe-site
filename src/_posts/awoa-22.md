@@ -5,17 +5,17 @@ layout: blog
 
 awoa:
   projects:
+    - title: "Stand at the Edge of Geologic Time"
+      author: twitter|tylrfishr
+      description: "A virtual reality tour from NPR of Rocky Mountain National Park. ([code](https://github.com/nprapps/rockymountain))"
+      image: stand-at-the-edge-of-geologic-time.jpg
+      url: http://apps.npr.org/rockymountain-vr/
+
     - title: "MagicaVoxel: A-Frame"
       author: twitter|andgokevin
       description: "A-Frame in MagicaVoxel in A-Frame."
       image: magicavoxel-aframe.jpg
       url: https://ngokevin.github.io/aframe-magicavoxel-projects/aframe/
-
-    - title: "Stand at the Edge of Geologic Time"
-      author: twitter|tylrfishr
-      description: "A virtual reality tour from NPR of Rocky Mountain National Park."
-      image: stand-at-the-edge-of-geologic-time.jpg
-      url: http://apps.npr.org/rockymountain-vr/
 
     - title: "MagicaVoxel: Pokemon"
       author: twitter|andgokevin
