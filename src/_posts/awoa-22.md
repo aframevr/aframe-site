@@ -2,8 +2,6 @@
 title: "A Week of A-Frame 22"
 date: 2016-07-22
 layout: blog
-image:
-  src: awoa-22.jpg
 
 awoa:
   projects:
