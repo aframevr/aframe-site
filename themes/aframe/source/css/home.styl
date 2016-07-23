@@ -59,10 +59,49 @@ ul
   text-transform uppercase
 
 .home__nav
+  align-items center
   display flex
-  margin 30px $spacing-med $spacing-med 0
+  margin $spacing-med $spacing-med $spacing-med 0
   li:not(:last-child)
-    margin-right 15px
+    margin-right $spacing-med * 2
+
+.home__nav__github
+  height 32px
+  width 32px
+  img
+    height 32px
+    width 32px
+
+.home__nav__twitter
+  background #292F33
+  border-radius 100px
+  height 32px
+  width 32px
+  img
+    height 28px
+    left 4px
+    position relative
+    top 4px
+    width 28px
+
+.home__nav__download a
+  background-color lighten($blue, 8%)
+  border-bottom 2px solid darken($blue, 12%)
+  border-radius 4px
+  color #FFF
+  display inline-block
+  font-family $code-font
+  min-width 180px
+  padding 12px $spacing-med
+  transition 0.15s ease
+  &:hover
+    background-color lighten($blue, 15%)
+    transform translate(0, 1px)
+    transition none
+  &:active,
+  &.click
+    background-color darken($blue, 12%)
+    transform translate(0, 2px)
 
 /* Examples. */
 .home__examples

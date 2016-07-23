@@ -10,12 +10,11 @@
         <li><a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) %>">
           Docs</a></li>
         <li><a href="<%- config.slack.aframe.signup_url %>">Slack</a></li>
-        <li><a href="<%- config.twitter.url %>">Twitter</a></li>
-        <li><a href="<%- config.github.aframe.url %>">GitHub</a></li>
-        <li>
-          <a href="https://aframe.io/releases/<%- config.aframe_version %>/aframe.min.js"
-             download>
-            Download</a>
+        <li class="home__nav__github"><a href="<%- config.github.aframe.url %>"><img src="<%- url_for('/images/github.png') %>"></a></li>
+        <li class="home__nav__twitter"><a href="<%- config.twitter.url %>"><img src="<%- url_for('/images/twitter.png') %>"></a></li>
+        <li class="home__nav__download">
+          <a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) + 'getting-started.html#builds' %>">
+            Get A-Frame v<%- config.aframe_version %></a>
         </li>
       </ul>
     </nav>
