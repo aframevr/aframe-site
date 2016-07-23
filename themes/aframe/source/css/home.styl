@@ -11,11 +11,15 @@ media--desktop() {
 a
   color $copy-link
   cursor pointer
+  transition color .2s
   &:visited
     color $copy-link
 
 ul
   list-style none
+
+li
+  transition background .2s
 
 .home
   display flex
@@ -267,14 +271,20 @@ div.CodeMirror
 
 .home__workflows__container li
   align-items center
-  border 1px solid black
+  background #333
   display flex
-  height 100px
   justify-content center
   margin 2px
   width 100%
+  &:hover
+    background lighten(#333, 20%)
   +media--desktop()
-    width 240px
+    flex 1
+  a
+    color #FFF
+    font-size 24px
+    padding 50px
+    white-space nowrap
 
 /* Features. */
 .home__features__container
