@@ -1,7 +1,7 @@
 examples:
   - title: A-Frame
     slug: aframe
-    description: "Welcome to A-Frame, a WebVR framework that lets you build virtual reality with HTML.<br><br>This model was built and exported using [MagicaVoxel](https://ephtracy.github.io/), a creation tool that is easy to use and feels a lot like Minecraft."
+    description: "Welcome to A-Frame, a WebVR framework that lets you build virtual reality with HTML that work across all headsets.<br><br>This model was built and exported using [MagicaVoxel](https://ephtracy.github.io/), a creation tool that is easy to use and feels a lot like Minecraft."
     components:
       - title: ply-model
         file: /examples/aframe/lib/aframe-extras.loaders.min.js
