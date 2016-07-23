@@ -38,9 +38,7 @@
           <div class="home__examples__detail
                      <%- i === 0 ? 'home__examples__detail--active' : '' %>"
                data-example-detail="<%= example.slug %>">
-            <textarea class="home__examples__code">
-<%= examples_get_source(site.data.examples.examples[i].slug) %>
-            </textarea>
+            <textarea class="home__examples__code"><%= examples_get_source(site.data.examples.examples[i].slug) %></textarea>
             <div class="home__examples__panel-wrapper">
               <div class="home__examples__panel">
                 <h2 class="home__examples__title"><%- example.title %></h2>
