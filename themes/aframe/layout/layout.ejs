@@ -79,11 +79,11 @@
       <%- body %>
     </main>
 
+    <%- js('js/compat.js') %>
     <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
     <% if (isHome) { %>
-      <%- js('js/home-compat.js') %>
       <%- js('js/debounce.js') %>
       <%- js('js/home.js') %>
     <% } else { %>

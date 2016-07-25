@@ -55,4 +55,14 @@ html.setAttribute('data-supports-vr-legacy', supportsVRLegacy);
 // For the Mozilla WebVR Plus extension.
 html.setAttribute('data-supports-webvrplus', 'WEBVRPLUS' in window);
 
+window.addEventListener('orientationchange', updateOrientation);
+updateOrientation();
+function updateOrientation () {
+  if (screen.orientation.type.indexOf('portrait') !== -1) {
+    html.setAttribute('data-orientation', 'portrait');
+  } else {
+    html.setAttribute('data-orientation', 'landscape');
+  }
+}
+
 })();

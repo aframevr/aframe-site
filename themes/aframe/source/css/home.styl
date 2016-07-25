@@ -58,7 +58,10 @@ li
 /* Header. */
 .home__header
   align-items center
+  flex-wrap nowrap
   justify-content space-between
+  +media--desktop()
+    flex-wrap wrap
 
 .home__header__logo
   align-items center
@@ -68,7 +71,10 @@ li
     margin-right $spacing-med
 
 .home__wordmark
+  font-size 24px
   text-transform uppercase
+  +media--wide-mobile()
+    font-size 30px
 
 .home__motto
   display none
@@ -205,6 +211,11 @@ a-scene
     margin-top 23px
     right 70px
     position absolute
+[data-is-mobile="true"][data-orientation="landscape"] a-scene
+  canvas
+    position fixed !important
+  .a-enter-vr
+    position fixed
 
 .home__examples__details-container
   width 100%
