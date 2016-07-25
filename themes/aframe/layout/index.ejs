@@ -122,9 +122,16 @@
       <% site.posts.sort('date', -1).slice(0, 4).forEach(function (post, i) { %>
         <li class="home__blog-post">
           <div class="home__blog-post__details">
-            <h3><a href="<%- post.path %>"><%- post.title %></a></h3>
+            <h2 class="home__blog-post__title"><a href="<%- post.path %>"><%- post.title %></a></h2>
             <a><%- post.author %></a>
-            <p><%- blog_date(post.date) %></p>
+            <p class="home__blog-post__date"><%- blog_date(post.date) %></p>
+            <% if (post.awoa) { %>
+              <p class="home__blog-post__description">
+                What's up with A-Frame for the week of <%= blog_date_subtract_week(post.date) %> to <%= blog_date(post.date) %>.
+              </p>
+            <% } else { %>
+              <div class="home__blog-post__description"><%- post.excerpt %></div>
+            <% } %>
           </div>
           <% if (post.image) { %>
             <a class="home__blog-post__image"
@@ -143,22 +150,25 @@
       <li class="home__faq__item">
         <h3>What is A-Frame?</h3>
         <p>
-          A-Frame is an open-source WebVR framework for creating virtual
-          reality experiences with HTML. Under the hood, it is a VR-oriented three.js
-          framework that introduces a declarative entity-component pattern.
+          A-Frame is a declarative entity-component WebVR framework for
+          three.js that lets you <b>build virtual reality experiences with HTML</b>.
         </p>
         <a href="/docs/guide/">Learn More</a>
       </li>
       <li class="home__faq__item">
         <h3>What is WebVR?</h3>
         <p>
-          WebVR is virtual reality in the browser.
+          WebVR is a JavaScript API that enables virtual reality in the browser that lets
+          you <b>walk in a web page</b>.
         </p>
         <a href="https://vr.mozilla.org">Learn More</a>
       </li>
       <li class="home__faq__item">
         <h3>What do I need?</h3>
-        <p>You need a browser and a headset.</p>
+        <p>
+          You need to grab a <b>WebVR-enabled browser</b> and a <b>virtual
+          reality headset</b>, or a Cardboard-style holder for your smartphone.
+        </p>
         <a href="https://vr.mozilla.org">Learn More</a>
       </li>
     </ul>

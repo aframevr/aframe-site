@@ -23,6 +23,7 @@ li
 .home
   display flex
   flex-wrap wrap
+  justify-content center
 
 .home__header,
 .home__examples,
@@ -34,13 +35,17 @@ li
   flex-wrap wrap
   width 100%
   > h2
+    font-family $mono-font
+    text-transform uppercase
     width 100%
 
 .home__workflows,
 .home__features,
 .home__blog,
 .home__faq
-  padding $spacing-med * 2
+  padding $spacing-med
+  +media--desktop()
+    max-width 1024px
   > h2
     padding $spacing-med 0
 
@@ -66,7 +71,9 @@ li
   display flex
   margin $spacing-med $spacing-med $spacing-med 0
   li:not(:last-child)
-    margin-right $spacing-med * 2
+    margin-right $spacing-med
+    +media--desktop()
+      margin-right $spacing-med * 2
 
 .home__nav__github
   height 32px
@@ -108,6 +115,7 @@ li
 
 /* Examples. */
 .home__examples
+  border-bottom 1px solid $border
   display flex
   +media--desktop()
     flex-wrap nowrap
@@ -289,7 +297,6 @@ div.CodeMirror
 .home__features__container
   display flex
   flex-wrap wrap
-  flex-direction column
   width 100%
   +media--desktop()
     flex-direction row
@@ -319,16 +326,17 @@ div.CodeMirror
   left $spacing-med
   position relative
   h3
+    font-weight 400
     padding-bottom $spacing-med
+    text-transform uppercase
 
 .home__feature__avatar
   padding-top $spacing-med
 
 .home__feature
+  flex 1
   margin 2px
   height 240px
-  +media--desktop()
-    flex 1
   .awoa-project
     height 100%
     width 100%
@@ -351,6 +359,19 @@ div.CodeMirror
   flex-grow 2
   margin-right $spacing-med * 2
 
+.home__blog-post__title
+  font-family $mono-font
+  font-weight 400
+  text-transform uppercase
+
+.home__blog-post__date
+  color $fair
+  font-family $mono-font
+  text-transform uppercase
+
+.home__blog-post__description
+  margin-top $spacing-med
+
 .home__blog-post__image
   background-position center
   background-repeat no-repeat
@@ -358,8 +379,8 @@ div.CodeMirror
   border 1px solid black
   border 2px solid transparent
   display inline-block
-  height 240px
-  width 480px
+  height 200px
+  width 320px
   &:hover
     border-color $copy-link-hover
 
@@ -370,17 +391,14 @@ div.CodeMirror
   width 100%
   +media--desktop()
     flex-direction row
-    height 240px
 
 .home__faq__item
-  align-items center
-  background #EEE
+  background #333
   display flex
   flex-direction column
-  flex-wrap wrap
   justify-content space-between
   margin-bottom 2px
-  padding $spacing-med $spacing-med * 2
+  padding $spacing-med
   +media--desktop()
     flex 1
     margin-bottom 0
@@ -388,12 +406,24 @@ div.CodeMirror
     &:not(:last-child)
       margin-right 5px
   h3
+    color #FFF
     font-style italic
+    font-weight 400
+    text-transform uppercase
   p
-    padding $spacing-med $spacing-med * 2
-    text-align justify
+    color #FFF
+    font-weight 300
+    padding $spacing-med 0
     +media--desktop()
-      padding 0 $spacing-med
+      min-height 130px
+  b
+    font-weight 500
+  a
+    align-self flex-end
+    border 1px solid $border
+    color #FFF
+    padding 5px 10px
+    width fit-content
 
 /* Footer. */
 .home__footer
