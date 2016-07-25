@@ -44,8 +44,6 @@
 
     <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- absolute_url_for(config.feed.path) %>">
 
-    <%- js('js/compat.js') %>
-
     <% if (isHome) { %>
       <%- css('css/home') %>
       <%- css('css/codemirror/codemirror.css') %>
@@ -85,6 +83,7 @@
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
     <% if (isHome) { %>
+      <%- js('js/home-compat.js') %>
       <%- js('js/debounce.js') %>
       <%- js('js/home.js') %>
     <% } else { %>

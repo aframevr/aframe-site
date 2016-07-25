@@ -2,6 +2,12 @@
 @import "_fonts"
 @import "_settings"
 
+media--wide-mobile() {
+  @media (min-width: 480px) {
+    {block}
+  }
+}
+
 media--desktop() {
   @media (min-width: 768px) {
     {block}
@@ -51,28 +57,36 @@ li
 
 /* Header. */
 .home__header
+  align-items center
   justify-content space-between
 
 .home__header__logo
-  margin $spacing-med
   align-items center
   display flex
+  margin $spacing-med 0 $spacing-med $spacing-med
+  +media--desktop()
+    margin-right $spacing-med
 
 .home__wordmark
-  margin-right 20px
   text-transform uppercase
 
 .home__motto
+  display none
   font-weight 300
+  margin-left 20px
   text-transform uppercase
+  +media--desktop()
+    display block
 
 .home__nav
   align-items center
   display flex
-  margin $spacing-med $spacing-med $spacing-med 0
+  margin $spacing-med 0
+  +media--wide-mobile()
+    margin-right $spacing-med
   li:not(:last-child)
     margin-right $spacing-med
-    +media--desktop()
+    +media--wide-mobile()
       margin-right $spacing-med * 2
 
 .home__nav__github
@@ -94,24 +108,28 @@ li
     top 4px
     width 28px
 
-.home__nav__download a
-  background-color lighten($blue, 8%)
-  border-bottom 2px solid darken($blue, 12%)
-  border-radius 4px
-  color #FFF
-  display inline-block
-  font-family $code-font
-  min-width 180px
-  padding 12px $spacing-med
-  transition 0.15s ease
-  &:hover
-    background-color lighten($blue, 15%)
-    transform translate(0, 1px)
-    transition none
-  &:active,
-  &.click
-    background-color darken($blue, 12%)
-    transform translate(0, 2px)
+.home__nav__download
+  display none
+  +media--desktop()
+    display inline-block
+  a
+    background-color lighten($blue, 8%)
+    border-bottom 2px solid darken($blue, 12%)
+    border-radius 4px
+    color #FFF
+    display inline-block
+    font-family $code-font
+    min-width 180px
+    padding 12px $spacing-med
+    transition 0.15s ease
+    &:hover
+      background-color lighten($blue, 15%)
+      transform translate(0, 1px)
+      transition none
+    &:active,
+    &.click
+      background-color darken($blue, 12%)
+      transform translate(0, 2px)
 
 /* Examples. */
 .home__examples
@@ -122,6 +140,8 @@ li
 
 .home__examples__nav
   display flex
+  max-width 100%
+  overflow auto
   +media--desktop()
     flex-direction column
     width 180px
