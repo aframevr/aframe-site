@@ -114,4 +114,6 @@ examples:
       - title: randomizer
         file: /examples/multiuser/lib/aframe-randomizer-components.min.js
         source: https://github.com/ngokevin/aframe-randomizer-components
+      - title: follow
+        file: /examples/multiuser/components/follow.js
     guide:
