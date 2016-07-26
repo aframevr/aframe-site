@@ -88,7 +88,7 @@ li
   align-items center
   display flex
   margin $spacing-med 0
-  +media--wide-mobile()
+  +media--desktop()
     margin-right $spacing-med
   li:not(:last-child)
     margin-right $spacing-med
@@ -145,22 +145,25 @@ li
     flex-wrap nowrap
 
 .home__examples__nav
-  display flex
-  max-width 100%
+  display none
+  flex-direction column
   overflow auto
+  width 180px
   +media--desktop()
-    flex-direction column
-    width 180px
+    display flex
+  li
+    display inline-block
   a
     display block
     padding $spacing-med
     &:hover
       background #E8415A
-      color #fff
+      color #FFF
 
-.home__examples--active
+.home__examples__nav__link--active a
   background #333
-  color #fff
+  font-size inherit
+  color #FFF
 
 .home__examples__scene-container
   display flex
@@ -224,9 +227,11 @@ a-scene
 
 .home__examples__detail
   display none
+  flex-direction column-reverse
   flex-wrap wrap
   width 100%
   +media--desktop()
+    flex-direction row
     flex-wrap nowrap
     height 100%
   &.home__examples__detail--active
@@ -262,9 +267,35 @@ div.CodeMirror
     width auto
 
 .home__examples__title
-  color #FFF
-  font-family $code-font-default
-  font-weight 400
+  align-items center
+  justify-content space-around
+  display flex
+  text-transform uppercase
+  +media--desktop()
+    display block
+  h2
+    color #FFF
+    font-family $code-font-default
+    font-weight 400
+    overflow hidden
+    padding 0 10px
+    text-overflow ellipsis
+    white-space nowrap
+
+.home__examples__prev,
+.home__examples__next
+  align-items center
+  background #FFF
+  border-radius 150px
+  color #333
+  display flex
+  height 36px
+  justify-content center
+  font-size 24px
+  font-weight 600
+  width 36px
+  +media--desktop()
+    display none
 
 .home__examples__description
   color #FFF
@@ -396,7 +427,7 @@ div.CodeMirror
   text-transform uppercase
 
 .home__blog-post__date
-  color $fair
+  color $light
   font-family $mono-font
   text-transform uppercase
 

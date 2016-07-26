@@ -1,7 +1,10 @@
 examples:
+
+
   - title: A-Frame
     slug: aframe
     description: "Welcome to A-Frame, a WebVR framework that lets you build virtual reality with HTML that work across all headsets.<br><br>This model was built and exported using [MagicaVoxel](https://ephtracy.github.io/), a creation tool that is easy to use and feels a lot like Minecraft."
+    mobile: true
     components:
       - title: ply-model
         file: /examples/aframe/lib/aframe-extras.loaders.min.js
@@ -15,27 +18,33 @@ examples:
         source: https://www.freesound.org
     guide:
 
+
   - title: 360&deg; Image
     slug: 360-image
     description: "360&deg; image in one line of HTML. `<a-sky>` takes an equirectangular image and maps it onto the inside of a sphere. Try replacing the `src` with [panoramas from Flickr](https://www.flickr.com/groups/equirectangular/)."
+    mobile: true
     components:
     assets:
       - title: puydesancy.jpg
         file: /examples/360-image/puydesancy.jpg
     guide:
 
+
   - title: 360&deg; Video
     slug: 360-video
     description: "360&deg; video with `<a-videosphere>`. This example uses `<a-assets>` for the browser to cache the video. Note that mobile browsers have [many limitations in playing inline video](https://aframe.io/faq/#why-does-my-video-not-play-on-mobile)."
+    mobile: false
     components:
     assets:
       - title: city.mp4
         file: ttps://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/
     guide:
 
+
   - title: "360&deg; Image Gallery"
     slug: 360-image-gallery
     description: "An interactive example of selecting and swapping between 360&deg; images. On desktop, drag the cursor and click on a panel. On mobile, simply gaze at a panel."
+    mobile: true
     components:
       - title: animation
         file: /examples/360-image-gallery/lib/aframe-animation-component.min.js
@@ -64,6 +73,7 @@ examples:
   - title: Audio Visualizer
     slug: audio-visualizer
     description: "Hooking up Web Audio AnalyserNode data to box scale and color using various components."
+    mobile: false
     components:
       - title: audio-visualizer
         file: /examples/audio-visualizer/lib/aframe-audio-visualizer-components.min.js
@@ -84,9 +94,11 @@ examples:
         source: https://freemusicarchive.org/
     guide:
 
+
   - title: "Multiuser"
     slug: multiuser
     description: "Multiuser experiences using [Firebase](https://firebase.google.com), a real-time database service. Everything is still declarative HTML, and no need to set up your own server."
+    mobile: true
     components:
       - title: firebase
         file: /examples/multiuser/lib/aframe-firebase-component.min.js

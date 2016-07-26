@@ -10,8 +10,10 @@
         <li><a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) %>">
           Docs</a></li>
         <li><a href="<%- config.slack.aframe.signup_url %>">Slack</a></li>
-        <li class="home__nav__github"><a href="<%- config.github.aframe.url %>"><img src="<%- url_for('/images/github.png') %>"></a></li>
-        <li class="home__nav__twitter"><a href="<%- config.twitter.url %>"><img src="<%- url_for('/images/twitter.png') %>"></a></li>
+        <li class="home__nav__github"><a href="<%- config.github.aframe.url %>">
+          <img src="<%- url_for('/images/github.png') %>"></a></li>
+        <li class="home__nav__twitter"><a href="<%- config.twitter.url %>">
+          <img src="<%- url_for('/images/twitter.png') %>"></a></li>
         <li class="home__nav__download">
           <a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) + 'getting-started.html#builds' %>">
             Get A-Frame v<%- config.aframe_version %></a>
@@ -23,25 +25,35 @@
   <div class="home__examples">
     <!-- Example nav. -->
     <ul class="home__examples__nav">
-      <% site.data.examples.examples.forEach(function (example, i) {
-        var className = (i === 0) ? 'home__examples--active' : '' %>
-        <li><a data-example-link="<%= example.slug %>" class="<%= className %>"><%- example.title %></a></li>
+      <% site.data.examples.examples.forEach(function (example, i) { %>
+        <% var className = (i === 0) ? 'home__examples__nav__link--active' : '' %>
+        <li class="<%- className %>" data-example-link="<%= example.slug %>"
+            data-index="<%- i %>">
+          <a><%- example.title %></a>
+        </li>
       <% }); %>
     </ul>
+
     <div class="home__examples__scene-container">
       <div class="home__examples__scene">
         <!-- Actual scene. -->
         <%- examples_get_source(site.data.examples.examples[0].slug) %>
       </div>
+      <!-- Individual examples all in one container. -->
       <div class="home__examples__details-container">
         <% site.data.examples.examples.forEach(function (example, i) { %>
           <div class="home__examples__detail
                      <%- i === 0 ? 'home__examples__detail--active' : '' %>"
-               data-example-detail="<%= example.slug %>">
+               data-example-detail="<%= example.slug %>"
+               data-example-mobile="<%= example.mobile %>">
             <textarea class="home__examples__code"><%= examples_get_source(site.data.examples.examples[i].slug) %></textarea>
             <div class="home__examples__panel-wrapper">
               <div class="home__examples__panel">
-                <h2 class="home__examples__title"><%- example.title %></h2>
+                <div class="home__examples__title">
+                  <a class="home__examples__prev" title="Previous">&larr;</a>
+                  <h2><%- example.title %></h2>
+                  <a class="home__examples__next" title="Next">&rarr;</a>
+                </div>
                 <% if (example.description) { %>
                   <div class="home__examples__description"><%- markdown(example.description) %></div>
                 <% } %>
