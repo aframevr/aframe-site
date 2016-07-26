@@ -70,10 +70,21 @@ li
   +media--desktop()
     margin-right $spacing-med
 
+.home__logo
+  background-image url(/images/aframe-logo-alternate.jpg)
+  background-size cover
+  border-radius 50px
+  height 32px
+  width 32px
+  +media--wide-mobile()
+    display none
+
 .home__wordmark
+  display none
   font-size 24px
   text-transform uppercase
   +media--wide-mobile()
+    display block
     font-size 30px
 
 .home__motto
@@ -87,13 +98,17 @@ li
 .home__nav
   align-items center
   display flex
-  margin $spacing-med 0
+  margin 5px 0
+  +media--wide-mobile()
+    margin $spacing-med 0
   +media--desktop()
     margin-right $spacing-med
+  h3
+    font-weight 400
   li:not(:last-child)
-    margin-right $spacing-med
+    margin-right 10px
     +media--wide-mobile()
-      margin-right $spacing-med * 2
+      margin-right 20px
 
 .home__nav__github
   height 32px
