@@ -108,6 +108,18 @@ marked:
   smartypants: true
   modifyAnchors: 1  # Lowercased anchors.
 
+autoprefixer:
+  debug: true
+  enable: true
+  exclude:
+    - "*.min.css"
+  browsers:
+    - 'last 2 versions'
+    - 'Safari >= 8'
+    - 'iOS >= 8'
+  flexbox: no-2009
+  safe: true
+
 # Browsersync
 ## Repo: https://github.com/hexojs/hexo-browsersync
 ## Options: https://www.browsersync.io/docs/options/

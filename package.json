@@ -9,6 +9,7 @@
     "es6-promise": "^3.1.2",
     "glob": "^7.0.3",
     "hexo": "^3.2.0",
+    "hexo-autoprefixer": "^1.0.0",
     "hexo-browsersync": "^0.2.0",
     "hexo-deployer-git": "0.1.0",
     "hexo-generator-archive": "^0.1.4",
