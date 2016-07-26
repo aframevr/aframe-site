@@ -4,8 +4,8 @@
 
 # Site
 title: A-Frame
-subtitle: Building Blocks for the VR Web
-description: "Building Blocks for the VR Web"
+subtitle: Make WebVR
+description: "A-Frame is an open-source WebVR framework that lets you build virtual reality experiences with HTML."
 author: MozVR
 email: aframe@mozilla.com
 language:

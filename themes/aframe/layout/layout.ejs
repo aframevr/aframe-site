@@ -8,7 +8,12 @@
 <% var pageTitle = page.title ? page.title + delimiter + sectionTitle : '' %>
 
 <!DOCTYPE html>
-<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false" data-supports-touch="false" data-root-url="<%- config.root %>" data-title="{title} | A-Frame" data-is-spa="<%= config.spa %>" data-ga-id="<%- config.google_analytics %>" data-aframe-version="<%= config.aframe_version %>" data-docs-version="<%= docs_active_version(page) %>">
+<html lang="en" data-is-home="<%- isHome %>" data-is-mobile="false" data-supports-vr="false"
+      data-supports-touch="false" data-root-url="<%- config.root %>"
+      data-title="{title} | A-Frame" data-is-spa="<%= config.spa %>"
+      data-ga-id="<%- config.google_analytics %>"
+      data-aframe-version="<%= config.aframe_version %>"
+      data-docs-version="<%= docs_active_version(page) %>">
   <head>
     <title><%- page.full_title || (isHome ? projectTitle : pageTitle + config.title) %></title>
     <%- partial('partials/force_https') %>
