@@ -19,6 +19,14 @@ examples:
     guide:
 
 
+  - title: "Hello World"
+    slug: hello-world
+    description: "Assorted primitives using basic HTML. Press `<ctrl> + <space` in the editor to see a list of available elements.<br><br>Primitives are preconfigured elements that wrap the underlying entity-component system."
+    mobile: true
+    components:
+    guide:
+
+
   - title: 360&deg; Image
     slug: 360-image
     description: "360&deg; image in one line of HTML. `<a-sky>` takes an equirectangular image and maps it onto the inside of a sphere. Try replacing the `src` with [panoramas from Flickr](https://www.flickr.com/groups/equirectangular/)."

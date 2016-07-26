@@ -42,7 +42,7 @@ function initNav () {
   for (var i = 0; i < exampleLinkEls.length; i++) {
     // Change the scene when an example link is clicked.
     exampleLinkEls[i].addEventListener('click', function () {
-      goToScene(i);
+      goToScene(this.dataset.index);
     });
   }
 }
@@ -60,7 +60,6 @@ function goToScene (i) {
 
   // Swap <a-scene>.
   var codeEl = detailEl.querySelector('.home__examples__code');
-  console.log(codeEl.innerHTML);
   sceneEl.innerHTML = codeEl.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 
   // FIXME: Hack to refresh the active CodeMirror.
