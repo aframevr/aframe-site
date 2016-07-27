@@ -207,33 +207,10 @@ li
     transform translate(-50%, 0%)
     z-index 0
 
-// Remove when: https://github.com/aframevr/aframe/pull/1474
-html
-  position static !important
-body
-  overflow auto !important
-a-scene
-  display block
-  height 100%
-  position relative
-  width 100%
-  canvas
-    height 100% !important
-    position relative !important
-    width 100% !important
-  .a-enter-vr
-    display inline-block
-    position relative
-  .a-enter-vr-modal
-    margin-right 0
-    margin-top 23px
-    right 70px
-    position absolute
 [data-is-mobile="true"][data-orientation="landscape"] a-scene
-  canvas
-    position fixed !important
+  canvas,
   .a-enter-vr
-    position fixed
+    position fixed !important
 
 .home__examples__details-container
   width 100%

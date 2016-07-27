@@ -17,6 +17,7 @@ var debouncedSceneChange = debounce(function (instance) {
 initCodeMirror();
 initNav();
 initMobileNav();
+goToScene(0);
 
 function initCodeMirror () {
   for (var i = 0 ; i < textAreaEls.length; i++) {
@@ -58,9 +59,10 @@ function goToScene (i) {
   }
   exampleLinkEls[i].classList.add(NAV_LINK_ACTIVE);
 
-  // Swap <a-scene>.
+  // Swap <a-scene>, make `embedded`.
   var codeEl = detailEl.querySelector('.home__examples__code');
-  sceneEl.innerHTML = codeEl.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  sceneEl.innerHTML = codeEl.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+                                      .replace(/a-scene/, 'a-scene embedded');
 
   // FIXME: Hack to refresh the active CodeMirror.
   window.dispatchEvent(new Event('resize'));
