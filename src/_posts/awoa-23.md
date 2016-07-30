@@ -149,3 +149,8 @@ awoa:
 
 It now looks finally realistic for an 0.3.0 release next week! The [GitHub
 milestone](https://github.com/aframevr/aframe/milestone/2) has been updated.
+
+[Blair MacIntyre](http://blairmacintyre.me/), a Georgia Tech professor researching
+augmented reality got A-Frame working in the Argon AR Browser:
+
+<video autoplay loop src="/images/awoa/argon.mp4" width="240">
