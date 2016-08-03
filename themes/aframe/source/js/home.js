@@ -24,6 +24,7 @@ function initCodeMirror () {
     var codeMirror = CodeMirror.fromTextArea(textAreaEls[i], {
       extraKeys: {'Ctrl-Space': 'autocomplete'},  // Autocomplete (xml-hint.js, html-hint.js).
       lineWrapping: true,
+      indentUnit: 2,
       mode: 'htmlmixed',  // `htmlmixed` mode (htmlmixed.js).
       schemaInfo: CodeMirror.aframeSchema,  // HTML linter (html-hint.js addon).
       styleActiveLine: true,  // Highlight active line (active-line.js addon).

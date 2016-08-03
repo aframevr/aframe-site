@@ -64,9 +64,10 @@
     <% if (isHome) { %>
       <%- js('releases/0.3.0/aframe.min.js') %>
       <% site.data.examples.examples.forEach(function (example, i) { %>
-        <% if (!example.components || !example.components.length) { return; } %>
-        <% example.components.forEach(function (component) { %>
-          <%- js(component.file) %>
+        <% var exampleMetadata = examples_get_metadata(example.npm); %>
+        <% if (!exampleMetadata.components || !exampleMetadata.components.length) { return; } %>
+        <% exampleMetadata.components.forEach(function (component) { %>
+          <script src="<%- examples_get_js_path(example.npm, component.file) %>"></script>
         <% }); %>
       <% }); %>
       <%- js('js/codemirror/codemirror.js') %>

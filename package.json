@@ -19,13 +19,14 @@
     "hexo-renderer-marked": "github:pashokus/hexo-renderer-marked#0267532",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "js-yaml": "^3.5.5",
+    "js-yaml": "^3.6.1",
     "moment": "^2.12.0",
     "request": "^2.69.0",
     "urljoin.js": "^0.1.0"
   },
   "devDependencies": {
     "aframe": "github:aframevr/aframe#7dfc811",
+    "aframe-360-image-gallery-boilerplate": "^0.3.0-beta2",
     "hexo-cli": "^1.0.1",
     "multidep": "^2.0.0"
   },

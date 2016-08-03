@@ -28,8 +28,9 @@
     <!-- Example nav. -->
     <ul class="home__examples__nav">
       <% site.data.examples.examples.forEach(function (example, i) { %>
+        <% var exampleMetadata = examples_get_metadata(example.npm); %>
         <li data-example-link="<%= example.slug %>" data-index="<%- i %>">
-          <a><%- example.title %></a>
+          <a><%- exampleMetadata.title %></a>
         </li>
       <% }); %>
     </ul>
@@ -41,38 +42,43 @@
       <!-- Individual examples all in one container. -->
       <div class="home__examples__details-container">
         <% site.data.examples.examples.forEach(function (example, i) { %>
+          <% var exampleMetadata = examples_get_metadata(example.npm); %>
           <div class="home__examples__detail"
                data-example-detail="<%= example.slug %>"
                data-example-mobile="<%= example.mobile %>">
-            <textarea class="home__examples__code"><%= examples_get_source(site.data.examples.examples[i].slug) %></textarea>
+            <textarea class="home__examples__code"><%= examples_get_source(example.npm) %></textarea>
             <div class="home__examples__panel-wrapper">
               <div class="home__examples__panel">
                 <div class="home__examples__title">
                   <a class="home__examples__prev" title="Previous">&larr;</a>
-                  <h2><%- example.title %></h2>
+                  <h2><%- exampleMetadata.title %></h2>
                   <a class="home__examples__next" title="Next">&rarr;</a>
                 </div>
-                <% if (example.description) { %>
-                  <div class="home__examples__description"><%- markdown(example.description) %></div>
+                <% if (exampleMetadata.description) { %>
+                  <div class="home__examples__description"><%- markdown(exampleMetadata.description) %></div>
                 <% } %>
                 <!-- Components. -->
-                <% if (example.components && example.components.length) { %>
+                <% if (exampleMetadata.components && exampleMetadata.components.length) { %>
                   <div class="home__examples__components">
                     <h4>Components Used</h4>
                     <ul>
-                      <% example.components.forEach(function (component) { %>
-                        <li><a href="<%- component.file %>" target="_blank"
-                               rel="noopener noreferrer"><%- component.title %></a></li>
+                      <% exampleMetadata.components.forEach(function (component) { %>
+                        <li>
+                          <a href="<%- examples_get_js_path(example.npm, component.file) %>"
+                             target="_blank" rel="noopener noreferrer">
+                            <%- component.title %>
+                          </a>
+                        </li>
                       <% }); %>
                     </ul>
                   </div>
                 <% } %>
                 <!-- Assets. -->
-                <% if (example.assets && example.assets.length) { %>
+                <% if (exampleMetadata.assets && exampleMetadata.assets.length) { %>
                   <div class="home__examples__assets">
                     <h4>Assets Used</h4>
                     <ul>
-                      <% example.assets.forEach(function (asset) { %>
+                      <% exampleMetadata.assets.forEach(function (asset) { %>
                         <li><a href="<%- asset.file %>" target="_blank"
                              rel="noopener noreferrer"><%- asset.title %></a></li>
                       <% }); %>
