@@ -1,4 +1,6 @@
 examples:
+  - npm: aframe-magicavoxel-boilerplate
+    guide:
+
   - npm: aframe-360-image-gallery-boilerplate
-    slug: 360-image-gallery
     guide: https://aframe.io/docs/master/guide/building-an-advanced-scene.html

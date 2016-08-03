@@ -29,7 +29,7 @@
     <ul class="home__examples__nav">
       <% site.data.examples.examples.forEach(function (example, i) { %>
         <% var exampleMetadata = examples_get_metadata(example.npm); %>
-        <li data-example-link="<%= example.slug %>" data-index="<%- i %>">
+        <li data-example-link="<%= example.npm %>" data-index="<%- i %>">
           <a><%- exampleMetadata.title %></a>
         </li>
       <% }); %>
@@ -44,8 +44,8 @@
         <% site.data.examples.examples.forEach(function (example, i) { %>
           <% var exampleMetadata = examples_get_metadata(example.npm); %>
           <div class="home__examples__detail"
-               data-example-detail="<%= example.slug %>"
-               data-example-mobile="<%= example.mobile %>">
+               data-example-detail="<%= example.npm %>"
+               data-example-mobile="<%= exampleMetadata.mobile %>">
             <textarea class="home__examples__code"><%= examples_get_source(example.npm) %></textarea>
             <div class="home__examples__panel-wrapper">
               <div class="home__examples__panel">
