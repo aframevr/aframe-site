@@ -10,3 +10,5 @@ examples:
 
   - npm: aframe-360-image-gallery-boilerplate
     guide: https://aframe.io/docs/master/guide/building-an-advanced-scene.html
+
+  - npm: aframe-audio-visualizer-boilerplate

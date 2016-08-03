@@ -29,6 +29,7 @@
     "aframe": "github:aframevr/aframe#7dfc811",
     "aframe-360-image-gallery-boilerplate": "^0.3.0-beta6",
     "aframe-360-video-boilerplate": "^0.3.0-beta1",
+    "aframe-audio-visualizer-boilerplate": "^0.3.0-beta3",
     "aframe-hello-world-boilerplate": "^0.3.0-beta1",
     "aframe-magicavoxel-boilerplate": "^0.3.0-beta2",
     "hexo-cli": "^1.0.1"
