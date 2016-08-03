@@ -27,6 +27,7 @@
   "devDependencies": {
     "aframe": "github:aframevr/aframe#7dfc811",
     "aframe-360-image-gallery-boilerplate": "^0.3.0-beta5",
+    "aframe-hello-world-boilerplate": "^0.3.0-beta1",
     "aframe-magicavoxel-boilerplate": "^0.3.0-beta1",
     "hexo-cli": "^1.0.1",
     "multidep": "^2.0.0"
