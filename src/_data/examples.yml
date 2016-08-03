@@ -5,5 +5,8 @@ examples:
   - npm: aframe-hello-world-boilerplate
     guide:
 
+  - npm: aframe-360-video-boilerplate
+    guide:
+
   - npm: aframe-360-image-gallery-boilerplate
     guide: https://aframe.io/docs/master/guide/building-an-advanced-scene.html
