@@ -49,11 +49,17 @@
             <textarea class="home__examples__code"><%= examples_get_source(example.npm) %></textarea>
             <div class="home__examples__panel-wrapper">
               <div class="home__examples__panel">
+                <!-- Title and mobile nav. -->
                 <div class="home__examples__title">
                   <a class="home__examples__prev" title="Previous">&larr;</a>
                   <h2><%- exampleMetadata.title %></h2>
+                  <a class="home__examples__download-desktop"
+                     href="https://github.com/<%- exampleMetadata.repo %>">Download Scene</a>
                   <a class="home__examples__next" title="Next">&rarr;</a>
                 </div>
+                <a class="home__examples__download-mobile"
+                     href="https://github.com/<%- exampleMetadata.repo %>">Download Scene</a>
+                <!-- Description. -->
                 <% if (exampleMetadata.description) { %>
                   <div class="home__examples__description"><%- markdown(exampleMetadata.description) %></div>
                 <% } %>
