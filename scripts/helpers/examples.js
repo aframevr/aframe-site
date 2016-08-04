@@ -37,14 +37,14 @@ hexo.extend.helper.register('examples_get_source', function (npmName) {
   var source = fs.readFileSync('node_modules/' + npmName + '/index.html', 'utf-8');
 
   // Remove everything before <a-scene>.
-  var sceneOpenIndex = source.indexOf('<a-scene>');
+  var sceneOpenIndex = source.indexOf('<a-scene');
   source = source.replace(source.slice(0, sceneOpenIndex), '');
 
   // Remove everything after </a-scene> (but keep </a-scene>).
   var sceneCloseIndex = source.indexOf('</a-scene>') + '</a-scene>'.length;
   source = source.replace(source.slice(sceneCloseIndex, source.length - 1), '');
 
-  // Fix indents left by removing <html> and <body> (i.e., shift back 4 spaces).
+  // Fix indents left from removing <html> and <body> (i.e., shift back 4 spaces).
   source = source.replace(/\n    /g, '\n');
 
   // Remove trailing newline.

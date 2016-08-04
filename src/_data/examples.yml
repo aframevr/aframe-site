@@ -12,3 +12,5 @@ examples:
     guide: https://aframe.io/docs/master/guide/building-an-advanced-scene.html
 
   - npm: aframe-audio-visualizer-boilerplate
+
+  - npm: aframe-multiuser-boilerplate
