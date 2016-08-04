@@ -109,7 +109,7 @@ marked:
   modifyAnchors: 1  # Lowercased anchors.
 
 autoprefixer:
-  debug: true
+  debug: false
   enable: true
   exclude:
     - "*.min.css"
