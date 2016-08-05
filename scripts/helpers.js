@@ -37,7 +37,7 @@ hexo.extend.helper.register('table_of_contents', function (content) {
     var link = $h2.find('a')[0];
     var item = {
       title: link.attribs.title,
-      href: link.attribs.href.toLowercase(),
+      href: link.attribs.href.toLowerCase(),
       children: []
     };
 
@@ -46,7 +46,7 @@ hexo.extend.helper.register('table_of_contents', function (content) {
     for (var i = 0; i < links.length; i++) {
       item.children.push({
         title: links[i].attribs.title,
-        href: links[i].attribs.href.toLowercase()
+        href: links[i].attribs.href.toLowerCase()
       });
     }
     return item;
