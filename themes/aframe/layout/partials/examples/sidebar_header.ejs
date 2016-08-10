@@ -1,6 +1,6 @@
 <header id="header" class="header">
-  <a id="logo" class="logo borderless-links" href="<%- url_for(config.root) %>">
-    <span class="logo__wordmark"><%- config.title %></span>
+  <a id="logo" class="logo borderless-links" href="<%- url_for(config.root) %>" title="<%= config.title %>">
+    <span class="logo__wordmark"><%= config.title %></span>
   </a>
 </header>
 <a href="<%- url_for('docs/') %>" class="mobile-get-started nav-link get-started<%- page.canonical_path.match(/docs/) ? ' current' : '' %>">
