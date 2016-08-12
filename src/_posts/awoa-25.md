@@ -52,7 +52,7 @@ awoa:
       description: "code coverage continuous integration using Codecov."
       github: "#1783"
 
-    - author: twitter|andngokevin
+    - author: twitter|andgokevin
       action: fixed
       description: "mobile resolution in stereo mode by bumping webvr-polyfill `BUFFER_SCALE`."
       github: "#1747"
@@ -87,12 +87,12 @@ awoa:
       description: "source maps for the minified bundle."
       github: "#1746"
 
-    - author: twitter|andngokevin
+    - author: twitter|andgokevin
       action: added
       description: "guide for unit testing."
       github: "#1750"
 
-    - author: twitter|andngokevin
+    - author: twitter|andgokevin
       action: bumped
       description: "the CHANGELOG."
       github: "#1774"
@@ -102,7 +102,7 @@ awoa:
       description: "default `segmentsRadial` for torus knot geometry."
       github: "#1784"
 
-    - author: twitter|andngokevin
+    - author: twitter|andgokevin
       action: reverted
       description: "torus knot `p` and `q` property types to be floats again."
       github: "#1779"
