@@ -12,7 +12,7 @@ awoa:
 
     - author: github|dmarcos
       action: fixed
-      description: fixed mobile head tracking when not in VR mode
+      description: mobile head tracking when not in VR mode
       github: "#1465"
 
     - author: github|ngokevin
