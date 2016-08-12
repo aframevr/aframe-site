@@ -47,7 +47,7 @@ awoa:
       description: "automatic setting of `crossorigin` attribute on media elements."
       github: "#1789"
 
-    - author: twitter|mkungla
+    - author: github|mkungla
       action: added
       description: "code coverage continuous integration using Codecov."
       github: "#1783"
@@ -112,7 +112,7 @@ awoa:
       description: "`Entity.addToParent` being invoked twice causing null parents."
       github: "#1726"
 
-    - author: twitter|mkungla
+    - author: github|mkungla
       action: fixed
       description: "`camera.userHeight` updates."
       github: "#1736"
