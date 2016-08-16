@@ -1,9 +1,15 @@
-<% // Client-side solution for forcing redirect from HTTP to HTTPS. %>
+<%
+/**
+ * Client-side solution for forcing redirect from HTTP to HTTPS.
+ * Note: CloudFlare introduces server-side redirects.
+ */
+%>
 <% if (config.force_https) { %>
 <script>
-var host = window.location.protocol + '//' + window.location.hostname;
-if (host === 'http://aframe.io' || host === 'http://aframevr.github.io') {
-  window.location.href = 'https:' + window.location.href.substring(6);
-}
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === '<%- config.aframe.repo_root_url %>') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
 </script>
 <% } %>
