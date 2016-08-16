@@ -1,7 +1,5 @@
 var cheerio = require('cheerio');
-var fs = require('fs');
 var moment = require('moment');
-var urllib = require('url');
 
 var multidep = require('../multidep');
 var pkg = require('../package');
@@ -188,10 +186,6 @@ hexo.extend.helper.register('page_url', function (path, options) {
   return this.url_for(path, options).replace(/index\.html$/, '');
 });
 
-hexo.extend.helper.register('example_url', function (item) {
-  return urljoin(this.url_for('examples'), item.section, item.slug) + '/';
-});
-
 hexo.extend.helper.register('docs_url_prefix', function (item) {
   return this.page.source.split('/', 2).join('/') + '/';
 });
@@ -269,25 +263,3 @@ hexo.extend.helper.register('docs_versions', function () {
 });
 
 hexo.extend.helper.register('is_external_url', isUrl);
-
-hexo.extend.filter.register('urljoin', urljoin);
-
-hexo.extend.filter.register('after_render:html', function (str, data) {
-  if (data.path && data.path.substr(-3) === '.md') {
-    str = str.replace(/href="([^"]+)"/g, function (origStr, p1) {
-      return 'href="' + convertMarkdownToHtmlUrl(p1) + '"';
-    });
-  }
-  return str;
-});
-
-function convertMarkdownToHtmlUrl (url) {
-  var urlObj = urllib.parse(url);
-  if (!urlObj.pathname || urlObj.pathname[0] === '/') {
-    // Do not rewrite absolute URLs.
-    return url;
-  }
-  urlObj.pathname = urlObj.pathname.replace(/\.md$/, '.html')
-                                   .replace('/index.html', '/');
-  return urllib.format(urlObj);
-}

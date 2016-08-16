@@ -17,14 +17,19 @@
       <div class="list examples-list">
         <h2 class="page-title">Examples</h2>
 
-        <ul id="examplesSubnav" class="subnav examples-subnav borderless-links">
+        <ul id="examplesSubnav"
+            class="subnav examples-subnav borderless-links">
           <% site.data.examples.showcase.forEach(function (item, idx) { %>
-            <% var localUrl = url_for(example_url(item)) %>
-            <% var className = localUrl === currentUrl ? ' current' : '' %>
-            <% var supportsAndroid = item.supports && ('android' in item.supports) ? item.supports.android : true %>
-            <% var supportsIOS = item.supports && ('ios' in item.supports) ? item.supports.ios : true %>
-
-            <li data-supports-android="<%= supportsAndroid %>" data-supports-ios="<%= supportsIOS %>" data-url="<%= item.url %>" data-scene-url="<%= item.scene_url %>" data-slug="<%= item.slug %>" data-idx="<%= idx %>" class="example-item subnav-item<%= className %>"><a data-spa-link href="<%= localUrl %>" class="subnav-link<%= className %>"><span class="sidebar__link__text"><%= item.title %></span></a></li>
+            <% var className = item.example_url === currentUrl ? ' current' : '' %>
+            <li data-supports-android="<%= item.supports.android %>"
+                data-supports-ios="<%= item.supports.ios %>"
+                data-example-url="<%= item.example_url %>"
+                data-scene-url="<%= item.scene_url %>"
+                data-slug="<%= item.slug %>"
+                data-idx="<%= idx %>"
+                class="example-item subnav-item<%= className %>"><a data-spa-link
+                href="<%= item.example_url %>"
+                class="subnav-link<%= className %>"><span class="sidebar__link__text"><%= item.title %></span></a></li>
           <% }) %>
         </ul>
 

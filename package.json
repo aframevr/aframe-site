@@ -26,19 +26,21 @@
   },
   "devDependencies": {
     "hexo-cli": "^1.0.1",
-    "multidep": "^2.0.0"
+    "multidep": "^2.0.0",
+    "yaml-cat": "^0.3.2"
   },
   "hexo": {
     "version": "3.2.2"
   },
   "scripts": {
     "checklinks": "node bin/checkLinks",
-    "clean": "hexo clean",
+    "clean": "npm run generate:config && hexo clean",
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "dev": "npm run clean && npm run server",
-    "generate": "hexo generate",
-    "predeploy": "hexo clean",
-    "postinstall": "multidep multidep.json",
+    "generate": "npm run generate:config && hexo generate",
+    "generate:config": "yaml-cat '_config.prod.yml' '_config.local.yml' -n -m > _config.yml",
+    "predeploy": "npm run clean",
+    "postinstall": "multidep multidep.json && cp _config.local.yml.dist _config.local.yml",
     "release": "npm run syncjs ; npm run deploy",
     "server": "hexo server",
     "start": "npm run dev",

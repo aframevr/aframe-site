@@ -8,7 +8,6 @@ hexo.extend.generator.register('examples.json', function (locals) {
 });
 
 hexo.extend.generator.register('examples', function (locals) {
-  var self = this;
   var routes = [];
 
   function addRoute (path, data, layout) {

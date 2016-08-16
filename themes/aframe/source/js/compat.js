@@ -36,7 +36,13 @@ settings.isAndroid = isAndroid();
 settings.isIOS = isIOS();
 settings.isHome = strToBool(settings.isHome);
 settings.isSpa = strToBool(settings.isSpa);
-settings.rootUrl = (settings.rootUrl || '').replace(/\/+$/, '');
+
+// None of these URLs will contain a trailing slash.
+settings.siteBaseUrl = settings.siteBaseUrl;
+settings.siteRootPath = settings.siteRootPath;
+settings.siteHomeUrl = settings.siteHomeUrl;
+settings.libHomeUrl = settings.libHomeUrl;
+settings.libExamplesUrl = settings.libExamplesUrl;
 
 html.setAttribute('data-is-mobile', settings.isMobile);
 html.setAttribute('data-is-android', settings.isAndroid);
@@ -44,7 +50,7 @@ html.setAttribute('data-is-ios', settings.isIOS);
 
 if (settings.isMobile && settings.isHome) {
   // TODO: Make responsive home.
-  window.location.href = settings.rootUrl + '/examples/';
+  window.location.href = settings.rootPath + '/examples/';
   return;
 }
 
