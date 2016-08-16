@@ -22,12 +22,13 @@ When the fonts is loaded, we enable them by adding a class to `<html>`.
 */
 if ('requestAnimationFrame' in window) {
   window.requestAnimationFrame(function () {
+    var errToConsole = console.error.bind(console);
     new window.FontFaceObserver('Fira Sans').load().then(function () {
       document.documentElement.classList.add('font-loaded-sans');
-    });
+    }).catch(errToConsole);
     new window.FontFaceObserver('Fira Mono').load().then(function () {
       document.documentElement.classList.add('font-loaded-mono');
-    });
+    }).catch(errToConsole);
   });
 }
 
