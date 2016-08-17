@@ -40,7 +40,7 @@
     "generate": "npm run generate:config && hexo generate",
     "generate:config": "yaml-cat '_config.prod.yml' '_config.local.yml' -n -m > _config.yml",
     "predeploy": "npm run clean",
-    "postinstall": "multidep multidep.json && cp _config.local.yml.dist _config.local.yml",
+    "postinstall": "multidep multidep.json",
     "release": "npm run syncjs ; npm run deploy",
     "server": "hexo server",
     "start": "npm run dev",

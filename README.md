@@ -12,6 +12,10 @@ To install the dependencies and start the local development server:
 
     npm install && npm start
 
+And set up local configuration settings:
+
+    cp _config.local.yml.dist _config.local.yml
+
 Then load __[`http://localhost:4000/`](http://localhost:4000/)__!
 
 You may need to occasionally need to restart the server if you cause breaking

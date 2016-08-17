@@ -8,7 +8,7 @@
 <script>
   var host = window.location.protocol + '//' + window.location.hostname;
   if (window.location.protocol === 'http:' &&
-      window.location.hostname === '<%- config.aframe.repo_root_url %>') {
+      window.location.hostname === '<%- config.url %>') {
     window.location.href = 'https:' + window.location.href.substring(6);
   }
 </script>
