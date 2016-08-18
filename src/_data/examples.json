@@ -11,7 +11,7 @@
     {
       "section": "showcase",
       "slug": "helloworld",
-      "scene_url": "https://aframe.io/aframe/examples/boilerplate/helloworld/",
+      "scene_url": "https://aframe.io/aframe/examples/boilerplate/hello-world/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/hello-world/index.html",
       "title": "Hello World"
     },
