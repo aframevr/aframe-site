@@ -5,7 +5,7 @@ layout: index
 ---
 
 <div class="intro copy">
-Use markup to create VR experiences that work across desktop, iOS, Android, and the Oculus Rift.
+Use markup to create VR experiences that work across desktop, iOS, Android, the Oculus Rift, and the HTC Vive.
 </div>
 
 <!--
