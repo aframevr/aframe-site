@@ -145,7 +145,7 @@ slack:
   aframe:
     signup_url: https://aframevr-slack.herokuapp.com
 
-aframe_version: 0.2.0
+aframe_version: 0.3.0
 
 # Single-Page App
 spa: false
