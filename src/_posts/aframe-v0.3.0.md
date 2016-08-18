@@ -9,15 +9,17 @@ image:
 
 [webvr1.0]: https://w3c.github.io/webvr/
 
-A-Frame **v0.3.0** has dropped!  With support for the **[new WebVR 1.0
-API][webvr1.0]**, we aim higher towards state of the art VR. With room-scale
+A-Frame **v0.3.0** has dropped! With support for the **[new WebVR 1.0
+API][webvr1.0]**, we aim higher towards state-of-the-art VR. With room-scale
 tracking, we can walk in a web page, and with tracked controller support, we
 can reach out into the world.
 
 <!-- more -->
 
-Grab the latest build at `https://aframe.io/releases/0.3.0/aframe.min.js` or
-`npm install aframe`.
+[latestbuild]: https://aframe.io/aframe-inspector/example/
+
+Grab the latest build at [`https://aframe.io/releases/0.3.0/aframe.min.js`]
+[latestbuild] or `npm install aframe`.
 
 ## What's New?
 
@@ -28,7 +30,7 @@ Grab the latest build at `https://aframe.io/releases/0.3.0/aframe.min.js` or
 - Hitting **90 frames per second** due to being able to push content directly to the headset
   display rather than mirroring a desktop display. This also allows us to have different
   content on the desktop display than the headset, opening the door for asynchronous gameplay
-  or spectator modes.
+  and spectator modes.
 
 As a corollary, A-Frame now supports **tracked controllers** with the HTC Vive.
 Tracked controllers go hand-in-hand with room-scale. Grab an HTC Vive and the
@@ -42,17 +44,17 @@ throw](https://bryik.github.io/aframe-ball-throw/).
 [inspectordemo]: https://aframe.io/aframe-inspector/example/
 
 We are also releasing the much-anticipated **A-Frame Inspector** ([view
-demo][inspectordemo]). The current primary purpose of the Inspector is as a
-complementary tool for inspecting and tweaking scenes alongside code; it is
-more akin to the browser's DOM inspector rather than an end-to-end tool like
-Unity. The easiest way to try out the Inspector is to press `<ctrl> + <shift> +
-i` on any A-Frame scene using v0.3.0:
+demo][inspectordemo]). The current primary purpose of the Inspector is to
+serve as a complementary tool for inspecting and tweaking scenes alongside
+code; it is more akin to your favorite browser's DOM Inspector rather than
+an end-to-end tool such as Unity. The easiest way to try out the A-Frame
+Inspector is to press `<ctrl> + <shift> + i` on any A-Frame scene using v0.3.0.
 
 ![A-Frame Inspector Demo](../../images/blog/v0.3.0-inspector.gif)
 
-Other remarkable changes include large performance improvements, better support
-for multiple scenes embedded within a single webpage, and support for multiple
-instances of components of the same type.
+Other noteworthy changes include significant performance improvements,
+improved support for multiple scenes embedded within a single webpage,
+and support for multiple instances of components of the same type.
 
 [releasenotes]: https://github.com/aframevr/aframe/releases/tag/v0.3.0
 
@@ -126,9 +128,9 @@ In the last four months, we have featured over **150 high quality scenes**:
 - **Geometries:** [Procedural geometries][lsystem], [Bitmap font text][bmfont],
   [terrains][terrain], [oceans][extras], and [grids][grid].
 - **Materials:** [GIF][gif], [HTML][html], [cubemaps][cubemap],
-  [stereo cubemaps][stereocube], [video controls][vidcontrols].
+  [stereo cubemaps][stereocube], and [video controls][vidcontrols].
 - **Miscellaneous:** [Leap Motion controls][leap], [Vive controls][webvrcontroller],
-  [AltSpaceVR integration][altspace], [glTF][gltf], [particle systems][particle].
+  [AltSpaceVR integration][altspace], [glTF][gltf], and [particle systems][particle].
 
 There have even been a couple of **augmented reality** prototypes:
 
@@ -140,7 +142,7 @@ There have even been a couple of **augmented reality** prototypes:
 [magicavoxel]: https://ephtracy.github.io/
 
 We want to make it **easier to get started** with A-Frame. This includes a
-refreshed homepage with new example scenes that act as starter kits.  These
+refreshed homepage with new example scenes that act as starter kits. These
 examples will be accompanied with free assets, guides, and workflows tutorials
 on how to use A-Frame alongside tools such as [MagicaVoxel][magicavoxel] and
 [Blender][blender].
