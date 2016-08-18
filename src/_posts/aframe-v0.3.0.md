@@ -9,10 +9,10 @@ image:
 
 [webvr1.0]: https://w3c.github.io/webvr/
 
-A-Frame **v0.3.0** has dropped! *What is virtual reality without our legs nor our
-hands?* With support for the **[new WebVR 1.0 API][webvr1.0]**, we aim higher
-towards state of the art VR. With room-scale tracking, we can walk in a web
-page, and with tracked controller support, we can reach out into the world.
+A-Frame **v0.3.0** has dropped!  With support for the **[new WebVR 1.0
+API][webvr1.0]**, we aim higher towards state of the art VR. With room-scale
+tracking, we can walk in a web page, and with tracked controller support, we
+can reach out into the world.
 
 <!-- more -->
 
