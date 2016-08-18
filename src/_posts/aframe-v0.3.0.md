@@ -16,6 +16,9 @@ page, and with tracked controller support, we can reach out into the world.
 
 <!-- more -->
 
+Grab the latest build at `https://aframe.io/releases/0.3.0/aframe.min.js` or
+`npm install aframe`.
+
 ## What's New?
 
 **WebVR 1.0** support is the highlight of this release. This includes:
@@ -28,9 +31,13 @@ page, and with tracked controller support, we can reach out into the world.
   or spectator modes.
 
 As a corollary, A-Frame now supports **tracked controllers** with the HTC Vive.
-Tracked controllers go hand-in-hand with room-scale:
+Tracked controllers go hand-in-hand with room-scale. Grab an HTC Vive and the
+[experimental WebVR-enabled Chromium build](https://webvr.info/get-chrome/)
+(which currently supports the Vive) and try out the [basic hand controls
+demo](https://aframe.io/aframe/examples/showcase/tracked-controls/) or [ball
+throw](https://bryik.github.io/aframe-ball-throw/).
 
-![A-Frame Ball Throw Demo](../../images/awoa/ball-throw.gif)
+[![A-Frame Ball Throw Demo](../../images/awoa/ball-throw.gif)](https://bryik.github.io/aframe-ball-throw/)
 
 [inspectordemo]: https://aframe.io/aframe-inspector/example/
 
