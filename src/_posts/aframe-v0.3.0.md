@@ -147,11 +147,10 @@ examples will be accompanied with free assets, guides, and workflows tutorials
 on how to use A-Frame alongside tools such as [MagicaVoxel][magicavoxel] and
 [Blender][blender].
 
-We are excited to improve the **component discovery and consumption process**.
-Rather than having to search for, download, and manually include components, we
-hope to be able to lazy-load components from a curated registry. The result
-would be that we'd able to use third-party components as if they shipped with
-A-Frame.
+We are also excited to improve the component discovery and consumption process
+to have an easy place to find great community components. We'll also be
+thinking about asset curation and discovery which should sound great if you've
+ever had trouble finding free 3D models.
 
 [roadmap]: https://github.com/aframevr/aframe/blob/master/ROADMAP.md
 
