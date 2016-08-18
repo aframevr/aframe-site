@@ -17,8 +17,8 @@ hexo.extend.generator.register('blog-redirects', function () {
 hexo.extend.generator.register('docs-redirects', function () {
   var redirectObjs = [getDocRootRedirectObjs(), getPreVersionedRedirectObjs()];
   redirectObjs.push([
-    ['docs/', 'docs/' + hexo.config.aframe_version + '/guide/'],
-    ['docs/guide/', 'docs/' + hexo.config.aframe_version + '/guide/'],
+    ['docs/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
+    ['docs/guide/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
     // Pre-versioned 0.1.0 removed pages redirects.
     ['docs/core/templates.html', 'docs/0.1.0/templates.html'],
     ['docs/guide/entering-vr.html', 'docs/0.1.0/entering-vr.html'],
