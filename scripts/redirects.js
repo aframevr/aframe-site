@@ -29,8 +29,8 @@ hexo.extend.generator.register('docs-redirects', function () {
     ['docs/core/mixin.html', 'docs/0.2.0/core/mixins.html'],
     ['docs/guide/cameras-and-lights.html', 'docs/0.2.0/guide/building-a-basic-scene.html'],
     ['docs/guide/installation.html', 'docs/0.2.0/guide/getting-started.html'],
-    ['docs/guide/objects.html', 'docs/0.2.0/guide/building-a-basic-scene.html'],
-    ['docs/guide/positioning.html', 'docs/0.2.0/guide/building-a-basic-scene.html#transforming-the-box'],
+    ['docs/guide/objects.html', 'docs/0.2.0/guides/building-a-basic-scene.html'],
+    ['docs/guide/positioning.html', 'docs/0.2.0/guides/building-a-basic-scene.html#transforming-the-box'],
     ['docs/primitives/a-cube.html', 'docs/0.2.0/primitives/a-box.html'],
     ['docs/primitives/a-model.html', 'docs/0.2.0/primitives/a-collada-model.html']
   ]);
@@ -57,7 +57,7 @@ function getDocRootRedirectObjs () {
   var versions = multidep.versions.aframe.slice(0);
   versions.push(MASTER);
   return versions.map(function getRedirectObj (version) {
-    return ['docs/' + version + '/', 'docs/' + version + '/guide/'];
+    return ['docs/' + version + '/', 'docs/' + version + '/introduction/'];
   });
 }
 

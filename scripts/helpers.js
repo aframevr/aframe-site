@@ -8,7 +8,10 @@ var utils = require('../lib/utils');
 var isUrl = utils.isUrl;
 var urljoin = utils.urljoin;
 
-var aframeVersions = multidep.versions.aframe;
+var aframeVersions = multidep.versions.aframe.map(function (version) {
+  if (version.constructor === Array) { return version[1]; }
+  return version;
+});
 
 var MASTER = 'master';
 var aframeCurrentSha = MASTER;
