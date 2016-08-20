@@ -32,9 +32,9 @@
     {
       "section": "showcase",
       "slug": "videosphere",
-      "scene_url": "https://aframe.io/aframe/examples/boilerplate/360video/",
+      "scene_url": "https://aframe.io/aframe/examples/boilerplate/360-video/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/360-video/index.html",
-      "title": "360 Video",
+      "title": "360° Video",
       "supports": {
         "android": false,
         "ios": false
@@ -85,7 +85,7 @@
     {
       "section": "showcase",
       "slug": "sky",
-      "scene_url": "https://aframe.io/aframe/examples/primitives/sky/",
+      "scene_url": "https://aframe.io/aframe/examples/boilerplate/panorama/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html",
       "title": "Panorama"
     }
