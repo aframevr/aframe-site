@@ -50,7 +50,7 @@ html.setAttribute('data-is-ios', settings.isIOS);
 
 if (settings.isMobile && settings.isHome) {
   // TODO: Make responsive home.
-  window.location.href = settings.rootPath + '/examples/';
+  window.location.pathname = '/examples/';
   return;
 }
 
