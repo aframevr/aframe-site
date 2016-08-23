@@ -16,7 +16,7 @@ can reach out into the world.
 
 <!-- more -->
 
-[latestbuild]: https://aframe.io/aframe-inspector/example/
+[latestbuild]: https://aframe.io/releases/0.3.0/aframe.min.js
 
 Grab the latest build at [`https://aframe.io/releases/0.3.0/aframe.min.js`]
 [latestbuild] or `npm install aframe`.
