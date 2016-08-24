@@ -33,6 +33,7 @@
     "version": "3.2.2"
   },
   "scripts": {
+    "bumpdocs": "rm -rf .multidep/aframe-v0.3.0 && npm install aframevr/aframe#master && multidep multidep.json",
     "checklinks": "node bin/checkLinks",
     "clean": "hexo clean",
     "deploy": "hexo deploy && open 'https://aframe.io/'",
