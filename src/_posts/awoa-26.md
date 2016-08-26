@@ -92,7 +92,7 @@ awoa:
   media:
     - author: twitter|armthethinker
       action: "posted user research findings on"
-      title: "*Head-Tracked Transfomations: How do you look behind an object in VR if you can't walk around it?"
+      title: "*Head-Tracked Transfomations*: How do you look behind an object in VR if you can't walk around it?"
       url: https://medium.com/humane-virtuality/head-tracked-transformations-e7102d3c9789
 
     - author: twitter|lady_ada_king
