@@ -9,7 +9,7 @@ awoa:
       author: twitter|lady_ada_king
       description: "Zooming on the track with the ocean water reflecting the sunset sky. ([code](https://github.com/SamsungInternet/a-frame-demos/blob/gh-pages/racer.md))"
       image: track.jpg
-      url: https://ada.is/getting-started-with-webvr/track.html
+      url: https://samsunginternet.github.io/a-frame-demos/racer.html
 
     - title: AaMAZE Music Festival
       author: twitter|thedimensionlab
