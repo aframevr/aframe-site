@@ -20,7 +20,7 @@
           <%- partial('partials/blog/metadata', {post: post}) %>
 
           <% if (post.awoa) { %>
-            <p>What's up with A-Frame for the week of <%= blog_date_subtract_week(post.date) %> to <%= blog_date(post.date) %>.</p>
+            <p>What&rsquo;s up with A-Frame for the week of <%= blog_date_subtract_week(post.date) %> to <%= blog_date(post.date) %>.</p>
             <%- partial('partials/blog/awoa_projects_showcase', {
               projects: post.awoa.projects
             }) %>

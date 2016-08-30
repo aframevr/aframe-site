@@ -7,15 +7,15 @@ awoa:
   projects:
     - title: Track
       author: twitter|lady_ada_king
-      description: "Zooming on the track with the ocean water reflecting the sunset sky. ([code](https://github.com/SamsungInternet/a-frame-demos/blob/gh-pages/racer.md))"
+      description: "Zooming on the track with the ocean water reflecting the sunset sky. ([code](https://github.com/SamsungInternet/a-frame-demos/blob/gh-pages/racer/index.html))"
       image: track.jpg
-      url: https://samsunginternet.github.io/a-frame-demos/racer.html
+      url: https://samsunginternet.github.io/a-frame-demos/racer/
 
     - title: AaMAZE Music Festival
       author: twitter|thedimensionlab
-      description: "Fully responsive official VR website for the AaMAZE music festival in Denmark featuring a music area to preview all the musicians, 360 photos of the venue, a sunset beach, and a menu to navigate between them all."
+      description: "Fully responsive official VR website for the AaMAZE music festival in Denmark featuring a music area to preview all the musicians, 360° photos of the venue, a sunset beach, and a menu to navigate between them all."
       image: aamaze-music-festival.jpg
-      url:  http://vr.aamaze.dk/
+      url: http://vr.aamaze.dk/
 
     - title: Heart
       author: twitter|dazappa
@@ -25,13 +25,13 @@ awoa:
 
     - title: Miradas 360
       author: twitter|tincho_for_ever
-      description: "360 experiences created by media production teams. ([code](https://github.com/Miradas360/miradas360-01))"
+      description: "360° experiences created by media production teams. ([code](https://github.com/Miradas360/miradas360-01))"
       image: miradas-360.jpg
       url: https://miradas360.github.io/miradas360-01/
 
-    - title: Interactive 360 Videos
+    - title: Interactive 360° Videos
       author: twitter|hapyakvideo
-      description: "Upload and edit 360 interactive videos by overlaying DOM elements."
+      description: "Upload and edit 360° interactive videos by overlaying DOM elements."
       image: interactive-360-videos.jpg
       url: http://s3.amazonaws.com/hapyak_demos/interactive360video/edit.html
 
@@ -41,9 +41,9 @@ awoa:
       image: unity-exporter-to-aframe.jpg
       url: https://github.com/if1live/unity-scene-web-exporter
 
-    - title: Wordpress Template
+    - title: WordPress Template
       author: http://www.construktiv.de/|Hauke Brinkmann
-      description: "Wordpress template that displays the four most recent posts in VR."
+      description: "WordPress template that displays in the four most recent posts in VR."
       image: wordpress-template.jpg
       url: http://www.construktiv.de/imagine/webvr-mit-a-frame/
 
@@ -55,7 +55,7 @@ awoa:
 
     - title: Apollo 11 Scan
       author: http://math.nist.gov/~SRessler/aframe/ebd/|Eric Dougherty
-      description: "View the inside of the Apollo 11 Command Module thanks for the National Air and Space Museum."
+      description: "View the inside of the Apollo 11 Command Module, thanks to the National Air and Space Museum."
       image: apollo-11-scan.jpg
       url: http://math.nist.gov/~SRessler/aframe/ebd/projects/apollo/
 
@@ -81,18 +81,18 @@ awoa:
       author: twitter|scottsingercg
       description: "Architectural visualization with baked global illumination."
       image: covo.jpg
-      url:  https://s3-us-west-1.amazonaws.com/geopogo/covo/aframe_0_1_0/index.html
+      url: https://s3-us-west-1.amazonaws.com/geopogo/covo/aframe_0_1_0/index.html
 
     - title: Humanity
       author: twitter|davatron5000
-      description: "Day 8 of Dave's 30 Days of WebVR."
+      description: "Day 8 of Dave's _30 Days of WebVR_."
       image: humanity.jpg
-      url: http://codepen.io/davatron5000/pen/RRmVQz
+      url: https://codepen.io/davatron5000/pen/RRmVQz
 
   media:
     - author: twitter|armthethinker
       action: "posted user research findings on"
-      title: "*Head-Tracked Transfomations*: How do you look behind an object in VR if you can't walk around it?"
+      title: "*Head-Tracked Transformations*: How do you look behind an object in VR if you can't walk around it?"
       url: https://medium.com/humane-virtuality/head-tracked-transformations-e7102d3c9789
 
     - author: twitter|lady_ada_king
@@ -107,7 +107,7 @@ awoa:
 
     - author: twitter|hapyakvideo
       action: "wrote about"
-      title: "interactive 360 videos by overlaying DOM elements and live editing 360 videos."
+      title: "interactive 360° videos by overlaying DOM elements and live editing 360° videos."
       url: https://corp.hapyak.com/resources/interactive-360-videos-accuracy/
 
     - author: twitter|trysmudford
@@ -122,7 +122,7 @@ awoa:
 
     - author: http://math.nist.gov/~SRessler/aframe/ebd/|Eric Dougherty
       action: "presented"
-      title: "*WebVR: Virtual Reality on Web Pages*"
+      title: "*WebVR: Virtual Reality on Web Pages*."
       url: http://math.nist.gov/~SRessler/aframe/ebd/presentation.html
 
     - author: twitter|SonarSystems
@@ -203,12 +203,12 @@ awoa:
 
     - author: twitter|dmarcos
       action: added
-      description: "the `<ctrl> + <alt> + i` shortcut to injected the Inspector."
+      description: "the `<ctrl> + <alt> + i` shortcut to inject the Inspector."
       github: "#1599"
 
     - author: twitter|donrmccurdy
       action: added
-      description: "support for non-QWERTY layouts in `wasd-controls` (e.g., ZQSD, Dvorak)"
+      description: "support for non-QWERTY layouts in `wasd-controls` (e.g., ZQSD, Dvorak)."
       github: "#1832"
 
     - author: twitter|donrmccurdy
@@ -222,8 +222,8 @@ awoa:
       github: "#1788"
 
     - author: twitter|davidwalshblog
-      action: converted
-      description: "to use a faster `Function.bind`."
+      action: improved
+      description: "performance of `Function.bind` calls."
       github: "#1782"
 
     - author: twitter|dmarcos
@@ -233,17 +233,17 @@ awoa:
 
     - author: twitter|andgokevin
       action: improved
-      description: "TravisCI build speeds by caching `node_modules`"
+      description: "TravisCI build speeds by caching `node_modules`."
       github: "#1814"
 
     - author: twitter|andgokevin
       action: fixed
-      description: "`wasd-controls` within I-Frames."
+      description: "`wasd-controls` within `<iframe>`s."
       github: "#1798"
 
     - author: twitter|dmarcos
       action: fixed
-      description: "`parentNode` being `null` error."
+      description: "error causing `parentNode` to be `null`."
       github: "#1792"
 
     - author: github|mkungla
@@ -263,12 +263,11 @@ awoa:
 
     - author: twitter|davidwalshblog
       action: made
-      description: "object literal coding style consistent"
+      description: "coding style consistent for object literals."
       github: "#1829"
 
   stars: 2905
 ---
 
 Have you played with [v0.3.0](./aframe-v0.3.0.html) and the Vive yet? Have you
-pressed `<ctrl> + <alt> + i` on any scene running v0.3.0 yet? You should do
-that.
+pressed `<ctrl> + <alt> + i` on any scene running v0.3.0 yet? Enjoy!
