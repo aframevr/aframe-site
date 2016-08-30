@@ -1,19 +1,16 @@
 <aside class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
-
-  <div class="list">
-  </div>
 </aside>
 
 <div class="content content--blog copy post">
   <div class="copy__wrap">
     <% if (page.blog_index) { %>
-      <h1 class="page__title"><%- config.blog_title %></h1>
+      <h1 class="hidden-visually"><%- config.blog_title %></h1>
 
       <%- page.content %>
 
       <% site.posts.sort('date', -1).each(function (post) { %>
-        <article class="post post-listing">
+        <article class="post post--listing">
           <a href="<%- page_url(post.path) %>">
             <h2 class="post__heading"><%- post.title %></h2>
           </a>
@@ -34,11 +31,13 @@
           <a href="<%- page_url(post.path) %>" class="post__more">Read more &hellip;</a>
         </article>
       <% }) %>
-
     <% } else { %>
       <article class="post post-full">
-        <h1 class="hidden-visually"><%- config.blog_title %></h1>
-        <h2 class="post__heading"><%- page.title %></h2>
+        <p class="page__section">
+          <a href="<%- url_for('blog/') %>" class="borderless-link">Blog</a>
+        </p>
+
+        <h1 class="page__title post__heading"><%- page.title %></h1>
         <%- partial('partials/blog/metadata', {post: page}) %>
 
         <% if (page.awoa) { %>
