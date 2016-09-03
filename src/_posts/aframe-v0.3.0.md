@@ -48,7 +48,7 @@ demo][inspectordemo]). The current primary purpose of the Inspector is to
 serve as a complementary tool for inspecting and tweaking scenes alongside
 code; it is more akin to your favorite browser's DOM Inspector rather than
 an end-to-end tool such as Unity. The easiest way to try out the A-Frame
-Inspector is to press `<ctrl> + <shift> + i` on any A-Frame scene using v0.3.0.
+Inspector is to press `<ctrl> + <alt> + i` on any A-Frame scene using v0.3.0.
 
 ![A-Frame Inspector Demo](../../images/blog/v0.3.0-inspector.gif)
 
