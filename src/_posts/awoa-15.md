@@ -8,52 +8,52 @@ awoa:
   contributions:
     - author: github|msimpson
       action: added
-      description: "the `end` attribute to animations to stop animations on events"
+      description: "the `end` attribute to animations to stop animations on events."
       github: "#1491"
 
     - author: github|msimpson
       action: implemented
-      description: "a separate `delay` attribute for animations"
+      description: "a separate `delay` attribute for animations."
       github: "#1508"
 
     - author: github|msimpson
       action: added
-      description: dodecahedron, octahedron, and tetrahedron geometries
+      description: dodecahedron, octahedron, and tetrahedron geometries.
       github: "#1493"
 
     - author: github|msimpson
       action: fixed
-      description: "raycaster intersection with models by binding `el` to `object3D`s"
+      description: "raycaster intersection with models by binding `el` to `object3D`s."
       github: "#1497"
 
     - author: github|ngokevin
       action: tweaked
-      description: default lighting to make objects look less flat
+      description: default lighting to make objects look less flat.
       github: "#1478"
 
     - author: github|fernandojsg
       action: added
-      description: "the `material.flatShading` boolean property"
+      description: "the `material.flatShading` boolean property."
       github: "#1503"
 
     - author: github|fernandojsg
       action: updated
-      description: the geometry schemas to be more accurate and complete
+      description: the geometry schemas to be more accurate and complete.
       github: "#1506"
 
     - author: github|fernandojsg
       action: added
-      description: "the `oneOf` attribute to the `geometry.primitive` property for the editor"
+      description: "the `oneOf` attribute to the `geometry.primitive` property for the editor."
       github: "#1501"
 
     - author: github|fernandojsg
       action: fixed
-      description: "`.play()` not being called when active camera changed"
+      description: "`.play()` not being called when active camera changed."
       github: "#1502"
 
     - author: github|ngokevin
       action: worked around
-      description: a weird error where parentNode was becoming null on entity callback
+      description: "a weird error where `parentNode` was becoming `null` on entity callbacks.""
       github: "#1483"
 
   media:
@@ -90,7 +90,7 @@ awoa:
   projects:
     - title: Celestial Dancers
       author: https://elliotplant.wordpress.com/|Elliot Plant
-      description: An orbital mechanics simulation of celestial bodies
+      description: An orbital mechanics simulation of celestial bodies.
       image: celestial-dancers.gif
       url: http://www.elliotplant.com/
 
@@ -102,13 +102,13 @@ awoa:
 
     - title: Aquila VR
       author: https://www.linkedin.com/in/inje-yeo-0933a436|Inje Yeo
-      description: Mapping of the universe using actual collected star data (may take time to load)
+      description: Mapping of the universe using actual collected star data (may take time to load).
       image: aquilavr.jpg
       url: http://www.aquilavr.com
 
     - title: Audio Analyser Node Components
       author: twitter|andgokevin
-      description: Refactor of the audio visualizer components to use WebAudio AnalyserNodes coming soon.
+      description: Refactoring of the audio visualizer components to use Web Audio `AnalyserNode`s coming soon.
       image: audio-analyser.gif
       url: https://github.com/ngokevin/aframe-audio-visualizer-components/tree/nodancer
 
@@ -132,7 +132,7 @@ awoa:
 
     - title: Firebase Presentation
       author: twitter|andgokevin
-      description: A multiuser demo scene for the SFHTML5 presentation.
+      description: A multi-user demo scene for the SFHTML5 presentation.
       image: firebase-presentation.gif
       url: https://ngokevin.github.io/aframe-firebase-component/presentation/
 
@@ -145,6 +145,6 @@ awoa:
   stars: 2010
 ---
 
-*A-Frame intensifies* as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multiuser, embedded scenes, room-scale, asymmetric gaming, the A-Frame Editor, and link traversal at SFHTML5 WebVR meetup.
+*A-Frame intensifies* as we pass 2000 GitHub stars and 800 Slack members! Sneak peeks of multi-user, embedded scenes, room-scale, asymmetric gaming, the A-Frame Editor, and link traversal at SFHTML5 WebVR meetup.
 
 Thanks to Matt Simpson for the many contributions this week!

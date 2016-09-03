@@ -73,19 +73,19 @@ awoa:
       author: github|mayognaise
       description: A GIF component to display GIF animations as a material. If only there were a component to resolve whether GIF is pronounced with a hard-G or a soft-G.
       image: gif-component.gif
-      url: https://mayognaise.github.io/aframe-gif-component/basic/index.html
+      url: https://mayognaise.github.io/aframe-gif-component/basic/
 
     - title: Mouse Cursor Component
       author: github|mayognaise
       description: A cursor component that uses the mouse rather than the Cardboard-style cursor that ships with A-Frame.
       image: mouse-cursor-component.gif
-      url: https://mayognaise.github.io/aframe-mouse-cursor-component/basic/index.html
+      url: https://mayognaise.github.io/aframe-mouse-cursor-component/basic/
 
     - title: Drag Look Controls Component
       author: github|mayognaise
       description: A controls component where the canvas moves the way you drag, and the cursor changes to grab-style.
       image: drag-look-controls-component.gif
-      url: https://mayognaise.github.io/aframe-drag-look-controls-component/basic/index.html
+      url: https://mayognaise.github.io/aframe-drag-look-controls-component/basic/
 ---
 
 Inspired by [This Week in Servo](https://blog.servo.org/), welcome to A Week of A-Frame! After a hiatus in [A-Frame Feature Friday](https://aframevr.tumblr.com/), we return to our regularly scheduled programming of A-Frame awesomeness here on the A-Frame blog.

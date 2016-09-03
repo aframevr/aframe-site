@@ -47,7 +47,7 @@ awoa:
       author: twitter|jon_ibe
       description: Groove to Topanga's music.
       image: electrocat.jpg
-      url: http://topanga-band.com/electrocat/index.html
+      url: http://topanga-band.com/electrocat/
 
     - title: Draw Shader
       author: github|mayognaise
@@ -95,7 +95,7 @@ awoa:
       author: github|atomicguy
       description: A component to set boundaries on an entity's position.
       image: fence-component.jpg
-      url: https://atomicguy.github.io/aframe-fence-component/basic/index.html
+      url: https://atomicguy.github.io/aframe-fence-component/basic/
 
     - title: Mesh Line Component
       author: github|andreasplesch

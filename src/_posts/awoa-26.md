@@ -14,7 +14,7 @@ awoa:
 
     - title: AaMAZE Music Festival
       author: twitter|thedimensionlab
-      description: "Fully responsive official VR website for the AaMAZE music festival in Denmark featuring a music area to preview all the musicians, 360° photos of the venue, a sunset beach, and a menu to navigate between them all."
+      description: "Fully responsive official VR website for the AaMAZE music festival in Denmark featuring a music area to preview all the musicians, 360&deg; photos of the venue, a sunset beach, and a menu to navigate between them all."
       image: aamaze-music-festival.jpg
       url: http://vr.aamaze.dk/
 
@@ -30,9 +30,9 @@ awoa:
       image: miradas-360.jpg
       url: https://miradas360.github.io/miradas360-01/
 
-    - title: Interactive 360° Videos
+    - title: Interactive 360&deg; Videos
       author: twitter|hapyakvideo
-      description: "Upload and edit 360° interactive videos by overlaying DOM elements."
+      description: "Upload and edit 360&deg; interactive videos by overlaying DOM elements."
       image: interactive-360-videos.jpg
       url: http://s3.amazonaws.com/hapyak_demos/interactive360video/edit.html
 
@@ -44,7 +44,7 @@ awoa:
 
     - title: WordPress Template
       author: http://www.construktiv.de/|Hauke Brinkmann
-      description: "WordPress template that displays in the four most recent posts in VR."
+      description: "WordPress template that displays the four most recent posts in VR."
       image: wordpress-template.jpg
       url: http://www.construktiv.de/imagine/webvr-mit-a-frame/
 
@@ -86,7 +86,7 @@ awoa:
 
     - title: Humanity
       author: twitter|davatron5000
-      description: "Day 8 of Dave's _30 Days of WebVR_."
+      description: "Day 8 of Dave's *30 Days of WebVR*."
       image: humanity.jpg
       url: https://codepen.io/davatron5000/pen/RRmVQz
 
@@ -108,7 +108,7 @@ awoa:
 
     - author: twitter|hapyakvideo
       action: "wrote about"
-      title: "interactive 360° videos by overlaying DOM elements and live editing 360° videos."
+      title: "interactive 360&deg; videos by overlaying DOM elements and live editing 360 videos."
       url: https://corp.hapyak.com/resources/interactive-360-videos-accuracy/
 
     - author: twitter|trysmudford

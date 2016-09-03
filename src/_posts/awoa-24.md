@@ -26,25 +26,25 @@ awoa:
 
     - title: RunJumpDev Slides
       author: twitter|nickwarner
-      description: "Virtual slidedeck for an A-Frame talk at RunJumpDev."
+      description: "Virtual slide deck for an A-Frame talk at [RunJumpDev](http://runjumpdev.org/)."
       image: runjumpdev-slides.jpg
       url: http://webvr-demos-nikolaiwarner.c9users.io:8081/
 
-    - title: Multiplayer Tic Tac Toe
+    - title: Multi-player Tic Tac Toe
       author: twitter|utopiah
-      description: "Prototype of networked Vives playing Tic Tac Toe. ([video](https://www.youtube.com/watch?v=vGjIWwozOU4))"
+      description: "Prototype of networked Vives playing Tic-Tac-Toe. ([video](https://www.youtube.com/watch?v=vGjIWwozOU4))"
       image: multiplayer-tic-tac-toe.jpg
       url: http://jsbin.com/janevom/edit?html,output
 
     - title: 30 Days of WebVR
       author: twitter|davatron5000
-      description: "One order of A-Frame and WebVR per day, all on Codepen."
+      description: "One order of A-Frame and WebVR per day, all on CodePen."
       image: thirty-days-of-webvr.jpg
-      url: http://codepen.io/collection/AKkywv/
+      url: https://codepen.io/collection/AKkywv/
 
     - title: Look At and Billboard Component
       author: github|blairmacintyre
-      description: "Component to tell an entity to face another entity, or to face the camera. Improved version with bug fixes over previous look-at components."
+      description: "Component to tell an entity to face another entity, or to face the camera. Improved version with bug fixes over previous `look-at` components."
       image: billboard-component.jpg
       url: https://github.com/blairmacintyre/aframe-look-at-component/
 
@@ -57,7 +57,7 @@ awoa:
 
     - author: twitter|scenevr
       action: tweeted
-      title: "an A-Frame scene with interpolated network updates from a persistent server"
+      title: "an A-Frame scene with interpolated network updates from a persistent server."
       url: https://twitter.com/scenevr/status/760632406395060225
 
     - author: twitter|donrmccurdy
@@ -72,12 +72,12 @@ awoa:
 
     - author: twitter|ram_gurumukhi
       action: will be holding
-      title: "a Mozilla Reps WebVR workshop in Hyderabad, India on September 17th."
+      title: "a Mozilla Reps WebVR workshop in Hyderabad, India on September 17."
       url: https://reps.mozilla.org/e/road-to-vr/
 
     - author: twitter|crcdng
       action: will be holding
-      title: "*Imperfect VR Workshop* about A-Frame in Guilford, UK on August 7th."
+      title: "*Imperfect VR Workshop* about A-Frame in Guilford, UK on August 7."
       url: https://www.emfcamp.org/line-up/2016/54-imperfect-vr-workshop
 
     - author: twitter|SonarSystems
@@ -102,7 +102,7 @@ awoa:
 
     - author: twitter|utopiah
       action: screencasted
-      title: "networked multiplayer Vives playing Tic Tac Toe."
+      title: "networked multiplayer Vives playing Tic-Tac-Toe."
       url: https://www.youtube.com/watch?v=vGjIWwozOU4
 
   contributions:
@@ -209,6 +209,6 @@ awoa:
   stars: 2700
 ---
 
-0.3.0 [milestone burndown](https://github.com/aframevr/aframe/milestone/2)!
+0.3.0 [milestone burn-down list](https://github.com/aframevr/aframe/milestone/2)!
 While we still try to get the release out, augmented reality continues to creep
 in...

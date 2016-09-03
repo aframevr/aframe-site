@@ -20,7 +20,7 @@ awoa:
 
     - title: Terrain Model Component
       author: twitter|bryik_ws
-      description: "Generating terrains using TerrainLoader used in LA Times' *Discovering Gale Crater*."
+      description: "Generating terrains using `TerrainLoader` used in *LA Times*' *Discovering Gale Crater*."
       image: terrain-model.jpg
       url: https://github.com/bryik/aframe-terrain-model-component
 
@@ -28,7 +28,7 @@ awoa:
       author: twitter|ram_gurumukhi
       description: "Watch lyrics fly past you in time with the music. ([code](https://github.com/gurumukhi/vr-ram/tree/gh-pages/demos/lyricsVR))"
       image: lyrics-vr.gif
-      url: https://gurumukhi.github.io/vr-ram/demos/lyricsVR/index.html
+      url: https://gurumukhi.github.io/vr-ram/demos/lyricsVR/
 
     - title: Rubik's Cube
       author: twitter|tusharaoljgd
@@ -39,7 +39,7 @@ awoa:
   media:
     - author: twitter|armthethinker
       action: "wrote a case study using A-Frame: "
-      title: "*Product Presentation in Virtual Reality* - learning how to prototype efficiently in VR and create a robust user testing setup."
+      title: "*Product Presentation in Virtual Reality* - learning how to prototype efficiently in VR and create a robust user-testing setup."
       url: https://www.youtube.com/watch?v=vGjIWwozOU4
 
   contributions:
@@ -65,7 +65,7 @@ awoa:
 
     - author: twitter|dmarcos
       action: worked around
-      description: "asset nested XHR loading bug on Chrome."
+      description: "XHR bug with nested asset loading bug in Chrome."
       github: "#1766"
 
     - author: twitter|andgokevin
@@ -100,7 +100,7 @@ awoa:
 
     - author: twitter|dmarcos
       action: lowered
-      description: "default `segmentsRadial` for torus knot geometry."
+      description: "default `segmentsRadial` for torus-knot geometry."
       github: "#1784"
 
     - author: twitter|andgokevin
@@ -110,7 +110,7 @@ awoa:
 
     - author: twitter|dmarcos
       action: fixed
-      description: "`Entity.addToParent` being invoked twice causing null parents."
+      description: "`Entity.addToParent` being invoked twice causing `null` parents."
       github: "#1726"
 
     - author: github|mkungla

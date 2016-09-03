@@ -22,5 +22,5 @@ awoa:
       author: github|carpedmt
       description: If a pizza spins in a forest and no one is around to eat it, does it make a sound?
       image: hello-pizza.jpg
-      url: http://carpedmt.github.io/
+      url: https://carpedmt.github.io/
 ---

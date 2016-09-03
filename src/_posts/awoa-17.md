@@ -8,27 +8,27 @@ awoa:
   media:
     - author: twitter|misslivirose
       action: "presented the keynote at **ScotlandJS** featuring A-Frame:"
-      title: "*Virtual Reality in the Browser, Today*"
+      title: "*Virtual Reality in the Browser, Today*."
       url: https://livierickson.com/blog/scotlandjs-virtual-reality-in-the-browser-today/
 
     - author: twitter|whoyee
       action: "presented at Van JS meetup:"
-      title: "*VR Experiences on the Open Web*"
+      title: "*VR Experiences on the Open Web*."
       url: http://www.meetup.com/vancouver-javascript-developers/events/231422003/
 
     - author: twitter|SebScholl
       action: wrote
-      title: "*Virtual Reality Music Player: Visualizing Spotify's API*"
+      title: "*Virtual Reality Music Player: Visualizing Spotify's API*."
       url: https://mynamessebastian.wordpress.com/2016/04/10/virtual-reality-music-player-visualizing-spotifys-api/
 
     - author: twitter|SebScholl
       action: wrote
-      title: "*Update on Listening to Music in Virtual Reality*"
+      title: "*Update on Listening to Music in Virtual Reality*."
       url: https://mynamessebastian.wordpress.com/2016/04/24/update-on-listening-to-music-in-virtual-reality/
 
     - author: twitter|SebScholl
       action: wrote
-      title: "*WEATHERROOMVR: A 7-Day Weather Forecast...Seen From Space*"
+      title: "*WEATHERROOMVR: A 7-Day Weather Forecast...Seen From Space*."
       url: https://mynamessebastian.wordpress.com/2016/04/29/a-7-day-weather-forecast-seen-from-space/
 
     - author: twitter|VRLabBrussels
@@ -38,12 +38,12 @@ awoa:
 
     - author: twitter|SebScholl
       action: wrote
-      title: "*Intro to A-Frame: Rendering a Cube*"
+      title: "*Intro to A-Frame: Rendering a Cube*."
       url: https://mynamessebastian.wordpress.com/2016/04/08/intro-to-a-frame-rendering-a-cube/
 
     - author: twitter|jorgevillalobos
       action: translated to Spanish
-      title: "*Construye la Web de Realidad Virtual con A-Frame*"
+      title: "*Construye la Web de Realidad Virtual con A-Frame*."
       url: https://www.mozilla-hispano.org/construye-la-web-de-realidad-virtual-con-a-frame/
 
     - author: twitter|jonikorpi
@@ -54,7 +54,7 @@ awoa:
   projects:
     - title: Particle System Component
       author: twitter|ideaspacevr
-      description: "A [particle system](https://en.wikipedia.org/wiki/Particle_system) component to create large numbers of very small objects. Used to create things such as rain, dust, snow, fire, water."
+      description: "A [particle system](https://en.wikipedia.org/wiki/Particle_system) component to create large numbers of very small objects. Used to create such things as rain, dust, snow, fire, and water."
       image: particle-system-component.gif
       url: https://github.com/IdeaSpaceVR/aframe-particle-system-component
 
@@ -96,7 +96,7 @@ awoa:
 
     - title: A-Frame Painter (Update)
       author: twitter|fernandojsg
-      description: "Using geometry instead of screenspace lines."
+      description: "Using geometry instead of screen-space lines."
       image: painter-update.jpg
       url: https://twitter.com/fernandojsg/status/739967255098851328/photo/1
 

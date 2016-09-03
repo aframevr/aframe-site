@@ -32,7 +32,7 @@ awoa:
 
     - title: "ChartBuilder Component"
       author: twitter|impronunciable
-      description: "A component for using [ChartBuilder](http://quartz.github.io/Chartbuilder/) charts."
+      description: "A component for using [ChartBuilder](https://quartz.github.io/Chartbuilder/) charts."
       image: chartbuilder-component.jpg
       url: https://github.com/impronunciable/aframe-chartbuilder-component
 
@@ -56,7 +56,7 @@ awoa:
   contributions:
     - author: github|mkungla
       action: improved
-      description: 'the sound component by using `THREE.AudioLoader` and the `src` property type.'
+      description: "the sound component by using `THREE.AudioLoader` and the `src` property type."
       github: "#1629"
 
     - author: github|mkungla

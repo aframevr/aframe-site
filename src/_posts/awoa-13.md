@@ -8,53 +8,53 @@ awoa:
   contributions:
     - author: github|dmarcos
       action: implemented
-      description: WebVR 1.0 API support
+      description: WebVR 1.0 API support.
       github: "#1423"
 
     - author: github|msimpson
       action: implemented
-      description: the zoom property for camera component
+      description: the zoom property for camera component.
       github: "#1453"
 
     - author: github|msimpson
       action: implemented
-      description: missing properties to the `<a-sphere>` attribute
+      description: missing properties to the `<a-sphere>` attribute.
       github: "#1454"
 
     - author: github|msimpson
       action: implemented
-      description: the `<a-sound>` primitive
+      description: the `<a-sound>` primitive.
       github: "#1455"
 
     - author: github|msimpson
       action: implemented
-      description: the `<a-torus-knot>` primitive
+      description: the `<a-torus-knot>` primitive.
       github: "#1456"
 
     - author: github|mayognaise
       action: implemented
-      description: the `componentremoved` event for entities
+      description: the `componentremoved` event for entities.
       github: "#1434"
 
     - author: github|ngokevin
       action: deprecated
-      description: the `look-at` component in favor of [ngokevin/aframe-look-at-component](https://github.com/ngokevin/aframe-look-at-component)
+      description: the `look-at` component in favor of [ngokevin/aframe-look-at-component](https://github.com/ngokevin/aframe-look-at-component).
       github: "#1447"
 
     - author: github|msimpson
       action: renamed
-      description: "`defaultAttributes` to `defaultComponents` for primitives"
+      description: "`defaultAttributes` to `defaultComponents` for primitives."
       github: "#1460"
 
   media:
     - author: twitter|cvanw
       action: recorded
-      title: walking around an A-Frame experience using the Vive
+      title: walking around an A-Frame experience using the Vive.
       url: https://vine.co/v/i2wDq65aBAu
 
     - author: twitter|JessicaTV
       action: presented
-      title: an introduction to WebVR (Spanish)
+      title: an introduction to WebVR (Spanish).
       url: https://www.youtube.com/watch?v=uLLk4nsroZQ
 
   projects:
@@ -95,7 +95,7 @@ awoa:
 
     - title: Look-At Component
       author: twitter|andgokevin
-      description: Have entities face other entities. Replacement for deprecated look-at component.
+      description: Have entities face other entities. Replacement for deprecated `look-at` component.
       url: https://github.com/ngokevin/aframe-look-at-component
 
     - title: Minigolf
@@ -111,7 +111,7 @@ awoa:
 
     - title: Crease Component
       author: github|andreasplesch
-      description: Creased shading using THREE.FlatShading.
+      description: Creased shading using `THREE.FlatShading`.
       url: https://github.com/andreasplesch/aframe-crease-component
 
     - title: Star Component

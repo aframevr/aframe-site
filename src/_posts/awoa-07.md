@@ -44,7 +44,7 @@ awoa:
 
     - title: FireFrame
       author: github|joshgalvin
-      description: Multiuser experiment using Firebase for synchronizing users connected to the same A-Frame scene.
+      description: Multi-user experiment using Firebase for synchronizing users connected to the same A-Frame scene.
       image: fireframe.jpg
       url: https://joshgalvin.github.io/aframemulti/
 ---

@@ -8,49 +8,49 @@ awoa:
   contributions:
     - author: github|ngokevin
       action: fixed
-      description: dynamically attached entities not playing
+      description: dynamically attached entities not playing.
       github: "#1415"
 
     - author: github|dmarcos
       action: fixed
-      description: mobile head tracking when not in VR mode
+      description: mobile-head tracking when not in VR mode
       github: "#1465"
 
     - author: github|ngokevin
       action: moved
-      description: the 360&deg; image browser boilerplate to [aframevr/360-image-browser-example](https://github.com/aframevr/360-image-browser-example)
+      description: the 360&deg; image browser boilerplate to [aframevr/360-image-browser-example](https://github.com/aframevr/360-image-browser-example).
       github: "#1476"
 
     - author: github|ngokevin
       action: fixed
-      description: primitives overwriting defines attributes in some cases
+      description: primitives overwriting defines attributes in some cases.
       github: "#1448"
 
     - author: github|dmarcos
       action: fixed
-      description: look-controls when using mixins
+      description: look-controls when using mixins.
       github: "#1486"
 
     - author: github|cvan
       action: removed
-      description: the injected A-Frame favicon
+      description: the injected A-Frame favicon.
       github: "#1415"
 
     - author: github|ngokevin
       action: added support
-      description: for using components to feed data to template contexts
+      description: for using components to feed data to template contexts.
       github: "ngokevin/aframe-template-component|#13"
 
   media:
     - author: https://mozvr.com|@andgokevin and @dmarcos
       action: will present at
-      title: SFHTML5's "WebVR Ecosystem and API Update" on May 25th, 2016
+      title: SFHTML5's "WebVR Ecosystem and API Update" on May 25th, 2016.
       url: http://www.meetup.com/sfhtml5/events/230072340/
 
   projects:
     - title: Firebase Component
       author: twitter|andgokevin
-      description: Component using [Firebase's](https://firebase.google.com) realtime database for multiuser experiences.
+      description: Component using [Firebase's](https://firebase.google.com) real-time database for multi-user experiences.
       image: firebase-component.gif
       url: https://github.com/ngokevin/aframe-firebase-component
 
@@ -68,7 +68,7 @@ awoa:
 
     - title: Space Shark Room
       author: twitter|SAM_liooil
-      description: Hinduist shark cage in space.
+      description: Hindu-esque shark cage in space.
       image: space-shark-room.gif
       url: http://liooil.neocities.org/VR_webStuff/room+07/room07.html
 
@@ -129,13 +129,13 @@ awoa:
 
     - title: Broadcast Component
       author: twitter|andgokevin
-      description: A broadcast component for basic multiuser experiences over WebSockets.
+      description: A broadcast component for basic multi-user experiences over WebSockets.
       image: broadcast-component.gif
       url: https://github.com/ngokevin/aframe-broadcast-component
 
     - title: Matrix
       author: twitter|anjfyi
-      description: Jump and push around raining blocks in the Matrix
+      description: Jump and push around raining blocks in the Matrix.
       image: matrix.gif
       url: http://www.anj.fyi/matrix/
 
