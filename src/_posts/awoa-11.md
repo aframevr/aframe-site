@@ -17,7 +17,7 @@ awoa:
 
     - author: github|ngokevin
       action: refactored
-      description: texture loading such that shaders handle applying textures.
+      description: texture loading for shaders to properly apply textures.
       github: "#1399"
 
     - author: github|dmarcos

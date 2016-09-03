@@ -7,7 +7,7 @@ awoa:
   projects:
     - title: "Shopify &mdash; City Shoes"
       author: twitter|shopify
-      description: "Shop in VR! Pick up some trainers and see if they match your swagger."
+      description: "Shop in VR! Pick up some trainers and see if they match your swagga."
       image: shopify.jpg
       url: https://shopifyvr.myshopify.com/
 
@@ -35,32 +35,32 @@ awoa:
       image: aframe-statistics-dashboard.jpg
       url: https://ngokevin.github.io/aframe-statistics-dashboard/
 
-    - title: Pokemon Stadium (Update)
+    - title: Pokémon Stadium (Update)
       author: twitter|andgokevin
-      description: "Pokemon stadium updated with arena seating and Pikachu!"
+      description: "Pokémon stadium updated with arena seating and Pikachu!"
       image: pokemon-stadium-update.jpg
       url: https://ngokevin.github.io/aframe-magicavoxel-projects/pokemon/
 
     - title: Design Portfolio
       author: twitter|VRWebIO
-      description: "About pages in 3D space with neat transitions."
+      description: "\"About\" pages in 3D space with neat transitions."
       image: design-portfolio.jpg
-      url: http://eddiebarkman.github.io/VR-Design-Portfolio/
+      url: https://eddiebarkman.github.io/VR-Design-Portfolio/
 
   media:
     - author: twitter|davidwalshblog
       action: wrote about how to
-      title: "*Create a 3D Panorama Image with A-Frame*"
+      title: "*Create a 3D Panorama Image with A-Frame*."
       url: https://davidwalsh.name/3d-panorama-image
 
     - author: twitter|rvdleun
       action: talked at The Reality Lab in the Netherlands about
-      title: "*VR Development* (slides)"
+      title: "*VR Development* (slides)."
       url: https://docs.google.com/presentation/d/1HNLtVabsUGVrrlBqX6BZ7fVvmHz3Zd6mGPblunYPy6U/edit#slide=id.g1496fca36c_0_0
 
     - author: twitter|utopiah
       action: screencasted his
-      title: "A-Frame bowling demo with Don McCurdy's physics."
+      title: "A-Frame bowling demo with Don McCurdy's physics component."
       url: https://twitter.com/utopiah/status/758190928435773440
 
   contributions:
@@ -71,7 +71,7 @@ awoa:
 
     - author: github|dmarcos
       action: implemented
-      description: "support for full screen flat experiences."
+      description: "support for fullscreen, flat experiences."
       github: "#1474"
 
     - author: github|dmarcos
@@ -86,7 +86,7 @@ awoa:
 
     - author: github|dmarcos
       action: fixed
-      description: "look-controls with mouse when dragging off the canvas."
+      description: "`look-controls` with mouse when dragging off the canvas."
       github: "#1474"
 
     - author: github|blairmacintyre
@@ -141,7 +141,7 @@ awoa:
 
     - author: github|ngokevin
       action: added
-      description: "caching for .PLY models."
+      description: "caching for `.ply` models."
       github: "donmccurdy/aframe-extras|#68"
 
   stars: 2609
@@ -153,4 +153,4 @@ milestone](https://github.com/aframevr/aframe/milestone/2) has been updated.
 [Blair MacIntyre](http://blairmacintyre.me/), a Georgia Tech professor researching
 augmented reality got A-Frame working in the Argon AR Browser:
 
-<video autoplay loop src="/images/awoa/argon.mp4" width="240">
+<video autoplay loop src="/images/awoa/argon.mp4" width="240"></video>

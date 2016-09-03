@@ -167,13 +167,13 @@ We use [GitHub issues on the A-Frame repo][ghissue] to track feature requests an
 
 Call it A-Frame.
 
-We express it in code and domains as "aframe" as much as possible. Sometimes we cannot get "aframe" and have to resort to "aframevr". The site is at [aframe.io](https://aframe.io/) while the GitHub organization is [github.com/aframevr](https://github.com/aframevr/). We're not thrilled about this inconsistency, but it's something we accept begrudgingly. Sorry for any confusion!
+We express it in code and domains as "aframe" as much as possible. Sometimes we cannot get "aframe" and have to resort to "aframevr". The site is at [aframe.io](https://aframe.io/) while the GitHub organization is [github.com/aframevr](https://github.com/aframevr). We're not thrilled about this inconsistency, but it's something we accept begrudgingly. Sorry for any confusion!
 
 ## Why aren't my transparent images rendering correctly?
 
 Transparency is tricky in 3D graphics. If you are having issues where transparent images in the foreground do not composite correctly over images in the background, it is probably due to underlying design of the OpenGL compositor (which WebGL is an API for). In an ideal scenario, transparency in A-Frame would "just work", regardless of where the developer places an image in 3D space, or in which order they define the elements in markup. In the current version of A-Frame, however, it is easy to create scenarios where foreground images occlude background images. This creates confusion and unwanted visual defects. A possible workaround is to try reordering your elements defined in HTML and see if that produces more expected results.
 
-Take a look at this [example](http://codepen.io/bryik/pen/pyMoGb). Here we have two sets of identical transparent circles. One set is positioned front-to-back while the other is back-to-front. Notice that the circles are only transparent when positioned back-to-front (relative to the camera).
+Take a look at this [example](https://codepen.io/bryik/pen/pyMoGb). Here we have two sets of identical transparent circles. One set is positioned front-to-back while the other is back-to-front. Notice that the circles are only transparent when positioned back-to-front (relative to the camera).
 
 [aframe-react]: https://github.com/ngokevin/aframe-react
 [archive3d]: http://archive3d.net/
@@ -182,7 +182,7 @@ Take a look at this [example](http://codepen.io/bryik/pen/pyMoGb). Here we have 
 [awesomestock]: https://github.com/neutraltone/awesome-stock-resources
 [cardboard]: https://www.google.com/get/cardboard/
 [blog]: https://aframe.io/blog/
-[clara]: http://clara.io
+[clara]: https://clara.io
 [cors]: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
 [d3]: https://www.youtube.com/watch?v=Tb2b5nFmmsM
 [drawcomponent]: https://github.com/maxkrieger/aframe-draw-component
@@ -192,14 +192,14 @@ Take a look at this [example](http://codepen.io/bryik/pen/pyMoGb). Here we have 
 [ghissue]: https://github.com/aframevr/aframe/issues
 [ghpages]: https://pages.github.com/
 [ghpull]: https://github.com/aframevr/aframe/pulls
-[github]: http://github.com/aframevr/aframe
+[github]: https://github.com/aframevr/aframe
 [glam]: https://github.com/tparisi/glam
 [guide]: ../docs/guide
 [htmltexturecomponent]: https://github.com/scenevr/htmltexture-component
 [leapmotion]: https://www.leapmotion.com/
 [janus]: http://www.janusvr.com/
 [mediael]: https://developer.mozilla.org/docs/Web/API/HTMLMediaElement
-[mozvr]: http://mozvr.com
+[mozvr]: https://mozvr.com
 [oculus]: https://www.oculus.com/
 [oculusdev]: https://developer.oculus.com/downloads/
 [overlayiframe]: http://learningthreejs.com/blog/2013/04/30/closing-the-gap-between-html-and-webgl/
@@ -219,7 +219,7 @@ Take a look at this [example](http://codepen.io/bryik/pen/pyMoGb). Here we have 
 [twitter]: https://twitter.com/aframevr
 [uploader]: https://aframe.io/aframe/examples/_uploader/
 [videoissue]: https://github.com/aframevr/aframe/issues/316
-[vive]: http://www.htcvive.com/us/
+[vive]: https://www.htcvive.com/
 [webvrhacks]: https://hacks.mozilla.org/2016/03/introducing-the-webvr-1-0-api-proposal/
 [webvrpolyfill]: https://github.com/borismus/webvr-polyfill
 [webvrspec]: https://github.com/MozVR/webvr-spec

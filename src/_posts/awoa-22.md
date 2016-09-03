@@ -9,7 +9,7 @@ awoa:
       author: twitter|tylrfishr
       description: "A virtual reality tour from NPR of Rocky Mountain National Park. ([code](https://github.com/nprapps/rockymountain))"
       image: stand-at-the-edge-of-geologic-time.jpg
-      url: http://apps.npr.org/rockymountain-vr/
+      url: https://apps.npr.org/rockymountain-vr/
 
     - title: "MagicaVoxel: A-Frame"
       author: twitter|andgokevin
@@ -17,9 +17,9 @@ awoa:
       image: magicavoxel-aframe.jpg
       url: https://ngokevin.github.io/aframe-magicavoxel-projects/aframe/
 
-    - title: "MagicaVoxel: Pokemon"
+    - title: "MagicaVoxel: Pokémon"
       author: twitter|andgokevin
-      description: "Face off against Charizard on the Pokemon Stadium."
+      description: "Face off against Charizard on the Pokémon Stadium."
       image: magicavoxel-pokemon.gif
       url: https://ngokevin.github.io/aframe-magicavoxel-projects/pokemon/
 
@@ -31,7 +31,7 @@ awoa:
 
     - title: Animation Component
       author: twitter|andgokevin
-      description: "New and improved animation system using components."
+      description: "New-and-improved animation system using components."
       image: animation-component.gif
       url: https://github.com/ngokevin/aframe-animation-component
 
@@ -55,17 +55,17 @@ awoa:
   media:
     - author: twitter|ilikescience
       action: demonstrated
-      title: "building a hamburger in A-Frame in front of a super hyped crowd at BrooklynJS."
+      title: "building a hamburger in A-Frame in front of a super-hyped crowd at [BrooklynJS](http://brooklynjs.com/)."
       url: https://www.periscope.tv/w/1BRJjkMLYvoxw
 
     - author: twitter|fabricus
       action: wrote about
-      title: "Building Social VR Apps in AltSpaceVR with A-Frame"
+      title: "*Building Social VR Apps in AltSpaceVR with A-Frame*."
       url: https://medium.com/immersion-for-the-win/building-social-vr-apps-in-altspacevr-with-a-frame-81cb1bbc3ec4
 
     - author: twitter|impronunciable
       action: wrote about his A-Frame tool for non-VR experts in
-      title: "Guri VR: Virtual Reality for the Rest of Us"
+      title: "*GuriVR: Virtual Reality for the Rest of Us*."
       url: https://source.opennews.org/en-US/articles/virtual-reality-rest-us/
 
     - author: twitter|dmarcos
@@ -75,7 +75,7 @@ awoa:
 
     - author: twitter|fernandojsg
       action: tweeted
-      title: "a Gone Fishin' message painted using A-Frame's hand controls."
+      title: "a *Gone Fishin'* message painted using A-Frame's hand controls."
       url: https://twitter.com/fernandojsg/status/755929819838287872
 
     - author: twitter|andgokevin
@@ -96,7 +96,7 @@ awoa:
 
     - author: github|ngokevin
       action: added
-      description: "an initial Code of Conduct for A-Frame, adapted from the Rust Code of Conduct."
+      description: "an initial [Code of Conduct for A-Frame](https://github.com/aframevr/aframe/blob/master/CODE_OF_CONDUCT.md), adapted from the [Rust Code of Conduct](https://www.rust-lang.org/conduct.html)."
       github: "#954"
 
     - author: github|ngokevin
@@ -106,7 +106,7 @@ awoa:
 
     - author: github|dmarcos
       action: fixed
-      description: "single-property components with a default truthy value being falsy if attribute is attached with no value."
+      description: "single-property components with a default truthy value being falsy if an attribute is attached without a value."
       github: "#1631"
 
     - author: github|cvan
@@ -136,12 +136,12 @@ awoa:
 
     - author: github|ngokevin
       action: changed
-      description: "default stats UI background color to gray."
+      description: "the default stats' UI background color to gray."
       github: "#1644"
 
     - author: twitter|davidwalshblog
       action: added
-      description: "a warning if `repeat='infinite'` is accidentally used over `repeat='indefinite'`."
+      description: "a warning if `repeat='infinite'` is accidentally used instead of `repeat='indefinite'`."
       github: "#1640"
 
     - author: github|ngokevin
@@ -161,15 +161,16 @@ awoa:
 
     - author: github|donmccurdy
       action: built
-      description: "Stack Overflow Feed Bot to cross-post Stack Overflow questions to Slack."
+      description: "Stack Overflow Feed Bot to cross-post Stack Overflow questions to A-Frame Slack channels."
       github: "donmccurdy/stack-overflow-feed-bot"
 
   stars: 2530
 ---
 
 Tracked controllers has landed! Use the HTC Vive controllers with A-Frame. NPR
-has published a WebVR site, rondagdag hooked up A-Frame to control a robot with
-Leap Motion, and we now have an initial community code of conduct!
+has published a WebVR site, [@rondagdag](https://twitter.com/rondagdag) hooked
+up A-Frame to control a robot with Leap Motion, and we now have an [initial
+community code of conduct](https://github.com/aframevr/aframe/blob/master/CODE_OF_CONDUCT.md)!
 
 0.3.0 is still in progress, and several members of the team will be out next
 week. We need to land [improved embedded scene
@@ -178,5 +179,5 @@ quality regression on VR
 mobile](https://github.com/aframevr/aframe/issues/1541), implement built-in
 link traversal support, and [refresh the
 homepage](https://github.com/aframevr/aframe-site/tree/redesign). We may
-publish an official beta build next week to hold over depending on our
-progress.
+publish an official beta build next week to hold folks over (depending on our
+progress).

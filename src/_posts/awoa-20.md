@@ -27,12 +27,12 @@ awoa:
 
     - author: github|donmccurdy
       action: fixed
-      description: "`vec4` property type stringification"
+      description: "`vec4` property type stringification."
       github: "#1617"
 
     - author: github|ngokevin
       action: fixed
-      description: "spot lights"
+      description: "spot lights."
       github: "#1621"
 
     - author: github|ngokevin
@@ -42,18 +42,18 @@ awoa:
 
     - author: github|mkungla
       action: fixed
-      description: 'not being able to set `stats="false"`'
+      description: 'not being able to set `stats="false"`.'
       github: "#1620"
 
   media:
     - author: twitter|auxdesigner
       action: wrote about exporting Sketch to A-Frame in
-      title: "*Sketch Plugin: Sketch to VR*"
+      title: "*Sketch Plugin: Sketch to VR*."
       url: https://blog.prototypr.io/sketch-plugin-sketch-to-vr-4e23ced47e6
 
     - author: twitter|andgokevin
       action: drew
-      title: "A-Frame in TiltBrush"
+      title: "A-Frame in [Tilt Brush](https://www.tiltbrush.com/)."
       url: https://twitter.com/andgokevin/status/751312216968744960
 
   projects:
@@ -65,7 +65,7 @@ awoa:
 
     - title: "iStaging LiveTour"
       author: github|alexcheninfo
-      description: "360 and virtual tours with a neat mini-map."
+      description: "360&deg; and virtual tours with a neat mini-map."
       image: istaging-livetour.jpg
       url: http://vrviewer.istaging.co/#!/684173
 
@@ -89,7 +89,7 @@ awoa:
 
     - title: "Tanks"
       author: github|ourvrisrealerthanyours
-      description: "A multiplayer tank game. ([code](https://github.com/ourvrisrealerthanyours/tanks))"
+      description: "A multi-player tank game. ([code](https://github.com/ourvrisrealerthanyours/tanks))"
       image: tanks.jpg
       url: http://www.bubbletanks.biz/
 
