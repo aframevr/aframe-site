@@ -12,7 +12,7 @@ A-Frame grown into a large active community by putting VR content creation into 
 * [A-Frame Community Slack Channel](https://aframevr-slack.herokuapp.com/) - [Sign up](https://aframevr-slack.herokuapp.com/) to share your work and join the discussion.
 * [A-Frame Twitter](https://twitter.com/aframevr) - Tweet at us.
 * [A-Frame Blog](https://aframe.io/blog/) - Stay up to date with what's happening with A-Frame.
-* [**awesome-aframe** Repo](https://github.com/aframevr/awesome-aframe) - Peruse an awesome list about all things A-Frame.
+* [`awesome-aframe` GitHub Repo](https://github.com/aframevr/awesome-aframe) - Peruse an awesome list about all things A-Frame.
 * [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe) - Ask questions and learn on Stack Overflow.
 
 ## WebVR

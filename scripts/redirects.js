@@ -14,6 +14,32 @@ hexo.extend.generator.register('blog-redirects', function () {
   ]);
 });
 
+hexo.extend.generator.register('community-short-url-redirects', function () {
+  return expandRedirectObjs([
+    ['github/', hexo.config.github.aframe.url],
+    ['repo/', hexo.config.github.aframe.url],
+
+    ['twitter/', hexo.config.twitter.url],
+
+    ['slack/', hexo.config.slack.aframe.signup_url],
+    ['chat/', hexo.config.slack.aframe.signup_url],
+
+    ['awesome/', hexo.config.github.awesome_aframe.url],
+    ['aa/', hexo.config.github.awesome_aframe.url],
+    ['awesome-aframe/', hexo.config.github.awesome_aframe.url],
+    ['awesomeaframe/', hexo.config.github.awesome_aframe.url],
+    ['awesome-list/', hexo.config.github.awesome_aframe.url],
+    ['awesomelist/', hexo.config.github.awesome_aframe.url],
+
+    ['so/', hexo.config.stack_overflow.aframe.url],
+    ['stack-overflow/', hexo.config.stack_overflow.aframe.url],
+    ['stackoverflow/', hexo.config.stack_overflow.aframe.url],
+    ['help/', hexo.config.stack_overflow.aframe.url],
+    ['ask/', hexo.config.stack_overflow.aframe.url],
+    ['questions/', hexo.config.stack_overflow.aframe.url]
+  ]);
+});
+
 hexo.extend.generator.register('docs-redirects', function () {
   var redirectObjs = [getDocRootRedirectObjs(), getPreVersionedRedirectObjs()];
   redirectObjs.push([
