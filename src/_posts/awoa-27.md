@@ -12,7 +12,7 @@ awoa:
       url: https://apps.tlt.stonybrook.edu/hanoi/
 
     - title: TumbVR with Vive
-      author: twitter|tbalouet
+      author: twitter|thomasbalou
       description: "Tumblr VR gallery now with Vive support, music, and physics."
       image: tumbvr.gif
       url: http://tbaloo.com/tumbvr
