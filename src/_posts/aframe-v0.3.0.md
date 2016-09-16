@@ -9,9 +9,9 @@ image:
 
 [webvr1.0]: https://w3c.github.io/webvr/
 
-A-Frame **v0.3.0** has dropped! With support for the **[new WebVR 1.0
+A-Frame **version 0.3.0** has dropped! With support for the **[new WebVR 1.0
 API][webvr1.0]**, we aim higher towards state-of-the-art VR. With room-scale
-tracking, we can walk in a web page, and with tracked controller support, we
+tracking, we can walk in a web page; and with tracked controller support, we
 can reach out into the world.
 
 <!-- more -->
@@ -53,7 +53,7 @@ Inspector is to press `<ctrl> + <alt> + i` on any A-Frame scene using v0.3.0.
 ![A-Frame Inspector Demo](../../images/blog/v0.3.0-inspector.gif)
 
 Other noteworthy changes include significant performance improvements,
-improved support for multiple scenes embedded within a single webpage,
+improved support for multiple scenes embedded within a single web page,
 and support for multiple instances of components of the same type.
 
 [releasenotes]: https://github.com/aframevr/aframe/releases/tag/v0.3.0
@@ -123,7 +123,7 @@ In the last four months, we have featured over **150 high quality scenes**:
 
 - **Component Packs:** [aframe-extras][extras] by [Don McCurdy][don] enables
   additional **controls**, **physics**, and loaders. [k-frame][k-frame]
-  enables **audio visualizations**, **multiuser**, **templating**, layout, text,
+  enables **audio visualizations**, **multi-user**, **templating**, layout, text,
   and improved animations.
 - **Geometries:** [Procedural geometries][lsystem], [Bitmap font text][bmfont],
   [terrains][terrain], [oceans][extras], and [grids][grid].
@@ -143,7 +143,7 @@ There have even been a couple of **augmented reality** prototypes:
 
 We want to make it **easier to get started** with A-Frame. This includes a
 refreshed homepage with new example scenes that act as starter kits. These
-examples will be accompanied with free assets, guides, and workflows tutorials
+examples will be accompanied with free assets, guides, and workflow tutorials
 on how to use A-Frame alongside tools such as [MagicaVoxel][magicavoxel] and
 [Blender][blender].
 

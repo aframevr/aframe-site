@@ -7,48 +7,48 @@ awoa:
   contributions:
     - author: github|dmarcos
       action: implemented
-      description: "multiple components of the same type (e.g., `sound__1`, `sound__2`)"
+      description: "multiple components of the same type (e.g., `sound__1`, `sound__2`)."
       github: "#1596"
 
     - author: github|MatthewShotton
       action: implemented
-      description: "canvas textures"
+      description: "canvas textures."
       github: "#1567"
 
     - author: github|dmarcos
       action: ensured
-      description: "components are initialized before `.play()`ing"
+      description: "components are initialized before `.play()`-ing."
       github: "#1565"
 
     - author: github|ngokevin
       action: implemented
-      description: "entity utility functions to get and set delimited individual properties (e.g., `material.color`)"
+      description: "entity utility functions to get and set delimited individual properties (e.g., `material.color`)."
       github: "#1595"
 
     - author: github|ngokevin
       action: defaulted
-      description: "video elements to use `crossOrigin=\"use-credentials\"`"
+      description: "`<video>` elements to use `crossOrigin=\"use-credentials\"`."
       github: "#1598"
 
     - author: github|mkeblx
       action: allowed
-      description: "`material.repeat` to be a float"
+      description: "`material.repeat` to be a float."
       github: "#1568"
 
     - author: github|ngokevin
       action: reverted
-      description: "`<a-sky>` radius back to `5000`"
+      description: "`<a-sky>` radius back to `5000`."
       github: "#1585"
 
   media:
     - author: twitter|mpesce
       action: wrote about WebVR and shouted out A-Frame in
-      title: "*Learning from History: How to make VR bigger than the Web*"
+      title: "*Learning from History: How to make VR bigger than the Web*."
       url: https://medium.com/@mpesce/tc-shanghai-2016-8ad6c097262d
 
     - author: twitter|jackrabbits
       action: wrote about and introduced A-Frame in
-      title: "*The New Reality*"
+      title: "*The New Reality*."
       url: https://www.jumpingjackrabbit.com/blog-post/new-reality/
 
     - author: twitter|whoyee
@@ -75,7 +75,7 @@ awoa:
 
     - title: Bitmap Font Text Component
       author: github|bryik
-      description: "A component for rendering bitmap font text with focus on signed distance field fonts."
+      description: "A component for rendering bitmap font text with focus on signed-distance field fonts."
       image: bmfont-text-component.jpg
       url: https://github.com/bryik/aframe-bmfont-text-component
 
@@ -86,7 +86,7 @@ awoa:
       url: https://github.com/oscarmarinmiro/aframe-video-controls
 
     - title: Brexit in Berlin
-      author: github|juliakarmo
+      author: twitter|juliakarmo
       description: "Listen to Europeans talk and react to [Brexit](https://en.wikipedia.org/wiki/United_Kingdom_withdrawal_from_the_European_Union)."
       image: brexit.gif
       url: https://popathon.github.io/Gexit/hq.html
@@ -107,7 +107,7 @@ awoa:
       author: twitter|georational
       description: "Multi-user gallery of photogrammetric museum artifacts."
       image: vrvisitors.jpg
-      url: http://georational.github.io/VRVisitors/VRVisitors.html
+      url: https://georational.github.io/VRVisitors/VRVisitors.html
 
     - title: VR Space Builder for Kids
       author: twitter|RichWhite
