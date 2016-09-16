@@ -136,6 +136,11 @@ github:
     username: aframevr
     repo: aframe-site
     url: https://github.com/aframevr/aframe-site/
+  awesome_aframe:
+    username: aframevr
+    repo: awesome-aframe
+    url: https://github.com/aframevr/awesome-aframe
+
 
 aframe_lib:
   home_url: https://aframe.io/
@@ -144,6 +149,16 @@ aframe_lib:
 slack:
   aframe:
     signup_url: https://aframevr-slack.herokuapp.com
+
+reddit:
+  webvr:
+    url: https://www.reddit.com/r/webvr
+
+stack_overflow:
+  aframe:
+    url: https://stackoverflow.com/questions/tagged/aframe
+  webvr:
+    url: https://stackoverflow.com/questions/tagged/webvr
 
 aframe_version: 0.3.0
 

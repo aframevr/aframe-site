@@ -53,13 +53,14 @@ code, pre
 .font-loaded-mono pre
     font-family $code-font
 
-code
-
-
 p, li, dd
     code
         font-weight 600
         padding 0 0.25ch
+
+/* This looks better on the "Community" page. */
+[data-page-type="community"] li code
+    font-weight 500
 
 p
     word-spacing 0.05em
