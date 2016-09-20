@@ -6,7 +6,7 @@ layout: blog
 awoa:
   projects:
     - title: Towers of Hanoi
-      author: twitter|joshpalmeri
+      author: twitter|JimPalmeri 
       description: "Solve the classic puzzle, Towers of Hanoi in the Vive, by the TLT Media Lab of Stony Brook University."
       image: hanoi.gif
       url: https://apps.tlt.stonybrook.edu/hanoi/
