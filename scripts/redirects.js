@@ -1,10 +1,17 @@
 var fs = require('fs');
 var glob = require('glob');
+var join = require('path').join;
 
 var multidep = require('../multidep');
 var utils = require('../lib/utils');
 
 var MASTER = 'master';
+
+hexo.extend.generator.register('site-redirects', function () {
+  return expandRedirectObjs([
+    ['faq/', join('docs', hexo.config.aframe_version, 'introduction', 'faq.html')]
+  ]);
+});
 
 hexo.extend.generator.register('blog-redirects', function () {
   return expandRedirectObjs([
