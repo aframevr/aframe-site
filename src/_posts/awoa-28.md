@@ -47,6 +47,11 @@ awoa:
       title: "*A-Painter: Paint in VR in Your Browser*"
       url: https://blog.mozvr.com/a-painter/
 
+    - author: twitter|feiss
+      action: ""
+      title: "recorded himself painting a fox in A-Painter"
+      url: https://www.youtube.com/watch?v=DpWOKikos7Q
+
     - author: twitter|whiteboxamir
       action: wrote in Venture Beat about
       title: "*how WebVR will make virtual reality massively available*"
