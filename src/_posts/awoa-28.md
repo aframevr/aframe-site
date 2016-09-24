@@ -127,6 +127,8 @@ out some paintings so far:
 - [The World's First VR Guestbook](https://aframe.io/a-painter/?url=https://ucarecdn.com/69c16e90-ee65-410c-82f6-23bf1ecc6d2f/), created in collaboration from multiple people.
 - [*The Gentle Robot*](https://aframe.io/a-painter/?url=https://ucarecdn.com/69c16e90-ee65-410c-82f6-23bf1ecc6d2f/), by [@feiss](https://twitter.com/feiss)
 - [*The Leap*](https://aframe.io/a-painter/?url=https://ucarecdn.com/bacf6186-96b1-404c-9751-e955ece04919/), by [@feiss](https://twitter.com/feiss)
+- [*It Follows*](https://aframe.io/a-painter/?url=https://ucarecdn.com/c9c89a30-7259-46aa-9b02-64b72adb3fb2/), by [@feiss](https://twitter.com/feiss)
+- [*Demon*](https://aframe.io/a-painter/?url=https://ucarecdn.com/d939bcb0-bc69-4600-a5d2-3e0b47e0639c/), by [@feiss](https://twitter.com/feiss)
 - [*Rose Bush*](https://aframe.io/a-painter/?url=https://ucarecdn.com/3f92dffd-1c66-400d-898a-9a9decd5f07a/), by [@feiss](https://twitter.com/feiss)
 
 [@msfeldstein](https://twitter.com/msfeldstein) has even already contributed a
