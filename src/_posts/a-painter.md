@@ -11,10 +11,11 @@ image:
 [preview]: https://aframe.io/a-painter/?url=https://ucarecdn.com/3e089e07-be62-48e1-9f12-9a284c249e77/
 [webvrinfo]: https://webvr.info
 
-> Want to start painting now? Grab a [WebVR-enabled browser][webvrinfo], and
-> head to [https://aframe.io/a-painter][painter]!
-
-> Don't have a headset? No problem, you can still [view paintings from any device][preview]!
+>  Want to start painting now? Head to <a href="https://aframe.io/a-painter"><strong>https://aframe.io/a-painter</strong></a>!
+>
+>  <small class="subintro">Make sure you have a <a href="https://webvr.info/get-chrome/">WebVR-enabled browser</a>. In Chromium, enable the flags for <code>chrome://flags/#enable-webvr</code> and <code>chrome://flags/#enable-gamepad-extensions</code>). <a href="https://blog.mozvr.com/experimental-htc-vive-support-in-firefox-nightly/">Firefox support</a> is coming soon.</small>
+>
+> <small class="subintro">(Don’t have a headset? No problem &ndash; you can still <a href="https://aframe.io/a-painter/?url=https://ucarecdn.com/3e089e07-be62-48e1-9f12-9a284c249e77/">view paintings from any device</a>!)</small>
 
 ![Looped recording of drawing in A-Painter](/images/blog/a-painter/apainter_painting.gif)
 
