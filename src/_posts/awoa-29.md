@@ -22,7 +22,7 @@ awoa:
       author: twitter|wizgrav
       description: "Showing off future A-Frame post-processing effects on an audio visualization using [Clubber](https://github.com/wizgrav/clubber)."
       image: post-processing-clubber.gif
-      url: https://github.com/wizgrav/clubber
+      url: http://wizgrav.github.io/aframe/examples/test/post-processing-clubber/
 
     - title: Dancing to a Waveform
       author: twitter|andgokevin
