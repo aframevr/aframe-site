@@ -1,5 +1,6 @@
 ---
 title: A Week of A-Frame 17
+author: twitter|andgokevin|Kevin Ngo
 date: 2016-06-10
 layout: blog
 

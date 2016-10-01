@@ -1,12 +1,13 @@
 ---
 title: "A Week of A-Frame 27"
+author: twitter|andgokevin|Kevin Ngo
 date: 2016-09-15
 layout: blog
 
 awoa:
   projects:
     - title: Towers of Hanoi
-      author: twitter|JimPalmeri 
+      author: twitter|JimPalmeri
       description: "Solve the classic puzzle, Towers of Hanoi in the Vive, by the TLT Media Lab of Stony Brook University."
       image: hanoi.gif
       url: https://apps.tlt.stonybrook.edu/hanoi/

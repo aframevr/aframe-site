@@ -1,5 +1,6 @@
 ---
 title: "A Week of A-Frame 29"
+author: twitter|andgokevin|Kevin Ngo
 date: 2016-09-39
 layout: blog
 
@@ -150,9 +151,13 @@ awoa:
   stars: 3539
 ---
 
-The A-Frame team has started working on **A-Shooter**, a VR arcade first-person
-shooting demo. It is still in its very early stages in concept and gameplay,
-but we currently have guns, enemies, points, health, waves, and game state.
+The A-Frame team has started working on **A-Shooter**, a room-scale VR arcade
+first-person shooting demo! It is still in its very early stages in concept and
+gameplay, but we currently have guns, enemies, points, health, waves, and game
+state.  These demos have brought back necessary improvements and fixes to
+A-Frame such as [object pooling
+support](https://github.com/aframevr/aframe/pull/1954), which are needed for
+performant bullets and enemies.
 
 ![A-Shooter 1](/images/awoa/a-shooter-1.gif)
 
