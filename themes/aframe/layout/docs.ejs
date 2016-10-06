@@ -55,10 +55,11 @@
         <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
       </a>
     </p>
+    <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
     <% if (activeVersion === 'master') { %>
-      <%- markdown("> **Note:** The `master` version of the documentation tracks unstable development happening on [A-Frame's master branch](https://github.com/aframevr/aframe).") %>
+      <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js). Else head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
     <% } else if (activeVersion !== config.aframe_version) { %>
-      <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [current " + config.aframe_version + " version](" + docs_root_path(site.pages, config.aframe_version) + ") of the documentation.") %>
+      <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
     <% } %>
     <h1 class="page__title"><%= page.title %></h1>
 
