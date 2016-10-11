@@ -156,11 +156,19 @@ function init () {
     this.setAttribute('href', getNextNavLink());
   });
 
+  var exampleIframe = document.querySelector('#exampleIframe');
+  var replayLink = document.querySelector('#exampleReplay');
+  if (replayLink) {
+    replayLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      exampleIframe.src = exampleIframe.src;
+    });
+  }
+
   if (settings.isSpa) {
     var showPage = singlePage(function (href) {
       var hrefWithSlash = forceTrailingSlash(parseUrl(href).pathname);
 
-      var exampleIframe = document.querySelector('#exampleIframe');
       if (exampleIframe) {
         if (!settings.isHome) {
           document.title = getTitle(currentExample.title);
