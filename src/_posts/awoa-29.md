@@ -1,7 +1,7 @@
 ---
 title: "A Week of A-Frame 29"
 author: twitter|andgokevin|Kevin Ngo
-date: 2016-09-39
+date: 2016-09-30
 layout: blog
 
 awoa:
