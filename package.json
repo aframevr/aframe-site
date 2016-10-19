@@ -27,6 +27,7 @@
   "devDependencies": {
     "hexo-cli": "^1.0.2",
     "multidep": "github:ngokevin/node-multidep#github",
+    "sw-precache": "^4.1.0",
     "yaml-cat": "^0.3.2"
   },
   "hexo": {
