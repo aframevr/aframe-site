@@ -211,23 +211,24 @@ ul {
 }
 .content--index .slogan {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.05rem;
 }
 .content--index .intro {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
+  margin-top: 10px;
   width: 350px;
 }
 .content--index .disclaimer {
   color: rgba(255,255,255,0.5);
 }
 .menu {
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 }
 .menu-item {
   display: inline-block;
@@ -251,7 +252,7 @@ ul {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  margin-top: 2rem;
+  margin-top: 20px;
   padding: 8px 30px;
   text-align: center;
   text-transform: uppercase;
@@ -296,4 +297,39 @@ ul {
 [data-is-android="true"] [data-supports-android="false"],
 [data-is-ios="true"] [data-supports-ios="false"] {
   display: none !important;
+}
+
+.home-bullets {
+  margin-top: 30px;
+
+  li {
+    align-items: center;
+    display: flex;
+    margin: 25px 0;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    div:first-child {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 76px;
+      margin-right: 20px;
+      height: 76px;
+      width: 76px;
+    }
+    div:last-child {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      em,
+      h2,
+      p {
+        color: #FAFAFA;
+        font-weight: 300;
+      }
+    }
+  }
 }

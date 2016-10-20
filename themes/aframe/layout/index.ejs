@@ -26,15 +26,14 @@
         <a href="<%- config.github.aframe.url %>" rel="external">GitHub</a>
       </li>
     </ul>
-    <h1 class="slogan">
-      Building blocks for the<br>
-      virtual reality web
-    </h1>
-    <%- page.content %>
+
+    <%- page.content.split('<!-- BUTTON -->')[0] %>
     <a href="<%- url_for('docs/' + config.aframe_version + '/introduction/getting-started.html') %>"
        class="get-started nav-link">
       Get Started
     </a>
+    <%- page.content.split('<!-- BUTTON -->')[1] %>
+
     <a class="credits borderless-link" href="http://mozvr.com/" rel="external"></a>
   </div>
 </div>
