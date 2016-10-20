@@ -1,14 +1,13 @@
 ---
-title: Building Blocks for the Virtual Reality Web
+title: A web framework for building virtual reality experiences
 type: examples
 layout: index
 ---
 
-<div class="intro copy">
-Use markup to create VR experiences that work across desktop, iOS, Android, the Oculus Rift, and the HTC Vive.
-</div>
+<h1 class="slogan">
+  A web framework for building virtual reality experiences
+</h1>
 
-<!--
-View the <a href="examples/" class="btn-index btn-examples">examples</a>.
-Grab the <a href="https://github.com/aframevr/aframe-boilerplate/" class="btn-index btn-boilerplate">A-Frame Starter Kit</a>.
--->
+<h2 class="intro">
+  With HTML and the Entity-Component ecosystem. Works across HTC Vive, Oculus Rift, desktop, and mobile platforms.
+</h2>

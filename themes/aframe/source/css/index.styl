@@ -64,15 +64,6 @@ ul {
   font-weight: 100;
   letter-spacing: 0.02em;
 }
-.example__iframe {
-  height: 100vh;
-  width: 100%;
-  background-color: #ececec;
-}
-.examples-list {
-  border-top: 1px dashed #fff;
-  padding-top: 20px;
-}
 .main {
   background: #ef2d5e;
   display: flex;
@@ -197,37 +188,35 @@ ul {
 .btn-index {
   color: #fff;
 }
+.content--body {
+  height: 100%;
+}
+.content--examples .content--body {
+  background: #DADADA;
+}
 .content--index {
   flex-direction: row;
 }
-.content--index .aframe-animation {
-  background-color: #24caff;
-  position: relative;
-  width: 65%;
-}
-.content--index .copy__wrap {
-  width: 35%;
-  min-width: 440px;
-}
 .content--index .slogan {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 28px;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.05rem;
 }
 .content--index .intro {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
+  margin-top: 10px;
   width: 350px;
 }
 .content--index .disclaimer {
   color: rgba(255,255,255,0.5);
 }
 .menu {
-  margin-bottom: 60px;
+  margin-bottom: 38px;
 }
 .menu-item {
   display: inline-block;
@@ -251,7 +240,7 @@ ul {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.05rem;
-  margin-top: 2rem;
+  margin-top: 20px;
   padding: 8px 30px;
   text-align: center;
   text-transform: uppercase;
@@ -296,4 +285,45 @@ ul {
 [data-is-android="true"] [data-supports-android="false"],
 [data-is-ios="true"] [data-supports-ios="false"] {
   display: none !important;
+}
+
+.home-content {
+  display: flex;
+}
+
+.home-center {
+  background-color: #24CAFF;
+  flex: 2;
+  height: 100vh;
+  width: 100%;
+}
+
+.content--index .copy__wrap {
+  flex: 1;
+  min-width: 440px;
+}
+
+.home-feature-links {
+  display: none;
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 25px;
+
+  li {
+    line-height: 30px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: rgba(0,0,0,0.05);
+    }
+  }
+  a {
+    border: 0;
+    color: #FFF;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  [data-is-mobile="false"] .home-feature-links {
+    display: block;
+  }
 }

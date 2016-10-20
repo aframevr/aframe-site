@@ -1,22 +1,32 @@
 <% var currentUrl = page_url(page.path) %>
 
+<!-- Homepage examples bar. -->
 <aside class="sidebar">
   <div class="sidebar__wrap">
     <div class="sidebar__wrap__inner">
 
+      <!-- Wordmark. -->
       <header id="header" class="header">
         <a id="logo" class="logo borderless-links" href="/">
           <span class="logo__wordmark">A-Frame</span>
         </a>
       </header>
 
+      <!-- Prominent links. -->
+      <ul class="home-feature-links">
+       <li><a href="https://blog.mozvr.com/a-painter/">A-Painter</a></li>
+       <li><a href="https://aframe.io/aframe-inspector/example/">Inspector</a></li>
+       <li><a href="https://aframe.io/aframe-registry/">Registry</a></li>
+      </ul>
+
+      <!-- Get Started for Mobile. -->
       <a href="/docs/" class="mobile-get-started nav-link get-started">
         Get Started
       </a>
 
+      <!-- Examples. -->
       <div class="list examples-list">
         <h2 class="page-title">Examples</h2>
-
         <ul id="examplesSubnav"
             class="subnav examples-subnav borderless-links">
           <% site.data.examples.showcase.forEach(function (item, idx) { %>
@@ -27,18 +37,22 @@
                 data-scene-url="<%= item.scene_url %>"
                 data-slug="<%= item.slug %>"
                 data-idx="<%= idx %>"
-                class="example-item subnav-item<%= className %>"><a data-spa-link
-                href="<%= item.example_url %>"
-                class="subnav-link<%= className %>"><span class="sidebar__link__text"><%= item.title %></span></a></li>
+                class="example-item subnav-item<%= className %>">
+              <a data-spa-link
+                 href="<%= item.example_url %>"
+                 class="subnav-link<%= className %>">
+                <span class="sidebar__link__text"><%= item.title %></span>
+              </a>
+            </li>
           <% }) %>
         </ul>
 
+        <!-- Navigation arrows. -->
         <nav class="example-nav c">
           <a id="examplePrev" class="example-nav-link example-nav-prev" href="">← <span>Previous</span></a>
           <a id="exampleNext" class="example-nav-link example-nav-next float-right" href=""><span>Next</span> →</a>
         </nav>
       </div>
-
     </div>
   </div>
 </aside>
