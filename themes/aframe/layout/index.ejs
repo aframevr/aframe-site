@@ -1,13 +1,14 @@
 <%- partial('partials/examples/sidebar', {site: site, page: page}) %>
 
-<div class="content content--index">
-  <div class="aframe-animation">
-    <iframe id="exampleIframe" class="example__iframe"
-            width="100%"
-            height="100%"
-            src="<%= site.data.examples.home.scene_url %>"
-            allowfullscreen="yes" allowvr="yes" scrolling="no"></iframe>
+<div class="content content--index home-content">
+  <div class="home-center">
+    <iframe
+      id="exampleIframe" class="example__iframe"
+      width="100%" height="100%"
+      src="<%= site.data.examples.home.scene_url %>"
+      allowfullscreen="yes" allowvr="yes" scrolling="no"></iframe>
   </div>
+
   <div class="copy__wrap">
     <ul class="menu">
       <li class="menu-item">
@@ -26,15 +27,14 @@
         <a href="<%- config.github.aframe.url %>" rel="external">GitHub</a>
       </li>
     </ul>
-    <h1 class="slogan">
-      Building blocks for the<br>
-      virtual reality web
-    </h1>
+
     <%- page.content %>
+
     <a href="<%- url_for('docs/' + config.aframe_version + '/introduction/getting-started.html') %>"
        class="get-started nav-link">
       Get Started
     </a>
+
     <a class="credits borderless-link" href="http://mozvr.com/" rel="external"></a>
   </div>
 </div>
