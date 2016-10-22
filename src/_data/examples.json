@@ -31,6 +31,13 @@
     },
     {
       "section": "showcase",
+      "slug": "sky",
+      "scene_url": "https://aframe.io/aframe/examples/boilerplate/panorama/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html",
+      "title": "360&deg; Image"
+    },
+    {
+      "section": "showcase",
       "slug": "videosphere",
       "scene_url": "https://aframe.io/aframe/examples/boilerplate/360-video/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/360-video/index.html",
@@ -39,6 +46,13 @@
         "android": false,
         "ios": false
       }
+    },
+    {
+      "section": "showcase",
+      "slug": "360-image-gallery",
+      "scene_url": "https://aframe.io/360-image-gallery-boilerplate",
+      "source_url": "https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html",
+      "title": "360&deg Image Gallery"
     },
     {
       "section": "showcase",
@@ -70,24 +84,10 @@
     },
     {
       "section": "showcase",
-      "slug": "generic-logo",
-      "scene_url": "https://aframe.io/aframe/examples/animation/generic-logo/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation/generic-logo/index.html",
-      "title": "Logo"
-    },
-    {
-      "section": "showcase",
       "slug": "unfold",
       "scene_url": "https://aframe.io/aframe/examples/animation/unfold/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/animation/unfold/index.html",
       "title": "Unfold"
-    },
-    {
-      "section": "showcase",
-      "slug": "sky",
-      "scene_url": "https://aframe.io/aframe/examples/boilerplate/panorama/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html",
-      "title": "Panorama"
     }
   ]
 }
