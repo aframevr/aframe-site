@@ -1,6 +1,6 @@
 @import "_common"
 
-.content--structured .page__section,
+.page__section,
 .section-title,
 .install-note,
 .mobile-nav-btn,
@@ -8,12 +8,23 @@
     font-family $code-font-default
 
 .font-loaded-mono
-  .content--structured .page__section,
+  .page__section,
   .section-title,
   .install-note,
   .mobile-nav-btn,
   .nav-item
       font-family $code-font
+
+.page__title
+    color $pink
+    font 300 36px/1.3 $body-font-default
+    margin -7px 0 20px
+
+h2.post__heading
+    margin 0
+
+.font-loaded-sans .page__title
+    font-family $body-font
 
 a
     border-bottom 1px solid rgba(53,196,232,0.15)
@@ -37,8 +48,8 @@ a
 .nav
     border-top 1px dashed rgba(0,0,0,0.1)
     border-bottom 1px dashed rgba(0,0,0,0.1)
-    margin-bottom 30px
-    padding 30px 0
+    margin-bottom 25px
+    padding 25px 0
 
 .nav-link
     color rgba(0,0,0,0.35)
@@ -102,12 +113,6 @@ a
     display flex
     flex-direction column
 
-.page__title
-    font 600 36px/1.3 $body-font-default
-
-.font-loaded-sans .page__title
-    font-family $body-font
-
 .copy .footnote
     border-top 2px solid #eee
     clear both
@@ -151,14 +156,15 @@ a
     tr:not(:last-child) td
         border-bottom 1px solid #eee
 
-// The sub-heading above the docs title
-.content--structured .page__section
+// The sub-heading above the title of the Docs page or Blog post.
+p.page__section
     font-size 11px
     font-weight 600
     line-height 1.2
-    margin 0 0 5px
+    margin 0 0 10px
     text-transform uppercase
     a
+        color $light
         display block
 
 .section-title,
@@ -179,9 +185,6 @@ a
 .section-subnav
     margin-bottom 10px
 
-.copy .post__heading
-    margin-bottom 0
-
 .post__projects
     display flex
     flex-wrap wrap
@@ -196,10 +199,6 @@ a
         width 50%
         &:hover
             border-color $copy-link-hover
-
-.post-listing .post__projects a:nth-child(2) ~ a
-    display none
-
 .post__projects-text
   li p
     display inline
@@ -218,7 +217,20 @@ a
     display flex
     margin-bottom 15px
     p
-      margin 20px 0 0
+      margin 0
+
+.content--blog h1 + .post--listing
+    margin-top 9px  /* To align the borders nicely since there's no visible <h1>. */
+
+.post--listing + .post--listing
+    margin-top 30px
+
+.post--listing .post__metadata p
+    margin 20px 0 0
+
+/* Show only the first two thumbnails/previews. */
+.post--listing .post__projects a:nth-child(2) ~ a
+    display none
 
 .post__image
     display block
