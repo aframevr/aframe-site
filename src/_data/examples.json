@@ -17,24 +17,17 @@
     },
     {
       "section": "showcase",
-      "slug": "anime-UI",
-      "scene_url": "https://aframe.io/aframe/examples/showcase/anime-UI/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase/anime-UI/index.html",
-      "title": "Anime UI"
-    },
-    {
-      "section": "showcase",
-      "slug": "composite",
-      "scene_url": "https://aframe.io/aframe/examples/showcase/composite/",
-      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html",
-      "title": "Composite"
-    },
-    {
-      "section": "showcase",
       "slug": "sky",
       "scene_url": "https://aframe.io/aframe/examples/boilerplate/panorama/",
       "source_url": "https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html",
       "title": "360&deg; Image"
+    },
+    {
+      "section": "showcase",
+      "slug": "360-image-gallery",
+      "scene_url": "http://360syria.com",
+      "source_url": "https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html",
+      "title": "360&deg Image Gallery"
     },
     {
       "section": "showcase",
@@ -49,10 +42,17 @@
     },
     {
       "section": "showcase",
-      "slug": "360-image-gallery",
-      "scene_url": "https://aframe.io/360-image-gallery-boilerplate",
-      "source_url": "https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html",
-      "title": "360&deg Image Gallery"
+      "slug": "anime-UI",
+      "scene_url": "https://aframe.io/aframe/examples/showcase/anime-UI/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase/anime-UI/index.html",
+      "title": "Anime UI"
+    },
+    {
+      "section": "showcase",
+      "slug": "composite",
+      "scene_url": "https://aframe.io/aframe/examples/showcase/composite/",
+      "source_url": "https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html",
+      "title": "Composite"
     },
     {
       "section": "showcase",
