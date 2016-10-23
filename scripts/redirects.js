@@ -7,6 +7,12 @@ var utils = require('../lib/utils');
 
 var MASTER = 'master';
 
+var aframeVersions = multidep.versions.aframe.map(function (version) {
+  if (version.constructor === Array) { return version[1]; }
+  return version;
+});
+aframeVersions.push(MASTER);
+
 hexo.extend.generator.register('site-redirects', function () {
   return expandRedirectObjs([
     ['faq/', join('docs', hexo.config.aframe_version, 'introduction', 'faq.html')]
@@ -48,7 +54,11 @@ hexo.extend.generator.register('community-short-url-redirects', function () {
 });
 
 hexo.extend.generator.register('docs-redirects', function () {
-  var redirectObjs = [getDocRootRedirectObjs(), getPreVersionedRedirectObjs()];
+  var redirectObjs = [
+    getDocRootRedirectObjs(),
+    getPreVersionedRedirectObjs(),
+    getComponentSectionRedirectObjs()
+  ];
   redirectObjs.push([
     ['docs/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
     ['docs/guide/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
@@ -87,10 +97,17 @@ function expandRedirectObjs (redirectObjs) {
  * Redirects from '/docs/<version>/' to '/docs/<version>/guide/'.
  */
 function getDocRootRedirectObjs () {
-  var versions = multidep.versions.aframe.slice(0);
-  versions.push(MASTER);
-  return versions.map(function getRedirectObj (version) {
+  return aframeVersions.map(function getRedirectObj (version) {
     return ['docs/' + version + '/', 'docs/' + version + '/introduction/'];
+  });
+}
+
+/**
+ * Redirects from '/docs/<version>/components/' to '/docs/<version>/core/component.html'.
+ */
+function getComponentSectionRedirectObjs () {
+  return aframeVersions.map(function getRedirectObj (version) {
+    return ['docs/' + version + '/components/', 'docs/' + version + '/core/component.html'];
   });
 }
 
