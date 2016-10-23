@@ -25,7 +25,7 @@
     {
       "section": "showcase",
       "slug": "360-image-gallery",
-      "scene_url": "http://360syria.com",
+      "scene_url": "https://aframe.io/360-image-gallery-boilerplate/",
       "source_url": "https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html",
       "title": "360&deg Image Gallery"
     },
