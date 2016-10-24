@@ -117,78 +117,74 @@
     return req;
   };
 
-    // DOCS.
-    function anchorId (str) {
-      return (str || '').replace(/[^-a-zA-Z0-9,&\s]+/g, '')
-                        .replace(/-/g, '_')
-                        .replace(/\s+/g, ' ')
-                        .trim()
-                        .replace(/\s/g, '_')
-                        .trim();
-    }
-    var anchorHeadingsSelector = 'h2[id], h3[id], h4[id], h5[id], h6[id], .copy__wrap > table[id] tr th:first-child, .copy__wrap > table tr[id] td:first-child';
-    var tableIds = {};
-    var rowIds = {};
-    var content = $('.content');
+  // DOCS.
+  function anchorId (str) {
+    return (str || '').replace(/[^-a-zA-Z0-9,&\s]+/g, '')
+                      .replace(/-/g, '_')
+                      .replace(/\s+/g, ' ')
+                      .trim()
+                      .replace(/\s/g, '_')
+                      .trim()
+                      .toLowerCase();
+  }
+  var anchorHeadingsSelector = [
+    '.copy__wrap > table[id] tr th:first-child',
+    '.copy__wrap > table tr[id] td:first-child'
+  ].join(',');
+  var tableIds = {};
+  var rowIds = {};
+  var content = $('.content');
 
-    if (content) {
-      // Fix messy `id`s generated from https://github.com/hexojs/hexo-renderer-marked/blob/951baa05/lib/renderer.js#L32.
-      // (example: /docs/core/entity.html#setAttribute__28attr_2C_value_2C_componentAttrValue_29)
-      var headingsEls = $$('.content h2[id], .content h3[id], .content h4[id], .content h5[id], .content h6[id]');
-      headingsEls.forEach(function (headingEl) {
-        var headingId = anchorId(headingEl.textContent);
-        headingEl.setAttribute('id', headingId);
-      });
-
-      var tablesEls = $$('.content .copy__wrap > table');
-      tablesEls.forEach(function (tableEl, idx) {
-        // Find the closest sibling section heading.
-        var siblingEl = tableEl;
-        var tableHeading = '';
-        while (siblingEl) {
-          siblingEl = siblingEl.previousElementSibling;
-          if (siblingEl && siblingEl.nodeName === 'H2') {
-            tableHeading = siblingEl.textContent;
-            break;
-          }
+  if (content) {
+    var tablesEls = $$('.content .copy__wrap > table');
+    tablesEls.forEach(function (tableEl, idx) {
+      // Find the closest sibling section heading.
+      var siblingEl = tableEl;
+      var tableHeading = '';
+      while (siblingEl) {
+        siblingEl = siblingEl.previousElementSibling;
+        if (siblingEl && siblingEl.nodeName === 'H2') {
+          tableHeading = siblingEl.textContent;
+          break;
         }
+      }
 
-        var tableId = anchorId(tableHeading + ' ' + 'Reference');
+      var tableId = anchorId(tableHeading);
+
+      // If this `id` has already been used, append at `-{num}` (starting at `-2`).
+      if (tableIds[tableId]) {
+        tableId += ++tableIds[tableId];
+      } else {
+        tableIds[tableId] = 1;
+      }
+
+      tableEl.setAttribute('id', tableId);
+
+      $$('tr', tableEl).forEach(function (trEl) {
+        var td = trEl.querySelector('td');
+        if (!td) { return; }
+
+        var trId = anchorId(td.textContent);
 
         // If this `id` has already been used, append at `-{num}` (starting at `-2`).
-        if (tableIds[tableId]) {
-          tableId += '-' + (++tableIds[tableId]);
+        if (rowIds[trId]) {
+          trId += '-' + (++rowIds[trId])
         } else {
-          tableIds[tableId] = 1;
+          rowIds[trId] = 1;
         }
 
-        tableEl.setAttribute('id', tableId);
-
-        $$('tr', tableEl).forEach(function (trEl) {
-          var td = trEl.querySelector('td');
-          if (!td) { return; }
-
-          var trId = anchorId(td.textContent);
-
-          // If this `id` has already been used, append at `-{num}` (starting at `-2`).
-          if (rowIds[trId]) {
-            trId += '-' + (++rowIds[trId])
-          } else {
-            rowIds[trId] = 1;
-          }
-
-          trEl.setAttribute('id', tableId + '_' + trId);
-        });
+        trEl.setAttribute('id', tableId + '_' + trId);
       });
+    });
 
-      content.addEventListener('click', function (e) {
-        var el = e.target;
-        if (el.matches && el.matches(anchorHeadingsSelector)) {
-          // Use the click target if it has an `id` (or a parent with an `id`).
-          var closestEl = el.closest('[id]');
-          if (!closestEl) { return; }
-          window.location.hash = '#' + closestEl.id;
-        }
-      });
-    }
+    content.addEventListener('click', function (e) {
+      var el = e.target;
+      if (el.matches && el.matches(anchorHeadingsSelector)) {
+        // Use the click target if it has an `id` (or a parent with an `id`).
+        var closestEl = el.closest('[id]');
+        if (!closestEl) { return; }
+        window.location.hash = '#' + closestEl.id;
+      }
+    });
+  }
 })();
