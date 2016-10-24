@@ -37,7 +37,7 @@ function convertProdToDevUrls (str) {
 
 hexo.extend.filter.register('after_render:json', function (obj, data) {
   var self = this;
-  return JSON.parse(data.text, function (key, val) {
+  return JSON.parse(JSON.stringify(obj), function (key, val) {
     return convertProdToDevUrls.bind(self)(val);
   });
 });

@@ -1,0 +1,81 @@
+title: Examples
+
+home:
+  section: home
+  slug: home
+  scene_url: https://aframe.io/aframe/examples/animation/aframe-logo/?ui=false
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/animation/aframe-logo/index.html
+  title: A-Frame Logo Animation
+
+showcase:
+- section: showcase
+  slug: helloworld
+  scene_url: https://aframe.io/aframe/examples/boilerplate/hello-world/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/boilerplate/hello-world/index.html
+  title: Hello World
+
+- section: showcase
+  slug: sky
+  scene_url: https://aframe.io/aframe/examples/boilerplate/panorama/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html
+  title: 360&deg; Image
+
+- section: showcase
+  slug: 360-image-gallery
+  scene_url: https://aframe.io/360-image-gallery-boilerplate/
+  source_url: https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html
+  title: 360&deg Image Gallery
+
+- section: showcase
+  slug: videosphere
+  scene_url: https://aframe.io/aframe/examples/boilerplate/360-video/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/boilerplate/360-video/index.html
+  title: 360&deg; Video
+  supports:
+    android: false
+    ios: false
+
+- section: showcase
+  slug: anime-UI
+  scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/anime-UI/index.html
+  title: Anime UI
+
+- section: showcase
+  slug: spotify-audio-visualizer
+  scene_url: https://ngokevin.github.io/kframe/components/audioanalyser/examples/spotify/
+  source_url: https://github.com/ngokevin/kframe/blob/6d1ac451af3040394b985e9260d8459cc01c4c0b/components/audioanalyser/examples/spotify/index.html
+  title: Audio Visualizer
+  supports:
+    android: false
+    ios: false
+
+- section: showcase
+  slug: composite
+  scene_url: https://aframe.io/aframe/examples/showcase/composite/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html
+  title: Composite
+
+- section: showcase
+  slug: curved-mockups
+  scene_url: https://aframe.io/aframe/examples/showcase/curved-mockups/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/curved-mockups/index.html
+  title: Curved Mockups
+
+- section: showcase
+  slug: shopping
+  scene_url: https://aframe.io/aframe/examples/showcase/shopping/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/shopping/index.html
+  title: Shopping
+
+- section: showcase
+  slug: spheres-and-fog
+  scene_url: https://aframe.io/aframe/examples/showcase/spheres-and-fog/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/spheres-and-fog/index.html
+  title: Spheres & Fog
+
+- section: showcase
+  slug: warps
+  scene_url: https://aframe.io/aframe/examples/animation/warps/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/animation/warps/index.html
+  title: Warp
