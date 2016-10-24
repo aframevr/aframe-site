@@ -53,7 +53,7 @@ awoa:
 
     - author: github|ngokevin
       action: worked around
-      description: "a weird error where `parentNode` was becoming `null` on entity callbacks.""
+      description: "a weird error where `parentNode` was becoming `null` on entity callbacks."
       github: "#1483"
 
   media:
