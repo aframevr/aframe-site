@@ -156,14 +156,16 @@ function init () {
     this.setAttribute('href', getNextNavLink());
   });
 
+  // Inspector.
   var exampleIframe = document.querySelector('#exampleIframe');
-  var replayLink = document.querySelector('#exampleReplay');
-  if (replayLink) {
-    replayLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      exampleIframe.src = exampleIframe.src;
-    });
-  }
+  var exampleInspector = document.querySelector('#exampleInspector');
+  var exampleViewsource = document.querySelector('#exampleViewSource');
+  exampleInspector.addEventListener('click', function () {
+    // <ctrl> + <alt> + i.
+    exampleIframe.contentWindow.postMessage('INJECT_AFRAME_INSPECTOR', '*');
+    exampleInspector.style.display = 'none';
+    exampleViewsource.style.display = 'none';
+  });
 
   if (settings.isSpa) {
     var showPage = singlePage(function (href) {
@@ -178,7 +180,6 @@ function init () {
 
         exampleIframe.setAttribute('src', currentExample.scene_url);
 
-        var exampleViewsource = document.querySelector('#exampleViewsource');
         if (exampleViewsource) {
           exampleViewsource.setAttribute('href', currentExample.source_url);
         }
