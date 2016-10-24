@@ -2,6 +2,19 @@
 
 <div class="content content--examples">
   <div class="content--body">
-    <%- partial('partials/examples/iframe', {item: page}) %>
+    <!-- Example. -->
+    <iframe id="exampleIframe" class="example__iframe"
+            width="100%"
+            height="100%"
+            allowfullscreen="yes" scrolling="no"
+            allowvr="yes" src="<%- page.scene_url %>"></iframe>
+
+    <!-- Actions. -->
+    <div class="example__controls">
+      <a id="exampleInspector" class="btn" rel="nofollow"
+         title="Or open with `<ctrl> + <alt> + i`.">Visual Inspector</a>
+      <a id="exampleViewSource" class="btn" href="<%- page.source_url %>" target="_blank"
+         title="View the HTML on GitHub">View Source</a>
+    </div>
   </div>
 </div>
