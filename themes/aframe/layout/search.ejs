@@ -1,0 +1,17 @@
+<aside class="sidebar borderless-links">
+  <%- partial('partials/secondary/sidebar_header', {site: site}) %>
+</aside>
+
+<div class="content content--structured content--<%- page.type %> copy">
+  <div class="copy__wrap">
+    <h1 class="page__title"><%- page.title %></h1>
+
+    <% if (page.toc) { %>
+      <%- partial('partials/toc', {page: page}) %>
+    <% } %>
+
+    <%- page.content %>
+
+    <%- partial('partials/docs/footer', {item: page}) %>
+  </div>
+</div>
