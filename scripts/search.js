@@ -33,33 +33,32 @@ module.exports = function lunrSearchGenerator (locals) {
   var bodyText;
 
 	for (var group in res) {
+    // Set up index.
 		searchIdx = lunr(function () {
 			this.field('title', {boost:10});
 			this.field('body');
-			this.field('desc');
 			this.ref('href');
 		});
 
+    // For each group.
 		res[group].forEach(function (post) {
-      tags = [];
-      cates = [];
       bodyText = lunrConfig.fulltext ? post.content : post.excerpt;
 
+      // Add data to help indexing.
       searchIdx.add({
         title: post.title,
-        desc: post.subtitle || '',
         body: bodyText || '',
         href: post.permalink
       });
 
+      // Add data to store for displaying search results.
       store[post.permalink] = {
-        url: post.permalink,
-        title: post.title,
-        cover: post.cover,
-        desc: post.subtitle || post.excerpt || ''
+        title: post.title.replace('<', '&lt;'),
+        desc: trimBody(bodyText)
       };
 		});
 
+    // Output.
 		finalData.push({
 			path: pathFn.join(lunrPath, group + '.json'),
 			data: JSON.stringify({
@@ -73,3 +72,24 @@ module.exports = function lunrSearchGenerator (locals) {
 
 	return finalData;
 };
+
+/**
+ * Trim body (HTML) for displaying concise search result descriptions.
+ */
+function trimBody (str) {
+  str = str.trim().replace(/\n/gm, ' ');
+
+  // Remove headers.
+  str = str.replace(/<h..*?>.*?<\/h.>/gm, '');
+
+  // Remove tables.
+  str = str.replace(/<table.*?>.*?<\/table>/gm, '');
+
+  // Remove figures (i.e., code blocks).
+  str = str.replace(/<figure.*?>.*?<\/figure>/gm, '');
+
+  // Remove HTML tags.
+  str = str.replace(/<(?:.|\n)*?>/gm, '');
+
+  return str.substring(0, 140);
+}
