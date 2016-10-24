@@ -1,7 +1,9 @@
 (function () {
+  var aframeVersion = document.documentElement.getAttribute('data-aframe-version');
   var input = document.querySelector('#searchInput');
   var query = getQueryParam('q');
   var resultsContainer = document.querySelector('#searchResults');
+  var resultTemplate = document.querySelector('#searchResultTemplate');
 
   // Get Lunr search index.
   new Promise(function (resolve) {
@@ -10,7 +12,7 @@
       var index = lunr.Index.load(JSON.parse(this.responseText).index);
       resolve(index);
     });
-    req.open('GET', '/lunr/all.json');
+    req.open('GET', '/lunr/' + aframeVersion + '.json');
     req.send();
   }).then(init);
 
@@ -20,7 +22,7 @@
   function init (index) {
     if (query) {
       input.setAttribute('value', query);
-      populate(query)
+      populate(index.search(query));
     }
 
     // Bind to search input.
@@ -33,8 +35,14 @@
    * Populate search results.
    */
   function populate (results) {
+    // Clear.
+    resultsContainer.innerHTML = '';
+
     results.forEach(function (result) {
-      console.log(result);
+      var html = resultTemplate.innerHTML
+        .replace(/RESULT_URL/, result.ref)
+        .replace(/RESULT_TITLE/, 'Lorem');
+      resultsContainer.innerHTML += html;
     });
   }
 

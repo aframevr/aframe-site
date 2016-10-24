@@ -1,5 +1,7 @@
 var utils = require('../lib/utils');
 
+hexo.extend.generator.register('search', require('./search'));
+
 hexo.extend.generator.register('examples.json', function (locals) {
   return {
     path: 'examples/index.json',
