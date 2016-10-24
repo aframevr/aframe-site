@@ -42,15 +42,6 @@ showcase:
   title: Anime UI
 
 - section: showcase
-  slug: spotify-audio-visualizer
-  scene_url: https://ngokevin.github.io/kframe/components/audioanalyser/examples/spotify/
-  source_url: https://github.com/ngokevin/kframe/blob/6d1ac451af3040394b985e9260d8459cc01c4c0b/components/audioanalyser/examples/spotify/index.html
-  title: Audio Visualizer
-  supports:
-    android: false
-    ios: false
-
-- section: showcase
   slug: composite
   scene_url: https://aframe.io/aframe/examples/showcase/composite/
   source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html
