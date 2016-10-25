@@ -15,6 +15,12 @@ showcase:
   title: Hello World
 
 - section: showcase
+  slug: hello-metaverse
+  scene_url: https://ngokevin.github.io/kframe/components/text/examples/vaporwave/
+  source_url: https://github.com/ngokevin/kframe/blob/master/components/text/examples/vaporwave/index.html
+  title: Hello Metaverse
+
+- section: showcase
   slug: sky
   scene_url: https://aframe.io/aframe/examples/boilerplate/panorama/
   source_url: https://github.com/aframevr/aframe/blob/master/examples/boilerplate/panorama/index.html
@@ -46,6 +52,9 @@ showcase:
   scene_url: https://ngokevin.github.io/kframe/components/audioanalyser/examples/showcase/
   source_url: https://github.com/ngokevin/kframe/blob/master/components/audioanalyser/examples/showcase/index.html
   title: Audio Visualization
+  supports:
+    android: false
+    ios: false
 
 - section: showcase
   slug: composite
