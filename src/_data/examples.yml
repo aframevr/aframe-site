@@ -42,6 +42,12 @@ showcase:
   title: Anime UI
 
 - section: showcase
+  slug: audio-visualization
+  scene_url: https://ngokevin.github.io/kframe/components/audioanalyser/examples/showcase/
+  source_url: https://github.com/ngokevin/kframe/blob/master/components/audioanalyser/examples/showcase/index.html
+  title: Audio Visualization
+
+- section: showcase
   slug: composite
   scene_url: https://aframe.io/aframe/examples/showcase/composite/
   source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html
