@@ -1,16 +1,16 @@
 var utils = require('../lib/utils');
 
-hexo.extend.generator.register('examples.json', function (locals) {
+hexo.extend.generator.register('examples.json', function(locals) {
   return {
     path: 'examples/index.json',
     data: JSON.stringify(locals.data.examples)
   };
 });
 
-hexo.extend.generator.register('examples', function (locals) {
+hexo.extend.generator.register('examples', function(locals) {
   var routes = [];
 
-  function addRoute (path, data, layout) {
+  function addRoute(path, data, layout) {
     routes.push({
       path: path,
       data: data,
@@ -27,7 +27,7 @@ hexo.extend.generator.register('examples', function (locals) {
 
     var sections = [];
 
-    examples.forEach(function (example, idx) {
+    examples.forEach(function(example, idx) {
       var section = example.section;
 
       var permalink = utils.urljoin('examples', section, example.slug, '/');
@@ -45,12 +45,12 @@ hexo.extend.generator.register('examples', function (locals) {
       }
     });
 
-    sections.forEach(function (sectionSlug) {
+    sections.forEach(function(sectionSlug) {
       // TODO: Eventually build out separate pages for each category in Examples.
       addRoute('examples/' + sectionSlug + '/', examplesRedirect);
     });
 
-    hexo.locals.set('examples_by_urls', function () {
+    hexo.locals.set('examples_by_urls', function() {
       return examplesLookup;
     });
   }
