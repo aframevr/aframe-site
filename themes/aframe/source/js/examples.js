@@ -30,15 +30,17 @@ exampleNext.addEventListener('click', function () {
 });
 
 // Inspector.
-var exampleIframe = document.querySelector('#exampleIframe');
 var exampleInspector = document.querySelector('#exampleInspector');
-var exampleViewsource = document.querySelector('#exampleViewSource');
-exampleInspector.addEventListener('click', function () {
-  // <ctrl> + <alt> + i.
-  exampleIframe.contentWindow.postMessage('INJECT_AFRAME_INSPECTOR', '*');
-  exampleInspector.style.display = 'none';
-  exampleViewsource.style.display = 'none';
-});
+if (exampleInspector) {
+  var exampleIframe = document.querySelector('#exampleIframe');
+  var exampleViewsource = document.querySelector('#exampleViewSource');
+  exampleInspector.addEventListener('click', function () {
+    // <ctrl> + <alt> + i.
+    exampleIframe.contentWindow.postMessage('INJECT_AFRAME_INSPECTOR', '*');
+    exampleInspector.style.display = 'none';
+    exampleViewsource.style.display = 'none';
+  });
+}
 
 function clickNavLink (link) {
   var currentLink = getCurrentNavLink();
