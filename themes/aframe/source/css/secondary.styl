@@ -159,7 +159,7 @@ a
         border-bottom 1px solid #eee
 
 // The sub-heading above the title of the Docs page or Blog post.
-p.page__section
+.page__section > p
     font-size 11px
     font-weight 600
     line-height 1.2
@@ -535,15 +535,27 @@ video
     +media--desktop()
         display block
 
-.algolia-autocomplete
-    font-family $body-font
+.docs-search-wrapper
+    align-items flex-end
+    display flex
+    flex-direction column
     margin-bottom 25px
     max-width 100%
-    text-transform none
     +media--desktop()
-        position absolute !important
+        position absolute
         right 0
         top 0
+    p
+        font-family $body-font
+        font-size 12px
+        font-weight 400
+        margin-top 5px
+        text-transform uppercase
+
+.algolia-autocomplete
+    font-family $body-font
+    text-transform none
+    width 100%
 
 #search
     -moz-appearance none
@@ -552,7 +564,7 @@ video
     border-radius 2px
     box-shadow 0
     display inline-block
-    font-size 16px
+    font-size 15px
     height 30px
     padding 0 5px 0 10px
     width 100%
@@ -582,3 +594,6 @@ video
 .aa-cursor .algolia-docsearch-suggestion {
   background: #EBEBFB;
 }
+
+.docs-header + blockquote
+    margin 4em 0 2em

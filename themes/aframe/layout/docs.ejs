@@ -49,19 +49,25 @@
 <!-- Documentation. -->
 <div class="content content--structured content--<%- page.type %> copy">
   <div class="copy__wrap">
-    <p class="page__section docs-header">
-      <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
-        <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
-      </a>
-      <input id="search" type="search" placeholder="&#128269; Search <%- activeVersion %> documentation..."></input>
-    </p>
+    <div class="page__section docs-header">
+      <p>
+        <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
+          <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
+        </a>
+      </p>
+      <div class="docs-search-wrapper">
+        <input id="search" type="search" placeholder="&#128269; Search <%- activeVersion %> documentation&hellip;"></input>
+        <p>Got a question? <a href="http://stackoverflow.com/questions/tagged/aframe">Ask on StackOverflow.</a></p>
+      </div>
+    </div>
+    <h1 class="page__title"><%= page.title %></h1>
+
     <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
     <% if (activeVersion === 'master') { %>
       <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js). Otherwise, head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
     <% } else if (activeVersion !== config.aframe_version) { %>
       <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
     <% } %>
-    <h1 class="page__title"><%= page.title %></h1>
 
     <% var contents = page.content.replace(/\<!--\s*toc\s*-->/gi,
                                            '<!--toc-->').split('<!--toc-->'); %>
