@@ -1,7 +1,7 @@
 /* global $ */
 (function () {
 // Remove non-mobile examples on mobile.
-if (document.documentElement.getAttribute('data-is-mobile') === 'true') {
+if (settings.isMobile) {
   var nonMobileExamples = document.querySelectorAll('[data-supports-mobile="false"]');
   for (var i = 0; i < nonMobileExamples.length; i++) {
     nonMobileExamples[i].parentNode.removeChild(nonMobileExamples[i]);
