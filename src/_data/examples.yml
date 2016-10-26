@@ -57,12 +57,6 @@ showcase:
     ios: false
 
 - section: showcase
-  slug: fear-of-the-sky
-  scene_url: http://360syria.com/
-  title: Fear of the Sky
-  disable_inspector: true
-
-- section: showcase
   slug: shopping
   scene_url: https://shopifyvr.myshopify.com/pages/virtual-reality
   source_url: https://shopifyvr.myshopify.com/
