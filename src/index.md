@@ -9,5 +9,5 @@ layout: index
 </h1>
 
 <h2 class="intro">
-  With HTML and the Entity-Component ecosystem. Works across HTC Vive, Oculus Rift, desktop, and mobile platforms.
+  With HTML and Entity-Component ecosystem. Plays on Vive, Rift, desktop, mobile platforms.
 </h2>
