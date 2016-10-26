@@ -526,3 +526,59 @@ video
 
 .post img
     max-height 320px
+
+.docs-header
+    display flex
+    flex-direction column-reverse
+    position relative
+    width 100%
+    +media--desktop()
+        display block
+
+.algolia-autocomplete
+    font-family $body-font
+    margin-bottom 25px
+    max-width 100%
+    text-transform none
+    +media--desktop()
+        position absolute !important
+        right 0
+        top 0
+
+#search
+    -moz-appearance none
+    -webkit-appearance none
+    border 1px solid #DADADA
+    border-radius 2px
+    box-shadow 0
+    display inline-block
+    font-size 16px
+    height 30px
+    padding 0 5px 0 10px
+    width 100%
+    +media--desktop()
+        width 300px
+
+/* Main category headers */
+.algolia-docsearch-suggestion--category-header {
+  background-color #EF2D5E
+  border 0
+  color: #FAFAFA !important;
+  font-weight 300
+  padding: 5px !important;
+}
+/* Highlighted search terms */
+.algolia-docsearch-suggestion--highlight {
+  color: #24CAFF;
+}
+/* Highligted search terms in the main category headers */
+.algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--highlight  {
+  background-color: #4D47D5;
+}
+/* Currently selected suggestion */
+.aa-cursor .algolia-docsearch-suggestion--content {
+  color: $dark
+}
+.aa-cursor .algolia-docsearch-suggestion {
+  background: #EBEBFB;
+}
