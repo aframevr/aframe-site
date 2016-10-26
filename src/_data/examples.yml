@@ -76,6 +76,14 @@ showcase:
   title: Spheres & Fog
 
 - section: showcase
+  slug: a-painter
+  scene_url: https://aframe.io/a-painter/?url=https://ucarecdn.com/962b242b-87a9-422c-b730-febdc470f203/
+  title: A-Painter
+  supports:
+    controllers: true
+  disable_inspector: true
+
+- section: showcase
   slug: tracked-controllers
   scene_url: https://aframe.io/aframe/examples/showcase/tracked-controls/
   source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/tracked-controls/index.html
