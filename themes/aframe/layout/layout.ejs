@@ -1,5 +1,6 @@
 <% var isHome = is_current('index.html') %>
 <% var showExamples = page.type === 'examples' %>
+<% var isSearch = page.type === 'search' %>
 <% var isSecondary = page.layout !== 'examples' %>
 <% var isDocs = page.layout === 'docs' %>
 
@@ -68,6 +69,7 @@
       <% } %>
     <% } else { %>
       <%- css('css/secondary') %>
+      <%- js('js/lunr.min.js') %>
     <% } %>
 
     <%- partial('partials/ga') %>
@@ -83,11 +85,8 @@
     <%- js('js/common.js') %>
     <%- js('js/ga.js') %>
     <%- js('js/single-page.js') %>
-    <% if (showExamples) { %>
-      <%- js('js/examples.js') %>
-    <% } %>
-    <% if (isSecondary) { %>
-      <%- js('js/docs.js') %>
-    <% } %>
+    <% if (showExamples) { %> <%- js('js/examples.js') %> <% } %>
+    <% if (isSecondary) { %> <%- js('js/docs.js') %> <% } %>
+    <% if (isSearch) { %> <%- js('js/search.js') %> <% } %>
   </body>
 </html>

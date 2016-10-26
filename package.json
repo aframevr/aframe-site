@@ -20,6 +20,7 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "js-yaml": "^3.6.1",
+    "lunr": "mamboer/lunr.js",
     "moment": "^2.14.1",
     "request": "^2.74.0",
     "urljoin.js": "^0.1.0"

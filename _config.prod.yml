@@ -164,3 +164,11 @@ aframe_version: 0.3.0
 
 # Enable the Single-Page App.
 spa: false
+
+# Lunr
+## https://github.com/o2team/hexo-generator-lunr
+## http://lunrjs.com/
+lunr:
+  field: all
+  fulltext: true
+  path: lunr/
