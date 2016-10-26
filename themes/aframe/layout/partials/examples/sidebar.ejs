@@ -31,15 +31,14 @@
             class="subnav examples-subnav borderless-links">
           <% site.data.examples.showcase.forEach(function (item, idx) { %>
             <% var className = item.example_url === currentUrl ? ' current' : '' %>
-            <li data-supports-android="<%= item.supports.android %>"
-                data-supports-ios="<%= item.supports.ios %>"
+            <li data-current="<%- item.example_url === currentUrl %>"
+                data-supports-mobile="<%= item.supports.mobile !== false %>"
                 data-example-url="<%= item.example_url %>"
                 data-scene-url="<%= item.scene_url %>"
                 data-slug="<%= item.slug %>"
                 data-idx="<%= idx %>"
                 class="example-item subnav-item<%= className %>">
-              <a data-spa-link
-                 href="<%= item.example_url %>"
+              <a href="<%= item.example_url %>"
                  class="subnav-link<%= className %>">
                 <span class="sidebar__link__text"><%- item.title %></span>
                 <% if (item.supports.controllers) { %>
@@ -53,8 +52,8 @@
 
         <!-- Navigation arrows. -->
         <nav class="example-nav c">
-          <a id="examplePrev" class="example-nav-link example-nav-prev" href="">← <span>Previous</span></a>
-          <a id="exampleNext" class="example-nav-link example-nav-next float-right" href=""><span>Next</span> →</a>
+          <a id="examplePrev" class="example-nav-link example-nav-prev" href="#">← <span>Previous</span></a>
+          <a id="exampleNext" class="example-nav-link example-nav-next float-right" href="#"><span>Next</span> →</a>
         </nav>
       </div>
     </div>

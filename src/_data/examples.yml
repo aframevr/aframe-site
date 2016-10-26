@@ -38,8 +38,7 @@ showcase:
   source_url: https://github.com/aframevr/aframe/blob/master/examples/boilerplate/360-video/index.html
   title: 360&deg; Video
   supports:
-    android: false
-    ios: false
+    mobile: false
 
 - section: showcase
   slug: anime-UI
@@ -53,8 +52,7 @@ showcase:
   source_url: https://github.com/ngokevin/kframe/blob/master/components/audioanalyser/examples/showcase/index.html
   title: Audio Visualization
   supports:
-    android: false
-    ios: false
+    mobile: false
 
 - section: showcase
   slug: shopping
@@ -83,6 +81,5 @@ showcase:
   source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/tracked-controls/index.html
   title: Tracked Controllers
   supports:
-    android: false
+    mobile: false
     controllers: true
-    ios: false
