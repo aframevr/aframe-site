@@ -19,6 +19,8 @@ showcase:
   scene_url: https://ngokevin.github.io/kframe/components/text/examples/vaporwave/
   source_url: https://github.com/ngokevin/kframe/blob/master/components/text/examples/vaporwave/index.html
   title: Hello Metaverse
+  supports:
+    mobile: false
 
 - section: showcase
   slug: sky
@@ -60,6 +62,8 @@ showcase:
   source_url: https://shopifyvr.myshopify.com/
   title: ShopifyVR
   disable_inspector: true
+  supports:
+    mobile: false
 
 - section: showcase
   slug: spheres-and-fog
