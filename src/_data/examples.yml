@@ -64,9 +64,10 @@ showcase:
 
 - section: showcase
   slug: shopping
-  scene_url: https://aframe.io/aframe/examples/showcase/shopping/
-  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/shopping/index.html
-  title: Shopping
+  scene_url: https://shopifyvr.myshopify.com/pages/virtual-reality
+  source_url: https://shopifyvr.myshopify.com/
+  title: ShopifyVR
+  disable_inspector: true
 
 - section: showcase
   slug: spheres-and-fog
