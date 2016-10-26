@@ -57,10 +57,10 @@ showcase:
     ios: false
 
 - section: showcase
-  slug: composite
-  scene_url: https://aframe.io/aframe/examples/showcase/composite/
-  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/composite/index.html
-  title: Composite
+  slug: fear-of-the-sky
+  scene_url: http://360syria.com/
+  title: Fear of the Sky
+  disable_inspector: true
 
 - section: showcase
   slug: shopping
