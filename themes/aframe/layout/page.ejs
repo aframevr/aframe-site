@@ -1,8 +1,10 @@
-<aside class="sidebar borderless-links">
+<aside id="sidebar" class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 </aside>
 
 <div class="content content--structured content--<%- page.type %> copy">
+  <%- partial('partials/secondary/mobile_header') %>
+
   <div class="copy__wrap">
     <h1 class="page__title"><%- page.title %></h1>
 

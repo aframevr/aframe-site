@@ -1,4 +1,4 @@
-<aside class="sidebar borderless-links">
+<aside id="sidebar" class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
   <div class="list">
@@ -17,6 +17,8 @@
 </aside>
 
 <div class="content content--blog copy post">
+  <%- partial('partials/secondary/mobile_header') %>
+
   <div class="copy__wrap">
     <% if (page.blog_index) { %>
       <h1 class="page__title"><%- config.blog_title %></h1>
