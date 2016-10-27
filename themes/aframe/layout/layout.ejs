@@ -2,6 +2,7 @@
 <% var showExamples = page.type === 'examples' %>
 <% var isSecondary = page.layout !== 'examples' %>
 <% var isDocs = page.layout === 'docs' %>
+<% var is404 = page.layout === '404' %>
 
 <% var delimiter = ' – ' %>
 <% var projectTitle = config.title + delimiter + config.subtitle %>
@@ -31,7 +32,6 @@
     <meta name="robots" content="<%- config.robots %>">
     <meta name="description" content="<%- config.description %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <link rel="canonical" href="<%= config.url %>">
     <meta property="fb:app_id" content="<%- config.fb_app_id %>">
     <meta property="og:title" content="<%= config.title %>">
@@ -41,74 +41,61 @@
     <meta property="og:description" content="<%- config.description %>">
     <meta property="og:image" content="<%- absolute_url_for('images/card.png', {secure: false}) %>">
     <meta property="og:image:secure_url" content="<%- absolute_url_for('images/card.png') %>">
-
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@<%- config.twitter.username %>">
     <meta name="twitter:creator" content="@<%- config.twitter.username %>">
     <meta name="twitter:title" content="<%- config.title %>">
     <meta name="twitter:description" content="<%- config.description %>">
     <meta name="twitter:image" content="<%- absolute_url_for('images/card.jpg') %>">
-
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="<%- config.theme_color %>">
     <link rel="icon" sizes="192x192" href="<%- absolute_url_for('images/aframe-logo-192.png') %>">
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon" href="<%- absolute_url_for('images/aframe-logo-152.png') %>">
-
     <link rel="alternate" type="application/rss+xml" title="Feed" href="<%- absolute_url_for(config.feed.path) %>">
+    <%- partial('partials/ga') %>
 
-    <%- js('js/compat.js') %>
+    <% if (!is404) { %>
+      <%- js('js/compat.js') %>
+    <% } %>
 
     <% if (showExamples) { %>
       <%- css('css/index') %>
       <% if (!isHome) { %>
         <%- css('css/examples') %>
       <% } %>
-    <% } else { %>
+    <% } else if (!is404) { %>
       <%- css('css/secondary') %>
     <% } %>
 
-    <%- partial('partials/ga') %>
-
-    <% if (isDocs) { %>
+    <% if (isDocs || is404) { %>
       <!-- Search. -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"/>
+      <%- css('css/search') %>
     <% } %>
   </head>
-  <body data-page-layout="<%- page.layout %>"
-        data-page-type="<%- page.type %>">
-    <% if (!showExamples) { %>
+
+  <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
+    <% if (!showExamples && !is404) { %>
       <%- partial('partials/secondary/mobile_nav') %>
     <% } %>
-    <main id="main" class="main">
-      <%- body %>
-    </main>
-    <%- js('js/common.js') %>
-    <%- js('js/ga.js') %>
-    <%- js('js/single-page.js') %>
-    <% if (showExamples) { %>
-      <%- js('js/examples.js') %>
+
+    <main id="main" class="main"><%- body %></main>
+
+    <% if (!is404) { %>
+      <%- js('js/common.js') %>
+      <%- js('js/ga.js') %>
+      <% if (showExamples) { %>
+        <%- js('js/examples.js') %>
+      <% } %>
+      <% if (isSecondary) { %>
+        <%- js('js/docs.js') %>
+      <% } %>
     <% } %>
-    <% if (isSecondary) { %>
-      <%- js('js/docs.js') %>
-    <% } %>
-    <% if (isDocs) { %>
-      <!-- Search. -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
-      <script type="text/javascript">
-        docsearch({
-          apiKey: '9e4a51a1da70daf959bd4750a3fa8f52',
-          indexName: 'aframe',
-          inputSelector: '#search',
-          algoliaOptions: {
-            facetFilters: ['version:<%- docs_active_version(page) || config.aframe_version %>'],
-            hitsPerPage: 10
-          },
-          debug: false
-        });
-      </script>
+
+    <% if (isDocs || is404) { %>
+      <%- partial('partials/search') %>
     <% } %>
   </body>
 </html>

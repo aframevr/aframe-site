@@ -200,6 +200,7 @@ hexo.extend.helper.register('docs_url_prefix', function (item) {
 hexo.extend.helper.register('docs_active_version', function (page) {
   var splitPath = page.path.split('/');
   var docIndex = splitPath.indexOf('docs');
+  if (docIndex === -1) { return hexo.config.aframe_version; }
   return splitPath[docIndex + 1];
 });
 

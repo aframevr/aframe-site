@@ -1,0 +1,14 @@
+<!-- Algolia search. -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript">
+  docsearch({
+    apiKey: '9e4a51a1da70daf959bd4750a3fa8f52',
+    indexName: 'aframe',
+    inputSelector: '#search',
+    algoliaOptions: {
+      facetFilters: ['version:<%- docs_active_version(page) || config.aframe_version %>'],
+      hitsPerPage: 10
+    },
+    debug: false
+  });
+</script>
