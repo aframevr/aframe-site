@@ -12,7 +12,6 @@ $mono-font = $code-font
 $body-font-size = 1.1rem
 $body-font-weight = 400
 $body-line-height = 1.6
-$code-font-size = .9rem
 $table-heading-font-size = .9rem
 $table-body-font-size = .9rem
 
@@ -37,6 +36,12 @@ $copy-link-hover = #35c5e9  // hsl(192, 80%, 56%)
 
 // Miscellaneous
 $radius = 2px
+
+media--mobile-device() {
+  [data-is-mobile="true"] {
+    {block}
+  }
+}
 
 media--desktop() {
   @media (min-width: 768px) {
