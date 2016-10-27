@@ -450,6 +450,10 @@ video
 [data-is-mobile="true"] #docs-version
     border 1px solid #CCC
 
+[data-page-layout="docs"] .page__title
+    +media--desktop()
+        max-width 66%
+
 @media screen and (max-width: 800px)
     .main
         flex-direction column
