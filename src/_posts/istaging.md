@@ -26,8 +26,9 @@ Then, one day, scrolling through Github's trending list, we stumbled upon this
 WebVR framework created by some people at Mozilla. We tried it and we loved it.
 
 Our virtual tour has since become one of our main products. Thanks to A-Frame
-(and the Mozilla VR team), iStaging has reached thousands of customers while
-partnering with companies like Microsoft, HTC, Lenovo, and Alibaba.
+(and the [Mozilla VR team](https://mozvr.com)), iStaging has reached thousands
+of customers while partnering with companies like **Microsoft, HTC, Lenovo, and
+Alibaba**.
 
 <!-- more -->
 
