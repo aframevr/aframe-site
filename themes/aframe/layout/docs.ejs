@@ -2,7 +2,7 @@
 <% var activeVersion = docs_active_version(page) %>
 
 <!-- Navigation. -->
-<aside class="sidebar borderless-links">
+<aside id="sidebar" class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
   <div class="list">
@@ -48,6 +48,8 @@
 
 <!-- Documentation. -->
 <div class="content content--structured content--<%- page.type %> copy">
+  <%- partial('partials/secondary/mobile_header') %>
+
   <div class="copy__wrap">
     <div class="page__section docs-header">
       <p>

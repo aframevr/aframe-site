@@ -1,4 +1,5 @@
 @import "_common"
+@import "_sidebar"
 
 .page__section,
 .section-title,
@@ -80,6 +81,7 @@ a
 .subnav-link
     display block
     color rgba(0,0,0,0.35)
+    line-height 1.8
     text-indent -10px
     padding-left 10px
     transition 0.05s color ease
@@ -94,6 +96,8 @@ a
     &.active:hover
         color #333
         font-weight 500
+    +media--desktop()
+        line-height 1.6
 
 .example__iframe
     height 100vh
@@ -102,16 +106,13 @@ a
 .main
     display flex
 
-.sidebar
-    padding 40px
-    width 280px
-
-.content
-    flex 1
-
 .content
     display flex
+    flex 1
     flex-direction column
+    padding-top 80px
+    +media--desktop()
+        padding-top 0
 
 .copy .footnote
     border-top 2px solid #eee
@@ -401,123 +402,6 @@ if numbered_debug
             &:before
                 color #aaa
 
-.sidebar-mobile
-    display none
-
-@media screen and (max-width: 800px)
-    .sidebar
-        order 1  // Move to bottom
-        padding 0
-        width 100%
-
-        .list
-            padding 20px
-
-        .nav
-            border 0
-            margin-bottom 0
-            padding 20px 0 0
-
-    .secondary-nav
-        background $pink
-        // margin-top -4px  // To line things up when we jump
-        padding 20px
-
-    .logo__wordmark
-        background url(../images/aframe-name-white.svg) 0 50% no-repeat
-        background-size contain
-        height 35px
-        margin-bottom 0
-
-    .sidebar-mobile
-        background $pink
-        display block
-        position relative
-        padding 20px
-
-    .mobile-nav-btn
-        background-color white
-        border 3px solid white
-        color #000
-        display inline-block
-        float right
-        font-size 15px
-        font-weight 300px
-        letter-spacing 0.05rem
-        text-align center
-        transition 0.05s ease-in
-        text-transform uppercase
-        padding 8px 30px
-        position relative
-        z-index 1
-        &:hover,
-        &:active
-            color #000
-            opacity 0.8
-        &:active
-            background-color rgba(0,0,0,.5)
-
-    .nav-link
-        padding 0.1rem
-        &.current,
-        &.active,
-        &.current:hover,
-        &.active:hover
-            color $white
-
-    .main
-        flex-direction column
-        min-width 100%
-
-    .copy .footnote
-        br
-            display inline-block
-
-        .github-file-link
-            margin-left 0
-
-    .content--structured
-        h2[id],
-        h3[id],
-        h4[id],
-        h5[id],
-        h6[id],
-        .copy__wrap > table[id] tr th:first-child,
-        .copy__wrap > table tr[id] td:first-child
-            &:before
-                left: -1rem
-
-    .section-title
-        position relative
-        &:before
-            background url(../images/caret.svg) -3px 6px no-repeat
-            background-size 10px auto
-            content ""
-            height 100%
-            left 0
-            pointer-events none
-            position absolute
-            top 0
-            width 10px
-
-    .section-title-active:before
-        transform rotate(90deg)
-        left -6px
-
-    .section-title-inactive + .section-subnav
-        display none
-
-    .section-title-link
-        padding-left 20px
-
-    .subnav-item
-        margin-left 20px
-        margin-right -20px
-
-    .subnav-link
-        margin-left -25px
-        padding-left 35px
-
 #toc + ul a
     border-bottom 0
 
@@ -555,7 +439,6 @@ video
 .docs-header + blockquote
     margin 4em 0 2em
 
-
 .blog-subnav a
     font-size: 15px;
     line-height: 1.8;
@@ -563,3 +446,29 @@ video
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+[data-is-mobile="true"] #docs-version
+    border 1px solid #CCC
+
+@media screen and (max-width: 800px)
+    .main
+        flex-direction column
+        min-width 100%
+
+    .copy .footnote
+        br
+            display inline-block
+
+        .github-file-link
+            margin-left 0
+
+    .content--structured
+        h2[id],
+        h3[id],
+        h4[id],
+        h5[id],
+        h6[id],
+        .copy__wrap > table[id] tr th:first-child,
+        .copy__wrap > table tr[id] td:first-child
+            &:before
+                left: -1rem

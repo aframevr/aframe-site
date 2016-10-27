@@ -11,13 +11,16 @@
     border 1px solid #DADADA
     border-radius 2px
     box-shadow 0
-    display inline-block
+    display flex
     font-size 15px
     height 30px
     padding 0 5px 0 10px
     width 100%
     +media--desktop()
         width 300px
+
+[data-is-ios="true"] #search
+    padding-bottom 7px
 
 /* Main category headers */
 .algolia-docsearch-suggestion--category-header {
