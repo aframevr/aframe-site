@@ -34,6 +34,8 @@ Alibaba**.
 
 <video src="/videos/istaging.mp4" autoplay></video>
 
+[VIEW DEMO](http://vrviewer.istaging.co/#!/684173)
+
 ## HTML-Based
 
 Using [Three.js](https://threejs.org/) would have been like trying to build a
