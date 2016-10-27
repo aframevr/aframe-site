@@ -98,7 +98,11 @@ function expandRedirectObjs (redirectObjs) {
  */
 function getDocRootRedirectObjs () {
   return aframeVersions.map(function getRedirectObj (version) {
-    return ['docs/' + version + '/', 'docs/' + version + '/introduction/'];
+    if (version === '0.1.0' || version === '0.2.0') {
+      return ['docs/' + version + '/', 'docs/' + version + '/guide/'];
+    } else {
+      return ['docs/' + version + '/', 'docs/' + version + '/introduction/'];
+    }
   });
 }
 
