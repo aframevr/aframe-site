@@ -41,7 +41,7 @@ links = links.map(function (link) {
     if (page.nav_slug && link.slug === page.nav_slug) {
       link.current = true;
     }
-    if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url))) {
+    if (!page.nav_slug && page.canonical_path.match(new RegExp(link.url.replace(/\/$/, '')))) {
       link.current = true;
     }
     if (link.text === 'Docs' && page.path.indexOf('docs/') === 0) {
