@@ -9,5 +9,5 @@ layout: index
 </h1>
 
 <h2 class="intro">
-  With HTML and Entity-Component ecosystem. Plays on Vive, Rift, desktop, mobile platforms.
+  With HTML and Entity-Component ecosystem. Works on Vive, Rift, desktop, mobile platforms.
 </h2>
