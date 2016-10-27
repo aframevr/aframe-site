@@ -9,7 +9,7 @@
 
       <%- page.content %>
 
-      <% site.posts.sort('date', -1).each(function (post) { %>
+      <% page.posts.each(function (post) { %>
         <article class="post post--listing">
           <a href="<%- page_url(post.path) %>">
             <h2 class="post__heading"><%- post.title %></h2>
@@ -31,6 +31,17 @@
           <a href="<%- page_url(post.path) %>" class="post__more">Read more &hellip;</a>
         </article>
       <% }) %>
+
+      <footer class="footer guide-links c">
+        <% var prevPost = page.prev %>
+        <% var nextPost = page.next %>
+        <% if (page.prev) { %>
+          <span class="float-left"><a href="<%- page_url(prevPost.path) %>" class="guide-link guide-link-left">← <%- prevPost.title %></a></span>
+        <% } %>
+        <% if (page.next) { %>
+          <span class="float-right"><a href="<%- page_url(nextPost.path) %>" class="guide-link guide-link-right"><%- nextPost.title %> →</a></span>
+        <% } %>
+      </footer>
     <% } else { %>
       <article class="post post-full">
         <p class="page__section">
