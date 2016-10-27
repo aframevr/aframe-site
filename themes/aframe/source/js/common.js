@@ -1,4 +1,17 @@
 (function () {
+  // Sidebar scroll state.
+  var sidebarEl = document.querySelector('#sidebar');
+  if (sidebarEl) {
+    var lsKey = 'sidebar-scroll';
+    if (localStorage.getItem(lsKey)) {
+      sidebarEl.scrollTop = localStorage.getItem(lsKey);
+    }
+    sidebarEl.addEventListener('scroll', function () {
+      localStorage.setItem(lsKey, sidebarEl.scrollTop);
+    });
+    sidebarEl.style.visibility = 'visible';
+  }
+
   // Lazy loading for web fonts
 
   /* fontfaceobserver 2.0.1 - Copyright (c) 2016 - Bram Stein https://github.com/bramstein/fontfaceobserver/ */
