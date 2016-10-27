@@ -77,10 +77,6 @@
   </head>
 
   <body data-page-layout="<%- page.layout %>" data-page-type="<%- page.type %>">
-    <% if (!showExamples && !is404) { %>
-      <%- partial('partials/secondary/mobile_nav') %>
-    <% } %>
-
     <main id="main" class="main"><%- body %></main>
 
     <% if (!is404) { %>
