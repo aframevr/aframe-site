@@ -1,5 +1,19 @@
 <aside class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
+
+  <div class="list">
+    <h3 class="section-title">Blog Posts</h3>
+    <ul class="subnav section-subnav blog-subnav">
+      <% site.posts.sort('-date').forEach(function (post) { %>
+        <li class="subnav-item <%= post.title === page.title ? ' subnav-item-current' : '' %>">
+          <a href="<%- page_url(post.path) %>"
+             class="subnav-link<%= post.title === page.title ? ' current' : '' %>">
+            <%- post.title %>
+          </a>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
 </aside>
 
 <div class="content content--blog copy post">
