@@ -52,8 +52,8 @@
         <%- partial('partials/blog/metadata', {post: page}) %>
 
         <% if (page.awoa) { %>
-          <p>What's up with A-Frame for the week of <%= blog_date_subtract_week(page.date) %> to <%= blog_date(page.date) %>.</p>
-          <p>A-Frame is a web framework for building virtual reality experiences.</p>
+          <p>A-Frame is a web framework for building virtual reality (VR) experiences.</p>
+          <p>This is what's up with A-Frame for the week of <%= blog_date_subtract_week(page.date) %> to <%= blog_date(page.date) %>.</p>
           <%- partial('partials/blog/awoa_projects_showcase', {
             projects: page.awoa.projects
           }) %>
