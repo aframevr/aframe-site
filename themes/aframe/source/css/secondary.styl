@@ -430,21 +430,27 @@ video
         display block
 
 .docs-search-wrapper
-    align-items flex-end
+    align-items flex-start
     display flex
     flex-direction column
     margin-bottom 25px
     max-width 100%
-    +media--desktop()
-        position absolute
-        right 0
-        top 0
+
     .stackoverflow-link
+        display none
         font-family $body-font
         font-size 12px
         font-weight 400
         margin-top 5px
         text-transform uppercase
+        +media--desktop()
+            display block
+
+.docs-search-docs
+    align-items flex-end
+    position absolute
+    right 0
+    top 0
 
 .docs-header + blockquote
     margin 4em 0 2em

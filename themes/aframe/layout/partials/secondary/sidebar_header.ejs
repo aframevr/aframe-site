@@ -61,6 +61,8 @@ links = links.map(function (link) {
     </a>
   </header>
 
+  <%- partial('partials/search_field', {location: 'sidebar'}) %>
+
   <ul id="nav" class="nav">
     <% links.forEach(function (link) { %>
       <li <% if (link.slug) { %> data-slug="<%= link.slug %>"<% } %> class="nav-item">

@@ -5,7 +5,7 @@
     font-size 12px
     width 100%
 
-#search
+.search-field
     -moz-appearance none
     -webkit-appearance none
     border 1px solid #DADADA
@@ -14,13 +14,22 @@
     display flex
     font-size 15px
     height 30px
+    outline-color $color-primary
     padding 0 5px 0 10px
     width 100%
     +media--desktop()
         width 240px
+    
+.docs-search-wrapper
+    +media--desktop()
+        margin-right 16px
 
-[data-is-ios="true"] #search
+[data-is-ios="true"] .search-field
     padding-bottom 7px
+
+.docs-search-sidebar
+    +media--desktop()
+        display none
 
 /* Main category headers */
 .algolia-docsearch-suggestion--category-header {
@@ -45,3 +54,24 @@
 .aa-cursor .algolia-docsearch-suggestion {
   background: #EBEBFB;
 }
+
+@media (max-width: 768px)
+    .algolia-autocomplete .algolia-docsearch-suggestion--content,
+    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column
+        float none
+        width 100%
+
+    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column
+        text-align: left
+
+    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before
+        right auto
+        left -1px
+    
+    .algolia-autocomplete .ds-dropdown-menu
+        margin-left -32px
+        margin-right -32px
+        min-width 100%
+    
+    .docs-search-docs
+        display none

@@ -1,0 +1,7 @@
+<% var activeSection = '' %>
+<% var activeVersion = docs_active_version(page) %>
+<% var fieldLocation = locals.location %>
+<div class="docs-search-wrapper docs-search-<%= fieldLocation %>">
+  <input type="search" class="search-field" placeholder="&#128269; Search <%- activeVersion %> docs&hellip;"></input>
+  <p class="stackoverflow-link">Question? <a href="http://stackoverflow.com/questions/tagged/aframe">Ask on StackOverflow.</a></p>
+</div>

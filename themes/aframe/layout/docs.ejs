@@ -57,10 +57,7 @@
           <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
         </a>
       </p>
-      <div class="docs-search-wrapper">
-        <input id="search" type="search" placeholder="&#128269; Search <%- activeVersion %> docs&hellip;"></input>
-        <p class="stackoverflow-link">Got a question? <a href="http://stackoverflow.com/questions/tagged/aframe">Ask on StackOverflow.</a></p>
-      </div>
+      <%- partial('partials/search_field', {location: 'docs'}) %>
     </div>
     <h1 class="page__title"><%= page.title %></h1>
 
