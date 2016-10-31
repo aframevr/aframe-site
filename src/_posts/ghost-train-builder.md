@@ -1,6 +1,6 @@
 ---
 title: Halloween Feature! Building Ghost Train Builder
-author: github|realisetweets|Realise
+author: twitter|realisetweets|Realise
 layout: blog
 date: 2016-10-31 08:00:00
 image:

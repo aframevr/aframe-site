@@ -1,5 +1,6 @@
 var cheerio = require('cheerio');
 var moment = require('moment');
+var striptags = require('striptags');
 
 var multidep = require('../multidep');
 var pkg = require('../package');
@@ -267,3 +268,27 @@ hexo.extend.helper.register('docs_versions', function () {
 });
 
 hexo.extend.helper.register('is_external_url', isUrl);
+
+/**
+ * Generate description for `<meta name="description">`.
+ */
+hexo.extend.helper.register('meta_description', function (page) {
+  // If blog, return article excerpt.
+  if (page.layout === 'blog' && !page.blog_index) {
+    return striptags(page.excerpt).substring(0, 280);
+  }
+  // Else, return vanilla description.
+  return hexo.config.description;
+});
+
+/**
+ * Infer image for `<meta property="og:image">` and Twitter card.
+ */
+hexo.extend.helper.register('meta_image', function (page, defaultCard) {
+  // If blog, return blog image.
+  if (page.layout === 'blog' && !page.blog_index && page.image) {
+    return 'images/blog/' + page.image.src;
+  }
+  // Else, return default card image.
+  return defaultCard;
+});

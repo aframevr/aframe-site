@@ -7,7 +7,9 @@
 <% var delimiter = ' – ' %>
 <% var projectTitle = config.title + delimiter + config.subtitle %>
 <% var sectionTitle = isDocs ? ' Docs ' + delimiter : '' %>
+
 <% var pageTitle = page.title ? page.title + delimiter : '' %>
+<% pageTitle = page.full_title || (isHome ? projectTitle : pageTitle + config.title) %>
 
 <!DOCTYPE html>
 <html lang="en"
@@ -26,27 +28,27 @@
       data-aframe-version="<%= config.aframe_version %>"
       data-docs-version="<%= docs_active_version(page) %>">
   <head>
-    <title><%- page.full_title || (isHome ? projectTitle : pageTitle + config.title) %></title>
+    <title><%- pageTitle %></title>
     <%- partial('partials/force_https') %>
     <meta charset="utf-8">
     <meta name="robots" content="<%- config.robots %>">
-    <meta name="description" content="<%- config.description %>">
+    <meta name="description" content="<%= meta_description(page) %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="<%= config.url %>">
     <meta property="fb:app_id" content="<%- config.fb_app_id %>">
-    <meta property="og:title" content="<%= config.title %>">
+    <meta property="og:title" content="<%= pageTitle %>">
     <meta property="og:site_name" content="<%= config.title %>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= config.url %>">
-    <meta property="og:description" content="<%- config.description %>">
-    <meta property="og:image" content="<%- absolute_url_for('images/card.png', {secure: false}) %>">
-    <meta property="og:image:secure_url" content="<%- absolute_url_for('images/card.png') %>">
+    <meta property="og:description" content="<%= meta_description(page) %>">
+    <meta property="og:image" content="<%- absolute_url_for(meta_image(page, 'images/card.png'), {secure: false}) %>">
+    <meta property="og:image:secure_url" content="<%- absolute_url_for(meta_image(page, 'images/card.png')) %>">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@<%- config.twitter.username %>">
     <meta name="twitter:creator" content="@<%- config.twitter.username %>">
-    <meta name="twitter:title" content="<%- config.title %>">
-    <meta name="twitter:description" content="<%- config.description %>">
-    <meta name="twitter:image" content="<%- absolute_url_for('images/card.jpg') %>">
+    <meta name="twitter:title" content="<%- pageTitle %>">
+    <meta name="twitter:description" content="<%= meta_description(page) %>">
+    <meta name="twitter:image" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg')) %>">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="<%- config.theme_color %>">
     <link rel="icon" sizes="192x192" href="<%- absolute_url_for('images/aframe-logo-192.png') %>">
