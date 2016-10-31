@@ -286,7 +286,8 @@ hexo.extend.helper.register('meta_description', function (page) {
  */
 hexo.extend.helper.register('meta_image', function (page, defaultCard) {
   // If blog, return blog image.
-  if (page.layout === 'blog' && !page.blog_index && page.image) {
+  if (page.layout === 'blog' && !page.blog_index && page.image &&
+      !page.image.src.endsWith('.gif')) {
     return 'images/blog/' + page.image.src;
   }
   // Else, return default card image.
