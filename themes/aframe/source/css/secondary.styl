@@ -111,6 +111,7 @@ a
     flex 1
     flex-direction column
     padding-top 60px
+
     +media--desktop()
         padding-left 280px  // Fixed sidebar.
         padding-top 0
@@ -385,7 +386,7 @@ if numbered_debug
         display block
         content ""
 
-.content--structured
+.content
     h2[id],
     h3[id],
     h4[id],
@@ -486,3 +487,17 @@ video
         .copy__wrap > table tr[id] td:first-child
             &:before
                 left: -1rem
+
+.tweets
+  display flex
+  flex-direction column
+  justify-content center
+
+@media screen and (min-width: 480px)
+  .tweets
+      flex-direction row
+      flex-wrap wrap
+      justify-content space-between
+
+      .twitter-tweet
+          width 49% !important
