@@ -4,7 +4,7 @@ author: twitter|realisetweets|Realise
 layout: blog
 date: 2016-10-31 08:00:00
 image:
-  src: ghost-train-builder.gif
+  src: ghost-train-builder/ghost-train-builder.gif
 ---
 
 **[RIDE THE GHOST TRAIN](http://ghosttrainbuilder.com)**
@@ -39,7 +39,7 @@ A-Frame now seemed a no-brainer.
 
 <!-- more -->
 
-![Ghost Train Builder Prototype](/images/blog/ghost-train-builder-2.jpg)
+![Ghost Train Builder Prototype](/images/blog/ghost-train-builder/ghost-train-builder-2.jpg)
 
 ## Visuals
 
@@ -59,7 +59,7 @@ these rides, that sense of feeling slightly cheated that something so basic
 managed to make you jump. The bounce easing on the door and monster animations
 really helped with this.
 
-![Ghost Train Builder Prototype 2](/images/blog/ghost-train-builder-1.jpg)
+![Ghost Train Builder Prototype 2](/images/blog/ghost-train-builder/ghost-train-builder-1.jpg)
 
 ## Implementation
 
@@ -101,7 +101,7 @@ culprit for crashing WebGL on mobile. So on mobile devices we reverted to only
 having one light in entire ride, attaching it to the cart so that it followed
 the user and switching its colour as the user transitioned between rooms.
 
-![Ghost Train Builder Screenshot 1](/images/blog/ghost-train-builder-3.jpg)
+![Ghost Train Builder Screenshot 1](/images/blog/ghost-train-builder/ghost-train-builder-3.jpg)
 
 ## Conclusion
 
@@ -114,4 +114,4 @@ over it, and today things like Ghost Train Builder are possible - no plugins,
 no downloads, just in the browser. These are exciting times and frameworks
 like A-Frame are making it even easier to be involved.
 
-![Ghost Train Builder Screenshot 2](/images/blog/ghost-train-builder-4.jpg)
+![Ghost Train Builder Screenshot 2](/images/blog/ghost-train-builder/ghost-train-builder-4.jpg)
