@@ -70,4 +70,6 @@ awoa: true
 
 <div class="tweets">
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/mozillavr">@mozillavr</a> started <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a>, which is enabling the Metaverse.<br>More from <a href="https://twitter.com/dmarcos">@dmarcos</a> &amp; <a href="https://twitter.com/cvanw">@cvanw</a> on <a href="https://twitter.com/aframevr">@aframevr</a>, Servo &amp; <a href="https://twitter.com/hashtag/IPFS?src=hash">#IPFS</a><a href="https://t.co/jql71bSfak">https://t.co/jql71bSfak</a> <a href="https://t.co/nwsCOzjRag">pic.twitter.com/nwsCOzjRag</a></p>&mdash; Kent Bye VoicesOfVR (@kentbye) <a href="https://twitter.com/kentbye/status/794268491930968064">November 3, 2016</a></blockquote>
+
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Mozilla on Enabling the Open Metaverse with WebVR, A-Frame, and Servo <a href="https://t.co/dV3J0AKzmj">https://t.co/dV3J0AKzmj</a> <a href="https://twitter.com/mozillavr">@mozillavr</a> <a href="https://twitter.com/dmarcos">@dmarcos</a> <a href="https://twitter.com/cvanw">@cvanw</a> <a href="https://t.co/rJFU1BoRj5">pic.twitter.com/rJFU1BoRj5</a></p>&mdash; Road to VR (@RtoVR) <a href="https://twitter.com/RtoVR/status/794540022145937409">November 4, 2016</a></blockquote>
 </div>
