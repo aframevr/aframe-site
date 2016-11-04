@@ -62,6 +62,7 @@ hexo.extend.generator.register('docs-redirects', function () {
   redirectObjs.push([
     ['docs/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
     ['docs/guide/', 'docs/' + hexo.config.aframe_version + '/introduction/'],
+    ['docs/0.3.0/guides/build-with-magicavoxel.html', 'docs/0.3.0/guides/building-with-magicavoxel.html'],
     // Pre-versioned 0.1.0 removed pages redirects.
     ['docs/core/templates.html', 'docs/0.1.0/templates.html'],
     ['docs/guide/entering-vr.html', 'docs/0.1.0/entering-vr.html'],
