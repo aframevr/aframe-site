@@ -16,7 +16,7 @@
   </div>
 </aside>
 
-<div class="content content--blog copy post">
+<div class="content content--blog copy post <% if (page.awoa && !page.awoa.projects) { %>content--awoa<% } %>">
   <%- partial('partials/secondary/mobile_header') %>
 
   <div class="copy__wrap">

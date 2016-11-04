@@ -447,6 +447,9 @@ video
         +media--desktop()
             display block
 
+body:not([data-page-layout="docs"]) .docs-search-wrapper
+  display none !important
+
 .docs-search-docs
     align-items flex-end
     position absolute
@@ -501,9 +504,27 @@ video
 
 @media screen and (min-width: 480px)
   .tweets
-      flex-direction row
-      flex-wrap wrap
-      justify-content space-between
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
 
-      .twitter-tweet
-          width 49% !important
+    .twitter-tweet
+      width 49% !important
+
+@media screen and (min-width: 1100px)
+  .tweets
+    justify-content flex-start
+
+    .twitter-tweet
+      margin-right 10px
+      width 32% !important
+
+@media screen and (min-width: 1350px)
+  .tweets .twitter-tweet
+    width 24% !important
+
+.content--awoa .copy__wrap
+  max-width 100%
+
+  p
+    max-width 700px
