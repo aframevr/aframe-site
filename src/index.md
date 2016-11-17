@@ -5,9 +5,9 @@ layout: index
 ---
 
 <h1 class="slogan">
-  A web framework for building virtual reality experiences
+  Building blocks for the virtual reality web
 </h1>
 
 <h2 class="intro">
-  With HTML and Entity-Component ecosystem. Works on Vive, Rift, desktop, mobile platforms.
+  Use HTML to create VR experiences that work across desktop, mobile, and VR headsets.
 </h2>
