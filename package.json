@@ -29,6 +29,8 @@
   "devDependencies": {
     "hexo-cli": "^1.0.2",
     "multidep": "github:ngokevin/node-multidep#github",
+    "superagent": "^2.3.0",
+    "superagent-promise": "^1.1.0",
     "yaml-cat": "^0.3.2"
   },
   "hexo": {
@@ -40,6 +42,7 @@
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "dev": "npm run clean && npm run generate:config && npm run server",
     "generate": "npm run generate:config && hexo generate",
+    "generate-awoa": "node scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat '_config.prod.yml' '_config.local.yml' -n -m > _config.yml",
     "predeploy": "cp _config.prod.yml _config.yml && npm run clean",
     "postinstall": "multidep multidep.json",
