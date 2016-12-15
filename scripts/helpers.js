@@ -117,7 +117,7 @@ hexo.extend.helper.register('markdown', function (text) {
 });
 
 hexo.extend.helper.register('blog_date', function (date) {
-  return date.format('MMM D[,] YYYY');
+  return moment(date).format('MMM D[,] YYYY');
 });
 
 hexo.extend.helper.register('blog_date_subtract_week', function (date) {

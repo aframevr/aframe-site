@@ -13,7 +13,7 @@ while (match !== null) {
     .get(`https://publish.twitter.com/oembed?url=${match[0]}`)
     .then(function (res) {
       content = content.replace(res.body.url,
-                                res.body.html.replace(/<script.*<\/script>\n/, ''));
+                                res.body.html.replace(/<script.*<\/script>/, ''));
     });
   requests.push(request);
 
