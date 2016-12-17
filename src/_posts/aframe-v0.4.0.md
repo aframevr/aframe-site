@@ -52,6 +52,8 @@ Oculus Touch controllers have landed thanks to
 [@machenmusik](https://twitter.com/machenmusik) (@mchen on Slack) with models
 provided by [@arthuritu](https://twitter.com/arturitu)! The `hand-controls`
 component supports all different the Oculus Touch hand poses for each finger.
+Speaking of Oculus, @machenmusik also added automatic Enter VR support for
+browsers that support it, primarily Carmel!
 
 [cursor]: https://aframe.io/docs/master/components/cursor.html
 [primitives]: https://aframe.io/docs/master/primitives/
