@@ -3,6 +3,8 @@ title: A-Frame v0.4.0 - The Registry
 author: twitter|andgokevin|Kevin Ngo
 date: 2016-12-16 10:00:00
 layout: blog
+image:
+  src: registry.svg
 ---
 
 [inspector]: https://github.com/aframevr/aframe-inspector
@@ -96,7 +98,11 @@ awesome A-Frame projects:
 
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The Catherine Storr Experience by <a href="https://twitter.com/Dan_FS">@Dan_FS</a>. A fusion of cultural heritage with new forms of creativity. <a href="https://t.co/TCJK2SbHeb">https://t.co/TCJK2SbHeb</a> <a href="https://t.co/rVzqcXzP1i">pic.twitter.com/rVzqcXzP1i</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/793201933771083776">October 31, 2016</a></blockquote>
 
+ <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s an <a href="https://twitter.com/aframevr">@aframevr</a> project I&#39;ve been working on this week. ScreenVR: use your desktop on the web, in VR 🔥 <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> <a href="https://t.co/nyTYooGsTO">https://t.co/nyTYooGsTO</a> <a href="https://t.co/VIChZAA92y">pic.twitter.com/VIChZAA92y</a></p>&mdash; Jonathan Z. White (@JonathanZWhite) <a href="https://twitter.com/JonathanZWhite/status/801475080815570944">November 23, 2016</a></blockquote>
+
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Halloween Feature! Building Ghost Train Builder&quot; by <a href="https://twitter.com/realisetweets">@realisetweets</a>. Design, implementation w/ <a href="https://twitter.com/vuejs">@vuejs</a>, perf.  <a href="https://t.co/3RiD6enDQX">https://t.co/3RiD6enDQX</a> <a href="https://t.co/2Oj16WgHQk">pic.twitter.com/2Oj16WgHQk</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/793109141858332672">October 31, 2016</a></blockquote>
+
+ <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is the <a href="https://twitter.com/aframevr">@aframevr</a> project I&#39;ve worked on. Make your own snowflake! <a href="https://t.co/JK9nU6eJeM">https://t.co/JK9nU6eJeM</a> <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> <a href="https://twitter.com/hashtag/snow?src=hash">#snow</a> <a href="https://twitter.com/hashtag/%EB%88%88?src=hash">#눈</a> <a href="https://t.co/rzzYZEdX2m">pic.twitter.com/rzzYZEdX2m</a></p>&mdash; I&#39;m Sure (@SureBak) <a href="https://twitter.com/SureBak/status/802353979845996544">November 26, 2016</a></blockquote>
 
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ghost Train Builder by <a href="https://twitter.com/realisetweets">@realisetweets</a>. Randomly generated and custom SPOOKY SCARY <a href="https://twitter.com/hashtag/halloween?src=hash">#halloween</a> <a href="https://twitter.com/hashtag/webvr?src=hash">#webvr</a> rides ððð» <a href="https://t.co/XzPxoHotdT">https://t.co/XzPxoHotdT</a> <a href="https://t.co/fYVKFg1kg3">pic.twitter.com/fYVKFg1kg3</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/792114737278361600">October 28, 2016</a></blockquote>
 
@@ -131,3 +137,5 @@ as the API stabilizes and ships on browser platforms.
 2016 was a monumental year for WebVR. A-Frame got tens of thousands of
 designer, developers, and creators excited about the future of the Web. Let's
 carry that momentum and then some into 2017!
+
+![Scenes](/images/blog/v0.4.0.png)
