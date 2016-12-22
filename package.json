@@ -37,7 +37,7 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.3.0 && rm -rf .multidep/aframe-v0.3.0 && npm install aframevr/aframe#master && multidep multidep.json",
+    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.4.0 && rm -rf .multidep/aframe-v0.4.0 && npm install aframevr/aframe#master && multidep multidep.json",
     "clean": "hexo clean",
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "dev": "npm run clean && npm run generate:config && npm run server",
