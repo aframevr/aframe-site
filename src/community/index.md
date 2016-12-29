@@ -99,6 +99,17 @@ awesome people you'll run across on your journey with A-Frame!
 - [Chris Van Wiemeersch](https://github.com/cvan)
 - [Kearwood "Kip" Gilbert](https://github.com/kearwood)
 
+## WebVR
+
+- [iswebvrready.org](https://iswebvrready.org)
+- [Mozilla VR Team Page](https://mozvr.com)
+- [W3C WebVR Spec](https://github.com/w3c/webvr)
+
+## Roadmap
+
+- [A-Frame Roadmap](https://github.com/aframevr/aframe/blob/master/ROADMAP.md)
+- [A-Frame Milestones](https://github.com/aframevr/aframe/milestones)
+
 ## Contributing
 
 A-Frame has had nearly 100 different contributors, a number that grows every
