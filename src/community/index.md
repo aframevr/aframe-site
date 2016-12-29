@@ -72,6 +72,7 @@ Have a local user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
 
 - [A-Frame Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
+- [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
 
 ## A-Frame Team
 
