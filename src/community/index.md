@@ -74,6 +74,7 @@ so Let us know to list them here!
 - [A-Frame Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
+- [General Facebook group](https://www.facebook.com/groups/638122486335586/)
 
 ## A-Frame Team
 
