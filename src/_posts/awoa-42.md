@@ -9,7 +9,7 @@ awoa: true
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-**A happy new year!** Just a year ago, WebVR was a small group of crazy people,
+**A happy new year!** Just one year ago, WebVR was a small group of crazy people,
 and A-Frame had just been born. And just one year later, WebVR has support from
 all the major tech players, and A-Frame has sparked WebVR content creation for
 the web community to build stellar projects. In 2017, A-Frame will get the good
