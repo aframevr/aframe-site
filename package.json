@@ -38,13 +38,13 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.4.0 && rm -rf .multidep/aframe-v0.4.0 && npm install aframevr/aframe#master && npm run copydocs && multidep multidep.json",
+    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.4.0 && rm -rf .multidep/aframe-v0.4.0 && npm install aframevr/aframe#master && npm run installdocs",
     "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
     "deploy": "hexo deploy && open 'https://aframe.io/'",
     "dev": "npm run clean && npm run generate:config && npm run server",
     "generate": "npm run generate:config && hexo generate",
-    "generate-awoa": "node node_scripts/generateAWeekofAFrame.js",
+    "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
     "installdocs": "multidep multidep.json && npm run copydocs",
     "predeploy": "cp _config.prod.yml _config.yml && npm run clean",
