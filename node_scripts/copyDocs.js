@@ -36,3 +36,14 @@ fs.readFile(specPath, 'utf8', function (err, data) {
     });
   }
 });
+
+// Copy master.
+source = 'node_modules/aframe/docs';
+dest = 'src/docs/master';
+copy(source, dest, {overwrite: true}, function (error, results) {
+  if (error) {
+    console.error('Copy failed: ' + error);
+  } else {
+    console.info('Copied ' + results.length + ' doc files');
+  }
+});
