@@ -109,6 +109,8 @@ the Registry, and improving documentation.
 ## Events
 
 <div class="tweets">
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A-Frame&#39;s hands-on event in Tokyo! Coming soon! <a href="https://twitter.com/hashtag/webvr?src=hash">#webvr</a> <a href="https://twitter.com/hashtag/aframevr?src=hash">#aframevr</a> <a href="https://twitter.com/hashtag/aframer_meetup?src=hash">#aframer_meetup</a> <a href="https://t.co/krnAJDG7id">https://t.co/krnAJDG7id</a></p>&mdash; Taiga (CEO of edoga) (@taigagaita1) <a href="https://twitter.com/taigagaita1/status/814113813289005057">December 28, 2016</a></blockquote>
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/aframevr">@aframevr</a> got a huge shout out in my <a href="https://twitter.com/JSConfAU">@JSConfAU</a> 2016 talk 🎉<br><br>Watch it here: <a href="https://t.co/hXuVvpGML6">https://t.co/hXuVvpGML6</a> <a href="https://t.co/dfpMw7czrl">pic.twitter.com/dfpMw7czrl</a></p>&mdash; Jess Telford (@jesstelford) <a href="https://twitter.com/jesstelford/status/816241558101995520">January 3, 2017</a></blockquote>
 
 
