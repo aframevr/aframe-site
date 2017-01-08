@@ -71,11 +71,11 @@ published components:
 Have a local user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
 
-- [Official A-Frame Meetup Group](https://www.meetup.com/A-Frame/)
-- [A-Frame Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
+- [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
+- [Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
-- [General Facebook group](https://www.facebook.com/groups/638122486335586/)
+- [Facebook Group](https://www.facebook.com/groups/638122486335586/)
 
 ## A-Frame Team
 
