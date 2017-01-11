@@ -41,14 +41,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= config.url %>">
     <meta property="og:description" content="<%= meta_description(page) %>">
-    <meta property="og:image" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) %>">
-    <meta property="og:image:secure_url" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg')) %>">
+    <meta property="og:image" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) %>?v2">
+    <meta property="og:image:secure_url" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg')) %>?v2">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@<%- config.twitter.username %>">
     <meta name="twitter:creator" content="@<%- config.twitter.username %>">
     <meta name="twitter:title" content="<%- pageTitle %>">
     <meta name="twitter:description" content="<%= meta_description(page) %>">
-    <meta name="twitter:image" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg')) %>">
+    <meta name="twitter:image" content="<%- absolute_url_for(meta_image(page, 'images/card.jpg')) %>?v2">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="<%- config.theme_color %>">
     <link rel="icon" sizes="192x192" href="<%- absolute_url_for('images/aframe-logo-192.png') %>">
