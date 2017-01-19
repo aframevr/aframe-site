@@ -10,7 +10,7 @@ the [`src/`](src/) directory). Pull requests are welcome!
 
 To install the dependencies and start the local development server:
 
-    npm install && npm run installdocs && npm start
+    npm install && npm start
 
 If you are testing something related to the A-Frame examples, you can set up
 local configuration settings to point the examples to your local A-Frame
