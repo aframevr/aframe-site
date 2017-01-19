@@ -27,7 +27,7 @@ awoa:
     - title: First-Person Sh*tter
       author: twitter|swamphousegroup
       description: A rough night leads to an unmaintained restroom.
-      image: first-person-sh*tter.jpg
+      image: first-person-shtter.jpg
       url: https://danstrong.com/webvr/first-person-shitter/
 
     - title: Zenspot
