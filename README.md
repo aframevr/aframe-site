@@ -1,6 +1,6 @@
 # aframe-site
 
-Powers the __[A-Frame site](https://aframe.io/)__.
+Powers the **[A-Frame Site](https://aframe.io/)**.
 
 This site is built using [hexo](http://hexo.io/). Site content is written in
 [Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in
