@@ -36,6 +36,8 @@ landing](https://github.com/aframevr/aframe/pull/2200) thanks to
 <div class="tweets">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just a start, but built this in less than an hour with <a href="https://twitter.com/aframevr">@aframevr</a>. Few lines of HTML and a couple of reusable components. <a href="https://t.co/QnIyieefnQ">pic.twitter.com/QnIyieefnQ</a></p>&mdash; Kevin Ngo (@andgokevin) <a href="https://twitter.com/andgokevin/status/820218171722330112">January 14, 2017</a></blockquote>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just hacked a <a href="https://twitter.com/hashtag/VR?src=hash">#VR</a> <a href="https://twitter.com/FirefoxNightly">@FirefoxNightly</a> file browser as my 1st <a href="https://twitter.com/hashtag/WebExtension?src=hash">#WebExtension</a> using <a href="https://twitter.com/aframevr">@aframevr</a> &amp; submitted it to <a href="https://twitter.com/Virtuleap">@Virtuleap</a> <a href="https://t.co/WDeuZqbglP">https://t.co/WDeuZqbglP</a></p>&mdash; Fabien Benetou (@utopiah) <a href="https://twitter.com/utopiah/status/822434212368289792">January 20, 2017</a></blockquote>
+
 </div>
 
 [PanoModeling: Building 3D Environments from 360 Photos](http://32studios.magichandsrepair.com/designstudio/2017/01/360-panorama-to-3d/) ([demo](http://32studios.magichandsrepair.com/browsertour/condo/)) - 32Studios shows off creating fully 3D and VR indoor virtual tours by modeling off of a flat 360&deg; panorama image with Walkabout Worlds, rendered in A-Frame.
@@ -62,6 +64,8 @@ https://neisja.neocities.org/HW2.html
 
 ![neisja](https://cloud.githubusercontent.com/assets/674727/22148601/e62a5064-dec3-11e6-941c-5daccaae9d27.gif)
 
+
+[Tarski's Truth Machine](https://apps.tlt.stonybrook.edu/tarski/) by Stony Brook TLT Media Lab
 
 ## Components
 
