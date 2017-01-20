@@ -3,7 +3,7 @@ var glob = require('glob');
 var join = require('path').join;
 
 var multidep = require('../multidep');
-var utils = require('../lib/utils');
+var utils = require('../node_scripts/utils');
 
 var MASTER = 'master';
 

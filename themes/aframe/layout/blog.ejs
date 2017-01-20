@@ -34,9 +34,9 @@
 
           <% if (post.awoa) { %>
             <% if (post.from) { %>
-              <p>What's up with A-Frame, a WebVR framework for building virtual reality experiences, from <%= blog_date(post.from) %> to <%= blog_date(post.date) %>.</p>
+              <i>What's up with A-Frame, a WebVR framework for building virtual reality experiences, from <%= blog_date(post.from) %> to <%= blog_date(post.date) %>.</i>
             <% } else { %>
-              <p>What's up with A-Frame, a WebVR framework for building virtual reality experiences, for the week of <%= blog_date_subtract_week(post.date) %> to <%= blog_date(post.date) %>.</p>
+              <i>What's up with A-Frame, a WebVR framework for building virtual reality experiences, for the week of <%= blog_date_subtract_week(post.date) %> to <%= blog_date(post.date) %>.</i>
             <% } %>
             <%- partial('partials/blog/awoa_projects_showcase', {
               projects: post.awoa.projects
@@ -73,9 +73,9 @@
 
         <% if (page.awoa) { %>
           <% if (page.from) { %>
-            <p>What's up with A-Frame, a WebVR framework for building virtual reality experiences, from <%= blog_date(page.from) %> to <%= blog_date(page.date) %>.</p>
+            <i>What's up with A-Frame, a WebVR framework for building virtual reality experiences, from <%= blog_date(page.from) %> to <%= blog_date(page.date) %>.</i>
           <% } else { %>
-            <p>What's up with A-Frame, a WebVR framework for building virtual reality experiences, for the week of <%= blog_date_subtract_week(page.date) %> to <%= blog_date(page.date) %>.</p>
+            <i>What's up with A-Frame, a WebVR framework for building virtual reality experiences, for the week of <%= blog_date_subtract_week(page.date) %> to <%= blog_date(page.date) %>.</i>
           <% } %>
           <%- partial('partials/blog/awoa_projects_showcase', {
             projects: page.awoa.projects

@@ -1,4 +1,6 @@
-var utils = require('../lib/utils');
+var urljoin = require('urljoin.js');
+
+var utils = require('../node_scripts/utils');
 
 hexo.extend.generator.register('examples.json', function (locals) {
   return {
@@ -30,7 +32,7 @@ hexo.extend.generator.register('examples', function (locals) {
     examples.forEach(function (example, idx) {
       var section = example.section;
 
-      var permalink = utils.urljoin('examples', section, example.slug, '/');
+      var permalink = urljoin('examples', section, example.slug, '/');
       example.type = 'examples';
       example.url = permalink;
       addRoute(permalink, example, 'examples');

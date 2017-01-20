@@ -1,11 +1,8 @@
 var urllib = require('url');
-var urljoin = require('urljoin.js');
 
 module.exports.isUrl = function (url) {
   return url.indexOf('//') !== -1;
 };
-
-module.exports.urljoin = urljoin;
 
 module.exports.createRedirectResponse = function (hexo, path) {
   path = urllib.parse(path).protocol ? path : hexo.config.root + hexo.route.format(path);

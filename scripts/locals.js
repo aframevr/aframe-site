@@ -1,8 +1,11 @@
+var urljoin = require('urljoin.js');
+
+var utils = require('../node_scripts/utils');
+
 var url_for = hexo.extend.helper.store.url_for.bind(hexo);
-var utils = require('../lib/utils');
 
 function exampleUrlFor (item) {
-  return utils.urljoin(url_for('examples'), item.section, item.slug) + '/';
+  return urljoin(url_for('examples'), item.section, item.slug) + '/';
 }
 
 var transforms = {};
