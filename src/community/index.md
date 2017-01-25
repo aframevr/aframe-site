@@ -19,8 +19,10 @@ community a safe space for you.
 
 ## Getting Started
 
-- [Documentation](https://aframe.io/docs/) - Official documentation. If you get stuck anywhere, let us know!
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe) - Ask questions and learn on Stack Overflow.
+- [Documentation](https://aframe.io/docs/) - Official documentation and guides. If you get
+  stuck anywhere, let us know!
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe) - The official place to
+  ask questions and get technical support.
 
 ## News
 
@@ -31,7 +33,8 @@ community a safe space for you.
 - [Twitter](https://twitter.com/aframevr) - Keep up to date with awesome
   projects that people are doing and announcements.
 - [Subreddit](https://www.reddit.com/r/webvr) - General WebVR Subreddit.
-- [Mailing List](https://mail.mozilla.org/listinfo/web-vr-discuss) - General WebVR mailing list.
+- [Mailing List](https://mail.mozilla.org/listinfo/web-vr-discuss) - General WebVR mailing
+  list.
 
 ## Slack
 
@@ -40,14 +43,20 @@ out and join the discussion. The Slack is very active with currently over 2300
 people! Channels include:
 
 - [`#general`](http://aframevr.slackarchive.io/general/) - All things A-Frame!
-- [`#questions`](http://aframevr.slackarchive.io/questions/) - Ask questions about A-Frame on any level.
+- [`#questions`](http://aframevr.slackarchive.io/questions/) - Ask questions
+  about A-Frame, but we recommend posting on
+  [StackOverflow](https://stackoverflow.com/questions/tagged/aframe).
 - [`#issues`](http://aframevr.slackarchive.io/issues/) - Talk about A-Frame issues.
 - [`#projects`](http://aframevr.slackarchive.io/projects/) - Show off cool A-Frame projects.
-- [`#planning`](http://aframevr.slackarchive.io/planning/) - Talk about A-Frame roadmap and release coordination.
+- [`#planning`](http://aframevr.slackarchive.io/planning/) - Talk about A-Frame roadmap and
+  release coordination.
 - [`#api`](http://aframevr.slackarchive.io/api/) - Discuss A-Frame language and API.
 - [`#meetups`](http://aframevr.slackarchive.io/meetups/) - Talk about A-Frame meetups.
 - [`#meta`](http://aframevr.slackarchive.io/meta/) - Improve the A-Frame community.
-- [`#documentation`](http://aframevr.slackarchive.io/documentation/) - Improve the A-Frame documentation.
+- [`#documentation`](http://aframevr.slackarchive.io/documentation/) - Improve the A-Frame
+  documentation.
+- [`#teaching`](http://aframevr.slackarchive.io/documentation/) - Talk about A-Frame
+  evangelism and education.
 
 See archived A-Frame Slack history through [the A-Frame Slack
 Archive](http://aframevr.slackarchive.io). You can also [sign up to the
@@ -66,7 +75,7 @@ published components:
 - [`awesome-aframe` repository](https://github.com/aframevr/awesome-aframe) - A
   collection of awesome things regarding the A-Frame ecosystem as a GitHub README.
 
-## User Groups and Meetups
+## User Groups, Events, Meetups
 
 Have a local user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
@@ -77,6 +86,11 @@ so Let us know to list them here!
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
 - [Facebook Group](https://www.facebook.com/groups/638122486335586/)
 
+Are you holding an event? Below are some resources:
+
+- [Presentation Kit (Slide Deck)](https://github.com/aframevr/aframe-presentation-kit)
+- [Promotional Materials (Stickers, Posters, Images)](https://github.com/aframevr/aframe-presentation-kit/tree/master/materials)
+
 ## A-Frame Team
 
 Check out [A-Frame's follow list for cool people to
@@ -85,27 +99,29 @@ awesome people you'll run across on your journey with A-Frame!
 
 ### Core
 
-- [Diego Marcos](https://github.com/dmarcos)
-- [Kevin Ngo](https://github.com/ngokevin)
-- [Fernando Serrano](https://github.com/fernandojsg)
 - [Diego Goberna](https://github.com/feiss)
+- [Diego Marcos](https://github.com/dmarcos)
+- [Fernando Serrano](https://github.com/fernandojsg)
+- [Kevin Ngo](https://github.com/ngokevin)
 
 ### Contributors
 
 - [Don McCurdy](https://github.com/donmccurdy)
 - [Fabien Benetou](https://github.com/utopiah)
+- [Michael Chen](https://github.com/machenmusik)
 
 ### Mozilla VR
 
 - [Casey Yee](https://github.com/caseyyee)
 - [Chris Van Wiemeersch](https://github.com/cvan)
 - [Kearwood "Kip" Gilbert](https://github.com/kearwood)
+- [Daosheng Mu](https://github.com/daoshengmu)
 
 ## WebVR
 
-- [iswebvrready.org](https://iswebvrready.org)
 - [Mozilla VR Team Page](https://mozvr.com)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
+- [iswebvrready.org](https://iswebvrready.org)
 
 ## Roadmap
 
@@ -114,7 +130,7 @@ awesome people you'll run across on your journey with A-Frame!
 
 ## Contributing
 
-A-Frame has had nearly 100 different contributors, a number that grows every
+A-Frame has had over 100 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
