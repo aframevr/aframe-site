@@ -114,8 +114,8 @@ awesome people you'll run across on your journey with A-Frame!
 
 - [Casey Yee](https://github.com/caseyyee)
 - [Chris Van Wiemeersch](https://github.com/cvan)
-- [Kearwood "Kip" Gilbert](https://github.com/kearwood)
 - [Daosheng Mu](https://github.com/daoshengmu)
+- [Kearwood "Kip" Gilbert](https://github.com/kearwood)
 
 ## WebVR
 
