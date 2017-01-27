@@ -9,11 +9,19 @@ awoa: true
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[The text component is just about
-landed](https://github.com/aframevr/aframe/pull/2200). Here's a preview of SDF
-text with anchors, alignments, baselines, spacings, and fonts:
+[The text component has landed!](https://github.com/aframevr/aframe/pull/2200).
+Thanks to [@mattdesl](https://twitter.com/mattdesl) for the implementation and
+initial component, then [@bryik_ws](https://twitter.com/bryik_ws) for finishing
+the component, [@fernandojsg](https://twitter.com/fernandojsg) for improving
+the component, and [@machenmusik](https://twitter.com/machenmusik) for
+shepherding it into core!
 
 ![Text](https://cloud.githubusercontent.com/assets/674727/22370965/2fd4ab62-e449-11e6-9bcd-46289ace8db3.png)
+
+[Read about the text
+component](https://aframe.io/docs/master/components/text.html) or [try it out
+(best played with the
+Inspector)!](https://a-frobot.github.io/aframe/examples/test/text/).
 
 And we're about to release a tool that will make room scale VR development much
 more efficient and convenient!
@@ -23,7 +31,7 @@ more efficient and convenient!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">VRList updated with new WebVR projects + 360 panorama previews built with <a href="https://twitter.com/aframevr">@aframevr</a> 🙌<a href="https://t.co/y5S4uGOQSM">https://t.co/y5S4uGOQSM</a><a href="https://t.co/DL99M3iLQi">https://t.co/DL99M3iLQi</a> <a href="https://t.co/7yDvWthlj5">pic.twitter.com/7yDvWthlj5</a></p>&mdash; Jonathan Z. White (@JonathanZWhite) <a href="https://twitter.com/JonathanZWhite/status/823558690661957634">January 23, 2017</a></blockquote>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> poster for the new <a href="https://twitter.com/starwars">@starwars</a> <a href="https://twitter.com/hashtag/TheLastJedi?src=hash">#TheLastJedi</a> made with <a href="https://twitter.com/aframevr">@aframevr</a><a href="https://t.co/jbu2UikOFF">https://t.co/jbu2UikOFF</a><br><br>**LOUD**<a href="https://twitter.com/hashtag/VirtualReality?src=hash">#VirtualReality</a></p>&mdash; Shaun Mnemonic   ▲▼▲ (@shaundunne) <a href="https://twitter.com/shaundunne/status/823728713531588609">January 24, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Text component has landed in A-Frame! Long lineage from <a href="https://twitter.com/mattdesl">@mattdesl</a> to <a href="https://twitter.com/bryik">@bryik</a> to <a href="https://twitter.com/fernandojsg">@fernandojsg</a> to finally <a href="https://twitter.com/machenmusik">@machenmusik</a>. <a href="https://t.co/JNtU722e6B">https://t.co/JNtU722e6B</a> <a href="https://t.co/PNFFalHroi">pic.twitter.com/PNFFalHroi</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/824986150074855424">January 27, 2017</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Having fun with <a href="https://twitter.com/hashtag/VirtualReality?src=hash">#VirtualReality</a> , <a href="https://twitter.com/aframevr">@aframevr</a>, <a href="https://twitter.com/blender3d">@blender3d</a> and <a href="https://twitter.com/hashtag/lowpoly?src=hash">#lowpoly</a>.  Best using <a href="https://twitter.com/hashtag/GoogleCardboard?src=hash">#GoogleCardboard</a> <a href="https://t.co/RnwLmcwaJq">https://t.co/RnwLmcwaJq</a></p>&mdash; Onepopcorn (@onepopcorn) <a href="https://twitter.com/onepopcorn/status/824689998322663424">January 26, 2017</a></blockquote>
 
@@ -34,6 +42,8 @@ more efficient and convenient!
 ## Projects
 
 <div class="tweets">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> poster for the new <a href="https://twitter.com/starwars">@starwars</a> <a href="https://twitter.com/hashtag/TheLastJedi?src=hash">#TheLastJedi</a> made with <a href="https://twitter.com/aframevr">@aframevr</a><a href="https://t.co/jbu2UikOFF">https://t.co/jbu2UikOFF</a><br><br>**LOUD**<a href="https://twitter.com/hashtag/VirtualReality?src=hash">#VirtualReality</a></p>&mdash; Shaun Mnemonic   ▲▼▲ (@shaundunne) <a href="https://twitter.com/shaundunne/status/823728713531588609">January 24, 2017</a></blockquote>
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/firefox">@firefox</a> + <a href="https://twitter.com/aframevr">@aframevr</a> my dream to see a stargate becomes true! So cool to combine my passions: <a href="https://twitter.com/hashtag/WebProgramming?src=hash">#WebProgramming</a> and <a href="https://twitter.com/stargatecommand">@stargatecommand</a> <a href="https://t.co/CJb4MQs63Q">pic.twitter.com/CJb4MQs63Q</a></p>&mdash; Philippe (@Stargayte) <a href="https://twitter.com/Stargayte/status/823652556605915136">January 23, 2017</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Belgium has answered the WebVR call! Check out <a href="https://twitter.com/utopiah">@utopiah</a>&#39;s vrify - Firefox Nightly WebExtension to add VR interface to your local filesystem. <a href="https://t.co/wgIVwmQlNv">pic.twitter.com/wgIVwmQlNv</a></p>&mdash; Virtuleap (@Virtuleap) <a href="https://twitter.com/Virtuleap/status/822431228343291904">January 20, 2017</a></blockquote>
