@@ -1,7 +1,17 @@
 (function () {
   // Sidebar scroll state.
   var sidebarEl = document.querySelector('#sidebar');
+  var sidebarLinks = document.querySelectorAll('#sidebar a');
+
   if (sidebarEl) {
+    // Add listeners to links to tell if user is navigating away from aframe.io.
+    var sidebarLinkClicked = false;
+    function markSidebarLinkClicked () { sidebarLinkClicked = true; }
+    for (var i = 0; i < sidebarLinks.length; i++) {
+      sidebarLinks[i].addEventListener('click', markSidebarLinkClicked);
+    }
+
+    // Store scroll state in localStorage.
     var lsKey = 'sidebar-scroll';
     if (localStorage.getItem(lsKey)) {
       sidebarEl.scrollTop = localStorage.getItem(lsKey);
@@ -10,6 +20,12 @@
       localStorage.setItem(lsKey, sidebarEl.scrollTop);
     });
     sidebarEl.style.visibility = 'visible';
+
+    // Clear scroll state if navigating away to different site.
+    window.addEventListener('beforeunload', function () {
+      if (sidebarLinkClicked) { return; }
+      localStorage.setItem(lsKey, null);
+    });
   }
 
   // Lazy loading for web fonts
