@@ -31,7 +31,9 @@
     <title><%- pageTitle %></title>
     <%- partial('partials/force_https') %>
     <meta charset="utf-8">
-    <meta name="robots" content="<%- config.robots %>">
+    <!-- Don't index old documentation pages. -->
+    <meta name="robots"
+      content="<%- docs_active_version(page) === config.aframe_version ? config.robots : 'NOINDEX' %>">
     <meta name="description" content="<%= meta_description(page) %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="<%= config.url %>">
