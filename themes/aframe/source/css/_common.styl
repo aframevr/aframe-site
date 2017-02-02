@@ -1,6 +1,5 @@
 @import "_settings"
 @import "_syntax"
-@import "_fonts"
 
 *
     margin 0
@@ -14,11 +13,8 @@ html
     font-size 14px
 
 body
-    font $body-font-weight $body-font-size/$body-line-height $body-font-default
+    font $body-font-weight $body-font-size/$body-line-height $body-font
     color $medium
-
-.font-loaded-sans body
-    font-family $body-font
 
 iframe, img, button, input[type=button], .btn
     border 0
@@ -48,7 +44,7 @@ strong
 code,
 pre
     font-size 13px
-    font-family $code-font-default
+    font-family $code-font
 
 [data-is-mobile="true"]
     code,
