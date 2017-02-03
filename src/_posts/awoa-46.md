@@ -108,9 +108,7 @@ a smartphone as a controller with other various WebVR experiments.
 
 [Gravr Component](https://github.com/rdub80/aframe-gravr-component) by [@rolanddubois](https://twitter.com/rolanddubois)
 
-[Sticky Cursor Component](https://casonclagg.github.io/aframe-sticky-cursor-component/)
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="Wu2D9vQ"><a href="//imgur.com/Wu2D9vQ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[Sticky Cursor Component](https://casonclagg.github.io/aframe-sticky-cursor-component/) by [@casonclagg](https://twitter.com/casonclagg) ([view GIF](https://imgur.com/Wu2D9vQ))
 
 [Point Component](https://github.com/naugtur/aframe-point-component) by [@naugtur](https://twitter.com/naugtur)
 
