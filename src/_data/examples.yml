@@ -12,7 +12,7 @@ showcase:
   slug: helloworld
   scene_url: https://aframe.io/aframe/examples/boilerplate/hello-world/
   source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/boilerplate/hello-world/index.html
-  title: Hello World
+  title: Hello WebVR
 
 - section: showcase
   slug: hello-metaverse
