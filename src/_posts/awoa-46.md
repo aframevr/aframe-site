@@ -2,7 +2,7 @@
 title: "A Week of A-Frame 46"
 author: twitter|andgokevin|Kevin Ngo
 from: 2017-01-27 13:00:00
-date: 2017-01-23 13:00:00
+date: 2017-02-03 13:00:00
 layout: blog
 awoa: true
 ---
