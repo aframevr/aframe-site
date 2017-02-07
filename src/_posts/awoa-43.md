@@ -1,7 +1,7 @@
 ---
 title: "A Week of A-Frame 43"
 author: twitter|andgokevin|Kevin Ngo
-from: 2016-01-06 13:00:00
+from: 2017-01-06 13:00:00
 date: 2017-01-13 13:00:00
 layout: blog
 awoa: true
