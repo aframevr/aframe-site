@@ -68,15 +68,24 @@ A-Frame has enabled rapid innovation and open experimentation around room scale
 WebVR interactions and patterns! Check out some of these novel A-Frame scenes,
 or [visit the blog to check out editions of *A Week of A-Frame*](/blog/).
 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <div class="tweets">
-https://twitter.com/fernandojsg/status/821471460871041024
-https://twitter.com/kfarr/status/825643364519251968
-https://twitter.com/aframevr/status/824458764354940928
-https://twitter.com/whoyee/status/821271916451229697
-https://twitter.com/micahstubbs/status/814622454597328896
-https://twitter.com/JonathanZWhite/status/816755095371137024
-https://twitter.com/maros_pekarik/status/815912259704750080
-https://twitter.com/andgokevin/status/819899447169560577
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Introducing A-Blast . A wave shooting game made with <a href="https://twitter.com/aframevr">@aframevr</a> by <a href="https://twitter.com/mozillavr">@mozillavr</a> <a href="https://t.co/aI2Wf1GvDH">https://t.co/aI2Wf1GvDH</a> <a href="https://twitter.com/hashtag/aframevr?src=hash">#aframevr</a> <a href="https://twitter.com/hashtag/webvr?src=hash">#webvr</a> <a href="https://twitter.com/hashtag/threejs?src=hash">#threejs</a> <a href="https://t.co/SQl6akRKl4">pic.twitter.com/SQl6akRKl4</a></p>&mdash; Fernando Serrano (@fernandojsg) <a href="https://twitter.com/fernandojsg/status/821471460871041024">January 17, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New release of A-Frame City Builder <a href="https://twitter.com/hashtag/webvr?src=hash">#webvr</a> game built on <a href="https://twitter.com/aframevr">@aframevr</a> <a href="https://t.co/dN4PRyUGjV">https://t.co/dN4PRyUGjV</a> works on both <a href="https://twitter.com/hashtag/oculus?src=hash">#oculus</a> and <a href="https://twitter.com/hashtag/vive?src=hash">#vive</a> touch controls <a href="https://t.co/qbNhagXoWg">pic.twitter.com/qbNhagXoWg</a></p>&mdash; Kieran Farr (@kfarr) <a href="https://twitter.com/kfarr/status/825643364519251968">January 29, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"> Building a Bow &amp; Arrow for tracked controllers in <a href="https://twitter.com/hashtag/webvr?src=hash">#webvr</a> <a href="https://twitter.com/hashtag/threejs?src=hash">#threejs</a>!<br> <a href="https://t.co/2LgZ7LYVrf">https://t.co/2LgZ7LYVrf</a><br> <a href="https://t.co/PRYdpFvKly">https://t.co/PRYdpFvKly</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/824458764354940928">January 26, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"> I made <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> UI widgets for <a href="https://twitter.com/aframevr">@aframevr</a>   Hook&#39;em up to something cool!  <a href="https://t.co/Hr09EDWCwJ">https://t.co/Hr09EDWCwJ</a> <a href="https://t.co/AFcfTa98LK">pic.twitter.com/AFcfTa98LK</a></p>&mdash; Casey Yee (@whoyee) <a href="https://twitter.com/whoyee/status/821271916451229697">January 17, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> Grammar of Graphics <br>built on <a href="https://twitter.com/hashtag/aframevr?src=hash">#aframevr</a> <a href="https://twitter.com/hashtag/shiny?src=hash">#shiny</a> <a href="https://twitter.com/hashtag/gglplot2?src=hash">#gglplot2</a> <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a><br> <a href="https://twitter.com/Datatitian">@Datatitian</a> <br> <a href="https://t.co/mOgW4y0796">https://t.co/mOgW4y0796</a> <br> <a href="https://t.co/oJHJWy0VJW">https://t.co/oJHJWy0VJW</a> <a href="https://t.co/yNtqXGHuH4">pic.twitter.com/yNtqXGHuH4</a></p>&mdash; Micah Stubbs (@micahstubbs) <a href="https://twitter.com/micahstubbs/status/814622454597328896">December 30, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Beautiful snow globe WebVR experience. Take a ride around NYC in a zeppelin. Made with <a href="https://twitter.com/aframevr">@aframevr</a> by <a href="https://twitter.com/ronikdesign">@ronikdesign</a><a href="https://t.co/E7llCl8PDM">https://t.co/E7llCl8PDM</a> <a href="https://t.co/Iz8WH8XV44">pic.twitter.com/Iz8WH8XV44</a></p>&mdash; Jonathan Z. White (@JonathanZWhite) <a href="https://twitter.com/JonathanZWhite/status/816755095371137024">January 4, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Look at our new virtual calculator inside <a href="https://twitter.com/hashtag/MathWorldVR?src=hash">#MathWorldVR</a>. Release is near! <a href="https://twitter.com/TheDimensionLab">@TheDimensionLab</a> <a href="https://twitter.com/aframevr">@aframevr</a> <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> <a href="https://twitter.com/hashtag/VR?src=hash">#VR</a> <a href="https://twitter.com/hashtag/HTCvive?src=hash">#HTCvive</a> <a href="https://t.co/gKY281iKwy">pic.twitter.com/gKY281iKwy</a></p>&mdash; Maros Pekarik (@maros_pekarik) <a href="https://twitter.com/maros_pekarik/status/815912259704750080">January 2, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ready Player One? Tons of playable <a href="https://twitter.com/aframevr">@aframevr</a> classic arcade with Vive + Touch in one room.<br> Made by <a href="https://twitter.com/machenmusik">@machenmusik</a> <br> <a href="https://t.co/VKwDuCY682">https://t.co/VKwDuCY682</a> <a href="https://t.co/Hx6yVXT8Xt">pic.twitter.com/Hx6yVXT8Xt</a></p>&mdash; Kevin Ngo (@andgokevin) <a href="https://twitter.com/andgokevin/status/819899447169560577">January 13, 2017</a></blockquote>
 </div>
 
 A-Frame now boasts nearly 120 contributors on the primary A-Frame repository!
@@ -106,9 +115,11 @@ dependent on stability in the browsers. Currently, link traversal works in
 
 ![Shadows](https://cloud.githubusercontent.com/assets/674727/22716319/53c0d32a-ed4a-11e6-8e2d-5afd2ddf58fd.png)
 
-Keep up with the [0.6.0 milestone] for an initial idea of what may be next.
-We're holding an open Skype meeting amongst A-Frame developers to do talk about
-roadmap. Join `#planning` on the A-Frame Slack if you're interested!
+Keep up with the [0.6.0
+milestone](https://github.com/aframevr/aframe/milestone/5) for an initial idea
+of what may be next.  We're holding an open Skype meeting amongst A-Frame
+developers to do talk about roadmap. Join `#planning` on the A-Frame Slack if
+you're interested!
 
 ### Record-and-Replay Motion Capture Tools
 
