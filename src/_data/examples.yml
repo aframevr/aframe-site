@@ -4,14 +4,14 @@ home:
   section: home
   slug: home
   scene_url: https://aframe.io/aframe/examples/animation/aframe-logo/?ui=false
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/animation/aframe-logo/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/animation/aframe-logo/index.html
   title: A-Frame Logo Animation
 
 showcase:
 - section: showcase
   slug: helloworld
   scene_url: https://aframe.io/aframe/examples/boilerplate/hello-world/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/boilerplate/hello-world/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/boilerplate/hello-world/index.html
   title: Hello WebVR
 
 - section: showcase
@@ -25,7 +25,7 @@ showcase:
 - section: showcase
   slug: sky
   scene_url: https://aframe.io/aframe/examples/boilerplate/panorama/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/boilerplate/panorama/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/boilerplate/panorama/index.html
   title: 360&deg; Image
 
 - section: showcase
@@ -37,7 +37,7 @@ showcase:
 - section: showcase
   slug: videosphere
   scene_url: https://aframe.io/aframe/examples/boilerplate/360-video/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/boilerplate/360-video/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/boilerplate/360-video/index.html
   title: 360&deg; Video
   supports:
     mobile: false
@@ -45,7 +45,7 @@ showcase:
 - section: showcase
   slug: anime-UI
   scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/showcase/anime-UI/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/anime-UI/index.html
   title: Anime UI
 
 - section: showcase
@@ -68,13 +68,13 @@ showcase:
 - section: showcase
   slug: spheres-and-fog
   scene_url: https://aframe.io/aframe/examples/showcase/spheres-and-fog/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/showcase/spheres-and-fog/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/spheres-and-fog/index.html
   title: Spheres & Fog
 
 - section: showcase
   slug: tracked-controllers
   scene_url: https://aframe.io/aframe/examples/showcase/tracked-controls/
-  source_url: https://github.com/aframevr/aframe/blob/v0.4.0/examples/showcase/tracked-controls/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/tracked-controls/index.html
   title: Tracked Controllers
   supports:
     mobile: false
