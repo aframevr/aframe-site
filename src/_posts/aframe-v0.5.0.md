@@ -28,14 +28,15 @@ spacing, and wrapping. [Read more about the text component][text].
 ![Text](https://cloud.githubusercontent.com/assets/674727/22808347/4daf3bc4-eee0-11e6-9af7-048faf188b0f.png)
 
 [aboutgltf]: https://www.khronos.org/gltf
-[gltf]: https://aframe.io/docs/0.5.0/components/gltf.html
+[gltf]: https://aframe.io/docs/0.5.0/components/gltf-model.html
 
 The **glTF model** component has also landed into A-Frame core! glTF (GL
-Transmission Format) is an open project by Kronos providing a standard
-efficient 3D file format that is tailored for transmitting models over the Web.
-The `gltf-model` component loads a 3D glTF model with a line of HTML. Note that
-glTF is a fairly new specification and adoption is still growing, but a large
-portion of the WebVR community are optimistic that glTF will become the `.jpg`
+Transmission Format) is an open project by [The Khronos
+Group](https://www.khronos.org/) providing a standard efficient 3D file format
+that is tailored for transmitting models over the Web.  The `gltf-model`
+component loads a 3D glTF model with a line of HTML. Note that glTF is a fairly
+new specification and adoption is still growing, but a large portion of the
+WebVR community are optimistic that glTF will become the `.jpg`
 of 3D assets. [Read more about the `gltf-model` component][gltf].
 
 [releasenotes]: https://github.com/aframevr/aframe/releases/tag/v0.5.0
