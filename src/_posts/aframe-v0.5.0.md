@@ -19,11 +19,13 @@ enhancements and bug fixes, and enables upcoming motion capture tools.
 
 A **text** component, using SDF and MSDF, has landed into A-Frame core! Based
 on [mattdesl's][mattdesl] [three-bmfont-text], the text component has gone
-through a long lineage starting with bryik's initial
-`aframe-bmfont-text-component` to fernandojsg's improvements to mchen's fork to
-mchen shepherding the component into A-Frame. The text component comes with
-several stock fonts and supports custom fonts, alignment, anchors, baselines,
-spacing, and wrapping. [Read more about the text component][text].
+through a long lineage starting with [@bryik](https://twitter.com/bryik_ws)'s
+initial `aframe-bmfont-text-component` to
+[fernandojsg](https://twitter.com/fernandojsg)'s improvements to
+[mchen](https://twitter.com/machenmusik)'s fork to mchen shepherding the
+component into A-Frame. The text component comes with several stock fonts and
+supports custom fonts, alignment, anchors, baselines, spacing, and wrapping.
+[Read more about the text component][text].
 
 ![Text](https://cloud.githubusercontent.com/assets/674727/22808347/4daf3bc4-eee0-11e6-9af7-048faf188b0f.png)
 
@@ -38,6 +40,12 @@ component loads a 3D glTF model with a line of HTML. Note that glTF is a fairly
 new specification and adoption is still growing, but a large portion of the
 WebVR community are optimistic that glTF will become the `.jpg`
 of 3D assets. [Read more about the `gltf-model` component][gltf].
+
+Thanks to everyone who worked on the three.js glTF loader
+([richtr](https://github.com/richtr), [@mrdoob](https://twitter.com/mrdoob),
+[@auradeluxe](https://twitter.com/auradeluxe),
+[@superhoge](https://twitter.com/superhoge)) and the A-Frame component
+([@donmccurdy](https://twitter.com/donmccurdy), [@xirvr](https://twitter.com/xirvr))!
 
 [releasenotes]: https://github.com/aframevr/aframe/releases/tag/v0.5.0
 
