@@ -27,6 +27,7 @@
     "urljoin.js": "^0.1.0"
   },
   "devDependencies": {
+    "es6-template-strings": "^2.0.1",
     "hexo-cli": "^1.0.2",
     "multidep": "github:ngokevin/node-multidep",
     "recursive-copy": "^2.0.5",
@@ -39,6 +40,7 @@
     "version": "3.2.2"
   },
   "scripts": {
+    "awoa": "node node_scripts/awoa.js",
     "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.5.0 && rm -rf .multidep/* && npm install aframevr/aframe#master && npm run installdocs",
     "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
