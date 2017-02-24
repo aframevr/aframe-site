@@ -44,7 +44,9 @@
           <% } %>
 
           <% if (post.excerpt) { %>
-            <%- partial('partials/blog/image', {image: post.image, title: post.title}) %>
+            <% if (!post.awoa) { %>
+              <%- partial('partials/blog/image', {image: post.image, title: post.title}) %>
+            <% } %>
             <div class="post__excerpt"><%- post.excerpt %></div>
           <% } %>
 
@@ -82,7 +84,9 @@
           }) %>
         <% } %>
 
-        <%- partial('partials/blog/image', {image: page.image, title: page.title}) %>
+        <% if (!post.awoa) { %}
+          <%- partial('partials/blog/image', {image: page.image, title: page.title}) %>
+        <% } %>
 
         <%- page.content %>
 

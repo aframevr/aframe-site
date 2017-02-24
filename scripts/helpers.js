@@ -273,8 +273,8 @@ hexo.extend.helper.register('is_external_url', isUrl);
  * Generate description for `<meta name="description">`.
  */
 hexo.extend.helper.register('meta_description', function (page) {
-  // If blog, return article excerpt.
-  if (page.layout === 'blog' && !page.blog_index) {
+  // If blog or documentation, return article excerpt.
+  if (page.layout === 'docs' || (page.layout === 'blog' && !page.blog_index)) {
     return striptags(page.excerpt).substring(0, 280);
   }
   // Else, return vanilla description.
