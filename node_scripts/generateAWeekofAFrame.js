@@ -49,7 +49,7 @@ function replaceTwitterEmbeds (content) {
  * @returns content
  */
 function replaceTwitterUsernames (content) {
-  const userRegex = /twitter(@.*?)(\s)/g;
+  const userRegex = /twitter(@.*?)([^\w\d]*\s)/g;
   let match = userRegex.exec(content);
   while (match !== null) {
     content = content.replace(
@@ -66,7 +66,7 @@ function replaceTwitterUsernames (content) {
  * @returns content
  */
 function replaceGithubUsernames (content) {
-  const userRegex = /github(@.*?)(\s)/g;
+  const userRegex = /github(@.*?)([^\w\d]*\s)/g;
   let match = userRegex.exec(content);
   while (match !== null) {
     content = content.replace(
