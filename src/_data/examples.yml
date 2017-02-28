@@ -16,8 +16,8 @@ showcase:
 
 - section: showcase
   slug: hello-metaverse
-  scene_url: https://ngokevin.github.io/kframe/components/text/examples/vaporwave/
-  source_url: https://github.com/ngokevin/kframe/blob/master/components/text/examples/vaporwave/index.html
+  scene_url: https://ngokevin.github.io/kframe/components/text-geometry/examples/vaporwave/
+  source_url: https://github.com/ngokevin/kframe/blob/master/components/text-geometry/examples/vaporwave/index.html
   title: Hello Metaverse
   supports:
     mobile: false
