@@ -1,7 +1,7 @@
 ---
 title: "A Week of A-Frame 48"
-from: 2017-2-10
-date: 2017-2-17
+from: 2017-02-10
+date: 2017-02-17
 layout: blog
 awoa: true
 ---

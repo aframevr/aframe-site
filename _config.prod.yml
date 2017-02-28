@@ -164,3 +164,20 @@ aframe_version: 0.5.0
 
 # Enable the Single-Page App.
 spa: false
+
+css_minifier:
+  enable: true
+
+html_minifier:
+  enable: true
+  exclude:
+  minifyJS: false
+
+# Disabled because `exclude` option doesn't work.
+js_minifier:
+  enable: false
+  exclude: '*aframe*.js'
+
+# Disabled because mozjpeg errors on OS X.
+image_minifier:
+  enable: false
