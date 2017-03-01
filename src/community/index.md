@@ -21,8 +21,14 @@ community a safe space for you.
 
 - [Documentation](https://aframe.io/docs/) - Official documentation and guides. If you get
   stuck anywhere, let us know!
+- [GitHub](https://github.com/aframevr/aframe) - A-Frame GitHub repository. Also check out
+  other projects in the [`aframevr` GitHub organization](https://github.com/aframevr). Star
+  the project if you like it!
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe) - The official place to
-  ask questions and get technical support.
+  ask questions and get technical support. Please first search for whether your
+  question has already already answered on the [FAQ](/faq/) or [Stack
+  Overflow](http://stackoverflow.com/questions/tagged/aframe), and put effort
+  into the question by providing context and code samples.
 
 ## News
 
@@ -112,6 +118,7 @@ awesome people you'll run across on your journey with A-Frame!
 
 ### Mozilla VR
 
+- [Blair MacIntyre](https://github.com/blairmacintyre)
 - [Casey Yee](https://github.com/caseyyee)
 - [Chris Van Wiemeersch](https://github.com/cvan)
 - [Daosheng Mu](https://github.com/daoshengmu)
@@ -119,9 +126,9 @@ awesome people you'll run across on your journey with A-Frame!
 
 ## WebVR
 
+- [webvr.rocks](https://webvr.rocks)
 - [Mozilla VR Team Page](https://mozvr.com)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
-- [iswebvrready.org](https://iswebvrready.org)
 
 ## Roadmap
 
@@ -130,7 +137,7 @@ awesome people you'll run across on your journey with A-Frame!
 
 ## Contributing
 
-A-Frame has had over 100 different contributors, a number that grows every
+A-Frame has had over 125 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
