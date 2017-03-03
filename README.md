@@ -51,13 +51,8 @@ bumpdocs` to try to pull the latest documentation from GitHub branches (e.g.,
 
 ## Deployment
 
-To deploy this to production (GitHub Pages):
-
-    npm run deploy
-
-This will push the site files to
-[aframevr/aframevr.github.io](https://github.com/aframevr/aframevr.github.io).
-It will soon be **[live](https://aframe.io/)**!
+Push changes to GitHub and [@a-frobot](https://github.com/a-frobot/) will
+automatically deploy the site.
 
 ## Search
 
