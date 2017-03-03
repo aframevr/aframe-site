@@ -16,3 +16,17 @@ aframe_lib:
   examples_url: http://localhost:9000/examples
   prod_home_url: https://aframe.io
   prod_examples_url: https://aframe.io/aframe/examples
+
+css_minifier:
+  enable: false
+
+html_minifier:
+  enable: false
+
+# Disabled because `exclude` option doesn't work.
+js_minifier:
+  enable: false
+
+# Disabled because mozjpeg errors on OS X.
+image_minifier:
+  enable: false
