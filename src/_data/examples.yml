@@ -43,14 +43,6 @@ showcase:
     mobile: false
 
 - section: showcase
-  slug: animation
-  scene_url: http://philipbell.org/lazerGlazer_Viz/
-  source_url: https://github.com/processprocess/lazerGlazer_Viz
-  title: Animation
-  supports:
-    mobile: false
-
-- section: showcase
   slug: anime-UI
   scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/anime-UI/index.html
