@@ -8,6 +8,7 @@ layout: index
   A web framework for building virtual reality experiences
 </h1>
 
-<h2 class="intro">
-  With HTML and Entity-Component ecosystem. Works on Vive, Rift, desktop, mobile platforms.
-</h2>
+<div class="intro">
+  <p>Make WebVR with HTML and Entity-Component</p>
+  <p>Works on Vive, Rift, desktop, mobile platforms</p>
+</div>
