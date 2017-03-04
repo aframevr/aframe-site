@@ -168,15 +168,15 @@ spa: false
 css_minifier:
   enable: true
 
+# Don't enable `minifyJS`, it breaks inline single JS quotes in HTML.
 html_minifier:
   enable: true
   exclude:
   minifyJS: false
 
-# Disabled because `exclude` option doesn't work.
+# Note: `exclude` option doesn't work.
 js_minifier:
-  enable: false
-  exclude: '*aframe*.js'
+  enable: true
 
 # Disabled because mozjpeg errors on OS X.
 image_minifier:
