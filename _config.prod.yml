@@ -5,7 +5,7 @@
 # Site.
 title: A-Frame
 subtitle: Make WebVR
-description: "A web framework for building virtual reality experiences. Make WebVR with HTML and the Entity-Component ecosystem. Works across HTC Vive, Oculus Rift, desktop, and mobile platforms."
+description: "A web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms."
 author: MozVR
 email: aframe@mozilla.com
 language:
