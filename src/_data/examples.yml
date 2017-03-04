@@ -5,7 +5,7 @@ home:
   slug: home
   scene_url: https://aframe.io/aframe/examples/animation/aframe-logo/?ui=false
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/animation/aframe-logo/index.html
-  title: A-Frame Logo Animation
+  title: Logo
 
 showcase:
 - section: showcase
@@ -43,6 +43,14 @@ showcase:
     mobile: false
 
 - section: showcase
+  slug: animation
+  scene_url: http://philipbell.org/lazerGlazer_Viz/
+  source_url: https://github.com/processprocess/lazerGlazer_Viz
+  title: Animation
+  supports:
+    mobile: false
+
+- section: showcase
   slug: anime-UI
   scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/anime-UI/index.html
@@ -57,11 +65,21 @@ showcase:
     mobile: false
 
 - section: showcase
+  slug: lights
+  scene_url: https://aframe.io/aframe/examples/showcase/dynamic-lights/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/dynamic-lights/index.html
+  title: Lights
+
+- section: showcase
   slug: shopping
-  scene_url: https://shopifyvr.myshopify.com/pages/virtual-reality
-  source_url: https://shopifyvr.myshopify.com/
-  title: ShopifyVR
-  disable_inspector: true
+  scene_url: https://aframe.io/aframe/examples/showcase/shopping/
+  source_url: https://github.com/aframevr/aframe/tree/master/examples/showcase/shopping
+  title: Shopping
+
+- section: showcase
+  slug: snowglobe
+  scene_url: http://2017.ronikdesign.com/
+  title: Snowglobe
   supports:
     mobile: false
 
@@ -87,7 +105,6 @@ showcase:
   title: A-Blast
   supports:
     controllers: true
-  disable_inspector: true
 
 - section: showcase
   slug: a-painter
@@ -96,4 +113,20 @@ showcase:
   title: A-Painter
   supports:
     controllers: true
-  disable_inspector: true
+
+- section: showcase
+  slug: city-builder
+  scene_url: https://kfarr.github.io/aframe-city-builder
+  source_url: https://github.com/kfarr/aframe-city-builder
+  title: City Builder
+  supports:
+    controllers: true
+    mobile: false
+
+- section: showcase
+  slug: museum
+  scene_url: https://cecropia.github.io/thehallaframe/
+  source_url: https://github.com/cecropia/thehallaframe/
+  title: Museum
+  supports:
+    controllers: true
