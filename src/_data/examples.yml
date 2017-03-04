@@ -77,13 +77,6 @@ showcase:
   title: Shopping
 
 - section: showcase
-  slug: snowglobe
-  scene_url: http://2017.ronikdesign.com/
-  title: Snowglobe
-  supports:
-    mobile: false
-
-- section: showcase
   slug: spheres-and-fog
   scene_url: https://aframe.io/aframe/examples/showcase/spheres-and-fog/
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/spheres-and-fog/index.html
