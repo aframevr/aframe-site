@@ -19,6 +19,7 @@ showcase:
   scene_url: https://ngokevin.github.io/kframe/components/text-geometry/examples/vaporwave/
   source_url: https://github.com/ngokevin/kframe/blob/master/components/text-geometry/examples/vaporwave/index.html
   title: Hello Metaverse
+  author: Ada Rose Edwards (@lady_ada_king)
   supports:
     mobile: false
 
@@ -41,6 +42,13 @@ showcase:
   title: 360&deg; Video
   supports:
     mobile: false
+
+- section: showcase
+  slug: animation
+  scene_url: /examples/animation/
+  source_url: https://github.com/processprocess/lazerGlazer_Viz
+  title: Animation
+  author: Philip Bell (http://philipbell.org/)
 
 - section: showcase
   slug: anime-UI
@@ -104,6 +112,7 @@ showcase:
   scene_url: https://kfarr.github.io/aframe-city-builder
   source_url: https://github.com/kfarr/aframe-city-builder
   title: City Builder
+  author: Kieran Farr (@kfarr)
   supports:
     controllers: true
     mobile: false
@@ -113,5 +122,6 @@ showcase:
   scene_url: https://cecropia.github.io/thehallaframe/
   source_url: https://github.com/cecropia/thehallaframe/
   title: Museum
+  author: Cecropia Solutions (@cecropia_s)
   supports:
     controllers: true

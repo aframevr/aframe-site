@@ -32,7 +32,10 @@
                 data-idx="<%= idx %>"
                 class="example-item subnav-item<%= className %>">
               <a href="<%= item.example_url %>"
-                 class="subnav-link<%= className %>">
+                 class="subnav-link<%= className %>"
+                 <% if (item.author) { %>
+                   title="By <%- item.author %>"
+                 <% } %>>
                 <span class="sidebar__link__text"><%- item.title %></span>
                 <% if (item.supports.controllers) { %>
                   <img class="example-tracked-controllers" src="/images/controllers.png" title="This example supports or requires tracked controllers.">
