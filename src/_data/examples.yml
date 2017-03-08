@@ -16,12 +16,10 @@ showcase:
 
 - section: showcase
   slug: hello-metaverse
-  scene_url: https://ngokevin.github.io/kframe/components/text-geometry/examples/vaporwave/
+  scene_url: /examples/hello-metaverse/
   source_url: https://github.com/ngokevin/kframe/blob/master/components/text-geometry/examples/vaporwave/index.html
   title: Hello Metaverse
   author: Ada Rose Edwards (@lady_ada_king)
-  supports:
-    mobile: false
 
 - section: showcase
   slug: sky
