@@ -123,3 +123,4 @@ showcase:
   author: Cecropia Solutions (@cecropia_s)
   supports:
     controllers: true
+    mobile: false
