@@ -11,8 +11,8 @@
 <% var pageTitle = page.title ? page.title + delimiter : '' %>
 <% pageTitle = page.full_title || (isHome ? projectTitle : pageTitle + config.title) %>
 
-<% var metaImage = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) + 'v2') %>
-<% var metaImageSecure = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: true}) + 'v2') %>
+<% var metaImage = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) + '?v2') %>
+<% var metaImageSecure = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: true}) + '?v2') %>
 
 <!DOCTYPE html>
 <html lang="en"
