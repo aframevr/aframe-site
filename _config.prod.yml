@@ -181,3 +181,12 @@ js_minifier:
 # Disabled because mozjpeg errors on OS X.
 image_minifier:
   enable: false
+
+keywords:
+  - webvr
+  - webvr framework
+  - webvr javascript
+  - webvr library
+  - vr javascript
+  - vr framework
+  - vr library

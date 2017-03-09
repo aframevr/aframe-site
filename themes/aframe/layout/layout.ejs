@@ -38,6 +38,7 @@
     <meta name="robots"
       content="<%- docs_active_version(page) === config.aframe_version ? config.robots : 'NOINDEX' %>">
     <meta name="description" content="<%= meta_description(page) %>">
+    <meta name="keywords" content="<%= config.keywords.join(',') %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="<%= config.url %>">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
