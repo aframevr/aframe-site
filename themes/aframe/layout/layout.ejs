@@ -31,7 +31,7 @@
       data-aframe-version="<%= config.aframe_version %>"
       data-docs-version="<%= docs_active_version(page) %>">
   <head>
-    <title><%- pageTitle %></title>
+    <title><%- pageTitle.replace('<', '&lt;') %></title>
     <%- partial('partials/force_https') %>
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
