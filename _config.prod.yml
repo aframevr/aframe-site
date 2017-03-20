@@ -170,7 +170,7 @@ css_minifier:
 
 # Don't enable `minifyJS`, it breaks inline single JS quotes in HTML.
 html_minifier:
-  enable: true
+  enable: false
   exclude:
   minifyJS: false
 
