@@ -32,6 +32,7 @@ hexo.extend.generator.register('community-short-url-redirects', function () {
     ['github/', hexo.config.github.aframe.url],
     ['repo/', hexo.config.github.aframe.url],
     ['registry/', 'aframe-registry/'],
+    ['school/', 'aframe-school/'],
 
     ['twitter/', hexo.config.twitter.url],
 
