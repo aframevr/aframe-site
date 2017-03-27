@@ -4,6 +4,8 @@ from: 2017-3-17
 date: 2017-3-24
 layout: blog
 awoa: true
+image:
+  src: https://cloud.githubusercontent.com/assets/674727/24377189/5753486e-12f3-11e7-9c99-de4ceab78ab9.png
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
