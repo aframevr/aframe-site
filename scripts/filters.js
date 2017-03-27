@@ -42,6 +42,11 @@ hexo.extend.filter.register('after_render:json', function (obj, data) {
   });
 });
 
+hexo.extend.filter.register('before_post_render', function (data) {
+  data.content = data.content.replace('<!--toc-->', '<div id="toc"></div>');
+  return data;
+});
+
 hexo.extend.filter.register('after_render:html', function (str, data) {
   str = convertProdToDevUrls.bind(this)(str);
 
@@ -50,5 +55,6 @@ hexo.extend.filter.register('after_render:html', function (str, data) {
       return 'href="' + fixMarkdownLink(p1) + '"';
     });
   }
+  str = str.replace('<div id="toc"></div>', '<!--toc-->');
   return str;
 });
