@@ -106,6 +106,15 @@ showcase:
     controllers: true
 
 - section: showcase
+  slug: a-saturday-night
+  scene_url: https://aframe.io/a-saturday-night/
+  source_url: https://github.com/aframevr/a-saturday-night/
+  title: A Saturday Night
+  supports:
+    controllers: true
+    mobile: true
+
+- section: showcase
   slug: city-builder
   scene_url: https://kfarr.github.io/aframe-city-builder
   source_url: https://github.com/kfarr/aframe-city-builder
