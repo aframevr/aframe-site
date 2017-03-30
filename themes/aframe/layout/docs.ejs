@@ -59,7 +59,9 @@
       </p>
       <%- partial('partials/search_field', {location: 'docs'}) %>
     </div>
-    <h1 class="page__title"><%= page.title %></h1>
+    <h1 class="page__title">
+      <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
+    </h1>
 
     <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
     <% if (activeVersion === 'master') { %>
