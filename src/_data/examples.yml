@@ -11,13 +11,13 @@ showcase:
 - section: showcase
   slug: helloworld
   scene_url: https://aframe.io/aframe/examples/boilerplate/hello-world/
-  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/boilerplate/hello-world/index.html
+  source_url: https://glitch.com/~aframe
   title: Hello WebVR
 
 - section: showcase
   slug: hello-metaverse
   scene_url: /examples/hello-metaverse/
-  source_url: https://github.com/ngokevin/kframe/blob/master/components/text-geometry/examples/vaporwave/index.html
+  source_url: https://glitch.com/~aframe-vaporwave
   title: Hello Metaverse
   author: Ada Rose Edwards (@lady_ada_king)
 
@@ -30,7 +30,7 @@ showcase:
 - section: showcase
   slug: 360-image-gallery
   scene_url: https://aframe.io/360-image-gallery-boilerplate/
-  source_url: https://github.com/aframevr/360-image-gallery-boilerplate/blob/master/index.html
+  source_url: https://glitch.com/~aframe-gallery
   title: 360&deg Image Gallery
 
 - section: showcase
