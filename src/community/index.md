@@ -115,6 +115,7 @@ awesome people you'll run across on your journey with A-Frame!
 - [Don McCurdy](https://github.com/donmccurdy)
 - [Fabien Benetou](https://github.com/utopiah)
 - [Michael Chen](https://github.com/machenmusik)
+- [Takahiro Aoyagi](https://github.com/takahirox)
 
 ### Mozilla VR
 
