@@ -116,7 +116,7 @@ showcase:
 
 - section: showcase
   slug: city-builder
-  scene_url: https://kfarr.github.io/aframe-city-builder
+  scene_url: https://aframe.city/#NewYington
   source_url: https://github.com/kfarr/aframe-city-builder
   title: City Builder
   author: Kieran Farr (@kfarr)
