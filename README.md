@@ -8,6 +8,10 @@ the [`src/`](src/) directory). Pull requests are welcome!
 
 ## Local Development
 
+Clone [this repository](https://github.com/aframevr/aframe-site):
+
+    git clone git@github.com:aframevr/aframe-site.git && cd aframe-site
+
 To install the dependencies and start the local development server:
 
     npm install && npm run installdocs && npm start
@@ -47,11 +51,11 @@ soft symbolic link, to the documentation installed in
 
 Old versions of documentation are handled through `multidep.json`. Run `npm run
 bumpdocs` to try to pull the latest documentation from GitHub branches (e.g.,
-`aframevr/aframe#docs-v0.3.0).
+`aframevr/aframe#docs-v0.3.0`).
 
 ## Deployment
 
-Push changes to GitHub and [@a-frobot](https://github.com/a-frobot/) will
+Push changes to GitHub, and [@a-frobot](https://github.com/a-frobot/) will
 automatically deploy the site.
 
 ## Search
