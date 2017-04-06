@@ -4,7 +4,7 @@ author: twitter|andgokevin|Kevin Ngo
 date: 2017-4-05
 layout: blog
 image:
-  src: mocap.jpg
+  src: https://cloud.githubusercontent.com/assets/674727/24762741/18e56a68-1aa4-11e7-938b-da056c32c8bc.jpg
 ---
 
 > Read about [the initial release of the A-Frame Motion Capture Components and

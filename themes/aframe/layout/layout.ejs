@@ -11,8 +11,13 @@
 <% var pageTitle = page.title ? page.title + delimiter : '' %>
 <% pageTitle = page.full_title || (isHome ? projectTitle : pageTitle + config.title) %>
 
-<% var metaImage = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) + '?v2') %>
-<% var metaImageSecure = (page.image && page.image.src) || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: true}) + '?v2') %>
+<% src = page.image && page.image.src %>
+<% if (src && src.indexOf('http') === -1) { %>
+  <% src = absolute_url_for('/images/blog/' + src); %>
+<% } %>
+
+<% var metaImage = src || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: false}) + '?v2') %>
+<% var metaImageSecure = src || (absolute_url_for(meta_image(page, 'images/card.jpg'), {secure: true}) + '?v2') %>
 
 <!DOCTYPE html>
 <html lang="en"
