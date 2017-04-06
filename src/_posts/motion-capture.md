@@ -35,6 +35,8 @@ actions, on any device from anywhere without a headset.
 
 <!-- more -->
 
+<!--toc-->
+
 ## Motion Capture Makes VR Developer Lives Easier
 
 ![Rapid Development](https://cloud.githubusercontent.com/assets/674727/24733615/9cb99dae-1a2d-11e7-85e3-a75d6c06bb91.gif)
@@ -91,7 +93,10 @@ for more information. Here's how to set up the recording:
 6. Press `<space>` to stop recording
 7. Save the recording JSON file or upload it by hitting `u` to get a short URL to share between computers
 
-Now we can replay the recording.
+Now we can replay the recording. You can try recording the camera with WASD and
+mouse drag controls right now on a desktop. Head to the [Record
+Example](http://dmarcos.github.io/aframe-motion-capture-components/), open the
+browser Console to get feedback, and hit `<space>` to start and stop recording!
 
 ## How to Replay
 
