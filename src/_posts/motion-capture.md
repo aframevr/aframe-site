@@ -98,6 +98,9 @@ mouse drag controls right now on a desktop. Head to the [Record
 Example](http://dmarcos.github.io/aframe-motion-capture-components/), open the
 browser Console to get feedback, and hit `<space>` to start and stop recording!
 
+
+![Record](https://cloud.githubusercontent.com/assets/674727/24766726/3d660b7e-1ab1-11e7-9f64-d97b5732ec43.gif)
+
 ## How to Replay
 
 By default, the recording will also be saved and replayed from localStorage. If
