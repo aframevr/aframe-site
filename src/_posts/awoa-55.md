@@ -4,6 +4,8 @@ from: 2017-3-31
 date: 2017-4-07
 layout: blog
 awoa: true
+image:
+  src: https://cloud.githubusercontent.com/assets/674727/24875058/aa17daf4-1ddb-11e7-939d-b0786648cf98.png
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -14,7 +16,8 @@ to [Michael Chen](https://twitter.com/machenmusik/)! From there, we're starting
 on ambitious projects to lay the foundations of a Metaverse with A-Frame.
 
 <div class="tweets tweets-feature">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">V1.0! With 3D support via <a href="https://twitter.com/aframevr">@aframevr</a> &amp; cannonjs physics = Sprocket League: multiplayer ⚽🚗 demo :)<br> <a href="https://t.co/35Dnl6E0OJ">https://t.co/35Dnl6E0OJ</a> <a href="https://twitter.com/hashtag/indiedev?src=hash">#indiedev</a> <a href="https://twitter.com/hashtag/gamedev?src=hash">#gamedev</a> <a href="https://t.co/f3ue6k61gu">pic.twitter.com/f3ue6k61gu</a></p>&mdash; Lance Game Server (@LanceGG_) <a href="https://twitter.com/LanceGG_/status/849980748920745984">April 6, 2017</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sprocket League: our ð multiplayer demoâ½ð<a href="https://twitter.com/LanceGG_">@LanceGG_</a> <a href="https://twitter.com/aframevr">@aframevr</a>  <a href="https://twitter.com/nodejs">@nodejs</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/gamedev?src=hash">#gamedev</a> <a href="https://twitter.com/hashtag/indiedev?src=hash">#indiedev</a> <a href="https://twitter.com/hashtag/webdev?src=hash">#webdev</a> <a href="https://t.co/ejeJ5u4kmo">https://t.co/ejeJ5u4kmo</a> <a href="https://t.co/tfQ0niX13S">pic.twitter.com/tfQ0niX13S</a></p>&mdash; Opher Vishnia (@Opherv) <a href="https://twitter.com/Opherv/status/849985372914413569">April 6, 2017</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">More tests with glTF2.0 in <a href="https://twitter.com/aframevr">@aframevr</a> + <a href="https://twitter.com/hashtag/threejs?src=hash">#threejs</a><br>(Model by Alexander Drews.) <a href="https://t.co/Htrmtmy9X4">pic.twitter.com/Htrmtmy9X4</a></p>&mdash; Don McCurdy (@donrmccurdy) <a href="https://twitter.com/donrmccurdy/status/848580953953902592">April 2, 2017</a></blockquote>
 
