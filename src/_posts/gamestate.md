@@ -17,6 +17,7 @@ bring these ideas of state management into A-Frame's DOM-based entity-component
 architecture.
 
 <!--toc-->
+
 <!--more-->
 
 ## Initial Approach with Redux
