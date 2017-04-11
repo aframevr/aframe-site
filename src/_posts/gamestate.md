@@ -392,4 +392,4 @@ If you want to see various source code for implementations of game states:
 - [Architect `gamestate`](https://github.com/ngokevin/architect/blob/master/components/gamestate.js)
 
 Whatever becomes the ultimate approach to game state will become the Oracle of
-the Metaverse.
+the Metaverse!
