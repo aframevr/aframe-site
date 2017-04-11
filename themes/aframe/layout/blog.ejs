@@ -7,7 +7,8 @@
       <% site.posts.sort('-date').forEach(function (post) { %>
         <li class="subnav-item <%= post.title === page.title ? ' subnav-item-current' : '' %>">
           <a href="<%- page_url(post.path) %>"
-             class="subnav-link<%= post.title === page.title ? ' current' : '' %>">
+             class="subnav-link<%= post.title === page.title ? ' current' : '' %>"
+             title="<%- post.title %>">
             <%- post.title %>
           </a>
         </li>
