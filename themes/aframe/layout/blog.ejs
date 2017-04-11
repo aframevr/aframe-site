@@ -88,7 +88,15 @@
           <%- partial('partials/blog/image', {image: page.image, title: page.title}) %>
         <% } %>
 
-        <%- page.content %>
+        <% var contents = page.content.replace(/\<!--\s*toc\s*-->/gi,
+                                               '<!--toc-->').split('<!--toc-->'); %>
+        <% if (contents.length > 1) { %>
+          <%- contents[0] %>
+          <%- partial('partials/toc', {page: page}) %>
+          <%- contents[1] %>
+        <% } else { %>
+          <%- page.content %>
+        <% } %>
 
         <% if (page.awoa) { %>
           <%- partial('partials/blog/awoa_projects_text', {projects: page.awoa.projects}) %>
