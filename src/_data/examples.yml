@@ -139,3 +139,13 @@ showcase:
   supports:
     controllers: true
     mobile: false
+
+- section: showcase
+  slug: musical-forest
+  scene_url: https://forest.webvrexperiments.com/
+  source_url: https://github.com/googlecreativelab/webvr-musicalforest
+  title: Musical Forest
+  author: Google Creative Labs
+  supports:
+    controllers: true
+    mobile: false
