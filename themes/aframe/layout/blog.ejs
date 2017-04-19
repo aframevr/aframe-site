@@ -7,7 +7,8 @@
       <% site.posts.sort('-date').forEach(function (post) { %>
         <li class="subnav-item <%= post.title === page.title ? ' subnav-item-current' : '' %>">
           <a href="<%- page_url(post.path) %>"
-             class="subnav-link<%= post.title === page.title ? ' current' : '' %>">
+             class="subnav-link<%= post.title === page.title ? ' current' : '' %>"
+             title="<%- post.title %>">
             <%- post.title %>
           </a>
         </li>
@@ -88,7 +89,15 @@
           <%- partial('partials/blog/image', {image: page.image, title: page.title}) %>
         <% } %>
 
-        <%- page.content %>
+        <% var contents = page.content.replace(/\<!--\s*toc\s*-->/gi,
+                                               '<!--toc-->').split('<!--toc-->'); %>
+        <% if (contents.length > 1) { %>
+          <%- contents[0] %>
+          <%- partial('partials/toc', {page: page}) %>
+          <%- contents[1] %>
+        <% } else { %>
+          <%- page.content %>
+        <% } %>
 
         <% if (page.awoa) { %>
           <%- partial('partials/blog/awoa_projects_text', {projects: page.awoa.projects}) %>

@@ -1,9 +1,14 @@
 <% if (image) { %>
+  <% src = image.src; %>
+  <% if (src.indexOf('http') === -1) { %>
+    <% var src = '/images/blog/' + image.src; %>
+  <% } %>
+
   <% if (image.href) { %>
     <a class="post__image borderless-link" href="<%= image.href %>">
-      <img src="/images/blog/<%= image.src %>" alt="<%= title %>">
+      <img src="<%= src %>" alt="<%= title %>">
     </a>
   <% } else {%>
-    <img src="/images/blog/<%= image.src %>" alt="<%= title %>">
+    <img src="<%= src %>" alt="<%= title %>">
   <% } %>
 <% } %>

@@ -75,6 +75,12 @@ showcase:
   title: Shopping
 
 - section: showcase
+  slug: snowglobe
+  scene_url: https://2017.ronikdesign.com/?camera=fps
+  author: Ronik Design (@ronikdesign)
+  title: Snowglobe
+
+- section: showcase
   slug: spheres-and-fog
   scene_url: https://aframe.io/aframe/examples/showcase/spheres-and-fog/
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/spheres-and-fog/index.html
@@ -116,7 +122,7 @@ showcase:
 
 - section: showcase
   slug: city-builder
-  scene_url: https://kfarr.github.io/aframe-city-builder
+  scene_url: https://aframe.city/#NewYington
   source_url: https://github.com/kfarr/aframe-city-builder
   title: City Builder
   author: Kieran Farr (@kfarr)
