@@ -4,6 +4,8 @@ from: 2017-4-14
 date: 2017-4-21
 layout: blog
 awoa: true
+image:
+  src: https://cloud.githubusercontent.com/assets/674727/25268904/5e6d834a-262f-11e7-8bc3-42ffd873c20a.png
 ---
 
 Several bug fixes landed for tracked controllers. [Link traversal
