@@ -136,9 +136,6 @@ ul {
 .example__iframe {
   display: block;
 }
-.example-nav {
-  margin-top: 3rem;
-}
 .example-nav-link {
   border: 0;
   height: 100%;
@@ -355,4 +352,32 @@ a.mozilla-logo:hover {
   position: relative;
   top: 4px;
   width: 20px;
+}
+
+.blog-list {
+  display: none;
+  padding-bottom: 10px;
+  +media--desktop() {
+    display: block;
+  }
+}
+
+.blog-list .page-title a {
+  border-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(0,0,0,0.6);
+  font-weight: 100;
+  letter-spacing: 0.02em;
+}
+
+.blog-list .subnav-link {
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.example-nav {
+  margin-top: 18px;
 }

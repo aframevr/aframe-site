@@ -10,5 +10,5 @@ layout: index
 
 <div class="intro">
   <p>Make WebVR with HTML and Entity-Component</p>
-  <p>Works on Vive, Rift, desktop, mobile platforms</p>
+  <p>Works on Vive, Rift, Daydream, GearVR, desktop</p>
 </div>

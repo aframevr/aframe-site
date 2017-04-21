@@ -81,12 +81,6 @@ showcase:
   title: Snowglobe
 
 - section: showcase
-  slug: spheres-and-fog
-  scene_url: https://aframe.io/aframe/examples/showcase/spheres-and-fog/
-  source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/spheres-and-fog/index.html
-  title: Spheres & Fog
-
-- section: showcase
   slug: tracked-controllers
   scene_url: https://aframe.io/aframe/examples/showcase/tracked-controls/
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/showcase/tracked-controls/index.html
