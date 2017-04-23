@@ -170,7 +170,7 @@ css_minifier:
 
 # Don't enable `minifyJS`, it breaks inline single JS quotes in HTML.
 html_minifier:
-  enable: false 
+  enable: false
   exclude:
   minifyJS: false
 
@@ -189,3 +189,9 @@ keywords:
   - webvr sites
   - vr javascript
   - vr framework
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: false
+  localEmojis:
