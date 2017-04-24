@@ -76,12 +76,12 @@ AFRAME.registerReducer('counter', {
     switch (action.type) {
       case this.actions.INCREASE: {
         var newState = Object.assign({}, state);
-        newState.number++;
+        newState.value++;
         return newState;
       }
       case this.actions.DECREASE: {
         var newState = Object.assign({}, state);
-        newState.number--;
+        newState.value--;
         return newState;
       }
     }
@@ -99,7 +99,7 @@ The Redux component then provided a data-binding component to bind state to
 A-Frame entities:
 
 ```html
-<a-entity redux="counter.number: text.value"></a-entity>
+<a-entity redux="counter.value: text.value"></a-entity>
 ```
 
 The Redux component seems very usable with A-Frame. If I were to build a larger
