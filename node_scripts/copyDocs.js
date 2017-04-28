@@ -23,7 +23,9 @@ fs.readFile(specPath, 'utf8', function (err, data) {
     let source = '.multidep/aframe-' + version + '/node_modules/aframe/docs';
     let dest = 'src/docs/' + version;
     // Clear the destination in case files were moved or deleted.
-    rmdir(dest, function () {
+    rmdir(dest, function (err, dirs, files) {
+      if (err) { console.error(err); }
+      console.log('Deleted', dest);
       copy(source, dest, {overwrite: true}, function (error, results) {
         if (error) {
           console.error('Copy failed: ' + error);
@@ -38,10 +40,15 @@ fs.readFile(specPath, 'utf8', function (err, data) {
 // Copy master.
 source = 'node_modules/aframe/docs';
 dest = 'src/docs/master';
-copy(source, dest, {overwrite: true}, function (error, results) {
-  if (error) {
-    console.error('Copy failed: ' + error);
-  } else {
-    console.info(`Copied ${results.length} documentation pages to ${dest}`);
-  }
+// Clear the destination in case files were moved or deleted.
+rmdir(dest, function (err) {
+  if (err) { console.error(err); }
+  console.log('Deleted', dest);
+  copy(source, dest, {overwrite: true}, function (error, results) {
+    if (error) {
+      console.error('Copy failed: ' + error);
+    } else {
+      console.info(`Copied ${results.length} documentation pages to ${dest}`);
+    }
+  });
 });
