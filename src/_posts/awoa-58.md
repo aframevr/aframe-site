@@ -93,6 +93,8 @@ image:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s called &quot;Heavens&quot; for a reason 😜 — Mozilla <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> Workshop is at full throttle @ <a href="https://twitter.com/AMazeFest">@AMazeFest</a> Berlin <a href="https://twitter.com/hashtag/devroadshow?src=hash">#devroadshow</a>!<br>Come hack on <a href="https://twitter.com/hashtag/aframe?src=hash">#aframe</a>! <a href="https://t.co/5ixpqfQuOH">pic.twitter.com/5ixpqfQuOH</a></p>&mdash; Mozilla Hacks (@mozhacks) <a href="https://twitter.com/mozhacks/status/857539528323715072">April 27, 2017</a></blockquote>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Slides for the &quot;Augmented Reality With WebVR&quot; workshop at <a href="https://twitter.com/mozillavr">@mozillavr</a>. Thx <a href="https://twitter.com/utopiah">@utopiah</a>, <a href="https://twitter.com/mathemagie">@mathemagie</a> for organizingð <a href="https://twitter.com/hashtag/AR?src=hash">#AR</a> <a href="https://t.co/Isn00LmgDS">https://t.co/Isn00LmgDS</a> <a href="https://t.co/gnIb6iKh1n">pic.twitter.com/gnIb6iKh1n</a></p>&mdash; Jerome Etienne (@jerome_etienne) <a href="https://twitter.com/jerome_etienne/status/857549922404634624">April 27, 2017</a></blockquote>
+
 </div>
 
 ## Miscellaneous
