@@ -29,7 +29,6 @@ community a safe space for you.
   question has already already answered on the [FAQ](/faq/) or [Stack
   Overflow](http://stackoverflow.com/questions/tagged/aframe), and put effort
   into the question by providing context and code samples.
-- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh) - Community forum for WebVR / A-Frame. You can ask / answer questions here in Chinese or English. 
 
 ## News
 
@@ -84,7 +83,7 @@ published components:
 
 ## User Groups, Events, Meetups
 
-Have a local user group or do frequent meetups? This is a work-in-progress list
+Have a user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
 
 - [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
@@ -93,6 +92,7 @@ so Let us know to list them here!
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
 - [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
+- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh) - Community forum for WebVR / A-Frame. You can ask / answer questions here in Chinese or English.
 
 Are you holding an event? Below are some resources:
 
