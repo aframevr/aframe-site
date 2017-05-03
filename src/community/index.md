@@ -86,13 +86,13 @@ published components:
 Have a user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
 
+- [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
 - [Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
-- [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
-- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh) - Community forum for WebVR / A-Frame. You can ask / answer questions here in Chinese or English.
+- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
 
 Are you holding an event? Below are some resources:
 
@@ -140,7 +140,7 @@ awesome people you'll run across on your journey with A-Frame!
 
 ## Contributing
 
-A-Frame has had over 125 different contributors, a number that grows every
+A-Frame has had over 155 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
