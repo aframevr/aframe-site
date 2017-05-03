@@ -39,7 +39,7 @@ showcase:
   source_url: https://github.com/aframevr/aframe/blob/v0.5.0/examples/boilerplate/360-video/index.html
   title: 360&deg; Video
   supports:
-    mobile: false
+    mobile: true
 
 - section: showcase
   slug: animation
