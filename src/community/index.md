@@ -109,12 +109,12 @@ awesome people you'll run across on your journey with A-Frame!
 
 - [Diego Goberna](https://github.com/feiss)
 - [Diego Marcos](https://github.com/dmarcos)
+- [Don McCurdy](https://github.com/donmccurdy)
 - [Fernando Serrano](https://github.com/fernandojsg)
 - [Kevin Ngo](https://github.com/ngokevin)
 
 ### Contributors
 
-- [Don McCurdy](https://github.com/donmccurdy)
 - [Fabien Benetou](https://github.com/utopiah)
 - [Michael Chen](https://github.com/machenmusik)
 - [Takahiro Aoyagi](https://github.com/takahirox)
