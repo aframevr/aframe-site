@@ -24,10 +24,7 @@
 
       <!-- Section title. -->
       <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>">
-        <a href="<%- page_url('docs/' + activeVersion + '/' + section.type + '/') %>"
-           class="section-title-link<%= page.type === section.type ? ' section-title-link-active' : ' section-title-link-inactive' %>">
-          <%= section.section_title %>
-        </a>
+        <p class="section-title-link"><%= section.section_title %></p>
       </h3>
 
       <!-- Section links. -->

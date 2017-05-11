@@ -79,7 +79,14 @@ hexo.extend.generator.register('docs-redirects', function () {
     ['docs/guide/positioning.html', 'docs/0.2.0/guides/building-a-basic-scene.html#transforming-the-box'],
     ['docs/primitives/a-cube.html', 'docs/0.2.0/primitives/a-box.html'],
     ['docs/primitives/a-model.html', 'docs/0.2.0/primitives/a-collada-model.html'],
-    ['docs/0.5.0/guides/building-with-components.html', 'docs/0.5.0/guides/building-a-360-image-gallery.html']
+    ['docs/0.5.0/guides/building-with-components.html', 'docs/0.5.0/guides/building-a-360-image-gallery.html'],
+    ['docs/0.5.0/introduction/getting-started.html', 'docs/0.5.0/introduction/'],
+    ['docs/0.5.0/introduction/device-and-platform-support.html', 'docs/0.5.0/introduction/vr-headsets-and-webvr-browsers.html'],
+    ['docs/0.5.0/guides/using-the-aframe-inspector.html', 'docs/0.5.0/introduction/visual-inspector-and-dev-tools.html'],
+    ['docs/0.5.0/guides/using-javascript-and-dom-apis.html', 'docs/0.5.0/introduction/javascript-events-dom-apis.html'],
+    ['docs/0.5.0/guides/using-with-threejs.html', 'docs/0.5.0/introduction/developing-with-threejs.html'],
+    ['docs/0.5.0/guides/writing-a-component.html', 'docs/0.5.0/introduction/writing-a-component.html'],
+    ['docs/0.5.0/primitives/', 'docs/0.5.0/introduction/html-and-primitives.html']
   ]);
 
   // Flatten arrays since `redirectObjs` is an array of arrays of arrays. We just want a flat
