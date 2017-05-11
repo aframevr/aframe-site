@@ -86,7 +86,8 @@ hexo.extend.generator.register('docs-redirects', function () {
     ['docs/0.5.0/guides/using-javascript-and-dom-apis.html', 'docs/0.5.0/introduction/javascript-events-dom-apis.html'],
     ['docs/0.5.0/guides/using-with-threejs.html', 'docs/0.5.0/introduction/developing-with-threejs.html'],
     ['docs/0.5.0/guides/writing-a-component.html', 'docs/0.5.0/introduction/writing-a-component.html'],
-    ['docs/0.5.0/primitives/', 'docs/0.5.0/introduction/html-and-primitives.html']
+    ['docs/0.5.0/primitives/', 'docs/0.5.0/introduction/html-and-primitives.html'],
+    ['docs/0.5.0/core/', 'docs/0.5.0/introduction/entity-component-system.html']
   ]);
 
   // Flatten arrays since `redirectObjs` is an array of arrays of arrays. We just want a flat
