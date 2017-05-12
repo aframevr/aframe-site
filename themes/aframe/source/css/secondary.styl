@@ -110,8 +110,8 @@ a
 .content
     display flex
     flex 1
-    flex-direction column
     padding-top 60px
+    position relative
 
     +media--desktop()
         padding-left 280px  // Fixed sidebar.
@@ -537,3 +537,30 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
 
   p
     max-width 700px
+
+#table-of-contents
+    display none
+    +media--desktop()
+        display block
+
+    left 980px
+    padding-top 40px
+    position fixed
+    width 320px
+    .section-title
+        margin 0
+        padding-top 0
+    > ul
+        margin-left 0
+        margin-top 0
+        padding-left 0
+    ul
+        list-style none
+    li
+        padding 0
+    a
+        border-bottom 0
+        max-width 100%
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap

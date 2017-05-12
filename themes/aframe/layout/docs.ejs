@@ -67,15 +67,7 @@
       <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
     <% } %>
 
-    <% var contents = page.content.replace(/\<!--\s*toc\s*-->/gi,
-                                           '<!--toc-->').split('<!--toc-->'); %>
-    <% if (contents.length > 1) { %>
-      <%- contents[0] %>
-      <%- partial('partials/toc', {page: page}) %>
-      <%- contents[1] %>
-    <% } else { %>
-      <%- page.content %>
-    <% } %>
+    <%- page.content %>
 
     <!-- Previous / Next navigation. -->
     <footer class="footer guide-links c">
@@ -93,4 +85,6 @@
 
     <%- partial('partials/docs/footer', {item: page}) %>
   </div>
+
+  <%- partial('partials/toc', {page: page}) %>
 </div>

@@ -1,22 +1,24 @@
 <% var toc = table_of_contents(page.content); %>
 
-<% if (toc.length) { %>
-  <h2 id="toc">Table of Contents</h2>
+<div id="table-of-contents">
+  <p class="section-title docs-section-title">Table of Contents</p>
 
-  <ul>
+  <ul class="subnav">
     <% toc.forEach(function (item) { %>
-      <li>
-        <a href="<%- item.href %>"><%= item.title %></a>
+      <li class="subnav-item">
+        <a class="subnav-link" href="<%- item.href %>"><%= item.title %></a>
 
         <!-- Nested. -->
         <% if (item.children) { %>
           <ul>
             <% item.children.forEach(function (innerItem) { %>
-              <li><a href="<%- innerItem.href %>"><%= innerItem.title %></a></li>
+              <li class="subnav-item">
+                <a class="subnav-link" href="<%- innerItem.href %>"><%= innerItem.title %></a>
+              </li>
             <% }); %>
           </ul>
         <% } %>
       </li>
     <% }); %>
   </ul>
-<% } %>
+</div>
