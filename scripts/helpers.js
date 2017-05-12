@@ -46,6 +46,7 @@ hexo.extend.helper.register('table_of_contents', function (content) {
     // Get H3s. Loop until we hit an H2 or until no more siblings.
     var links = $h2.nextUntil('h2', 'h3').find('a');
     for (var i = 0; i < links.length; i++) {
+      if (links[i].attribs.href.indexOf('#') !== 0) { continue; }
       item.children.push({
         title: links[i].attribs.title,
         href: links[i].attribs.href.toLowerCase()
