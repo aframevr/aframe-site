@@ -77,6 +77,8 @@
   }
 
   function initTableOfContents () {
+    if (!document.querySelector('#table-of-contents')) { return; }
+
     // Sort sections by their offsets and grab reference to table of contents link.
     var sectionScrolls = [];
     $$('.content h2, .content h3').forEach(function (heading) {
@@ -85,6 +87,9 @@
         document.querySelector('#table-of-contents [href="#' + heading.getAttribute('id') + '"]')
       ]);
     });
+
+    if (!sectionScrolls.length) { return; }
+
     sectionScrolls.sort(function (a, b) {
       if (a[0] < b[0]) { return -1; }
       if (a[0] > b[0]) { return 1; }

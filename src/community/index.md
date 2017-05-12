@@ -2,6 +2,7 @@
 title: Community
 type: community
 layout: page
+toc: true
 ---
 
 A-Frame's greatest strength is in enabling an ecosystem and the community of

@@ -228,15 +228,6 @@ a
     p
       margin 0
 
-.content--blog
-    font-size 17px;
-    .page__section
-        margin-top 0
-    .copy__wrap p
-        line-height 1.7
-    h1
-        margin-bottom 0
-
 .content--blog h1 + .post--listing
     margin-top 9px  /* To align the borders nicely since there's no visible <h1>. */
 
@@ -556,6 +547,8 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
         padding-left 0
     ul
         list-style none
+    ul + ul
+        margin-left 0
     li
         padding 0
     a
