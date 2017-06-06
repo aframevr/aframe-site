@@ -30,6 +30,8 @@ being made to the Link Traversal and Laser Control PRs.
 ## Projects
 
 <div class="tweets">
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Made a webVR video player using ð°ï¸ <a href="https://twitter.com/aframevr">@aframevr</a> today! ð<br>Check it out:<br>ð <a href="https://t.co/pXSNZ9Wu6u">https://t.co/pXSNZ9Wu6u</a> <a href="https://t.co/pY5FEf6yvc">pic.twitter.com/pY5FEf6yvc</a></p>&mdash; Etienne Pinchon (@EtiennePinchon) <a href="https://twitter.com/EtiennePinchon/status/869608966682234885">May 30, 2017</a></blockquote>
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash">#screenshotsaturday</a> from a two-person VR experience (<a href="https://twitter.com/mozillavr">@mozillavr</a> <a href="https://twitter.com/aframevr">@aframevr</a>) that I made. <a href="https://twitter.com/Google">@Google</a> Daydream controller made into a comm link! <a href="https://t.co/ZzLI3Wh9uI">pic.twitter.com/ZzLI3Wh9uI</a></p>&mdash; Zach C (@zachcaceres) <a href="https://twitter.com/zachcaceres/status/869724933370388480">May 31, 2017</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now we&#39;re able to livestream 360 videos from the Eyevinn lab using <a href="https://twitter.com/aframevr">@aframevr</a> and <a href="https://twitter.com/wowzamedia">@wowzamedia</a> <a href="https://t.co/8riVP5LC7v">https://t.co/8riVP5LC7v</a> <a href="https://twitter.com/hashtag/streaming?src=hash">#streaming</a> <a href="https://twitter.com/hashtag/vr?src=hash">#vr</a></p>&mdash; Magnus Svensson (@Svensson00) <a href="https://twitter.com/Svensson00/status/870664310208507905">June 2, 2017</a></blockquote>
@@ -45,11 +47,6 @@ being made to the Link Traversal and Laser Control PRs.
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How cool brows <a href="https://twitter.com/hashtag/YouTube?src=hash">#YouTube</a> &amp; <a href="https://twitter.com/hashtag/Facebook?src=hash">#Facebook</a> in <a href="https://twitter.com/hashtag/VR?src=hash">#VR</a> with <a href="https://twitter.com/UbiverIO">@UbiverIO</a> <a href="https://twitter.com/hashtag/WebVR?src=hash">#WebVR</a> <a href="https://twitter.com/hashtag/app?src=hash">#app</a> <a href="https://twitter.com/aframevr">@aframevr</a> <a href="https://t.co/9TWlb4gaqX">pic.twitter.com/9TWlb4gaqX</a></p>&mdash; HEADGEAR (@headgearIO) <a href="https://twitter.com/headgearIO/status/869031045773094912">May 29, 2017</a></blockquote>
 
 </div>
-
-[A-Frame Video Player](https://etiennepinchon.github.io/aframe-videoplayer/) replicated from
-the one seen at Google I/O on Daydream with Chrome by [@etiennepinchon](https://twitter.com/etiennepinchon).
-
-![Video Player](https://user-images.githubusercontent.com/674727/26845297-e8decc4c-4aaa-11e7-9686-c2bc249977b8.png)
 
 ## Articles
 
