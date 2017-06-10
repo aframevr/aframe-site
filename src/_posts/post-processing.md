@@ -23,7 +23,7 @@ A-Frame 0.6.0 comes with an extension to this loop structure by allowing develop
 
 So a way to tap in the appropriate time in the render loop is provided but just by itself, it is not enough for post processing to happen. We also need a way to notify A-Frame that it should render the scene in a WebGLRenderTarget, instead of directly to the screen. This render target can then be used as input for post processing.
 
-After lengthy discussions, it was decided that this part should be left entirely at the component/system writers hands. All he needs to do is attach a .renderTarget property on the scene element. This property should be a WebGLRenderTarget. When it's not null, the scene will be rendered on it, instead of the screen. 
+After lengthy discussions, it was decided that this part should be left entirely at the component/system writers hands. All he needs to do is attach a .renderTarget property on the scene element. This property must be a THREE.WebGLRenderTarget. When it's not null, the scene will be rendered on it, instead of the screen. 
 
 Three.js render targets can contain two usable textures: An rgba texture with the scene rendering and optionally a .depthTexture with the depth map for the current frame. It should be of note that the depth texture comes for free, as it is used internally by webgl for its depth testing operation.
 
@@ -31,15 +31,15 @@ This scheme moves the responsibility for implementing the post proc pipeline ent
 
 ## How does post processing work?
 
-In essence, its little more than 2D processing of images like one would do with photoshop or gimp. A full screen quad is used to cover the whole screen and draw shaders which use the base scene rendering textures(color+depth) as their input. 
+In essence, its little more than 2D processing of images like one would do with photoshop or gimp. A full screen quad is used to cover the whole screen and draw with shaders that use the base scene rendering textures(color+depth) for their input. 
 
-Some basic but very useful operations would be the manipulation of colors to get a desired aesthetic. A toon effect can be achieved with a simple quantization of the color values. A vignette effect by darkening based on the uvs of the texture.
+Some basic but very useful operations would be the manipulation of colors to get a desired aesthetic. A toon effect can be achieved with a simple quantization of the color values. A vignette effect by darkening parts of the screen based on the uvs of the full screen quad.
 
-Besides operations with color, the combination of a depth map opens us a range of other great possibilities. Having even partial knowledge of the scene geometry allows us to implement effects like depth of field, outlines, ambient occlusion and more.
+Besides operations on color alone, the combination of a depth map opens us a range of other great possibilities. Having even that partial knowledge of the scene geometry allows us to implement effects like depth of field, outlines, ambient occlusion and more.
 
 ## How do we implement it?
 
-The most simple setup would be having a single component or system that creates and sets a renderTarget on the scene element, which then processes in its tock() to filter the scene and output on the canvas/screen.
+The most simple setup would require just a single component or system that creates and sets a renderTarget on the scene element, which target then processes in its tock() to filter the scene and output on the canvas/screen.
 
 ```js
 AFRAME.registerComponent('bloom', {
@@ -55,7 +55,7 @@ AFRAME.registerComponent('bloom', {
     // Set a renderTarget to draw into instead of the canvas
     // From now on, we're responsible for outputing to screen
     var pars = { minFilter: THREE.LinearFilter, format: THREE.RGBAFormat } 
-    this.sceneEl.renderTarget = new THREE.WebGLRenderTarget(1, 1, pars);
+    this.el.sceneEl.renderTarget = new THREE.WebGLRenderTarget(1, 1, pars);
  
     // Threes effect composer is not directly usable,
     // as it needs to take over the scene render,
@@ -66,10 +66,10 @@ AFRAME.registerComponent('bloom', {
   remove: function () {
     // Cleanup our resources
     this.pass.dispose();
-    this.sceneEl.renderTarget.dispose();
+    this.el.sceneEl.renderTarget.dispose();
     
     // Set the scene to render straight to canvas again
-    this.sceneEl.renderTarget = null;
+    this.el.sceneEl.renderTarget = null;
   },
 
   update: function () {
@@ -81,8 +81,8 @@ AFRAME.registerComponent('bloom', {
 
   // Runs every frame after the base scene render
   tock: function () {
-    var renderer = this.sceneEl.renderer;
-    var renderTarget = this.sceneEl.renderTarget;
+    var renderer = this.el.sceneEl.renderer;
+    var renderTarget = this.el.sceneEl.renderTarget;
 
     // If needed, resize our target to match the renderer
     var size = renderer.getSize();
