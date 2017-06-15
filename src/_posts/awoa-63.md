@@ -1,7 +1,7 @@
 ---
 title: "A Week of A-Frame 63"
 from: 2017-5-26
-date: 2017-6-6
+date: 2017-6-2
 layout: blog
 awoa: true
 image:
