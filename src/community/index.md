@@ -100,6 +100,22 @@ Are you holding an event? Below are some resources:
 - [Presentation Kit (Slide Deck)](https://github.com/aframevr/aframe-presentation-kit)
 - [Promotional Materials (Stickers, Posters, Images)](https://github.com/aframevr/aframe-presentation-kit/tree/master/materials)
 
+## Friends of A-Frame
+
+This is a work-in-progress list of Organizations using A-Frame in production:
+
+- [![Reveal Logo](https://pbs.twimg.com/profile_images/557236189875281920/fZzFhNdz_400x400.png)](https://twitter.com/reveal/status/809197559713513472)
+- [![npr Logo](http://blog.apps.npr.org/img/nprlogo.gif)](http://blog.apps.npr.org/2016/07/22/how-we-built-our-first-vr-story.html)
+- [![iStaging Logo](https://www.istaging.com/images/logo_top_istaging.png)](https://aframe.io/blog/istaging/)
+- [![GuriVR Logo](https://pbs.twimg.com/profile_images/761448869523841024/9B1kxUDc_400x400.jpg)](https://gurivr.com)
+- [![The Washington Post Logo](https://img.washingtonpost.com/pb/resources/img/twp-masthead-415x57.svg)](https://www.washingtonpost.com/pr/wp/2016/03/11/experience-mars-with-the-washington-posts-virtual-reality/?utm_term=.34ca88ef1bf2)
+- [![Shopify Logo](https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAA1zAAAAJGM1NDFjNTRhLTZkOTEtNGNjMy04Zjg3LTQxYTY1NDNhM2I3MA.png)](https://shopifyvr.myshopify.com/pages/virtual-reality)
+- [![IDEO Logo](https://avatars1.githubusercontent.com/u/11691?v=3&s=200)](https://labs.ideo.com/2016/03/01/empathy-and-the-promise-of-virtual-reality/)
+- [![Realise Logo](https://pbs.twimg.com/profile_images/623794829487697920/11LvBKl8_400x400.jpg)](https://aframe.io/blog/ghost-train-builder/)
+- [![Sleighdogs Logo](https://pbs.twimg.com/profile_images/586475577701314560/QdgF-Xzf_400x400.png)](https://twitter.com/Sleighdogs/status/816978010012258305)
+- [![Edoga Logo](https://pbs.twimg.com/profile_images/854221707686457344/8t8FzDnB_400x400.jpg)](https://twitter.com/taigagaita1)
+
+
 ## A-Frame Team
 
 Check out [A-Frame's follow list for cool people to
