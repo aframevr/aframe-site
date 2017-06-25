@@ -94,6 +94,7 @@ so Let us know to list them here!
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
 - [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
 - [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
+- [WebXR London](https://www.meetup.com/web-xr/)
 
 Are you holding an event? Below are some resources:
 
