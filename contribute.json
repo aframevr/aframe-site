@@ -1,0 +1,25 @@
+{
+    "name": "A-Frame",
+    "description": "A web framework for building virtual reality experiences.",
+    "repository": {
+        "url": "https://github.com/aframevr/aframe",
+        "license": "MIT License",
+        "tests": "https://travis-ci.org/aframevr/aframe"
+    },
+    "participate": {
+        "home": "https://wiki.mozilla.org/QA/Aframe",
+        "docs": "https://aframe.io/",
+        "slack": "https://aframevr-slack.herokuapp.com/",
+        "contacts": ["dmarcos", "ngokevin","cvanw","whoyee"]
+    },
+    "bugs": {
+        "list": "https://github.com/aframevr/aframe/issues",
+        "report": "https://github.com/aframevr/aframe/issues/new"
+    },
+    "keywords": [
+        "vr",
+        "webvr",
+        "html",
+        "javascript"
+    ]
+}
