@@ -24,16 +24,16 @@ This is accomplished by listening to a browser event on page load and kicking
 into VR, but A-Frame also provides a link component and portals so we can zip
 through the Metaverse in style.
 
+Developed by Diego, the portals are represented as windows into another scene,
+powered by 360&deg; panoramic images, which can be taken in A-Frame using the
+[screenshot shortcut][screenshot] `<ctrl> + <alt> + <shift> + s`.
+
 [Try link traversal out with Firefox Nightly and a
 headset](https://aframe.io/aframe/examples/showcase/link-traversal/) or [read
 the link docs](https://aframe.io/docs/0.6.0/components/link.html). We'll have
 another blog post in detail soon.
 
 [screenshot]: https://aframe.io/docs/0.6.0/components/screenshot.html
-
-The portals are represented as windows into another scene, powered by 360&deg;
-panoramic images, which can be taken in A-Frame using the [screenshot
-shortcut][screenshot] `<ctrl> + <alt> + <shift> + s`.
 
 A-Frame completes the collection by providing components out of the box for
 **controllers for every major headset**: `vive-controls`,
