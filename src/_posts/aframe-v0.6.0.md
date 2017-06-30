@@ -126,6 +126,10 @@ In total:
 
 ## What's Next?
 
+> There may be some regressions related to .setAttribute and raycasters drawing
+> a line. We'll push out an 0.6.1 soon also including support for Firefox for
+> Android.
+
 [@machenmusik](https://twitter.com/machenmusik) is currently ushering in
 support for [Vive trackers](https://www.vive.com/us/vive-tracker/) to bring in
 real world objects into the VR world. Also expect support for SteamVR Knuckles
