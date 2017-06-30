@@ -60,6 +60,10 @@
       <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
     </h1>
 
+    <% if (page.image) { %>
+      <img src="<%= page.image.src %>">
+    <% } %>
+
     <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
     <% if (activeVersion === 'master') { %>
       <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://github.com/aframevr/aframe/tree/master/dist#a-frame-builds). Otherwise, head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
