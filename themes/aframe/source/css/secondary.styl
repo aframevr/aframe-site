@@ -529,34 +529,41 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
   p
     max-width 700px
 
-#table-of-contents
-    display none
-    +media--desktop()
-        display block
+.secondary-sidebar
+  display none
+  padding-top 40px
+  position fixed
+  left 980px
+  width 300px
+  +media--desktop()
+      display block
 
-    left 980px
-    padding-top 40px
-    position fixed
-    width 300px
-    .section-title
-        margin 0
-        padding-top 0
-    > ul
-        margin-left 0
-        margin-top 0
-        padding-left 0
-    ul
-        list-style none
-    ul + ul
-        margin-left 0
-    li
-        padding 0
-    a
-        border-bottom 0
-        max-width 100%
-        overflow hidden
-        text-overflow ellipsis
-        white-space nowrap
+.docs-view-source
+  font-size 12px
+
+.docs-suggest-edit
+  font-size 12px
+
+#table-of-contents
+  .section-title
+      margin 0
+      padding-top 0
+  > ul
+      margin-left 0
+      margin-top 0
+      padding-left 0
+  ul
+      list-style none
+  ul + ul
+      margin-left 0
+  li
+      padding 0
+  a
+      border-bottom 0
+      max-width 100%
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
 
 .content--blog .page__title
     margin-bottom 7px

@@ -90,5 +90,13 @@
     <%- partial('partials/docs/footer', {item: page}) %>
   </div>
 
-  <%- partial('partials/toc', {page: page}) %>
+  <div class="secondary-sidebar">
+    <%- partial('partials/toc', {page: page}) %>
+    <div class="doc-actions">
+      <a class="docs-suggest-edit github-file-link" href="<%- website_github_edit_url(page.path) %>" target="_blank" rel="external">Edit Page</a>
+      <% if (page.source_code) { %>
+        <a class="docs-view-source github-file-link" href="https://github.com/aframevr/aframe/tree/<%- activeVersion === 'master' ? 'master' : 'v' + activeVersion %>/<%- page.source_code %>" title="View Source" target="_blank" rel="external">View Source</a>
+      <% } %>
+    </div>
+  </div>
 </div>

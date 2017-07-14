@@ -131,6 +131,8 @@
   </div>
 
   <% if (!page.blog_index && !page.awoa) { %>
-    <%- partial('partials/toc', {page: page}) %>
+    <div class="secondary-sidebar">
+      <%- partial('partials/toc', {page: page}) %>
+    </div>
   <% } %>
 </div>
