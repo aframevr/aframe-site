@@ -1,4 +1,3 @@
-<% if (config.google_analytics) { %>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -6,6 +5,23 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', '<%- config.google_analytics %>', 'auto');
+  ga('create', '<%- config.google_analytics_mozilla_managers %>', 'auto', 'managers');
+
   ga('send', 'pageview');
+  ga('managers.send', 'pageview');
+
+  ga('send', 'event', 'pageload.querystring', window.location.search);
+  ga('managers.send', 'event', 'pageload.querystring', window.location.search);
+
+  ga('send', 'event', 'pageload.hash', window.location.hash);
+  ga('managers.send', 'event', 'pageload.hash', window.location.hash);
+
+  ga('send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+  ga('managers.send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+
+  ga('send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+  ga('managers.send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+
+  ga('send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
+  ga('managers.send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
 </script>
-<% } %>

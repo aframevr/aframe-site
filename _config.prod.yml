@@ -124,7 +124,8 @@ disqus_shortname:
 twitter:
   username: aframevr
   url: https://twitter.com/aframevr/
-google_analytics: UA-35433268-69
+google_analytics: UA-24056643-4
+google_analytics_mozilla_managers: UA-35433268-69
 fb_app_id: 1535794316743373
 
 github:
