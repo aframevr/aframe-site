@@ -20,11 +20,11 @@ All articles in the series:
 
 ## The project repository
 
-Use git to clone the [repository of the simulation](https://github.com/delapuente/aframe-simulation-demo). Enter the repository and run `npm install` then `npm start` to install the dependencies and start the development server at port `8080`.
+Use git to clone the [repository of the simulation](https://github.com/delapuente/aframe-interactive-training). Enter the repository and run `npm install` then `npm start` to install the dependencies and start the development server at port `8080`.
 
 Open the browser and enter the URL `localhost:8080` to find the index of steps. Append `step1` at the end of the URL path to experience the project at this point in the series (or select step 1 in the list).
 
-The project is based on the [A-Frame SPA skeleton](https://github.com/delapuente/aframe-spa-skeleton); you can use this to quickly set up the barebones of a virtual reality single-page application with auto reload and publishing features. Read the [a-frame-skeleton README file](https://github.com/delapuente/aframe-spa-skeleton#a-frame-skeleton) for further information.
+The project is based on the [A-Frame SPA skeleton](https://github.com/delapuente/aframe-spa-skeleton); you can use this to quickly set up the barebones of a virtual reality single-page application with auto reload and publishing features. Read the [a-frame-skeleton README file](https://github.com/delapuente/aframe-spa-skeleton#a-frame-spa-skeleton) for further information.
 
 ## Planning the demo
 
@@ -104,9 +104,9 @@ When placing elements, take into account that they are placed according to their
 </a-box>
 ```
 
-A-Frame provides a way of adding empty nodes to the scene or, in A-Frame jargon, an **entity**. [Entities](https://aframe.io/docs/0.5.0/core/entity.html) are represented by the `a-entity` element and they have nothing associated with them: no geometry, model, or material. They do have implicit `rotation`, `position`, `scale` and `visible` attributes, which are automatically injected by the framework for all the elements within the scene.
+A-Frame provides a way of adding empty nodes to the scene or, in A-Frame jargon, an **entity**. [Entities](/docs/0.6.0/core/entity.html) are represented by the `a-entity` element and they have nothing associated with them: no geometry, model, or material. They do have implicit `rotation`, `position`, `scale` and `visible` attributes, which are automatically injected by the framework for all the elements within the scene.
 
-Adding the [`hand-controls`](https://aframe.io/docs/0.5.0/components/hand-controls.html) attribute to an entity displays a hand model following the position and orientation of one of the tracked controllers of an HTC Vive or Oculus.
+Adding the [`hand-controls`](/docs/0.6.0/components/hand-controls.html) attribute to an entity displays a hand model following the position and orientation of one of the tracked controllers of an HTC Vive or Oculus.
 
 ```html
 <a-entity id="left-hand" hand-controls="left"></a-entity>
@@ -131,7 +131,7 @@ Finally, while developing I spend most of my the time sitting in front of my com
 <a-camera position="0 0 0" user-height="1.3"></a-camera>
 ```
 
-This correction is [automatically disabled when entering VR](https://aframe.io/docs/0.5.0/components/camera.html#vr-behavior) mode since the position of the camera is provided by the VR head-mounted display (HMD).
+This correction is [automatically disabled when entering VR](/docs/0.6.0/components/camera.html#vr-behavior) mode since the position of the camera is provided by the VR head-mounted display (HMD).
 
 ## Conclusion
 
