@@ -7,10 +7,11 @@ image:
   src: hands-on-i.png
 ---
 
-Hands on! Building interactive training with A-Frame I
 In an industry where manipulation of complex mechanisms involves dozens of tools, expensive equipment and even safety risks, virtual reality helps to reduce material costs and increase operator safety. In addition, WebVR puts everything just one link away.
 
 This is the first of a series of articles providing an in-depth walkthrough of a hand-based interaction and manipulation model for training purposes. At the same time you build the experience, you will also learn about core A-Frame concepts, its ecosystem, the entity-component-system architecture, how to use the [A-Frame physics system](https://hacks.mozilla.org/2017/05/having-fun-with-physics-and-a-frame/), common errors, workarounds and good practices. All you need to confront a real project.
+
+This is an advanced virtual reality experience and so it requires a head-mounted display supporting room-scale VR and [6DoF](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) controllers such as those included in the [HTC VIVE](https://www.vive.com/us/product/#controller-intro) or the [Oculus Touch](https://www.oculus.com/rift). Personally, I used a VIVE.
 
 All articles in the series:
 
