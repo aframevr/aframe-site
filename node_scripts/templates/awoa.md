@@ -4,6 +4,8 @@ from: ${fromDate}
 date: ${toDate}
 layout: blog
 awoa: true
+image:
+  src: awoa.jpg
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
