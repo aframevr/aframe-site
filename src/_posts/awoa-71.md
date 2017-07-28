@@ -39,7 +39,7 @@ image:
 
 </div>
 
-Painting with Decals by twitter:mokargas
+Painting with Decals by [@mokargas](https://twitter.com/mokargas/)
 
 ![paint](https://user-images.githubusercontent.com/674727/28714567-ce7587e4-7348-11e7-975c-73ff987a7280.gif)
 
