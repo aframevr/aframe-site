@@ -1,7 +1,7 @@
 ---
 title: Hands-On! Building Interactive Training With A-Frame
 author: twitter|salvadelapuente|Salvador de la Puente
-date: 2017-08-08 12:00:00
+date: 2017-08-09
 layout: blog
 image:
   src: hands-on-i.png
@@ -9,7 +9,7 @@ image:
 
 In an industry where manipulation of complex mechanisms involves tens of tools, expensive equipment and even safety risks, virtual reality helps to increase operator safety and reduce material costs. In addition, WebVR puts everything just one link away.
 
-This is the first of a series of articles providing an in-depth walkthrough of a hand-based interaction and manipulation model for training purposes. The series is not a step-by-step tutorial but a postmortem breakdown covering one major feature at a time. At the same time you build the experience, you will also learn about core A-Frame concepts, its ecosystem, the entity-component-system architecture, how to use the [A-Frame physics system](https://hacks.mozilla.org/2017/05/having-fun-with-physics-and-a-frame/), common errors, workarounds and good practices. All you need to confront a real project.
+This is the first of a series of articles providing an in-depth walkthrough of a hand-based interaction and manipulation model for training purposes ([check the demo online](https://delapuente.github.io/aframe-interactive-training/step3/)). The series is not a step-by-step tutorial but a postmortem breakdown covering one major feature at a time. At the same time you build the experience, you will also learn about core A-Frame concepts, its ecosystem, the entity-component-system architecture, how to use the [A-Frame physics system](https://hacks.mozilla.org/2017/05/having-fun-with-physics-and-a-frame/), common errors, workarounds and good practices. All you need to confront a real project.
 
 <!--more-->
 
@@ -29,11 +29,11 @@ At the root of the project, you'll find [`step1/`](https://github.com/delapuente
 
 Open the browser and enter the URL `localhost:8080` to find the index of steps. Append `step1` at the end of the URL path and click on the VR button on the bottom-right corner of the display to experience the project after step 1 is completed (or select step 1 in the list).
 
-The project is based on the [A-Frame SPA skeleton](https://github.com/delapuente/aframe-spa-skeleton); you can use this to quickly set up the barebones of a virtual reality single-page application with auto reload and publishing features. Read the [a-frame-skeleton README file](https://github.com/delapuente/aframe-spa-skeleton#a-frame-spa-skeleton) for further information.
+The project is based on the [A-Frame SPA skeleton](https://github.com/delapuente/aframe-spa-skeleton) that quickly bootstraps a virtual reality single-page application with auto reload and publishing features. Read the [a-frame-skeleton README file](https://github.com/delapuente/aframe-spa-skeleton#a-frame-spa-skeleton) for further information.
 
 ## Planning the demo
 
-The app’s initial aim was to provide a simulation of the process of backing up the contents of a chip from an in-car key reader device, which includes loosening the solder and removing the chip from a circuit board. As a reference, I was given a YouTube video showing the [complete in-real-life procedure](https://youtu.be/qFGX3AHVLqA?t=90). The video comprises several steps involving around eight different tools. For this series, I'm going to focus on the specific step of separating the chip from the circuit board. See a detailed sequence here:
+The app’s initial aim was to provide a simulation of the process of backing up the contents of a chip from an in-car key reader device, which includes loosening the solder and removing the chip from a circuit board. As a reference, I used a YouTube video showing the [complete in-real-life procedure](https://youtu.be/qFGX3AHVLqA?t=90). The video comprises several steps involving around eight different tools. For this series, I'm going to focus on the specific step of separating the chip from the circuit board. See a detailed sequence here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tHP2kX6aAZM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -43,13 +43,13 @@ The required steps are as follow:
   2. With the help of a suction pad, separate the chip from the circuit board.
   3. Carefully place the chip on the table, to avoid ruining the chip pins.
 
-I chose to implement one step at a time without realistic models in the beginning. Once I am able to recreate the complete process, I can think about adding different levels of detail to the demo.
+I started prototyping to implement one step at a time without realistic models in the beginning. Once I am able to recreate the complete process, I can think about adding different levels of detail to the demo.
 
 But before providing specific simulations and behaviors, we need some basic hand-based interaction.
 
 ## Setting the scene up
 
-Let’s start looking at the code. The first thing I needed was a scene containing all the elements I wanted to work with: the air gun, the suction pad, the chip, the soldering around the chip, and the circuit board. Of course I needed a representation of my own hands and some environmental elements such as a sky, a floor and of course a table!
+The first thing I needed was a scene containing all the elements I wanted to work with: the air gun, the suction pad, the chip, the soldering around the chip, and the circuit board. Of course I needed a representation of my own hands and some environmental elements such as a sky, a floor and of course a table!
 
 This is the initial code for the scene:
 
@@ -126,11 +126,11 @@ This is the resulting scene:
 
 ### One workspace to rule them all
 
-I was developing in front of a desk so for testing purposes I placed the elements as if they were resting on my real desktop only 5cm higher up. This allowed me to avoid my hands colliding  with my physical keyboard when I’m in VR mode. Adjusting the whole workspace at the same time is achieved by changing the `position` attribute of the `workspace` entity. Thanks to the real and virtual table heights matching, the demo has a great feeling of presence.
+To increase the feeling of immersion, I placed the elements as if they were resting on my real desktop only 5cm higher up. This allowed me to avoid my hands colliding  with my physical keyboard when I’m in VR mode. Adjusting the whole workspace at the same time is achieved by changing the `position` attribute of the `workspace` entity. Thanks to the real and virtual table heights matching, the demo has a great feeling of presence.
 
 A simpler alternative would have been to make the circuit board and tools children of the table. Unfortunately this configuration does not play well when adding physics during the next article. The physics engine would consider the nested elements to be compounding parts of the root element and I didn’t want my tools and circuit board to be considered part of the table but separated elements.
 
-Also notice that if you are experiencing room-scale VR, you will also need to position the workspace and camera relative to the center of your configured stage, making them match with your real-life table and yourself respectively.
+Also notice that if you are experiencing room-scale VR, you will also need to manually position the workspace and camera relative to the center of your configured stage, making them match with your real-life table and yourself respectively.
 
 Finally, while developing I spend most of my the time sitting in front of my computer. So as a last touch I changed the height correction of the camera, the `user-height` attribute, to match the distance of my eyes from the floor when I'm sitting down:
 
