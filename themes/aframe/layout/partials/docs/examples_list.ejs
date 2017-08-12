@@ -1,0 +1,25 @@
+<% if (page.examples) { %>
+  <div id="doc-examples-list" class="nav-list">
+    <p class="section-title docs-section-title">Examples</p>
+
+    <% if (page.examples.length) { %>
+      <ul class="subnav">
+        <% page.examples.forEach(function (example) { %>
+          <li class="subnav-item">
+            <a class="subnav-link" href="<%- example.src %>">
+              <%- example.title.replace('<', '&lt;').replace('>', '&gt;') %>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <ul class="subnav">
+        <li class="subnav-item">
+          <a class="subnav-link" href="<%- website_github_edit_url(page.path) %>" style="font-style: italic">
+            No examples for this page yet. Add one!
+          </a>
+        </li>
+      </ul>
+    <% } %>
+  </div>
+<% } %>

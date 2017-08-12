@@ -4,6 +4,7 @@
     font-family $body-font
     font-size 12px
     width 100%
+    z-index 20
 
 .search-field
     -moz-appearance none
@@ -19,17 +20,13 @@
     width 100%
     +media--desktop()
         width 240px
-    
+
 .docs-search-wrapper
     +media--desktop()
         margin-right 16px
 
 [data-is-ios="true"] .search-field
     padding-bottom 7px
-
-.docs-search-sidebar
-    +media--desktop()
-        display none
 
 /* Main category headers */
 .algolia-docsearch-suggestion--category-header {
@@ -67,11 +64,11 @@
     .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before
         right auto
         left -1px
-    
+
     .algolia-autocomplete .ds-dropdown-menu
         margin-left -32px
         margin-right -32px
         min-width 100%
-    
+
     .docs-search-docs
         display none

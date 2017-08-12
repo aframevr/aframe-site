@@ -36,10 +36,9 @@ a
     margin 0 1px
 
 .nav
-    border-bottom 1px dashed rgba(0,0,0,0.1)
-    border-top 1px dashed rgba(0,0,0,.1)
-    margin-bottom 25px
-    padding 25px 0
+    border-bottom 1px solid rgba(0, 0, 0, 0.1)
+    margin-bottom 20px
+    padding-bottom 15px
 
 .nav-link
     color rgba(0,0,0,0.35)
@@ -89,6 +88,7 @@ a
         line-height 1.6
 
 .sponsor
+    bottom 5px
     display block
     margin 0 0 25px
     position relative
@@ -429,27 +429,8 @@ video
     align-items flex-start
     display flex
     flex-direction column
-    margin-bottom 25px
+    margin-bottom 20px
     max-width 100%
-
-    .stackoverflow-link
-        display none
-        font-family $body-font
-        font-size 12px
-        font-weight 400
-        margin-top 5px
-        text-transform uppercase
-        +media--desktop()
-            display block
-
-body:not([data-page-layout="docs"]) .docs-search-wrapper
-  display none !important
-
-.docs-search-docs
-    align-items flex-end
-    position absolute
-    right 0
-    top 0
 
 .docs-header + blockquote
     margin 4em 0 2em
@@ -464,10 +445,6 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
 
 [data-is-mobile="true"] #docs-version
     border 1px solid #CCC
-
-[data-page-layout="docs"] .page__title
-    +media--desktop()
-        max-width 62%
 
 @media screen and (max-width: 800px)
     .main
@@ -547,7 +524,7 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
 .docs-suggest-edit
   font-size 12px
 
-#table-of-contents
+.nav-list
   .section-title
       margin 0
       padding-top 0
@@ -571,3 +548,21 @@ body:not([data-page-layout="docs"]) .docs-search-wrapper
 .content--blog .page__title
     margin-bottom 7px
 
+.logo__wordmark
+    margin-bottom 20px
+
+.wordmark
+    display none
+    padding 40px 40px 0 40px
+    position fixed
+    z-index 10
+    +media--desktop()
+      display block
+
+.secondary-nav .docs-search-wrapper
+  +media--desktop()
+    display none
+
+.secondary-nav header
+  +media--desktop()
+    display none

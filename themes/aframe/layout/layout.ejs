@@ -80,7 +80,7 @@
       <%- css('css/secondary') %>
     <% } %>
 
-    <% if (isDocs || is404) { %>
+    <% if (isSecondary || is404) { %>
       <!-- Search. -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"/>
       <%- css('css/search') %>
@@ -100,7 +100,7 @@
       <% } %>
     <% } %>
 
-    <% if (isDocs || is404) { %>
+    <% if (isSecondary || is404) { %>
       <%- partial('partials/search') %>
     <% } %>
   </body>

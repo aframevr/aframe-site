@@ -1,0 +1,9 @@
+<div class="wordmark">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="<%= url_for(config.root) %>" title="<%= config.title %>">
+      <span class="logo__wordmark"><%= config.title %></span>
+    </a>
+  </header>
+
+  <%- partial('partials/search_field', {location: 'sidebar'}) %>
+</div>

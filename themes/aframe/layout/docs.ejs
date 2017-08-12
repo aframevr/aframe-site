@@ -2,6 +2,7 @@
 <% var activeVersion = docs_active_version(page) %>
 
 <!-- Navigation. -->
+<%- partial('partials/secondary/sidebar_wordmark') %>
 <aside id="sidebar" class="sidebar borderless-links">
   <%- partial('partials/secondary/sidebar_header', {site: site}) %>
 
@@ -43,60 +44,61 @@
   </div>
 </aside>
 
-<!-- Documentation. -->
-<div class="content content--structured content--<%- page.type %> copy">
-  <%- partial('partials/secondary/mobile_header') %>
+  <!-- Documentation. -->
+  <div class="content content--structured content--<%- page.type %> copy">
+    <%- partial('partials/secondary/mobile_header') %>
 
-  <div class="copy__wrap">
-    <div class="page__section docs-header">
-      <p>
-        <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
-          <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
-        </a>
-      </p>
-      <%- partial('partials/search_field', {location: 'docs'}) %>
-    </div>
-    <h1 class="page__title">
-      <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
-    </h1>
+    <div class="copy__wrap">
+      <div class="page__section docs-header">
+        <p>
+          <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
+            <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
+          </a>
+        </p>
+      </div>
+      <h1 class="page__title">
+        <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
+      </h1>
 
-    <% if (page.image) { %>
-      <img src="<%= page.image.src %>">
-    <% } %>
-
-    <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
-    <% if (activeVersion === 'master') { %>
-      <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://github.com/aframevr/aframe/tree/master/dist#a-frame-builds). Otherwise, head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
-    <% } else if (activeVersion !== config.aframe_version) { %>
-      <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
-    <% } %>
-
-    <%- page.content %>
-
-    <!-- Previous / Next navigation. -->
-    <footer class="footer guide-links c">
-      <% docs_version_filter(site.pages.find({type: page.type, order: page.order - 1}),
-                             activeVersion).each(function (page) { %>
-        <span class="float-left">
-          <a href="<%- page_url(page.path) %>" class="guide-link guide-link-left">← <%= page.title %> </a></span>
-      <% }) %>
-      <% docs_version_filter(site.pages.find({type: page.type, order: page.order + 1}),
-                             activeVersion).each(function (page) { %>
-        <span class="float-right">
-          <a href="<%- page_url(page.path) %>" class="guide-link guide-link-right"><%= page.title %> →</a></span>
-      <% }) %>
-    </footer>
-
-    <%- partial('partials/docs/footer', {item: page}) %>
-  </div>
-
-  <div class="secondary-sidebar">
-    <%- partial('partials/toc', {page: page}) %>
-    <div class="doc-actions">
-      <a class="docs-suggest-edit github-file-link" href="<%- website_github_edit_url(page.path) %>" target="_blank" rel="external">Edit Page</a>
-      <% if (page.source_code) { %>
-        <a class="docs-view-source github-file-link" href="https://github.com/aframevr/aframe/tree/<%- activeVersion === 'master' ? 'master' : 'v' + activeVersion %>/<%- page.source_code %>" title="View Source" target="_blank" rel="external">View Source</a>
+      <% if (page.image) { %>
+        <img src="<%= page.image.src %>">
       <% } %>
+
+      <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
+      <% if (activeVersion === 'master') { %>
+        <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://github.com/aframevr/aframe/tree/master/dist#a-frame-builds). Otherwise, head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
+      <% } else if (activeVersion !== config.aframe_version) { %>
+        <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
+      <% } %>
+
+      <%- page.content %>
+
+      <!-- Previous / Next navigation. -->
+      <footer class="footer guide-links c">
+        <% docs_version_filter(site.pages.find({type: page.type, order: page.order - 1}),
+                               activeVersion).each(function (page) { %>
+          <span class="float-left">
+            <a href="<%- page_url(page.path) %>" class="guide-link guide-link-left">← <%= page.title %> </a></span>
+        <% }) %>
+        <% docs_version_filter(site.pages.find({type: page.type, order: page.order + 1}),
+                               activeVersion).each(function (page) { %>
+          <span class="float-right">
+            <a href="<%- page_url(page.path) %>" class="guide-link guide-link-right"><%= page.title %> →</a></span>
+        <% }) %>
+      </footer>
+
+      <%- partial('partials/docs/footer', {item: page}) %>
+    </div>
+
+    <div class="secondary-sidebar">
+      <%- partial('partials/toc', {page: page}) %>
+      <%- partial('partials/docs/examples_list', {page: page}) %>
+      <div class="doc-actions">
+        <a class="docs-suggest-edit github-file-link" href="<%- website_github_edit_url(page.path) %>" target="_blank" rel="external">Edit Page</a>
+        <% if (page.source_code) { %>
+          <a class="docs-view-source github-file-link" href="https://github.com/aframevr/aframe/tree/<%- activeVersion === 'master' ? 'master' : 'v' + activeVersion %>/<%- page.source_code %>" title="View Source" target="_blank" rel="external">View Source</a>
+        <% } %>
+      </div>
     </div>
   </div>
 </div>
