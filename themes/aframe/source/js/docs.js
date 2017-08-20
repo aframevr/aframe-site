@@ -14,6 +14,9 @@ if (content) {
     var el = e.target;
     if (el.matches && el.matches(anchorHeadingsSelector)) {
       window.location.hash = '#' + el.id;
+      ga('send', 'pageview', {
+        page: location.pathname + location.search  + location.hash
+      });
     }
   });
 
