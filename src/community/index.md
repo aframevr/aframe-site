@@ -134,6 +134,7 @@ awesome people you'll run across on your journey with A-Frame!
 - [webvr.rocks](https://webvr.rocks)
 - [Mozilla VR Team Page](https://mozvr.com)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
+- [Mozilla Global VR Group](https://t.me/MozillaVR)
 
 ## Roadmap
 
