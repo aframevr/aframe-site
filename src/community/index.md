@@ -95,6 +95,7 @@ so Let us know to list them here!
 - [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
 - [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
 - [WebXR London](https://www.meetup.com/web-xr/)
+- [MozillaVR Telegram Channel](https://t.me/MozillaVR)
 
 Are you holding an event? Below are some resources:
 
