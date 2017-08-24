@@ -96,6 +96,7 @@ so Let us know to list them here!
 - [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
 - [WebXR London](https://www.meetup.com/web-xr/)
 - [Mozilla Global VR Group](https://t.me/MozillaVR)
+-[VR Karbala Group](https://telegram.me/VRKarbala)
 
 Are you holding an event? Below are some resources:
 
