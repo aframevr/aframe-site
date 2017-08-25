@@ -5,6 +5,7 @@ from: 2017-7-21
 date: 2017-7-28
 layout: blog
 awoa: true
+author: twitter|andgokevin|Kevin Ngo
 image:
   src: https://user-images.githubusercontent.com/674727/28715172-b79e7bc2-734b-11e7-8de3-60cbb5f9f316.png
 ---
