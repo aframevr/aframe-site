@@ -5,6 +5,10 @@ date: 2017-07-11 10:00:00
 layout: blog
 image:
   src: https://user-images.githubusercontent.com/6317076/27866704-452eaed6-618f-11e7-9cdd-2deaef865e3e.png
+examples:
+  - title:AR for mobile 
+    src:https://glitch.com/edit/#!/ex-6a-mobile-ar
+
 ---
 
 ### Don't Worry It's Less Than 10 Lines of HTML
