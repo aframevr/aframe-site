@@ -83,6 +83,9 @@ author: twitter|andgokevin|Kevin Ngo
 ## Articles
 
 <div class="tweets">
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/Google">@Google</a> &amp; <a href="https://twitter.com/SongExploder">@SongExploder</a> Create &#39;Inside Music&#39; VR App to Help You Better Appreciate Songs <a href="https://t.co/0TURO5gDNr">https://t.co/0TURO5gDNr</a> <a href="https://t.co/FuNZfo2Ecx">pic.twitter.com/FuNZfo2Ecx</a></p>&mdash; Road to VR (@RtoVR) <a href="https://twitter.com/RtoVR/status/905811922049695744">September 7, 2017</a></blockquote>
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I wrote this article as an introduction to how Virtual Reality exists in the web today and how it may effect th web platform in the longterm <a href="https://t.co/IipOsmXgoE">https://t.co/IipOsmXgoE</a></p>&mdash; Ada Rose 🏳️‍🌈✨ (@Lady_Ada_King) <a href="https://twitter.com/Lady_Ada_King/status/905407626804174848">September 6, 2017</a></blockquote>
 
 </div>
