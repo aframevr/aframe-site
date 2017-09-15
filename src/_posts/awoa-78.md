@@ -6,6 +6,7 @@ layout: blog
 awoa: true
 image:
   src: https://user-images.githubusercontent.com/674727/30478771-4232c850-99c7-11e7-818d-3f9cbf230584.jpg
+author: twitter|andgokevin|Kevin Ngo
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

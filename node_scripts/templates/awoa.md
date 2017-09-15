@@ -6,6 +6,7 @@ layout: blog
 awoa: true
 image:
   src: awoa.jpg
+author: twitter|andgokevin|Kevin Ngo
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
