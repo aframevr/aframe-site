@@ -14,7 +14,7 @@ Use it today with `<script src="https://aframe.io/releases/0.7.0/aframe.min.js">
 
 The glTF ecosystem has made huge progress and all the learnings have consolidated in the 2.0 version of the format. Thanks to the work of [Don McCurdy](http://github.com/donmccurdy/) and [Takahiro](https://github.com/takahirox) on A-Frame and THREE fronts you can now import glTF 2.0 models with a [single line of markup](https://aframe.io/docs/0.7.0/components/gltf-model.html#example).
 
-Microsoft is fully embracing immersive computing with Windows Holographic and you can now have fun with your favorite framework on Microsoft Edge as well.
+Microsoft is fully embracing immersive computing with Windows Mixed Reality and you can now have fun with your favorite framework on Microsoft Edge as well.
 
 0.7.0 has now full support for all the major headsets and controllers: Daydream, GearVR, Microsoft Mixed Reality, Oculus Rift and HTC Vive.
 
