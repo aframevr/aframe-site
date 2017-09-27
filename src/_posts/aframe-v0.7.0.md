@@ -16,7 +16,7 @@ The glTF ecosystem has made huge progress and all the learnings have consolidate
 
 Microsoft is fully embracing immersive computing with Windows Mixed Reality and you can now have fun with your favorite framework on Microsoft Edge as well.
 
-0.7.0 has now full support for all the major headsets and controllers: Daydream, GearVR, Microsoft Mixed Reality, Oculus Rift and HTC Vive.
+0.7.0 has now full support for all the major headsets and controllers: Daydream, Gear VR, Windows Mixed Reality, Oculus Rift and HTC Vive.
 
 Performance is top priority for us and A-Frame 0.7.0 ships a bunch of improvements to tame the garbage collector beast:
 
@@ -65,4 +65,4 @@ Since v0.6.0 was released in Jun 29 2017:
 
 ## What's Next?
 
-We will keep profiling and measuring to make sure that A-Frame overhead is negligable and your content runs butter smooth. We are starting to consolidate the API and want to get soon to a point we feel confortable with the design and ship a 1.0.0 release. 0.7.0 has shippped a bit earlier that we planned to make sure that Windows Mixed Reality headsets and Microsoft Edge are well supported at launch. A couple of features like vive tracker support and spectator camera have moved to 0.8.0. Keep an eye on the [roadmap](https://github.com/aframevr/aframe/blob/master/ROADMAP.md) to see what's coming.
+We will keep profiling and measuring to make sure that A-Frame overhead is negligable and your content runs buttery smooth. We are starting to consolidate the API and want to get soon to a point we feel confortable with the design and ship a 1.0.0 release. 0.7.0 has shippped a bit earlier than we planned to make sure that Windows Mixed Reality headsets and Microsoft Edge are well supported at launch. A couple of features, such as Vive tracker support and spectator camera, have moved to 0.8.0. Keep an eye on the [roadmap](https://github.com/aframevr/aframe/blob/master/ROADMAP.md) to see what's coming.
