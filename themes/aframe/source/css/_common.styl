@@ -9,9 +9,8 @@
 html, body
     height 100%
 
-html,
-code
-    font-size 14px
+html
+    font-size $html-font-size
 
 body
     font $body-font-weight $body-font-size/$body-line-height $body-font
@@ -47,12 +46,11 @@ pre
     font-family $code-font
 
 pre
-    font-size 13px
+    font-size 1rem
 
 [data-is-mobile="true"]
-    code,
     pre
-        font-size 8.5px
+        font-size .8rem
 
 .font-loaded-mono code,
 .font-loaded-mono pre
@@ -60,12 +58,16 @@ pre
 
 p, li, dd
     code
-        background #F8F8F8
+        background $codebg
         font-weight 600
         padding 0 2px
 
+h2 code
+    color $light
+    padding 0 1px
+
 h3 code
-    background #F8F8F8
+    background $codebg
     padding-left 2px
     padding-right 2px
 
@@ -129,7 +131,7 @@ h4
         margin 1.5em 0 .8em
         padding-bottom .7em
         border-bottom 1px solid $border
-    h3, h3 code
+    h3
         font-size 1.5rem
     h3, h4
         margin 2em 0 0.25em
@@ -275,4 +277,3 @@ a.mozilla-logo:hover {
 
 .github-emoji
   vertical-align top
-
