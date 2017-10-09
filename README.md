@@ -14,7 +14,7 @@ Clone [this repository](https://github.com/aframevr/aframe-site):
 
 To install the dependencies and start the local development server:
 
-    npm install && npm start
+    npm install && npm run installdocs && npm start
 
 If you are testing something related to the A-Frame examples, you can set up
 local configuration settings to point the examples to your local A-Frame

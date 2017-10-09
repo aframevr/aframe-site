@@ -50,7 +50,6 @@
     "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
     "installdocs": "multidep multidep.json && npm run copydocs",
-    "postinstall": "npm run installdocs",
     "server": "hexo server",
     "start": "npm run dev",
     "test": "node script/checkLinks.js"
