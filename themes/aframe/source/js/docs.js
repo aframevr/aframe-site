@@ -20,33 +20,6 @@ if (content) {
     }
   });
 
-  document.body.addEventListener('keyup', function (e) {
-    if (document.activeElement !== document.body) { return; }
-    var left = e.keyCode === 37;
-    var right = e.keyCode === 39;
-    if (left) {
-      var linkLeft = $('.guide-link-left');
-      if (linkLeft) {
-        linkLeft.click();
-      } else {
-        try {
-          $('.subnav-link.current').closest('.section-subnav').previousElementSibling.previousElementSibling.querySelector('.subnav-item:last-child .subnav-link').click();
-        } catch (e) {
-        }
-      }
-    } else if (right) {
-      var linkRight = $('.guide-link-right');
-      if (linkRight) {
-        linkRight.click();
-      } else {
-        try {
-          $('.subnav-link.current').closest('.section-subnav').nextElementSibling.nextElementSibling.querySelector('.subnav-link').click();
-        } catch (e) {
-        }
-      }
-    }
-  });
-
   // NOTE: Hack because variables doesn't get interpolated correctly in Markdown code blocks.
   // This is for `/docs/<version>/guide/getting-started.html`
   if (document.querySelector('#builds')) {
