@@ -40,13 +40,16 @@ community a safe space for you.
 - [Twitter](https://twitter.com/aframevr) - Keep up to date with awesome
   projects that people are doing and announcements.
 - [Subreddit](https://www.reddit.com/r/webvr) - General WebVR Subreddit.
-- [Mailing List](https://mail.mozilla.org/listinfo/web-vr-discuss) - General WebVR mailing
-  list.
+
+## Ecosystem
+
+- [*A Week of A-Frame*](https://aframe.io/blog) - Weekly series featuring fresh content from the community.
+- [A-Frame Components](https://www.npmjs.com/search?q=aframe-component&page=1&ranking=optimal)
 
 ## Slack
 
 [Sign up to the A-Frame Slack](https://aframevr-slack.herokuapp.com) to hang
-out and join the discussion. The Slack is very active with currently over 2300
+out and join the discussion. The Slack is very active with currently over 4500
 people! Channels include:
 
 - [`#general`](http://aframevr.slackarchive.io/general/) - All things A-Frame!
@@ -57,30 +60,10 @@ people! Channels include:
 - [`#projects`](http://aframevr.slackarchive.io/projects/) - Show off cool A-Frame projects.
 - [`#planning`](http://aframevr.slackarchive.io/planning/) - Talk about A-Frame roadmap and
   release coordination.
-- [`#api`](http://aframevr.slackarchive.io/api/) - Discuss A-Frame language and API.
-- [`#meetups`](http://aframevr.slackarchive.io/meetups/) - Talk about A-Frame meetups.
-- [`#meta`](http://aframevr.slackarchive.io/meta/) - Improve the A-Frame community.
-- [`#documentation`](http://aframevr.slackarchive.io/documentation/) - Improve the A-Frame
-  documentation.
-- [`#teaching`](http://aframevr.slackarchive.io/documentation/) - Talk about A-Frame
-  evangelism and education.
 
 See archived A-Frame Slack history through [the A-Frame Slack
 Archive](http://aframevr.slackarchive.io). You can also [sign up to the
 general WebVR Slack](https://webvr-slack.herokuapp.com/).
-
-## Ecosystem
-
-A-Frame is fully extensible, placing ecosystem and community at the core of its
-code. Below are where you can tap into the A-Frame ecosystem for things such as
-published components:
-
-- [A-Frame Registry](https://aframe.io/aframe-registry) - A curated
-  collection of community A-Frame components that are accessible through web
-  frontend, Inspector, or command-line tools such as Angle. Similar in function
-  to the Unity Asset Store.
-- [`awesome-aframe` repository](https://github.com/aframevr/awesome-aframe) - A
-  collection of awesome things regarding the A-Frame ecosystem as a GitHub README.
 
 ## User Groups, Events, Meetups
 
@@ -103,38 +86,17 @@ Are you holding an event? Below are some resources:
 - [Presentation Kit (Slide Deck)](https://github.com/aframevr/aframe-presentation-kit)
 - [Promotional Materials (Stickers, Posters, Images)](https://github.com/aframevr/aframe-presentation-kit/tree/master/materials)
 
-## A-Frame Team
+## Core Team
 
-Check out [A-Frame's follow list for cool people to
-follow](https://twitter.com/aframevr/following). Below are some of the many
-awesome people you'll run across on your journey with A-Frame!
-
-### Core
-
-- [Diego Goberna](https://github.com/feiss)
 - [Diego Marcos](https://github.com/dmarcos)
 - [Don McCurdy](https://github.com/donmccurdy)
-- [Fernando Serrano](https://github.com/fernandojsg)
 - [Kevin Ngo](https://github.com/ngokevin)
-
-### Contributors
-
-- [Fabien Benetou](https://github.com/utopiah)
-- [Michael Chen](https://github.com/machenmusik)
-- [Takahiro Aoyagi](https://github.com/takahirox)
-
-### Mozilla VR
-
-- [Blair MacIntyre](https://github.com/blairmacintyre)
-- [Casey Yee](https://github.com/caseyyee)
-- [Chris Van Wiemeersch](https://github.com/cvan)
-- [Daosheng Mu](https://github.com/daoshengmu)
-- [Kearwood "Kip" Gilbert](https://github.com/kearwood)
 
 ## WebVR
 
 - [webvr.rocks](https://webvr.rocks)
-- [Mozilla VR Team Page](https://mozvr.com)
+- [webvr.info](https://webvr.info)
+- [Mozilla VR](https://mozvr.com)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
 
 ## Roadmap
@@ -144,7 +106,7 @@ awesome people you'll run across on your journey with A-Frame!
 
 ## Contributing
 
-A-Frame has had over 155 different contributors, a number that grows every
+A-Frame has had over 200 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
