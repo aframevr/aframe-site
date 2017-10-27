@@ -90,5 +90,8 @@ author: twitter|andgokevin|Kevin Ngo
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Halloween Feature! Building Ghost Train Builder&quot; by <a href="https://twitter.com/realisetweets?ref_src=twsrc%5Etfw">@realisetweets</a>. Design, implementation w/ <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a>, perf.  <a href="https://t.co/3RiD6enDQX">https://t.co/3RiD6enDQX</a> <a href="https://t.co/2Oj16WgHQk">pic.twitter.com/2Oj16WgHQk</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/793109141858332672?ref_src=twsrc%5Etfw">October 31, 2016</a></blockquote>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">An Example Using networked-aframe to Update Custom Components, and How I Debugged It<a href="https://t.co/VjYMbXboeR">https://t.co/VjYMbXboeR</a><br>thx <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> <a href="https://twitter.com/HaydenLee37?ref_src=twsrc%5Etfw">@HaydenLee37</a> etc.</p>&mdash; M Chen (@machenmusik) <a href="https://twitter.com/machenmusik/status/923713074187530241?ref_src=twsrc%5Etfw">October 27, 2017</a></blockquote>
+
+
 
 </div>
