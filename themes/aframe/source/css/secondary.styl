@@ -584,3 +584,36 @@ video
 
 .post > .page__section:first-child
   margin-top 0
+
+.cdn-link
+  width 100%
+  max-width 200px
+  position relative
+  &.cdn-link--copied:before
+    opacity 1
+  &.cdn-link--copy-error:after
+    opacity 1
+  &__input
+    max-width 200px
+    border 1px solid #dadada
+    border-radius 2px
+    box-shadow 0;
+    display -webkit-box;
+    display -ms-flexbox;
+    display flex
+    font-size 15px
+    height 30px
+    outline-color #ef2d5e
+    padding 0 5px 0 10px
+    width 100%
+  &:before, &:after
+    opacity 0
+    position absolute
+    top 30px
+    font-size 12px
+    transition opacity 1s ease
+  &:before
+    content 'Copied!'
+    color green
+  &:after
+    content 'Please press ctrl+c'
