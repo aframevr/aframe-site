@@ -10,7 +10,6 @@ author: twitter|andgokevin|Kevin Ngo
 ---
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 <div class="tweets tweets-feature">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Networked-Aframe now has Positional Audio!<br><br>v0.4 release notes: <a href="https://t.co/3rTn2We3tM">https://t.co/3rTn2We3tM</a><br><br>Try it out: <a href="https://t.co/O8ImdS6DXH">https://t.co/O8ImdS6DXH</a><br><br>And congrats to <a href="https://twitter.com/netpro2k?ref_src=twsrc%5Etfw">@netpro2k</a> and <a href="https://twitter.com/TheNameIsLong?ref_src=twsrc%5Etfw">@TheNameIsLong</a> for their first contributions to NAF! <a href="https://t.co/rTgcZZKj0e">pic.twitter.com/rTgcZZKj0e</a></p>&mdash; Hayden Lee (@HaydenLee37) <a href="https://twitter.com/HaydenLee37/status/928324268772925440?ref_src=twsrc%5Etfw">November 8, 2017</a></blockquote>
 
@@ -57,6 +56,8 @@ author: twitter|andgokevin|Kevin Ngo
 ## Components
 
 <div class="tweets">
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Test our new a-terminal component for <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> <a href="https://t.co/GoiV9vpta9">https://t.co/GoiV9vpta9</a> <a href="https://twitter.com/hashtag/webvr?src=hash&amp;ref_src=twsrc%5Etfw">#webvr</a> <a href="https://t.co/rSrZ3W3Rym">pic.twitter.com/rSrZ3W3Rym</a></p>&mdash; SciArt Lab (@sciartlab) <a href="https://twitter.com/sciartlab/status/927665772628987906?ref_src=twsrc%5Etfw">November 6, 2017</a></blockquote>
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> I created an A-Frame Door component for students. All examples require you move close to the door.<a href="https://t.co/IRtyqJZ1M3">https://t.co/IRtyqJZ1M3</a><br>Say &quot;Open&quot; or &quot;Close&quot;<a href="https://t.co/NLVJqhlH0g">https://t.co/NLVJqhlH0g</a><br>Press SPACE Key<a href="https://t.co/u4P2ufGb0i">https://t.co/u4P2ufGb0i</a></p>&mdash; SirFizX (@SirFizX_ELHS) <a href="https://twitter.com/SirFizX_ELHS/status/928742399190470658?ref_src=twsrc%5Etfw">November 9, 2017</a></blockquote>
 
 
