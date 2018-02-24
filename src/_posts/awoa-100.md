@@ -142,4 +142,5 @@ author: twitter|andgokevin|Kevin Ngo
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stores like SteamVR are not a place for all VR projects. However the Web IS and we can now browse <a href="https://twitter.com/hashtag/WebVR?src=hash&amp;ref_src=twsrc%5Etfw">#WebVR</a> with <a href="https://twitter.com/supermediumvr?ref_src=twsrc%5Etfw">@supermediumvr</a> <a href="https://t.co/nyQKkTH5ne">https://t.co/nyQKkTH5ne</a> released by devs from Mozilla &amp; <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> JS framework<br>Vive &amp; Rift supported. WMR/SteamVR wasn&#39;t perfect in my case.</p>&mdash; Guillaume Sasdy (@GuillaumeSasdy) <a href="https://twitter.com/GuillaumeSasdy/status/964649021280317443?ref_src=twsrc%5Etfw">February 16, 2018</a></blockquote>
 
 
+
 </div>
