@@ -141,7 +141,7 @@ marker and you provide the url to your own marker.  So in our case
 `<a-marker-camera>` should be replaced by the following.
 
 ```html
-<a-marker-camera type='pattern' patternUrl='path/to/pattern-marker.patt'></a-marker-camera>
+<a-marker-camera type='pattern' url='path/to/pattern-marker.patt'></a-marker-camera>
 ```
 
 Simple enough.
@@ -266,7 +266,7 @@ with a custom pattern marker, and a barcode.
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
-    <a-marker type='pattern' patternUrl='path/to/pattern-marker.patt'>
+    <a-marker type='pattern' url='path/to/pattern-marker.patt'>
       <a-box position='0 0.5 0' material='color: red;'></a-box>
     </a-marker>
 
