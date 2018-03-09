@@ -14,12 +14,13 @@ out [Supermedium](http://store.steampowered.com/app/803010/Supermedium/) using
 A-Frame!
 
 We hit A Week of A-Frame 100, highlighting the long way we've come such that
-there are companies and startups taking the leap with A-Frame. Including:
+there are companies and startups taking the leap with A-Frame. There's even an
+A-Frame application published on Steam VR! Including:
 
 - [Ottifox](https://ottifox.com/) - A nimble design app that helps you create VR and AR prototypes that run in the browser - without writing code.
 - [Halo Labs](https://www.halolabs.io/) - VR/AR design, prototyping, and collaboration solution for teams.
 - [Archilogic](https://spaces.archilogic.com/explore) - Turn floor plans into virtual tours.
-- [Vragments](https://getfader.com/) - Build and publishh your own 360 story.
+- [Vragments](https://getfader.com/) - Build and publish your own 360 story.
 - [Scapic](https://scapic.com/) - Create immersive worlds.
 - [Supermedium](https://supermedium.com/) - The virtual reality browser.
 
