@@ -42,7 +42,7 @@
   },
   "scripts": {
     "awoa": "node node_scripts/awoa.js",
-    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.7.0 && rm -rf .multidep/aframe-0.7.0 && npm install aframevr/aframe#master && npm run installdocs",
+    "bumpdocs": "npm cache clean aframevr/aframe#docs-v0.8.0 && rm -rf .multidep/aframe-0.8.0 && npm install aframevr/aframe#master && npm run installdocs",
     "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
     "dev": "npm run clean && npm run generate:config && npm run server",
