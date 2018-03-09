@@ -79,7 +79,7 @@ so Let us know to list them here!
 - [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
 - [WebXR London](https://www.meetup.com/web-xr/)
 - [Mozilla Global VR Group](https://t.me/MozillaVR)
--[VR Karbala Group](https://telegram.me/VRKarbala)
+- [VR Karbala Group](https://telegram.me/VRKarbala)
 
 Are you holding an event? Below are some resources:
 
@@ -94,10 +94,12 @@ Are you holding an event? Below are some resources:
 
 ## WebVR
 
-- [webvr.rocks](https://webvr.rocks)
+- [WebVR Directory](https://webvr.directory)
+- [Supermedium](https://supermedium.com)
 - [webvr.info](https://webvr.info)
-- [Mozilla VR](https://mozvr.com)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
+- [webvr.rocks](https://webvr.rocks)
+- [Mozilla](https://mozvr.com)
 
 ## Roadmap
 
