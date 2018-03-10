@@ -22,6 +22,8 @@ A-Frame application published on Steam VR! Including:
 - [Archilogic](https://spaces.archilogic.com/explore) - Turn floor plans into virtual tours.
 - [Vragments](https://getfader.com/) - Build and publish your own 360 story.
 - [Scapic](https://scapic.com/) - Create immersive worlds.
+- [Lucid Web](https://www.lucidweb.io/) - WebVR player.
+- [Ideaspace](https://www.ideaspacevr.org/) - CMS.
 - [Supermedium](https://supermedium.com/) - The virtual reality browser.
 
 Alongside many other companies!
