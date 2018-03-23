@@ -31,6 +31,12 @@ community a safe space for you.
   Overflow](http://stackoverflow.com/questions/tagged/aframe), and put effort
   into the question by providing context and code samples.
 
+## Core Team
+
+- [Diego Marcos](https://github.com/dmarcos)
+- [Don McCurdy](https://github.com/donmccurdy)
+- [Kevin Ngo](https://github.com/ngokevin)
+
 ## News
 
 - [Blog](https://aframe.io/blog/) - **A Week of A-Frame** collects the latest
@@ -86,20 +92,14 @@ Are you holding an event? Below are some resources:
 - [Presentation Kit (Slide Deck)](https://github.com/aframevr/aframe-presentation-kit)
 - [Promotional Materials (Stickers, Posters, Images)](https://github.com/aframevr/aframe-presentation-kit/tree/master/materials)
 
-## Core Team
-
-- [Diego Marcos](https://github.com/dmarcos)
-- [Don McCurdy](https://github.com/donmccurdy)
-- [Kevin Ngo](https://github.com/ngokevin)
-
 ## WebVR
 
 - [WebVR Directory](https://webvr.directory)
-- [Supermedium](https://supermedium.com)
 - [webvr.info](https://webvr.info)
 - [W3C WebVR Spec](https://github.com/w3c/webvr)
 - [webvr.rocks](https://webvr.rocks)
-- [Mozilla](https://mozvr.com)
+- [Mozilla](https://vr.mozilla.org)
+- [Supermedium](https://supermedium.com)
 
 ## Roadmap
 
