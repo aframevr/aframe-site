@@ -78,6 +78,7 @@ so Let us know to list them here!
 
 - [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
+- [New York Meetup Group](https://www.meetup.com/A-Frame-NYC/)
 - [Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
