@@ -389,7 +389,6 @@ If you want to see various source code for implementations of game states:
 
 - [A-Blast `gamestate`](https://github.com/aframevr/a-blast/blob/master/src/components/gamestate.js)
 - [A Saturday Night `game-state`](https://github.com/aframevr/a-saturday-night/blob/master/src/components/game-state.js)
-- [Architect `gamestate`](https://github.com/ngokevin/architect/blob/master/components/gamestate.js)
 
 Whatever becomes the ultimate approach to game state will become the Oracle of
 the Metaverse!
