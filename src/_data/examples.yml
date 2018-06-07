@@ -67,25 +67,39 @@ showcase:
   title: Lights
 
 - section: showcase
-  slug: shopping
-  scene_url: https://aframe.io/aframe/examples/showcase/shopping/
-  source_url: https://github.com/aframevr/aframe/tree/master/examples/showcase/shopping
-  title: Shopping
-
-- section: showcase
   slug: snowglobe
   scene_url: https://2017.ronikdesign.com/?camera=fps
   author: Ronik Design (@ronikdesign)
   title: Snowglobe
 
 - section: showcase
-  slug: tracked-controllers
-  scene_url: https://aframe.io/aframe/examples/showcase/tracked-controls/
-  source_url: https://github.com/aframevr/aframe/blob/v0.7.0/examples/showcase/tracked-controls/index.html
-  title: Tracked Controllers
+  slug: supercraft
+  scene_url: https://supermedium.com/craft/icky-snake
+  title: Supercraft
+  author: Supermedium
   supports:
-    mobile: false
+    mobile: true
     controllers: true
+
+- section: showcase
+  slug: super-says
+  scene_url: https://supermedium.github.io/supersays/src/
+  source_url: https://github.com/supermedium/supersays
+  title: Super Says
+  author: Supermedium
+  supports:
+    controllers: true
+    mobile: false
+
+- section: showcase
+  slug: gunters-of-oasis
+  scene_url: https://supermedium.com/gunters-of-oasis-deploy
+  source_url: https://github.com/supermedium/gunters-of-oasis
+  title: Gunters of OASIS
+  author: Supermedium
+  supports:
+    controllers: true
+    mobile: false
 
 - section: showcase
   slug: a-blast
