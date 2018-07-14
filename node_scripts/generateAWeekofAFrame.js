@@ -29,12 +29,17 @@ function replaceTwitterEmbeds (content) {
   let match = twitterRegex.exec(content);
   let twitterScriptIncluded = false;
   while (match !== null) {
-    let request = req
-      .get(`https://publish.twitter.com/oembed?url=${match[0]}`)
-      .then(res => {
-        content = content.replace(res.body.url,
-                                  res.body.html.replace(/<script.*<\/script>/, ''));
-      });
+    let request = (function (url) {
+      console.log('Processing', match[0]);
+      return req
+        .get(`https://publish.twitter.com/oembed?url=${match[0]}`)
+        .then(res => {
+          content = content.replace(res.body.url,
+                                    res.body.html.replace(/<script.*<\/script>/, ''));
+        }).catch(err => {
+          throw new Error(`Not found: ${url}.`);
+        });
+    })(match[0]);
     requests.push(request);
     match = twitterRegex.exec(content);
   }
