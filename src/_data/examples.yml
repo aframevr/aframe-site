@@ -93,7 +93,7 @@ showcase:
 
 - section: showcase
   slug: gunters-of-oasis
-  scene_url: https://supermedium.com/gunters-of-oasis-deploy
+  scene_url: https://supermedium.com/gunters-of-oasis-deploy/
   source_url: https://github.com/supermedium/gunters-of-oasis
   title: Gunters of OASIS
   author: Supermedium
