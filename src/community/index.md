@@ -8,16 +8,6 @@ toc: true
 A-Frame's greatest strength is in enabling an ecosystem and the community of
 people who come together to make developing WebVR a rewarding experience.
 
-We are committed to providing a friendly, safe and welcoming environment for
-all, regardless of gender, sexual orientation, disability, ethnicity, religion,
-or similar personal characteristic. Our code of conduct sets the standards for
-behavior in all official A-Frame channels.
-
-If you feel you have been or are being harassed or made uncomfortable by a
-community member, please contact any of the A-Frame team members immediately.
-Whether you are a regular contributor or a newcomer, we care about making the
-community a safe space for you.
-
 ## Getting Started
 
 - [Documentation](https://aframe.io/docs/) - Official documentation and guides. If you get
@@ -33,9 +23,13 @@ community a safe space for you.
 
 ## Core Team
 
-- [Diego Marcos](https://github.com/dmarcos)
-- [Don McCurdy](https://github.com/donmccurdy)
-- [Kevin Ngo](https://github.com/ngokevin)
+- [Diego Marcos](https://github.com/dmarcos) ([Supermedium](https://supermedium.com))
+- [Don McCurdy](https://github.com/donmccurdy) (Google)
+- [Kevin Ngo](https://github.com/ngokevin) ([Supermedium](https://supermedium.com))
+
+To get A-Frame questions answered, we're also hanging out on the [Supermedium
+Discord](https://discord.gg/tGYjkYr). Feel from to come and ask us questions
+directly!
 
 ## News
 
@@ -78,6 +72,7 @@ so Let us know to list them here!
 
 - [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
+- [Bay Area WebVR Meetup Group](https://www.meetup.com/Web-VR/)
 - [New York Meetup Group](https://www.meetup.com/A-Frame-NYC/)
 - [Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
@@ -109,7 +104,7 @@ Are you holding an event? Below are some resources:
 
 ## Contributing
 
-A-Frame has had over 200 different contributors, a number that grows every
+A-Frame has had over 250 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
@@ -118,3 +113,15 @@ repository](https://github.com/aframevr/aframe) and [issue
 tracker](https://github.com/aframevr/aframe/issues/) are the front lines of the
 implementation work. Our reviewers strive to be friendly and to help mentor
 newcomers, so don't hesitate to open a pull request!
+
+## Conduct
+
+We are committed to providing a friendly, safe and welcoming environment for
+all, regardless of gender, sexual orientation, disability, ethnicity, religion,
+or similar personal characteristic. Our code of conduct sets the standards for
+behavior in all official A-Frame channels.
+
+If you feel you have been or are being harassed or made uncomfortable by a
+community member, please contact any of the A-Frame team members immediately.
+Whether you are a regular contributor or a newcomer, we care about making the
+community a safe space for you.
