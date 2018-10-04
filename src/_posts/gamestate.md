@@ -7,6 +7,8 @@ image:
   src: https://cloud.githubusercontent.com/assets/674727/24813155/d1afc7fe-1b81-11e7-99b7-b444babd2593.png
 ---
 
+> The current solution now is the **[A-Frame State Component](https://www.npmjs.com/package/aframe-state-component)**, which is sort of based off Redux patterns, but without all the memory issues, simpler API, and tailored for A-Frame performance.
+
 Larger VR applications need a way of cleanly managing application or game
 state. Managing lots of client-side state in a non-tangled manner has been a
 large topic in 2D web development over the past couple of years which has given
