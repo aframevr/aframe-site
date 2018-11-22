@@ -92,10 +92,9 @@ Are you holding an event? Below are some resources:
 
 - [WebVR Directory](https://webvr.directory)
 - [webvr.info](https://webvr.info)
-- [W3C WebVR Spec](https://github.com/w3c/webvr)
-- [webvr.rocks](https://webvr.rocks)
-- [Mozilla](https://vr.mozilla.org)
 - [Supermedium](https://supermedium.com)
+- [W3C WebVR Spec](https://github.com/w3c/webvr)
+- [Mozilla](https://vr.mozilla.org)
 
 ## Roadmap
 
