@@ -36,6 +36,7 @@ function replaceTwitterEmbeds (content) {
         .then(res => {
           content = content.replace(res.body.url,
                                     res.body.html.replace(/<script.*<\/script>/, ''));
+          content = content.replace(/__/g, '\__');
         }).catch(err => {
           throw new Error(`Not found: ${url}.`);
         });
