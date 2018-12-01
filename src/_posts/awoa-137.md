@@ -23,8 +23,7 @@ author: https://supermedium.com|Kevin Ngo
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Are you ready to talk about Christmas yet? Something fun we created last year using <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> <a href="https://twitter.com/GoogleARVR?ref_src=twsrc%5Etfw">@googlearvr</a> <a href="https://twitter.com/blender_org?ref_src=twsrc%5Etfw">@blender_org</a> <a href="https://twitter.com/hashtag/webgl?src=hash&amp;ref_src=twsrc%5Etfw">#webgl</a> <a href="https://twitter.com/hashtag/webvr?src=hash&amp;ref_src=twsrc%5Etfw">#webvr</a> 🎅🏻🎄 <a href="https://t.co/gH9rfA9nXW">https://t.co/gH9rfA9nXW</a></p>&mdash; 14islands (@14islands) <a href="https://twitter.com/14islands/status/1067780600562704385?ref_src=twsrc%5Etfw">November 28, 2018</a></blockquote>
 
-
-
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Gotta catch em all! <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> support for <a href="https://twitter.com/htcvive?ref_src=twsrc%5Etfw">@htcvive</a> Focus just landed <a href="https://t.co/iefnFGInNQ">https://t.co/iefnFGInNQ</a> Thanks to <a href="https://twitter.com/Datatitian?ref_src=twsrc%5Etfw">@Datatitian</a> for the code and <a href="https://twitter.com/dulce303?ref_src=twsrc%5Etfw">@dulce303</a> for the models ð¥³</p>&mdash; Diego (@dmarcos) <a href="https://twitter.com/dmarcos/status/1068208705433292800?ref_src=twsrc%5Etfw">November 29, 2018</a></blockquote>
 
 </div>
 
@@ -33,6 +32,10 @@ author: https://supermedium.com|Kevin Ngo
 ## Projects
 
 <div class="tweets">
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Latest update to my VR SuperGun project, an exploded view of the virtual arcade cabinet with Capcom&#39;s Ghosts &#39;N Goblins playable in a web browser, streaming direct from a JAMMA arcade board, built in <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> WebVR <a href="https://t.co/7PAQIX4hWX">https://t.co/7PAQIX4hWX</a> <a href="https://t.co/xIzNr9Eoyg">pic.twitter.com/xIzNr9Eoyg</a></p>&mdash; Kieran Nolan (@kierannolan) <a href="https://twitter.com/kierannolan/status/1067817913254641664?ref_src=twsrc%5Etfw">November 28, 2018</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Started playing with <a href="https://twitter.com/hashtag/webVR?src=hash&amp;ref_src=twsrc%5Etfw">#webVR</a> using <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> and made a thing in a matter of minutes. Works in monoscopic mode on desktop or VR mode on mobile. Looking forward to doing more with this awesome framework. Check it out here: <a href="https://t.co/cSYYiSUsHx">https://t.co/cSYYiSUsHx</a> <a href="https://t.co/aJij89RL38">pic.twitter.com/aJij89RL38</a></p>&mdash; Ted Wallace-Williams (@ted_w_w) <a href="https://twitter.com/ted_w_w/status/1068455733279277056?ref_src=twsrc%5Etfw">November 30, 2018</a></blockquote>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/glitch?ref_src=twsrc%5Etfw">@glitch</a>  <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> <a href="https://twitter.com/quaternius?ref_src=twsrc%5Etfw">@quaternius</a> <a href="https://twitter.com/nodejs?ref_src=twsrc%5Etfw">@nodejs</a> <br>Increased avatar customization.<a href="https://t.co/zzfXaYKb2s">https://t.co/zzfXaYKb2s</a><br><br>Try this by logging in with username &quot;Doge&quot; or &quot;Meme&quot; both with password 1234.<a href="https://t.co/AvpOjlgiRq">https://t.co/AvpOjlgiRq</a><br><br>Remix the project here:<a href="https://t.co/qVxuupqMmo">https://t.co/qVxuupqMmo</a></p>&mdash; SirFizX (@SirFizX_ELHS) <a href="https://twitter.com/SirFizX_ELHS/status/1066368049266200576?ref_src=twsrc%5Etfw">November 24, 2018</a></blockquote>
 
