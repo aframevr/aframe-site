@@ -48,7 +48,7 @@ directly!
 
 ## Slack
 
-[Sign up to the A-Frame Slack](https://aframevr-slack.herokuapp.com) to hang
+[Sign up to the A-Frame Slack](https://aframe.io/slack-invite/) to hang
 out and join the discussion. The Slack is very active with currently over 4500
 people! Channels include:
 

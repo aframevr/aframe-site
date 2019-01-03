@@ -148,7 +148,7 @@ aframe_lib:
 
 slack:
   aframe:
-    signup_url: https://aframevr-slack.herokuapp.com
+    signup_url: https://aframe.io/slack-invite/
 
 reddit:
   webvr:
