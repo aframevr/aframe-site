@@ -76,7 +76,7 @@ showcase:
   slug: supercraft
   scene_url: https://supermedium.com/craft/icky-snake
   title: Supercraft
-  author: Supermedium
+  author: Supermedium (@supermediumvr)
   supports:
     mobile: true
     controllers: true
@@ -86,7 +86,7 @@ showcase:
   scene_url: https://supermedium.github.io/supersays/src/
   source_url: https://github.com/supermedium/supersays
   title: Super Says
-  author: Supermedium
+  author: Supermedium (@supermediumvr)
   supports:
     controllers: true
     mobile: false
@@ -96,7 +96,7 @@ showcase:
   scene_url: https://supermedium.com/gunters-of-oasis-deploy/
   source_url: https://github.com/supermedium/gunters-of-oasis
   title: Gunters of OASIS
-  author: Supermedium
+  author: Supermedium (@supermediumvr)
   supports:
     controllers: true
     mobile: false
@@ -127,21 +127,11 @@ showcase:
     mobile: true
 
 - section: showcase
-  slug: city-builder
-  scene_url: https://aframe.city/#NewYington
-  source_url: https://github.com/kfarr/aframe-city-builder
-  title: City Builder
-  author: Kieran Farr (@kfarr)
+  slug: beatsaver-viewer
+  scene_url: https://supermedium.com/beatsaver-viewer/?id=1183-814
+  source_url: https://github.com/supermedium/beatsaver-viewer
+  title: BeatSaver Viewer
+  author: Supermedium (@supermediumvr)
   supports:
-    controllers: true
-    mobile: false
-
-- section: showcase
-  slug: museum
-  scene_url: https://cecropia.github.io/thehallaframe/
-  source_url: https://github.com/cecropia/thehallaframe/
-  title: Museum
-  author: Cecropia Solutions (@cecropia_s)
-  supports:
-    controllers: true
+    controllers: false
     mobile: false
