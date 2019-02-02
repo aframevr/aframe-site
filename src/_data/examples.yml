@@ -54,8 +54,8 @@ showcase:
 
 - section: showcase
   slug: audio-visualization
-  scene_url: https://ngokevin.github.io/kframe/components/audioanalyser/examples/showcase/
-  source_url: https://github.com/ngokevin/kframe/blob/b78fb6a17d39556fcf61d00f5afb8b835651e473/components/audioanalyser/examples/showcase/index.html
+  scene_url: https://supermedium.github.io/superframe/components/audioanalyser/examples/showcase/
+  source_url: https://github.com/supermedium/superframe/blob/c011b597de0d2e0b7fc26e0d16f0cb1dfc8a42e9/components/audioanalyser/examples/showcase/index.html
   title: Audio Visualization
   supports:
     mobile: false
