@@ -23,7 +23,7 @@
             class="subnav examples-subnav borderless-links">
           <% var lastPost = site.posts.sort('-date').data[0] %>
           <li class="example-item">
-            <a class="subnav-link" href="<%- absolute_url_for(lastPost.path) %>" title="<%- lastPost.title %>"><%- lastPost.title %></a>
+            <a class="subnav-link" href="<%- lastPost.path %>" title="<%- lastPost.title %>"><%- lastPost.title %></a>
           </li>
         </ul>
       </div>
