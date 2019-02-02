@@ -92,7 +92,7 @@ classic A-Frame. So you can load a model exactly as you would in A-Frame.
 
 Here is an example of loading a [gltf](https://www.khronos.org/gltf) model,
 just add that in your a-scene.  For more detail see [A-Frame documentation
-about models](https://aframe.io/docs/0.5.0/introduction/models.html##sidebar).
+about models](https://aframe.io/docs/0.8.0/introduction/models.html##sidebar).
 
 ```html
 <!-- define your gltf asset -->
