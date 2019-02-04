@@ -53,11 +53,13 @@ showcase:
   title: Anime UI
 
 - section: showcase
-  slug: audio-visualization
-  scene_url: https://supermedium.github.io/superframe/components/audioanalyser/examples/showcase/
-  source_url: https://github.com/supermedium/superframe/blob/c011b597de0d2e0b7fc26e0d16f0cb1dfc8a42e9/components/audioanalyser/examples/showcase/index.html
-  title: Audio Visualization
+  slug: beatsaver-viewer
+  scene_url: https://supermedium.com/beatsaver-viewer/?id=1183-814
+  source_url: https://github.com/supermedium/beatsaver-viewer
+  title: BeatSaver Viewer
+  author: Supermedium (@supermediumvr)
   supports:
+    controllers: false
     mobile: false
 
 - section: showcase
@@ -125,13 +127,3 @@ showcase:
   supports:
     controllers: true
     mobile: true
-
-- section: showcase
-  slug: beatsaver-viewer
-  scene_url: https://supermedium.com/beatsaver-viewer/?id=1183-814
-  source_url: https://github.com/supermedium/beatsaver-viewer
-  title: BeatSaver Viewer
-  author: Supermedium (@supermediumvr)
-  supports:
-    controllers: false
-    mobile: false
