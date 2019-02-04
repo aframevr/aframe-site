@@ -5,393 +5,379 @@ code,
 pre,
 .example__viewsource,
 .sidebar .page-title,
-.menu-item a {
-  font-family: $code-font;
-}
-.hidden {
-  display !important;
-}
-em {
-  color: #7f8c8d;
-}
+.menu-item a
+  font-family $code-font
 
-html[data-is-home="true"] {
-  min-width: 1000px;
+.hidden
+  display !important
 
-  .sidebar .get-started {
-    display: none;
-  }
-}
-body {
-  color: #fff;
-}
-a {
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.5);
-  text-decoration: none;
-}
-a:hover {
-  border-bottom-color: rgba(255,255,255,0.3);
-  color: rgba(255,255,255,0.75);
-}
-a:active,
-a.click {
-  border-bottom-color: rgba(255,255,255,0.5);
-  color: #fff;
-}
-ul {
-  list-style-type: none;
-}
-.logo__wordmark {
-  background: url("../images/aframe-name-white.svg") no-repeat;
-}
-.sidebar {
-  background: #ef2d5e;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  width: 270px;
-}
-.sidebar::-webkit-scrollbar {
-  width: 0 !important;
-}
+em
+  color #7f8c8d
 
-.sidebar .page-title {
-  font-size: 15px;
-  color: rgba(0,0,0,0.6);
-  font-weight: 100;
-  letter-spacing: 0.02em;
-}
-.main {
-  background: #ef2d5e;
-  display: flex;
-  height: 100%;
-}
+html[data-is-home="true"]
+  min-width 1000px
+
+  .sidebar .get-started
+    display none
+
+body
+  color #fff
+
+a
+  border-bottom 1px solid rgba(255,255,255,0.15)
+  color rgba(255,255,255,0.5)
+  text-decoration none
+
+ahover
+  border-bottom-color rgba(255,255,255,0.3)
+  color rgba(255,255,255,0.75)
+
+aactive,
+a.click
+  border-bottom-color rgba(255,255,255,0.5)
+  color #fff
+
+ul
+  list-style-type none
+
+.logo__wordmark
+  background url("../images/aframe-name-white.svg") no-repeat
+
+.sidebar
+  background #ef2d5e
+  -webkit-overflow-scrolling touch
+  -ms-overflow-style none
+  width 270px
+
+.sidebar-webkit-scrollbar
+  width 0 !important
+
+
+.sidebar .page-title
+  font-size 15px
+  color rgba(0,0,0,0.6)
+  font-weight 100
+  letter-spacing 0.02em
+
+.main
+  background #ef2d5e
+  display flex
+  height 100%
+
 .sidebar,
-.content {
-  position: relative;
-}
-.sidebar {
-  max-width: 400px;
-  overflow-x: hidden;
-}
-.sidebar__wrap {
-  height: 100vh;
-  position: relative;
-  overflow-y: auto;
-}
-.content {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-}
-.example__controls {
-  position: absolute;
-  text-transform: uppercase;
-  top: 5px;
-  right: 5px;
-  z-index: 2;
-  font-size: 12px;
-  line-height: 1.5;
-  a {
-    background: rgba(0,0,0,0.35);
-    color: #fff;
-    display: inline-block;
-    padding: 5px 10px;
-    &:active, &:hover {
-      background-color: #ef2d5e;
-    }
-  }
-}
-.aframe-animation .example__controls {
-  display: none;
-}
-[data-is-mobile="true"] .example__controls {
-  display: none;
-}
-.page__title {
-  line-height: 1.3;
-  font-size: 36px;
-  font-weight: 600;
-}
-.subnav-link {
-  font-size: 16px;
-  font-weight: 300;
-  margin-left: -3px;
-  padding: 2px 4px 2px 3px;
-  display: block;
-  transition: 0.05s color ease;
-  color: #fff;
-  width: 100%;
-}
-.subnav-link:hover {
-  background-color: rgba(0,0,0,0.05);
-  color: #fff;
-}
-.subnav-link:active,
-.subnav-link.click {
-  background-color: rgba(0,0,0,0.5);
-}
+.content
+  position relative
+
+.sidebar
+  max-width 400px
+  overflow-x hidden
+
+.sidebar__wrap
+  height 100vh
+  position relative
+  overflow-y auto
+
+.content
+  flex 1
+  overflow-y auto
+  display flex
+  flex-direction column
+
+.example__controls
+  position absolute
+  text-transform uppercase
+  top 5px
+  right 5px
+  z-index 2
+  font-size 12px
+  line-height 1.5
+  a
+    background rgba(0,0,0,0.35)
+    color #fff
+    display inline-block
+    padding 5px 10px
+    &active, &hover
+      background-color #ef2d5e
+
+.aframe-animation .example__controls
+  display none
+
+[data-is-mobile="true"] .example__controls
+  display none
+
+.page__title
+  line-height 1.3
+  font-size 36px
+  font-weight 600
+
+.subnav-link
+  font-size 16px
+  font-weight 300
+  margin-left -3px
+  padding 2px 4px 2px 3px
+  display block
+  transition 0.05s color ease
+  color #fff
+  width 100%
+
+.subnav-linkhover
+  background-color rgba(0,0,0,0.05)
+  color #fff
+
+.subnav-linkactive,
+.subnav-link.click
+  background-color rgba(0,0,0,0.5)
+
 .subnav-link.current,
-.subnav-link.current:hover {
-  font-weight: 500;
-  color: #fff;
-}
-.example__iframe {
-  display: block;
-}
-.example-nav-link {
-  border: 0;
-  height: 100%;
-  font-size: 2rem;
-  font-weight: 600;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: -0.5rem -1rem;
-  width: 50%;
-}
-.example-nav-link span {
-  display: none;
-}
-.example-nav-next {
-  text-align: right;
-}
-.credits {
-  background: url("../images/mozvr-white.svg") 45% 60% no-repeat;
-  background-size: 80% 80%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 50px;
-  width: 90px;
-  margin: 0px 20px 20px;
-}
-.credits:hover {
-  background-color: rgba(0,0,0,0.1);
-}
+.subnav-link.currenthover
+  font-weight 500
+  color #fff
 
-.sponsor {
-  vertical-align: middle;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0 20px 20px;
-  height: 30px;
-}
-.sponsor .message {
-  margin-right: 7px;
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  vertical-align: top;
-  font-weight: 300;
-}
-a.mozilla-logo {
-  display: inline-block;
-  opacity: 0.8;
-  background: url(../images/mozilla-logo.svg) no-repeat;
-  height: 24px;
-  width: 88px;
-  border: none;
-  position: relative;
-  top: 1px;
-  transition: .15s opacity ease-in-out;
-}
-a.mozilla-logo:hover {
-  opacity: 1;
-}
+.example__iframe
+  display block
 
-.examples-subnav {
-  margin-top: 0.5rem;
-}
-.btn-index {
-  color: #fff;
-}
+.example-nav-link
+  border 0
+  height 100%
+  font-size 2rem
+  font-weight 600
+  display inline-block
+  padding 0.5rem 1rem
+  margin -0.5rem -1rem
+  width 50%
+
+.example-nav-link span
+  display none
+
+.example-nav-next
+  text-align right
+
+.credits
+  background url("../images/mozvr-white.svg") 45% 60% no-repeat
+  background-size 80% 80%
+  position absolute
+  bottom 0
+  right 0
+  height 50px
+  width 90px
+  margin 0px 20px 20px
+
+.creditshover
+  background-color rgba(0,0,0,0.1)
+
+.sponsor
+  vertical-align middle
+  position absolute
+  bottom 0
+  right 0
+  margin 0 20px 20px
+  height 30px
+
+.sponsor .message
+  margin-right 7px
+  display inline-block
+  height 30px
+  line-height 30px
+  vertical-align top
+  font-weight 300
+
+.examples-subnav
+  margin-top 0.5rem
+
+.btn-index
+  color #fff
+
 .content--examples,
-.content--body {
-  height: 100%;
-}
-.content--examples .content--body {
-  background: #DADADA;
-}
+.content--body
+  height 100%
 
-span[itemprop] {
-  opacity: 0.65;
-}
+.content--examples .content--body
+  background #DADADA
 
-.content--index {
-  flex-direction: row;
-}
-.content--index .slogan {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: -0.05rem;
-}
-.content--index .intro {
-  color: #fff;
-  font-size: 16.5px;
-  font-weight: 300;
-  line-height: 1.55;
-  margin-top: 10px;
-  width: 350px;
-}
-.content--index .disclaimer {
-  color: rgba(255,255,255,0.5);
-}
-.menu {
-  margin-bottom: 38px;
-}
-.menu-item {
-  display: inline-block;
-}
-.menu-item a {
-  text-transform: uppercase;
-  color: rgba(0,0,0,0.75);
-  margin-right: 20px;
-  border: none;
-}
-.menu-item a:hover {
-  color: #000;
-  background-color: rgba(0,0,0,0.02);
-  border-bottom: 1px solid rgba(0,0,0,0.5);
-}
-.get-started {
-  background-color: #fff;
-  border: 3px solid #fff;
-  color: #000;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-  margin-top: 20px;
-  padding: 8px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.05s ease;
-}
-.get-started:hover {
-  background-color: #fff;
-  color: #ef2d5e;
-}
-.get-started:active {
-  opacity: 0.8;
-}
-.mobile-get-started {
-  margin: 0 0 20px;
-}
-@media screen and (max-width: 399px) {
-  #logo {
-    max-width: 40vw;
-  }
-}
-@media screen and (min-width: 480px) {
-  .example__controls {
-    top: 20px;
-    right: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .example__controls {
-    top: 30px;
-    right: 30px;
-  }
-}
-@media only screen and (max-device-width: 736px) and (orientation: landscape) {
-  .sidebar {
-    display: none;
-  }
-}
+span[itemprop]
+  opacity 0.65
+
+.content--index
+  flex-direction row
+
+.content--index .slogan
+  color #fff
+  font-size 28px
+  font-weight 300
+  line-height 1.2
+  letter-spacing -0.05rem
+
+.content--index .intro
+  color #fff
+  font-size 16.5px
+  font-weight 300
+  line-height 1.55
+  margin-top 10px
+  width 350px
+
+.content--index .disclaimer
+  color rgba(255,255,255,0.5)
+
+.menu
+  margin-bottom 38px
+
+.menu-item
+  display inline-block
+
+.menu-item a
+  text-transform uppercase
+  color rgba(0,0,0,0.75)
+  margin-right 20px
+  border none
+
+.menu-item ahover
+  color #000
+  background-color rgba(0,0,0,0.02)
+  border-bottom 1px solid rgba(0,0,0,0.5)
+
+.get-started
+  background-color #fff
+  border 3px solid #fff
+  color #000
+  display inline-block
+  font-size 15px
+  font-weight 300
+  letter-spacing 0.05rem
+  margin-top 20px
+  padding 8px 30px
+  text-align center
+  text-transform uppercase
+  transition 0.05s ease
+
+.get-startedhover
+  background-color #fff
+  color #ef2d5e
+
+.get-startedactive
+  opacity 0.8
+
+.mobile-get-started
+  margin 0 0 20px
+
+@media screen and (max-width 399px)
+  #logo
+    max-width 40vw
+
+@media screen and (min-width 480px)
+  .example__controls
+    top 20px
+    right 20px
+
+@media screen and (min-width 768px)
+  .example__controls
+    top 30px
+    right 30px
+
+@media only screen and (max-device-width 736px) and (orientation landscape)
+  .sidebar
+    display none
 
 // Hide items based on compatibility.
-// Example: "360 Video" example on mobile until autoplay/inline video UX issues handled properly.
-// See https://github.com/aframevr/aframe/issues/316
+// Example "360 Video" example on mobile until autoplay/inline video UX issues handled properly.
+// See https//github.com/aframevr/aframe/issues/316
 [data-is-android="true"] [data-supports-android="false"],
-[data-is-ios="true"] [data-supports-ios="false"] {
-  display: none !important;
-}
+[data-is-ios="true"] [data-supports-ios="false"]
+  display none !important
 
-.home-content {
-  display: flex;
-}
+.home-content
+  display flex
 
-.home-center {
-  background-color: #24CAFF;
-  flex: 2;
-  height: 100vh;
-  width: 100%;
-}
+.home-center
+  background-color #24CAFF
+  flex 2
+  height 100vh
+  width 100%
 
-.content--index .copy__wrap {
-  flex: 1;
-  min-width: 440px;
-}
+.content--index .copy__wrap
+  flex 1
+  min-width 440px
 
-.home-feature-links {
-  display: none;
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 25px;
+.home-feature-links
+  display none
+  font-size 16px
+  font-weight 300
+  margin-bottom 25px
 
-  li {
-    margin-left: -3px;
-    padding: 2px 4px 2px 3px;
-    text-transform: uppercase;
+  li
+    margin-left -3px
+    padding 2px 4px 2px 3px
+    text-transform uppercase
 
-    &:hover {
-      background-color: rgba(0,0,0,0.05);
-    }
-  }
-  a {
-    border: 0;
-    color: #FFF;
-    display: block;
-  }
-}
+    &hover
+      background-color rgba(0,0,0,0.05)
 
-[data-is-mobile="false"] .home-feature-links {
-  display: block;
-}
 
-.example-tracked-controllers {
-  display: inline-block;
-  height: 18px;
-  left: 1px;
-  position: relative;
-  top: 4px;
-  width: 20px;
-}
+  a
+    border 0
+    color #FFF
+    display block
 
-.blog-list {
-  display: none;
-  padding-bottom: 10px;
-  +media--desktop() {
-    display: block;
-  }
-}
 
-.blog-list .page-title a {
-  border-bottom: 0;
-  font-weight: 300;
-  font-size: 15px;
-  color: rgba(0,0,0,0.6);
-  font-weight: 100;
-  letter-spacing: 0.02em;
-}
+[data-is-mobile="false"] .home-feature-links
+  display block
 
-.blog-list .subnav-link {
-  width: 210px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+.example-tracked-controllers
+  display inline-block
+  height 18px
+  left 1px
+  position relative
+  top 4px
+  width 20px
 
-.example-nav {
-  margin-top: 18px;
-}
-@media screen and (min-width: 768px) {
-  .example-nav {
-    display none;
-  }
-}
+.blog-list
+  display none
+  padding-bottom 10px
+  +media--desktop()
+    display block
+
+.blog-list .page-title a
+  border-bottom 0
+  font-weight 300
+  font-size 15px
+  color rgba(0,0,0,0.6)
+  font-weight 100
+  letter-spacing 0.02em
+
+.blog-list .subnav-link
+  width 210px
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+.example-nav
+  margin-top 18px
+  +media--768()
+    display none
+
+#usersContainer
+  bottom 0
+  padding 15px 30px
+  position absolute
+  right 0
+  p
+    margin-bottom 5px
+    opacity 0.85
+
+#users
+  align-items center
+  display flex
+  flex-wrap wrap
+  a
+    border 0
+  img
+    margin 5px
+    max-height 50px
+    opacity 0.65
+    transition opacity .1s
+    vertical-align middle
+    width 64px
+    &:hover
+      opacity 0.95
+
+#homeContent
+  position relative

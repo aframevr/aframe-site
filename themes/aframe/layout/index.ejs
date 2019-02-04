@@ -9,7 +9,7 @@
       allowfullscreen="yes" allowvr="yes" scrolling="no"></iframe>
   </div>
 
-  <div class="copy__wrap">
+  <div id="homeContent" class="copy__wrap">
     <ul class="menu">
       <li class="menu-item">
         <a href="<%- url_for(docs_root_path(site.pages, config.aframe_version)) %>">Docs</a>
@@ -35,13 +35,17 @@
       Get Started
     </a>
 
-    <span class="sponsor" itemscope itemprop="organization" itemtype="http://schema.org/Organization">
-      <div class="message">Supported by</div>
-      <span itemprop="sponsor" itemscope itemtype="http://schema.org/Organization">
-        <a class="mozilla-logo" itemprop="url" href="https://www.mozilla.org/" rel="external">
-          <span itemprop="name"></span>
-        </a>
-      </span>
-    </span>
+    <div id="usersContainer">
+      <p>Used by</p>
+      <ul id="users">
+        <% site.data.users.users.forEach(function (user, idx) { %>
+          <li class="user">
+            <a href="<%- user.url %>" title="<%- user.description %>">
+              <img src="/images/users/<%- user.company.toLowerCase().replace(/\s/g, '') %>.svg">
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
   </div>
 </div>

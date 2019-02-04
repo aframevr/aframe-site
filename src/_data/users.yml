@@ -1,0 +1,48 @@
+users:
+- company: Supermedium
+  url: https://supermedium.com
+  description: Current maintainers and co-creators of A-Frame.
+
+- company: Mozilla
+  url: https://hubs.mozilla.org
+  description: Where A-Frame was originally created!
+
+- company: Google
+  url: https://experiments.withgoogle.com/webvr/inside-music/view/
+  description: Used by Google Creative Labs for projects such as Inside Music and Norman VR.
+
+- company: CERN
+  url: http://cms-aframe.web.cern.ch/
+  description: Used by CERN for its 360-degree tour of the Large Hadron Collider particle acclerator.
+
+- company: Chevrolet
+  url: https://d1vlj71acq3rf7.cloudfront.net/index.html
+  description: Used by Chevy to show off and configure their 2019 Silverado truck.
+
+- company: Disney
+  url: https://disney.co.uk/mickey-mouse/hidden-mickey
+  description: A Hidden Mickey experience developed by @shaunmnemonic.
+
+- company: Ford
+  url: https://www.ford.com/suvs/expedition/#component05
+  description: Used by Ford to explore the interior of their 2019 Expedition SUV.
+
+- company: Magic Leap
+  url: https://twitter.com/andgokevin/status/913654138268819456
+  description: Used by Magic Leap for their previous landing page and now used internally for development and demos.
+
+- company: NASA
+  url: https://accessmars.withgoogle.com/
+  description: Presented by NASA Jet Propulsion Laboratory to provide a tour of missions to the surface of Mars. Made in collaboration with Google and Supermedium.
+
+- company: Samsung
+  url: https://samsungvr.com/
+  description: Used by Samsung for their 360 and VR web player. Their developer relations team also evangelizing and teach with A-Frame to produce WebVR content.
+
+- company: Sony
+  url: https://www.escaperoommoviechallenge.com/
+  description: Used by Sony to market their Hollywood movie, Escape Room, with a $1M online sweepstakes challenge.
+
+- company: Toyota
+  url: https://customise.toyota.com.au/camry/
+  description: Used by Toyota to present and configure their 2019 Camry.
