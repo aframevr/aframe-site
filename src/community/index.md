@@ -49,8 +49,8 @@ directly!
 ## Slack
 
 [Sign up to the A-Frame Slack](https://aframe.io/slack-invite/) to hang
-out and join the discussion. The Slack is very active with currently over 4500
-people! Channels include:
+out and join the discussion. The Slack is pretty active with currently over 7000
+people!
 
 - [`#general`](http://aframevr.slackarchive.io/general/) - All things A-Frame!
 - [`#questions`](http://aframevr.slackarchive.io/questions/) - Ask questions
@@ -58,12 +58,6 @@ people! Channels include:
   [StackOverflow](https://stackoverflow.com/questions/tagged/aframe).
 - [`#issues`](http://aframevr.slackarchive.io/issues/) - Talk about A-Frame issues.
 - [`#projects`](http://aframevr.slackarchive.io/projects/) - Show off cool A-Frame projects.
-- [`#planning`](http://aframevr.slackarchive.io/planning/) - Talk about A-Frame roadmap and
-  release coordination.
-
-See archived A-Frame Slack history through [the A-Frame Slack
-Archive](http://aframevr.slackarchive.io). You can also [sign up to the
-general WebVR Slack](https://webvr-slack.herokuapp.com/).
 
 ## User Groups, Events, Meetups
 
@@ -103,7 +97,7 @@ Are you holding an event? Below are some resources:
 
 ## Contributing
 
-A-Frame has had over 250 different contributors, a number that grows every
+A-Frame has had over 270 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 

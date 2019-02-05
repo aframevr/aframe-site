@@ -4,8 +4,8 @@ users:
   description: Current maintainers and co-creators of A-Frame.
 
 - company: Mozilla
-  url: https://hubs.mozilla.org
-  description: Where A-Frame was originally created!
+  url: https://mozilla.org
+  description: Where A-Frame was originally conceived.
 
 - company: Google
   url: https://experiments.withgoogle.com/webvr/inside-music/view/
@@ -40,9 +40,94 @@ users:
   description: Used by Samsung for their 360 and VR web player. Their developer relations team also evangelizing and teach with A-Frame to produce WebVR content.
 
 - company: Sony
-  url: https://www.escaperoommoviechallenge.com/
+  url: http://www.escaperoommoviechallenge.com/
   description: Used by Sony to market their Hollywood movie, Escape Room, with a $1M online sweepstakes challenge.
 
 - company: Toyota
   url: https://customise.toyota.com.au/camry/
   description: Used by Toyota to present and configure their 2019 Camry.
+
+usersShowcase:
+- project: Supermedium (Virtual Reality Browser)
+  author: Supermedium
+  url: https://supermedium.com
+  description: The browser for the VR Internet, available on Oculus and Steam. Surf between VR apps on the Web in seconds. From the creators of A-Frame.
+  image: /assets/images/showcase/supermedium.jpg
+
+- project: Supercraft
+  author: Supermedium
+  url: https://supermedium.com/supercraft/
+  description: Build VR in VR with your hands.
+  image: /assets/images/showcase/supercraft.jpg
+
+- project: Musical Forest
+  author: Google
+  url: https://experiments.withgoogle.com/musical-forest
+  description: Join users from around the world in a musical forest.
+  image: /assets/images/showcase/musicalforest.jpg
+
+- project: Inside Music
+  author: Google (with Song Exploder, Supermedium)
+  url: https://experiments.withgoogle.com/webvr/inside-music/view/
+  description: What if you could step inside a song? This is a simple experiment that explores that idea. See and hear the individual layers of music all around you to get a closer look at how music is made.
+  image: /assets/images/showcase/insidemusic.jpg
+
+- project: CERN CMS / LHC Tour
+  author: CERN
+  url: http://cms-aframe.web.cern.ch/
+  description: A 360-degree tour of CERN's Large Hadron Collider (LHC) particle acclerator and its Compact Muon Solenoid (CMS).
+  image: /assets/images/showcase/cern.jpg
+
+- project: 2019 Chevrolet Silverado
+  author: Chevrolet
+  url: https://d1vlj71acq3rf7.cloudfront.net/index.html
+  description: A product page and configurator for Chevrolet's 2019 Silverado truck.
+  image: /assets/images/showcase/chevrolet.jpg
+
+- project: Hidden Mickey
+  author: Disney
+  url: https://disney.co.uk/mickey-mouse/hidden-mickey
+  description: Hidden Mickeys have been slipped in all across Disney. They now find their way into this official A-Frame game, can you spot them?
+  image: /assets/images/showcase/disney.jpg
+
+- project: 2019 Ford Expedition
+  author: Ford
+  url: https://www.ford.com/suvs/expedition/#component05
+  description: Explore the interior of a 2019 Ford Expedition SUV.
+  image: /assets/images/showcase/ford.jpg
+
+- project: Hubs
+  author: Mozilla
+  url: https://hubs.mozilla.org
+  description: A new way to get together.
+  image: /assets/images/showcase/mozilla.jpg
+
+- project: Access Mars
+  author: NASA (with Google, Supermedium)
+  url: https://accessmars.withgoogle.com/
+  description: The real surface of Mars. Recorded by NASA's Curiosity rover. Now in your browser.
+  image: /assets/images/showcase/nasa.jpg
+
+- project: Samsung VR
+  author: Samsung
+  url: https://samsungvr.com/
+  description: Samsung's official immersive 360 content library.
+  image: /assets/images/showcase/samsung.jpg
+
+- project: Escape Room Movie Challenge
+  author: Sony
+  url: https://www.escaperoommoviechallenge.com/
+  description: $1m sweepstakes challenge from Sony to market the Hollywood film, "Escape Room". Find the clues, escape the rooms.
+  image: /assets/images/showcase/sony.jpg
+
+- project: 2019 Toyota Camry
+  author: Toyota
+  url: https://customise.toyota.com.au/camry/
+  description: Product page and configurator for the 2019 Toyota Camry.
+  image: /assets/images/showcase/toyota.jpg
+
+- project: A-Painter
+  author: A-Frame Team
+  url: https://aframe.io/a-painter/
+  description: Paint in VR with your hands.
+  image: /assets/images/showcase/apainter.jpg

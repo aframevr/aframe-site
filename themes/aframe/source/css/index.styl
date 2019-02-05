@@ -361,17 +361,32 @@ span[itemprop]
   right 0
   p
     margin-bottom 5px
+    font-size 18px
     opacity 0.85
+    a
+      border-bottom 0
+      color $white
+  #usersMore
+    font-size 12px
+    left 6px
+    opacity 0.85
+    position relative
+    transition opacity .1s
+    &:hover
+      opacity 1
+    a
+      color $white
 
 #users
   align-items center
   display flex
   flex-wrap wrap
-  a
-    border 0
+  .user
+    a
+      border 0
   img
     margin 5px
-    max-height 50px
+    max-height 40px
     opacity 0.65
     transition opacity .1s
     vertical-align middle
