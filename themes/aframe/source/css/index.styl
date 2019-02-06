@@ -28,11 +28,11 @@ a
   color rgba(255,255,255,0.5)
   text-decoration none
 
-ahover
+a:hover
   border-bottom-color rgba(255,255,255,0.3)
   color rgba(255,255,255,0.75)
 
-aactive,
+a:active,
 a.click
   border-bottom-color rgba(255,255,255,0.5)
   color #fff
@@ -96,7 +96,7 @@ ul
     color #fff
     display inline-block
     padding 5px 10px
-    &active, &hover
+    &:active, &:hover
       background-color #ef2d5e
 
 .aframe-animation .example__controls
@@ -124,7 +124,7 @@ ul
   background-color rgba(0,0,0,0.05)
   color #fff
 
-.subnav-linkactive,
+.subnav-link:active,
 .subnav-link.click
   background-color rgba(0,0,0,0.5)
 
@@ -249,12 +249,15 @@ span[itemprop]
   text-transform uppercase
   transition 0.05s ease
 
-.get-startedhover
-  background-color #fff
-  color #ef2d5e
+  &:hover
+    background-color #fff
+    color #ef2d5e
 
-.get-startedactive
-  opacity 0.8
+  &:active
+    opacity 0.8
+
+.sidebar .get-started
+  padding 8px 30px
 
 .mobile-get-started
   margin 0 0 20px
@@ -308,9 +311,8 @@ span[itemprop]
     padding 2px 4px 2px 3px
     text-transform uppercase
 
-    &hover
+    &:hover
       background-color rgba(0,0,0,0.05)
-
 
   a
     border 0
