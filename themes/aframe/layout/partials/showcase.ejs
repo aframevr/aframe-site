@@ -1,0 +1,16 @@
+<ul id="communityShowcase">
+  <% projects.forEach(function (project, idx) { %>
+    <li>
+      <a href="<%- project.url %>">
+        <img src="<%- project.image %>">
+      </a>
+      <div class="projectInfo">
+        <p class="projectTitle">
+          <span class="projectName"><%- project.name %></span>
+          <span class="projectAuthor">by <%- project.author %></span>
+        </p>
+        <p class="projectDescription"><%- project.description %></p>
+      </div>
+    </li>
+  <% }); %>
+</ul>

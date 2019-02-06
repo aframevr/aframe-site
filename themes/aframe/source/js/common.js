@@ -81,7 +81,7 @@
 
     // Sort sections by their offsets and grab reference to table of contents link.
     var sectionScrolls = [];
-    $$('.content h2, .content h3').forEach(function (heading) {
+    $$('.content h2, .content h3, .anchor-heading').forEach(function (heading) {
       var link = document.querySelector('#table-of-contents [href="#' + heading.getAttribute('id') + '"]');
       if (!link) { return; }
       sectionScrolls.push([heading.offsetTop, link]);

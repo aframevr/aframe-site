@@ -1,0 +1,133 @@
+projects:
+- name: Supermedium
+  author: Supermedium
+  url: https://supermedium.com
+  description: The browser for the VR Internet, available on Oculus and Steam. Surf between VR apps on the Web in seconds. From the creators of A-Frame.
+  image: /images/showcase/supermedium.jpg
+
+- name: Supercraft
+  author: Supermedium
+  url: https://supermedium.com/supercraft/
+  description: Build VR in VR with your hands.
+  image: /images/showcase/supercraft.jpg
+
+- name: Musical Forest
+  author: Google
+  url: https://experiments.withgoogle.com/musical-forest
+  description: Join users from around the world in a musical forest.
+  image: /images/showcase/musicalforest.jpg
+
+- name: Inside Music
+  author: Google (with Song Exploder, Supermedium)
+  url: https://experiments.withgoogle.com/webvr/inside-music/view/
+  description: What if you could step inside a song? This is a simple experiment that explores that idea. See and hear the individual layers of music all around you to get a closer look at how music is made.
+  image: /images/showcase/insidemusic.jpg
+
+- name: CERN CMS / LHC Tour
+  author: CERN
+  url: http://cms-aframe.web.cern.ch/
+  description: A 360-degree tour of CERN's Large Hadron Collider (LHC) particle acclerator and its Compact Muon Solenoid (CMS).
+  image: /images/showcase/cern.jpg
+
+- name: 2019 Chevrolet Silverado
+  author: Chevrolet
+  url: https://d1vlj71acq3rf7.cloudfront.net/index.html
+  description: A product page and configurator for Chevrolet's 2019 Silverado truck.
+  image: /images/showcase/chevrolet.jpg
+
+- name: Hidden Mickey
+  author: Disney
+  url: https://disney.co.uk/mickey-mouse/hidden-mickey
+  description: Hidden Mickeys have been slipped in all across Disney. They now find their way into this official A-Frame game, can you spot them?
+  image: /images/showcase/disney.jpg
+
+- name: 2019 Ford Expedition
+  author: Ford
+  url: https://www.ford.com/suvs/expedition/#component05
+  description: Explore the interior of a 2019 Ford Expedition SUV.
+  image: /images/showcase/ford.jpg
+
+- name: Hubs
+  author: Mozilla
+  url: https://hubs.mozilla.org
+  description: A new way to get together.
+  image: /images/showcase/mozilla.jpg
+
+- name: Access Mars
+  author: NASA (with Google, Supermedium)
+  url: https://accessmars.withgoogle.com/
+  description: The real surface of Mars. Recorded by NASA's Curiosity rover. Now in your browser.
+  image: /images/showcase/nasa.jpg
+
+- name: Samsung VR
+  author: Samsung
+  url: https://samsungvr.com/
+  description: Samsung's official immersive 360 content library.
+  image: /images/showcase/samsung.jpg
+
+- name: Escape Room Movie Challenge
+  author: Sony
+  url: https://www.escaperoommoviechallenge.com/
+  description: $1m sweepstakes challenge from Sony to market the Hollywood film, "Escape Room". Find the clues, escape the rooms.
+  image: /images/showcase/sony.jpg
+
+- name: 2019 Toyota Camry
+  author: Toyota
+  url: https://customise.toyota.com.au/camry/
+  description: Product page and configurator for the 2019 Toyota Camry.
+  image: /images/showcase/toyota.jpg
+
+- name: A-Painter
+  author: A-Frame Team
+  url: https://aframe.io/a-painter/
+  description: Paint in VR with your hands.
+  image: /images/showcase/apainter.jpg
+
+users:
+- company: Supermedium
+  url: https://supermedium.com
+  description: Current maintainers and co-creators of A-Frame.
+
+- company: Mozilla
+  url: https://mozilla.org
+  description: Where A-Frame was originally conceived.
+
+- company: Google
+  url: https://experiments.withgoogle.com/webvr/inside-music/view/
+  description: Used by Google Creative Labs for projects such as Inside Music and Norman VR.
+
+- company: CERN
+  url: http://cms-aframe.web.cern.ch/
+  description: Used by CERN for its 360-degree tour of the Large Hadron Collider particle acclerator.
+
+- company: Chevrolet
+  url: https://d1vlj71acq3rf7.cloudfront.net/index.html
+  description: Used by Chevy to show off and configure their 2019 Silverado truck.
+
+- company: Disney
+  url: https://disney.co.uk/mickey-mouse/hidden-mickey
+  description: A Hidden Mickey experience developed by @shaunmnemonic.
+
+- company: Ford
+  url: https://www.ford.com/suvs/expedition/#component05
+  description: Used by Ford to explore the interior of their 2019 Expedition SUV.
+
+- company: Magic Leap
+  url: https://twitter.com/andgokevin/status/913654138268819456
+  description: Used by Magic Leap for their previous landing page and now used internally for development and demos.
+
+- company: NASA
+  url: https://accessmars.withgoogle.com/
+  description: Presented by NASA Jet Propulsion Laboratory to provide a tour of missions to the surface of Mars. Made in collaboration with Google and Supermedium.
+
+- company: Samsung
+  url: https://samsungvr.com/
+  description: Used by Samsung for their 360 and VR web player. Their developer relations team also evangelizing and teach with A-Frame to produce WebVR content.
+
+- company: Sony
+  url: http://www.escaperoommoviechallenge.com/
+  description: Used by Sony to market their Hollywood movie, Escape Room, with a $1M online sweepstakes challenge.
+
+- company: Toyota
+  url: https://customise.toyota.com.au/camry/
+  description: Used by Toyota to present and configure their 2019 Camry.

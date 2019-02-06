@@ -11,6 +11,10 @@
 
     <%- page.content %>
 
+    <% if (page.type === 'showcase') { %>
+      <%- partial('partials/showcase', {projects: site.data.showcase.projects}) %>
+    <% } %>
+
     <%- partial('partials/docs/footer', {item: page}) %>
   </div>
 
