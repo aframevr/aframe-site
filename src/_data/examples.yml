@@ -29,7 +29,7 @@ showcase:
 
 - section: showcase
   slug: 360-image-gallery
-  scene_url: https://aframe.io/360-image-gallery-boilerplate/
+  scene_url: https://aframe-gallery.glitch.me
   source_url: https://glitch.com/~aframe-gallery
   title: 360&deg Image Gallery
 
