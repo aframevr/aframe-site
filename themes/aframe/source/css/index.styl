@@ -227,6 +227,7 @@ span[itemprop]
 .menu-item a
   text-transform uppercase
   color rgba(0,0,0,0.75)
+  font-size 14px
   margin-right 20px
   border none
 
@@ -356,11 +357,23 @@ span[itemprop]
   +media--768()
     display none
 
+@media (max-height: 475px) {
+  #usersContainer {
+    display none
+  }
+}
+
 #usersContainer
   bottom 0
   padding 15px 30px
   position absolute
   right 0
+
+  p
+    font-size 13px
+    opacity 0.85
+    margin-bottom 0
+    padding-left 20px
 
 #users
   align-items center
@@ -375,7 +388,7 @@ span[itemprop]
     opacity 0.8
     transition opacity .1s
     vertical-align middle
-    width 64px
+    width 48px
     &:hover
       opacity 0.95
 
