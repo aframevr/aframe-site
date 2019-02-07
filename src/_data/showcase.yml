@@ -5,6 +5,12 @@ projects:
   description: The browser for the VR Internet, available on Oculus and Steam. Surf between VR apps on the Web in seconds. From the creators of A-Frame.
   image: /images/showcase/supermedium.jpg
 
+- name: Soundboxing WebVR
+  author: Eric Florenzano (with Supermedium)
+  url: https://webvr.soundboxing.co
+  description: A VR music kickboxing game!
+  image: /images/showcase/soundboxing.jpg
+
 - name: Supercraft
   author: Supermedium
   url: https://supermedium.com/supercraft/
@@ -22,6 +28,12 @@ projects:
   url: https://experiments.withgoogle.com/webvr/inside-music/view/
   description: What if you could step inside a song? This is a simple experiment that explores that idea. See and hear the individual layers of music all around you to get a closer look at how music is made.
   image: /images/showcase/insidemusic.jpg
+
+- name: BeatSaver Viewer
+  author: Supermedium
+  url: https://supermedium.com/beatsaver-viewer/
+  description: Preview community-created beatmaps for Beat Saber on the Web.
+  image: /images/showcase/beatsaverviewer.jpg
 
 - name: CERN CMS / LHC Tour
   author: CERN
@@ -84,18 +96,6 @@ projects:
   image: /images/showcase/apainter.jpg
 
 users:
-- company: Supermedium
-  url: https://supermedium.com
-  description: Current maintainers and co-creators of A-Frame.
-
-- company: Mozilla
-  url: https://mozilla.org
-  description: Where A-Frame was originally conceived.
-
-- company: Google
-  url: https://experiments.withgoogle.com/webvr/inside-music/view/
-  description: Used by Google Creative Labs for projects such as Inside Music and Norman VR.
-
 - company: CERN
   url: http://cms-aframe.web.cern.ch/
   description: Used by CERN for its 360-degree tour of the Large Hadron Collider particle acclerator.
@@ -112,9 +112,17 @@ users:
   url: https://www.ford.com/suvs/expedition/#component05
   description: Used by Ford to explore the interior of their 2019 Expedition SUV.
 
+- company: Google
+  url: https://experiments.withgoogle.com/webvr/inside-music/view/
+  description: Used by Google Creative Labs for projects such as Inside Music and Norman VR.
+
 - company: Magic Leap
   url: https://twitter.com/andgokevin/status/913654138268819456
   description: Used by Magic Leap for their previous landing page and now used internally for development and demos.
+
+- company: Mozilla
+  url: https://mozilla.org
+  description: Where A-Frame was originally conceived.
 
 - company: NASA
   url: https://accessmars.withgoogle.com/
@@ -127,6 +135,10 @@ users:
 - company: Sony
   url: http://www.escaperoommoviechallenge.com/
   description: Used by Sony to market their Hollywood movie, Escape Room, with a $1M online sweepstakes challenge.
+
+- company: Supermedium
+  url: https://supermedium.com
+  description: Current maintainers and co-creators of A-Frame.
 
 - company: Toyota
   url: https://customise.toyota.com.au/camry/
