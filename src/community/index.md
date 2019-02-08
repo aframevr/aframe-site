@@ -23,9 +23,48 @@ people who come together to make developing WebVR a rewarding experience.
 
 ## Core Team
 
-- [Diego Marcos](https://github.com/dmarcos) ([Supermedium](https://supermedium.com))
-- [Don McCurdy](https://github.com/donmccurdy) (Google)
-- [Kevin Ngo](https://github.com/ngokevin) ([Supermedium](https://supermedium.com))
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+Meet the team!
+
+<ul id="team">
+  <li>
+    <img class="teamAvatar" src="/images/avatars/diego.jpg">
+    <div class="teamInfoContainer">
+      <p class="teamName">Diego Marcos</p>
+      <p class="teamTagline"><i class="fas fa-briefcase"></i> Co-founder @ Supermedium</p>
+      <p class="teamLocation"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+      <div class="teamSocial">
+        <a href="https://github.com/dmarcos"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/dmarcos"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </li>
+  <li>
+    <img class="teamAvatar" src="/images/avatars/kevin.jpg">
+    <div class="teamInfoContainer">
+      <p class="teamName">Kevin Ngo</p>
+      <p class="teamTagline"><i class="fas fa-briefcase"></i> Co-founder @ Supermedium</p>
+      <p class="teamLocation"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+      <div class="teamSocial">
+        <a href="https://github.com/ngokevin"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/andgokevin"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </li>
+  <li>
+    <img class="teamAvatar" src="/images/avatars/don.jpg">
+    <div class="teamInfoContainer">
+      <p class="teamName">Don McCurdy</p>
+      <p class="teamTagline"><i class="fas fa-briefcase"></i> Developer @ Google</p>
+      <p class="teamLocation"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+      <div class="teamSocial">
+        <a href="https://github.com/donmccurdy"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/donrmccurdy"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </li>
+</ul>
 
 To get A-Frame questions answered, we're also hanging out on the [Supermedium
 Discord](https://discord.gg/tGYjkYr). Feel from to come and ask us questions
@@ -43,7 +82,7 @@ directly!
 
 ## Ecosystem
 
-- [*A Week of A-Frame*](https://aframe.io/blog) - Weekly series featuring fresh content from the community.
+- [A Week of A-Frame](https://aframe.io/blog) - Weekly series featuring fresh content from the community.
 - [A-Frame Components](https://www.npmjs.com/search?q=aframe-component&page=1&ranking=optimal)
 
 ## Slack
@@ -59,23 +98,26 @@ people!
 - [`#issues`](http://aframevr.slackarchive.io/issues/) - Talk about A-Frame issues.
 - [`#projects`](http://aframevr.slackarchive.io/projects/) - Show off cool A-Frame projects.
 
+There's also an #aframe channel on the [Supermedium
+Discord](https://supermedium.com/discord/) if you prefer that.
+
 ## User Groups, Events, Meetups
 
 Have a user group or do frequent meetups? This is a work-in-progress list
 so Let us know to list them here!
 
-- [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Bay Area Meetup Group](https://www.meetup.com/A-Frame/)
 - [Bay Area WebVR Meetup Group](https://www.meetup.com/Web-VR/)
-- [New York Meetup Group](https://www.meetup.com/A-Frame-NYC/)
+- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
+- [Facebook Group](https://www.facebook.com/groups/aframevr/)
 - [Japan Facebook Group](https://www.facebook.com/groups/1250425238325010/)
+- [Mozilla Global VR Group](https://t.me/MozillaVR)
+- [New York Meetup Group](https://www.meetup.com/A-Frame-NYC/)
+- [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
+- [VR Karbala Group](https://telegram.me/VRKarbala)
 - [VRLab Brussels](https://vrlab-brussels.info/wiki/Main/WhatIsVRLabBrussels)
 - [WebVR India Group](https://github.com/webvr-india/volunteer-contributions/)
-- [Taipei WebGL & WebVR Meetup Group](https://www.meetup.com/TPE-WebGL-WebVR/)
-- [Discourse: WebVR-zh (中文討論區)](https://discourse.mozilla-community.org/c/communities/webvr-zh)
 - [WebXR London](https://www.meetup.com/web-xr/)
-- [Mozilla Global VR Group](https://t.me/MozillaVR)
-- [VR Karbala Group](https://telegram.me/VRKarbala)
 
 Are you holding an event? Below are some resources:
 
@@ -86,9 +128,7 @@ Are you holding an event? Below are some resources:
 
 - [WebVR Directory](https://webvr.directory)
 - [webvr.info](https://webvr.info)
-- [Supermedium](https://supermedium.com)
-- [W3C WebVR Spec](https://github.com/w3c/webvr)
-- [Mozilla](https://vr.mozilla.org)
+- [W3C WebXR Spec](https://immersive-web.github.io/webxr/)
 
 ## Roadmap
 
