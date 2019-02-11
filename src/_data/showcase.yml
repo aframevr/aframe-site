@@ -23,6 +23,12 @@ projects:
   description: Join users from around the world in a musical forest.
   image: /images/showcase/musicalforest.jpg
 
+- name: Towermax Fitness
+  author: Towermax Fitness
+  url: https://towermax.fitness/
+  description: Soundbased virtual reality workout for boxers, martial arts and fitness enthusiasts.
+  image: /images/showcase/towermaxfitness.jpg
+
 - name: Inside Music
   author: Google (with Song Exploder, Supermedium)
   url: https://experiments.withgoogle.com/webvr/inside-music/view/

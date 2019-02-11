@@ -75,6 +75,16 @@ showcase:
   title: Snowglobe
 
 - section: showcase
+  slug: gunters-of-oasis
+  scene_url: https://supermedium.com/gunters-of-oasis-deploy/
+  source_url: https://github.com/supermedium/gunters-of-oasis
+  title: Gunters of OASIS
+  author: Supermedium (@supermediumvr)
+  supports:
+    controllers: true
+    mobile: false
+
+- section: showcase
   slug: supercraft
   scene_url: https://supermedium.com/craft/icky-snake
   title: Supercraft
@@ -94,11 +104,9 @@ showcase:
     mobile: false
 
 - section: showcase
-  slug: gunters-of-oasis
-  scene_url: https://supermedium.com/gunters-of-oasis-deploy/
-  source_url: https://github.com/supermedium/gunters-of-oasis
-  title: Gunters of OASIS
-  author: Supermedium (@supermediumvr)
+  slug: towermaxfitness
+  scene_url: https://towermax.fitness/tower/
+  title: Towermax Fitness
   supports:
     controllers: true
     mobile: false
