@@ -77,6 +77,12 @@ projects:
   description: The real surface of Mars. Recorded by NASA's Curiosity rover. Now in your browser.
   image: /images/showcase/nasa.jpg
 
+- name: Stand at the Edge of Geologic Time
+  author: NPR
+  url: https://apps.npr.org/rockymountain-vr/
+  description: Transport yourself to Rocky Mountain National Park, with all its sights and sounds, in this immersive geology lesson.
+  image: /images/showcase/npr.jpg
+
 - name: Samsung VR
   author: Samsung
   url: https://samsungvr.com/
