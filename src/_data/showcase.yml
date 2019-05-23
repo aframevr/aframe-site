@@ -5,6 +5,12 @@ projects:
   description: The browser for the VR Internet, available on Oculus and Steam. Surf between VR apps on the Web in seconds. From the creators of A-Frame.
   image: /images/showcase/supermedium.jpg
 
+- name: Moon Rider
+  author: Supermedium
+  url: https://moonrider.xyz
+  description: Surf the musical road among the moon, stars, and lights.
+  image: /images/showcase/moonrider.jpg
+
 - name: Soundboxing WebVR
   author: Eric Florenzano (with Supermedium)
   url: https://webvr.soundboxing.co
