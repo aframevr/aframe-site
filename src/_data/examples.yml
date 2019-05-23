@@ -34,12 +34,6 @@ showcase:
   title: 360&deg Image Gallery
 
 - section: showcase
-  slug: videosphere
-  scene_url: https://aframe-360-video-example.glitch.me/
-  source_url: https://glitch.com/~aframe-360-video-example
-  title: 360&deg; Video
-
-- section: showcase
   slug: animation
   scene_url: /examples/animation/
   source_url: https://github.com/processprocess/lazerGlazer_Viz
