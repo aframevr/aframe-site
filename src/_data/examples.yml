@@ -69,6 +69,14 @@ showcase:
   title: Lights
 
 - section: showcase
+  slug: moonrider
+  scene_url: https://moonrider.xyz
+  source_url: https://github.com:supermedium/moonrider
+  title: Moon Rider
+  supports:
+    mobile: false
+
+- section: showcase
   slug: snowglobe
   scene_url: https://2017.ronikdesign.com/?camera=fps
   author: Ronik Design (@ronikdesign)
