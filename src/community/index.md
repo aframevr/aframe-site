@@ -91,12 +91,12 @@ directly!
 out and join the discussion. The Slack is pretty active with currently over 7000
 people!
 
-- [`#general`](http://aframevr.slackarchive.io/general/) - All things A-Frame!
-- [`#questions`](http://aframevr.slackarchive.io/questions/) - Ask questions
+- `#general` - All things A-Frame!
+- `#questions` - Ask questions
   about A-Frame, but we recommend posting on
   [StackOverflow](https://stackoverflow.com/questions/tagged/aframe).
-- [`#issues`](http://aframevr.slackarchive.io/issues/) - Talk about A-Frame issues.
-- [`#projects`](http://aframevr.slackarchive.io/projects/) - Show off cool A-Frame projects.
+- `#issues` - Talk about A-Frame issues.
+- `#projects` - Show off cool A-Frame projects.
 
 There's also an #aframe channel on the [Supermedium
 Discord](https://supermedium.com/discord/) if you prefer that.
