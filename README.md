@@ -67,7 +67,7 @@ repo](https://github.com/algolia/docsearch-configs/blob/master/configs/aframe.js
 
 ## Credits
 
-Source adopted from the awesome [@vuejs](https://github.com/vuejs/)
+Source adopted from the [@vuejs](https://github.com/vuejs/)
 [site](https://github.com/vuejs/vuejs.org/).
 
 ## License
