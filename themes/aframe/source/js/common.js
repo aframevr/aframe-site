@@ -3,6 +3,7 @@
   initHeadingAnchors();
   initTableOfContents();
   initSidebarScrollState();
+  initSubscribeForm();
 
   function initHeadingAnchors () {
     function anchorId (str) {
@@ -213,5 +214,52 @@
       }
       return [obj];
     };
+  }
+
+  /**
+   * Init XHR handler to subscribe.
+   */
+  function initSubscribeForm () {
+    const form = document.querySelector('#subscribeForm');
+    if (!form) { return; }
+
+    const button = form.querySelector('.submit');
+    const input = form.querySelector('input[type="email"]');
+
+    form.addEventListener('submit', evt => {
+      evt.preventDefault();
+
+      // supermedium/superchimp
+      const xhr = new XMLHttpRequest();
+      let endpoint = 'https://supermedium.com/mail/subscribe';
+      xhr.open('POST', endpoint);
+
+      xhr.addEventListener('load', () => {
+        if (parseInt(xhr.status, 10) !== 200) {
+          window.location.href = 'https://supermedium/subscribe/';
+        }
+        if (button) {
+          button.disabled = true;
+          button.innerHTML = 'Subscribed!';
+        }
+      });
+
+      xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+      xhr.send(JSON.stringify({
+        email: document.querySelector('[name="email"]').value,
+        source: 'aframe'
+      }));
+
+      return false;
+    });
+
+    if (button) {
+      input.addEventListener('keydown', () => {
+        if (button.hasAttribute('disabled')) {
+          button.innerHTML = 'Subscribe';
+          button.removeAttribute('disabled');
+        }
+      });
+    }
   }
 })();
