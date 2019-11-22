@@ -28,6 +28,7 @@ Get updates on A-Frame as well as our upcoming VR projects!
 <div id="subscribeForm">
   <form>
     <input name="email" type="email" placeholder="Email address">
+    <input name="group" type="hidden" value="0335f346e8">
     <button class="submit" type="submit">Subscribe</button>
   </form>
 </div>
