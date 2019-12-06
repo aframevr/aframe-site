@@ -21,7 +21,7 @@
         <h2 class="page-title"><a href="/blog">Blog</a></h2>
         <ul id="examplesSubnav"
             class="subnav examples-subnav borderless-links">
-          <% var lastPost = site.posts.sort('-date').data[0] %>
+          <% var lastPost = get_last_post(site.posts.sort('-date').data) %>
           <li class="example-item">
             <a class="subnav-link" href="<%- absolute_url_for(lastPost.path) %>" title="<%- lastPost.title %>"><%- lastPost.title %></a>
           </li>

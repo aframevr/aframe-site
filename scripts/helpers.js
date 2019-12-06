@@ -294,3 +294,7 @@ hexo.extend.helper.register('meta_image', function (page, defaultCard) {
   // Else, return default card image.
   return defaultCard;
 });
+
+hexo.extend.helper.register('get_last_post', function (posts) {
+  return posts.filter(post => !post.newsletter)[0];
+});
