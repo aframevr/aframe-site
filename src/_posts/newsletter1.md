@@ -4,7 +4,6 @@ from: 07-12-2019
 date: 12-06-2019
 layout: blog
 awoa: true
-newsletter: true
 image:
   src: https://user-images.githubusercontent.com/674727/70361860-eb68c000-1837-11ea-9c46-fc68fe3c4c28.png
 author: https://supermedium.com|Kevin Ngo
