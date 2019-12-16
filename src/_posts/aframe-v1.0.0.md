@@ -31,11 +31,16 @@ support for A-Frame. And to thank people within Google, Oculus, and importantly
 the Web community for testing this version for us. We'll continue to provide
 necessary updates to A-Frame.
 
+We'd also like to celebrate now **300+ contributors**, **10,000+ GitHub
+stars**, and **300+ email subscribers** to the A-Frame project.
+
 If you'd like to continue to support us, please **[subscribe to the A-Frame
 newsletter](https://aframe.io/subscribe/)** where we'll not only provide
 updates and showcase community projects, but requests for testing and user
 feedback support every now and then to keep us going in this grassroots
 project.
+
+Read the [release notes and changelog](https://github.com/aframevr/aframe/releases/tag/v1.0.0).
 
 <div class="tweets tweets-feature">
 
