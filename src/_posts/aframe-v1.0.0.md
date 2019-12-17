@@ -117,8 +117,9 @@ Read the [release notes and changelog](https://github.com/aframevr/aframe/releas
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">me trying to build anything using <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> <a href="https://twitter.com/hashtag/Memes?src=hash&amp;ref_src=twsrc%5Etfw">#Memes</a> <a href="https://t.co/TEyJnG3aua">pic.twitter.com/TEyJnG3aua</a></p>&mdash; roncho (@ronchoqa) <a href="https://twitter.com/ronchoqa/status/1206284740174794754?ref_src=twsrc%5Etfw">December 15, 2019</a></blockquote>
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For those who are using AR.js with <a href="https://twitter.com/hashtag/aframe?src=hash&amp;ref_src=twsrc%5Etfw">#aframe</a> in WebAR apps, please import latest <a href="https://twitter.com/hashtag/aframe?src=hash&amp;ref_src=twsrc%5Etfw">#aframe</a>, v1.0.0 has been shipped ð<br><br>This will avoid problems with new Chrome 79 that has WebXR Device API enabled by default.<br><br>Thanks to <a href="https://twitter.com/aframevr?ref_src=twsrc%5Etfw">@aframevr</a> team for the great work. It&#39;s outstanding.</p>&mdash; NicolÃ² Carpignoli (@nicolocarp) <a href="https://twitter.com/nicolocarp/status/1206268332883808256?ref_src=twsrc%5Etfw">December 15, 2019</a></blockquote>
 
-https://twitter.com/nicolocarp/status/1206268332883808256
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just sent out the new A-Frame newsletter! Subscribe to get a copy of it, else we&#39;ll try to release it next week too. <a href="https://t.co/6SfIh0HYpY">https://t.co/6SfIh0HYpY</a> <a href="https://t.co/1z0zPJeedc">pic.twitter.com/1z0zPJeedc</a></p>&mdash; A-Frame (@aframevr) <a href="https://twitter.com/aframevr/status/1203092603194888192?ref_src=twsrc%5Etfw">December 6, 2019</a></blockquote>
 
 
