@@ -3,7 +3,7 @@ title: "WebXR experimental AR mode"
 date: 2019-12-31
 layout: blog
 image:
-  src: ar-comic.png
+  src: ar-comic.gif
 author: https://twitter.com/klausweidner|Klaus Weidner, https://supermedium.com|Diego Marcos
 ---
 
