@@ -14,6 +14,8 @@ Enable the experimental [WebXR AR module](https://immersive-web.github.io/webxr-
 
 ![button image](/images/blog/ar-vr-buttons.png)
 
+<!-- more -->
+
 Build a scene in the same way than you do for VR. Just make sure that the background doesn't block the camera view 🙂
 
 ```html
