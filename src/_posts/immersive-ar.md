@@ -11,7 +11,7 @@ author: https://twitter.com/klausweidner|Klaus Weidner, https://supermedium.com|
 
 Enable the experimental [WebXR AR module](https://immersive-web.github.io/webxr-ar-module/) in `chrome://flags` and make sure your page is served over HTTPS. [A-Frame 1.0.3 or newer](https://github.com/aframevr/aframe/releases) automatically detects AR and shows the new `Enter AR` button:
 
-![button image](/src/images/blog/ar-vr-buttons.png)
+![button image](/images/blog/ar-vr-buttons.png)
 
 Build a scene in the same way than you do for VR. Just make sure that the background doesn't block the camera view 🙂
 
@@ -38,7 +38,7 @@ Build a scene in the same way than you do for VR. Just make sure that the backgr
 
 [Try now on your ARCore phone](https://xr-spinosaurus.glitch.me/) and check out the [source code](https://glitch.com/edit/#!/xr-spinosaurus?path=index.html:1:0)
 
-![dino AR](/src/images/blog/dino-ar.gif)
+![dino AR](/images/blog/dino-ar.gif)
 
 ## What about interactions?
 
