@@ -1,5 +1,5 @@
 ---
-title: "WebXR experimental AR mode"
+title: "How to experiment with AR and A-Frame"
 date: 2019-12-31
 layout: blog
 image:
