@@ -52,6 +52,8 @@ Developers will be able to cast rays into the real world and retrieve a list of 
 
 When entering AR or VR mode, only WebGL content and the real world or camera image are rendered on screen. DOM layers will allow overlaying HTML elements to present for instance 2D UIs, instructions or contextual information associated to virtual or real world objects.
 
+##
+
 **[Join our discord channel](https://discordapp.com/invite/tGYjkYr)**. The community will love to see what you make.
 
 If you'd like to continue to support us, please **[subscribe to the A-Frame
