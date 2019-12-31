@@ -1,11 +1,12 @@
 ---
 title: "Experiment with AR and A-Frame"
+from: 2019-12-15
 date: 2019-12-31
 layout: blog
 image:
   src: ar-comic.gif
-author: 
-  twitter|klausweidner|Klaus Weidner 
+author:
+  twitter|klausweidner|Klaus Weidner
   twitter|dmarcos|Diego Marcos
 ---
 
