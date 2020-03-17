@@ -4,7 +4,7 @@ home:
   section: home
   slug: home
   scene_url: https://aframe.io/aframe/examples/animation/aframe-logo/?ui=false
-  source_url: https://github.com/aframevr/aframe/blob/v0.9.0/examples/animation/aframe-logo/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/animation/aframe-logo/index.html
   title: Logo
 
 showcase:
@@ -17,14 +17,14 @@ showcase:
 - section: showcase
   slug: hello-metaverse
   scene_url: /examples/hello-metaverse/
-  source_url: https://glitch.com/~aframe-vaporwave
+  source_url: https://aframe-hello-metaverse.glitch.me
   title: Hello Metaverse
   author: Ada Rose Edwards (@lady_ada_king)
 
 - section: showcase
   slug: sky
   scene_url: https://aframe.io/aframe/examples/boilerplate/panorama/
-  source_url: https://github.com/aframevr/aframe/blob/v0.9.0/examples/boilerplate/panorama/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/boilerplate/panorama/index.html
   title: 360&deg; Image
 
 - section: showcase
@@ -34,16 +34,9 @@ showcase:
   title: 360&deg Image Gallery
 
 - section: showcase
-  slug: animation
-  scene_url: /examples/animation/
-  source_url: https://github.com/processprocess/lazerGlazer_Viz
-  title: Animation
-  author: Philip Bell (http://philipbell.org/)
-
-- section: showcase
   slug: anime-UI
   scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
-  source_url: https://github.com/aframevr/aframe/blob/v0.9.0/examples/showcase/anime-UI/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/showcase/anime-UI/index.html
   title: Anime UI
 
 - section: showcase
@@ -59,7 +52,7 @@ showcase:
 - section: showcase
   slug: lights
   scene_url: https://aframe.io/aframe/examples/showcase/dynamic-lights/
-  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/dynamic-lights/index.html
+  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/showcase/dynamic-lights/index.html
   title: Lights
 
 - section: showcase
@@ -69,12 +62,6 @@ showcase:
   title: Moon Rider
   supports:
     mobile: false
-
-- section: showcase
-  slug: snowglobe
-  scene_url: https://2017.ronikdesign.com/?camera=fps
-  author: Ronik Design (@ronikdesign)
-  title: Snowglobe
 
 - section: showcase
   slug: gunters-of-oasis
