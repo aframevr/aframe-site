@@ -29,7 +29,7 @@ For this tutorial we will use the following image:
 
 ![image tracking](/images/blog/arjs3-image-tracking.jpg)
 
-## Creating Image Descriptions
+## Creating Image Descriptors
 
 Next step is to create image descriptors: a set of files that describe your
 image and are needed by the tracking algorithm. We will use the NFT Marked
