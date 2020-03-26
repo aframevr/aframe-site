@@ -14,6 +14,8 @@ For detailed API reference and source code check the [official
 documentation](https://ar-js-org.github.io/AR.js-Docs/) and the [Github
 repository](https://github.com/AR-js-org/AR.js)
 
+<!-- more -->
+
 ## Getting Started with Image Tracking
 
 The new AR.js tracking can take any arbitrary image or drawing (not only
