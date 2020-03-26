@@ -1,5 +1,5 @@
 ---
-title: "Image Tracking and Location Based AR with A-Frame and AR.js 3"
+title: "Image tracking and location based AR with A-Frame and AR.js 3"
 date: 2020-03-26
 layout: blog
 image:
@@ -21,7 +21,7 @@ For this tutorial we will use the following image:
 
 ![image tracking](/images/blog/arjs3-image-tracking.jpg)
 
-Next step is to create Image descriptors: a set of files that describe your image and are needed by the tracking algorithm. We will use the NFT Marked creator available via Web (also available locally as a node.js script if you prefer). Upload your image and click “generate” to create the descriptors. Once the image is processed three files will automatically download. Copy the following snippet of code on a new HTML file and host it on a server. Also a codepen with all the necessary code is available below for convenience.
+Next step is to create Image descriptors: a set of files that describe your image and are needed by the tracking algorithm. We will use the NFT Marked creator available via Web (also available locally as a node.js script if you prefer). Upload your image and click “generate” to create the descriptors. Once the image is processed three files will automatically download. Copy the following snippet of code on a new HTML file and host it on a server. Also a Codepen with all the necessary code is available below for convenience.
 
 ```html
 <!DOCTYPE html>
