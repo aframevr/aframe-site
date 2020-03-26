@@ -1,6 +1,6 @@
 ---
 title: "Image Tracking and Location-Based AR with A-Frame and AR.js 3"
-author: **NicolòCarpignoli** and **Diego Marcos**
+author: Nicolo Carpignoli and Diego Marcos
 date: 2020-03-26 10:00:00
 layout: blog
 image:
@@ -180,7 +180,7 @@ You can find additional support on the resources linked below and also on the
 Have fun and please share the AR experiences you built with AR.js and A-Frame.
 We will love to check them out!
 
-Nicol Carpignoli and Diego Marcos.
+Nicolo Carpignoli and Diego Marcos.
 
 ## Additional Resources
 
