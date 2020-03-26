@@ -72,3 +72,4 @@ Source adopted from [Vue's site](https://github.com/vuejs/vuejs.org/).
 ## License
 
 Licensed under [The MIT License](LICENSE).
+
