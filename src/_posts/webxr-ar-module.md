@@ -7,7 +7,7 @@ image:
 author: **Klaus Weidner** and **Diego Marcos**
 ---
 
-**Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets**. The Web magic doesn't stop there. **AR is also coming** to the [standard](https://immersive-web.github.io/webxr-ar-module/) and you can **experiment today** on [ARCore compatible devices](https://developers.google.com/ar/discover/supported-devices) and [Chrome 79 or newer](https://chromereleases.googleblog.com/2019/12/chrome-for-android-update_17.html).
+**Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets**. The Web magic doesn't stop there. **AR is also coming** to the [standard](https://immersive-web.github.io/webxr-ar-module/) and you can **experiment today** on [Android ARCore compatible devices](https://developers.google.com/ar/discover/supported-devices) and [Chrome 79 or newer](https://chromereleases.googleblog.com/2019/12/chrome-for-android-update_17.html).
 
 Enable the experimental [WebXR AR module](https://immersive-web.github.io/webxr-ar-module/) in `chrome://flags` and make sure your page is served over HTTPS. [A-Frame 1.0.3 or newer](https://github.com/aframevr/aframe/releases) automatically detects AR and shows the new `Enter AR` button:
 
