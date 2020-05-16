@@ -4,7 +4,7 @@ date: 2019-12-31
 layout: blog
 image:
   src: ar-comic.gif
-author: **Klaus Weidner** and **Diego Marcos**
+author: "Klaus Weidner and Diego Marcos"
 ---
 
 **Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets**. The Web magic doesn't stop there. **AR is also coming** to the [standard](https://immersive-web.github.io/webxr-ar-module/) and you can **experiment today** on [Android ARCore compatible devices](https://developers.google.com/ar/discover/supported-devices) and [Chrome 79 or newer](https://chromereleases.googleblog.com/2019/12/chrome-for-android-update_17.html).
