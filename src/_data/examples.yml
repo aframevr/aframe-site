@@ -17,7 +17,7 @@ showcase:
 - section: showcase
   slug: hello-metaverse
   scene_url: /examples/hello-metaverse/
-  source_url: https://aframe-hello-metaverse.glitch.me
+  source_url: https://glitch.com/~aframe-hello-metaverse
   title: Hello Metaverse
   author: Ada Rose Edwards (@lady_ada_king)
 
