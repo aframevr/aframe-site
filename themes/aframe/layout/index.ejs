@@ -36,16 +36,8 @@
     </a>
 
     <div id="usersContainer">
-      <p>Used by</p>
-      <ul id="users">
-        <% site.data.showcase.users.forEach(function (user, idx) { %>
-          <li class="user">
-            <a href="<%- user.url %>" title="<%- user.description %>">
-              <img src="/images/users/<%- user.company.toLowerCase().replace(/\s/g, '') %>.svg">
-            </a>
-          </li>
-        <% }); %>
-      </ul>
+      <p>Maintained by</p>
+      <a href="https://supermedium.com"><img src="/images/users/supermedium.svg"></a>
     </div>
   </div>
 </div>
