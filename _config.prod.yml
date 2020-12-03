@@ -159,7 +159,7 @@ stack_overflow:
   webvr:
     url: https://stackoverflow.com/questions/tagged/webvr
 
-aframe_version: 1.0.0
+aframe_version: 1.1.0
 
 # Enable the Single-Page App.
 spa: false

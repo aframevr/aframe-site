@@ -11,7 +11,8 @@
       ["aframevr/aframe#docs-v0.7.0", "0.7.0"],
       ["aframevr/aframe#docs-v0.8.0", "0.8.0"],
       ["aframevr/aframe#docs-v0.9.0", "0.9.0"],
-      ["aframevr/aframe#docs-v1.0.0", "1.0.0"]
+      ["aframevr/aframe#docs-v1.0.0", "1.0.0"],
+      ["aframevr/aframe#docs-v1.1.0", "1.1.0"]
     ]
   }
 }
