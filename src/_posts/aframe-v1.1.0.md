@@ -16,7 +16,7 @@ author: https://supermedium.com|Diego Marcos
 we released the first version of A-Frame to make it easier for anyone to build VR
 experiences. What started as a little personal project it's today a community of hundreds of thousands of developers worldwide.
 
-More than 40 A-Framers helped to get 1.1.0 across the finish line. 20 of those made their first contribution. We appreciate help from everybody and newcomers are always specially celebrated. A-Frame is only as strong as its community.
+More than 40 A-Framers helped to get 1.1.0 across the finish line. 20 of those made their first contribution. We appreciate help from everybody and newcomers are always especially celebrated. A-Frame is only as strong as its community.
 
 We also thank Google and Oculus WebXR teams. They made an outstanding effort in a tough year. They kept the Immersive Web standard moving forward with new APIs while delivering new implementations in Chrome and the Oculus browsers.
 
