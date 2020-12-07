@@ -8,7 +8,7 @@ image:
 author: https://supermedium.com|Diego Marcos
 ---
 
-**A-Frame 1.1.0 is out!** Core functionality is more polished and robust than ever. Full support for [WebXR AR module](https://github.com/immersive-web/webxr-ar-module) and initial integration for upcoming and exciting WebXR APIs that now ship experimentally in some browsers like [immersive navigation](https://github.com/immersive-web/navigation), [hand tracking](https://www.w3.org/TR/webxr-hand-input-1/), [compositor layers](https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/) or [hit tests](https://immersive-web.github.io/hit-test/)
+**A-Frame 1.1.0 is out!** Core functionality is more polished and robust than ever. Full support for [WebXR AR module](https://github.com/immersive-web/webxr-ar-module) and initial and experimental integration for upcoming and exciting WebXR APIs like [immersive navigation](https://github.com/immersive-web/navigation), [hand tracking](https://www.w3.org/TR/webxr-hand-input-1/), [compositor layers](https://www.w3.org/TR/2020/WD-webxrlayers-1-20201203/) or [hit tests](https://immersive-web.github.io/hit-test/)
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ More than 40 A-Framers helped to get 1.1.0 across the finish line. 20 of those m
 
 We also thank Google and Oculus WebXR teams. They made an outstanding effort in a tough year. They kept the Immersive Web standard moving forward with new APIs while delivering new implementations in Chrome and the Oculus browsers.
 
-Read the [release notes and changelog](https://github.com/aframevr/aframe/releases/tag/v1.0.1) to check all the new features and celebrate everyone that make it happen.
+Read the [release notes and changelog](https://github.com/aframevr/aframe/releases/tag/v1.1.0) to check all the new features and celebrate everyone that made it happen.
 
 Consider supporting A-Frame development by buying a [gorgeous t-shirt](https://cottonbureau.com/products/fragment)
 
