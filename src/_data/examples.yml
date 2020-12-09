@@ -15,11 +15,25 @@ showcase:
   title: Hello WebVR
 
 - section: showcase
-  slug: hello-metaverse
-  scene_url: /examples/hello-metaverse/
-  source_url: https://aframe-hello-metaverse.glitch.me
-  title: Hello Metaverse
-  author: Ada Rose Edwards (@lady_ada_king)
+  slug: modelviewer
+  scene_url: https://aframe.io/aframe/examples/showcase/model-viewer/
+  source_url: https://glitch.com/edit/#!/aframe-model-viewer?path=index.html%3A4%3A4
+  title: Model Viewer
+  author: Supermedium (@supermediumvr)
+
+- section: showcase
+  slug: handtracking
+  scene_url: https://aframe.io/aframe/examples/showcase/hand-tracking/
+  source_url: https://glitch.com/edit/#!/bristle-curly-primula?path=index.html%3A14%3A0
+  title: Hand Tracking
+  author: Supermedium (@supermediumvr)
+
+- section: showcase
+  slug: responsiveui
+  scene_url: https://aframe.io/aframe/examples/showcase/hand-tracking/
+  source_url: https://aframe.io/aframe/examples/showcase/ui/
+  title: Responsive UI
+  author: Supermedium (@supermediumvr)
 
 - section: showcase
   slug: sky
@@ -28,10 +42,10 @@ showcase:
   title: 360&deg; Image
 
 - section: showcase
-  slug: 360-image-gallery
-  scene_url: https://aframe-gallery.glitch.me
-  source_url: https://glitch.com/~aframe-gallery
-  title: 360&deg Image Gallery
+  slug: 360-video
+  scene_url: https://aframe.io/aframe/examples/boilerplate/360-video/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/test/video/index.html
+  title: 360 Video
 
 - section: showcase
   slug: anime-UI
@@ -48,12 +62,6 @@ showcase:
   supports:
     controllers: false
     mobile: false
-
-- section: showcase
-  slug: lights
-  scene_url: https://aframe.io/aframe/examples/showcase/dynamic-lights/
-  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/showcase/dynamic-lights/index.html
-  title: Lights
 
 - section: showcase
   slug: moonrider
