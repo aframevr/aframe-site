@@ -30,8 +30,8 @@ showcase:
 
 - section: showcase
   slug: responsiveui
-  scene_url: https://aframe.io/aframe/examples/showcase/hand-tracking/
-  source_url: https://aframe.io/aframe/examples/showcase/ui/
+  scene_url: https://aframe.io/aframe/examples/showcase/ui/
+  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/ui/index.html
   title: Responsive UI
   author: Supermedium (@supermediumvr)
 
