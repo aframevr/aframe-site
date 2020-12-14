@@ -22,6 +22,6 @@ We also thank Google and Oculus WebXR teams. They made an outstanding effort in 
 
 Read the [release notes and changelog](https://github.com/aframevr/aframe/releases/tag/v1.1.0) to check all the new features and celebrate everyone that made it happen.
 
-Consider supporting A-Frame development by buying a [gorgeous t-shirt](https://cottonbureau.com/products/fragment)
+Consider supporting A-Frame development by buying a [gorgeous t-shirt](https://cottonbureau.com/products/fragments#/6821945/tee-men-standard-tee-vintage-black-tri-blend-s)
 
 Happy immersive Christmas! 🎄
