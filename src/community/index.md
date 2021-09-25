@@ -99,7 +99,7 @@ directly!
 
 ## Slack
 
-[Sign up to the A-Frame Slack](https://aframe.io/slack-invite/) to hang
+[Sign up to the A-Frame Slack](https://join.slack.com/t/aframevr/shared_invite/zt-f6rne3ly-ekVaBU~Xu~fsZHXr56jacQ) to hang
 out and join the discussion. The Slack is pretty active with currently over 7000
 people!
 
