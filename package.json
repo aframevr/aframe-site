@@ -22,7 +22,7 @@
     "hexo-renderer-stylus": "0.3.1",
     "hexo-server": "0.2.0",
     "js-yaml": "^3.6.1",
-    "moment": "^2.14.1",
+    "moment": "^2.29.2",
     "request": "^2.74.0",
     "striptags": "^2.1.1",
     "urljoin.js": "^0.1.0"
