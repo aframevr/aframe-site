@@ -10,5 +10,5 @@ layout: index
 
 <div class="intro">
   <p>Make 3D worlds with HTML and Entity-Component</p>
-  <p>For Quest, Rift, WMR, SteamVR, mobile, desktop</p>
+  <p>On any headset, mobile and desktop</p>
 </div>
