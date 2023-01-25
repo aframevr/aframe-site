@@ -111,7 +111,7 @@ people!
 - `#projects` - Show off cool A-Frame projects.
 
 There's also an #aframe channel on the [Supermedium
-Discord](https://supermedium.com/discord/) if you prefer that.
+Discord](https://discord.com/invite/tGYjkYr) if you prefer that.
 
 ## User Groups, Events, Meetups
 
