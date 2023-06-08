@@ -92,7 +92,7 @@ classic A-Frame. So you can load a model exactly as you would in A-Frame.
 
 Here is an example of loading a [gltf](https://www.khronos.org/gltf) model,
 just add that in your a-scene.  For more detail see [A-Frame documentation
-about models](https://aframe.io/docs/0.8.0/introduction/models.html##sidebar).
+about models](https://aframe.io/docs/1.3.0/introduction/models.html).
 
 ```html
 <!-- define your gltf asset -->
@@ -100,7 +100,7 @@ about models](https://aframe.io/docs/0.8.0/introduction/models.html##sidebar).
   <a-asset-item id="tree" src="/path/to/tree.gltf"></a-asset-item>
 </a-assets>
 <!-- use your gltf model -->
-<a-entity gltf-model="##tree"></a-entity>
+<a-entity gltf-model="#tree"></a-entity>
 ```
 
 Another way to easily personalize your AR is to put a text or an image on top.
