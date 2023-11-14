@@ -2,14 +2,13 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   var searchConfig = {
-    appId: N5FBG9I0SH,
     apiKey: 'bd49ee3285733d62473816cbd2b55fb4',
     indexName: 'aframe',
     searchParameters: {
       facetFilters: ['version:<%- docs_active_version(page) || config.aframe_version %>'],
       hitsPerPage: 10
     },
-    debug: true
+    debug: false
   };
 
   docsearch(Object.assign(searchConfig, {container: '.docs-search-sidebar .search-field'}));
