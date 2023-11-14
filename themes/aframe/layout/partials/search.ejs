@@ -1,16 +1,16 @@
 <!-- Algolia search. -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 <script type="text/javascript">
   var searchConfig = {
-    apiKey: 'bd49ee3285733d62473816cbd2b55fb4',
+    apiKey: '9e4a51a1da70daf959bd4750a3fa8f52',
     indexName: 'aframe',
-    searchParameters: {
+    algoliaOptions: {
       facetFilters: ['version:<%- docs_active_version(page) || config.aframe_version %>'],
       hitsPerPage: 10
     },
     debug: false
   };
 
-  docsearch(Object.assign(searchConfig, {container: '.docs-search-sidebar .search-field'}));
-  docsearch(Object.assign(searchConfig, {container: '.docs-search-sidebar-mobile .search-field'}));
+  docsearch(Object.assign(searchConfig, {inputSelector: '.docs-search-sidebar .search-field'}));
+  docsearch(Object.assign(searchConfig, {inputSelector: '.docs-search-sidebar-mobile .search-field'}));
 </script>
