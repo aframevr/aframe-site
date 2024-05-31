@@ -1,5 +1,5 @@
 ---
-title: "A-Frame 1.4.0 - Custom elements V1, Oculus Quest Pro support, tons of fixes and improvements"
+title: "A-Frame 1.6.0 - Memory management and performance improvements"
 from: 2023-05-23
 date: 2023-05-23
 layout: blog
