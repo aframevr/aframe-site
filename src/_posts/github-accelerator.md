@@ -1,8 +1,8 @@
 ---
 title: "A-Frame selected for the 2024 Github accelerator"
 author: twitter|dmarcos|Diego Marcos
-from: 2023-06-01
-date: 2023-06-01
+from: 2024-06-01
+date: 2024-06-01
 layout: blog
 ---
 
