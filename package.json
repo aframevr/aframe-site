@@ -30,7 +30,7 @@
   "devDependencies": {
     "es6-template-strings": "^2.0.1",
     "hexo-cli": "1.0.2",
-    "multidep": "github:ngokevin/node-multidep",
+    "multidep": "github:aframevr/node-multidep",
     "recursive-copy": "^2.0.5",
     "rmdir": "^1.2.0",
     "superagent": "^2.3.0",
