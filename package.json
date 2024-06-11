@@ -52,6 +52,6 @@
     "installdocs": "multidep multidep.json && npm run copydocs",
     "server": "hexo server",
     "start": "npm run dev",
-    "test": "node script/checkLinks.js"
+    "test": "node tests/checkLinks.js"
   }
 }
