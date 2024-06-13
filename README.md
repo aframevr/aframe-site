@@ -55,7 +55,7 @@ bumpdocs` to try to pull the latest documentation from GitHub branches (e.g.,
 
 ## Deployment
 
-Push changes to GitHub, and [@a-frobot](https://github.com/a-frobot/) will
+Push changes to GitHub, and [@a-frobot](https://github.com/supermedium/a-frobot/) will
 automatically deploy the site.
 
 ## Search
