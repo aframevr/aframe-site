@@ -100,8 +100,6 @@ feed:
 marked:
   gfm: true
   pedantic: false
-  sanitize: false
-  tables: true
   breaks: false
   smartLists: true
   smartypants: true
@@ -114,10 +112,10 @@ browsersync:
   notify: false
 
 # Deployment.
-## Docs: https://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment#Git
 deploy:
   type: git
-  repository: git@github.com:aframevr/aframevr.github.io.git
+  repo: git@github.com:aframevr/aframevr.github.io.git
 
 disqus_shortname:
 twitter:
