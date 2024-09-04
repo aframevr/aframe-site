@@ -61,9 +61,13 @@ automatically deploy the site.
 ## Search
 
 The documentation search service is hosted by [Algolia
-DocSearch](https://community.algolia.com/docsearch/). The indexing
-configuration can be found at the [DocSearch config
-repo](https://github.com/algolia/docsearch-configs/blob/master/configs/aframe.json).
+DocSearch](https://community.algolia.com/docsearch/). The old indexing / crawling
+configuration (v2) can be found at the [DocSearch config
+repo](https://github.com/algolia/docsearch-configs/blob/master/configs/aframe.json) as historical reference.
+
+The new index / crawler configuration (v3) can be found [in this repo](https://github.com/aframevr/aframe-site/blob/master/algolia-crawler-config.js)
+
+In order to use the old style docsearch with the new algolia client we're using a [fork](https://github.com/aframevr/docsearch/tree/docsearch-aframe-site) and the [build is self-hosted](https://github.com/aframevr/aframe-site/blob/master/themes/aframe/source/js/docsearch.min.js)
 
 ## Credits
 
