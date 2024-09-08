@@ -18,8 +18,6 @@ built several non-trivial WebVR applications, we'll go over how we started to
 bring these ideas of state management into A-Frame's DOM-based entity-component
 architecture.
 
-<!--toc-->
-
 <!--more-->
 
 ## Initial Approach with Redux

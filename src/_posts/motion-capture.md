@@ -35,8 +35,6 @@ actions, on any device from anywhere without a headset.
 
 <!-- more -->
 
-<!--toc-->
-
 ## Motion Capture Makes VR Developer Lives Easier
 
 ![Rapid Development](https://cloud.githubusercontent.com/assets/674727/24733615/9cb99dae-1a2d-11e7-85e3-a75d6c06bb91.gif)
