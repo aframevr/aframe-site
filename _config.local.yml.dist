@@ -12,8 +12,8 @@ root: /
 force_https: false
 
 aframe_lib:
-  home_url: http://localhost:9000
-  examples_url: http://localhost:9000/examples
+  home_url: http://localhost:4000
+  examples_url: http://localhost:8080
   prod_home_url: https://aframe.io
   prod_examples_url: https://aframe.io/aframe/examples
 
