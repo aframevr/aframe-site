@@ -46,7 +46,7 @@
     "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
     "dev": "npm run clean && npm run generate:config && npm run server",
-    "generate": "npm run generate:config && hexo generate",
+    "generate": "npm run clean && npm run generate:config && hexo generate",
     "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
     "installdocs": "multidep multidep.json && npm run copydocs",
