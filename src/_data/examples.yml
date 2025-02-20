@@ -4,7 +4,7 @@ home:
   section: home
   slug: home
   scene_url: https://aframe.io/aframe/examples/animation/aframe-logo/?ui=false
-  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/animation/aframe-logo/index.html
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/animation/aframe-logo/index.html
   title: Logo
 
 showcase:
@@ -17,41 +17,53 @@ showcase:
 - section: showcase
   slug: modelviewer
   scene_url: https://aframe.io/aframe/examples/showcase/model-viewer/
-  source_url: https://glitch.com/edit/#!/aframe-model-viewer?path=index.html%3A4%3A4
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/model-viewer/index.html
   title: Model Viewer
   author: Supermedium (@supermediumvr)
 
 - section: showcase
   slug: handtracking
   scene_url: https://aframe.io/aframe/examples/showcase/hand-tracking/
-  source_url: https://glitch.com/edit/#!/bristle-curly-primula?path=index.html%3A14%3A0
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/hand-tracking/index.html
   title: Hand Tracking
   author: Supermedium (@supermediumvr)
 
 - section: showcase
   slug: responsiveui
   scene_url: https://aframe.io/aframe/examples/showcase/ui/
-  source_url: https://github.com/aframevr/aframe/blob/master/examples/showcase/ui/index.html
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/ui/index.html
   title: Responsive UI
   author: Supermedium (@supermediumvr)
 
 - section: showcase
   slug: sky
   scene_url: https://aframe.io/aframe/examples/boilerplate/panorama/
-  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/boilerplate/panorama/index.html
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/boilerplate/panorama/index.html
   title: 360&deg; Image
 
 - section: showcase
   slug: 360-video
   scene_url: https://aframe.io/aframe/examples/boilerplate/360-video/
-  source_url: https://github.com/aframevr/aframe/blob/master/examples/test/video/index.html
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/test/video/index.html
   title: 360 Video
 
 - section: showcase
   slug: anime-UI
   scene_url: https://aframe.io/aframe/examples/showcase/anime-UI/
-  source_url: https://github.com/aframevr/aframe/blob/v1.0.4/examples/showcase/anime-UI/index.html
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/anime-UI/index.html
   title: Anime UI
+
+- section: showcase
+  slug: post-processing
+  scene_url: https://aframe.io/aframe/examples/showcase/post-processing/
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/post-processing/index.html
+  title: Post-Processing
+
+- section: showcase
+  slug: webgpu
+  scene_url: https://aframe.io/aframe/examples/showcase/webgpu/
+  source_url: https://github.com/aframevr/aframe/blob/gh-pages/examples/showcase/webgpu/index.html
+  title: WebGPU and TSL
 
 - section: showcase
   slug: beatsaver-viewer
