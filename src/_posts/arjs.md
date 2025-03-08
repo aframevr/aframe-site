@@ -76,7 +76,7 @@ Then you tell A-Frame that you want arjs to control the camera. For that, you ju
 ```
 
 Don't forget to add the body style and a-scene embedded attribute. And you are
-**ALL DONE** ð
+**ALL DONE**
 
 ## Personalize Your AR Content
 
