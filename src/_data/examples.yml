@@ -94,15 +94,6 @@ showcase:
     mobile: false
 
 - section: showcase
-  slug: supercraft
-  scene_url: https://supermedium.com/craft/icky-snake
-  title: Supercraft
-  author: Supermedium (@supermediumvr)
-  supports:
-    mobile: true
-    controllers: true
-
-- section: showcase
   slug: super-says
   scene_url: https://supermedium.github.io/supersays/src/
   source_url: https://github.com/supermedium/supersays
