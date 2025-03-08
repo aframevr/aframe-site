@@ -17,7 +17,7 @@ people who come together to make developing WebVR a rewarding experience.
   the project if you like it!
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe) - The official place to
   ask questions and get technical support. Please first search for whether your
-  question has already already answered on the [FAQ](/faq/) or [Stack
+  question has already been answered on the [FAQ](/faq/) or [Stack
   Overflow](http://stackoverflow.com/questions/tagged/aframe), and put effort
   into the question by providing context and code samples.
 
@@ -88,7 +88,7 @@ directly!
   news, upcoming events, and cool projects that other people are working on.
   The A-Frame Blog is also where you'll find announcements and community case
   studies.
-- [Twitter](https://twitter.com/aframevr) - Keep up to date with awesome
+- [X](https://x.com/aframevr) - Keep up to date with awesome
   projects that people are doing and announcements.
 - [Subreddit](https://www.reddit.com/r/webvr) - General WebVR Subreddit.
 
@@ -97,21 +97,17 @@ directly!
 - [A Week of A-Frame](https://aframe.io/blog) - Weekly series featuring fresh content from the community.
 - [A-Frame Components](https://www.npmjs.com/search?q=aframe-component&page=1&ranking=optimal)
 
+## Discord
+
+There's an #aframe channel on the [Supermedium Discord](https://discord.com/invite/tGYjkYr).
+
+The more general [WebXR Discord](https://discord.gg/jJxvuW97c4) also has an #a-frame channel.
+
 ## Slack
 
-[Sign up to the A-Frame Slack](https://join.slack.com/t/aframevr/shared_invite/zt-f6rne3ly-ekVaBU~Xu~fsZHXr56jacQ) to hang
-out and join the discussion. The Slack is pretty active with currently over 7000
-people!
-
-- `#general` - All things A-Frame!
-- `#questions` - Ask questions
-  about A-Frame, but we recommend posting on
-  [StackOverflow](https://stackoverflow.com/questions/tagged/aframe).
-- `#issues` - Talk about A-Frame issues.
-- `#projects` - Show off cool A-Frame projects.
-
-There's also an #aframe channel on the [Supermedium
-Discord](https://discord.com/invite/tGYjkYr) if you prefer that.
+Historically the A-Frame Slack was the main channel for discussions.
+You can still [join it](https://join.slack.com/t/aframevr/shared_invite/zt-f6rne3ly-ekVaBU~Xu~fsZHXr56jacQ), but you may not see
+lots of discussion there now that the history is limited and lost after 90 days. Everyone is hanging out on Discord now.
 
 ## User Groups, Events, Meetups
 
@@ -149,7 +145,7 @@ Are you holding an event? Below are some resources:
 
 ## Contributing
 
-A-Frame has had over 270 different contributors, a number that grows every
+A-Frame has had over 415 different contributors, a number that grows every
 single week. We'd love for you to join that list! See [A-Frame's guide to
 contributing](https://github.com/aframevr/aframe/blob/master/CONTRIBUTING.md).
 
