@@ -83,7 +83,7 @@ directly!
 ## Ecosystem
 
 - [A Week of A-Frame](https://aframe.io/blog) - Weekly series featuring fresh content from the community.
-- [A-Frame Components](https://www.npmjs.com/search?q=aframe-component&page=1&ranking=optimal) - Packages in the NPM repository tagged `aframe-component`.  Most A-Frame components can be included using [unpkg](https://unpkg.com/) and a script tag. Many can also be included using the NPM tool.  Read the documentation for the individual package.
+- [A-Frame Components](https://www.npmjs.com/search?q=keywords:aframe-component) - Packages in the NPM repository tagged `aframe-component`.  Most A-Frame components can be included using [unpkg](https://unpkg.com/) and a script tag. Many can also be included using the NPM tool.  Read the documentation for the individual package.
 
 ## Discord
 
