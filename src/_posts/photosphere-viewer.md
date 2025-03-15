@@ -4,11 +4,10 @@ date: 2016-1-22
 author: twitter|ideaspacevr|Chris Car
 layout: blog
 image:
-  href: https://www.ideaspacevr.org/themes/webvr-photosphere-viewer-equirectangular-images
   src: photosphere-viewer.png
 ---
 
-> Chris from [IdeaSpaceVR](https://www.ideaspacevr.org/) has built an interactive 360-degree photosphere viewer. Space bar toggles a menu system, and a gaze-based cursor selects photos.
+> Chris from IdeaSpaceVR has built an interactive 360-degree photosphere viewer. Space bar toggles a menu system, and a gaze-based cursor selects photos.
 
 Recently I installed the Cardboard Camera app on my phone. It is a 360-degree photosphere VR app for Google Cardboard including a nice menu in VR which allows one to easily select photos from a list. The photosphere is showing photos with a so-called equirectangular projection (did not hear about that term before, as I am not a photo nerd ;-) ).
 
