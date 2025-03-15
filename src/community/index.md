@@ -67,7 +67,7 @@ Meet the team!
 </ul>
 
 To get A-Frame questions answered, we're also hanging out on the [Supermedium
-Discord](https://discord.gg/tGYjkYr). Feel from to come and ask us questions
+Discord](#discord). Feel from to come and ask us questions
 directly!
 
 ## News
@@ -87,7 +87,7 @@ directly!
 
 ## Discord
 
-There's an #aframe channel on the [Supermedium Discord](https://discord.com/invite/tGYjkYr).
+There's an #aframe channel on the [Supermedium Discord](https://discord.gg/NPgArtG3Qz).
 
 The more general [WebXR Discord](https://discord.gg/jJxvuW97c4) also has an #a-frame channel.
 
