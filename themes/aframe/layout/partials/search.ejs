@@ -76,6 +76,7 @@
       // Limit total displayed items.
       items = items.slice(0, 15);
 
+      dropdown.scrollTop = 0;
       dropdown.style.display = 'block';
       dropdown.innerHTML = items.map(function(item) {
         return '<a class="search-result-item" href="' + item.url + '">' +
