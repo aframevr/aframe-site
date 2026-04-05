@@ -1,14 +1,10 @@
 @import "_settings"
 
-.algolia-autocomplete
-    font-family $body-font
-    font-size 12px
-    width 100%
-    z-index 20
-
 .search-field
     -moz-appearance none
     -webkit-appearance none
+    &::-webkit-search-cancel-button
+        cursor pointer
     border 1px solid #DADADA
     border-radius 10px
     box-shadow 0
@@ -22,53 +18,70 @@
         width 195px
 
 .docs-search-wrapper
+    position relative
     +media--desktop()
         margin-right 16px
 
 [data-is-ios="true"] .search-field
     padding-bottom 7px
 
-/* Main category headers */
-.algolia-docsearch-suggestion--category-header {
-  background-color #EF2D5E
-  border 0
-  color: #FAFAFA !important;
-  font-weight 300
-  padding: 3px 5px !important;
-}
-/* Highlighted search terms */
-.algolia-docsearch-suggestion--highlight {
-  color: #24CAFF;
-}
-/* Highligted search terms in the main category headers */
-.algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--highlight  {
-  background-color: #4D47D5;
-}
-/* Currently selected suggestion */
-.aa-cursor .algolia-docsearch-suggestion--content {
-  color: $dark
-}
-.aa-cursor .algolia-docsearch-suggestion {
-  background: #EBEBFB;
-}
+.search-results-dropdown
+    display none
+    position absolute
+    top 100%
+    left 0
+    right 0
+    margin-top 4px
+    background #fff
+    border 1px solid #DADADA
+    border-radius 6px
+    box-shadow 0 4px 12px rgba(0, 0, 0, 0.15)
+    max-height 400px
+    overflow-y auto
+    z-index 100
+    +media--desktop()
+        min-width 500px
+
+.search-result-item
+    display block
+    padding 10px 14px
+    border-bottom 1px solid #f0f0f0
+    text-decoration none
+    color $dark
+    cursor pointer
+    &:last-child
+        border-bottom 0
+    &:hover,
+    &:focus
+        background #EBEBFB
+
+.search-result-breadcrumb
+    display block
+    font-weight 600
+    font-size 13px
+    margin-bottom 3px
+    color $dark
+
+.search-result-excerpt
+    display block
+    font-size 12px
+    color #666
+    line-height 1.4
+    mark
+        color #24CAFF
+        background none
+        font-weight 600
+
+.search-no-results
+    padding 12px 14px
+    font-size 13px
+    color #999
 
 @media (max-width: 768px)
-    .algolia-autocomplete .algolia-docsearch-suggestion--content,
-    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column
-        float none
-        width 100%
-
-    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column
-        text-align: left
-
-    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before
-        right auto
-        left -1px
-
-    .algolia-autocomplete .ds-dropdown-menu
-        margin-left -32px
-        margin-right -32px
-        min-width 100%
+    .search-results-dropdown
+        min-width 0
+        left -32px
+        right -32px
 
     .docs-search-docs
         display none

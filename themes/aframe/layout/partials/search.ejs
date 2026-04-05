@@ -1,18 +1,104 @@
-<!-- Algolia search. -->
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch.umd.min.js"></script>
-<script type="text/javascript" src="/js/docsearch.min.js"></script>
+<!-- Pagefind search. -->
 <script type="text/javascript">
-  var searchConfig = {
-    appId: 'N5FBG9I0SH',
-    apiKey: '2166b9095d153b15b047283347535ff0',
-    indexName: 'aframe',
-    algoliaOptions: {
-      facetFilters: ['version:<%- docs_active_version(page) || config.aframe_version %>'],
-      hitsPerPage: 10
-    },
-    debug: false
-  };
+(async function() {
+  var pagefind = await import('/pagefind/pagefind.js');
 
-  docsearch(Object.assign(searchConfig, {inputSelector: '.docs-search-sidebar .search-field'}));
-  docsearch(Object.assign(searchConfig, {inputSelector: '.docs-search-sidebar-mobile .search-field'}));
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
+  document.querySelectorAll('.docs-search-wrapper').forEach(function(wrapper) {
+    var input = wrapper.querySelector('.search-field');
+    var dropdown = wrapper.querySelector('.search-results-dropdown');
+    var version = wrapper.dataset.searchVersion;
+    var isDocs = document.body.dataset.pageLayout === 'docs';
+
+    input.addEventListener('input', async function() {
+      var query = input.value.trim();
+      if (!query) {
+        dropdown.innerHTML = '';
+        dropdown.style.display = 'none';
+        return;
+      }
+
+      var searchOptions = {};
+      if (isDocs && version) {
+        searchOptions.filters = { version: version };
+      }
+
+      var search = await pagefind.debouncedSearch(query, searchOptions);
+      if (!search) return;
+
+      var results = await Promise.all(
+        search.results.slice(0, 15).map(function(r) { return r.data(); })
+      );
+
+      if (results.length === 0) {
+        dropdown.style.display = 'block';
+        dropdown.innerHTML = '<div class="search-no-results">No results found</div>';
+        return;
+      }
+
+      // Flatten sub_results to show heading-level matches with breadcrumbs.
+      var queryLower = query.toLowerCase();
+      var items = [];
+      results.forEach(function(r) {
+        var pageTitle = r.meta.title || r.url;
+        var titleMatch = pageTitle.toLowerCase().indexOf(queryLower) !== -1;
+        if (r.sub_results && r.sub_results.length > 0) {
+          r.sub_results.forEach(function(sub) {
+            var breadcrumb = escapeHtml(pageTitle);
+            if (sub.anchor && sub.anchor.text) {
+              breadcrumb += ' › ' + escapeHtml(sub.anchor.text);
+            }
+            items.push({
+              url: sub.url,
+              breadcrumb: breadcrumb,
+              excerpt: sub.excerpt,
+              titleMatch: titleMatch
+            });
+          });
+        } else {
+          items.push({
+            url: r.url,
+            breadcrumb: escapeHtml(pageTitle),
+            excerpt: r.excerpt,
+            titleMatch: titleMatch
+          });
+        }
+      });
+
+      // Sort title matches first, preserve Pagefind relevance order within each group.
+      items.sort(function(a, b) { return (b.titleMatch ? 1 : 0) - (a.titleMatch ? 1 : 0); });
+
+      // Limit total displayed items.
+      items = items.slice(0, 15);
+
+      dropdown.style.display = 'block';
+      dropdown.innerHTML = items.map(function(item) {
+        return '<a class="search-result-item" href="' + item.url + '">' +
+          '<span class="search-result-breadcrumb">' + item.breadcrumb + '</span>' +
+          '<span class="search-result-excerpt">' + item.excerpt + '</span>' +
+          '</a>';
+      }).join('');
+    });
+
+    // Close on Escape.
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        dropdown.style.display = 'none';
+        input.blur();
+      }
+    });
+
+    // Close on click outside.
+    document.addEventListener('click', function(e) {
+      if (!wrapper.contains(e.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  });
+})();
 </script>
