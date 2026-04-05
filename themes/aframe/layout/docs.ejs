@@ -46,6 +46,7 @@
 
   <!-- Documentation. -->
   <div class="content content--structured content--<%- page.type %> copy">
+    <meta data-pagefind-filter="version:<%- activeVersion %>">
     <%- partial('partials/secondary/mobile_header') %>
 
     <div class="copy__wrap">
@@ -56,7 +57,7 @@
           </a>
         </p>
       </div>
-      <h1 class="page__title">
+      <h1 class="page__title" data-pagefind-meta="title">
         <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
       </h1>
 
