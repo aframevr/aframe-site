@@ -60,7 +60,9 @@ automatically deploy the site.
 
 ## Search
 
-The documentation search is powered by [Pagefind](https://pagefind.app/), a static search library that generates indexes at build time. The search indexes are generated automatically when running `npm run generate` — Pagefind runs after Hexo generates the static files. No external service or API keys are needed.
+The documentation search is powered by [Pagefind](https://pagefind.app/), a static search library that generates indexes at build time. No external service or API keys are needed.
+
+For local development, `npm run dev` generates the Pagefind index via `npm run generate:dev`. For production, the Pagefind index is generated in the [aframevr.github.io](https://github.com/aframevr/aframevr.github.io) repo via `.github/workflows/deploy-pages.yml` so the index is never committed to git.
 
 ## Credits
 
