@@ -42,11 +42,9 @@
       }
 
       // Flatten sub_results to show heading-level matches with breadcrumbs.
-      var queryLower = query.toLowerCase();
       var items = [];
       results.forEach(function(r) {
         var pageTitle = r.meta.title || r.url;
-        var titleMatch = pageTitle.toLowerCase().indexOf(queryLower) !== -1;
         if (r.sub_results && r.sub_results.length > 0) {
           r.sub_results.forEach(function(sub) {
             var breadcrumb = escapeHtml(pageTitle);
@@ -56,22 +54,17 @@
             items.push({
               url: sub.url,
               breadcrumb: breadcrumb,
-              excerpt: sub.excerpt,
-              titleMatch: titleMatch
+              excerpt: sub.excerpt
             });
           });
         } else {
           items.push({
             url: r.url,
             breadcrumb: escapeHtml(pageTitle),
-            excerpt: r.excerpt,
-            titleMatch: titleMatch
+            excerpt: r.excerpt
           });
         }
       });
-
-      // Sort title matches first, preserve Pagefind relevance order within each group.
-      items.sort(function(a, b) { return (b.titleMatch ? 1 : 0) - (a.titleMatch ? 1 : 0); });
 
       // Limit total displayed items.
       items = items.slice(0, 15);
