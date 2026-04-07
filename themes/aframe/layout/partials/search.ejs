@@ -1,7 +1,8 @@
 <!-- Pagefind search. -->
 <script type="text/javascript">
 (async function() {
-  var pagefind = await import('/pagefind/pagefind.js');
+  var pagefindUrl = '<%= config.pagefind_url || "/pagefind" %>';
+  var pagefind = await import(pagefindUrl + '/pagefind.js');
 
   function escapeHtml(str) {
     var div = document.createElement('div');
