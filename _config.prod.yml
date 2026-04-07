@@ -159,10 +159,6 @@ stack_overflow:
 
 aframe_version: 1.7.0
 
-# Pagefind search base URL. Default is '/pagefind'.
-# Set to a full URL for production, e.g. 'https://cdn.example.com/pagefind'
-# pagefind_url: /pagefind
-
 # Enable the Single-Page App.
 spa: false
 
