@@ -31,7 +31,7 @@
     "es6-template-strings": "^2.0.1",
     "hexo-cli": "4.3.2",
     "multidep": "github:aframevr/node-multidep",
-    "pagefind": "^1.4.0",
+    "pagefind": "^1.5.0",
     "recursive-copy": "^2.0.5",
     "rmdir": "^1.2.0",
     "superagent": "^2.3.0",
