@@ -137,12 +137,11 @@ function getComponentSectionRedirectObjs () {
  * And do that for every page in 0.2.0.
  */
 function getPreVersionedRedirectObjs () {
-  var paths = glob.sync('.multidep/aframe-0.2.0/node_modules/aframe/docs/**/*.md');
+  var paths = glob.sync('src/docs/0.2.0/**/*.md');
   return paths.map(function getRedirectObj (path) {
-    // `path` looks like `.multidep/aframe-0.2.0/node_modules/aframe/docs/<folder>/<file>.md`.
-    // Pull out the last three paths and s/md/html (=> docs/<folder>/<file>.html).
-    path = path.split('/').slice(-3).join('/').replace('.md', '.html');
-    // Then create the redirect.
-    return [path, path.replace('docs/', 'docs/0.2.0/')];
+    // `path` looks like `src/docs/0.2.0/<folder>/<file>.md`.
+    // Extract `<folder>/<file>` and build the redirect.
+    var relative = path.split('/').slice(-2).join('/').replace('.md', '.html');
+    return ['docs/' + relative, 'docs/0.2.0/' + relative];
   });
 }
