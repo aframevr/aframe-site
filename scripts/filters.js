@@ -1,4 +1,27 @@
 var urllib = require('url');
+var crypto = require('crypto');
+var fs = require('fs');
+var pathModule = require('path');
+
+/**
+ * Append ?v=<hash> to local CSS/JS URLs for cache-busting.
+ */
+hexo.extend.filter.register('after_render:html', function (str) {
+  var themeSource = pathModule.join(hexo.theme_dir, 'source');
+  return str.replace(/(href|src)="(\/(?:css|js)\/[^"]+\.(css|js))"/g, function (match, attr, url) {
+    var relative = url.slice(1);
+    var ext = pathModule.extname(relative);
+    var sourcePath = ext === '.css'
+      ? pathModule.join(themeSource, relative.replace(/\.css$/, '.styl'))
+      : pathModule.join(themeSource, relative);
+    if (!fs.existsSync(sourcePath)) {
+      sourcePath = pathModule.join(themeSource, relative);
+    }
+    if (!fs.existsSync(sourcePath)) { return match; }
+    var hash = crypto.createHash('sha256').update(fs.readFileSync(sourcePath)).digest('hex').slice(0, 8);
+    return attr + '="' + url + '?v=' + hash + '"';
+  });
+});
 
 /**
  * After generating an HTML page from a Markdown file,
