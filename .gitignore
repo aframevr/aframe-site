@@ -1,7 +1,6 @@
 *.log
 .DS_Store
 .deploy*/
-.multidep
 Thumbs.db
 _config.local.yml
 _config.yml

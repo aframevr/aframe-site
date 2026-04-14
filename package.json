@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "aframe": "github:aframevr/aframe#master",
     "chalk": "^1.1.3",
     "cheerio": "^0.20.0",
     "es6-promise": "^3.2.1",
@@ -30,10 +29,7 @@
   "devDependencies": {
     "es6-template-strings": "^2.0.1",
     "hexo-cli": "4.3.2",
-    "multidep": "github:aframevr/node-multidep",
     "pagefind": "^1.5.0",
-    "recursive-copy": "^2.0.5",
-    "rmdir": "^1.2.0",
     "superagent": "^2.3.0",
     "superagent-promise": "^1.1.0",
     "yaml-cat": "^0.3.2"
@@ -43,15 +39,14 @@
   },
   "scripts": {
     "awoa": "node node_scripts/awoa.js",
-    "bumpdocs": "npm cache clean aframevr/aframe#docs-v1.7.0 && rm -rf .multidep/aframe-1.7.0 && npm install aframevr/aframe#master && npm run installdocs",
-    "copydocs": "node node_scripts/copyDocs.js multidep.json",
+    "bumpdocs": "npm run installdocs",
     "clean": "hexo clean",
     "dev": "npm run generate:dev && npm run server",
     "generate": "npm run clean && npm run generate:config && hexo generate",
     "generate:dev": "npm run generate && pagefind --site public",
     "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
-    "installdocs": "multidep multidep.json && npm run copydocs",
+    "installdocs": "node node_scripts/fetchDocs.js multidep.json",
     "server": "hexo server",
     "start": "npm run dev",
     "test": "node tests/checkLinks.js"
