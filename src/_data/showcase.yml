@@ -1,10 +1,4 @@
 projects:
-- name: Supermedium
-  author: Supermedium
-  url: https://supermedium.com
-  description: The browser for the VR Internet, available on Oculus and Steam. Surf between VR apps on the Web in seconds. From the creators of A-Frame.
-  image: /images/showcase/supermedium.jpg
-
 - name: Moon Rider
   author: Supermedium
   url: https://moonrider.xyz
@@ -17,35 +11,11 @@ projects:
   description: A VR music kickboxing game!
   image: /images/showcase/soundboxing.jpg
 
-- name: Supercraft
-  author: Supermedium
-  url: https://supermedium.com/supercraft/
-  description: Build VR in VR with your hands.
-  image: /images/showcase/supercraft.jpg
-
-- name: Musical Forest
-  author: Google
-  url: https://experiments.withgoogle.com/musical-forest
-  description: Join users from around the world in a musical forest.
-  image: /images/showcase/musicalforest.jpg
-
 - name: Towermax Fitness
   author: Towermax Fitness
   url: https://towermax.fitness/
   description: Soundbased virtual reality workout for boxers, martial arts and fitness enthusiasts.
   image: /images/showcase/towermaxfitness.jpg
-
-- name: Inside Music
-  author: Google (with Song Exploder, Supermedium)
-  url: https://experiments.withgoogle.com/webvr/inside-music/view/
-  description: What if you could step inside a song? This is a simple experiment that explores that idea. See and hear the individual layers of music all around you to get a closer look at how music is made.
-  image: /images/showcase/insidemusic.jpg
-
-- name: BeatSaver Viewer
-  author: Supermedium
-  url: https://supermedium.com/beatsaver-viewer/
-  description: Preview community-created beatmaps for Beat Saber on the Web.
-  image: /images/showcase/beatsaverviewer.jpg
 
 - name: CERN CMS / LHC Tour
   author: CERN
@@ -53,59 +23,17 @@ projects:
   description: A 360-degree tour of CERN's Large Hadron Collider (LHC) particle acclerator and its Compact Muon Solenoid (CMS).
   image: /images/showcase/cern.jpg
 
-- name: 2019 Chevrolet Silverado
-  author: Chevrolet
-  url: https://d1vlj71acq3rf7.cloudfront.net/index.html
-  description: A product page and configurator for Chevrolet's 2019 Silverado truck.
-  image: /images/showcase/chevrolet.jpg
-
-- name: Hidden Mickey
-  author: Disney
-  url: https://disney.co.uk/mickey-mouse/hidden-mickey
-  description: Hidden Mickeys have been slipped in all across Disney. They now find their way into this official A-Frame game, can you spot them?
-  image: /images/showcase/disney.jpg
-
-- name: 2019 Ford Expedition
-  author: Ford
-  url: https://www.ford.com/suvs/expedition/#component05
-  description: Explore the interior of a 2019 Ford Expedition SUV.
-  image: /images/showcase/ford.jpg
-
 - name: Hubs
-  author: Mozilla
-  url: https://hubs.mozilla.org
-  description: A new way to get together.
+  author: Hubs Foundation
+  url: https://demo.hubsfoundation.org/
+  description: A virtual collaboration platform that lets you create your own 3D spaces. Invite anyone with a URL — no account needed.
   image: /images/showcase/mozilla.jpg
-
-- name: Access Mars
-  author: NASA (with Google, Supermedium)
-  url: https://accessmars.withgoogle.com/
-  description: The real surface of Mars. Recorded by NASA's Curiosity rover. Now in your browser.
-  image: /images/showcase/nasa.jpg
 
 - name: Stand at the Edge of Geologic Time
   author: NPR
   url: https://apps.npr.org/rockymountain-vr/
   description: Transport yourself to Rocky Mountain National Park, with all its sights and sounds, in this immersive geology lesson.
   image: /images/showcase/npr.jpg
-
-- name: Samsung VR
-  author: Samsung
-  url: https://samsungvr.com/
-  description: Samsung's official immersive 360 content library.
-  image: /images/showcase/samsung.jpg
-
-- name: Escape Room Movie Challenge
-  author: Sony
-  url: https://www.escaperoommoviechallenge.com/
-  description: $1m sweepstakes challenge from Sony to market the Hollywood film, "Escape Room". Find the clues, escape the rooms.
-  image: /images/showcase/sony.jpg
-
-- name: 2019 Toyota Camry
-  author: Toyota
-  url: https://customise.toyota.com.au/camry/
-  description: Product page and configurator for the 2019 Toyota Camry.
-  image: /images/showcase/toyota.jpg
 
 - name: A-Painter
   author: A-Frame Team
