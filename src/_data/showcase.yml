@@ -41,6 +41,13 @@ projects:
   description: Paint in VR with your hands.
   image: /images/showcase/apainter.jpg
 
+- name: Barrier Mage
+  author: Doug Reeder
+  url: https://dougreeder.github.io/barrier-mage/
+  description: Draw mystic symbols to burn, protect, or detect & drive off fantastic creatures! [headset required]
+  image: /images/showcase/barrier-mage.jpg
+  
+
 users:
 - company: CERN
   url: http://cms-aframe.web.cern.ch/
