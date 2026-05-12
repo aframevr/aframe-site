@@ -41,6 +41,18 @@ projects:
   description: Paint in VR with your hands.
   image: /images/showcase/apainter.jpg
 
+- name: Above Par-adowski Mini Golf
+  author: Paradowski Creative
+  url: https://aboveparadowski.com/
+  description : A WebXR mini-golf game made for virtual reality.
+  image: /images/showcase/mini-golf.jpg
+
+- name: 3D Street
+  author: Kieran Farr
+  url: https://3dstreet.com/
+  description: An open-source web-based 3D platform to create and share highly detailed street scenes.
+  image: /images/showcase/3dstreet.jpg
+  
 - name: Barrier Mage
   author: Doug Reeder
   url: https://dougreeder.github.io/barrier-mage/
@@ -52,6 +64,12 @@ projects:
   url: https://simpledraw.app/gallery?vr=true
   description: Create scale drawings and floor plans in 2D, and then view them in VR.
   image: /images/showcase/simple-draw.jpg
+
+- name: Strata
+  author: Jingle Chen
+  url: https://strata-xr.com/
+  description: A web-based, real-time, and collaborative spatial computing tool. Think Figma but for XR.
+  image: /images/showcase/strata.jpg
 
 users:
 - company: CERN
