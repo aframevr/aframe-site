@@ -47,6 +47,11 @@ projects:
   description: Draw mystic symbols to burn, protect, or detect & drive off fantastic creatures! [headset required]
   image: /images/showcase/barrier-mage.jpg
   
+- name: SimpleDraw
+  author: Diarmid Mackenzie
+  url: https://simpledraw.app/gallery?vr=true
+  description: Create scale drawings and floor plans in 2D, and then view them in VR.
+  image: /images/showcase/simple-draw.jpg
 
 users:
 - company: CERN
